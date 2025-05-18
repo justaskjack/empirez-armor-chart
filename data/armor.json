@@ -1,18 +1,10 @@
 [
   {
-    "name": "Republic Commando Armor",
+    "name": "Example Armor",
     "image": "example01.jpg",
-    "type": "Republic Commando, Sith Trooper armor, Revan",
+    "type": "Test Type",
     "protection": 2,
-    "rarity": "Mythic",
-    "location": "Tiers 3, 5 & 6"
-  },
-  {
-    "name": "Vanilla Clone Armor",
-    "image": "example01.jpg",
-    "type": "Vanilla armor, general Star Wars armor",
-    "protection": 1,
-    "rarity": "Common",
-    "location": "All tiers"
+    "rarity": "Rare",
+    "location": "Tier 1"
   }
 ]
