@@ -11,11 +11,13 @@ fetch('data/armor.json')
         <a href="images/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
           <img src="images/${armor.image}" alt="${armor.name}" class="armor-img" />
         </a>
-        <h2>${armor.name}</h2>
-        <p><strong>Type:</strong> ${armor.type}</p>
-        <p><strong>Protection:</strong> ${armor.protection}</p>
-        <p><strong>Rarity:</strong> ${armor.rarity}</p>
-        <p><strong>Location:</strong> ${armor.location}</p>
+        <div class="armor-details">
+          <h2>${armor.name}</h2>
+          <p><strong>Type:</strong> ${armor.type}</p>
+          <p><strong>Protection:</strong> ${armor.protection}</p>
+          <p><strong>Rarity:</strong> ${armor.rarity}</p>
+          <p><strong>Location:</strong> ${armor.location}</p>
+        </div>
       `;
 
       container.appendChild(card);
