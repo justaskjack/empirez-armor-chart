@@ -1,7 +1,7 @@
 [
   {
     "name": "Republic Commando Armor",
-    "image": "republic_commando.jpg",
+    "image": "example_image01.png",
     "type": "Republic Commando, Sith Trooper armor, Revan",
     "protection": 2,
     "rarity": "Mythic",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Vanilla Clone Armor",
-    "image": "vanilla_clone.jpg",
+    "image": "example_image01.png",
     "type": "Vanilla armor, general Star Wars armor",
     "protection": 1,
     "rarity": "Common",
