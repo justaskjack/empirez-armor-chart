@@ -1,10 +1,66 @@
 [
   {
-    "name": "Example Armor",
+    "name": "Vanilla Clone Armor",
     "image": "example01.jpg",
-    "type": "Test Type",
-    "protection": 2,
+    "type": "Vanilla armor, general Star Wars armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+  {
+    "name": "Character Armor",
+    "image": "example01.jpg",
+    "type": "Character armor",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tiers 2, 3 & 4"
+  },
+  {
+    "name": "Special Troop Armor",
+    "image": "example01.jpg",
+    "type": "Special Troop armor",
+    "protection": 1,
     "rarity": "Rare",
-    "location": "Tier 1"
+    "location": "Tiers 3, 4 & 5"
+  },
+  {
+    "name": "Special Clone Armor",
+    "image": "example01.jpg",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+  {
+    "name": "Camo / Bad Batch Armor",
+    "image": "example01.jpg",
+    "type": "Camo armor, Bad Batch armor",
+    "protection": 1,
+    "rarity": "Legendary",
+    "location": "Tier 5"
+  },
+  {
+    "name": "Republic Commando Armor",
+    "image": "example01.jpg",
+    "type": "Republic Commando, Sith Trooper armor, Revan",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tiers 3, 5 & 6"
+  },
+  {
+    "name": "Jedi / Kylo / Vader Set",
+    "image": "example01.jpg",
+    "type": "Jedi, Kylo Ren, Darth Vader armor sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Sith Temple / Jedi Hideout"
+  },
+  {
+    "name": "NBC / Chewy Set",
+    "image": "example01.jpg",
+    "type": "NBC Clothing, Chewy set",
+    "protection": 0,
+    "rarity": "None",
+    "location": "Note: Full NBC or Chewy suit plus respirator required for toxic zones"
   }
 ]
