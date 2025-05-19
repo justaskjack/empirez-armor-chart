@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor - Auto Import + Edit</title>
+  <title>Helm Grid Editor - Final</title>
   <style>
     body {
       background: #1a1a1a;
@@ -52,7 +52,7 @@
       height: 204px;
       object-fit: contain;
       border: 2px solid #333;
-      cursor: pointer;
+      cursor: grab;
     }
 
     button, input[type="file"] {
@@ -62,7 +62,8 @@
       border: none;
       color: white;
       cursor: pointer;
-      display: block;
+      display: inline-block;
+      margin-right: 1rem;
     }
 
     #exportArea {
@@ -78,7 +79,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (Auto Naming + Edit)</h1>
+  <h1>Helm Grid Editor (Final)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" />
@@ -87,6 +88,7 @@
     <div class="grid" id="helmGrid"></div>
   </div>
   <button onclick="exportJSON()">Export JSON</button>
+  <button onclick="copyJSON()">Copy to Clipboard</button>
   <pre id="exportArea"></pre>
 
   <script>
@@ -105,8 +107,29 @@
         e.dataTransfer.setData("text/plain", JSON.stringify({
           name: e.target.dataset.name,
           thumb: e.target.src,
-          image: e.target.dataset.image
+          image: e.target.dataset.image,
+          fromPalette: true,
+          element: e.target
         }));
+      }
+    });
+
+    grid.addEventListener('dragstart', e => {
+      if (e.target.classList.contains('helm')) {
+        e.dataTransfer.setData("text/plain", JSON.stringify({
+          name: e.target.dataset.name,
+          thumb: e.target.src,
+          image: e.target.dataset.image,
+          fromPalette: false,
+          element: e.target
+        }));
+        e.target.remove(); // remove temporarily to reposition
+        const index = placedHelms.findIndex(h =>
+          h.name === e.target.dataset.name &&
+          h.col === parseInt(e.target.dataset.col) &&
+          h.row === parseInt(e.target.dataset.row)
+        );
+        if (index !== -1) placedHelms.splice(index, 1);
       }
     });
 
@@ -125,26 +148,41 @@
       img.src = data.thumb;
       img.className = 'helm';
       img.title = data.name;
+      img.dataset.name = data.name;
+      img.dataset.image = data.image;
+      img.dataset.col = col;
+      img.dataset.row = row;
+      img.draggable = true;
       img.style.left = `${(col - 1) * 202}px`;
       img.style.top = `${(row - 1) * 205}px`;
 
       img.onclick = () => {
-        const action = prompt("Enter 'delete' to remove or 'move' to reposition:");
-        if (action === 'delete') {
+        if (confirm("Delete this helm?")) {
           grid.removeChild(img);
-          const index = placedHelms.findIndex(h => h.col === col && h.row === row && h.name === data.name);
+          const index = placedHelms.findIndex(h => h.col == col && h.row == row && h.name === data.name);
           if (index !== -1) placedHelms.splice(index, 1);
-        } else if (action === 'move') {
-          alert("Now drag the same helm to a new position.");
         }
       };
 
       grid.appendChild(img);
       placedHelms.push({ name: data.name, thumb: data.thumb, image: data.image, col, row });
+
+      // remove from palette if it came from there
+      if (data.fromPalette) {
+        const images = Array.from(palette.querySelectorAll('img'));
+        const thumbUrl = data.thumb;
+        const thumbImg = images.find(i => i.src === thumbUrl);
+        if (thumbImg) thumbImg.remove();
+      }
     });
 
     function exportJSON() {
       document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
+    }
+
+    function copyJSON() {
+      const text = document.getElementById('exportArea').textContent;
+      navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
     }
 
     fetch('data/helms.json')
@@ -155,17 +193,19 @@
           img.src = `images/${h.thumb}`;
           img.className = 'helm';
           img.title = h.name;
+          img.dataset.name = h.name;
+          img.dataset.image = h.image;
+          img.dataset.col = h.col;
+          img.dataset.row = h.row;
+          img.draggable = true;
           img.style.left = `${(h.col - 1) * 202}px`;
           img.style.top = `${(h.row - 1) * 205}px`;
 
           img.onclick = () => {
-            const action = prompt("Enter 'delete' to remove or 'move' to reposition:");
-            if (action === 'delete') {
+            if (confirm("Delete this helm?")) {
               grid.removeChild(img);
               const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name);
               if (index !== -1) placedHelms.splice(index, 1);
-            } else if (action === 'move') {
-              alert("Now drag the same helm to a new position.");
             }
           };
 
