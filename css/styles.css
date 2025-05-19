@@ -34,8 +34,10 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0 2rem 2rem;
-  border-left: 10px solid;
-  border: 1px solid black;
+  border-left: 10px solid; /* this will be overridden per rarity below */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
   padding-left: 1rem;
   gap: 1.5rem;
   align-items: flex-start;
@@ -82,14 +84,14 @@ header {
 .rarity-value-Relic { color: #ff66cc; }
 .rarity-value-None { color: #aaaaaa; }
 
-.bar-Common { border-color: #ffffff; }
-.bar-Uncommon { border-color: #00ff00; }
-.bar-Rare { border-color: #3399ff; }
-.bar-Epic { border-color: #9966ff; }
-.bar-Legendary { border-color: #ffcc00; }
-.bar-Mythic { border-color: #ff3300; }
-.bar-Relic { border-color: #ff66cc; }
-.bar-None { border-color: #aaaaaa; }
+.bar-Common { border-left: 10px solid #ffffff; }
+.bar-Uncommon { border-left: 10px solid #00ff00; }
+.bar-Rare { border-left: 10px solid #3399ff; }
+.bar-Epic { border-left: 10px solid #9966ff; }
+.bar-Legendary { border-left: 10px solid #ffcc00; }
+.bar-Mythic { border-left: 10px solid #ff3300; }
+.bar-Relic { border-left: 10px solid #ff66cc; }
+.bar-None { border-left: 10px solid #aaaaaa; }
 
 h2 {
   margin-bottom: 0.5rem;
