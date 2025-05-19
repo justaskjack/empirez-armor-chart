@@ -21,9 +21,12 @@ function renderSections(data) {
     section.dataset.rarity = rarity;
 
     const toggle = document.createElement('button');
-    toggle.textContent = `Toggle ${rarity} Section`;
-    toggle.style = "margin-bottom: 0.5rem; padding: 0.3rem 0.6rem;";
+    toggle.innerHTML = '&#8722;';
+    toggle.className = 'section-toggle';
+    
     toggle.onclick = () => {
+      const isHidden = grid.style.display === 'none';
+      toggle.innerHTML = isHidden ? '&#8722;' : '+';
       grid.style.display = grid.style.display === 'none' ? 'flex' : 'none';
     };
 
