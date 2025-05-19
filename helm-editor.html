@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor - Extended</title>
+  <title>Helm Grid Editor - Auto Import + Edit</title>
   <style>
     body {
       background: #1a1a1a;
@@ -78,7 +78,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (Drag/Drop + Delete + Import + Upload)</h1>
+  <h1>Helm Grid Editor (Auto Naming + Edit)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" />
@@ -129,10 +129,13 @@
       img.style.top = `${(row - 1) * 205}px`;
 
       img.onclick = () => {
-        if (confirm("Delete this helm?")) {
+        const action = prompt("Enter 'delete' to remove or 'move' to reposition:");
+        if (action === 'delete') {
           grid.removeChild(img);
           const index = placedHelms.findIndex(h => h.col === col && h.row === row && h.name === data.name);
           if (index !== -1) placedHelms.splice(index, 1);
+        } else if (action === 'move') {
+          alert("Now drag the same helm to a new position.");
         }
       };
 
@@ -144,7 +147,6 @@
       document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
     }
 
-    // Load helms.json on page load
     fetch('data/helms.json')
       .then(res => res.json())
       .then(helms => {
@@ -157,10 +159,13 @@
           img.style.top = `${(h.row - 1) * 205}px`;
 
           img.onclick = () => {
-            if (confirm("Delete this helm?")) {
+            const action = prompt("Enter 'delete' to remove or 'move' to reposition:");
+            if (action === 'delete') {
               grid.removeChild(img);
               const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name);
               if (index !== -1) placedHelms.splice(index, 1);
+            } else if (action === 'move') {
+              alert("Now drag the same helm to a new position.");
             }
           };
 
@@ -169,13 +174,14 @@
         });
       });
 
-    // Allow uploading new thumbnails into palette
     document.getElementById('uploadThumb').addEventListener('change', e => {
       const file = e.target.files[0];
       if (!file) return;
       const url = URL.createObjectURL(file);
-      const name = prompt("Enter helm name:");
-      const image = prompt("Enter full image filename:");
+      const filename = file.name;
+      const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
+      const image = filename.replace(" - thumb", "");
+
       const img = document.createElement('img');
       img.src = url;
       img.title = name;
