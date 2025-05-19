@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Helm Grid Editor - Drag and Drop</title>
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <style>
+    body {
+      background: #1a1a1a;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .editor-container {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .palette {
+      width: 220px;
+    }
+
+    .palette img {
+      width: 100%;
+      margin-bottom: 1rem;
+      cursor: grab;
+      border: 2px solid #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(10, 201px);
+      grid-template-rows: repeat(10, 204px);
+      gap: 1px;
+      background-color: #2a2a2a;
+      border: 2px solid #444;
+      position: relative;
+    }
+
+    .grid-cell {
+      background-color: #1f1f1f;
+      border: 1px solid #555;
+      width: 201px;
+      height: 204px;
+      position: relative;
+    }
+
+    .helm {
+      position: absolute;
+      width: 201px;
+      height: 204px;
+      object-fit: contain;
+      border: 2px solid #333;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background: #444;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #666;
+    }
+
+    #exportArea {
+      background: #111;
+      color: #0f0;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      white-space: pre-wrap;
+      font-family: monospace;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Helm Grid Editor (Drag-and-Drop)</h1>
+  <div class="editor-container">
+    <div class="palette">
+      <img src="images/Darth Maul Mask - thumb.png" draggable="true" id="helmTemplate" title="Darth Maul Mask" />
+    </div>
+    <div class="grid" id="helmGrid"></div>
+  </div>
+  <button onclick="exportJSON()">Export JSON</button>
+  <pre id="exportArea"></pre>
+
+  <script>
+    const grid = document.getElementById('helmGrid');
+    const helmTemplate = document.getElementById('helmTemplate');
+    const placedHelms = [];
+
+    for (let i = 0; i < 100; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'grid-cell';
+      grid.appendChild(cell);
+    }
+
+    helmTemplate.addEventListener('dragstart', e => {
+      e.dataTransfer.setData("text/plain", JSON.stringify({
+        name: "Darth Maul Mask",
+        thumb: "Darth Maul Mask - thumb.png",
+        image: "Darth Maul Mask.png"
+      }));
+    });
+
+    grid.addEventListener('dragover', e => {
+      e.preventDefault();
+    });
+
+    grid.addEventListener('drop', e => {
+      e.preventDefault();
+      const data = JSON.parse(e.dataTransfer.getData("text/plain"));
+      const rect = grid.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const col = Math.floor(x / 202) + 1;
+      const row = Math.floor(y / 205) + 1;
+
+      const img = document.createElement('img');
+      img.src = `images/${data.thumb}`;
+      img.className = 'helm';
+      img.title = data.name;
+      img.style.left = `${(col - 1) * 202}px`;
+      img.style.top = `${(row - 1) * 205}px`;
+
+      grid.appendChild(img);
+
+      placedHelms.push({
+        name: data.name,
+        thumb: data.thumb,
+        image: data.image,
+        col: col,
+        row: row
+      });
+    });
+
+    function exportJSON() {
+      document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
+    }
+  </script>
+</body>
+</html>
