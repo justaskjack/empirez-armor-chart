@@ -192,32 +192,33 @@ header.navbar {
 
 .helm-grid {
   display: grid;
-  grid-template-columns: repeat(10, 64px);
-  grid-template-rows: repeat(10, 64px);
-  gap: 2px;
+  grid-template-columns: repeat(10, 201px);
+  grid-template-rows: repeat(10, 204px);
+  gap: 1px;
   background-color: #2a2a2a;
   padding: 1rem;
-  position: relative;
   border: 2px solid #444;
 }
 
 .grid-cell {
-  width: 64px;
-  height: 64px;
-  background: url('../images/Helm Blank.png') no-repeat center;
-  background-size: cover;
+  background-color: #1f1f1f;
+  border: 1px solid #555;
+  width: 201px;
+  height: 204px;
 }
 
-.helm-icon {
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  cursor: pointer;
-}
-
-.helm-icon img {
+.helm-thumb {
+  grid-column: span 2;
+  grid-row: span 2;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  pointer-events: all;
+  cursor: pointer;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+.helm-thumb:hover {
+  transform: scale(1.02);
+  border-color: #888;
 }
