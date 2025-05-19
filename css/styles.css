@@ -34,14 +34,15 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0 2rem 2rem;
-  background-color: #222;  /* slightly lighter than #1a1a1a */
-  border-left: 12.5px solid;  /* increased rarity bar thickness */
-  border-top: 4px solid #333;  /* thicker light grey borders */
+  background-color: #222;
+  border-left: 12.5px solid;
+  border-top: 4px solid #333;
   border-bottom: 4px solid #333;
   border-right: 4px solid #333;
   padding: 0.5rem 1rem 0.5rem 1rem;
   gap: 1.5rem;
   align-items: flex-start;
+  position: relative;
 }
 
 .armor-grid {
@@ -96,4 +97,19 @@ header {
 
 h2 {
   margin-bottom: 0.5rem;
+}
+
+.section-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.section-toggle:hover {
+  color: white;
 }
