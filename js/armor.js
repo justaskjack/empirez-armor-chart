@@ -1,53 +1,89 @@
-const rarityOrder = [
-  "Common", "Uncommon", "Rare", "Epic",
-  "Legendary", "Mythic", "Relic", "None"
-];
+const rarityOrder = ["Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythic", "Relic", "None"];
+let allData = [];
 
 fetch('data/armor.json')
   .then(res => res.json())
   .then(data => {
-    const container = document.getElementById('armor-sections');
-
-    rarityOrder.forEach(rarity => {
-      const section = document.createElement('section');
-      section.className = `armor-section bar-${rarity}`;
-
-      const grid = document.createElement('div');
-      grid.className = 'armor-grid';
-
-      let cards = data.filter(a => a.rarity === rarity);
-
-      if (rarity === 'Rare') {
-        while (cards.length < 6) {
-          cards.push(...cards.slice(0, Math.min(cards.length, 6 - cards.length)));
-        }
-      } else {
-        cards = cards.slice(0, 1);
-        while (cards.length < 3) {
-          cards.push(...cards.slice(0, 3 - cards.length));
-        }
-      }
-
-      cards.forEach(armor => {
-        const card = document.createElement('div');
-        card.className = 'armor-card';
-
-        card.innerHTML = `
-          <a href="images/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
-            <img src="images/${armor.image}" alt="${armor.name}" class="armor-img" />
-          </a>
-          <div class="armor-details">
-            <h2>${armor.name}</h2>
-            <p><strong>Type:</strong> ${armor.type}</p>
-            <p><strong>Protection Level:</strong> ${armor.protection}</p>
-            <p><strong>Rarity:</strong> <span class="rarity-value-${armor.rarity}">${armor.rarity}</span></p>
-            <p><strong>Location:</strong> ${armor.location}</p>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-
-      section.appendChild(grid);
-      container.appendChild(section);
-    });
+    allData = data;
+    renderSections(allData);
   });
+
+function renderSections(data) {
+  const container = document.getElementById('armor-sections');
+  container.innerHTML = '';
+
+  rarityOrder.forEach(rarity => {
+    const filteredCards = data.filter(item => item.rarity === rarity);
+    if (filteredCards.length === 0) return;
+
+    const section = document.createElement('section');
+    section.className = `armor-section bar-${rarity}`;
+    section.dataset.rarity = rarity;
+
+    const toggle = document.createElement('button');
+    toggle.textContent = `Toggle ${rarity} Section`;
+    toggle.style = "margin-bottom: 0.5rem; padding: 0.3rem 0.6rem;";
+    toggle.onclick = () => {
+      grid.style.display = grid.style.display === 'none' ? 'flex' : 'none';
+    };
+
+    const grid = document.createElement('div');
+    grid.className = 'armor-grid';
+
+    let cards = filteredCards;
+    if (rarity === 'Rare') {
+      while (cards.length < 6) cards.push(...cards.slice(0, 6 - cards.length));
+    } else {
+      while (cards.length < 3) cards.push(...cards.slice(0, 3 - cards.length));
+    }
+
+    cards.forEach(armor => {
+      const card = document.createElement('div');
+      card.className = 'armor-card';
+
+      card.innerHTML = `
+        <a href="images/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
+          <img src="images/${armor.image}" alt="${armor.name}" class="armor-img" />
+        </a>
+        <div class="armor-details">
+          <h2>${armor.name}</h2>
+          <p><strong>Type:</strong> ${armor.type}</p>
+          <p><strong>Protection Level:</strong> ${armor.protection}</p>
+          <p><strong>Rarity:</strong> <span class="rarity-value-${armor.rarity}">${armor.rarity}</span></p>
+          <p><strong>Location:</strong> ${armor.location}</p>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    section.appendChild(toggle);
+    section.appendChild(grid);
+    container.appendChild(section);
+  });
+}
+
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+document.getElementById('rarityFilter').addEventListener('change', applyFilters);
+document.getElementById('sortOption').addEventListener('change', applyFilters);
+
+function applyFilters() {
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const rarity = document.getElementById('rarityFilter').value;
+  const sortOption = document.getElementById('sortOption').value;
+
+  let filtered = allData.filter(a => (
+    (!rarity || a.rarity === rarity) &&
+    (
+      a.name.toLowerCase().includes(search) ||
+      a.type.toLowerCase().includes(search) ||
+      a.location.toLowerCase().includes(search)
+    )
+  ));
+
+  if (sortOption === 'name-asc') filtered.sort((a, b) => a.name.localeCompare(b.name));
+  if (sortOption === 'name-desc') filtered.sort((a, b) => b.name.localeCompare(a.name));
+  if (sortOption === 'protection-asc') filtered.sort((a, b) => a.protection - b.protection);
+  if (sortOption === 'protection-desc') filtered.sort((a, b) => b.protection - a.protection);
+
+  renderSections(filtered);
+}
