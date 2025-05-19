@@ -131,6 +131,7 @@ fetch('data/helms.json')
       const img = document.createElement('img');
       img.src = `images/${helm.thumb}`;
       img.alt = helm.name;
+      img.title = helm.name;
       img.className = 'helm-thumb';
 
       anchor.appendChild(img);
