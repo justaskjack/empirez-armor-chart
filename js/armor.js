@@ -27,7 +27,7 @@ function renderSections(data) {
     toggle.onclick = () => {
       const isHidden = grid.style.display === 'none';
       toggle.innerHTML = isHidden ? '&#8722;' : '+';
-      grid.style.display = grid.style.display === 'none' ? 'flex' : 'none';
+      grid.classList.toggle('collapsed');
     };
 
     const grid = document.createElement('div');
@@ -91,7 +91,6 @@ function applyFilters() {
   renderSections(filtered);
 }
 
-// Expand/Collapse All inline in controls
 const globalToggle = document.createElement('button');
 globalToggle.textContent = 'Collapse All';
 globalToggle.style = "margin-left: 1rem; padding: 0.5rem 1rem;";
@@ -101,8 +100,8 @@ globalToggle.addEventListener('click', () => {
   const grids = document.querySelectorAll('.armor-grid');
   const toggles = document.querySelectorAll('.section-toggle');
   grids.forEach((grid, idx) => {
-    grid.style.display = allCollapsed ? 'flex' : 'none';
-    toggles[idx].innerHTML = allCollapsed ? '&#8722;' : '+';
+    grid.classList.toggle('collapsed', !allCollapsed);
+    toggles[idx].innerHTML = !allCollapsed ? '+' : '&#8722;';
   });
   allCollapsed = !allCollapsed;
   globalToggle.textContent = allCollapsed ? 'Expand All' : 'Collapse All';
