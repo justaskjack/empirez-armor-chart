@@ -13,6 +13,27 @@
       <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
     </div>
   </header>
+  <div id="controls" style="padding: 1rem 2rem;">
+    <input type="text" id="searchInput" placeholder="Search by name, type, or location..." style="padding: 0.5rem; width: 250px;" />
+    <select id="rarityFilter" style="margin-left: 1rem; padding: 0.5rem;">
+      <option value="">All Rarities</option>
+      <option value="Common">Common</option>
+      <option value="Uncommon">Uncommon</option>
+      <option value="Rare">Rare</option>
+      <option value="Epic">Epic</option>
+      <option value="Legendary">Legendary</option>
+      <option value="Mythic">Mythic</option>
+      <option value="Relic">Relic</option>
+      <option value="None">None</option>
+    </select>
+    <select id="sortOption" style="margin-left: 1rem; padding: 0.5rem;">
+      <option value="">Sort By</option>
+      <option value="name-asc">Name (A-Z)</option>
+      <option value="name-desc">Name (Z-A)</option>
+      <option value="protection-asc">Protection Level (Low to High)</option>
+      <option value="protection-desc">Protection Level (High to Low)</option>
+    </select>
+  </div>
   <div id="armor-sections"></div>
   <script src="js/armor.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
