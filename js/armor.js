@@ -90,3 +90,22 @@ function applyFilters() {
 
   renderSections(filtered);
 }
+
+// Expand/Collapse All
+const globalToggle = document.createElement('button');
+globalToggle.textContent = 'Collapse All';
+globalToggle.style = "margin: 1rem 2rem; padding: 0.5rem 1rem;";
+let allCollapsed = false;
+
+globalToggle.addEventListener('click', () => {
+  const grids = document.querySelectorAll('.armor-grid');
+  const toggles = document.querySelectorAll('.section-toggle');
+  grids.forEach((grid, idx) => {
+    grid.style.display = allCollapsed ? 'flex' : 'none';
+    toggles[idx].innerHTML = allCollapsed ? '&#8722;' : '+';
+  });
+  allCollapsed = !allCollapsed;
+  globalToggle.textContent = allCollapsed ? 'Expand All' : 'Collapse All';
+});
+
+document.getElementById('controls').appendChild(globalToggle);
