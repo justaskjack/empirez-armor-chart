@@ -15,8 +15,18 @@ fetch('data/armor.json')
       const grid = document.createElement('div');
       grid.className = 'armor-grid';
 
-      const cards = data.filter(a => a.rarity === rarity).slice(0, 1);
-      while (cards.length < 3) cards.push(...cards.slice(0, 3 - cards.length));
+      let cards = data.filter(a => a.rarity === rarity);
+
+      if (rarity === 'Rare') {
+        while (cards.length < 6) {
+          cards.push(...cards.slice(0, Math.min(cards.length, 6 - cards.length)));
+        }
+      } else {
+        cards = cards.slice(0, 1);
+        while (cards.length < 3) {
+          cards.push(...cards.slice(0, 3 - cards.length));
+        }
+      }
 
       cards.forEach(armor => {
         const card = document.createElement('div');
@@ -30,7 +40,7 @@ fetch('data/armor.json')
             <h2>${armor.name}</h2>
             <p><strong>Type:</strong> ${armor.type}</p>
             <p><strong>Protection:</strong> ${armor.protection}</p>
-            <p><strong class="rarity-${armor.rarity}">Rarity:</strong> ${armor.rarity}</p>
+            <p><strong>Rarity:</strong> <span class="rarity-value-${armor.rarity}">${armor.rarity}</span></p>
             <p><strong>Location:</strong> ${armor.location}</p>
           </div>
         `;
