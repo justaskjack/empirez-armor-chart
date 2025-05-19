@@ -108,3 +108,32 @@ globalToggle.addEventListener('click', () => {
 });
 
 document.getElementById('controls').appendChild(globalToggle);
+
+
+fetch('data/helms.json')
+  .then(res => res.json())
+  .then(helms => {
+    const grid = document.getElementById('helmGrid');
+    for (let i = 0; i < 100; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'grid-cell';
+      grid.appendChild(cell);
+    }
+
+    helms.forEach(helm => {
+      const anchor = document.createElement('a');
+      anchor.href = `images/${helm.image}`;
+      anchor.setAttribute('data-lightbox', 'helm');
+      anchor.title = helm.name;
+      anchor.style.gridColumn = helm.col;
+      anchor.style.gridRow = helm.row;
+
+      const img = document.createElement('img');
+      img.src = `images/${helm.thumb}`;
+      img.alt = helm.name;
+      img.className = 'helm-thumb';
+
+      anchor.appendChild(img);
+      grid.appendChild(anchor);
+    });
+  });
