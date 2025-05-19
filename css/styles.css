@@ -34,11 +34,11 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0 2rem 2rem;
-  border-left: 10px solid; /* this will be overridden per rarity below */
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  padding-left: 1rem;
+  border-left: 10px solid;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  padding: 1rem 1rem 1rem 1rem;
   gap: 1.5rem;
   align-items: flex-start;
 }
@@ -58,7 +58,7 @@ header {
   gap: 1rem;
   align-items: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  width: 400px;
+  width: 480px;
   min-height: 220px;
   box-sizing: border-box;
 }
