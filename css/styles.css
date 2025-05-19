@@ -34,10 +34,11 @@ header {
   display: flex;
   flex-direction: column;
   margin: 2rem 0 2rem 2rem;
-  border-left: 10px solid;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-  border-right: 1px solid #666;
+  background-color: #222;  /* slightly lighter than #1a1a1a */
+  border-left: 12.5px solid;  /* increased rarity bar thickness */
+  border-top: 2px solid #666;  /* thicker light grey borders */
+  border-bottom: 2px solid #666;
+  border-right: 2px solid #666;
   padding: 1rem 1rem 1rem 1rem;
   gap: 1.5rem;
   align-items: flex-start;
@@ -84,14 +85,14 @@ header {
 .rarity-value-Relic { color: #ff66cc; }
 .rarity-value-None { color: #aaaaaa; }
 
-.bar-Common { border-left: 10px solid #ffffff; }
-.bar-Uncommon { border-left: 10px solid #00ff00; }
-.bar-Rare { border-left: 10px solid #3399ff; }
-.bar-Epic { border-left: 10px solid #9966ff; }
-.bar-Legendary { border-left: 10px solid #ffcc00; }
-.bar-Mythic { border-left: 10px solid #ff3300; }
-.bar-Relic { border-left: 10px solid #ff66cc; }
-.bar-None { border-left: 10px solid #aaaaaa; }
+.bar-Common { border-left: 12.5px solid #ffffff; }
+.bar-Uncommon { border-left: 12.5px solid #00ff00; }
+.bar-Rare { border-left: 12.5px solid #3399ff; }
+.bar-Epic { border-left: 12.5px solid #9966ff; }
+.bar-Legendary { border-left: 12.5px solid #ffcc00; }
+.bar-Mythic { border-left: 12.5px solid #ff3300; }
+.bar-Relic { border-left: 12.5px solid #ff66cc; }
+.bar-None { border-left: 12.5px solid #aaaaaa; }
 
 h2 {
   margin-bottom: 0.5rem;
