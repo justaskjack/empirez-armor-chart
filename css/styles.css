@@ -117,3 +117,14 @@ h2 {
 .armor-grid.collapsed {
   display: none !important;
 }
+.armor-section {
+  min-height: 48px;
+}
+#expandCollapseAll {
+  display: flex;
+  justify-content: flex-end;
+  margin: -1rem 2rem 1rem;
+}
+#expandCollapseAll button {
+  padding: 0.5rem 1rem;
+}
