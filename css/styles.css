@@ -36,10 +36,10 @@ header {
   margin: 2rem 0 2rem 2rem;
   background-color: #222;  /* slightly lighter than #1a1a1a */
   border-left: 12.5px solid;  /* increased rarity bar thickness */
-  border-top: 4px solid #444;  /* thicker light grey borders */
-  border-bottom: 4px solid #444;
-  border-right: 4px solid #444;
-  padding: 1rem 1rem 1rem 1rem;
+  border-top: 4px solid #333;  /* thicker light grey borders */
+  border-bottom: 4px solid #333;
+  border-right: 4px solid #333;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   gap: 1.5rem;
   align-items: flex-start;
 }
@@ -53,14 +53,14 @@ header {
 .armor-card {
   background: #2a2a2a;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   width: 480px;
-  min-height: 220px;
+  min-height: 180px;
   box-sizing: border-box;
 }
 
