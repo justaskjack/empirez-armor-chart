@@ -1,31 +1,88 @@
 
 [
   {
+    "name": "Mandalorian Helmet",
+    "thumb": "Mandalorian Helmet 01 - thumb.png",
+    "image": "Mandalorian Helmet 01.png",
+    "col": 1,
+    "row": 2
+  },
+    {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 01 - thumb.png",
+    "image": "Mando Helmet 01.png",
+    "col": 2,
+    "row": 2
+  },
+      {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 02 - thumb.png",
+    "image": "Mando Helmet 02.png",
+    "col": 3,
+    "row": 2
+  },
+      {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 03 - thumb.png",
+    "image": "Mando Helmet 03.png",
+    "col": 4,
+    "row": 2
+  },
+      {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 04 - thumb.png",
+    "image": "Mando Helmet 04.png",
+    "col": 5,
+    "row": 2
+  },
+      {
+    "name": "Mandalorian Helmet",
+    "thumb": "Mandalorian Helmet 02 - thumb.png",
+    "image": "Mandalorian Helmet 02.png",
+    "col": 6,
+    "row": 2
+  },
+        {
+    "name": "Boba Fett Helmet",
+    "thumb": "Boba Fett Helmet - thumb.png",
+    "image": "Boba Fett Helmet.png",
+    "col": 7,
+    "row": 2
+  },
+        {
+    "name": "Mandalorian Armorer Helmet",
+    "thumb": "Mandalorian Armorer Helmet - thumb.png",
+    "image": "Mandalorian Armorer Helmet.png",
+    "col": 8,
+    "row": 2
+  },
+        {
+    "name": "Moff Gideon Helmet",
+    "thumb": "Moff Gideon Helmet - thumb.png",
+    "image": "Moff Gideon Helmet.png",
+    "col": 9,
+    "row": 2
+  },
+        {
+    "name": "Stormtrooper Helmet",
+    "thumb": "Stormtrooper Helmet 01 - thumb.png",
+    "image": "Stormtrooper Helmet 01.png",
+    "col": 1,
+    "row": 3
+  },
+          {
+    "name": "Stormtrooper Helmet",
+    "thumb": "Stormtrooper Helmet 02 - thumb.png",
+    "image": "Stormtrooper Helmet 02.png",
+    "col": 2,
+    "row": 3
+  },
+    {
     "name": "Darth Maul Mask",
     "thumb": "Darth Maul Mask - thumb.png",
     "image": "Darth Maul Mask.png",
     "col": 1,
     "row": 1
   },
-  {
-    "name": "Darth Maul Mask",
-    "thumb": "Darth Maul Mask - thumb.png",
-    "image": "Darth Maul Mask.png",
-    "col": 4,
-    "row": 2
-  },
-  {
-    "name": "Darth Maul Mask",
-    "thumb": "Darth Maul Mask - thumb.png",
-    "image": "Darth Maul Mask.png",
-    "col": 6,
-    "row": 6
-  },
-  {
-    "name": "Darth Maul Mask",
-    "thumb": "Darth Maul Mask - thumb.png",
-    "image": "Darth Maul Mask.png",
-    "col": 8,
-    "row": 3
-  }
+
 ]
