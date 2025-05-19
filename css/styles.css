@@ -46,6 +46,7 @@ header {
 }
 
 .armor-grid {
+  transition: max-height 0.3s ease;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -100,6 +101,7 @@ h2 {
 }
 
 .section-toggle {
+  z-index: 2;
   position: absolute;
   top: 0.5rem;
   right: 0.75rem;
