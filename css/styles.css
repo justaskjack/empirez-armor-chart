@@ -7,10 +7,27 @@ body {
 
 header {
   background: #000;
-  padding: 20px 0;
-  text-align: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.title-left {
   font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.title-bold {
   font-weight: bold;
+}
+
+.title-secondary {
+  font-weight: normal;
+}
+
+.title-note {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-left: 8px;
 }
 
 .armor-section {
@@ -19,6 +36,7 @@ header {
   margin: 2rem auto;
   max-width: 1200px;
   border-left: 10px solid;
+  border: 1px solid black;
   padding-left: 1rem;
   gap: 1.5rem;
 }
@@ -38,7 +56,8 @@ header {
   gap: 1rem;
   align-items: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  width: 100%;
+  width: calc(33.333% - 1rem);
+  min-width: 300px;
   max-width: 400px;
   min-height: 220px;
   box-sizing: border-box;
@@ -56,14 +75,14 @@ header {
   flex: 1;
 }
 
-.rarity-Common { color: #ffffff; }
-.rarity-Uncommon { color: #00ff00; }
-.rarity-Rare { color: #3399ff; }
-.rarity-Epic { color: #9966ff; }
-.rarity-Legendary { color: #ffcc00; }
-.rarity-Mythic { color: #ff3300; }
-.rarity-Relic { color: #ff66cc; }
-.rarity-None { color: #aaaaaa; }
+.rarity-value-Common { color: #ffffff; }
+.rarity-value-Uncommon { color: #00ff00; }
+.rarity-value-Rare { color: #3399ff; }
+.rarity-value-Epic { color: #9966ff; }
+.rarity-value-Legendary { color: #ffcc00; }
+.rarity-value-Mythic { color: #ff3300; }
+.rarity-value-Relic { color: #ff66cc; }
+.rarity-value-None { color: #aaaaaa; }
 
 .bar-Common { border-color: #ffffff; }
 .bar-Uncommon { border-color: #00ff00; }
