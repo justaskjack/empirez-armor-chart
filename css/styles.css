@@ -120,11 +120,3 @@ h2 {
 .armor-section {
   min-height: 48px;
 }
-#expandCollapseAll {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.5rem 2rem 0 2rem;
-}
-#expandCollapseAll button {
-  padding: 0.5rem 1rem;
-}
