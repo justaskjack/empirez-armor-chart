@@ -39,7 +39,7 @@ fetch('data/armor.json')
           <div class="armor-details">
             <h2>${armor.name}</h2>
             <p><strong>Type:</strong> ${armor.type}</p>
-            <p><strong>Protection:</strong> ${armor.protection}</p>
+            <p><strong>Protection Level:</strong> ${armor.protection}</p>
             <p><strong>Rarity:</strong> <span class="rarity-value-${armor.rarity}">${armor.rarity}</span></p>
             <p><strong>Location:</strong> ${armor.location}</p>
           </div>
