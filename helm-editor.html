@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor - Drag and Drop</title>
-  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <title>Helm Grid Editor - Extended</title>
   <style>
     body {
       background: #1a1a1a;
@@ -11,10 +10,6 @@
       font-family: sans-serif;
       margin: 0;
       padding: 1rem;
-    }
-
-    h1 {
-      margin-bottom: 1rem;
     }
 
     .editor-container {
@@ -60,17 +55,14 @@
       cursor: pointer;
     }
 
-    button {
+    button, input[type="file"] {
       padding: 0.5rem 1rem;
       margin-top: 1rem;
       background: #444;
       border: none;
       color: white;
       cursor: pointer;
-    }
-
-    button:hover {
-      background: #666;
+      display: block;
     }
 
     #exportArea {
@@ -86,10 +78,11 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (Drag-and-Drop)</h1>
+  <h1>Helm Grid Editor (Drag/Drop + Delete + Import + Upload)</h1>
   <div class="editor-container">
     <div class="palette">
-      <img src="images/Darth Maul Mask - thumb.png" draggable="true" id="helmTemplate" title="Darth Maul Mask" />
+      <input type="file" id="uploadThumb" accept="image/*" />
+      <img src="images/Darth Maul Mask - thumb.png" draggable="true" title="Darth Maul Mask" data-name="Darth Maul Mask" data-image="Darth Maul Mask.png" />
     </div>
     <div class="grid" id="helmGrid"></div>
   </div>
@@ -98,7 +91,7 @@
 
   <script>
     const grid = document.getElementById('helmGrid');
-    const helmTemplate = document.getElementById('helmTemplate');
+    const palette = document.querySelector('.palette');
     const placedHelms = [];
 
     for (let i = 0; i < 100; i++) {
@@ -107,17 +100,17 @@
       grid.appendChild(cell);
     }
 
-    helmTemplate.addEventListener('dragstart', e => {
-      e.dataTransfer.setData("text/plain", JSON.stringify({
-        name: "Darth Maul Mask",
-        thumb: "Darth Maul Mask - thumb.png",
-        image: "Darth Maul Mask.png"
-      }));
+    palette.addEventListener('dragstart', e => {
+      if (e.target.tagName === 'IMG') {
+        e.dataTransfer.setData("text/plain", JSON.stringify({
+          name: e.target.dataset.name,
+          thumb: e.target.src,
+          image: e.target.dataset.image
+        }));
+      }
     });
 
-    grid.addEventListener('dragover', e => {
-      e.preventDefault();
-    });
+    grid.addEventListener('dragover', e => e.preventDefault());
 
     grid.addEventListener('drop', e => {
       e.preventDefault();
@@ -125,31 +118,72 @@
       const rect = grid.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-
       const col = Math.floor(x / 202) + 1;
       const row = Math.floor(y / 205) + 1;
 
       const img = document.createElement('img');
-      img.src = `images/${data.thumb}`;
+      img.src = data.thumb;
       img.className = 'helm';
       img.title = data.name;
       img.style.left = `${(col - 1) * 202}px`;
       img.style.top = `${(row - 1) * 205}px`;
 
-      grid.appendChild(img);
+      img.onclick = () => {
+        if (confirm("Delete this helm?")) {
+          grid.removeChild(img);
+          const index = placedHelms.findIndex(h => h.col === col && h.row === row && h.name === data.name);
+          if (index !== -1) placedHelms.splice(index, 1);
+        }
+      };
 
-      placedHelms.push({
-        name: data.name,
-        thumb: data.thumb,
-        image: data.image,
-        col: col,
-        row: row
-      });
+      grid.appendChild(img);
+      placedHelms.push({ name: data.name, thumb: data.thumb, image: data.image, col, row });
     });
 
     function exportJSON() {
       document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
     }
+
+    // Load helms.json on page load
+    fetch('data/helms.json')
+      .then(res => res.json())
+      .then(helms => {
+        helms.forEach(h => {
+          const img = document.createElement('img');
+          img.src = `images/${h.thumb}`;
+          img.className = 'helm';
+          img.title = h.name;
+          img.style.left = `${(h.col - 1) * 202}px`;
+          img.style.top = `${(h.row - 1) * 205}px`;
+
+          img.onclick = () => {
+            if (confirm("Delete this helm?")) {
+              grid.removeChild(img);
+              const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name);
+              if (index !== -1) placedHelms.splice(index, 1);
+            }
+          };
+
+          grid.appendChild(img);
+          placedHelms.push(h);
+        });
+      });
+
+    // Allow uploading new thumbnails into palette
+    document.getElementById('uploadThumb').addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      const name = prompt("Enter helm name:");
+      const image = prompt("Enter full image filename:");
+      const img = document.createElement('img');
+      img.src = url;
+      img.title = name;
+      img.dataset.name = name;
+      img.dataset.image = image;
+      img.draggable = true;
+      palette.appendChild(img);
+    });
   </script>
 </body>
 </html>
