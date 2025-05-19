@@ -1,3 +1,4 @@
+
 const rarityOrder = ["Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythic", "Relic", "None"];
 let allData = [];
 
@@ -91,10 +92,12 @@ function applyFilters() {
   renderSections(filtered);
 }
 
+
 // Expand/Collapse All
+const wrap = document.createElement('div');
+wrap.id = 'expandCollapseAll';
 const globalToggle = document.createElement('button');
 globalToggle.textContent = 'Collapse All';
-globalToggle.style = "margin: 1rem 2rem; padding: 0.5rem 1rem;";
 let allCollapsed = false;
 
 globalToggle.addEventListener('click', () => {
@@ -107,5 +110,5 @@ globalToggle.addEventListener('click', () => {
   allCollapsed = !allCollapsed;
   globalToggle.textContent = allCollapsed ? 'Expand All' : 'Collapse All';
 });
-
-document.getElementById('controls').appendChild(globalToggle);
+wrap.appendChild(globalToggle);
+document.getElementById('controls').appendChild(wrap);
