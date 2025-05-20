@@ -63,4 +63,12 @@
     "rarity": "None",
     "location": "Note: Full NBC or Chewy suit plus respirator required for toxic zones"
   }
+    {
+    "name": "NBC Suit (Yellow Variant)",
+    "image": "NBC Set 01.png",
+    "type": "Gas Protection",
+    "protection": 0,
+    "rarity": "None",
+    "location": "All tiers"
+  }
 ]
