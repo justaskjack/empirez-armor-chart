@@ -1,16 +1,16 @@
 [
   {
     "name": "",
-    "image": "Common.jpg",
+    "image": "Common.png",
     "type": "Vanilla DayZ gear, generic Star Wars armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers"
   },
   {
-    "name": "Character Armor",
-    "image": "example01.jpg",
-    "type": "Character armor",
+    "name": "",
+    "image": "Uncommon.png",
+    "type": "Character armor sets",
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tiers 2, 3 & 4"
