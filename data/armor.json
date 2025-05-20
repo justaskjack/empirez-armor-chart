@@ -1,8 +1,8 @@
 [
   {
-    "name": "Vanilla Clone Armor",
-    "image": "example01.jpg",
-    "type": "Vanilla armor, general Star Wars armor",
+    "name": "",
+    "image": "Common.jpg",
+    "type": "Vanilla DayZ gear, generic Star Wars armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers"
