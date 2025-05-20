@@ -2,82 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Armor Chart v1.9</title>
+  <title>EmpireZ Chart 2.0</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo"></div>
+    <nav>
+      <a href="#" data-page="armor" class="active">Armor Chart</a>
+      <a href="#" data-page="helm">Helm Collection</a>
+      <a href="#" data-page="collectables">Collectables</a>
+      <a href="#" data-page="lightsabers">Lightsabers</a>
+      <a href="#" data-page="vehicles">Vehicles</a>
+      <a href="#" data-page="weapons">Weapons</a>
+      <a href="#" data-page="poi">POI</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="title-left">
-    <span class="title-bold">Armor Chart v1.9</span>
-    <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
-  </div>
-</header>
-
-<nav>
-  <ul class="nav-tabs">
-    <li class="tab" onclick="openPage('page-armor')">Armor Chart</li>
-    <li class="tab" onclick="openPage('page-helm')">Helm Collection</li>
-    <li class="tab" onclick="openPage('page-weapons')">Weapons</li>
-    <li class="tab" onclick="openPage('page-vehicles')">Vehicles</li>
-    <li class="tab" onclick="openPage('page-lightsabers')">Lightsabers</li>
-    <li class="tab" onclick="openPage('page-collectables')">Collectables</li>
-    <li class="tab" onclick="openPage('page-poi')">Points of Interest</li>
-  </ul>
-</nav>
-
-<main>
-  <div id="page-armor">
-    <div id="armor-sections">
-      <!-- Armor cards render here from JS -->
+  
+  <div id="page-armor" class="page active">
+    <header>
+      <div class="title-left">
+        <span class="title-bold">Armor Chart</span>
+        <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
+      </div>
+    </header>
+    
+    <div id="controls" style="padding: 1rem 2rem;">
+      <input type="text" id="searchInput" placeholder="Search by name, type, or location..." style="padding: 0.5rem; width: 250px;" />
+      <select id="rarityFilter" style="margin-left: 1rem; padding: 0.5rem;">
+        <option value="">All Rarities</option>
+        <option value="Common">Common</option>
+        <option value="Uncommon">Uncommon</option>
+        <option value="Rare">Rare</option>
+        <option value="Epic">Epic</option>
+        <option value="Legendary">Legendary</option>
+        <option value="Mythic">Mythic</option>
+        <option value="Relic">Relic</option>
+        <option value="None">None</option>
+      </select>
+      <select id="sortOption" style="margin-left: 1rem; padding: 0.5rem;">
+        <option value="">Sort By</option>
+        <option value="name-asc">Name (A-Z)</option>
+        <option value="name-desc">Name (Z-A)</option>
+        <option value="protection-asc">Protection Level (Low to High)</option>
+        <option value="protection-desc">Protection Level (High to Low)</option>
+      </select>
     </div>
+    <div id="armor-sections"></div>
   </div>
 
-  <div id="page-helm" style="display:none;">
-    <p>Helm Collection content goes here.</p>
-  </div>
+  
+<div id="page-helm" class="page active">
+  <header>
+    <div class="title-left">
+      <span class="title-bold">Helm Collection</span>
+      <span class="title-secondary"> | Grid-based Helm Inventory <span class="title-note">(click to enlarge)</span></span>
+    </div>
+  </header>
+  <div class="helm-grid" id="helmGrid"></div>
+</div>
 
-  <div id="page-weapons" style="display:none;">
-    <p>Weapons content goes here.</p>
-  </div>
+  <div id="page-collectables" class="page page-coming">Coming Soon</div>
+  <div id="page-lightsabers" class="page page-coming">Coming Soon</div>
+  <div id="page-vehicles" class="page page-coming">Coming Soon</div>
+  <div id="page-weapons" class="page page-coming">Coming Soon</div>
+  <div id="page-poi" class="page page-coming">Coming Soon</div>
 
-  <div id="page-vehicles" style="display:none;">
-    <p>Vehicles content goes here.</p>
-  </div>
-
-  <div id="page-lightsabers" style="display:none;">
-    <p>Lightsabers content goes here.</p>
-  </div>
-
-  <div id="page-collectables" style="display:none;">
-    <p>Collectables content goes here.</p>
-  </div>
-
-  <div id="page-poi" style="display:none;">
-    <p>Points of Interest content goes here.</p>
-  </div>
-</main>
-
-<script src="js/armor.js" defer></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/armor.js"></script>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        link.classList.add('active');
+        document.getElementById('page-' + link.dataset.page).classList.add('active');
+      });
+    });
+  </script>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
   function openPage(pageId) {
-    const sections = document.querySelectorAll('[id^="page-"]');
-    sections.forEach(section => section.style.display = 'none');
+    const pages = document.querySelectorAll('[id^="page-"]');
+    pages.forEach(p => p.style.display = 'none');
 
-    const target = document.getElementById(pageId);
+    const target = document.getElementById('page-' + pageId);
     if (target) target.style.display = 'block';
 
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('nav a[data-page]').forEach(link => {
+      link.classList.remove('active');
+    });
 
-    const activeTab = document.querySelector(`[onclick="openPage('${pageId}')"]`);
+    const activeTab = document.querySelector(`nav a[data-page="${pageId}"]`);
     if (activeTab) activeTab.classList.add('active');
   }
 
-  window.onload = function () {
-    openPage('page-armor');
-  };
+  document.querySelectorAll('nav a[data-page]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const page = this.getAttribute('data-page');
+      openPage(page);
+    });
+  });
+
+  openPage('armor');
+});
 </script>
 
 </body>
