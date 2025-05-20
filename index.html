@@ -72,17 +72,7 @@
 
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/armor.js"></script>
-  <script>
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        link.classList.add('active');
-        document.getElementById('page-' + link.dataset.page).classList.add('active');
-      });
-    });
-  </script>
+  
 
 <script>
 function openPage(pageId) {
@@ -92,7 +82,7 @@ function openPage(pageId) {
   if (target) target.style.display = 'block';
 }
 
-// Hide all and show armor page on first load
+// Ensure only armor page is shown on first load
 document.addEventListener('DOMContentLoaded', function () {
   openPage('page-armor');
 });
