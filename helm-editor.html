@@ -181,12 +181,14 @@
 
     function copyJSON() {
       const text = document.getElementById('exportArea').textContent;
-      navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
+      navigator.clipboard.writeText(text).then(() => alert('JSON copied to clipboard.')).catch(err => console.error('Clipboard error', err));
     }
 
-    fetch('data/helms.json')
-      .then(res => res.json())
+    window.addEventListener('DOMContentLoaded', () => {
+fetch('data/helms.json')
+      .then(res => { console.log('helms.json fetched'); return res.json(); })
       .then(helms => {
+        console.log('helms loaded:', helms);
         helms.forEach(h => {
           const img = document.createElement('img');
           img.src = 'images/' + h.thumb;
@@ -235,3 +237,5 @@
   </script>
 </body>
 </html>
+
+}); // End DOMContentLoaded wrapper
