@@ -82,10 +82,9 @@ function openPage(pageId) {
   if (target) target.style.display = 'block';
 }
 
-// Ensure only armor page is shown on first load
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function() {
   openPage('page-armor');
-});
+};
 </script>
 
 </body>
