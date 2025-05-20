@@ -95,6 +95,7 @@
     const grid = document.getElementById('helmGrid');
     const palette = document.querySelector('.palette');
     const placedHelms = [];
+    let movingHelm = null;
 
     for (let i = 0; i < 100; i++) {
       const cell = document.createElement('div');
@@ -108,28 +109,20 @@
           name: e.target.dataset.name,
           thumb: e.target.src,
           image: e.target.dataset.image,
-          fromPalette: true,
-          element: e.target
+          fromPalette: true
         }));
       }
     });
 
     grid.addEventListener('dragstart', e => {
       if (e.target.classList.contains('helm')) {
+        movingHelm = e.target;
         e.dataTransfer.setData("text/plain", JSON.stringify({
-          name: e.target.dataset.name,
-          thumb: e.target.src,
-          image: e.target.dataset.image,
-          fromPalette: false,
-          element: e.target
+          name: movingHelm.dataset.name,
+          thumb: movingHelm.src,
+          image: movingHelm.dataset.image,
+          fromPalette: false
         }));
-        e.target.remove(); // remove temporarily to reposition
-        const index = placedHelms.findIndex(h =>
-          h.name === e.target.dataset.name &&
-          h.col === parseInt(e.target.dataset.col) &&
-          h.row === parseInt(e.target.dataset.row)
-        );
-        if (index !== -1) placedHelms.splice(index, 1);
       }
     });
 
@@ -143,6 +136,8 @@
       const y = e.clientY - rect.top;
       const col = Math.floor(x / 202) + 1;
       const row = Math.floor(y / 205) + 1;
+
+      if (movingHelm) grid.removeChild(movingHelm);
 
       const img = document.createElement('img');
       img.src = data.thumb;
@@ -167,13 +162,13 @@
       grid.appendChild(img);
       placedHelms.push({ name: data.name, thumb: data.thumb, image: data.image, col, row });
 
-      // remove from palette if it came from there
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
-        const thumbUrl = data.thumb;
-        const thumbImg = images.find(i => i.src === thumbUrl);
+        const thumbImg = images.find(i => i.src === data.thumb);
         if (thumbImg) thumbImg.remove();
       }
+
+      movingHelm = null;
     });
 
     function exportJSON() {
