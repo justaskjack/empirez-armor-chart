@@ -150,6 +150,7 @@
       img.dataset.image = data.image;
       img.dataset.col = col;
       img.dataset.row = row;
+      img.dataset.thumbName = originalName;
       img.draggable = true;
       img.style.left = `${(col - 1) * 202}px`;
       img.style.top = `${(row - 1) * 205}px`;
@@ -163,7 +164,7 @@
       };
 
       grid.appendChild(img);
-      placedHelms.push({ name: data.name, thumb: data.thumb, image: data.image, col, row });
+      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName, image: data.image, col, row });
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
@@ -195,7 +196,8 @@
           img.dataset.image = h.image;
           img.dataset.col = h.col;
           img.dataset.row = h.row;
-          img.draggable = true;
+          img.dataset.thumbName = originalName;
+      img.draggable = true;
           img.style.left = `${(h.col - 1) * 202}px`;
           img.style.top = `${(h.row - 1) * 205}px`;
 
@@ -216,6 +218,7 @@
       const file = e.target.files[0];
       if (!file) return;
       const url = URL.createObjectURL(file);
+      const originalName = file.name;
       const filename = file.name;
       const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
       const image = filename.replace(" - thumb", "");
@@ -225,6 +228,7 @@
       img.title = name;
       img.dataset.name = name;
       img.dataset.image = image;
+      img.dataset.thumbName = originalName;
       img.draggable = true;
       palette.appendChild(img);
     });
