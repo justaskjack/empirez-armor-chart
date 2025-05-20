@@ -220,10 +220,3 @@ header.navbar {
   transform: scale(1.02);
   border-color: #888;
 }
-
-
-.tab.active {
-  font-weight: bold;
-  color: #fff;
-  border-bottom: 2px solid #888;
-}
