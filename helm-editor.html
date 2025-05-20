@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor - Final</title>
+  <title>Helm Grid Editor v1.1 - Debugging</title>
   <style>
     body {
       background: #1a1a1a;
@@ -184,36 +184,7 @@
       navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
     }
 
-    window.addEventListener('DOMContentLoaded', () => {
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/helms.json')
-      .then(res => { console.log('helms.json fetched'); return res.json(); })
-      .then(helms => {
-        console.log('helms loaded:', helms);
-    helms.forEach(h => {
-          const img = document.createElement('img');
-          img.src = 'images/' + h.thumb;
-          img.className = 'helm';
-          img.title = h.name;
-          img.dataset.name = h.name;
-          img.dataset.image = h.image;
-          img.dataset.col = h.col;
-          img.dataset.row = h.row;
-          img.dataset.thumbName = originalName;
-      img.draggable = true;
-          img.style.left = `${(h.col - 1) * 202}px`;
-          img.style.top = `${(h.row - 1) * 205}px`;
-
-          img.onclick = () => {
-            if (confirm("Delete this helm?")) {
-              grid.removeChild(img);
-              const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name && p.thumb === h.thumb);
-              if (index !== -1) placedHelms.splice(index, 1);
-            }
-          };
-
-          grid.appendChild(img);
-          placedHelms.push(h);
+    
         });
       });
 
@@ -239,4 +210,43 @@ window.addEventListener('DOMContentLoaded', () => {
 </body>
 </html>
 
+<script>
+
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('data/helms.json')
+    .then(res => {
+      console.log('helms.json fetched');
+      return res.json();
+    })
+    .then(helms => {
+      console.log('helms loaded:', helms);
+      helms.forEach(h => {
+        const img = document.createElement('img');
+        img.src = 'images/' + h.thumb;
+        img.className = 'helm';
+        img.title = h.name;
+        img.dataset.name = h.name;
+        img.dataset.image = h.image;
+        img.dataset.col = h.col;
+        img.dataset.row = h.row;
+        img.draggable = true;
+        img.style.left = ((h.col - 1) * 202) + 'px';
+        img.style.top = ((h.row - 1) * 205) + 'px';
+
+        img.onclick = () => {
+          if (confirm("Delete this helm?")) {
+            document.getElementById('helmGrid').removeChild(img);
+            const index = placedHelms.findIndex(p =>
+              p.col === h.col && p.row === h.row && p.name === h.name
+            );
+            if (index !== -1) placedHelms.splice(index, 1);
+          }
+        };
+
+        document.getElementById('helmGrid').appendChild(img);
+        placedHelms.push(h);
+      });
+    });
 });
+
+</script>
