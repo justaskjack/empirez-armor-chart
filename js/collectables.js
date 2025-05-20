@@ -1,0 +1,41 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("collectable-row");
+  if (!container) return;
+
+  fetch("data/collectables.json")
+    .then(res => res.json())
+    .then(items => {
+      container.innerHTML = "";
+      items.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "armor-card";
+
+        const imageLink = document.createElement("a");
+        imageLink.href = `images/${item.image}`;
+        imageLink.setAttribute("data-lightbox", "collectables");
+        imageLink.setAttribute("data-title", item.name);
+
+        const img = document.createElement("img");
+        img.src = `images/${item.image}`;
+        img.alt = item.name;
+        img.className = "armor-img";
+        imageLink.appendChild(img);
+
+        const content = document.createElement("div");
+        content.className = "armor-card-details";
+
+        const name = document.createElement("p");
+        name.innerHTML = `<strong>Name:</strong> ${item.name}`;
+
+        const price = document.createElement("p");
+        price.innerHTML = `<strong>Sell Price:</strong> ${item.sellPrice}`;
+
+        content.appendChild(name);
+        content.appendChild(price);
+
+        card.appendChild(imageLink);
+        card.appendChild(content);
+        container.appendChild(card);
+      });
+    });
+});
