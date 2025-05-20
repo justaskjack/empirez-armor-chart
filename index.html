@@ -24,7 +24,7 @@
   <div id="page-armor" class="page active">
     <header>
       <div class="title-left">
-        <span class="title-bold">Armor Chart</span>
+        <span class="title-bold">Armor Chart 1.7</span>
         <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
       </div>
     </header>
@@ -72,17 +72,7 @@
 
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/armor.js"></script>
-  <script>
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        link.classList.add('active');
-        document.getElementById('page-' + link.dataset.page).classList.add('active');
-      });
-    });
-  </script>
+  
 
 <script>
 function openPage(pageId) {
