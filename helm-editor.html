@@ -143,6 +143,7 @@
       const img = document.createElement('img');
       img.src = data.thumb;
       img.className = 'helm';
+            img.style.boxSizing = 'border-box';
       img.title = data.name;
       img.dataset.name = data.name;
       img.dataset.image = data.image;
@@ -161,7 +162,7 @@
       };
 
       grid.appendChild(img);
-      const thumbFilename = data.thumbName || data.thumb.split('/').pop();
+      const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
       placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
 
       if (data.fromPalette) {
@@ -194,6 +195,7 @@
             const img = document.createElement('img');
             img.src = 'images/' + h.thumb;
             img.className = 'helm';
+            img.style.boxSizing = 'border-box';
             img.title = h.name;
             img.dataset.name = h.name;
             img.dataset.image = h.image;
