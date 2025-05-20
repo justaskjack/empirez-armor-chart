@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Ancient Relic",
+    "sellPrice": "500 Credits",
+    "image": "collectable01.jpg"
+  },
+  {
+    "name": "Wookiee Pendant",
+    "sellPrice": "300 Credits",
+    "image": "collectable02.jpg"
+  }
+]
