@@ -24,7 +24,7 @@
   <div id="page-armor" class="page active">
     <header>
       <div class="title-left">
-        <span class="title-bold">Armor Chart</span>
+        <span class="title-bold">Armor Chart v1.5</span>
         <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
       </div>
     </header>
@@ -82,9 +82,10 @@ function openPage(pageId) {
   if (target) target.style.display = 'block';
 }
 
-window.onload = function() {
+// Ensure only armor page is shown on first load
+document.addEventListener('DOMContentLoaded', function () {
   openPage('page-armor');
-};
+});
 </script>
 
 </body>
