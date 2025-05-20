@@ -355,5 +355,173 @@
     "image": "Jar Jar Binks Mask.png",
     "col": 2,
     "row": 9
+  },
+  {
+    "name": "DeathTrooper Helmet",
+    "thumb": "DeathTrooper Helmet - thumb.png",
+    "image": "DeathTrooper Helmet.png",
+    "col": 9,
+    "row": 3
+  },
+  {
+    "name": "Mudtrooper Gasmask",
+    "thumb": "Mudtrooper Gasmask - thumb.png",
+    "image": "Mudtrooper Gasmask.png",
+    "col": 8,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 05",
+    "thumb": "Stormtrooper Helmet 05 - thumb.png",
+    "image": "Stormtrooper Helmet 05.png",
+    "col": 7,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 04",
+    "thumb": "Stormtrooper Helmet 04 - thumb.png",
+    "image": "Stormtrooper Helmet 04.png",
+    "col": 6,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 03",
+    "thumb": "Stormtrooper Helmet 03 - thumb.png",
+    "image": "Stormtrooper Helmet 03.png",
+    "col": 5,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Medic 01",
+    "thumb": "Stormtrooper Medic 01 - thumb.png",
+    "image": "Stormtrooper Medic 01.png",
+    "col": 4,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet",
+    "thumb": "Stormtrooper Helmet 02 - thumb.png",
+    "image": "Stormtrooper Helmet 02.png",
+    "col": 3,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet",
+    "thumb": "Stormtrooper Helmet 01 - thumb.png",
+    "image": "Stormtrooper Helmet 01.png",
+    "col": 2,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 06",
+    "thumb": "Stormtrooper Helmet 06 - thumb.png",
+    "image": "Stormtrooper Helmet 06.png",
+    "col": 1,
+    "row": 3
+  },
+  {
+    "name": "Barc Trooper Helmet 01",
+    "thumb": "Barc Trooper Helmet 01 - thumb.png",
+    "image": "Barc Trooper Helmet 01.png",
+    "col": 9,
+    "row": 5
+  },
+  {
+    "name": "Biker Scout Helmet 01",
+    "thumb": "Biker Scout Helmet 01 - thumb.png",
+    "image": "Biker Scout Helmet 01.png",
+    "col": 8,
+    "row": 5
+  },
+  {
+    "name": "Biker Scout Helmet 02",
+    "thumb": "Biker Scout Helmet 02 - thumb.png",
+    "image": "Biker Scout Helmet 02.png",
+    "col": 7,
+    "row": 5
+  },
+  {
+    "name": "OrcHelm 3",
+    "thumb": "OrcHelm 3 - thumb.png",
+    "image": "OrcHelm 3.png",
+    "col": 1,
+    "row": 10
+  },
+  {
+    "name": "OrcHelm 2",
+    "thumb": "OrcHelm 2 - thumb.png",
+    "image": "OrcHelm 2.png",
+    "col": 2,
+    "row": 10
+  },
+  {
+    "name": "Rebel Technician Helmet",
+    "thumb": "Rebel Technician Helmet - thumb.png",
+    "image": "Rebel Technician Helmet.png",
+    "col": 6,
+    "row": 6
+  },
+  {
+    "name": "Rebel Technician Helmet",
+    "thumb": "Rebel Technician Helmet - thumb.png",
+    "image": "Rebel Technician Helmet.png",
+    "col": 7,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 01",
+    "thumb": "Rebel Scout Helmet 01 - thumb.png",
+    "image": "Rebel Scout Helmet 01.png",
+    "col": 6,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 01",
+    "thumb": "Rebel Scout Helmet 01 - thumb.png",
+    "image": "Rebel Scout Helmet 01.png",
+    "col": 5,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 02",
+    "thumb": "Rebel Scout Helmet 02 - thumb.png",
+    "image": "Rebel Scout Helmet 02.png",
+    "col": 6,
+    "row": 6
+  },
+  {
+    "name": "Pilot Helmet",
+    "thumb": "Pilot Helmet - thumb.png",
+    "image": "Pilot Helmet.png",
+    "col": 4,
+    "row": 6
+  },
+  {
+    "name": "Tusken Helmet 03",
+    "thumb": "Tusken Helmet 03 - thumb.png",
+    "image": "Tusken Helmet 03.png",
+    "col": 4,
+    "row": 8
+  },
+  {
+    "name": "Tusken Helmet 01",
+    "thumb": "Tusken Helmet 01 - thumb.png",
+    "image": "Tusken Helmet 01.png",
+    "col": 6,
+    "row": 8
+  },
+  {
+    "name": "Tusken Helmet 02",
+    "thumb": "Tusken Helmet 02 - thumb.png",
+    "image": "Tusken Helmet 02.png",
+    "col": 5,
+    "row": 8
+  },
+  {
+    "name": "Arc Trooper Phase 2 01",
+    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
+    "image": "Arc Trooper Phase 2 01.png",
+    "col": 8,
+    "row": 4
   }
 ]
