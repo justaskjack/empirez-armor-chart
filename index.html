@@ -83,5 +83,15 @@
       });
     });
   </script>
+
+<script>
+function openPage(pageId) {
+  const sections = document.querySelectorAll('[id^="page-"]');
+  sections.forEach(section => section.style.display = 'none');
+  const target = document.getElementById(pageId);
+  if (target) target.style.display = 'block';
+}
+</script>
+
 </body>
 </html>
