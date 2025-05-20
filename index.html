@@ -91,6 +91,11 @@ function openPage(pageId) {
   const target = document.getElementById(pageId);
   if (target) target.style.display = 'block';
 }
+
+// Hide all and show armor page on first load
+document.addEventListener('DOMContentLoaded', function () {
+  openPage('page-armor');
+});
 </script>
 
 </body>
