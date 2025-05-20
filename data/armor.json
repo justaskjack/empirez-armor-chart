@@ -16,48 +16,48 @@
     "location": "Tiers 2, 3 & 4"
   },
   {
-    "name": "Special Troop Armor",
-    "image": "example01.jpg",
+    "name": "",
+    "image": "Rare.png",
     "type": "Special Troop armor",
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 3, 4 & 5"
   },
   {
-    "name": "Special Clone Armor",
-    "image": "example01.jpg",
+    "name": "",
+    "image": "Epic.png",
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
     "location": "Tiers 3 & 5"
   },
   {
-    "name": "Camo / Bad Batch Armor",
-    "image": "example01.jpg",
+    "name": "",
+    "image": "Legendary.png",
     "type": "Camo armor, Bad Batch armor",
     "protection": 1,
     "rarity": "Legendary",
     "location": "Tier 5"
   },
   {
-    "name": "Republic Commando Armor",
-    "image": "example01.jpg",
+    "name": "",
+    "image": "Mythic.png",
     "type": "Republic Commando, Sith Trooper armor, Revan",
     "protection": 2,
     "rarity": "Mythic",
     "location": "Tiers 3, 5 & 6"
   },
   {
-    "name": "Jedi / Kylo / Vader Set",
-    "image": "example01.jpg",
-    "type": "Jedi, Kylo Ren, Darth Vader armor sets",
+    "name": "",
+    "image": "Relic.png",
+    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple / Jedi Hideout"
   },
   {
-    "name": "NBC / Chewy Set",
-    "image": "example01.jpg",
+    "name": "",
+    "image": "Gas.png",
     "type": "NBC Clothing, Chewy set",
     "protection": 0,
     "rarity": "None",
