@@ -164,10 +164,7 @@
       };
 
       grid.appendChild(img);
-      
-      const thumbFilename = data.thumbName || data.thumb.split('/').pop();
-      placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
-    
+      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName, image: data.image, col, row });
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
@@ -192,7 +189,7 @@
       .then(helms => {
         helms.forEach(h => {
           const img = document.createElement('img');
-          img.src = `images/${h.thumb}`;
+          img.src = 'images/' + h.thumb;
           img.className = 'helm';
           img.title = h.name;
           img.dataset.name = h.name;
@@ -207,7 +204,7 @@
           img.onclick = () => {
             if (confirm("Delete this helm?")) {
               grid.removeChild(img);
-              const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name);
+              const index = placedHelms.findIndex(p => p.col === h.col && p.row === h.row && p.name === h.name && p.thumb === h.thumb);
               if (index !== -1) placedHelms.splice(index, 1);
             }
           };
