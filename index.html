@@ -24,7 +24,7 @@
   <div id="page-armor" class="page active">
     <header>
       <div class="title-left">
-        <span class="title-bold">Armor Chart v1.5</span>
+        <span class="title-bold">Armor Chart</span>
         <span class="title-secondary"> | Type - Protection Level - Rarity - Location <span class="title-note">(based on loot tier map)</span></span>
       </div>
     </header>
@@ -72,20 +72,36 @@
 
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/armor.js"></script>
-  
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        link.classList.add('active');
+        document.getElementById('page-' + link.dataset.page).classList.add('active');
+      });
+    });
+  </script>
 
 <script>
 function openPage(pageId) {
   const sections = document.querySelectorAll('[id^="page-"]');
   sections.forEach(section => section.style.display = 'none');
+
   const target = document.getElementById(pageId);
   if (target) target.style.display = 'block';
+
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => tab.classList.remove('active'));
+
+  const activeTab = document.querySelector(`[onclick="openPage('${pageId}')"]`);
+  if (activeTab) activeTab.classList.add('active');
 }
 
-// Ensure only armor page is shown on first load
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function () {
   openPage('page-armor');
-});
+};
 </script>
 
 </body>
