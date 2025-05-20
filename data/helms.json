@@ -1,4 +1,3 @@
-
 [
   {
     "name": "Mandalorian Helmet",
@@ -104,6 +103,236 @@
     "image": "Stormtrooper Helmet 04.png",
     "col": 5,
     "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 04",
+    "thumb": "https://justaskjack.github.io/empirez-armor-chart/images/Stormtrooper%20Helmet%2004%20-%20thumb.png",
+    "image": "Stormtrooper Helmet 04.png",
+    "col": 6,
+    "row": 4
+  },
+  {
+    "name": "Stormtrooper Helmet 04",
+    "thumb": "https://justaskjack.github.io/empirez-armor-chart/images/Stormtrooper%20Helmet%2004%20-%20thumb.png",
+    "image": "Stormtrooper Helmet 04.png",
+    "col": 5,
+    "row": 3
+  },
+  {
+    "name": "Stormtrooper Helmet 05",
+    "thumb": "blob:https://justaskjack.github.io/3d097d4f-a053-415f-8120-cb5429bf8814",
+    "image": "Stormtrooper Helmet 05.png",
+    "col": 6,
+    "row": 3
+  },
+  {
+    "name": "Mudtrooper Gasmask",
+    "thumb": "blob:https://justaskjack.github.io/01de9e7e-5501-4613-8d62-9e667e648eb0",
+    "image": "Mudtrooper Gasmask.png",
+    "col": 7,
+    "row": 3
+  },
+  {
+    "name": "DeathTrooper Helmet",
+    "thumb": "blob:https://justaskjack.github.io/6c951327-76cf-4366-a8c7-6f0d51167c70",
+    "image": "DeathTrooper Helmet.png",
+    "col": 8,
+    "row": 3
+  },
+  {
+    "name": "Clone Trooper Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/312a7db7-c817-411a-857f-d8ee5f1e2860",
+    "image": "Clone Trooper Helmet 01.png",
+    "col": 1,
+    "row": 4
+  },
+  {
+    "name": "Clone Trooper Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/70f9badf-649e-43a3-9358-f4514b2d440a",
+    "image": "Clone Trooper Helmet 02.png",
+    "col": 2,
+    "row": 4
+  },
+  {
+    "name": "Phase1 Clone Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/f283b67e-9745-4412-8207-b06e0a84957f",
+    "image": "Phase1 Clone Helmet 01.png",
+    "col": 3,
+    "row": 4
+  },
+  {
+    "name": "Phase1 Clone Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/ff1a56a2-28be-4ce9-ab30-8ba4b2f6e8e8",
+    "image": "Phase1 Clone Helmet 02.png",
+    "col": 4,
+    "row": 4
+  },
+  {
+    "name": "Shock Commander Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/b9b9a5d1-f6e2-4630-8c4d-2708516bbf0c",
+    "image": "Shock Commander Helmet 01.png",
+    "col": 5,
+    "row": 4
+  },
+  {
+    "name": "Shock Trooper Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/3202f5e1-f9dc-4c7b-868a-06b7d1fd7fff",
+    "image": "Shock Trooper Helmet 01.png",
+    "col": 6,
+    "row": 4
+  },
+  {
+    "name": "Airborne Clone Helmet",
+    "thumb": "blob:https://justaskjack.github.io/d341c5d3-3d7c-4e3c-8e7d-db548fa14cc2",
+    "image": "Airborne Clone Helmet.png",
+    "col": 7,
+    "row": 4
+  },
+  {
+    "name": "Imperial Gunner Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/9e9e44ce-b937-4786-81b4-4392dfee89bc",
+    "image": "Imperial Gunner Helmet 01.png",
+    "col": 1,
+    "row": 5
+  },
+  {
+    "name": "Imperial Gunner Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/bc0e79c7-0fa1-426d-9884-f20569611c7a",
+    "image": "Imperial Gunner Helmet 02.png",
+    "col": 2,
+    "row": 5
+  },
+  {
+    "name": "Imperial Officer Hat 01",
+    "thumb": "blob:https://justaskjack.github.io/ba56ead2-152f-4677-8601-598dda9765a7",
+    "image": "Imperial Officer Hat 01.png",
+    "col": 3,
+    "row": 5
+  },
+  {
+    "name": "Imperial Officer Hat 02",
+    "thumb": "blob:https://justaskjack.github.io/dbd37f97-af01-405c-a368-8387be29ec9d",
+    "image": "Imperial Officer Hat 02.png",
+    "col": 4,
+    "row": 5
+  },
+  {
+    "name": "Officer Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/61cf8d43-73b8-45f7-8be5-2948f6e72b29",
+    "image": "Officer Helmet 02.png",
+    "col": 5,
+    "row": 5
+  },
+  {
+    "name": "Officer Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/6305c743-2b29-4300-8a00-13ac3363aa93",
+    "image": "Officer Helmet 01.png",
+    "col": 6,
+    "row": 5
+  },
+  {
+    "name": "Biker Scout Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/cfd9c144-ec0b-4c13-b819-da0b03eaf4c4",
+    "image": "Biker Scout Helmet 01.png",
+    "col": 7,
+    "row": 5
+  },
+  {
+    "name": "Barc Trooper Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/71ab292f-e99f-43da-9641-46ef68468db1",
+    "image": "Barc Trooper Helmet 01.png",
+    "col": 8,
+    "row": 5
+  },
+  {
+    "name": "Galactic Marine Helmet",
+    "thumb": "blob:https://justaskjack.github.io/9a676716-926d-4e48-8ef3-854f8a7a1234",
+    "image": "Galactic Marine Helmet.png",
+    "col": 10,
+    "row": 4
+  },
+  {
+    "name": "Pod Racer Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/6503f7b2-6239-4e89-9c20-a73db0b4db9d",
+    "image": "Pod Racer Helmet 01.png",
+    "col": 1,
+    "row": 6
+  },
+  {
+    "name": "Pod Racer Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/a182c2f4-4c2d-4328-b79f-308653df3388",
+    "image": "Pod Racer Helmet 02.png",
+    "col": 2,
+    "row": 6
+  },
+  {
+    "name": "Rebel Pilot Helmet",
+    "thumb": "blob:https://justaskjack.github.io/5f9cd097-9e11-45a1-a63c-d10576db6040",
+    "image": "Rebel Pilot Helmet.png",
+    "col": 3,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/a43ca5cb-931f-445e-b38f-bfabbd99c197",
+    "image": "Rebel Scout Helmet 01.png",
+    "col": 4,
+    "row": 6
+  },
+  {
+    "name": "Rebel Technician Helmet",
+    "thumb": "blob:https://justaskjack.github.io/557e5013-d995-403d-8004-302040f9986e",
+    "image": "Rebel Technician Helmet.png",
+    "col": 5,
+    "row": 6
+  },
+  {
+    "name": "Bounty Hunter Helmet 01",
+    "thumb": "blob:https://justaskjack.github.io/b00f26e8-7180-433f-a507-5ab1eb6bb76a",
+    "image": "Bounty Hunter Helmet 01.png",
+    "col": 1,
+    "row": 7
+  },
+  {
+    "name": "Tarisian Battle Helmet",
+    "thumb": "blob:https://justaskjack.github.io/0ba8a635-2e44-4de8-9fd4-b5c50d311b0a",
+    "image": "Tarisian Battle Helmet.png",
+    "col": 2,
+    "row": 7
+  },
+  {
+    "name": "Bounty Hunter Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/a2ffcd59-fd8a-4b18-867b-d3f5a9415616",
+    "image": "Bounty Hunter Helmet 02.png",
+    "col": 3,
+    "row": 7
+  },
+  {
+    "name": "Bounty Hunter Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/a2ffcd59-fd8a-4b18-867b-d3f5a9415616",
+    "image": "Bounty Hunter Helmet 02.png",
+    "col": 4,
+    "row": 7
+  },
+  {
+    "name": "Tarisian Battle Helmet",
+    "thumb": "blob:https://justaskjack.github.io/0ba8a635-2e44-4de8-9fd4-b5c50d311b0a",
+    "image": "Tarisian Battle Helmet.png",
+    "col": 3,
+    "row": 7
+  },
+  {
+    "name": "Bounty Hunter Helmet 02",
+    "thumb": "blob:https://justaskjack.github.io/a2ffcd59-fd8a-4b18-867b-d3f5a9415616",
+    "image": "Bounty Hunter Helmet 02.png",
+    "col": 2,
+    "row": 7
+  },
+  {
+    "name": "Greedo Mask",
+    "thumb": "blob:https://justaskjack.github.io/ad3977dc-a700-419b-bcc9-07f122e607c2",
+    "image": "Greedo Mask.png",
+    "col": 1,
+    "row": 8
   }
 ]
-
