@@ -164,7 +164,10 @@
       };
 
       grid.appendChild(img);
-      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName, image: data.image, col, row });
+      
+      const thumbFilename = data.thumbName || data.thumb.split('/').pop();
+      placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
+    
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
