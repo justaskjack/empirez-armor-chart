@@ -64,7 +64,19 @@
   <div class="helm-grid" id="helmGrid"></div>
 </div>
 
-  <div id="page-collectables" class="page page-coming">Coming Soon</div>
+<div id="page-collectables" class="page">
+  <header>
+    <div class="title-left">
+      <span class="title-bold">Collectables</span>
+      <span class="title-secondary"> | Name and Sell Price Only</span>
+    </div>
+  </header>
+  <div class="armor-section-container" style="border-left: 4px solid #888;" id="collectable-row">
+    <!-- Collectable cards will be inserted here -->
+  </div>
+</div>
+
+  
   <div id="page-lightsabers" class="page page-coming">Coming Soon</div>
   <div id="page-vehicles" class="page page-coming">Coming Soon</div>
   <div id="page-weapons" class="page page-coming">Coming Soon</div>
@@ -112,6 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
   openPage('armor');
 });
 </script>
-
+<script src="js/collectables.js" defer></script>
 </body>
 </html>
