@@ -52,6 +52,7 @@
       object-fit: contain;
       border: 2px solid #333;
       cursor: grab;
+      box-sizing: border-box;
     }
     button, input[type="file"] {
       padding: 0.5rem 1rem;
@@ -76,11 +77,11 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (1.2)</h1>
+  <h1>Helm Grid Editor (1.4)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" />
-      <img src="images/Darth Maul Mask - thumb.png" draggable="true" title="Darth Maul Mask" data-name="Darth Maul Mask" data-image="Darth Maul Mask.png" />
+      <img src="images/Darth Maul Mask - thumb.png" draggable="true" title="Darth Maul Mask" data-name="Darth Maul Mask" data-image="Darth Maul Mask.png" data-thumb-name="Darth Maul Mask - thumb.png" />
     </div>
     <div class="grid" id="helmGrid"></div>
   </div>
@@ -110,6 +111,7 @@
           name: e.target.dataset.name,
           thumb: e.target.src,
           image: e.target.dataset.image,
+          thumbName: e.target.dataset.thumbName,
           fromPalette: true
         }));
       }
@@ -122,6 +124,7 @@
           name: movingHelm.dataset.name,
           thumb: movingHelm.src,
           image: movingHelm.dataset.image,
+          thumbName: movingHelm.dataset.thumbName,
           fromPalette: false
         }));
       }
@@ -143,12 +146,12 @@
       const img = document.createElement('img');
       img.src = data.thumb;
       img.className = 'helm';
-            img.style.boxSizing = 'border-box';
       img.title = data.name;
       img.dataset.name = data.name;
       img.dataset.image = data.image;
       img.dataset.col = col;
       img.dataset.row = row;
+      img.dataset.thumbName = data.thumbName;
       img.draggable = true;
       img.style.left = ((col - 1) * 202) + 'px';
       img.style.top = ((row - 1) * 205) + 'px';
@@ -163,7 +166,7 @@
 
       grid.appendChild(img);
       const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
-      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName || data.thumb.split('/').pop(), image: data.image, col, row });
+      placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
@@ -195,12 +198,12 @@
             const img = document.createElement('img');
             img.src = 'images/' + h.thumb;
             img.className = 'helm';
-            img.style.boxSizing = 'border-box';
             img.title = h.name;
             img.dataset.name = h.name;
             img.dataset.image = h.image;
             img.dataset.col = h.col;
             img.dataset.row = h.row;
+            img.dataset.thumbName = h.thumb;
             img.draggable = true;
             img.style.left = ((h.col - 1) * 202) + 'px';
             img.style.top = ((h.row - 1) * 205) + 'px';
@@ -236,6 +239,7 @@
       img.dataset.image = image;
       img.dataset.thumbName = filename;
       img.draggable = true;
+      img.className = 'helm';
       palette.appendChild(img);
     });
   </script>
