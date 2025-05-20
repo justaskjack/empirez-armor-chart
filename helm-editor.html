@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor v1.1 - Debugging</title>
+  <title>Helm Grid Editor (1.2)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -11,44 +11,40 @@
       margin: 0;
       padding: 1rem;
     }
-
+    h1 {
+      margin-bottom: 1rem;
+    }
     .editor-container {
       display: flex;
       gap: 2rem;
     }
-
     .palette {
+      width: 220px;
       position: sticky;
       top: 1rem;
       align-self: flex-start;
-      width: 220px;
     }
-
     .palette img {
       width: 100%;
       margin-bottom: 1rem;
       cursor: grab;
       border: 2px solid #333;
     }
-
     .grid {
-      display: grid;
-      grid-template-columns: repeat(10, 201px);
-      grid-template-rows: repeat(10, 204px);
-      gap: 1px;
+      position: relative;
+      width: calc(201px * 10);
+      height: calc(204px * 10);
       background-color: #2a2a2a;
       border: 2px solid #444;
-      position: relative;
     }
-
     .grid-cell {
+      position: absolute;
       background-color: #1f1f1f;
       border: 1px solid #555;
       width: 201px;
       height: 204px;
-      position: relative;
+      box-sizing: border-box;
     }
-
     .helm {
       position: absolute;
       width: 201px;
@@ -57,7 +53,6 @@
       border: 2px solid #333;
       cursor: grab;
     }
-
     button, input[type="file"] {
       padding: 0.5rem 1rem;
       margin-top: 1rem;
@@ -68,7 +63,6 @@
       display: inline-block;
       margin-right: 1rem;
     }
-
     #exportArea {
       background: #111;
       color: #0f0;
@@ -82,7 +76,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (Final)</h1>
+  <h1>Helm Grid Editor (1.2)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" />
@@ -100,10 +94,14 @@
     const placedHelms = [];
     let movingHelm = null;
 
-    for (let i = 0; i < 100; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'grid-cell';
-      grid.appendChild(cell);
+    for (let row = 0; row < 10; row++) {
+      for (let col = 0; col < 10; col++) {
+        const cell = document.createElement('div');
+        cell.className = 'grid-cell';
+        cell.style.left = (col * 201) + 'px';
+        cell.style.top = (row * 204) + 'px';
+        grid.appendChild(cell);
+      }
     }
 
     palette.addEventListener('dragstart', e => {
@@ -150,10 +148,9 @@
       img.dataset.image = data.image;
       img.dataset.col = col;
       img.dataset.row = row;
-      img.dataset.thumbName = originalName;
       img.draggable = true;
-      img.style.left = `${(col - 1) * 202}px`;
-      img.style.top = `${(row - 1) * 205}px`;
+      img.style.left = ((col - 1) * 202) + 'px';
+      img.style.top = ((row - 1) * 205) + 'px';
 
       img.onclick = () => {
         if (confirm("Delete this helm?")) {
@@ -164,7 +161,8 @@
       };
 
       grid.appendChild(img);
-      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName, image: data.image, col, row });
+      const thumbFilename = data.thumbName || data.thumb.split('/').pop();
+      placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
@@ -184,15 +182,47 @@
       navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
     }
 
-    
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('data/helms.json')
+        .then(res => {
+          console.log('helms.json fetched');
+          return res.json();
+        })
+        .then(helms => {
+          console.log('helms loaded:', helms);
+          helms.forEach(h => {
+            const img = document.createElement('img');
+            img.src = 'images/' + h.thumb;
+            img.className = 'helm';
+            img.title = h.name;
+            img.dataset.name = h.name;
+            img.dataset.image = h.image;
+            img.dataset.col = h.col;
+            img.dataset.row = h.row;
+            img.draggable = true;
+            img.style.left = ((h.col - 1) * 202) + 'px';
+            img.style.top = ((h.row - 1) * 205) + 'px';
+
+            img.onclick = () => {
+              if (confirm("Delete this helm?")) {
+                document.getElementById('helmGrid').removeChild(img);
+                const index = placedHelms.findIndex(p =>
+                  p.col === h.col && p.row === h.row && p.name === h.name
+                );
+                if (index !== -1) placedHelms.splice(index, 1);
+              }
+            };
+
+            document.getElementById('helmGrid').appendChild(img);
+            placedHelms.push(h);
+          });
         });
-      });
+    });
 
     document.getElementById('uploadThumb').addEventListener('change', e => {
       const file = e.target.files[0];
       if (!file) return;
       const url = URL.createObjectURL(file);
-      const originalName = file.name;
       const filename = file.name;
       const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
       const image = filename.replace(" - thumb", "");
@@ -202,51 +232,10 @@
       img.title = name;
       img.dataset.name = name;
       img.dataset.image = image;
-      img.dataset.thumbName = originalName;
+      img.dataset.thumbName = filename;
       img.draggable = true;
       palette.appendChild(img);
     });
   </script>
 </body>
 </html>
-
-<script>
-
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/helms.json')
-    .then(res => {
-      console.log('helms.json fetched');
-      return res.json();
-    })
-    .then(helms => {
-      console.log('helms loaded:', helms);
-      helms.forEach(h => {
-        const img = document.createElement('img');
-        img.src = 'images/' + h.thumb;
-        img.className = 'helm';
-        img.title = h.name;
-        img.dataset.name = h.name;
-        img.dataset.image = h.image;
-        img.dataset.col = h.col;
-        img.dataset.row = h.row;
-        img.draggable = true;
-        img.style.left = ((h.col - 1) * 202) + 'px';
-        img.style.top = ((h.row - 1) * 205) + 'px';
-
-        img.onclick = () => {
-          if (confirm("Delete this helm?")) {
-            document.getElementById('helmGrid').removeChild(img);
-            const index = placedHelms.findIndex(p =>
-              p.col === h.col && p.row === h.row && p.name === h.name
-            );
-            if (index !== -1) placedHelms.splice(index, 1);
-          }
-        };
-
-        document.getElementById('helmGrid').appendChild(img);
-        placedHelms.push(h);
-      });
-    });
-});
-
-</script>
