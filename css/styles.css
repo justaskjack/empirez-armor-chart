@@ -230,3 +230,15 @@ header.navbar {
 .tab-section.active {
   display: block;
 }
+
+
+/* Hide all main page sections except armor by default */
+#page-armor { display: block; }
+#page-helm,
+#page-collectables,
+#page-lightsabers,
+#page-vehicles,
+#page-weapons,
+#page-poi {
+  display: none;
+}
