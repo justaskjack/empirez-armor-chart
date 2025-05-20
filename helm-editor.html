@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (1.2)</title>
+  <title>Helm Grid Editor (1.4)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -163,7 +163,7 @@
 
       grid.appendChild(img);
       const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
-      placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
+      placedHelms.push({ name: data.name, thumb: img.dataset.thumbName || data.thumb.split('/').pop(), image: data.image, col, row });
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
