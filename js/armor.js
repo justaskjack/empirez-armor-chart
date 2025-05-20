@@ -34,11 +34,6 @@ function renderSections(data) {
     grid.className = 'armor-grid';
 
     let cards = filteredCards;
-    if (rarity === 'Rare') {
-      while (cards.length < 6) cards.push(...cards.slice(0, 6 - cards.length));
-    } else {
-      while (cards.length < 3) cards.push(...cards.slice(0, 3 - cards.length));
-    }
 
     cards.forEach(armor => {
       const card = document.createElement('div');
