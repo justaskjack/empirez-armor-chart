@@ -105,36 +105,22 @@
     "row": 3
   },
   {
-    "name": "Stormtrooper Helmet 04",
-    "thumb": "https://justaskjack.github.io/empirez-armor-chart/images/Stormtrooper%20Helmet%2004%20-%20thumb.png",
-    "image": "Stormtrooper Helmet 04.png",
-    "col": 6,
-    "row": 4
-  },
-  {
-    "name": "Stormtrooper Helmet 04",
-    "thumb": "https://justaskjack.github.io/empirez-armor-chart/images/Stormtrooper%20Helmet%2004%20-%20thumb.png",
-    "image": "Stormtrooper Helmet 04.png",
-    "col": 5,
-    "row": 3
-  },
-  {
     "name": "Stormtrooper Helmet 05",
-    "thumb": "blob:https://justaskjack.github.io/3d097d4f-a053-415f-8120-cb5429bf8814",
+    "thumb": "Stormtrooper Helmet 05 - thumb.png",
     "image": "Stormtrooper Helmet 05.png",
     "col": 6,
     "row": 3
   },
   {
     "name": "Mudtrooper Gasmask",
-    "thumb": "blob:https://justaskjack.github.io/01de9e7e-5501-4613-8d62-9e667e648eb0",
+    "thumb": "Mudtrooper Gasmask - thumb.png",
     "image": "Mudtrooper Gasmask.png",
     "col": 7,
     "row": 3
   },
   {
     "name": "DeathTrooper Helmet",
-    "thumb": "blob:https://justaskjack.github.io/6c951327-76cf-4366-a8c7-6f0d51167c70",
+    "thumb": "DeathTrooper Helmet - thumb.png",
     "image": "DeathTrooper Helmet.png",
     "col": 8,
     "row": 3
