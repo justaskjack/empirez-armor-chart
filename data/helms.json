@@ -294,13 +294,6 @@
     "row": 7
   },
   {
-    "name": "Bounty Hunter Helmet 02",
-    "thumb": "Bounty Hunter Helmet 02 - thumb.png",
-    "image": "Bounty Hunter Helmet 02.png",
-    "col": 4,
-    "row": 7
-  },
-  {
     "name": "Tarisian Battle Helmet",
     "thumb": "Tarisian Battle Helmet - thumb.png",
     "image": "Tarisian Battle Helmet.png",
@@ -523,5 +516,313 @@
     "image": "Arc Trooper Phase 2 01.png",
     "col": 8,
     "row": 4
+  },
+  {
+    "name": "Moff Gideon Helmet",
+    "thumb": "Moff Gideon Helmet - thumb.png",
+    "image": "Moff Gideon Helmet.png",
+    "col": 10,
+    "row": 2
+  },
+  {
+    "name": "Mando Armorer Helmet",
+    "thumb": "Mando Armorer Helmet - thumb.png",
+    "image": "Mando Armorer Helmet.png",
+    "col": 9,
+    "row": 2
+  },
+  {
+    "name": "Boba Fett Helmet",
+    "thumb": "Boba Fett Helmet - thumb.png",
+    "image": "Boba Fett Helmet.png",
+    "col": 8,
+    "row": 2
+  },
+  {
+    "name": "Mandalorian Helmet",
+    "thumb": "Mandalorian Helmet 02 - thumb.png",
+    "image": "Mandalorian Helmet 02.png",
+    "col": 7,
+    "row": 2
+  },
+  {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 04 - thumb.png",
+    "image": "Mando Helmet 04.png",
+    "col": 6,
+    "row": 2
+  },
+  {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 03 - thumb.png",
+    "image": "Mando Helmet 03.png",
+    "col": 5,
+    "row": 2
+  },
+  {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 02 - thumb.png",
+    "image": "Mando Helmet 02.png",
+    "col": 4,
+    "row": 2
+  },
+  {
+    "name": "Mando Helmet",
+    "thumb": "Mando Helmet 01 - thumb.png",
+    "image": "Mando Helmet 01.png",
+    "col": 3,
+    "row": 2
+  },
+  {
+    "name": "Mandalorian Helmet",
+    "thumb": "Mandalorian Helmet 01 - thumb.png",
+    "image": "Mandalorian Helmet 01.png",
+    "col": 2,
+    "row": 2
+  },
+  {
+    "name": "Mando Helmet 05",
+    "thumb": "Mando Helmet 05 - thumb.png",
+    "image": "Mando Helmet 05.png",
+    "col": 1,
+    "row": 2
+  },
+  {
+    "name": "Arc Trooper Phase 2 01",
+    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
+    "image": "Arc Trooper Phase 2 01.png",
+    "col": 9,
+    "row": 4
+  },
+  {
+    "name": "Shock Trooper Helmet 01",
+    "thumb": "Shock Trooper Helmet 01 - thumb.png",
+    "image": "Shock Trooper Helmet 01.png",
+    "col": 8,
+    "row": 4
+  },
+  {
+    "name": "Shock Commander Helmet 01",
+    "thumb": "Shock Commander Helmet 01 - thumb.png",
+    "image": "Shock Commander Helmet 01.png",
+    "col": 6,
+    "row": 4
+  },
+  {
+    "name": "Phase1 Clone Helmet 02",
+    "thumb": "Phase1 Clone Helmet 02 - thumb.png",
+    "image": "Phase1 Clone Helmet 02.png",
+    "col": 5,
+    "row": 4
+  },
+  {
+    "name": "Phase1 Clone Helmet 01",
+    "thumb": "Phase1 Clone Helmet 01 - thumb.png",
+    "image": "Phase1 Clone Helmet 01.png",
+    "col": 4,
+    "row": 4
+  },
+  {
+    "name": "Clone Trooper Helmet 03",
+    "thumb": "Clone Trooper Helmet 03 - thumb.png",
+    "image": "Clone Trooper Helmet 03.png",
+    "col": 3,
+    "row": 4
+  },
+  {
+    "name": "Stormtrooper Helmet 07",
+    "thumb": "Stormtrooper Helmet 07 - thumb.png",
+    "image": "Stormtrooper Helmet 07.png",
+    "col": 10,
+    "row": 3
+  },
+  {
+    "name": "Mudtrooper Gasmask",
+    "thumb": "Mudtrooper Gasmask - thumb.png",
+    "image": "Mudtrooper Gasmask.png",
+    "col": 10,
+    "row": 5
+  },
+  {
+    "name": "ANH Sandtrooper Helmet",
+    "thumb": "ANH Sandtrooper Helmet - thumb.png",
+    "image": "ANH Sandtrooper Helmet.png",
+    "col": 8,
+    "row": 3
+  },
+  {
+    "name": "Galactic Marine Helmet",
+    "thumb": "Galactic Marine Helmet - thumb.png",
+    "image": "Galactic Marine Helmet.png",
+    "col": 10,
+    "row": 7
+  },
+  {
+    "name": "Arc Trooper Phase 2 01",
+    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
+    "image": "Arc Trooper Phase 2 01.png",
+    "col": 10,
+    "row": 4
+  },
+  {
+    "name": "Shock Trooper Helmet 02",
+    "thumb": "Shock Trooper Helmet 02 - thumb.png",
+    "image": "Shock Trooper Helmet 02.png",
+    "col": 9,
+    "row": 4
+  },
+  {
+    "name": "Imperial Gunner Helmet 02",
+    "thumb": "Imperial Gunner Helmet 02 - thumb.png",
+    "image": "Imperial Gunner Helmet 02.png",
+    "col": 9,
+    "row": 7
+  },
+  {
+    "name": "Imperial Gunner Helmet 01",
+    "thumb": "Imperial Gunner Helmet 01 - thumb.png",
+    "image": "Imperial Gunner Helmet 01.png",
+    "col": 8,
+    "row": 7
+  },
+  {
+    "name": "Commander Bly Helmet",
+    "thumb": "Commander Bly Helmet - thumb.png",
+    "image": "Commander Bly Helmet.png",
+    "col": 1,
+    "row": 5
+  },
+  {
+    "name": "Arc Trooper Phase 2 01",
+    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
+    "image": "Arc Trooper Phase 2 01.png",
+    "col": 2,
+    "row": 5
+  },
+  {
+    "name": "Airborne Clone Helmet 02",
+    "thumb": "Airborne Clone Helmet 02 - thumb.png",
+    "image": "Airborne Clone Helmet 02.png",
+    "col": 8,
+    "row": 6
+  },
+  {
+    "name": "Shock Trooper Helmet 01",
+    "thumb": "Shock Trooper Helmet 01 - thumb.png",
+    "image": "Shock Trooper Helmet 01.png",
+    "col": 10,
+    "row": 4
+  },
+  {
+    "name": "Airborne Clone Helmet 02",
+    "thumb": "Airborne Clone Helmet 02 - thumb.png",
+    "image": "Airborne Clone Helmet 02.png",
+    "col": 8,
+    "row": 4
+  },
+  {
+    "name": "Imperial Officer Hat 02",
+    "thumb": "Imperial Officer Hat 02 - thumb.png",
+    "image": "Imperial Officer Hat 02.png",
+    "col": 7,
+    "row": 7
+  },
+  {
+    "name": "Imperial Officer Hat 01",
+    "thumb": "Imperial Officer Hat 01 - thumb.png",
+    "image": "Imperial Officer Hat 01.png",
+    "col": 6,
+    "row": 7
+  },
+  {
+    "name": "Shock Commander Helmet 01",
+    "thumb": "Shock Commander Helmet 01 - thumb.png",
+    "image": "Shock Commander Helmet 01.png",
+    "col": 4,
+    "row": 5
+  },
+  {
+    "name": "Phase1 Clone Helmet 01",
+    "thumb": "Phase1 Clone Helmet 01 - thumb.png",
+    "image": "Phase1 Clone Helmet 01.png",
+    "col": 6,
+    "row": 4
+  },
+  {
+    "name": "Clone Trooper Helmet 04",
+    "thumb": "Clone Trooper Helmet 04 - thumb.png",
+    "image": "Clone Trooper Helmet 04.png",
+    "col": 4,
+    "row": 4
+  },
+  {
+    "name": "Republic Commando Helmet 01",
+    "thumb": "Republic Commando Helmet 01 - thumb.png",
+    "image": "Republic Commando Helmet 01.png",
+    "col": 3,
+    "row": 5
+  },
+  {
+    "name": "Officer Helmet 01",
+    "thumb": "Officer Helmet 01 - thumb.png",
+    "image": "Officer Helmet 01.png",
+    "col": 5,
+    "row": 7
+  },
+  {
+    "name": "Officer Helmet 02",
+    "thumb": "Officer Helmet 02 - thumb.png",
+    "image": "Officer Helmet 02.png",
+    "col": 4,
+    "row": 7
+  },
+  {
+    "name": "Airborne Clone Helmet",
+    "thumb": "Airborne Clone Helmet - thumb.png",
+    "image": "Airborne Clone Helmet.png",
+    "col": 5,
+    "row": 5
+  },
+  {
+    "name": "Airborne Clone Helmet 02",
+    "thumb": "Airborne Clone Helmet 02 - thumb.png",
+    "image": "Airborne Clone Helmet 02.png",
+    "col": 6,
+    "row": 5
+  },
+  {
+    "name": "Phase1 Clone Helmet 03",
+    "thumb": "Phase1 Clone Helmet 03 - thumb.png",
+    "image": "Phase1 Clone Helmet 03.png",
+    "col": 7,
+    "row": 4
+  },
+  {
+    "name": "Rebel Technician Helmet",
+    "thumb": "Rebel Technician Helmet - thumb.png",
+    "image": "Rebel Technician Helmet.png",
+    "col": 8,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 02",
+    "thumb": "Rebel Scout Helmet 02 - thumb.png",
+    "image": "Rebel Scout Helmet 02.png",
+    "col": 7,
+    "row": 6
+  },
+  {
+    "name": "Rebel Scout Helmet 01",
+    "thumb": "Rebel Scout Helmet 01 - thumb.png",
+    "image": "Rebel Scout Helmet 01.png",
+    "col": 6,
+    "row": 6
+  },
+  {
+    "name": "Flight Helmet",
+    "thumb": "Flight Helmet - thumb.png",
+    "image": "Flight Helmet.png",
+    "col": 5,
+    "row": 6
   }
 ]
