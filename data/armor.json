@@ -7,6 +7,14 @@
     "rarity": "Common",
     "location": "All tiers"
   },
+    {
+    "name": "Vanilla DayZ Gear (Militia)",
+    "image": "Vanilla DayZ Gear.png",
+    "type": "Vanilla DayZ Gear",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
   {
     "name": "",
     "image": "Uncommon.png",
@@ -70,5 +78,13 @@
     "protection": 0,
     "rarity": "None",
     "location": "All tiers"
+  },
+      {
+    "name": "Chewy Suit",
+    "image": "Chewy Suit.png",
+    "type": "Gas Protection",
+    "protection": 0,
+    "rarity": "None",
+    "location": "All tiers. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator for the Chewy variant suit to be effective."
   }
 ]
