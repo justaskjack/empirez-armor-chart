@@ -1,12 +1,16 @@
 [
   {
-    "name": "Ancient Relic",
-    "sellPrice": "500 Credits",
-    "image": "collectable01.jpg"
+    "name": "turret 1",
+    "sellPrice": "",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable01 - turret 1.png"
   },
   {
-    "name": "Wookiee Pendant",
-    "sellPrice": "300 Credits",
-    "image": "collectable02.jpg"
+    "name": "Rebel Ship",
+    "sellPrice": "1 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable02 - Rebel Ship.png"
   }
 ]
