@@ -220,3 +220,9 @@ header.navbar {
   transform: scale(1.02);
   border-color: #888;
 }
+#collectable-row .armor-img {
+  width: 313px;
+  height: 313px;
+  object-fit: contain;
+}
+
