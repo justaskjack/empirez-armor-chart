@@ -26,12 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const name = document.createElement("p");
         name.innerHTML = `<strong>Name:</strong> ${item.name}`;
-
+        
         const price = document.createElement("p");
         price.innerHTML = `<strong>Sell Price:</strong> ${item.sellPrice}`;
-
+        
+        const slots = document.createElement("p");
+        slots.innerHTML = `<strong>Slots:</strong> ${item.slots || 'N/A'}`;
+        
+        const note = document.createElement("p");
+        note.innerHTML = `<strong>Note:</strong> ${item.note || ''}`;
+        
         content.appendChild(name);
         content.appendChild(price);
+        content.appendChild(slots);
+        content.appendChild(note);
 
         card.appendChild(imageLink);
         card.appendChild(content);
