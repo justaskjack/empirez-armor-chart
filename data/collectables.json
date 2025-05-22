@@ -1,105 +1,105 @@
 [
   {
     "name": "turret 1",
-    "sellPrice": "",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable01 - turret 1"
   },
   {
     "name": "Rebel Ship",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable02 - Rebel Ship"
   },
     {
     "name": "Republic Venator",
-    "sellPrice": "1 Credits",
+    "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable03 - Republic Venator"
   },
     {
     "name": "U-Wing",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable04 - U-Wing"
   },
     {
     "name": "Greys Corsant Collectable",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable"
   },
     {
     "name": "lezard",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable06 - lezard"
   },
     {
     "name": "holorecord decive",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable07 - holorecord decive"
   },
     {
     "name": "charismatic-mandalorian-helmet yellow",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow"
   },
     {
     "name": "Bantha Poop Collectable",
-    "sellPrice": "1 Credits",
+    "sellPrice": "None",
     "slots": "3x3",
     "note": "",
     "image": "Collectable09 - Bantha Poop Collectable"
   },
     {
     "name": "Wayfinder Stone",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x2",
     "note": "",
     "image": "Collectable10 - Wayfinder Stone"
   },
     {
     "name": "Cereals",
-    "sellPrice": "1 Credits",
-    "slots": "2x3",
-    "note": "",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Can be eaten",
     "image": "Collectable11 - C3POs Cereals"
   },
     {
     "name": "Teddy Bear (Pink)",
-    "sellPrice": "1 Credits",
+    "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable12 - Teddy Bear (Pink)"
   },
     {
     "name": "Teddy Bear (Brown)",
-    "sellPrice": "1 Credits",
+    "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable13 - Teddy Bear (Brown)"
   },
     {
     "name": "Teddy Bear (White)",
-    "sellPrice": "1 Credits",
+    "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable14 - Teddy Bear (White)"
   },
     {
     "name": "Grogue Plushie",
-    "sellPrice": "1 Credits",
+    "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable15 - Grogue Plushie"
