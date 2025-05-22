@@ -82,7 +82,7 @@
   {
     "name": "",
     "image": "Relic.png",
-    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple / Jedi Hideout"
@@ -90,7 +90,7 @@
     {
     "name": "Darth Vader Suit",
     "image": "Darth Vader Suit.png",
-    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple"
@@ -98,7 +98,7 @@
     {
     "name": "Kylo Ren Suit",
     "image": "Kylo Ren Suit.png",
-    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple"
@@ -106,7 +106,7 @@
     {
     "name": "Darth Nihilus Suit",
     "image": "Darth Nihilus Suit.png",
-    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple"
