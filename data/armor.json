@@ -15,6 +15,22 @@
     "rarity": "Common",
     "location": "All tiers"
   },
+      {
+    "name": "Vanilla Firefighter Gear (Red)",
+    "image": "Firefighter Gear 01 (Red).png",
+    "type": "Vanilla DayZ Gear",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+      {
+    "name": "Vanilla Firefighter Gear (Yellow)",
+    "image": "Firefighter Gear 02 (Yellow).png",
+    "type": "Vanilla DayZ Gear",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
   {
     "name": "",
     "image": "Uncommon.png",
@@ -70,6 +86,30 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple / Jedi Hideout"
+  },
+    {
+    "name": "Darth Vader Suit",
+    "image": "Darth Vader Suit.png",
+    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Sith Temple"
+  },
+    {
+    "name": "Kylo Ren Suit",
+    "image": "Kylo Ren Suit.png",
+    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Sith Temple"
+  },
+    {
+    "name": "Darth Nihilus Suit",
+    "image": "Darth Nihilus Suit.png",
+    "type": "Jedi , Kylo Ren, Darth Vader armor sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Sith Temple"
   },
   {
     "name": "",
