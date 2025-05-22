@@ -16,6 +16,7 @@
       <a href="#" data-page="lightsabers">Lightsabers</a>
       <a href="#" data-page="vehicles">Vehicles</a>
       <a href="#" data-page="weapons">Weapons</a>
+      <a href="#" data-page="weapons">Flags</a>
       <a href="#" data-page="poi">POI</a>
     </nav>
   </header>
@@ -80,6 +81,20 @@
   <div id="page-lightsabers" class="page page-coming">Coming Soon</div>
   <div id="page-vehicles" class="page page-coming">Coming Soon</div>
   <div id="page-weapons" class="page page-coming">Coming Soon</div>
+  
+  <div id="page-flags" class="page" style="display: none;">
+  <header>
+    <div class="title-left">
+      <span class="title-bold">Flags</span>
+      <span class="title-secondary"> | Click to view full size</span>
+    </div>
+  </header>
+  <div id="flag-grid" class="grid-wrapper">
+    <!-- Flags will load here -->
+  </div>
+</div>
+
+  
   <div id="page-poi" class="page page-coming">Coming Soon</div>
 
   <script src="js/lightbox-plus-jquery.min.js"></script>
@@ -125,5 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script src="js/collectables.js" defer></script>
+<script src="js/flags.js" defer></script>
+
 </body>
 </html>
