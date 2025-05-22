@@ -23,6 +23,14 @@
     "rarity": "Uncommon",
     "location": "Tiers 2, 3 & 4"
   },
+    {
+    "name": "Tuskan Set (Black Variant)",
+    "image": "Tuskan Set (Black Variant).png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tiers 2, 3 & 4"
+  },
   {
     "name": "",
     "image": "Rare.png",
