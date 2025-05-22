@@ -11,15 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
         card.className = "armor-card";
 
         const imageLink = document.createElement("a");
-        imageLink.href = `images/${item.image}`;
+        imageLink.href = `images/${item.image}.png`;
         imageLink.setAttribute("data-lightbox", "collectables");
         imageLink.setAttribute("data-title", item.name);
-
+        
         const img = document.createElement("img");
-        img.src = `images/${item.image}`;
+        img.src = `images/${item.image} - thumb.png`;
         img.alt = item.name;
         img.className = "armor-img";
+        img.style.width = "313px";
+        img.style.height = "313px";
+        
         imageLink.appendChild(img);
+
 
         const content = document.createElement("div");
         content.className = "armor-card-details";
