@@ -7,6 +7,20 @@
     "image": "Collectable01 - turret 1"
   },
     {
+    "name": "turret 6",
+    "sellPrice": "10 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable19 - turret 6"
+  },
+    {
+    "name": "Mini-Brick Saber (Pink)",
+    "sellPrice": "10 Credits",
+    "slots": "None",
+    "note": "Can be used as a weapon or to open cans",
+    "image": "Collectable18 - Mini-Brick Saber (Pink)"
+  },
+    {
     "name": "Jedi Medallion",
     "sellPrice": "5 Credits",
     "slots": "2x3",
