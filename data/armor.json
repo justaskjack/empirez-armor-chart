@@ -128,6 +128,14 @@
     "location": "All tiers"
   },
       {
+    "name": "NBC Suit (Grey Variant)",
+    "image": "NBC Set 02.png",
+    "type": "Gas Protection",
+    "protection": 0,
+    "rarity": "None",
+    "location": "All tiers"
+  },
+      {
     "name": "Chewy Suit",
     "image": "Chewy Suit.png",
     "type": "Gas Protection",
