@@ -51,7 +51,15 @@
     "name": "",
     "image": "Rare.png",
     "type": "Special Troop armor",
-    "protection": 1,
+    "protection": "Mixed",
+    "rarity": "Rare",
+    "location": "Tiers 3, 4 & 5"
+  },
+    {
+    "name": "Galactic Marine Armor",
+    "image": "Galactic Marine Set.png",
+    "type": "Special Troop armor",
+    "protection": "Mixed 1 & 2",
     "rarity": "Rare",
     "location": "Tiers 3, 4 & 5"
   },
