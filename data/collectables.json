@@ -83,6 +83,13 @@
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow"
   },
+      {
+    "name": "charismatic-mandalorian-helmet white",
+    "sellPrice": "10 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable20 - charismatic-mandalorian-helmet white"
+  },
     {
     "name": "Bantha Poop Collectable",
     "sellPrice": "None",
