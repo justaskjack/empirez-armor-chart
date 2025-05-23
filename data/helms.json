@@ -777,13 +777,6 @@
     "row": 8
   },
   {
-    "name": "Officer Helmet 02",
-    "thumb": "Officer Helmet 02 - thumb.png",
-    "image": "Officer Helmet 02.png",
-    "col": 4,
-    "row": 7
-  },
-  {
     "name": "Flight Helmet",
     "thumb": "Flight Helmet - thumb.png",
     "image": "Flight Helmet.png",
@@ -924,13 +917,6 @@
     "row": 6
   },
   {
-    "name": "Shock Trooper Helmet 02",
-    "thumb": "Shock Trooper Helmet 02 - thumb.png",
-    "image": "Shock Trooper Helmet 02.png",
-    "col": 9,
-    "row": 4
-  },
-  {
     "name": "Clone Trooper Phase 1",
     "thumb": "Clone Trooper Phase 1 - thumb.png",
     "image": "Clone Trooper Phase 1.png",
@@ -1020,13 +1006,6 @@
     "image": "Tarisian Battle Helmet.png",
     "col": 4,
     "row": 11
-  },
-  {
-    "name": "Pod Racer Helmet 01",
-    "thumb": "Pod Racer Helmet 01 - thumb.png",
-    "image": "Pod Racer Helmet 01.png",
-    "col": 1,
-    "row": 7
   },
   {
     "name": "Greedo Mask",
@@ -1351,13 +1330,6 @@
     "row": 12
   },
   {
-    "name": "Flight Helmet",
-    "thumb": "Flight Helmet - thumb.png",
-    "image": "Flight Helmet.png",
-    "col": 5,
-    "row": 11
-  },
-  {
     "name": "Balaclava 01",
     "thumb": "Balaclava 01 - thumb.png",
     "image": "Balaclava 01.png",
@@ -1439,13 +1411,6 @@
     "thumb": "Airborne Clone Helmet 04 - thumb.png",
     "image": "Airborne Clone Helmet 04.png",
     "col": 9,
-    "row": 7
-  },
-  {
-    "name": "Airborne Clone Helmet 02",
-    "thumb": "Airborne Clone Helmet 02 - thumb.png",
-    "image": "Airborne Clone Helmet 02.png",
-    "col": 10,
     "row": 7
   },
   {
