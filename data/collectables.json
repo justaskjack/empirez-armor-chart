@@ -6,6 +6,20 @@
     "note": "",
     "image": "Collectable01 - turret 1"
   },
+    {
+    "name": "Jedi Medallion",
+    "sellPrice": "5 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable17 - Jedi Medallion"
+  },
+    {
+    "name": "Sith Medallion",
+    "sellPrice": "5 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable16 - Site Medallion"
+  },
   {
     "name": "Rebel Ship",
     "sellPrice": "10 Credits",
