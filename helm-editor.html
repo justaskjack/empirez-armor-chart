@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (1.8)</title>
+  <title>Helm Grid Editor (1.9)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -14,26 +14,29 @@
     h1 {
       margin-bottom: 1rem;
     }
-      .editor-container {
-        display: flex;
-        height: 100vh;              /* Ensures full-height for layout */
-        gap: 2rem;
-      }
+    .editor-container {
+      display: flex;
+      height: calc(100vh - 60px);
+      gap: 2rem;
+      align-items: flex-start;
+    }
     .palette {
-      width: 200px;
-      max-height: 100vh;          /* Let it fill full height */
-      overflow-y: auto;           /* Enables scroll */
+      width: 160px;
+      overflow-y: auto;
+      background: #111;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      background: #111;
-      padding: 10px;
       box-sizing: border-box;
+      max-height: calc(100vh - 60px);
     }
     .palette img {
       width: 100%;
-      cursor: grab;
+      height: auto;
       border: 2px solid #333;
+      cursor: grab;
+      box-sizing: border-box;
     }
     .grid {
       position: relative;
@@ -66,7 +69,6 @@
       border: none;
       color: white;
       cursor: pointer;
-      display: inline-block;
       margin-right: 1rem;
     }
     #exportArea {
@@ -82,7 +84,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (1.8)</h1>
+  <h1>Helm Grid Editor (1.9)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" multiple>
@@ -253,7 +255,7 @@
         img.dataset.image = image;
         img.dataset.thumbName = filename;
         img.draggable = true;
-        img.className = 'helm';
+        img.className = 'helm-thumb';
         palette.appendChild(img);
       });
     });
