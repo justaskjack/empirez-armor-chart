@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (1.6)</title>
+  <title>Helm Grid Editor (1.7)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -23,17 +23,21 @@
       position: sticky;
       top: 1rem;
       align-self: flex-start;
+      max-height: 90vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .palette img {
       width: 100%;
-      margin-bottom: 1rem;
       cursor: grab;
       border: 2px solid #333;
     }
     .grid {
       position: relative;
       width: calc(201px * 10);
-      height: calc(204px * 10);
+      height: calc(204px * 14);
       background-color: #2a2a2a;
       border: 2px solid #444;
     }
@@ -74,24 +78,13 @@
       max-height: 300px;
       overflow-y: auto;
     }
-  
-#palette {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.helm-thumb {
-  margin-bottom: 10px;
-}
-</style>
+  </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (1.6)</h1>
+  <h1>Helm Grid Editor (1.7)</h1>
   <div class="editor-container">
     <div class="palette">
-      <input type="file" id="uploadThumb" accept="image/*" />
-      <img src="images/Darth Maul Mask - thumb.png" draggable="true" title="Darth Maul Mask" data-name="Darth Maul Mask" data-image="Darth Maul Mask.png" data-thumb-name="Darth Maul Mask - thumb.png" />
+      <input type="file" id="uploadThumb" accept="image/*" multiple>
     </div>
     <div class="grid" id="helmGrid"></div>
   </div>
@@ -146,7 +139,6 @@
       e.preventDefault();
       const data = JSON.parse(e.dataTransfer.getData("text/plain"));
 
-      // Prevent duplicate placement of same helm image
       const existing = [...grid.querySelectorAll('.helm')].find(h => h.dataset.name === data.name);
       if (existing && !movingHelm) {
         alert("This helm is already placed on the grid.");
@@ -167,7 +159,6 @@
         const index = placedHelms.findIndex(h => h.col === prevCol && h.row === prevRow && h.name === data.name);
         if (index !== -1) placedHelms.splice(index, 1);
       }
-
 
       const img = document.createElement('img');
       img.src = data.thumb;
@@ -214,12 +205,8 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       fetch('data/helms.json')
-        .then(res => {
-          console.log('helms.json fetched');
-          return res.json();
-        })
+        .then(res => res.json())
         .then(helms => {
-          console.log('helms loaded:', helms);
           helms.forEach(h => {
             const img = document.createElement('img');
             img.src = 'images/' + h.thumb;
@@ -251,22 +238,23 @@
     });
 
     document.getElementById('uploadThumb').addEventListener('change', e => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const url = URL.createObjectURL(file);
-      const filename = file.name;
-      const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
-      const image = filename.replace(" - thumb", "");
+      const files = e.target.files;
+      [...files].forEach(file => {
+        const url = URL.createObjectURL(file);
+        const filename = file.name;
+        const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
+        const image = filename.replace(" - thumb", "");
 
-      const img = document.createElement('img');
-      img.src = url;
-      img.title = name;
-      img.dataset.name = name;
-      img.dataset.image = image;
-      img.dataset.thumbName = filename;
-      img.draggable = true;
-      img.className = 'helm';
-      palette.appendChild(img);
+        const img = document.createElement('img');
+        img.src = url;
+        img.title = name;
+        img.dataset.name = name;
+        img.dataset.image = image;
+        img.dataset.thumbName = filename;
+        img.draggable = true;
+        img.className = 'helm';
+        palette.appendChild(img);
+      });
     });
   </script>
 </body>
