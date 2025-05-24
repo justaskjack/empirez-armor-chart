@@ -24,14 +24,14 @@
     "name": "Jedi Medallion",
     "sellPrice": "5 Credits",
     "slots": "2x3",
-    "note": "",
+    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
     "image": "Collectable17 - Jedi Medallion"
   },
     {
     "name": "Sith Medallion",
     "sellPrice": "5 Credits",
     "slots": "2x3",
-    "note": "",
+    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
     "image": "Collectable16 - Sith Medallion"
   },
   {
