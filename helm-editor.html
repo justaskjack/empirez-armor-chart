@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (1.9)</title>
+  <title>Helm Grid Editor (2.0)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -84,7 +84,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (1.9)</h1>
+  <h1>Helm Grid Editor (2.0)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" multiple>
@@ -141,18 +141,44 @@
     grid.addEventListener('drop', e => {
       e.preventDefault();
       const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-
-      const existing = [...grid.querySelectorAll('.helm')].find(h => h.dataset.name === data.name);
-      if (existing && !movingHelm) {
-        alert("This helm is already placed on the grid.");
-        return;
-      }
-
       const rect = grid.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       const col = Math.floor(x / 202) + 1;
       const row = Math.floor(y / 205) + 1;
+
+      // If target cell is occupied, remove existing helm and return to palette
+      const existingAtCell = [...grid.querySelectorAll('.helm')].find(h =>
+        parseInt(h.dataset.col) === col && parseInt(h.dataset.row) === row
+      );
+      if (existingAtCell) {
+        grid.removeChild(existingAtCell);
+        const thumbBack = document.createElement('img');
+        thumbBack.src = existingAtCell.src;
+        thumbBack.title = existingAtCell.dataset.name;
+        thumbBack.dataset.name = existingAtCell.dataset.name;
+        thumbBack.dataset.image = existingAtCell.dataset.image;
+        thumbBack.dataset.thumbName = existingAtCell.dataset.thumbName;
+        thumbBack.className = 'helm-thumb';
+        thumbBack.draggable = true;
+
+        thumbBack.addEventListener('dragstart', e => {
+          e.dataTransfer.setData("text/plain", JSON.stringify({
+            name: thumbBack.dataset.name,
+            image: thumbBack.dataset.image,
+            thumb: thumbBack.src,
+            thumbName: thumbBack.dataset.thumbName,
+            fromPalette: true
+          }));
+        });
+
+        palette.appendChild(thumbBack);
+
+        const ix = placedHelms.findIndex(h =>
+          h.col === col && h.row === row && h.name === existingAtCell.dataset.name
+        );
+        if (ix !== -1) placedHelms.splice(ix, 1);
+      }
 
       if (movingHelm) grid.removeChild(movingHelm);
 
@@ -226,7 +252,7 @@
 
             img.onclick = () => {
               if (confirm("Delete this helm?")) {
-                document.getElementById('helmGrid').removeChild(img);
+                grid.removeChild(img);
                 const index = placedHelms.findIndex(p =>
                   p.col === h.col && p.row === h.row && p.name === h.name
                 );
@@ -234,7 +260,7 @@
               }
             };
 
-            document.getElementById('helmGrid').appendChild(img);
+            grid.appendChild(img);
             placedHelms.push(h);
           });
         });
