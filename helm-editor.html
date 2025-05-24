@@ -151,6 +151,14 @@
 
       if (movingHelm) grid.removeChild(movingHelm);
 
+      if (movingHelm) {
+        const prevCol = parseInt(movingHelm.dataset.col);
+        const prevRow = parseInt(movingHelm.dataset.row);
+        const index = placedHelms.findIndex(h => h.col === prevCol && h.row === prevRow && h.name === data.name);
+        if (index !== -1) placedHelms.splice(index, 1);
+      }
+
+
       const img = document.createElement('img');
       img.src = data.thumb;
       img.className = 'helm';
