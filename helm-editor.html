@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (1.7)</title>
+  <title>Helm Grid Editor (1.8)</title>
   <style>
     body {
       background: #1a1a1a;
@@ -14,20 +14,21 @@
     h1 {
       margin-bottom: 1rem;
     }
-    .editor-container {
-      display: flex;
-      gap: 2rem;
-    }
+      .editor-container {
+        display: flex;
+        height: 100vh;              /* Ensures full-height for layout */
+        gap: 2rem;
+      }
     .palette {
-      width: 220px;
-      position: sticky;
-      top: 1rem;
-      align-self: flex-start;
-      max-height: 90vh;
-      overflow-y: auto;
+      width: 200px;
+      max-height: 100vh;          /* Let it fill full height */
+      overflow-y: auto;           /* Enables scroll */
       display: flex;
       flex-direction: column;
       gap: 10px;
+      background: #111;
+      padding: 10px;
+      box-sizing: border-box;
     }
     .palette img {
       width: 100%;
@@ -81,7 +82,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (1.7)</h1>
+  <h1>Helm Grid Editor (1.8)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" multiple>
