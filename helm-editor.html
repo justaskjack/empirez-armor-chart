@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (2.2)</title>
+  <title>Helm Grid Editor (2.3)</title>
   <style>
     body {
+      margin: 0;
+      font-family: sans-serif;
       background: #1a1a1a;
       color: white;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
     }
     h1 {
       padding: 1rem;
@@ -17,40 +16,22 @@
     }
     .editor-container {
       display: flex;
-      height: calc(100vh - 60px);
-      gap: 2rem;
+      align-items: flex-start;
       padding: 1rem;
-    }
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-      height: 100%;
-      background: #111;
-      box-sizing: border-box;
+      gap: 2rem;
     }
     .palette {
-      flex: 1;
+      position: sticky;
+      top: 1rem;
+      width: 160px;
+      max-height: calc(100vh - 2rem);
       overflow-y: auto;
+      background: #111;
       padding: 10px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-    }
-    .controls {
-      padding: 10px;
-      background: #111;
-      border-top: 1px solid #333;
-    }
-    .controls button {
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 0.5rem;
-      background: #444;
-      color: white;
-      border: none;
-      cursor: pointer;
+      box-sizing: border-box;
     }
     .palette img {
       width: 100%;
@@ -59,12 +40,16 @@
       cursor: grab;
       box-sizing: border-box;
     }
+    .grid-container {
+      overflow: auto;
+      max-height: calc(100vh - 2rem);
+      border: 2px solid #444;
+    }
     .grid {
       position: relative;
       width: calc(201px * 10);
       height: calc(204px * 14);
       background-color: #2a2a2a;
-      border: 2px solid #444;
     }
     .grid-cell {
       position: absolute;
@@ -83,6 +68,17 @@
       cursor: grab;
       box-sizing: border-box;
     }
+    .controls {
+      padding: 1rem;
+    }
+    .controls button {
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      background: #444;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
     #exportArea {
       background: #111;
       color: #0f0;
@@ -96,18 +92,18 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (2.2)</h1>
+  <h1>Helm Grid Editor (2.3)</h1>
   <div class="editor-container">
-    <div class="sidebar">
-      <div class="palette">
-        <input type="file" id="uploadThumb" accept="image/*" multiple>
-      </div>
-      <div class="controls">
-        <button onclick="exportJSON()">Export JSON</button>
-        <button onclick="copyJSON()">Copy to Clipboard</button>
-      </div>
+    <div class="palette">
+      <input type="file" id="uploadThumb" accept="image/*" multiple>
     </div>
-    <div class="grid" id="helmGrid"></div>
+    <div class="grid-container">
+      <div class="grid" id="helmGrid"></div>
+    </div>
+  </div>
+  <div class="controls">
+    <button onclick="exportJSON()">Export JSON</button>
+    <button onclick="copyJSON()">Copy to Clipboard</button>
   </div>
   <pre id="exportArea"></pre>
 
@@ -296,9 +292,22 @@
         img.dataset.thumbName = filename;
         img.draggable = true;
         img.className = 'helm-thumb';
+
+        img.addEventListener('dragstart', e => {
+          e.dataTransfer.setData("text/plain", JSON.stringify({
+            name: img.dataset.name,
+            image: img.dataset.image,
+            thumb: img.src,
+            thumbName: img.dataset.thumbName,
+            fromPalette: true
+          }));
+        });
+
         palette.appendChild(img);
       });
     });
   </script>
 </body>
 </html>
+
+ 
