@@ -104,6 +104,13 @@
     "note": "",
     "image": "Collectable10 - Wayfinder Stone"
   },
+      {
+    "name": "Pink Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with a Machete to create a Vibroblade",
+    "image": "Collectable21 - Pink Kyber Crystale"
+  },
     {
     "name": "Cereals",
     "sellPrice": "None",
