@@ -236,4 +236,14 @@ header.navbar {
   flex: 0 0 auto;
 }
 
+#base-row .base-img {
+  width: 313px;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  vertical-align: top;
+}
 
