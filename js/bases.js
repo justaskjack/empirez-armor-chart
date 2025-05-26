@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const image = document.createElement('img');
             image.src = `images/${img}`;
             image.alt = base.name;
-            image.className = 'armor-img';
+            image.className = 'base-img'; // NEW class
             a.appendChild(image);
           }
           return a;
