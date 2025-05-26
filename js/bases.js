@@ -35,12 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
           a.appendChild(thumb);
           galleryWrapper.appendChild(a);
         });
+
+// Required for thumbnail plugin to work
+const lgThumbnail = window.lgThumbnail;
+
         
         // Initialize lightGallery
-        lightGallery(galleryWrapper, {
-          thumbnail: true,
-          selector: 'a'
-        });
+lightGallery(galleryWrapper, {
+  selector: 'a',
+  plugins: [lgThumbnail],
+  thumbnail: true,
+  animateThumb: true,
+  showThumbByDefault: true
+});
+
 
 
         const text = document.createElement('div');
@@ -50,9 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         nameEl.innerHTML = `<strong>Name:</strong> ${base.name}`;
         text.appendChild(nameEl);
 
-        const costEl = document.createElement('div');
-        costEl.innerHTML = `<strong>Cost:</strong> ${base.cost}`;
-        text.appendChild(costEl);
+const costEl = document.createElement('div');
+costEl.innerHTML = `<strong>Cost:</strong> ${base.cost}`;
+costEl.style.marginTop = "8px"; // ← Add this line
+text.appendChild(costEl);
+
 
         card.appendChild(text);
         baseContainer.appendChild(card);
