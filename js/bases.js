@@ -14,22 +14,34 @@ document.addEventListener('DOMContentLoaded', () => {
         // Thumbnail from first gallery image
         const thumb = base.gallery[0];
 
-        const galleryLinks = base.gallery.map((img, i) => {
+        // Create a LightGallery container div
+        const galleryWrapper = document.createElement('div');
+        galleryWrapper.id = `lg-gallery-${index}`;
+        galleryWrapper.className = 'lightgallery';
+        card.appendChild(galleryWrapper);
+        
+        // Add all images to the gallery group
+        base.gallery.forEach((img, i) => {
           const a = document.createElement('a');
           a.href = `images/${img}`;
-          a.setAttribute('data-lightbox', groupName);
-          a.setAttribute('data-title', `${base.name} (${i + 1}/${base.gallery.length})`);
-          if (i === 0) {
-            const image = document.createElement('img');
-            image.src = `images/${img}`;
-            image.alt = base.name;
-            image.className = 'base-img'; // NEW class
-            a.appendChild(image);
-          }
-          return a;
+          a.setAttribute('data-lg-size', '1406-1390'); // example size
+          a.setAttribute('data-sub-html', `<h4>${base.name}</h4><p>Image ${i + 1}</p>`);
+        
+          const thumb = document.createElement('img');
+          thumb.src = `images/${img}`;
+          thumb.alt = `${base.name} ${i + 1}`;
+          thumb.className = (i === 0) ? 'base-img' : 'hidden'; // show first, hide rest
+        
+          a.appendChild(thumb);
+          galleryWrapper.appendChild(a);
+        });
+        
+        // Initialize lightGallery
+        lightGallery(galleryWrapper, {
+          thumbnail: true,
+          selector: 'a'
         });
 
-        galleryLinks.forEach(link => card.appendChild(link));
 
         const text = document.createElement('div');
         text.className = 'armor-text';
