@@ -60,7 +60,7 @@ lightGallery(galleryWrapper, {
 
 const costEl = document.createElement('div');
 costEl.innerHTML = `<strong>Cost:</strong> ${base.cost}`;
-costEl.style.marginTop = "8px"; // ← Add this line
+costEl.style.marginTop = "16px"; // ← Add this line
 text.appendChild(costEl);
 
 
