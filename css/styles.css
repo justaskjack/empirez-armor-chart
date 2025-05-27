@@ -255,18 +255,18 @@ header.navbar {
 #saber-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px; /* tighter spacing between hilts */
   justify-content: flex-start;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem;
 }
 
 .saber-card {
-  width: 160px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 100px; /* lower the thumb to allow blade to grow upward */
+  padding-top: 50px; /* lower hilts slightly */
 }
 
 .saber-wrapper {
@@ -281,36 +281,37 @@ header.navbar {
 }
 
 .saber-img {
-  max-height: 220px;
+  max-height: 240px; /* larger hilts */
   width: auto;
   height: auto;
   max-width: 100%;
-  z-index: 3; /* higher than blade */
+  z-index: 3;
 }
 
-/* Blade styling */
+/* Blade: shorter max height, ignites from slightly lower */
 .blade {
   position: absolute;
-  bottom: 100%; /* grow upward */
+  bottom: calc(100% - 20px); /* moves base of blade lower */
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
   height: 0;
   border-radius: 3px;
-  z-index: 2; /* behind hilt */
+  z-index: 2;
   transition: height 0.25s ease-in-out;
 }
 
 .blade.active {
-  height: 150px;
+  height: 140px; /* slightly reduced */
 }
 
-/* Tooltip */
+/* Tooltip BELOW the saber */
 .saber-card .saber-wrapper::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: 100%;
-  transform: translateY(-8px);
+  top: 105%; /* BELOW the hilt */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #222;
   color: #fff;
   padding: 4px 10px;
