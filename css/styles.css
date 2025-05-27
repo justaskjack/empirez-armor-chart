@@ -255,23 +255,23 @@ header.navbar {
 #saber-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* tighter spacing between hilts */
+  gap: 10px; /* tighter spacing between hilts */
   justify-content: flex-start;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
 }
 
 .saber-card {
-  width: 120px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 50px; /* lower hilts slightly */
+  padding-top: 60px; /* positions hilt lower */
 }
 
 .saber-wrapper {
   position: relative;
-  height: 250px;
+  height: 240px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -281,17 +281,16 @@ header.navbar {
 }
 
 .saber-img {
-  max-height: 240px; /* larger hilts */
+  max-height: 210px;
   width: auto;
-  height: auto;
   max-width: 100%;
   z-index: 3;
 }
 
-/* Blade: shorter max height, ignites from slightly lower */
+/* Blade: max height adjusted to just reach title bar */
 .blade {
   position: absolute;
-  bottom: calc(100% - 20px); /* moves base of blade lower */
+  bottom: calc(100% - 10px); /* allow visual overlap with hilt top */
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
@@ -302,21 +301,21 @@ header.navbar {
 }
 
 .blade.active {
-  height: 140px; /* slightly reduced */
+  height: 115px; /* stop under title bar */
 }
 
-/* Tooltip BELOW the saber */
+/* Tooltip UNDER saber */
 .saber-card .saber-wrapper::after {
   content: attr(data-tooltip);
   position: absolute;
-  top: 105%; /* BELOW the hilt */
+  top: 105%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #222;
   color: #fff;
   padding: 4px 10px;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   opacity: 0;
   white-space: nowrap;
   pointer-events: none;
