@@ -338,7 +338,7 @@ header.navbar {
   height: 0;
   background-color: var(--blade-color);
   border-radius: 4px;
-  z-index: 2;
+  z-index: -1;
   transition: height 0.3s ease-out;
 
   animation:
