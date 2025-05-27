@@ -251,7 +251,7 @@ header.navbar {
   display: none;
 }
 
-/* Lightsaber Page */
+/* Lightsabers Section */
 #saber-row {
   display: flex;
   flex-wrap: wrap;
@@ -261,7 +261,7 @@ header.navbar {
 }
 
 .saber-card {
-  width: 140px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,22 +270,28 @@ header.navbar {
 
 .saber-wrapper {
   position: relative;
-  height: 250px;
+  height: 180px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .saber-img {
-  width: 100%;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   z-index: 2;
 }
 
 .blade {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 8px;
   height: 0;
   border-radius: 3px;
@@ -302,4 +308,3 @@ header.navbar {
   font-size: 0.9rem;
   text-align: center;
 }
-
