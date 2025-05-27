@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Obi-Wan Kenobi's Lightsword",
+    "thumb": "Lightsaber 01.png",
+    "bladeColor": "#00ff00",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+  {
+    "name": "Luke Skywalker's Lightsword",
+    "thumb": "Lightsaber 02.png",
+    "bladeColor": "#ff0000",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  }
+]
