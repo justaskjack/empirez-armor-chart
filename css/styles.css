@@ -282,7 +282,7 @@ header.navbar {
 }
 
 .saber-wrapper img {
-  margin-top: 4px;
+  margin-top: 0; /* Remove gap above hilt */
 }
 
 
@@ -334,13 +334,12 @@ header.navbar {
 .blade {
   position: absolute;
   bottom: 100%;
-  width: 8px;
+  width: 10px; /* Slightly thicker blade */
   height: 0;
   background-color: var(--blade-color);
-  border-radius: 4px;
+  border-radius: 0; /* Flat base of blade */
   z-index: -1;
   transition: height 0.3s ease-out;
-
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
@@ -350,8 +349,12 @@ header.navbar {
 
 
 .blade.active {
-  height: 210px; /* adjusted to stop under title bar */
-  box-shadow: 0 0 6px 2px currentColor; /* subtler glow */
+  height: 210px;
+  box-shadow:
+    0 0 12px var(--blade-color),
+    0 0 24px var(--blade-color),
+    0 0 36px var(--blade-color),
+    0 0 48px var(--blade-color); /* Stronger glow */
 }
 
 
