@@ -287,22 +287,26 @@ header.navbar {
   z-index: 3;
 }
 
-/* Blade: max height adjusted to just reach title bar */
+/* Blade: thicker, glows, no gap from hilt */
 .blade {
   position: absolute;
-  bottom: calc(100% - 10px); /* allow visual overlap with hilt top */
+  bottom: 100%; /* align flush to hilt */
   left: 50%;
   transform: translateX(-50%);
-  width: 8px;
+  width: 10px; /* thicker blade */
   height: 0;
-  border-radius: 3px;
+  border-radius: 4px;
   z-index: 2;
-  transition: height 0.25s ease-in-out;
+  transition: height 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  box-shadow: none;
+  opacity: 0.95;
 }
 
 .blade.active {
-  height: 115px; /* stop under title bar */
+  height: 125px; /* keep under title bar */
+  box-shadow: 0 0 12px 3px currentColor; /* glowing saber effect */
 }
+
 
 /* Tooltip UNDER saber */
 .saber-card .saber-wrapper::after {
