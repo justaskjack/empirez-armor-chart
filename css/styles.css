@@ -290,22 +290,23 @@ header.navbar {
 /* Blade: thicker, glows, no gap from hilt */
 .blade {
   position: absolute;
-  bottom: 100%; /* align flush to hilt */
+  bottom: calc(100% - 2px); /* closes gap between hilt and blade */
   left: 50%;
   transform: translateX(-50%);
-  width: 10px; /* thicker blade */
+  width: 12px; /* thicker blade */
   height: 0;
-  border-radius: 4px;
+  border-radius: 6px;
   z-index: 2;
   transition: height 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   box-shadow: none;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .blade.active {
-  height: 125px; /* keep under title bar */
-  box-shadow: 0 0 12px 3px currentColor; /* glowing saber effect */
+  height: 110px; /* adjusted to stop under title bar */
+  box-shadow: 0 0 6px 2px currentColor; /* subtler glow */
 }
+
 
 
 /* Tooltip UNDER saber */
