@@ -296,13 +296,13 @@ header.navbar {
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
-      0 0 4px 1px var(--blade-color, #0ff),
-      0 0 8px 2px var(--blade-color, #0ff);
+      0 0 2px 1px var(--blade-color, #0ff),
+      0 0 6px 2px var(--blade-color, #0ff);
   }
   50% {
     box-shadow:
-      0 0 6px 2px var(--blade-color, #0ff),
-      0 0 10px 3px var(--blade-color, #0ff);
+      0 0 4px 2px var(--blade-color, #0ff),
+      0 0 8px 3px var(--blade-color, #0ff);
   }
 }
 
