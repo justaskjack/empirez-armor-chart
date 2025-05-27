@@ -255,56 +255,73 @@ header.navbar {
 #saber-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .saber-card {
-  width: 120px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 100px; /* lower the thumb to allow blade to grow upward */
 }
 
 .saber-wrapper {
   position: relative;
-  height: 180px;
+  height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  overflow: hidden;
+  overflow: visible;
   cursor: pointer;
 }
 
 .saber-img {
-  max-height: 180px;
+  max-height: 220px;
   width: auto;
   height: auto;
   max-width: 100%;
-  z-index: 2;
+  z-index: 3; /* higher than blade */
 }
 
+/* Blade styling */
 .blade {
   position: absolute;
-  top: 0;
+  bottom: 100%; /* grow upward */
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
   height: 0;
   border-radius: 3px;
-  z-index: 1;
-  transition: height 0.3s ease-in-out;
+  z-index: 2; /* behind hilt */
+  transition: height 0.25s ease-in-out;
 }
 
 .blade.active {
   height: 150px;
 }
 
-.saber-label {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  text-align: center;
+/* Tooltip */
+.saber-card .saber-wrapper::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  transform: translateY(-8px);
+  background-color: #222;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.saber-card .saber-wrapper:hover::after {
+  opacity: 1;
 }
