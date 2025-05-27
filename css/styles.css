@@ -270,15 +270,21 @@ header.navbar {
 }
 
 .saber-wrapper {
-  position: relative;
-  height: 240px;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: visible;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ensure blade and hilt stack top-down */
+  position: relative;
+  width: 100px;
+  height: 240px;
+  margin: 0 10px;
   cursor: pointer;
 }
+
+.saber-wrapper img {
+  margin-top: 4px;
+}
+
 
 .saber-img {
   max-height: 210px;
