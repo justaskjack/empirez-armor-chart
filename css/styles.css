@@ -309,7 +309,7 @@ header.navbar {
 }
 
 .blade.active {
-  height: 90px; /* adjusted to stop under title bar */
+  height: 210px; /* adjusted to stop under title bar */
   box-shadow: 0 0 6px 2px currentColor; /* subtler glow */
 }
 
