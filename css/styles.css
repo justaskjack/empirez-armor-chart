@@ -296,26 +296,25 @@ header.navbar {
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
-      0 0 20px 6px var(--blade-color, #0ff),
-      0 0 40px 10px var(--blade-color, #0ff),
-      0 0 60px 12px var(--blade-color, #0ff);
+      0 0 6px 2px var(--blade-color, #0ff),
+      0 0 12px 4px var(--blade-color, #0ff);
   }
   50% {
     box-shadow:
-      0 0 28px 10px var(--blade-color, #0ff),
-      0 0 50px 16px var(--blade-color, #0ff),
-      0 0 70px 20px var(--blade-color, #0ff);
+      0 0 10px 3px var(--blade-color, #0ff),
+      0 0 18px 5px var(--blade-color, #0ff);
   }
 }
 
 @keyframes bladeFlicker {
   0%, 100% { opacity: 1; }
-  45% { opacity: 0.93; }
-  50% { opacity: 0.75; }
-  55% { opacity: 0.97; }
-  60% { opacity: 0.88; }
-  75% { opacity: 1; }
+  45% { opacity: 0.96; }
+  50% { opacity: 0.82; }
+  55% { opacity: 0.94; }
+  60% { opacity: 0.9; }
+  75% { opacity: 0.98; }
 }
+
 
 .blade {
   position: absolute;
@@ -326,13 +325,15 @@ header.navbar {
   border-radius: 0;
   z-index: 2;
   transition: height 0.3s ease-out;
-  animation:
-    bladePulse 1.6s ease-in-out infinite,
-    bladeFlicker 0.15s infinite;
+  opacity: 0;
 }
 
 .blade.active {
   height: 210px;
+  opacity: 1;
+  animation:
+    bladePulse 1.6s ease-in-out infinite,
+    bladeFlicker 0.15s infinite;
 }
 
 
