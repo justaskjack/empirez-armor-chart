@@ -12,5 +12,82 @@
     "bladeColor": "#5de665",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
+  },
+    {
+    "name": "Rey Skywalker's Lightsword",
+    "thumb": "Lightsaber 03.png",
+    "bladeColor": "#fefe9e",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+                {
+    "name": "Ahsoka Tano's Lightsword",
+    "thumb": "Lightsaber 13.png",
+    "bladeColor": "#e7e8ea",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+      {
+    "name": "Mace Windu's Lightsword",
+    "thumb": "Lightsaber 04.png",
+    "bladeColor": "#fc42ff",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+        {
+    "name": "Yoda's Lightsword",
+    "thumb": "Lightsaber 05.png",
+    "bladeColor": "#60e268",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+          {
+    "name": "Count Dooku's Lightsword",
+    "thumb": "Lightsaber 06.png",
+    "bladeColor": "#d25457",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+            {
+    "name": "Cannibals Lightsword",
+    "thumb": "Lightsaber 07.png",
+    "bladeColor": "#df4d4e",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+            {
+    "name": "Kylos Lightsword",
+    "thumb": "Lightsaber 08.png",
+    "bladeColor": "#dc5563",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+            {
+    "name": "Sith's Lightsword",
+    "thumb": "Lightsaber 09.png",
+    "bladeColor": "#db6767",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+            {
+    "name": "Dark Sword",
+    "thumb": "Lightsaber 10.png",
+    "bladeColor": "#575958",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+            {
+    "name": "Mauls Lightsword",
+    "thumb": "Lightsaber 11.png",
+    "bladeColor": "#e64b59",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+              {
+    "name": "Darth Malgus Lightsword",
+    "thumb": "Lightsaber 12.png",
+    "bladeColor": "#d24b47",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
   }
 ]
