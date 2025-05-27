@@ -336,17 +336,17 @@ header.navbar {
   bottom: 100%;
   width: 10px;
   height: 0;
-  background-color: var(--blade-color, #0ff);
+  background-color: #00f; /* force blue glow for test */
   border-radius: 0;
-  z-index: 1;
+  z-index: 2; /* bring above backgrounds */
   transition: height 0.3s ease-out;
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
   box-shadow:
-    0 0 20px 6px var(--blade-color, #0ff),
-    0 0 40px 10px var(--blade-color, #0ff),
-    0 0 60px 12px var(--blade-color, #0ff);
+    0 0 20px 6px #00f,
+    0 0 40px 10px #00f,
+    0 0 60px 12px #00f;
 }
 
 
