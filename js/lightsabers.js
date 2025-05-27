@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
           blade.classList.toggle('active', bladeVisible);
 
           const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
-          audio.volume = 0.7; // Reduce volume to 70%
+          sound.volume = 0.7; // Reduce volume to 70%
           sound.play();
         });
 
