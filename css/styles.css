@@ -296,39 +296,25 @@ header.navbar {
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
-      0 0 10px var(--blade-color),
-      0 0 20px var(--blade-color),
-      0 0 30px var(--blade-color),
-      0 0 40px var(--blade-color);
+      0 0 20px 6px var(--blade-color, #0ff),
+      0 0 40px 10px var(--blade-color, #0ff),
+      0 0 60px 12px var(--blade-color, #0ff);
   }
   50% {
     box-shadow:
-      0 0 14px var(--blade-color),
-      0 0 28px var(--blade-color),
-      0 0 42px var(--blade-color),
-      0 0 56px var(--blade-color);
+      0 0 28px 10px var(--blade-color, #0ff),
+      0 0 50px 16px var(--blade-color, #0ff),
+      0 0 70px 20px var(--blade-color, #0ff);
   }
 }
 
 @keyframes bladeFlicker {
-  0%, 100% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0.95;
-  }
-  50% {
-    opacity: 0.85;
-  }
-  55% {
-    opacity: 0.98;
-  }
-  60% {
-    opacity: 0.92;
-  }
-  75% {
-    opacity: 0.99;
-  }
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.93; }
+  50% { opacity: 0.75; }
+  55% { opacity: 0.97; }
+  60% { opacity: 0.88; }
+  75% { opacity: 1; }
 }
 
 .blade {
@@ -336,25 +322,19 @@ header.navbar {
   bottom: 100%;
   width: 10px;
   height: 0;
-  background-color: #00f; /* force blue glow for test */
+  background-color: var(--blade-color, #0ff);
   border-radius: 0;
-  z-index: 2; /* bring above backgrounds */
+  z-index: 2;
   transition: height 0.3s ease-out;
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
-  box-shadow:
-    0 0 20px 6px #00f,
-    0 0 40px 10px #00f,
-    0 0 60px 12px #00f;
 }
-
-
-
 
 .blade.active {
   height: 210px;
 }
+
 
 
 
