@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cardWrapper = document.createElement('div');
         cardWrapper.className = 'saber-wrapper';
+        cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
         const blade = document.createElement('div');
         blade.className = 'blade';
@@ -33,12 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cardWrapper.appendChild(blade);
         cardWrapper.appendChild(img);
         card.appendChild(cardWrapper);
-
-        const label = document.createElement('div');
-        label.className = 'saber-label';
-        label.textContent = saber.name;
-        card.appendChild(label);
-
         saberContainer.appendChild(card);
       });
     });
