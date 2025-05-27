@@ -251,3 +251,55 @@ header.navbar {
   display: none;
 }
 
+/* Lightsaber Page */
+#saber-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.saber-card {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.saber-wrapper {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  cursor: pointer;
+}
+
+.saber-img {
+  width: 100%;
+  z-index: 2;
+}
+
+.blade {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 0;
+  border-radius: 3px;
+  z-index: 1;
+  transition: height 0.3s ease-in-out;
+}
+
+.blade.active {
+  height: 150px;
+}
+
+.saber-label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
