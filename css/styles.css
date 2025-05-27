@@ -296,24 +296,24 @@ header.navbar {
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
-      0 0 6px 2px var(--blade-color, #0ff),
-      0 0 12px 4px var(--blade-color, #0ff);
+      0 0 4px 1px var(--blade-color, #0ff),
+      0 0 8px 2px var(--blade-color, #0ff);
   }
   50% {
     box-shadow:
-      0 0 10px 3px var(--blade-color, #0ff),
-      0 0 18px 5px var(--blade-color, #0ff);
+      0 0 6px 2px var(--blade-color, #0ff),
+      0 0 10px 3px var(--blade-color, #0ff);
   }
 }
 
 @keyframes bladeFlicker {
   0%, 100% { opacity: 1; }
-  45% { opacity: 0.96; }
-  50% { opacity: 0.82; }
-  55% { opacity: 0.94; }
-  60% { opacity: 0.9; }
-  75% { opacity: 0.98; }
+  40% { opacity: 0.97; }
+  50% { opacity: 0.9; }
+  60% { opacity: 0.95; }
+  70% { opacity: 0.98; }
 }
+
 
 
 .blade {
@@ -335,6 +335,7 @@ header.navbar {
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
 }
+
 
 
 
