@@ -7,6 +7,54 @@
     "rarity": "Common",
     "location": "All tiers"
   },
+      {
+    "name": "Stormtrooper",
+    "image": "Stormtrooper 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Stormtrooper Corporal",
+    "image": "Stormtrooper Corporal 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Stormtrooper Sergeant",
+    "image": "Stormtrooper Sergeant 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Stormtrooper Unit Leader",
+    "image": "Stormtrooper Officer 02.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Stormtrooper Squad Leader",
+    "image": "Stormtrooper Officer 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Stormsniper",
+    "image": "Stormsniper 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
     {
     "name": "Vanilla DayZ Gear (Militia)",
     "image": "Vanilla DayZ Gear 01.png",
@@ -26,6 +74,14 @@
       {
     "name": "Vanilla Firefighter Gear (Yellow)",
     "image": "Firefighter Gear 02 (Yellow).png",
+    "type": "Vanilla DayZ Gear",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
+        {
+    "name": "Construction Worker",
+    "image": "Construction Worker 01.png",
     "type": "Vanilla DayZ Gear",
     "protection": 1,
     "rarity": "Common",
@@ -90,6 +146,14 @@
     {
     "name": "Ahsoka Tano Set",
     "image": "Ahsoka Tano Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tiers 3, 5 & 6"
+  },
+      {
+    "name": "Bo Katan Set",
+    "image": "Bo Katan.png",
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
