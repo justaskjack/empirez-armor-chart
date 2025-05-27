@@ -325,17 +325,22 @@ header.navbar {
   background-color: var(--blade-color, #0ff);
   border-radius: 0;
   z-index: 2;
-  transition: height 0.3s ease-out;
   opacity: 0;
+  transition: height 0.3s ease-out;
 }
 
 .blade.active {
   height: 210px;
   opacity: 1;
+  box-shadow:
+    0 0 4px 1px var(--blade-color),
+    0 0 8px 2px var(--blade-color),
+    0 0 16px 4px var(--blade-color);
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
 }
+
 
 
 
