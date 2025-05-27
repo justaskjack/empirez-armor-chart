@@ -338,7 +338,7 @@ header.navbar {
   height: 0;
   background-color: var(--blade-color);
   border-radius: 0; /* Flat base of blade */
-  z-index: -1;
+  z-index: 1;
   transition: height 0.3s ease-out;
   animation:
     bladePulse 1.6s ease-in-out infinite,
@@ -350,12 +350,13 @@ header.navbar {
 
 .blade.active {
   height: 210px;
+  background-color: var(--blade-color, #0ff); /* fallback for safety */
   box-shadow:
-    0 0 12px var(--blade-color),
-    0 0 24px var(--blade-color),
-    0 0 36px var(--blade-color),
-    0 0 48px var(--blade-color); /* Stronger glow */
+    0 0 20px 6px var(--blade-color, #0ff),
+    0 0 40px 10px var(--blade-color, #0ff),
+    0 0 60px 12px var(--blade-color, #0ff);
 }
+
 
 
 
