@@ -293,20 +293,22 @@ header.navbar {
   z-index: 3;
 }
 
-/* Blade: thicker, glows, no gap from hilt */
 .blade {
   position: absolute;
-  bottom: calc(100% - 2px); /* closes gap between hilt and blade */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12px; /* thicker blade */
+  bottom: 100%; /* grow from top of hilt */
+  width: 8px; /* slightly thicker */
+  background-color: var(--blade-color);
   height: 0;
-  border-radius: 6px;
-  z-index: 2;
-  transition: height 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  box-shadow: none;
-  opacity: 0.9;
+  border-radius: 4px;
+  box-shadow:
+    0 0 12px var(--blade-color),
+    0 0 24px var(--blade-color),
+    0 0 48px var(--blade-color),
+    0 0 72px var(--blade-color); /* layered glow like reference */
+  transition: height 0.3s ease-out, box-shadow 0.3s ease-out;
+  z-index: -1;
 }
+
 
 .blade.active {
   height: 210px; /* adjusted to stop under title bar */
