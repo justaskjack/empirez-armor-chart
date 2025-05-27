@@ -334,15 +334,19 @@ header.navbar {
 .blade {
   position: absolute;
   bottom: 100%;
-  width: 10px; /* Slightly thicker blade */
+  width: 10px;
   height: 0;
-  background-color: var(--blade-color);
-  border-radius: 0; /* Flat base of blade */
+  background-color: var(--blade-color, #0ff);
+  border-radius: 0;
   z-index: 1;
   transition: height 0.3s ease-out;
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
+  box-shadow:
+    0 0 20px 6px var(--blade-color, #0ff),
+    0 0 40px 10px var(--blade-color, #0ff),
+    0 0 60px 12px var(--blade-color, #0ff);
 }
 
 
@@ -350,11 +354,6 @@ header.navbar {
 
 .blade.active {
   height: 210px;
-  background-color: var(--blade-color, #0ff); /* fallback for safety */
-  box-shadow:
-    0 0 20px 6px var(--blade-color, #0ff),
-    0 0 40px 10px var(--blade-color, #0ff),
-    0 0 60px 12px var(--blade-color, #0ff);
 }
 
 
