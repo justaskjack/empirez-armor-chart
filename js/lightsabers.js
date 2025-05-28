@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const blade = document.createElement('div');
         blade.className = 'blade';
-        blade.style.backgroundColor = saber.bladeColor;
+        
+        // Set both the background color and CSS variable
+        blade.style.backgroundColor = saber.bladeColor || '#0ff';
+        blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+
 
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
