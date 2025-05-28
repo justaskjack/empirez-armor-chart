@@ -70,7 +70,7 @@
     "thumb": "Lightsaber 13.png",
     "bladeColor": "#39e048",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
             {
     "name": "Kylos Lightsword",
