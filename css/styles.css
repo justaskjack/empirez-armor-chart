@@ -342,11 +342,16 @@ header.navbar {
     bladeFlicker 0.15s infinite;
 }
 
+.blade.bottom-blade {
+  top: 0;
+  bottom: auto;
+  transform-origin: top;
+  transform: scaleY(0);
+}
 
-
-
-
-
+.blade.bottom-blade.active {
+  transform: scaleY(1);
+}
 
 
 /* Tooltip UNDER saber */
