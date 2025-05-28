@@ -1,83 +1,55 @@
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("lightsabers.json")
-    .then((response) => response.json())
-    .then((sabers) => {
-      const row = document.getElementById("saber-row");
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('lightsabers.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('lightsaber-container');
 
-      sabers.forEach((saber) => {
-        const card = document.createElement("div");
-        card.className = "saber-card";
+      data.forEach(saber => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'saber-wrapper';
+        wrapper.title = saber.name;
 
-        const wrapper = document.createElement("div");
-        wrapper.className = "saber-wrapper";
-        wrapper.setAttribute("data-tooltip", saber.name);
+        const saberDiv = document.createElement('div');
+        saberDiv.className = 'saber';
 
-        // Create main blade
-        const blade = document.createElement("div");
-        blade.className = "blade";
-        blade.style.setProperty("--blade-color", saber.bladeColor || "#0ff");
-        blade.style.backgroundColor = saber.bladeColor;
+        const hilt = document.createElement('img');
+        hilt.src = saber.thumb;
+        hilt.alt = saber.name;
+        hilt.className = 'hilt';
 
-        // Custom offsets and rotation
-        if (saber.offsetX) blade.style.left = saber.offsetX;
-        if (saber.offsetY) blade.style.bottom = saber.offsetY;
-        if (saber.rotation) blade.style.transform = `rotate(${saber.rotation}deg)`;
-        if (saber.shape === "knife") blade.style.borderRadius = "0 30% 0 30%";
+        const blade = document.createElement('div');
+        blade.className = 'blade';
 
-        wrapper.appendChild(blade);
+        // Safe check for bladeColor
+        const bladeColor = saber.bladeColor || '#0ff';
+        blade.style.setProperty('--blade-color', bladeColor);
+        blade.style.backgroundColor = bladeColor;
 
-        // Optional mirrored blade
-        if (saber.mirroredBlade) {
-          const bottomBlade = blade.cloneNode(true);
-          bottomBlade.style.top = "100%";
-          bottomBlade.style.bottom = "auto";
-          wrapper.appendChild(bottomBlade);
-        }
+        // Create audio elements safely
+        const soundOn = new Audio(saber.soundOn || 'Saber-on.wav');
+        const soundOff = new Audio(saber.soundOff || 'Saber-off.wav');
+        soundOn.volume = 0.7;
+        soundOff.volume = 0.7;
 
-        // Optional side blades
-        if (saber.sideBlades) {
-          const leftBlade = blade.cloneNode(true);
-          leftBlade.style.bottom = "calc(100% - 30px)";
-          leftBlade.style.left = "-15px";
-          leftBlade.style.transform = "rotate(90deg)";
-          wrapper.appendChild(leftBlade);
-
-          const rightBlade = blade.cloneNode(true);
-          rightBlade.style.bottom = "calc(100% - 30px)";
-          rightBlade.style.left = "15px";
-          rightBlade.style.transform = "rotate(-90deg)";
-          wrapper.appendChild(rightBlade);
-        }
-
-        // Create hilt image
-        const img = document.createElement("img");
-        img.className = "saber-img";
-        img.src = `images/lightsabers/${saber.thumb}`;
-        wrapper.appendChild(img);
-
-        // Sounds
-        const onSound = new Audio(`sounds/${saber.soundOn}`);
-        const offSound = new Audio(`sounds/${saber.soundOff}`);
-        onSound.volume = 0.7;
-        offSound.volume = 0.7;
-
-        let bladeActive = false;
-        wrapper.addEventListener("click", () => {
-          bladeActive = !bladeActive;
-          wrapper.querySelectorAll(".blade").forEach((b) => {
-            b.classList.toggle("active", bladeActive);
-          });
-          if (bladeActive) {
-            onSound.currentTime = 0;
-            onSound.play();
+        // Toggle behavior
+        hilt.addEventListener('click', () => {
+          const isActive = blade.classList.toggle('active');
+          if (isActive) {
+            soundOn.currentTime = 0;
+            soundOn.play();
           } else {
-            offSound.currentTime = 0;
-            offSound.play();
+            soundOff.currentTime = 0;
+            soundOff.play();
           }
         });
 
-        card.appendChild(wrapper);
-        row.appendChild(card);
+        saberDiv.appendChild(blade);
+        saberDiv.appendChild(hilt);
+        wrapper.appendChild(saberDiv);
+        container.appendChild(wrapper);
       });
+    })
+    .catch(error => {
+      console.error('Failed to load lightsabers:', error);
     });
 });
