@@ -55,7 +55,8 @@
     "bladeColor": "#df4d4e",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "offsetY": "10px"
+    "offsetY": "10px",
+    "bladeZIndex": "2"
   },
             {
     "name": "Kylos Lightsword",
@@ -91,6 +92,7 @@
     "bladeColor": "#d24b47",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "offsetY": "10px"
+    "offsetY": "10px",
+    "bladeZIndex": "2"
   }
 ]
