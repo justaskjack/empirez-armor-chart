@@ -24,7 +24,7 @@
   "name": "Ahsoka Tano's Lightsword",
   "thumb": "Lightsaber 13.png",
   "bladeColor": "#e7e8ea",
-  "offsetX": "35px",
+  "offsetX": "36px",
   "soundOn": "Saber-on.wav",
   "soundOff": "Saber-off.wav"
 },
@@ -55,6 +55,7 @@
     "bladeColor": "#df4d4e",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
+    "offsetY": "10px"
   },
             {
     "name": "Kylos Lightsword",
@@ -90,5 +91,6 @@
     "bladeColor": "#d24b47",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
+    "offsetY": "10px"
   }
 ]
