@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
           bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
           bottomBlade.style.left = saber.offsetX || '0px';
           if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
+
           blades.push(bottomBlade);
         }
 
@@ -54,8 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Adjust bottom blade position after image loads
         img.onload = () => {
           if (saber.doubleBlade && bottomBlade) {
-            const imgHeight = img.offsetHeight;
-            bottomBlade.style.top = `${imgHeight}px`;
+            const imgRect = img.getBoundingClientRect();
+            const wrapperRect = cardWrapper.getBoundingClientRect();
+            const offsetTop = img.offsetTop + img.offsetHeight;
+
+            // Position blade relative to wrapper using image’s bottom
+            bottomBlade.style.top = `${offsetTop}px`;
           }
         };
 
