@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.offsetY) {
           blade.style.top = saber.offsetY;
         }
+        if (saber.bladeZIndex) {
+        blade.style.zIndex = saber.bladeZIndex;
+        }
         
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
