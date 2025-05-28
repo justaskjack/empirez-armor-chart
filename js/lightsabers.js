@@ -86,14 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
           sound.play();
         });
 
-        blades.forEach(b => imgContainer.appendChild(b));
-        
-        const imgContainer = document.createElement('div');
-        imgContainer.className = 'saber-img-container';
-        imgContainer.appendChild(img);
-        cardWrapper.appendChild(imgContainer);
-
-        
+        blades.forEach(b => cardWrapper.appendChild(b));
+        cardWrapper.appendChild(img);
         card.appendChild(cardWrapper);
         saberContainer.appendChild(card);
       });
