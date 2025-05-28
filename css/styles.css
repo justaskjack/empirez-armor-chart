@@ -321,13 +321,16 @@ header.navbar {
 .blade {
   position: absolute;
   bottom: 100%;
-  width: 10px;
-  height: 0;
-  background-color: var(--blade-color, #0ff);
-  border-radius: 0;
-  z-index: 2;
-  opacity: 0;
-  transition: height 0.3s ease-out;
+  left: 50%;
+  width: 4px;
+  height: 100px;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+  opacity: 0.85;
+  box-shadow: 0 0 6px var(--blade-color), 0 0 15px var(--blade-color);
+  animation: bladeFlicker 0.15s infinite alternate;
+  z-index: 1; /* Default value */
 }
 
 .blade.active {
