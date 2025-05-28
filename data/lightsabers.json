@@ -54,7 +54,7 @@
     "thumb": "Lightsaber 07.png",
     "bladeColor": "#df4d4e",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
     "offsetY": "10px"
   },
             {
@@ -90,7 +90,7 @@
     "thumb": "Lightsaber 12.png",
     "bladeColor": "#d24b47",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
     "offsetY": "10px"
   }
 ]
