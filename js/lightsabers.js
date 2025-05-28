@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
 
         if (saber.offsetX) blade.style.left = saber.offsetX;
-        if (saber.offsetY) blade.style.bottom = `calc(100% + ${saber.offsetY})`;
+        // if (saber.offsetY) blade.style.bottom = `calc(100% + ${saber.offsetY})`;
         if (saber.bladeZIndex) blade.style.zIndex = saber.bladeZIndex;
 
         // Optional horizontal position offset
         if (saber.offsetX) {
           blade.style.left = saber.offsetX;
         }
-        if (saber.offsetY) {
-          blade.style.top = saber.offsetY;
-        }
+        // if (saber.offsetY) {
+        //   blade.style.top = saber.offsetY;
+        // }
         if (saber.bladeZIndex) {
         blade.style.zIndex = saber.bladeZIndex;
         }
@@ -38,6 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
         img.className = 'saber-img';
+
+        // Apply vertical offset to hilt image only (not blade)
+        if (saber.offsetY) {
+        img.style.transform = `translateY(${saber.offsetY})`;
+        }
 
         let bladeVisible = false;
 
