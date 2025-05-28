@@ -342,15 +342,25 @@ header.navbar {
     bladeFlicker 0.15s infinite;
 }
 
+.hilt-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
 .blade.bottom-blade {
-  top: 100%;
-  bottom: auto;
+  position: absolute;
+  top: 100%; /* start from bottom of image */
+  left: 50%;
   transform-origin: top;
-  transform: scaleY(0);
+  transform: scaleY(0) translateX(-50%);
 }
 
 .blade.bottom-blade.active {
-  transform: scaleY(1);
+  transform: scaleY(1) translateX(-50%);
 }
 
 
