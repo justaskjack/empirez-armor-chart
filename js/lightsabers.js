@@ -12,10 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardWrapper.className = 'saber-wrapper';
         cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
-        const blade = document.createElement('div');
-
         const blades = [];
-        
+
         // === Top Blade (default) ===
         const topBlade = document.createElement('div');
         topBlade.className = 'blade';
@@ -25,69 +23,38 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.offsetX) topBlade.style.left = saber.offsetX;
         if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
-        
+
+        // === Bottom Blade (for double sabers) ===
         let bottomBlade = null;
-        
         if (saber.doubleBlade) {
           bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
           bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
-          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-          if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
-          if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
-        
-          // Temporary default position (will be updated dynamically after image loads)
-          bottomBlade.style.top = '100%';
-        
+          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff';
+          bottomBlade.style.left = saber.offsetX || '50%';
+          bottomBlade.style.transform = 'scaleY(0) translateX(-50%)';
+          bottomBlade.style.transformOrigin = 'top';
+          bottomBlade.style.zIndex = saber.bladeZIndex || 2;
+          bottomBlade.style.top = '100%'; // Will be adjusted after image loads
           blades.push(bottomBlade);
         }
 
-
-
-        blade.className = 'blade';
-        
-        // Set both the background color and CSS variable
-        blade.style.backgroundColor = saber.bladeColor || '#0ff';
-        blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-
-        if (saber.offsetX) blade.style.left = saber.offsetX;
-        // if (saber.offsetY) blade.style.bottom = `calc(100% + ${saber.offsetY})`;
-        if (saber.bladeZIndex) blade.style.zIndex = saber.bladeZIndex;
-
-        // Optional horizontal position offset
-        if (saber.offsetX) {
-          blade.style.left = saber.offsetX;
-        }
-        // if (saber.offsetY) {
-        //   blade.style.top = saber.offsetY;
-        // }
-        if (saber.bladeZIndex) {
-        blade.style.zIndex = saber.bladeZIndex;
-        }
-        
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
         img.className = 'saber-img';
 
+        // Position bottom blade based on actual hilt height after image loads
         img.onload = () => {
           if (saber.doubleBlade && bottomBlade) {
-              const imgHeight = img.offsetHeight;
-              bottomBlade.style.top = `${imgHeight}px`;
-            }
-          };
+            const hiltHeight = img.offsetHeight;
+            bottomBlade.style.top = `${hiltHeight}px`;
+          }
+        };
 
-
-        // Apply vertical offset to blade starting point (Y), so it dips into the hilt
-        if (saber.offsetY) {
-          blade.style.bottom = saber.offsetY;
-        }
-        
-        // Optionally also shift the hilt image visually if needed
-        if (saber.hiltOffsetY) {
-          img.style.transform = `translateY(${saber.hiltOffsetY})`;
-        }
-
+        // Optional vertical offset for blade or hilt
+        if (saber.offsetY) topBlade.style.bottom = saber.offsetY;
+        if (saber.hiltOffsetY) img.style.transform = `translateY(${saber.hiltOffsetY})`;
 
         let bladeVisible = false;
 
@@ -100,17 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
           sound.play();
         });
 
-        blades.forEach(b => {
-          const target = b.classList.contains('bottom-blade') ? hiltWrapper : cardWrapper;
-          target.appendChild(b);
-        });
-
-        
+        // Create hilt wrapper and append image
         const hiltWrapper = document.createElement('div');
         hiltWrapper.className = 'hilt-wrapper';
         hiltWrapper.appendChild(img);
+
+        // Append blades first, then hilt
+        blades.forEach(b => cardWrapper.appendChild(b));
         cardWrapper.appendChild(hiltWrapper);
-        
         card.appendChild(cardWrapper);
         saberContainer.appendChild(card);
       });
