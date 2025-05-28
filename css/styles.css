@@ -296,15 +296,16 @@ header.navbar {
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
-      0 0 4px 1px var(--blade-color),
-      0 0 8px 2px var(--blade-color);
+      0 0 3px 0.5px var(--blade-color),
+      0 0 6px 1px var(--blade-color);
   }
   50% {
     box-shadow:
-      0 0 6px 2px var(--blade-color),
-      0 0 10px 3px var(--blade-color);
+      0 0 4px 1px var(--blade-color),
+      0 0 8px 2px var(--blade-color);
   }
 }
+
 
 
 @keyframes bladeFlicker {
@@ -333,13 +334,14 @@ header.navbar {
   height: 210px;
   opacity: 1;
   box-shadow:
-    0 0 4px 1px var(--blade-color),
-    0 0 8px 2px var(--blade-color),
-    0 0 16px 4px var(--blade-color);
+    0 0 3px 1px var(--blade-color),
+    0 0 6px 2px var(--blade-color),
+    0 0 12px 3px var(--blade-color);
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
 }
+
 
 
 
