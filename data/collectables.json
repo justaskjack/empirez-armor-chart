@@ -1,5 +1,47 @@
 [
   {
+    "name": "Trade Federation Coin",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Used to purchase custom bases or ships from the admins. See Discord for more details",
+    "image": "Collectable26 - Trade Federation Coin"
+  },
+      {
+    "name": "Jedi Medallion",
+    "sellPrice": "5 Credits",
+    "slots": "2x3",
+    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
+    "image": "Collectable17 - Jedi Medallion"
+  },
+    {
+    "name": "Sith Medallion",
+    "sellPrice": "5 Credits",
+    "slots": "2x3",
+    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
+    "image": "Collectable16 - Sith Medallion"
+  },
+      {
+    "name": "1 Credit",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Credits are provided as currency from the Jawa Trader in tosche Station. They can be used to purchase items and vehicles from the Jawa or to trade with other players",
+    "image": "Collectable29 - 1 Credit"
+  },
+        {
+    "name": "5 Credits",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Credits are provided as currency from the Jawa Trader in tosche Station. They can be used to purchase items and vehicles from the Jawa or to trade with other players",
+    "image": "Collectable30 - 1 Credit"
+  },
+        {
+    "name": "10 Credits",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Credits are provided as currency from the Jawa Trader in tosche Station. They can be used to purchase items and vehicles from the Jawa or to trade with other players",
+    "image": "Collectable31 - 1 Credit"
+  },
+    {
     "name": "turret 1",
     "sellPrice": "10 Credits",
     "slots": "2x3",
@@ -26,20 +68,6 @@
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable18 - Mini-Brick Saber (Pink)"
-  },
-    {
-    "name": "Jedi Medallion",
-    "sellPrice": "5 Credits",
-    "slots": "2x3",
-    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
-    "image": "Collectable17 - Jedi Medallion"
-  },
-    {
-    "name": "Sith Medallion",
-    "sellPrice": "5 Credits",
-    "slots": "2x3",
-    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
-    "image": "Collectable16 - Sith Medallion"
   },
   {
     "name": "Rebel Ship",
