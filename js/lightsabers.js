@@ -39,10 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = saber.name;
         img.className = 'saber-img';
 
-        // Apply vertical offset to hilt image only (not blade)
+        // Apply vertical offset to blade starting point (Y), so it dips into the hilt
         if (saber.offsetY) {
-        img.style.transform = `translateY(${saber.offsetY})`;
+          blade.style.bottom = saber.offsetY;
         }
+        
+        // Optionally also shift the hilt image visually if needed
+        if (saber.hiltOffsetY) {
+          img.style.transform = `translateY(${saber.hiltOffsetY})`;
+        }
+
 
         let bladeVisible = false;
 
