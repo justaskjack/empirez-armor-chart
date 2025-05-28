@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.offsetY) {
           blade.style.top = saber.offsetY;
         }
+        
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
