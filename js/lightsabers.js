@@ -1,55 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('lightsabers.json')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('lightsaber-container');
+  fetch('data/lightsabers.json')
+    .then(res => res.json())
+    .then(sabers => {
+      const saberContainer = document.getElementById('saber-row');
 
-      data.forEach(saber => {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'saber-wrapper';
-        wrapper.title = saber.name;
+      sabers.forEach((saber, index) => {
+        const card = document.createElement('div');
+        card.className = 'saber-card';
 
-        const saberDiv = document.createElement('div');
-        saberDiv.className = 'saber';
-
-        const hilt = document.createElement('img');
-        hilt.src = saber.thumb;
-        hilt.alt = saber.name;
-        hilt.className = 'hilt';
+        const cardWrapper = document.createElement('div');
+        cardWrapper.className = 'saber-wrapper';
+        cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
         const blade = document.createElement('div');
         blade.className = 'blade';
+        
+        // Set both the background color and CSS variable
+        blade.style.backgroundColor = saber.bladeColor || '#0ff';
+        blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
 
-        // Safe check for bladeColor
-        const bladeColor = saber.bladeColor || '#0ff';
-        blade.style.setProperty('--blade-color', bladeColor);
-        blade.style.backgroundColor = bladeColor;
 
-        // Create audio elements safely
-        const soundOn = new Audio(saber.soundOn || 'Saber-on.wav');
-        const soundOff = new Audio(saber.soundOff || 'Saber-off.wav');
-        soundOn.volume = 0.7;
-        soundOff.volume = 0.7;
+        const img = document.createElement('img');
+        img.src = `images/${saber.thumb}`;
+        img.alt = saber.name;
+        img.className = 'saber-img';
 
-        // Toggle behavior
-        hilt.addEventListener('click', () => {
-          const isActive = blade.classList.toggle('active');
-          if (isActive) {
-            soundOn.currentTime = 0;
-            soundOn.play();
-          } else {
-            soundOff.currentTime = 0;
-            soundOff.play();
-          }
+        let bladeVisible = false;
+
+        cardWrapper.addEventListener('click', () => {
+          bladeVisible = !bladeVisible;
+          blade.classList.toggle('active', bladeVisible);
+
+          const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
+          sound.volume = 0.5;
+          sound.play();
         });
 
-        saberDiv.appendChild(blade);
-        saberDiv.appendChild(hilt);
-        wrapper.appendChild(saberDiv);
-        container.appendChild(wrapper);
+        cardWrapper.appendChild(blade);
+        cardWrapper.appendChild(img);
+        card.appendChild(cardWrapper);
+        saberContainer.appendChild(card);
       });
-    })
-    .catch(error => {
-      console.error('Failed to load lightsabers:', error);
     });
 });
