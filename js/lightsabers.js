@@ -12,10 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardWrapper.className = 'saber-wrapper';
         cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
-        const blade = document.createElement('div');
-
         const blades = [];
-        
+
         // === Top Blade (default) ===
         const topBlade = document.createElement('div');
         topBlade.className = 'blade';
@@ -25,40 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.offsetX) topBlade.style.left = saber.offsetX;
         if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
-        
+
+        // === Bottom Blade (if double-bladed) ===
+        let bottomBlade = null;
         if (saber.doubleBlade) {
-          const bottomBlade = document.createElement('div');
+          bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
           bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
           bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-          if (saber.offsetY) bottomBlade.style.top = saber.offsetY;
-          if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
+          bottomBlade.style.left = saber.offsetX || '0px';
           if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
           blades.push(bottomBlade);
         }
 
-
-        blade.className = 'blade';
-        
-        // Set both the background color and CSS variable
-        blade.style.backgroundColor = saber.bladeColor || '#0ff';
-        blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-
-        if (saber.offsetX) blade.style.left = saber.offsetX;
-        // if (saber.offsetY) blade.style.bottom = `calc(100% + ${saber.offsetY})`;
-        if (saber.bladeZIndex) blade.style.zIndex = saber.bladeZIndex;
-
-        // Optional horizontal position offset
-        if (saber.offsetX) {
-          blade.style.left = saber.offsetX;
-        }
-        // if (saber.offsetY) {
-        //   blade.style.top = saber.offsetY;
-        // }
-        if (saber.bladeZIndex) {
-        blade.style.zIndex = saber.bladeZIndex;
-        }
-        
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
@@ -66,14 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Apply vertical offset to blade starting point (Y), so it dips into the hilt
         if (saber.offsetY) {
-          blade.style.bottom = saber.offsetY;
+          topBlade.style.bottom = saber.offsetY;
         }
-        
-        // Optionally also shift the hilt image visually if needed
+
+        // Optionally shift the hilt image visually if needed
         if (saber.hiltOffsetY) {
           img.style.transform = `translateY(${saber.hiltOffsetY})`;
         }
 
+        // Adjust bottom blade position after image loads
+        img.onload = () => {
+          if (saber.doubleBlade && bottomBlade) {
+            const imgHeight = img.offsetHeight;
+            bottomBlade.style.top = `${imgHeight}px`;
+          }
+        };
 
         let bladeVisible = false;
 
