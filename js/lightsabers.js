@@ -26,17 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
         
-        // === Bottom Blade (only for double sabers) ===
         if (saber.doubleBlade) {
           const bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
           bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
-          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-          if (saber.offsetY) bottomBlade.style.top = saber.offsetY;
+          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff';
+        
+          // Blade grows downward from hilt
+          bottomBlade.style.top = '100%'; // align with bottom of hilt
+          bottomBlade.style.bottom = 'auto'; // prevent interference
+          bottomBlade.style.transform = 'scaleY(1)';
+          bottomBlade.style.transformOrigin = 'top';
+        
           if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
           if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
+        
           blades.push(bottomBlade);
         }
+
 
         blade.className = 'blade';
         
