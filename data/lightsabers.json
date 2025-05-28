@@ -20,13 +20,14 @@
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
   },
-                {
-    "name": "Ahsoka Tano's Lightsword",
-    "thumb": "Lightsaber 13.png",
-    "bladeColor": "#e7e8ea",
-    "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
-  },
+{
+  "name": "Ahsoka Tano's Lightsword",
+  "thumb": "Lightsaber 13.png",
+  "bladeColor": "#e7e8ea",
+  "offsetX": "-6px",
+  "soundOn": "Saber-on.wav",
+  "soundOff": "Saber-off.wav"
+},
       {
     "name": "Mace Windu's Lightsword",
     "thumb": "Lightsaber 04.png",
