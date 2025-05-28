@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
         blade.style.backgroundColor = saber.bladeColor || '#0ff';
         blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
 
+        if (saber.offsetX) blade.style.left = saber.offsetX;
+        if (saber.offsetY) blade.style.bottom = `calc(100% - ${saber.offsetY})`;
+        if (saber.bladeZIndex) blade.style.zIndex = saber.bladeZIndex;
+
         // Optional horizontal position offset
         if (saber.offsetX) {
           blade.style.left = saber.offsetX;
