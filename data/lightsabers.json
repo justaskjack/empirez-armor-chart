@@ -43,6 +43,13 @@
     "soundOff": "Saber-off.wav"
   },
           {
+    "name": "Darth Vaders Lightsword",
+    "thumb": "Lightsaber 14.png",
+    "bladeColor": "#d84647",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav"
+  },
+          {
     "name": "Count Dooku's Lightsword",
     "thumb": "Lightsaber 06.png",
     "bladeColor": "#d25457",
@@ -57,6 +64,13 @@
     "soundOff": "Saber-off.wav",
     "offsetY": "220px",
     "bladeZIndex": "4"
+  },
+              {
+    "name": "Poison Lightsword",
+    "thumb": "Lightsaber 13.png",
+    "bladeColor": "#39e048",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav",
   },
             {
     "name": "Kylos Lightsword",
