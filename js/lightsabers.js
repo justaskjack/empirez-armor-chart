@@ -86,7 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
           sound.play();
         });
 
-        blades.forEach(b => cardWrapper.appendChild(b));
+        blades.forEach(b => {
+          const target = b.classList.contains('bottom-blade') ? hiltWrapper : cardWrapper;
+          target.appendChild(b);
+        });
+
         
         const hiltWrapper = document.createElement('div');
         hiltWrapper.className = 'hilt-wrapper';
