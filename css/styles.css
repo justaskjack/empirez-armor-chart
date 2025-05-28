@@ -293,6 +293,11 @@ header.navbar {
   z-index: 3;
 }
 
+.saber-img-container {
+  position: relative;
+  display: inline-block;
+}
+
 @keyframes bladePulse {
   0%, 100% {
     box-shadow:
@@ -343,14 +348,16 @@ header.navbar {
 }
 
 .blade.bottom-blade {
+  position: absolute;
   top: 100%;
-  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0);
   transform-origin: top;
-  transform: scaleY(0);
+  z-index: 2;
 }
 
 .blade.bottom-blade.active {
-  transform: scaleY(1);
+  transform: translateX(-50%) scaleY(1);
 }
 
 
