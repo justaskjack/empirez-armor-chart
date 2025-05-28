@@ -24,7 +24,7 @@
   "name": "Ahsoka Tano's Lightsword",
   "thumb": "Lightsaber 13.png",
   "bladeColor": "#e7e8ea",
-  "offsetX": "30px",
+  "offsetX": "35px",
   "soundOn": "Saber-on.wav",
   "soundOff": "Saber-off.wav"
 },
