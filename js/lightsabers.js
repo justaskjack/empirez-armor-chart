@@ -26,16 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
         
+        let bottomBlade = null;
+        
         if (saber.doubleBlade) {
-          const bottomBlade = document.createElement('div');
+          bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
           bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
           bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-          if (saber.offsetY) bottomBlade.style.top = saber.offsetY;
           if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
           if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
+        
+          // Temporary default position (will be updated dynamically after image loads)
+          bottomBlade.style.top = '100%';
+        
           blades.push(bottomBlade);
         }
+
 
 
         blade.className = 'blade';
@@ -63,6 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
         img.className = 'saber-img';
+
+        img.onload = () => {
+          if (saber.doubleBlade && bottomBlade) {
+              const imgHeight = img.offsetHeight;
+              bottomBlade.style.top = `${imgHeight}px`;
+            }
+          };
+
 
         // Apply vertical offset to blade starting point (Y), so it dips into the hilt
         if (saber.offsetY) {
