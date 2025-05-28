@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
         blade.style.backgroundColor = saber.bladeColor || '#0ff';
         blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
 
-
+        // Optional horizontal position offset
+        if (saber.offsetX) {
+          blade.style.left = saber.offsetX;
+        }
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
