@@ -56,7 +56,7 @@
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
     "offsetY": "20px",
-    "bladeZIndex": "2"
+    "bladeZIndex": "4"
   },
             {
     "name": "Kylos Lightsword",
@@ -93,6 +93,6 @@
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
     "offsetY": "30px",
-    "bladeZIndex": "2"
+    "bladeZIndex": "4"
   }
 ]
