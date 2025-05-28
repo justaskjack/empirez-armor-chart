@@ -67,7 +67,7 @@
   },
               {
     "name": "Poison Lightsword",
-    "thumb": "Lightsaber 13.png",
+    "thumb": "Lightsaber 15.png",
     "bladeColor": "#39e048",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
