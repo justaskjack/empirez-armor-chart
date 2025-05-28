@@ -1,45 +1,83 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('data/lightsabers.json')
-    .then(res => res.json())
-    .then(sabers => {
-      const saberContainer = document.getElementById('saber-row');
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("lightsabers.json")
+    .then((response) => response.json())
+    .then((sabers) => {
+      const row = document.getElementById("saber-row");
 
-      sabers.forEach((saber, index) => {
-        const card = document.createElement('div');
-        card.className = 'saber-card';
+      sabers.forEach((saber) => {
+        const card = document.createElement("div");
+        card.className = "saber-card";
 
-        const cardWrapper = document.createElement('div');
-        cardWrapper.className = 'saber-wrapper';
-        cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
+        const wrapper = document.createElement("div");
+        wrapper.className = "saber-wrapper";
+        wrapper.setAttribute("data-tooltip", saber.name);
 
-        const blade = document.createElement('div');
-        blade.className = 'blade';
-        
-        // Set both the background color and CSS variable
-        blade.style.backgroundColor = saber.bladeColor || '#0ff';
-        blade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+        // Create main blade
+        const blade = document.createElement("div");
+        blade.className = "blade";
+        blade.style.setProperty("--blade-color", saber.bladeColor || "#0ff");
+        blade.style.backgroundColor = saber.bladeColor;
 
+        // Custom offsets and rotation
+        if (saber.offsetX) blade.style.left = saber.offsetX;
+        if (saber.offsetY) blade.style.bottom = saber.offsetY;
+        if (saber.rotation) blade.style.transform = `rotate(${saber.rotation}deg)`;
+        if (saber.shape === "knife") blade.style.borderRadius = "0 30% 0 30%";
 
-        const img = document.createElement('img');
-        img.src = `images/${saber.thumb}`;
-        img.alt = saber.name;
-        img.className = 'saber-img';
+        wrapper.appendChild(blade);
 
-        let bladeVisible = false;
+        // Optional mirrored blade
+        if (saber.mirroredBlade) {
+          const bottomBlade = blade.cloneNode(true);
+          bottomBlade.style.top = "100%";
+          bottomBlade.style.bottom = "auto";
+          wrapper.appendChild(bottomBlade);
+        }
 
-        cardWrapper.addEventListener('click', () => {
-          bladeVisible = !bladeVisible;
-          blade.classList.toggle('active', bladeVisible);
+        // Optional side blades
+        if (saber.sideBlades) {
+          const leftBlade = blade.cloneNode(true);
+          leftBlade.style.bottom = "calc(100% - 30px)";
+          leftBlade.style.left = "-15px";
+          leftBlade.style.transform = "rotate(90deg)";
+          wrapper.appendChild(leftBlade);
 
-          const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
-          sound.volume = 0.5;
-          sound.play();
+          const rightBlade = blade.cloneNode(true);
+          rightBlade.style.bottom = "calc(100% - 30px)";
+          rightBlade.style.left = "15px";
+          rightBlade.style.transform = "rotate(-90deg)";
+          wrapper.appendChild(rightBlade);
+        }
+
+        // Create hilt image
+        const img = document.createElement("img");
+        img.className = "saber-img";
+        img.src = `images/lightsabers/${saber.thumb}`;
+        wrapper.appendChild(img);
+
+        // Sounds
+        const onSound = new Audio(`sounds/${saber.soundOn}`);
+        const offSound = new Audio(`sounds/${saber.soundOff}`);
+        onSound.volume = 0.7;
+        offSound.volume = 0.7;
+
+        let bladeActive = false;
+        wrapper.addEventListener("click", () => {
+          bladeActive = !bladeActive;
+          wrapper.querySelectorAll(".blade").forEach((b) => {
+            b.classList.toggle("active", bladeActive);
+          });
+          if (bladeActive) {
+            onSound.currentTime = 0;
+            onSound.play();
+          } else {
+            offSound.currentTime = 0;
+            offSound.play();
+          }
         });
 
-        cardWrapper.appendChild(blade);
-        cardWrapper.appendChild(img);
-        card.appendChild(cardWrapper);
-        saberContainer.appendChild(card);
+        card.appendChild(wrapper);
+        row.appendChild(card);
       });
     });
 });
