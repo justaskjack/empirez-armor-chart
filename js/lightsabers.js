@@ -13,6 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
         cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
         const blade = document.createElement('div');
+
+        const blades = [];
+        
+        // === Top Blade (default) ===
+        const topBlade = document.createElement('div');
+        topBlade.className = 'blade';
+        topBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+        topBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+        if (saber.offsetY) topBlade.style.bottom = saber.offsetY;
+        if (saber.offsetX) topBlade.style.left = saber.offsetX;
+        if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
+        blades.push(topBlade);
+        
+        // === Bottom Blade (only for double sabers) ===
+        if (saber.doubleBlade) {
+          const bottomBlade = document.createElement('div');
+          bottomBlade.className = 'blade bottom-blade';
+          bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+          if (saber.offsetY) bottomBlade.style.top = saber.offsetY;
+          if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
+          if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
+          blades.push(bottomBlade);
+        }
+
         blade.className = 'blade';
         
         // Set both the background color and CSS variable
@@ -54,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cardWrapper.addEventListener('click', () => {
           bladeVisible = !bladeVisible;
-          blade.classList.toggle('active', bladeVisible);
+          blades.forEach(b => b.classList.toggle('active', bladeVisible));
 
           const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
           sound.volume = 0.5;
           sound.play();
         });
 
-        cardWrapper.appendChild(blade);
+        blades.forEach(b => cardWrapper.appendChild(b));
         cardWrapper.appendChild(img);
         card.appendChild(cardWrapper);
         saberContainer.appendChild(card);
