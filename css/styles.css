@@ -343,16 +343,16 @@ header.navbar {
 }
 
 .blade.bottom-blade {
-  top: auto;
-  bottom: 0;
+  top: 100%;
+  bottom: auto;
   transform-origin: top;
   transform: scaleY(0);
 }
 
-
 .blade.bottom-blade.active {
   transform: scaleY(1);
 }
+
 
 
 /* Tooltip UNDER saber */
