@@ -84,7 +84,8 @@
     "thumb": "Lightsaber 11.png",
     "bladeColor": "#e64b59",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "doubleBlade": true
   },
               {
     "name": "Darth Malgus Lightsword",
