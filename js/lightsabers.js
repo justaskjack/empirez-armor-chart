@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.offsetX) {
           blade.style.left = saber.offsetX;
         }
+        if (saber.offsetY) {
+          blade.style.top = saber.offsetY;
+        }
         const img = document.createElement('img');
         img.src = `images/${saber.thumb}`;
         img.alt = saber.name;
