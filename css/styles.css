@@ -343,11 +343,12 @@ header.navbar {
 }
 
 .blade.bottom-blade {
-  top: 0;
-  bottom: auto;
+  top: auto;
+  bottom: 0;
   transform-origin: top;
   transform: scaleY(0);
 }
+
 
 .blade.bottom-blade.active {
   transform: scaleY(1);
