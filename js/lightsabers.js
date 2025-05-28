@@ -87,7 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         blades.forEach(b => cardWrapper.appendChild(b));
-        cardWrapper.appendChild(img);
+        
+        const hiltWrapper = document.createElement('div');
+        hiltWrapper.className = 'hilt-wrapper';
+        hiltWrapper.appendChild(img);
+        cardWrapper.appendChild(hiltWrapper);
+        
         card.appendChild(cardWrapper);
         saberContainer.appendChild(card);
       });
