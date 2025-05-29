@@ -363,7 +363,7 @@ header.navbar {
 .blade.crossguard-blade {
   position: absolute;
   width: 40px;
-  height: 8px;
+  height: 4px;
   top: 4%;
   opacity: 0;
   transform: scaleX(0);
@@ -377,9 +377,9 @@ header.navbar {
   opacity: 1;
   transform: scaleX(1);
   box-shadow:
-    0 0 3px 1px var(--blade-color),
-    0 0 6px 2px var(--blade-color),
-    0 0 12px 3px var(--blade-color);
+    0 0 2px 1px var(--blade-color),
+    0 0 4px 2px var(--blade-color),
+    0 0 8px 3px var(--blade-color);
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.15s infinite;
