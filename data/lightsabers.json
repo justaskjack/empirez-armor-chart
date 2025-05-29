@@ -99,7 +99,9 @@
     "bladeColor": "#e64b59",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "doubleBlade": true
+    "doubleBlade": true,
+    "bottomOffsetX": "35px",
+    "bottomOffsetY": "10px"
   },
               {
     "name": "Darth Malgus Lightsword",
