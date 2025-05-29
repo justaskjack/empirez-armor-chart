@@ -97,7 +97,8 @@
     "bladeColor": "#575958",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "offsetY": "220px"
+    "offsetY": "220px",
+    "darksaber": true
   },
   {
     "name": "Mauls Lightsword",
