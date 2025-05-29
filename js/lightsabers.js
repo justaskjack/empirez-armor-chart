@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
           topBlade.className = 'blade';
         }
 
+        if (saber.darksaber) {
+          topBlade.classList.add('darksaber-blade');
+        }
+
+
         topBlade.style.backgroundColor = saber.bladeColor || '#0ff';
         topBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
         if (saber.offsetY) topBlade.style.bottom = saber.offsetY;
