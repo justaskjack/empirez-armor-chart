@@ -432,15 +432,16 @@ header.navbar {
 }
 
 .blade.darksaber-blade {
-  width: 8px;
-  height: 0;
-  background-color: var(--blade-color, #575958);
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-  border-radius: 0;
-  z-index: 2;
-  opacity: 0;
-  transition: height 0.3s ease-out;
+  clip-path: polygon(
+    45% 0%,   /* top-left point inward */
+    55% 0%,   /* top-right point inward */
+    100% 20%, /* angled tip right */
+    100% 100%, /* bottom-right corner */
+    0% 100%,   /* bottom-left corner */
+    0% 20%    /* angled tip left */
+  );
 }
+
 
 .blade.darksaber-blade.active {
   height: 210px;
