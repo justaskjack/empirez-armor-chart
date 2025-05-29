@@ -364,7 +364,7 @@ header.navbar {
   position: absolute;
   width: 40px;
   height: 8px;
-  top: 3%; /* raised to align with emitter area of the hilt */
+  top: 5%; /* raised to align with emitter area of the hilt */
   opacity: 0;
   transform: scaleX(0);
   transform-origin: center;
@@ -386,11 +386,11 @@ header.navbar {
 }
 
 .left-blade {
-  left: -12px; /* tighten toward the hilt */
+  left: -22px; /* tighten toward the hilt */
 }
 
 .right-blade {
-  right: -12px; /* tighten toward the hilt */
+  right: -22px; /* tighten toward the hilt */
 }
 
 
