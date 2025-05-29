@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.doubleBlade) {
           bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
-          bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+          bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff');
           bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff';
 
           // Apply bottom-specific offsets if present
