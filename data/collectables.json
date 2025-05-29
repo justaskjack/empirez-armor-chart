@@ -153,6 +153,13 @@
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable"
   },
+      {
+    "name": "Greys Gonk Collectable",
+    "sellPrice": "10 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable38 - Greys Gonk Collectable"
+  },
     {
     "name": "lezard",
     "sellPrice": "10 Credits",
@@ -202,6 +209,13 @@
     "note": "Combine with a Machete to create a Vibroblade",
     "image": "Collectable21 - Pink Kyber Crystal"
   },
+        {
+    "name": "Purple Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with a Sword to create a Jedi Force Blade",
+    "image": "Collectable39 - Purple Kyber Crystal"
+  },
     {
     "name": "Cereals",
     "sellPrice": "None",
@@ -250,5 +264,12 @@
     "slots": "1000",
     "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base",
     "image": "Collectable36 - Han Carbonite Craftable Storage"
+  },
+          {
+    "name": "Fireworks Launcher",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Set on the ground and activate to launch fireworks into the air",
+    "image": "Collectable37 - Fireworks Launcher"
   }
 ]
