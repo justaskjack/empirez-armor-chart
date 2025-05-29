@@ -47,7 +47,8 @@
     "thumb": "Lightsaber 14.png",
     "bladeColor": "#d84647",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "offsetY": "200px"
   },
   {
     "name": "Count Dooku's Lightsword",
