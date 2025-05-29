@@ -48,7 +48,7 @@
     "bladeColor": "#d84647",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "offsetY": "200px"
+    "offsetY": "180px"
   },
   {
     "name": "Count Dooku's Lightsword",
