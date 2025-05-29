@@ -81,7 +81,8 @@
     "thumb": "Lightsaber 08.png",
     "bladeColor": "#dc5563",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "crossguard": true
   },
   {
     "name": "Sith's Lightsword",
