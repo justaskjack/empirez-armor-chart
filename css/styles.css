@@ -446,17 +446,13 @@ header.navbar {
     0 0 16px 3px white;
 }
 
-
-
 .blade.darksaber-blade.active {
   box-shadow:
-    0 0 4px 1px white,
-    0 0 8px 2px white,
-    0 0 16px 3px white;
-  animation: bladeFlicker 0.15s infinite; /* keep flicker if desired */
+    0 0 6px 2px white,
+    0 0 12px 4px white,
+    0 0 20px 6px white;
+  animation: bladeFlicker 0.2s infinite;
 }
-
-
 
 
 /* Tooltip UNDER saber */
