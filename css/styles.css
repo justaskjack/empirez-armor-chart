@@ -359,6 +359,40 @@ header.navbar {
   transform: rotate(var(--blade-angle)) scaleY(1);
 }
 
+/* Crossguard side blades */
+.blade.crossguard-blade {
+  position: absolute;
+  width: 40px;
+  height: 8px;
+  top: 56%; /* adjust up/down as needed */
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  z-index: 2;
+  background-color: var(--blade-color, #0ff);
+}
+
+.blade.crossguard-blade.active {
+  opacity: 1;
+  transform: scaleX(1);
+  box-shadow:
+    0 0 3px 1px var(--blade-color),
+    0 0 6px 2px var(--blade-color),
+    0 0 12px 3px var(--blade-color);
+  animation:
+    bladePulse 1.6s ease-in-out infinite,
+    bladeFlicker 0.15s infinite;
+}
+
+/* Left and right positions */
+.left-blade {
+  left: -38px; /* tweak to align with hilt */
+}
+
+.right-blade {
+  right: -38px; /* tweak to align with hilt */
+}
+
 
 .hilt-wrapper {
   position: relative;
