@@ -58,7 +58,7 @@
     "soundOff": "Saber-off.wav",
     "offsetX": "44px",
     "offsetY": "200px",
-    "bladeRotation": "-15deg"
+    "bladeAngle": "-15deg"
   },
   {
     "name": "Cannibals Lightsword",
