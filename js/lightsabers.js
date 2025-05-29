@@ -16,7 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // === Top Blade ===
         const topBlade = document.createElement('div');
-        topBlade.className = 'blade';
+        
+        // Add darksaber shape if name matches
+        if (saber.name.includes("Dark Sword")) {
+          topBlade.className = 'blade darksaber-blade';
+        } else {
+          topBlade.className = 'blade';
+        }
+
         topBlade.style.backgroundColor = saber.bladeColor || '#0ff';
         topBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
         if (saber.offsetY) topBlade.style.bottom = saber.offsetY;
