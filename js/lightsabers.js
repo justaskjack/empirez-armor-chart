@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
           topBlade.classList.add('rotated');
         }
 
+        if (saber.bladeAngle) {
+          topBlade.style.setProperty('--blade-angle', saber.bladeAngle);
+          topBlade.classList.add('angled');
+        }
+
         let bottomBlade = null;
 
         // === Bottom Blade (for double sabers) ===
