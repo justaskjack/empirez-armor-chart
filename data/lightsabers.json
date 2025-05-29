@@ -55,7 +55,10 @@
     "thumb": "Lightsaber 06.png",
     "bladeColor": "#d25457",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "offsetX": "44px",
+    "offsetY": "200px",
+    "bladeRotation": "-15deg"
   },
   {
     "name": "Cannibals Lightsword",
