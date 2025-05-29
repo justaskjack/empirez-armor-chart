@@ -1,4 +1,4 @@
-[
+
   {
     "name": "Trade Federation Coin",
     "sellPrice": "None",
@@ -53,14 +53,14 @@
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable23 - Star Map Blue"
+    "image": "Collectable23 - Star Map Green"
   },
             {
     "name": "Star Map Red",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable35 - Star Map Blue"
+    "image": "Collectable35 - Star Map Red"
   },
               {
     "name": "Empty Datacard",
