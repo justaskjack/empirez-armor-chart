@@ -34,6 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
           topBlade.classList.add('angled');
         }
 
+        if (saber.crossguard) {
+          const leftBlade = document.createElement('div');
+          leftBlade.className = 'blade crossguard-blade left-blade';
+          leftBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+          leftBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+          blades.push(leftBlade);
+        
+          const rightBlade = document.createElement('div');
+          rightBlade.className = 'blade crossguard-blade right-blade';
+          rightBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+          rightBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+          blades.push(rightBlade);
+        }
+
+
         let bottomBlade = null;
 
         // === Bottom Blade (for double sabers) ===
