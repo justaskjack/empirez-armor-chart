@@ -100,8 +100,8 @@
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
     "doubleBlade": true,
-    "bottomOffsetX": "45px",
-    "bottomOffsetY": "110px"
+    "bottomOffsetX": "50px",
+    "bottomOffsetY": "200px"
   },
   {
     "name": "Darth Malgus Lightsword",
