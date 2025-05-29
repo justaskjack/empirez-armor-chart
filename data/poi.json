@@ -43,5 +43,20 @@
       "poi03 08.png",
       "poi03 09.png"
     ]
+  },
+        {
+    "name": "Jabba's Palace",
+    "notes": "Hutt Castle, often simply called Jabba the Hutt's Palace after its owner, was a large sandrock and durasteel complex located at the fringes of the Northern Dune Sea on the planet of Tatooine.",
+    "gallery": [
+      "poi04 01.png",
+      "poi04 02.png",
+      "poi04 03.png",
+      "poi04 04.png",
+      "poi04 05.png",
+      "poi04 06.png",
+      "poi04 07.png",
+      "poi04 08.png",
+      "poi04 09.png"
+    ]
   }
 ]
