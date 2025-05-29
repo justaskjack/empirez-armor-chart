@@ -433,14 +433,19 @@ header.navbar {
 
 .blade.darksaber-blade {
   clip-path: polygon(
-    45% 0%,   /* top-left point inward */
-    55% 0%,   /* top-right point inward */
-    100% 20%, /* angled tip right */
-    100% 100%, /* bottom-right corner */
-    0% 100%,   /* bottom-left corner */
-    0% 20%    /* angled tip left */
+    45% 0%,
+    55% 0%,
+    100% 20%,
+    100% 100%,
+    0% 100%,
+    0% 20%
   );
+  box-shadow:
+    0 0 4px 1px white,
+    0 0 8px 2px white,
+    0 0 16px 3px white;
 }
+
 
 
 .blade.darksaber-blade.active {
