@@ -350,6 +350,15 @@ header.navbar {
   transform: rotate(var(--blade-rotation)) scaleY(1);
 }
 
+.blade.angled {
+  transform: rotate(var(--blade-angle)) scaleY(0);
+  transform-origin: bottom;
+}
+
+.blade.angled.active {
+  transform: rotate(var(--blade-angle)) scaleY(1);
+}
+
 
 .hilt-wrapper {
   position: relative;
