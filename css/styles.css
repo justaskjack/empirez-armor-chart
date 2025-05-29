@@ -465,7 +465,7 @@ header.navbar {
   animation:
     bladePulse 1.6s ease-in-out infinite,
     bladeFlicker 0.2s infinite;
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 
