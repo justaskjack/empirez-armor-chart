@@ -41,6 +41,62 @@
     "note": "Credits are provided as currency from the Jawa Trader in tosche Station. They can be used to purchase items and vehicles from the Jawa or to trade with other players",
     "image": "Collectable31 - 10 Credits"
   },
+          {
+    "name": "Star Map Blue",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "image": "Collectable22 - Star Map Blue"
+  },
+            {
+    "name": "Star Map Green",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "image": "Collectable23 - Star Map Blue"
+  },
+            {
+    "name": "Star Map Red",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "image": "Collectable35 - Star Map Blue"
+  },
+              {
+    "name": "Empty Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Empty Data Cards are combined with Star Maps to create keycards that open the colored Astromech droids around the map",
+    "image": "Collectable24 - Empty Datacard"
+  },
+                {
+    "name": "Active Chaincode",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Created by combining a Chaincode with a Datapad. Used to open a Mando Safe",
+    "image": "Collectable25 - Active Chaincode"
+  },
+                {
+    "name": "Datapad",
+    "sellPrice": "10 Credits",
+    "slots": "",
+    "note": "Combine this with a Chaincode to create an Active Chaincode which is used to open a Mando Safe",
+    "image": "Collectable33 - Datapad"
+  },
+                  {
+    "name": "Imperial Keycard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Used to open bunker doors in Northeast toxic Zone, Imperial Base at the Mine and the Airfield East End",
+    "image": "Collectable28 - Imperial Keycard"
+  },
+                  {
+    "name": "Bunker Charge",
+    "sellPrice": "10 Credits",
+    "slots": "",
+    "note": "Used to open bunker doors at Hoth, South Harbor Reservoir and the Imperial Bunker at Airfield West End",
+    "image": "Collectable27 - Bunker Charge"
+  },
     {
     "name": "turret 1",
     "sellPrice": "10 Credits",
@@ -180,5 +236,19 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable15 - Grogue Plushie"
+  },
+      {
+    "name": "Mechanical Hand",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Can be worn on hand slot",
+    "image": "Collectable34 - Mechanical Hand"
+  },
+        {
+    "name": "Han Carbonite Craftable Storage",
+    "sellPrice": "",
+    "slots": "1000",
+    "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base",
+    "image": "Collectable36 - Han Carbonite Craftable Storage"
   }
 ]
