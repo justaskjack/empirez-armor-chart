@@ -449,16 +449,13 @@ header.navbar {
 
 
 .blade.darksaber-blade.active {
-  height: 210px;
-  opacity: 1;
   box-shadow:
-    0 0 2px 0.5px var(--blade-color),
-    0 0 5px 1px var(--blade-color),
-    0 0 10px 2px var(--blade-color);
-  animation:
-    bladePulse 1.4s ease-in-out infinite,
-    bladeFlicker 0.12s infinite;
+    0 0 4px 1px white,
+    0 0 8px 2px white,
+    0 0 16px 3px white;
+  animation: bladeFlicker 0.15s infinite; /* keep flicker if desired */
 }
+
 
 
 
