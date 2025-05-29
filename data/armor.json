@@ -103,6 +103,14 @@
     "rarity": "Uncommon",
     "location": "Tiers 2, 3 & 4"
   },
+      {
+    "name": "Nute Gunray Set",
+    "image": "Nute Gunray Set.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Starter Gear"
+  },
   {
     "name": "",
     "image": "Rare.png",
