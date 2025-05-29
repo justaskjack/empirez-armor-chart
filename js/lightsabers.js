@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
 
+        if (saber.bladeRotation) {
+          topBlade.style.setProperty('--blade-rotation', saber.bladeRotation);
+          topBlade.classList.add('rotated');
+        }
+
         let bottomBlade = null;
 
         // === Bottom Blade (for double sabers) ===
