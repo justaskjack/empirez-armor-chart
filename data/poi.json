@@ -13,5 +13,20 @@
       "poi01 08.png",
       "poi01 09.png"
     ]
+  },
+    {
+    "name": "Yoda's Hut",
+    "notes": "Yoda's Hut was the last residence of Yoda, Grand Master of the Jedi Order, during his years of self-imposed exile on Dagobah.",
+    "gallery": [
+      "poi02 01.png",
+      "poi02 02.png",
+      "poi02 03.png",
+      "poi02 04.png",
+      "poi02 05.png",
+      "poi02 06.png",
+      "poi02 07.png",
+      "poi02 08.png",
+      "poi02 09.png"
+    ]
   }
 ]
