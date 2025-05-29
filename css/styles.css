@@ -498,3 +498,11 @@ header.navbar {
   cursor: zoom-in;
 }
 
+#poi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* spacing between cards */
+  padding: 1rem 2rem;
+}
+
+
