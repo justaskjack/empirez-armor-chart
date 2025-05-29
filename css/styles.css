@@ -342,6 +342,15 @@ header.navbar {
     bladeFlicker 0.15s infinite;
 }
 
+.blade.rotated {
+  transform: rotate(var(--blade-rotation));
+}
+
+.blade.rotated.active {
+  transform: rotate(var(--blade-rotation)) scaleY(1);
+}
+
+
 .hilt-wrapper {
   position: relative;
   display: flex;
