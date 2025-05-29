@@ -476,3 +476,25 @@ header.navbar {
 .saber-card .saber-wrapper:hover::after {
   opacity: 1;
 }
+
+#poi-row .armor-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 480px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+#poi-row .base-img {
+  max-width: 140px;
+  max-height: 200px;
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+
