@@ -386,11 +386,11 @@ header.navbar {
 }
 
 .left-blade {
-  left: -32px; /* tighten toward the hilt */
+  left: -12px; /* tighten toward the hilt */
 }
 
 .right-blade {
-  right: -32px; /* tighten toward the hilt */
+  right: -12px; /* tighten toward the hilt */
 }
 
 
