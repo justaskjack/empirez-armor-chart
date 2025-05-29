@@ -8,6 +8,14 @@
     "location": "All tiers"
   },
       {
+    "name": "Moisture Farmer Set",
+    "image": "Moisture Farmer Set.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "Starter Gear"
+  },
+        {
     "name": "Stormtrooper",
     "image": "Stormtrooper 01.png",
     "type": "Generic Star Wars Armor",
@@ -96,6 +104,22 @@
     "location": "Tiers 2, 3 & 4"
   },
     {
+    "name": "Tuskan Raider",
+    "image": "Tuskan Raider.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tiers 2, 3 & 4"
+  },
+      {
+    "name": "Tuskan Raider Scout",
+    "image": "Tuskan Raider Scout.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tiers 2, 3 & 4"
+  },
+      {
     "name": "Tuskan Set (Black Variant)",
     "image": "Tuskan Set (Black Variant).png",
     "type": "Character armor sets",
@@ -122,6 +146,14 @@
     {
     "name": "Galactic Marine Armor",
     "image": "Galactic Marine Set.png",
+    "type": "Special Troop armor",
+    "protection": "Mixed 1 & 2",
+    "rarity": "Rare",
+    "location": "Tiers 3, 4 & 5"
+  },
+      {
+    "name": "Shore Trooper Armor",
+    "image": "Shore Trooper Armor.png",
     "type": "Special Troop armor",
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
@@ -162,6 +194,14 @@
       {
     "name": "Bo Katan Set",
     "image": "Bo Katan.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tiers 3, 5 & 6"
+  },
+        {
+    "name": "Darth Talon Set",
+    "image": "Darth Talon Set.png",
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
