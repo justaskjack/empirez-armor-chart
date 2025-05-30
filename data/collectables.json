@@ -104,6 +104,13 @@
     "note": "",
     "image": "Collectable01 - turret 1"
   },
+      {
+    "name": "turret 2",
+    "sellPrice": "10 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable39 - turret 2"
+  },
     {
     "name": "turret 6",
     "sellPrice": "10 Credits",
