@@ -177,7 +177,7 @@
   },
     {
     "name": "Republic Commando Armor (Katarn-class MK III)",
-    "image": "Republic Commando 01.png",
+    "image": "Republic Commando Armor 01.png",
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
@@ -185,7 +185,7 @@
   },
       {
     "name": "Republic Commando Armor (Delta Squad - Sev)",
-    "image": "Republic Commando 02.png",
+    "image": "Republic Commando Armor 02.png",
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
@@ -193,7 +193,7 @@
   },
       {
     "name": "Republic Commando Armor (Delta Squad - Scorch)",
-    "image": "Republic Commando 03.png",
+    "image": "Republic Commando Armor 03.png",
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
