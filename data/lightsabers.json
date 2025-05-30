@@ -110,6 +110,14 @@
     "bottomOffsetX": "50px",
     "bottomOffsetY": "200px"
   },
+    {
+    "name": "Talon Lightsword",
+    "thumb": "Lightsaber 16.png",
+    "bladeColor": "#db565b",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav",
+    "offsetY": "220px"
+  },
   {
     "name": "Darth Malgus Lightsword",
     "thumb": "Lightsaber 12.png",
