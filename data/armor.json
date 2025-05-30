@@ -1,12 +1,4 @@
 [
-  {
-    "name": "",
-    "image": "Common.png",
-    "type": "Vanilla DayZ gear, generic Star Wars armor",
-    "protection": 1,
-    "rarity": "Common",
-    "location": "All tiers"
-  },
       {
     "name": "Moisture Farmer Set",
     "image": "Moisture Farmer Set.png",
@@ -95,14 +87,6 @@
     "rarity": "Common",
     "location": "All tiers"
   },
-  {
-    "name": "",
-    "image": "Uncommon.png",
-    "type": "Character armor sets",
-    "protection": 1,
-    "rarity": "Uncommon",
-    "location": "Tiers 2, 3 & 4"
-  },
     {
     "name": "Tuskan Raider",
     "image": "Tuskan Raider.png",
@@ -135,14 +119,6 @@
     "rarity": "Uncommon",
     "location": "Starter Gear"
   },
-  {
-    "name": "",
-    "image": "Rare.png",
-    "type": "Special Troop armor",
-    "protection": "Mixed",
-    "rarity": "Rare",
-    "location": "Tiers 3, 4 & 5"
-  },
     {
     "name": "Galactic Marine Armor",
     "image": "Galactic Marine Set.png",
@@ -167,14 +143,6 @@
     "rarity": "Epic",
     "location": "Tiers 3 & 5"
   },
-  {
-    "name": "",
-    "image": "Legendary.png",
-    "type": "Clone Commando Armor",
-    "protection": 2,
-    "rarity": "Legendary",
-    "location": "Tier 5"
-  },
     {
     "name": "Republic Commando Armor (Katarn-class MK III)",
     "image": "Republic Commando Armor 01.png",
@@ -198,14 +166,6 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Tier 3"
-  },
-  {
-    "name": "",
-    "image": "Mythic.png",
-    "type": "Supporting Character and Droid Sets",
-    "protection": 2,
-    "rarity": "Mythic",
-    "location": "Tiers 3, 5 & 6"
   },
     {
     "name": "Ahsoka Tano Set",
@@ -239,14 +199,6 @@
     "rarity": "Mythic",
     "location": "Mando Safe"
   },
-  {
-    "name": "",
-    "image": "Relic.png",
-    "type": "Jedi/Sith Sets",
-    "protection": 3,
-    "rarity": "Relic",
-    "location": "Sith Temple / Jedi Hideout"
-  },
     {
     "name": "Darth Vader Set",
     "image": "Darth Vader Suit.png",
@@ -271,21 +223,13 @@
     "rarity": "Relic",
     "location": "Sith Temple"
   },
-  {
-    "name": "",
-    "image": "Gas.png",
-    "type": "Gas Protection",
-    "protection": 0,
-    "rarity": "None",
-    "location": "Note: Full NBC or Chewy suit plus respirator required for toxic zones"
-  },
     {
     "name": "NBC Suit (Yellow Variant)",
     "image": "NBC Set 01.png",
     "type": "Gas Protection",
     "protection": 0,
     "rarity": "None",
-    "location": "All tiers"
+    "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones."
   },
       {
     "name": "NBC Suit (Grey Variant)",
@@ -293,7 +237,7 @@
     "type": "Gas Protection",
     "protection": 0,
     "rarity": "None",
-    "location": "All tiers"
+    "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones."
   },
       {
     "name": "Chewy Suit",
@@ -301,6 +245,6 @@
     "type": "Gas Protection",
     "protection": 0,
     "rarity": "None",
-    "location": "All tiers. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator for the Chewy variant suit to be effective."
+    "location": "All tiers. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective."
   }
 ]
