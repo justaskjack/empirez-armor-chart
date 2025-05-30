@@ -170,15 +170,39 @@
   {
     "name": "",
     "image": "Legendary.png",
-    "type": "Camo armor, Bad Batch armor",
-    "protection": 1,
+    "type": "Clone Commando Armor",
+    "protection": 2,
     "rarity": "Legendary",
     "location": "Tier 5"
+  },
+    {
+    "name": "Republic Commando Armor (Katarn-class MK III)",
+    "image": "Republic Commando 01.png",
+    "type": "Clone Commando Armor",
+    "protection": 2
+    "rarity": "Legendary",
+    "location": "Tiers 3 & 5"
+  },
+      {
+    "name": "Republic Commando Armor (Delta Squad - Sev)",
+    "image": "Republic Commando 02.png",
+    "type": "Clone Commando Armor",
+    "protection": 2
+    "rarity": "Legendary",
+    "location": "Tier 3"
+  },
+      {
+    "name": "Republic Commando Armor (Delta Squad - Scorch)",
+    "image": "Republic Commando 03.png",
+    "type": "Clone Commando Armor",
+    "protection": 2
+    "rarity": "Legendary",
+    "location": "Tier 3"
   },
   {
     "name": "",
     "image": "Mythic.png",
-    "type": "Supporting Character Sets",
+    "type": "Supporting Character and Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
     "location": "Tiers 3, 5 & 6"
@@ -189,7 +213,7 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Tiers 3, 5 & 6"
+    "location": "Mando Safe"
   },
       {
     "name": "Bo Katan Set",
@@ -197,7 +221,7 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Tiers 3, 5 & 6"
+    "location": "Astromech Droids"
   },
         {
     "name": "Darth Talon Set",
@@ -205,7 +229,15 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Tiers 3, 5 & 6"
+    "location": Astromech Droids"
+  },
+          {
+    "name": "Battle Droid Set",
+    "image": "Battle Droid Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
   },
   {
     "name": "",
