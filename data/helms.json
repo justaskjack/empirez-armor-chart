@@ -210,27 +210,6 @@
     "row": 5
   },
   {
-    "name": "Ski Mask 02",
-    "thumb": "Ski Mask 02 - thumb.png",
-    "image": "Ski Mask 02.png",
-    "col": 1,
-    "row": 14
-  },
-  {
-    "name": "Ski Mask 03",
-    "thumb": "Ski Mask 03 - thumb.png",
-    "image": "Ski Mask 03.png",
-    "col": 2,
-    "row": 14
-  },
-  {
-    "name": "Ski Mask 01",
-    "thumb": "Ski Mask 01 - thumb.png",
-    "image": "Ski Mask 01.png",
-    "col": 3,
-    "row": 14
-  },
-  {
     "name": "Police Cap 01",
     "thumb": "Police Cap 01 - thumb.png",
     "image": "Police Cap 01.png",
@@ -306,48 +285,6 @@
     "image": "Stormtrooper Helmet 07.png",
     "col": 2,
     "row": 8
-  },
-  {
-    "name": "Biker Scout Helmet 02",
-    "thumb": "Biker Scout Helmet 02 - thumb.png",
-    "image": "Biker Scout Helmet 02.png",
-    "col": 1,
-    "row": 7
-  },
-  {
-    "name": "Biker Scout Helmet 01",
-    "thumb": "Biker Scout Helmet 01 - thumb.png",
-    "image": "Biker Scout Helmet 01.png",
-    "col": 2,
-    "row": 7
-  },
-  {
-    "name": "Barc Trooper Helmet 01",
-    "thumb": "Barc Trooper Helmet 01 - thumb.png",
-    "image": "Barc Trooper Helmet 01.png",
-    "col": 3,
-    "row": 7
-  },
-  {
-    "name": "Barc Trooper Helmet 02",
-    "thumb": "Barc Trooper Helmet 02 - thumb.png",
-    "image": "Barc Trooper Helmet 02.png",
-    "col": 4,
-    "row": 7
-  },
-  {
-    "name": "GeoTrooper Helmet 01",
-    "thumb": "GeoTrooper Helmet 01 - thumb.png",
-    "image": "GeoTrooper Helmet 01.png",
-    "col": 5,
-    "row": 7
-  },
-  {
-    "name": "Shoretrooper Helmet",
-    "thumb": "Shoretrooper Helmet - thumb.png",
-    "image": "Shoretrooper Helmet.png",
-    "col": 6,
-    "row": 7
   },
   {
     "name": "Republic Commando Helmet 01",
@@ -504,62 +441,6 @@
     "row": 12
   },
   {
-    "name": "Balaclava 01",
-    "thumb": "Balaclava 01 - thumb.png",
-    "image": "Balaclava 01.png",
-    "col": 1,
-    "row": 13
-  },
-  {
-    "name": "Balaclava 03",
-    "thumb": "Balaclava 03 - thumb.png",
-    "image": "Balaclava 03.png",
-    "col": 2,
-    "row": 13
-  },
-  {
-    "name": "Balaclava 02",
-    "thumb": "Balaclava 02 - thumb.png",
-    "image": "Balaclava 02.png",
-    "col": 3,
-    "row": 13
-  },
-  {
-    "name": "NBC Respirator",
-    "thumb": "NBC Respirator - thumb.png",
-    "image": "NBC Respirator.png",
-    "col": 7,
-    "row": 12
-  },
-  {
-    "name": "Ski Mask 04",
-    "thumb": "Ski Mask 04 - thumb.png",
-    "image": "Ski Mask 04.png",
-    "col": 4,
-    "row": 14
-  },
-  {
-    "name": "Hockey Helmet 02",
-    "thumb": "Hockey Helmet 02 - thumb.png",
-    "image": "Hockey Helmet 02.png",
-    "col": 10,
-    "row": 12
-  },
-  {
-    "name": "Baseball Cap 01",
-    "thumb": "Baseball Cap 01 - thumb.png",
-    "image": "Baseball Cap 01.png",
-    "col": 8,
-    "row": 12
-  },
-  {
-    "name": "Hockey Helmet 01",
-    "thumb": "Hockey Helmet 01 - thumb.png",
-    "image": "Hockey Helmet 01.png",
-    "col": 9,
-    "row": 12
-  },
-  {
     "name": "OrcHelm 4",
     "thumb": "OrcHelm 4 - thumb.png",
     "image": "OrcHelm 4.png",
@@ -574,32 +455,11 @@
     "row": 12
   },
   {
-    "name": "Ski Mask 05",
-    "thumb": "Ski Mask 05 - thumb.png",
-    "image": "Ski Mask 05.png",
-    "col": 5,
-    "row": 14
-  },
-  {
     "name": "Norse Helm",
     "thumb": "Norse Helm - thumb.png",
     "image": "Norse Helm.png",
     "col": 6,
     "row": 12
-  },
-  {
-    "name": "Balaclava 04",
-    "thumb": "Balaclava 04 - thumb.png",
-    "image": "Balaclava 04.png",
-    "col": 4,
-    "row": 13
-  },
-  {
-    "name": "Ski Mask 06",
-    "thumb": "Ski Mask 06 - thumb.png",
-    "image": "Ski Mask 06.png",
-    "col": 6,
-    "row": 14
   },
   {
     "name": "Tie Pilot Helmet",
@@ -770,41 +630,6 @@
     "row": 6
   },
   {
-    "name": "Commander Bly Helmet",
-    "thumb": "Commander Bly Helmet - thumb.png",
-    "image": "Commander Bly Helmet.png",
-    "col": 2,
-    "row": 6
-  },
-  {
-    "name": "Commander Cody Helmet",
-    "thumb": "Commander Cody Helmet - thumb.png",
-    "image": "Commander Cody Helmet.png",
-    "col": 3,
-    "row": 6
-  },
-  {
-    "name": "Commander Wolffe Helmet",
-    "thumb": "Commander Wolffe Helmet - thumb.png",
-    "image": "Commander Wolffe Helmet.png",
-    "col": 4,
-    "row": 6
-  },
-  {
-    "name": "Commander Rex Helmet",
-    "thumb": "Commander Rex Helmet - thumb.png",
-    "image": "Commander Rex Helmet.png",
-    "col": 5,
-    "row": 6
-  },
-  {
-    "name": "Arc Trooper Phase 2 01",
-    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
-    "image": "Arc Trooper Phase 2 01.png",
-    "col": 6,
-    "row": 6
-  },
-  {
     "name": "Commander Gree Helmet Chrome",
     "thumb": "Commander Gree Helmet Chrome - thumb.png",
     "image": "Commander Gree Helmet Chrome.png",
@@ -838,5 +663,292 @@
     "image": "Mandalorian Helmet 03.png",
     "col": 10,
     "row": 2
+  },
+  {
+    "name": "Ski Mask 02",
+    "thumb": "Ski Mask 02 - thumb.png",
+    "image": "Ski Mask 02.png",
+    "col": 1,
+    "row": 16
+  },
+  {
+    "name": "Ski Mask 03",
+    "thumb": "Ski Mask 03 - thumb.png",
+    "image": "Ski Mask 03.png",
+    "col": 2,
+    "row": 16
+  },
+  {
+    "name": "Ski Mask 01",
+    "thumb": "Ski Mask 01 - thumb.png",
+    "image": "Ski Mask 01.png",
+    "col": 3,
+    "row": 16
+  },
+  {
+    "name": "Ski Mask 04",
+    "thumb": "Ski Mask 04 - thumb.png",
+    "image": "Ski Mask 04.png",
+    "col": 4,
+    "row": 16
+  },
+  {
+    "name": "Ski Mask 05",
+    "thumb": "Ski Mask 05 - thumb.png",
+    "image": "Ski Mask 05.png",
+    "col": 5,
+    "row": 16
+  },
+  {
+    "name": "Ski Mask 06",
+    "thumb": "Ski Mask 06 - thumb.png",
+    "image": "Ski Mask 06.png",
+    "col": 6,
+    "row": 16
+  },
+  {
+    "name": "Balaclava 01",
+    "thumb": "Balaclava 01 - thumb.png",
+    "image": "Balaclava 01.png",
+    "col": 1,
+    "row": 15
+  },
+  {
+    "name": "Balaclava 03",
+    "thumb": "Balaclava 03 - thumb.png",
+    "image": "Balaclava 03.png",
+    "col": 2,
+    "row": 15
+  },
+  {
+    "name": "Balaclava 02",
+    "thumb": "Balaclava 02 - thumb.png",
+    "image": "Balaclava 02.png",
+    "col": 3,
+    "row": 15
+  },
+  {
+    "name": "Balaclava 04",
+    "thumb": "Balaclava 04 - thumb.png",
+    "image": "Balaclava 04.png",
+    "col": 4,
+    "row": 15
+  },
+  {
+    "name": "NBC Respirator",
+    "thumb": "NBC Respirator - thumb.png",
+    "image": "NBC Respirator.png",
+    "col": 1,
+    "row": 13
+  },
+  {
+    "name": "Baseball Cap 01",
+    "thumb": "Baseball Cap 01 - thumb.png",
+    "image": "Baseball Cap 01.png",
+    "col": 8,
+    "row": 16
+  },
+  {
+    "name": "Hockey Helmet 01",
+    "thumb": "Hockey Helmet 01 - thumb.png",
+    "image": "Hockey Helmet 01.png",
+    "col": 1,
+    "row": 14
+  },
+  {
+    "name": "Hockey Helmet 02",
+    "thumb": "Hockey Helmet 02 - thumb.png",
+    "image": "Hockey Helmet 02.png",
+    "col": 2,
+    "row": 14
+  },
+  {
+    "name": "Combat Gas Mask",
+    "thumb": "Combat Gas Mask - thumb.png",
+    "image": "Combat Gas Mask.png",
+    "col": 2,
+    "row": 13
+  },
+  {
+    "name": "Gas Mask 01",
+    "thumb": "Gas Mask 01 - thumb.png",
+    "image": "Gas Mask 01.png",
+    "col": 3,
+    "row": 13
+  },
+  {
+    "name": "Riot Helmet",
+    "thumb": "Riot Helmet - thumb.png",
+    "image": "Riot Helmet.png",
+    "col": 4,
+    "row": 13
+  },
+  {
+    "name": "Welding Mask",
+    "thumb": "Welding Mask - thumb.png",
+    "image": "Welding Mask.png",
+    "col": 5,
+    "row": 13
+  },
+  {
+    "name": "Hockey Helmet 03",
+    "thumb": "Hockey Helmet 03 - thumb.png",
+    "image": "Hockey Helmet 03.png",
+    "col": 3,
+    "row": 14
+  },
+  {
+    "name": "Winter Coif 01",
+    "thumb": "Winter Coif 01 - thumb.png",
+    "image": "Winter Coif 01.png",
+    "col": 6,
+    "row": 15
+  },
+  {
+    "name": "Beret 01",
+    "thumb": "Beret 01 - thumb.png",
+    "image": "Beret 01.png",
+    "col": 8,
+    "row": 14
+  },
+  {
+    "name": "Hood 01",
+    "thumb": "Hood 01 - thumb.png",
+    "image": "Hood 01.png",
+    "col": 5,
+    "row": 15
+  },
+  {
+    "name": "Ballistic Helmet 01",
+    "thumb": "Ballistic Helmet 01 - thumb.png",
+    "image": "Ballistic Helmet 01.png",
+    "col": 4,
+    "row": 14
+  },
+  {
+    "name": "Witch Hat",
+    "thumb": "Witch Hat - thumb.png",
+    "image": "Witch Hat.png",
+    "col": 7,
+    "row": 12
+  },
+  {
+    "name": "Shoretrooper Helmet",
+    "thumb": "Shoretrooper Helmet - thumb.png",
+    "image": "Shoretrooper Helmet.png",
+    "col": 10,
+    "row": 7
+  },
+  {
+    "name": "GeoTrooper Helmet 01",
+    "thumb": "GeoTrooper Helmet 01 - thumb.png",
+    "image": "GeoTrooper Helmet 01.png",
+    "col": 9,
+    "row": 7
+  },
+  {
+    "name": "Barc Trooper Helmet 02",
+    "thumb": "Barc Trooper Helmet 02 - thumb.png",
+    "image": "Barc Trooper Helmet 02.png",
+    "col": 8,
+    "row": 7
+  },
+  {
+    "name": "Barc Trooper Helmet 01",
+    "thumb": "Barc Trooper Helmet 01 - thumb.png",
+    "image": "Barc Trooper Helmet 01.png",
+    "col": 7,
+    "row": 7
+  },
+  {
+    "name": "Biker Scout Helmet 01",
+    "thumb": "Biker Scout Helmet 01 - thumb.png",
+    "image": "Biker Scout Helmet 01.png",
+    "col": 6,
+    "row": 7
+  },
+  {
+    "name": "Biker Scout Helmet 02",
+    "thumb": "Biker Scout Helmet 02 - thumb.png",
+    "image": "Biker Scout Helmet 02.png",
+    "col": 5,
+    "row": 7
+  },
+  {
+    "name": "Commander Bly Helmet",
+    "thumb": "Commander Bly Helmet - thumb.png",
+    "image": "Commander Bly Helmet.png",
+    "col": 6,
+    "row": 4
+  },
+  {
+    "name": "Commander Cody Helmet",
+    "thumb": "Commander Cody Helmet - thumb.png",
+    "image": "Commander Cody Helmet.png",
+    "col": 7,
+    "row": 4
+  },
+  {
+    "name": "Commander Wolffe Helmet",
+    "thumb": "Commander Wolffe Helmet - thumb.png",
+    "image": "Commander Wolffe Helmet.png",
+    "col": 8,
+    "row": 4
+  },
+  {
+    "name": "Republic Commando Helmet 04",
+    "thumb": "Republic Commando Helmet 04 - thumb.png",
+    "image": "Republic Commando Helmet 04.png",
+    "col": 2,
+    "row": 6
+  },
+  {
+    "name": "Republic Commando Helmet 03",
+    "thumb": "Republic Commando Helmet 03 - thumb.png",
+    "image": "Republic Commando Helmet 03.png",
+    "col": 3,
+    "row": 6
+  },
+  {
+    "name": "Republic Commando Helmet 02",
+    "thumb": "Republic Commando Helmet 02 - thumb.png",
+    "image": "Republic Commando Helmet 02.png",
+    "col": 4,
+    "row": 6
+  },
+  {
+    "name": "Commander Rex Helmet",
+    "thumb": "Commander Rex Helmet - thumb.png",
+    "image": "Commander Rex Helmet.png",
+    "col": 1,
+    "row": 7
+  },
+  {
+    "name": "Arc Trooper Phase 2 01",
+    "thumb": "Arc Trooper Phase 2 01 - thumb.png",
+    "image": "Arc Trooper Phase 2 01.png",
+    "col": 2,
+    "row": 7
+  },
+  {
+    "name": "Arc Trooper Phase 2 02",
+    "thumb": "Arc Trooper Phase 2 02 - thumb.png",
+    "image": "Arc Trooper Phase 2 02.png",
+    "col": 3,
+    "row": 7
+  },
+  {
+    "name": "Captain Enoch Helmet",
+    "thumb": "Captain Enoch Helmet - thumb.png",
+    "image": "Captain Enoch Helmet.png",
+    "col": 1,
+    "row": 9
+  },
+  {
+    "name": "Battle Droid Head",
+    "thumb": "Battle Droid Head - thumb.png",
+    "image": "Battle Droid Head.png",
+    "col": 2,
+    "row": 9
   }
 ]
