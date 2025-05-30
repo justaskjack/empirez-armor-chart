@@ -85,14 +85,14 @@
   },
                   {
     "name": "Imperial Keycard",
-    "sellPrice": "",
+    "sellPrice": "None",
     "slots": "",
     "note": "Used to open bunker doors in Northeast toxic Zone, Imperial Base at the Mine and the Airfield East End",
     "image": "Collectable28 - Imperial Keycard"
   },
                   {
     "name": "Bunker Charge",
-    "sellPrice": "10 Credits",
+    "sellPrice": "None",
     "slots": "",
     "note": "Used to open bunker doors at Hoth, South Harbor Reservoir and the Imperial Bunker at Airfield West End",
     "image": "Collectable27 - Bunker Charge"
