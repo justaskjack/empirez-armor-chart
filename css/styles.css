@@ -505,4 +505,11 @@ header.navbar {
   padding: 1rem 2rem;
 }
 
+#poi-row-main,
+#poi-row-retired {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1rem 2rem;
+}
 
