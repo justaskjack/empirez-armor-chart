@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/poi.json')
     .then(res => res.json())
     .then(pois => {
-      const retiredContainer = document.getElementById('poi-row-retired');
-      // In future, you could filter into main vs. retired here.
+      const mainRow = document.getElementById('poi-row-main');
+      const retiredRow = document.getElementById('poi-row-retired');
 
+      // TEMP: All POIs go to "retired" row for now
       pois.forEach((poi, index) => {
         const card = document.createElement('div');
         card.className = 'armor-card';
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const thumb = poi.gallery[0];
 
         const galleryWrapper = document.createElement('div');
-        galleryWrapper.id = `lg-poi-${index}`;
+        galleryWrapper.id = `lg-gallery-poi-${index}`;
         galleryWrapper.className = 'lightgallery';
         card.appendChild(galleryWrapper);
 
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const a = document.createElement('a');
           a.href = `images/${img}`;
           a.setAttribute('data-lg-size', '1406-1390');
-          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>${poi.notes}</p>`);
+          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>Image ${i + 1}</p>`);
 
           const thumbImg = document.createElement('img');
           thumbImg.src = `images/${img}`;
@@ -32,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
           galleryWrapper.appendChild(a);
         });
 
-        // Init lightGallery for this group
+        // Initialize lightGallery
         lightGallery(galleryWrapper, {
           selector: 'a',
-          plugins: [lgThumbnail],
+          plugins: [window.lgThumbnail],
           thumbnail: true,
           animateThumb: true,
           showThumbByDefault: true
@@ -54,7 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         text.appendChild(notesEl);
 
         card.appendChild(text);
-        retiredContainer.appendChild(card);
+
+        // For now, everything goes to retired row
+        retiredRow.appendChild(card);
       });
     });
 });
