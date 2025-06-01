@@ -2,43 +2,47 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/poi.json')
     .then(res => res.json())
     .then(pois => {
-      const mainRow = document.getElementById('poi-row-main');
-      const retiredRow = document.getElementById('poi-row-retired');
+      const poiContainer = document.getElementById('poi-row');
 
       pois.forEach((poi, index) => {
         const card = document.createElement('div');
         card.className = 'armor-card';
 
-        // Gallery container
+        const groupName = `poi-${index}`;
+        const thumb = poi.gallery[0];
+
         const galleryWrapper = document.createElement('div');
-        galleryWrapper.className = 'lightgallery';
         galleryWrapper.id = `lg-gallery-poi-${index}`;
+        galleryWrapper.className = 'lightgallery';
+        card.appendChild(galleryWrapper);
 
-        // First image is the visible thumbnail
-        const thumbLink = document.createElement('a');
-        thumbLink.href = `images/${poi.gallery[0]}`;
-        thumbLink.setAttribute('data-lg-size', '1406-1390');
-        thumbLink.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>${poi.notes}</p>`);
-
-        const thumbImg = document.createElement('img');
-        thumbImg.src = `images/${poi.gallery[0]}`;
-        thumbImg.alt = poi.name;
-        thumbImg.className = 'base-img';
-
-        thumbLink.appendChild(thumbImg);
-        galleryWrapper.appendChild(thumbLink);
-
-        // Hidden images for lightGallery
-        for (let i = 1; i < poi.gallery.length; i++) {
+        poi.gallery.forEach((img, i) => {
           const a = document.createElement('a');
-          a.href = `images/${poi.gallery[i]}`;
+          a.href = `images/${img}`;
           a.setAttribute('data-lg-size', '1406-1390');
-          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>${poi.notes}</p>`);
-          a.className = 'hidden';
-          galleryWrapper.appendChild(a);
-        }
+          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>Image ${i + 1}</p>`);
 
-        // Right-hand text block
+          const thumb = document.createElement('img');
+          thumb.src = `images/${img}`;
+          thumb.alt = `${poi.name} ${i + 1}`;
+          thumb.className = (i === 0) ? 'base-img' : 'hidden';
+
+          a.appendChild(thumb);
+          galleryWrapper.appendChild(a);
+        });
+
+        // Required for thumbnail plugin to work
+        const lgThumbnail = window.lgThumbnail;
+
+        // Initialize lightGallery
+        lightGallery(galleryWrapper, {
+          selector: 'a',
+          plugins: [lgThumbnail],
+          thumbnail: true,
+          animateThumb: true,
+          showThumbByDefault: true
+        });
+
         const text = document.createElement('div');
         text.className = 'armor-text';
 
@@ -51,21 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         notesEl.style.marginTop = "16px";
         text.appendChild(notesEl);
 
-        // Assemble card
-        card.appendChild(galleryWrapper);
         card.appendChild(text);
-
-        // For now, all go to retired section
-        retiredRow.appendChild(card);
-
-        // Initialize lightGallery
-        lightGallery(galleryWrapper, {
-          selector: 'a',
-          plugins: [lgThumbnail],
-          thumbnail: true,
-          animateThumb: true,
-          showThumbByDefault: true
-        });
+        poiContainer.appendChild(card);
       });
     });
 });
