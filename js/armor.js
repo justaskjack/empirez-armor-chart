@@ -104,7 +104,9 @@ globalToggle.addEventListener('click', () => {
 
 document.getElementById('controls').appendChild(globalToggle);
 
-
+// =======================
+// HELMS LOADING SECTION
+// =======================
 fetch('data/helms.json')
   .then(res => res.json())
   .then(helms => {
@@ -122,6 +124,7 @@ fetch('data/helms.json')
       anchor.title = helm.name;
       anchor.style.gridColumn = helm.col;
       anchor.style.gridRow = helm.row;
+      anchor.style.position = 'relative'; // required for dot positioning
 
       const img = document.createElement('img');
       img.src = `images/${helm.thumb}`;
@@ -130,6 +133,13 @@ fetch('data/helms.json')
       img.className = 'helm-thumb';
 
       anchor.appendChild(img);
+
+      if (helm.collected) {
+        const dot = document.createElement('div');
+        dot.className = 'collected-dot';
+        anchor.appendChild(dot);
+      }
+
       grid.appendChild(anchor);
     });
   });
