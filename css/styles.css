@@ -517,12 +517,14 @@ header.navbar {
   position: absolute;
   top: 6px;
   left: 6px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #00ff00;
   border-radius: 50%;
-  z-index: 5;
-  box-shadow: 0 0 4px #00ff00;
+  z-index: 3;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px #0f0;
 }
+
 
 
