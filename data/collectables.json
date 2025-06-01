@@ -223,6 +223,13 @@
     "note": "Combine with a Sword to create a Jedi Force Blade",
     "image": "Collectable39 - Purple Kyber Crystal"
   },
+          {
+    "name": "Jedi Force blade",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Crafted by combining a sword with a Purple Kyber Crystal",
+    "image": "Collectable 41 - Jedi Force blade"
+  },
     {
     "name": "Cereals",
     "sellPrice": "None",
@@ -264,6 +271,13 @@
     "slots": "",
     "note": "Can be worn on hand slot",
     "image": "Collectable34 - Mechanical Hand"
+  },
+          {
+    "name": "Jawa Cloak",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Can be worn to make the player appear as a large Jawa",
+    "image": "Collectable40 - Jawa Cloak"
   },
         {
     "name": "Han Carbonite Craftable Storage",
