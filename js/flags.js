@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const wrapper = document.createElement("a");
         wrapper.href = `images/${flag.image}.png`;
         wrapper.setAttribute("data-lightbox", "flags");
+        wrapper.style.position = "relative"; // required for dot positioning
 
         const img = document.createElement("img");
         img.src = `images/${flag.image} - thumb.png`;
@@ -17,6 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
         img.className = "helm";
 
         wrapper.appendChild(img);
+
+        if (flag.collected) {
+          const dot = document.createElement("div");
+          dot.className = "collected-dot";
+          wrapper.appendChild(dot);
+        }
+
         container.appendChild(wrapper);
       });
     });
