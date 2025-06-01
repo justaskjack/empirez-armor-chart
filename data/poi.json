@@ -30,6 +30,18 @@
     ]
   },
       {
+    "name": "Ewok Village",
+    "notes": "Bright Tree Village was home to an eponymous tribe of Ewoks on Endor during the Galactic Civil War.",
+    "gallery": [
+      "poi06 01.png",
+      "poi06 02.png",
+      "poi06 03.png",
+      "poi06 04.png",
+      "poi06 05.png",
+      "poi06 06.png"
+    ]
+  },
+      {
     "name": "Tosche Station",
     "notes": "Tosche Station was a power station and repair shop on the outskirts of Anchorhead on the desert world of Tatooine. The Jawa Trader can be found here on the PVE server.",
     "gallery": [
@@ -42,6 +54,21 @@
       "poi03 07.png",
       "poi03 08.png",
       "poi03 09.png"
+    ]
+  },
+        {
+    "name": "Hoth",
+    "notes": "Hoth was a remote, icy planet that was the sixth planet in the star system of the same name. It notably hosted Echo Base during the Galactic Civil War.",
+    "gallery": [
+      "poi05 01.png",
+      "poi05 02.png",
+      "poi05 03.png",
+      "poi05 04.png",
+      "poi05 05.png",
+      "poi05 06.png",
+      "poi05 07.png",
+      "poi05 08.png",
+      "poi05 09.png"
     ]
   },
         {
