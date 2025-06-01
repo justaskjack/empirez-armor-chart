@@ -18,7 +18,8 @@
     "sellPrice": "5 Credits",
     "slots": "2x3",
     "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
-    "image": "Collectable16 - Sith Medallion"
+    "image": "Collectable16 - Sith Medallion",
+    "collected": true
   },
       {
     "name": "1 Credit",
@@ -81,7 +82,8 @@
     "sellPrice": "10 Credits",
     "slots": "",
     "note": "Combine this with a Chaincode to create an Active Chaincode which is used to open a Mando Safe",
-    "image": "Collectable33 - Datapad"
+    "image": "Collectable33 - Datapad",
+    "collected": true
   },
                   {
     "name": "Imperial Keycard",
@@ -235,7 +237,8 @@
     "sellPrice": "None",
     "slots": "None",
     "note": "Can be eaten",
-    "image": "Collectable11 - C3POs Cereals"
+    "image": "Collectable11 - C3POs Cereals",
+    "collected": true
   },
     {
     "name": "Teddy Bear (Pink)",
