@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/poi.json')
     .then(res => res.json())
     .then(pois => {
-      const poiContainer = document.getElementById('poi-row');
+      const retiredContainer = document.getElementById('poi-row-retired');
+      // In future, you could filter into main vs. retired here.
 
       pois.forEach((poi, index) => {
         const card = document.createElement('div');
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const thumb = poi.gallery[0];
 
         const galleryWrapper = document.createElement('div');
-        galleryWrapper.id = `lg-gallery-poi-${index}`;
+        galleryWrapper.id = `lg-poi-${index}`;
         galleryWrapper.className = 'lightgallery';
         card.appendChild(galleryWrapper);
 
@@ -20,21 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
           const a = document.createElement('a');
           a.href = `images/${img}`;
           a.setAttribute('data-lg-size', '1406-1390');
-          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>Image ${i + 1}</p>`);
+          a.setAttribute('data-sub-html', `<h4>${poi.name}</h4><p>${poi.notes}</p>`);
 
-          const thumb = document.createElement('img');
-          thumb.src = `images/${img}`;
-          thumb.alt = `${poi.name} ${i + 1}`;
-          thumb.className = (i === 0) ? 'base-img' : 'hidden';
+          const thumbImg = document.createElement('img');
+          thumbImg.src = `images/${img}`;
+          thumbImg.alt = `${poi.name} ${i + 1}`;
+          thumbImg.className = (i === 0) ? 'base-img' : 'hidden';
 
-          a.appendChild(thumb);
+          a.appendChild(thumbImg);
           galleryWrapper.appendChild(a);
         });
 
-        // Required for thumbnail plugin to work
-        const lgThumbnail = window.lgThumbnail;
-
-        // Initialize lightGallery
+        // Init lightGallery for this group
         lightGallery(galleryWrapper, {
           selector: 'a',
           plugins: [lgThumbnail],
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         text.appendChild(notesEl);
 
         card.appendChild(text);
-        poiContainer.appendChild(card);
+        retiredContainer.appendChild(card);
       });
     });
 });
