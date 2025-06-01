@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EmpireZ Encyclopedia 2.5</title>
+  <title>EmpireZ Encyclopedia 2.6</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
   <!-- LightGallery Core -->
@@ -124,17 +124,28 @@
   </div>
 </div>
   
-  <div id="page-poi" class="page">
+<div id="page-poi" class="page">
   <header>
     <div class="title-left">
       <span class="title-bold">POI</span>
       <span class="title-secondary"> | Points of interest located around the map</span>
     </div>
   </header>
-  <div class="armor-section-container" style="border-left: 4px solid #888;" id="poi-row">
-    <!-- POI galleries will be inserted here -->
+
+  <!-- Main POI row (empty for now) -->
+  <div class="armor-section-container" id="poi-row-main" style="border-left: 4px solid #aaa;">
+    <!-- Will hold future POI cards -->
+  </div>
+
+  <!-- Divider header -->
+  <h2 style="padding-left: 2rem; margin-top: 2rem;">Retired PVE Server POI</h2>
+
+  <!-- Retired POI row (existing entries go here) -->
+  <div class="armor-section-container" id="poi-row-retired" style="border-left: 4px solid #888;">
+    <!-- POI cards rendered by poi.js -->
   </div>
 </div>
+
 
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/armor.js"></script>
