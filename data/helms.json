@@ -171,7 +171,8 @@
     "thumb": "Clone Trooper Helmet 05 - thumb.png",
     "image": "Clone Trooper Helmet 05.png",
     "col": 4,
-    "row": 5
+    "row": 5,
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 04",
@@ -293,7 +294,8 @@
     "thumb": "Stormtrooper Helmet 07 - thumb.png",
     "image": "Stormtrooper Helmet 07.png",
     "col": 2,
-    "row": 8
+    "row": 8,
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 01",
@@ -389,14 +391,16 @@
     "thumb": "Tusken Helmet 03 - thumb.png",
     "image": "Tusken Helmet 03.png",
     "col": 10,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Pod Racer Helmet 01",
     "thumb": "Pod Racer Helmet 01 - thumb.png",
     "image": "Pod Racer Helmet 01.png",
     "col": 1,
-    "row": 10
+    "row": 10,
+    "collected": true
   },
   {
     "name": "Pod Racer Helmet 02",
@@ -417,7 +421,8 @@
     "thumb": "Rebel Scout Helmet 01 - thumb.png",
     "image": "Rebel Scout Helmet 01.png",
     "col": 4,
-    "row": 10
+    "row": 10,
+    "collected": true
   },
   {
     "name": "Rebel Scout Helmet 02",
@@ -480,7 +485,8 @@
     "thumb": "Tie Pilot Helmet - thumb.png",
     "image": "Tie Pilot Helmet.png",
     "col": 3,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Imperial Gunner Helmet 01",
@@ -495,21 +501,24 @@
     "thumb": "Imperial Gunner Helmet 02 - thumb.png",
     "image": "Imperial Gunner Helmet 02.png",
     "col": 5,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 01",
     "thumb": "Imperial Officer Hat 01 - thumb.png",
     "image": "Imperial Officer Hat 01.png",
     "col": 6,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 02",
     "thumb": "Imperial Officer Hat 02 - thumb.png",
     "image": "Imperial Officer Hat 02.png",
     "col": 7,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 03",
@@ -688,7 +697,8 @@
     "thumb": "Ski Mask 02 - thumb.png",
     "image": "Ski Mask 02.png",
     "col": 1,
-    "row": 16
+    "row": 16,
+    "collected": true
   },
   {
     "name": "Ski Mask 03",
@@ -737,7 +747,8 @@
     "thumb": "Balaclava 03 - thumb.png",
     "image": "Balaclava 03.png",
     "col": 2,
-    "row": 15
+    "row": 15,
+    "collected": true
   },
   {
     "name": "Balaclava 02",
@@ -751,7 +762,8 @@
     "thumb": "Balaclava 04 - thumb.png",
     "image": "Balaclava 04.png",
     "col": 4,
-    "row": 15
+    "row": 15,
+    "collected": true
   },
   {
     "name": "NBC Respirator",
