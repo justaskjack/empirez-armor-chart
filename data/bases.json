@@ -16,6 +16,24 @@
     ]
   },
     {
+    "name": "Unknown",
+    "cost": "XXX Trade Federation Coins",
+    "gallery": [
+      "Base04 01.png",
+      "Base04 02.png",
+      "Base04 03.png",
+      "Base04 04.png",
+      "Base04 05.png",
+      "Base04 06.png",
+      "Base04 07.png",
+      "Base04 08.png",
+      "Base04 09.png",
+      "Base04 10.png",
+      "Base04 11.png",
+      "Base04 12.png"
+    ]
+  },
+    {
     "name": "DESERT_FORT",
     "cost": "430 Trade Federation Coins",
     "gallery": [
@@ -28,8 +46,8 @@
     ]
   },
       {
-    "name": "GARAGE",
-    "cost": "100 Trade Federation Coins",
+    "name": "Unknown",
+    "cost": "XXX Trade Federation Coins",
     "gallery": [
       "Base03 01.png",
       "Base03 02.png",
