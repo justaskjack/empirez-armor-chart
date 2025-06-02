@@ -14,5 +14,17 @@
       "Base01 09.png",
       "Base01 10.png"
     ]
+  },
+    {
+    "name": "DESERT_FORT",
+    "cost": "430 Trade Federation Coins",
+    "gallery": [
+      "Base02 01.png",
+      "Base02 02.png",
+      "Base02 03.png",
+      "Base02 04.png",
+      "Base02 05.png",
+      "Base02 06.png"
+    ]
   }
 ]
