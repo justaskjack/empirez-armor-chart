@@ -138,12 +138,14 @@ header.navbar {
 }
 
 .logo {
-  background: url("/images/empirez_logo.png") no-repeat;
+  background: url("images/empirez_logo.png") no-repeat center center;
+  background-size: contain;
   width: 120px;
   height: 40px;
   background-color: #222;
   margin-right: 2rem;
 }
+
 
 .navbar nav {
   display: flex;
