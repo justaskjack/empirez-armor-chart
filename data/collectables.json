@@ -11,7 +11,8 @@
     "sellPrice": "5 Credits",
     "slots": "2x3",
     "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
-    "image": "Collectable17 - Jedi Medallion"
+    "image": "Collectable17 - Jedi Medallion",
+    "collected": true
   },
     {
     "name": "Sith Medallion",
@@ -259,7 +260,8 @@
     "sellPrice": "None",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable14 - Teddy Bear (White)"
+    "image": "Collectable14 - Teddy Bear (White)",
+    "collected": true
   },
     {
     "name": "Grogue Plushie",
