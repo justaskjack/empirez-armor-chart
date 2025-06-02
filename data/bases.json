@@ -26,5 +26,15 @@
       "Base02 05.png",
       "Base02 06.png"
     ]
+  },
+      {
+    "name": "GARAGE",
+    "cost": "100 Trade Federation Coins",
+    "gallery": [
+      "Base03 01.png",
+      "Base03 02.png",
+      "Base03 03.png",
+      "Base03 04.png"
+    ]
   }
 ]
