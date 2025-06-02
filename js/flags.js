@@ -7,10 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((flags) => {
       container.innerHTML = "";
       flags.forEach((flag) => {
-        const wrapper = document.createElement("a");
-        wrapper.href = `images/${flag.image}.png`;
-        wrapper.setAttribute("data-lightbox", "flags");
-        wrapper.style.position = "relative"; // required for dot positioning
+      const wrapper = document.createElement("a");
+      wrapper.href = `images/${flag.image}.png`;
+      wrapper.setAttribute("data-lightbox", "flags");
+      wrapper.style.position = "relative"; // required for dot positioning
+      wrapper.classList.add("flag-wrapper"); // ← ADD THIS LINE
 
         const img = document.createElement("img");
         img.src = `images/${flag.image} - thumb.png`;
