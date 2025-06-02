@@ -11,7 +11,8 @@
     "thumb": "Boba Fett Helmet - thumb.png",
     "image": "Boba Fett Helmet.png",
     "col": 7,
-    "row": 2
+    "row": 2,
+    "collected": true
   },
   {
     "name": "Mandalorian Helmet 02",
@@ -32,7 +33,8 @@
     "thumb": "Mando Helmet 01 - thumb.png",
     "image": "Mando Helmet 01.png",
     "col": 3,
-    "row": 2
+    "row": 2,
+    "collected": true
   },
   {
     "name": "Mando Helmet 02",
@@ -112,7 +114,8 @@
     "thumb": "Stormtrooper Helmet 04 - thumb.png",
     "image": "Stormtrooper Helmet 04.png",
     "col": 6,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 03",
@@ -157,7 +160,8 @@
     "thumb": "Clone Trooper Phase 1 - thumb.png",
     "image": "Clone Trooper Phase 1.png",
     "col": 1,
-    "row": 4
+    "row": 4,
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 06",
@@ -187,7 +191,8 @@
     "thumb": "Clone Trooper Helmet 02 - thumb.png",
     "image": "Clone Trooper Helmet 02.png",
     "col": 2,
-    "row": 5
+    "row": 5,
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 03",
@@ -208,7 +213,8 @@
     "thumb": "Shock Trooper Helmet 02 - thumb.png",
     "image": "Shock Trooper Helmet 02.png",
     "col": 8,
-    "row": 5
+    "row": 5,
+    "collected": true
   },
   {
     "name": "Shock Trooper Helmet 01",
@@ -258,7 +264,8 @@
     "thumb": "ANH Sandtrooper Helmet - thumb.png",
     "image": "ANH Sandtrooper Helmet.png",
     "col": 8,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Bad Batch Hunter Helmet",
@@ -525,14 +532,16 @@
     "thumb": "Imperial Officer Hat 03 - thumb.png",
     "image": "Imperial Officer Hat 03.png",
     "col": 8,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Officer Helmet 02",
     "thumb": "Officer Helmet 02 - thumb.png",
     "image": "Officer Helmet 02.png",
     "col": 9,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Officer Helmet 01",
@@ -575,7 +584,8 @@
     "thumb": "Airborne Clone Helmet 03 - thumb.png",
     "image": "Airborne Clone Helmet 03.png",
     "col": 7,
-    "row": 8
+    "row": 8,
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet 02",
@@ -712,7 +722,8 @@
     "thumb": "Ski Mask 01 - thumb.png",
     "image": "Ski Mask 01.png",
     "col": 3,
-    "row": 16
+    "row": 16,
+    "collected": true
   },
   {
     "name": "Ski Mask 04",
@@ -897,7 +908,8 @@
     "thumb": "Biker Scout Helmet 01 - thumb.png",
     "image": "Biker Scout Helmet 01.png",
     "col": 6,
-    "row": 7
+    "row": 7,
+    "collected": true
   },
   {
     "name": "Biker Scout Helmet 02",
