@@ -138,6 +138,7 @@ header.navbar {
 }
 
 .logo {
+  background: url("/images/empirez_logo.png") no-repeat;
   width: 120px;
   height: 40px;
   background-color: #222;
