@@ -81,21 +81,24 @@
     "thumb": "Stormtrooper Helmet 06 - thumb.png",
     "image": "Stormtrooper Helmet 06.png",
     "col": 1,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 02",
     "thumb": "Stormtrooper Helmet 02 - thumb.png",
     "image": "Stormtrooper Helmet 02.png",
     "col": 2,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 01",
     "thumb": "Stormtrooper Helmet 01 - thumb.png",
     "image": "Stormtrooper Helmet 01.png",
     "col": 3,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 05",
@@ -116,14 +119,16 @@
     "thumb": "Stormtrooper Helmet 03 - thumb.png",
     "image": "Stormtrooper Helmet 03.png",
     "col": 5,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Medic 01",
     "thumb": "Stormtrooper Medic 01 - thumb.png",
     "image": "Stormtrooper Medic 01.png",
     "col": 4,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 01",
@@ -137,7 +142,8 @@
     "thumb": "Phase1 Clone Helmet 02 - thumb.png",
     "image": "Phase1 Clone Helmet 02.png",
     "col": 3,
-    "row": 4
+    "row": 4,
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 03",
@@ -172,7 +178,8 @@
     "thumb": "Clone Trooper Helmet 04 - thumb.png",
     "image": "Clone Trooper Helmet 04.png",
     "col": 3,
-    "row": 5
+    "row": 5,
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 02",
@@ -207,7 +214,8 @@
     "thumb": "Shock Trooper Helmet 01 - thumb.png",
     "image": "Shock Trooper Helmet 01.png",
     "col": 9,
-    "row": 5
+    "row": 5,
+    "collected": true
   },
   {
     "name": "Police Cap 01",
@@ -270,7 +278,8 @@
     "thumb": "Mudtrooper Gasmask - thumb.png",
     "image": "Mudtrooper Gasmask.png",
     "col": 9,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "DeathTrooper Helmet",
@@ -305,28 +314,32 @@
     "thumb": "Galactic Marine Helmet - thumb.png",
     "image": "Galactic Marine Helmet.png",
     "col": 10,
-    "row": 6
+    "row": 6,
+    "collected": true
   },
   {
     "name": "Bounty Hunter Helmet 01",
     "thumb": "Bounty Hunter Helmet 01 - thumb.png",
     "image": "Bounty Hunter Helmet 01.png",
     "col": 1,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Bounty Hunter Helmet 02",
     "thumb": "Bounty Hunter Helmet 02 - thumb.png",
     "image": "Bounty Hunter Helmet 02.png",
     "col": 2,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Bounty Hunter Mask",
     "thumb": "Bounty Hunter Mask - thumb.png",
     "image": "Bounty Hunter Mask.png",
     "col": 3,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Tarisian Battle Helmet",
@@ -368,7 +381,8 @@
     "thumb": "Tusken Helmet 02 - thumb.png",
     "image": "Tusken Helmet 02.png",
     "col": 9,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Tusken Helmet 03",
@@ -473,7 +487,8 @@
     "thumb": "Imperial Gunner Helmet 01 - thumb.png",
     "image": "Imperial Gunner Helmet 01.png",
     "col": 4,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Imperial Gunner Helmet 02",
@@ -515,7 +530,8 @@
     "thumb": "Officer Helmet 01 - thumb.png",
     "image": "Officer Helmet 01.png",
     "col": 10,
-    "row": 9
+    "row": 9,
+    "collected": true
   },
   {
     "name": "Purge Trooper Helmet 01",
@@ -557,7 +573,8 @@
     "thumb": "Airborne Clone Helmet 02 - thumb.png",
     "image": "Airborne Clone Helmet 02.png",
     "col": 8,
-    "row": 8
+    "row": 8,
+    "collected": true
   },
   {
     "name": "Darth Revan Helmet",
@@ -585,7 +602,8 @@
     "thumb": "Jar Jar Binks Mask - thumb.png",
     "image": "Jar Jar Binks Mask.png",
     "col": 5,
-    "row": 1
+    "row": 1,
+    "collected": true
   },
   {
     "name": "Ahsoke Head",
@@ -620,7 +638,8 @@
     "thumb": "Shock Commander Helmet 01 - thumb.png",
     "image": "Shock Commander Helmet 01.png",
     "col": 9,
-    "row": 6
+    "row": 6,
+    "collected": true
   },
   {
     "name": "Shock Commander Helmet 02",
@@ -837,7 +856,8 @@
     "thumb": "Shoretrooper Helmet - thumb.png",
     "image": "Shoretrooper Helmet.png",
     "col": 10,
-    "row": 7
+    "row": 7,
+    "collected": true
   },
   {
     "name": "GeoTrooper Helmet 01",
