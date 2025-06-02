@@ -55,6 +55,14 @@
     "rarity": "Common",
     "location": "All tiers"
   },
+              {
+    "name": "Stormtrooper Medic",
+    "image": "Stormtrooper Medic 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers"
+  },
     {
     "name": "Vanilla DayZ Gear (Militia)",
     "image": "Vanilla DayZ Gear 01.png",
@@ -167,6 +175,22 @@
     "rarity": "Legendary",
     "location": "Tier 3"
   },
+            {
+    "name": "Republic Commando Armor (Delta Squad - Boss)",
+    "image": "Republic Commando Armor 04.png",
+    "type": "Clone Commando Armor",
+    "protection": 2,
+    "rarity": "Legendary",
+    "location": "Tier 3"
+  },
+          {
+    "name": "Boba Fett Set",
+    "image": "Boba Fett Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Jabbas Palace"
+  },
     {
     "name": "Ahsoka Tano Set",
     "image": "Ahsoka Tano Set.png",
@@ -191,9 +215,25 @@
     "rarity": "Mythic",
     "location": "Astromech Droids"
   },
+              {
+    "name": "Captain Enoch Set",
+    "image": "Captain Enoch Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Astromech Droids"
+  },
           {
     "name": "Battle Droid Set",
     "image": "Battle Droid Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
+  },
+                {
+    "name": "Andromeda Set",
+    "image": "Andromeda Set.png",
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
@@ -246,5 +286,13 @@
     "protection": 0,
     "rarity": "None",
     "location": "All tiers. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective."
+  },
+            {
+    "name": "Utinni!",
+    "image": "Jawa.png",
+    "type": "Utinni!",
+    "protection": 0,
+    "rarity": "Utinni!",
+    "location": "Utinni!"
   }
 ]
