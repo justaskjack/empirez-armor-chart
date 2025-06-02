@@ -239,6 +239,13 @@ header.navbar {
   flex: 0 0 auto;
 }
 
+#base-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1rem 2rem;
+}
+
 #base-row .base-img {
   width: 313px;
   height: 175px;
