@@ -55,7 +55,8 @@
     "thumb": "Mando Helmet 04 - thumb.png",
     "image": "Mando Helmet 04.png",
     "col": 6,
-    "row": 2
+    "row": 2,
+    "collected": true
   },
   {
     "name": "Mando Helmet 05",
@@ -107,7 +108,8 @@
     "thumb": "Stormtrooper Helmet 05 - thumb.png",
     "image": "Stormtrooper Helmet 05.png",
     "col": 7,
-    "row": 3
+    "row": 3,
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 04",
@@ -236,7 +238,8 @@
     "thumb": "Officer Cap 01 - thumb.png",
     "image": "Officer Cap 01.png",
     "col": 10,
-    "row": 14
+    "row": 14,
+    "collected": true
   },
   {
     "name": "Flight Helmet",
@@ -383,7 +386,8 @@
     "thumb": "Tusken Helmet 01 - thumb.png",
     "image": "Tusken Helmet 01.png",
     "col": 8,
-    "row": 11
+    "row": 11,
+    "collected": true
   },
   {
     "name": "Tusken Helmet 02",
@@ -730,7 +734,8 @@
     "thumb": "Ski Mask 04 - thumb.png",
     "image": "Ski Mask 04.png",
     "col": 4,
-    "row": 16
+    "row": 16,
+    "collected": true
   },
   {
     "name": "Ski Mask 05",
@@ -744,14 +749,16 @@
     "thumb": "Ski Mask 06 - thumb.png",
     "image": "Ski Mask 06.png",
     "col": 6,
-    "row": 16
+    "row": 16,
+    "collected": true
   },
   {
     "name": "Balaclava 01",
     "thumb": "Balaclava 01 - thumb.png",
     "image": "Balaclava 01.png",
     "col": 1,
-    "row": 15
+    "row": 15,
+    "collected": true
   },
   {
     "name": "Balaclava 03",
@@ -766,7 +773,8 @@
     "thumb": "Balaclava 02 - thumb.png",
     "image": "Balaclava 02.png",
     "col": 3,
-    "row": 15
+    "row": 15,
+    "collected": true
   },
   {
     "name": "Balaclava 04",
@@ -872,7 +880,8 @@
     "thumb": "Witch Hat - thumb.png",
     "image": "Witch Hat.png",
     "col": 7,
-    "row": 12
+    "row": 12,
+    "collected": true
   },
   {
     "name": "Shoretrooper Helmet",
@@ -916,7 +925,8 @@
     "thumb": "Biker Scout Helmet 02 - thumb.png",
     "image": "Biker Scout Helmet 02.png",
     "col": 5,
-    "row": 7
+    "row": 7,
+    "collected": true
   },
   {
     "name": "Commander Bly Helmet",
