@@ -42,6 +42,24 @@
       "Base05 21.png"
     ]
   },
+      {
+    "name": "yrstk_base_11",
+    "cost": "575 Trade Federation Coins",
+    "gallery": [
+      "Base06 01.png",
+      "Base06 02.png",
+      "Base06 03.png",
+      "Base06 04.png",
+      "Base06 05.png",
+      "Base06 06.png",
+      "Base06 07.png",
+      "Base06 08.png",
+      "Base06 09.png",
+      "Base06 10.png",
+      "Base06 11.png",
+      "Base06 12.png"
+    ]
+  },
     {
     "name": "DESERT_FORT",
     "cost": "430 Trade Federation Coins",
@@ -52,6 +70,33 @@
       "Base02 04.png",
       "Base02 05.png",
       "Base02 06.png"
+    ]
+  },
+          {
+    "name": "yrstk_base_9",
+    "cost": "300 Trade Federation Coins",
+    "gallery": [
+      "Base08 01.png",
+      "Base08 02.png",
+      "Base08 03.png",
+      "Base08 04.png",
+      "Base08 05.png",
+      "Base08 06.png",
+      "Base08 07.png",
+      "Base08 08.png",
+      "Base08 09.png"
+    ]
+  },
+        {
+    "name": "yrstk_base_10",
+    "cost": "250 Trade Federation Coins",
+    "gallery": [
+      "Base07 01.png",
+      "Base07 02.png",
+      "Base07 03.png",
+      "Base07 04.png",
+      "Base07 05.png",
+      "Base07 06.png"
     ]
   },
       {
