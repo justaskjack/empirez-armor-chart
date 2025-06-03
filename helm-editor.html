@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Helm Grid Editor (2.3)</title>
+  <title>Helm Grid Editor (2.4)</title>
   <style>
     body {
       margin: 0;
@@ -92,7 +92,7 @@
   </style>
 </head>
 <body>
-  <h1>Helm Grid Editor (2.3)</h1>
+  <h1>Helm Grid Editor (2.4)</h1>
   <div class="editor-container">
     <div class="palette">
       <input type="file" id="uploadThumb" accept="image/*" multiple>
@@ -107,190 +107,198 @@
   </div>
   <pre id="exportArea"></pre>
 
-<!-- Same <head>, <style>, and body structure -->
+  <script>
+    const grid = document.getElementById('helmGrid');
+    const palette = document.querySelector('.palette');
+    const placedHelms = [];
+    let movingHelm = null;
 
-<script>
-  const grid = document.getElementById('helmGrid');
-  const palette = document.querySelector('.palette');
-  const placedHelms = [];
-  let movingHelm = null;
-
-  for (let row = 0; row < 14; row++) {
-    for (let col = 0; col < 10; col++) {
-      const cell = document.createElement('div');
-      cell.className = 'grid-cell';
-      cell.style.left = (col * 201) + 'px';
-      cell.style.top = (row * 204) + 'px';
-      grid.appendChild(cell);
+    for (let row = 0; row < 14; row++) {
+      for (let col = 0; col < 10; col++) {
+        const cell = document.createElement('div');
+        cell.className = 'grid-cell';
+        cell.style.left = (col * 201) + 'px';
+        cell.style.top = (row * 204) + 'px';
+        grid.appendChild(cell);
+      }
     }
-  }
 
-  // ✅ Event delegation for all thumbnails in palette
-  palette.addEventListener('dragstart', e => {
-    if (e.target && e.target.tagName === 'IMG') {
-      e.dataTransfer.setData("text/plain", JSON.stringify({
-        name: e.target.dataset.name,
-        thumb: e.target.src,
-        image: e.target.dataset.image,
-        thumbName: e.target.dataset.thumbName,
-        fromPalette: true
-      }));
-    }
-  });
+    palette.addEventListener('dragstart', e => {
+      if (e.target && e.target.tagName === 'IMG') {
+        e.dataTransfer.setData("text/plain", JSON.stringify({
+          name: e.target.dataset.name,
+          thumb: e.target.src,
+          image: e.target.dataset.image,
+          thumbName: e.target.dataset.thumbName,
+          fromPalette: true
+        }));
+      }
+    });
 
-  grid.addEventListener('dragstart', e => {
-    if (e.target.classList.contains('helm')) {
-      movingHelm = e.target;
-      e.dataTransfer.setData("text/plain", JSON.stringify({
-        name: movingHelm.dataset.name,
-        thumb: movingHelm.src,
-        image: movingHelm.dataset.image,
-        thumbName: movingHelm.dataset.thumbName,
-        fromPalette: false
-      }));
-    }
-  });
+    grid.addEventListener('dragstart', e => {
+      if (e.target.classList.contains('helm')) {
+        movingHelm = e.target;
+        e.dataTransfer.setData("text/plain", JSON.stringify({
+          name: movingHelm.dataset.name,
+          thumb: movingHelm.src,
+          image: movingHelm.dataset.image,
+          thumbName: movingHelm.dataset.thumbName,
+          fromPalette: false
+        }));
+      }
+    });
 
-  grid.addEventListener('dragover', e => e.preventDefault());
+    grid.addEventListener('dragover', e => e.preventDefault());
 
-  grid.addEventListener('drop', e => {
-    e.preventDefault();
-    const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-    const rect = grid.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const col = Math.floor(x / 202) + 1;
-    const row = Math.floor(y / 205) + 1;
+    grid.addEventListener('drop', e => {
+      e.preventDefault();
+      const data = JSON.parse(e.dataTransfer.getData("text/plain"));
+      const rect = grid.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const col = Math.floor(x / 202) + 1;
+      const row = Math.floor(y / 205) + 1;
 
-    const existingAtCell = [...grid.querySelectorAll('.helm')].find(h =>
-      parseInt(h.dataset.col) === col && parseInt(h.dataset.row) === row
-    );
-    if (existingAtCell) {
-      grid.removeChild(existingAtCell);
-      const thumbBack = document.createElement('img');
-      thumbBack.src = existingAtCell.src;
-      thumbBack.title = existingAtCell.dataset.name;
-      thumbBack.dataset.name = existingAtCell.dataset.name;
-      thumbBack.dataset.image = existingAtCell.dataset.image;
-      thumbBack.dataset.thumbName = existingAtCell.dataset.thumbName;
-      thumbBack.className = 'helm-thumb';
-      thumbBack.draggable = true;
-      palette.appendChild(thumbBack);
-
-      const ix = placedHelms.findIndex(h =>
-        h.col === col && h.row === row && h.name === existingAtCell.dataset.name
+      const existingAtCell = [...grid.querySelectorAll('.helm')].find(h =>
+        parseInt(h.dataset.col) === col && parseInt(h.dataset.row) === row
       );
-      if (ix !== -1) placedHelms.splice(ix, 1);
-    }
+      if (existingAtCell) {
+        grid.removeChild(existingAtCell);
+        const thumbBack = document.createElement('img');
+        thumbBack.src = existingAtCell.src;
+        thumbBack.title = existingAtCell.dataset.name;
+        thumbBack.dataset.name = existingAtCell.dataset.name;
+        thumbBack.dataset.image = existingAtCell.dataset.image;
+        thumbBack.dataset.thumbName = existingAtCell.dataset.thumbName;
+        thumbBack.className = 'helm-thumb';
+        thumbBack.draggable = true;
+        palette.appendChild(thumbBack);
 
-    if (movingHelm) grid.removeChild(movingHelm);
-    if (movingHelm) {
-      const prevCol = parseInt(movingHelm.dataset.col);
-      const prevRow = parseInt(movingHelm.dataset.row);
-      const index = placedHelms.findIndex(h => h.col === prevCol && h.row === prevRow && h.name === data.name);
-      if (index !== -1) placedHelms.splice(index, 1);
-    }
+        const ix = placedHelms.findIndex(h =>
+          h.col === col && h.row === row && h.name === existingAtCell.dataset.name
+        );
+        if (ix !== -1) placedHelms.splice(ix, 1);
+      }
 
-    const img = document.createElement('img');
-    img.src = data.thumb;
-    img.className = 'helm';
-    img.title = data.name;
-    img.dataset.name = data.name;
-    img.dataset.image = data.image;
-    img.dataset.col = col;
-    img.dataset.row = row;
-    img.dataset.thumbName = data.thumbName;
-    img.draggable = true;
-    img.style.left = ((col - 1) * 202) + 'px';
-    img.style.top = ((row - 1) * 205) + 'px';
-
-    img.onclick = () => {
-      if (confirm("Delete this helm?")) {
-        grid.removeChild(img);
-        const index = placedHelms.findIndex(h => h.col == col && h.row == row && h.name === data.name);
+      if (movingHelm) grid.removeChild(movingHelm);
+      if (movingHelm) {
+        const prevCol = parseInt(movingHelm.dataset.col);
+        const prevRow = parseInt(movingHelm.dataset.row);
+        const index = placedHelms.findIndex(h => h.col === prevCol && h.row === prevRow && h.name === data.name);
         if (index !== -1) placedHelms.splice(index, 1);
       }
-    };
-
-    grid.appendChild(img);
-    const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
-    placedHelms.push({ name: data.name, thumb: thumbFilename, image: data.image, col, row });
-
-    if (data.fromPalette) {
-      const images = Array.from(palette.querySelectorAll('img'));
-      const thumbImg = images.find(i => i.src === data.thumb);
-      if (thumbImg) thumbImg.remove();
-    }
-
-    movingHelm = null;
-  });
-
-  function exportJSON() {
-    document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
-  }
-
-  function copyJSON() {
-    const text = document.getElementById('exportArea').textContent;
-    navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
-  }
-
-  window.addEventListener('DOMContentLoaded', () => {
-    fetch('data/helms.json')
-      .then(res => res.json())
-      .then(helms => {
-        helms.forEach(h => {
-          const img = document.createElement('img');
-          img.src = 'images/' + h.thumb;
-          img.className = 'helm';
-          img.title = h.name;
-          img.dataset.name = h.name;
-          img.dataset.image = h.image;
-          img.dataset.col = h.col;
-          img.dataset.row = h.row;
-          img.dataset.thumbName = h.thumb;
-          img.draggable = true;
-          img.style.left = ((h.col - 1) * 202) + 'px';
-          img.style.top = ((h.row - 1) * 205) + 'px';
-
-          img.onclick = () => {
-            if (confirm("Delete this helm?")) {
-              grid.removeChild(img);
-              const index = placedHelms.findIndex(p =>
-                p.col === h.col && p.row === h.row && p.name === h.name
-              );
-              if (index !== -1) placedHelms.splice(index, 1);
-            }
-          };
-
-          grid.appendChild(img);
-          placedHelms.push(h);
-        });
-      });
-  });
-
-  document.getElementById('uploadThumb').addEventListener('change', e => {
-    const files = e.target.files;
-    [...files].forEach(file => {
-      const url = URL.createObjectURL(file);
-      const filename = file.name;
-      const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
-      const image = filename.replace(" - thumb", "");
 
       const img = document.createElement('img');
-      img.src = url;
-      img.title = name;
-      img.dataset.name = name;
-      img.dataset.image = image;
-      img.dataset.thumbName = filename;
+      img.src = data.thumb;
+      img.className = 'helm';
+      img.title = data.name;
+      img.dataset.name = data.name;
+      img.dataset.image = data.image;
+      img.dataset.col = col;
+      img.dataset.row = row;
+      img.dataset.thumbName = data.thumbName;
       img.draggable = true;
-      img.className = 'helm-thumb';
+      img.style.left = ((col - 1) * 202) + 'px';
+      img.style.top = ((row - 1) * 205) + 'px';
 
-      palette.appendChild(img);
+      img.onclick = () => {
+        if (confirm("Delete this helm?")) {
+          grid.removeChild(img);
+          const index = placedHelms.findIndex(h => h.col == col && h.row == row && h.name === data.name);
+          if (index !== -1) placedHelms.splice(index, 1);
+        }
+      };
+
+      grid.appendChild(img);
+      const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
+      placedHelms.push({
+        name: data.name,
+        thumb: thumbFilename,
+        image: data.image,
+        col,
+        row,
+        collected: false  // default for new entries
+      });
+
+      if (data.fromPalette) {
+        const images = Array.from(palette.querySelectorAll('img'));
+        const thumbImg = images.find(i => i.src === data.thumb);
+        if (thumbImg) thumbImg.remove();
+      }
+
+      movingHelm = null;
     });
-  });
-</script>
 
+    function exportJSON() {
+      document.getElementById('exportArea').textContent = JSON.stringify(placedHelms, null, 2);
+    }
+
+    function copyJSON() {
+      const text = document.getElementById('exportArea').textContent;
+      navigator.clipboard.writeText(text).then(() => alert("JSON copied to clipboard."));
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('data/helms.json')
+        .then(res => res.json())
+        .then(helms => {
+          helms.forEach(h => {
+            const img = document.createElement('img');
+            img.src = 'images/' + h.thumb;
+            img.className = 'helm';
+            img.title = h.name;
+            img.dataset.name = h.name;
+            img.dataset.image = h.image;
+            img.dataset.col = h.col;
+            img.dataset.row = h.row;
+            img.dataset.thumbName = h.thumb;
+            img.draggable = true;
+            img.style.left = ((h.col - 1) * 202) + 'px';
+            img.style.top = ((h.row - 1) * 205) + 'px';
+
+            img.onclick = () => {
+              if (confirm("Delete this helm?")) {
+                grid.removeChild(img);
+                const index = placedHelms.findIndex(p =>
+                  p.col === h.col && p.row === h.row && p.name === h.name
+                );
+                if (index !== -1) placedHelms.splice(index, 1);
+              }
+            };
+
+            grid.appendChild(img);
+            placedHelms.push({
+              name: h.name,
+              thumb: h.thumb,
+              image: h.image,
+              col: h.col,
+              row: h.row,
+              collected: h.collected || false
+            });
+          });
+        });
+    });
+
+    document.getElementById('uploadThumb').addEventListener('change', e => {
+      const files = e.target.files;
+      [...files].forEach(file => {
+        const url = URL.createObjectURL(file);
+        const filename = file.name;
+        const name = filename.replace(/\.[^/.]+$/, "").replace(" - thumb", "");
+        const image = filename.replace(" - thumb", "");
+
+        const img = document.createElement('img');
+        img.src = url;
+        img.title = name;
+        img.dataset.name = name;
+        img.dataset.image = image;
+        img.dataset.thumbName = filename;
+        img.draggable = true;
+        img.className = 'helm-thumb';
+
+        palette.appendChild(img);
+      });
+    });
+  </script>
 </body>
 </html>
-
- 
