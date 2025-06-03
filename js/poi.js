@@ -2,14 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/poi.json')
     .then(res => res.json())
     .then(pois => {
-      const poiContainer = document.getElementById('poi-row');
+      const activeContainer = document.getElementById('poi-row-main');
+      const retiredContainer = document.getElementById('poi-row');
 
       pois.forEach((poi, index) => {
         const card = document.createElement('div');
         card.className = 'armor-card';
-
-        const groupName = `poi-${index}`;
-        const thumb = poi.gallery[0];
 
         const galleryWrapper = document.createElement('div');
         galleryWrapper.id = `lg-gallery-poi-${index}`;
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Required for thumbnail plugin to work
         const lgThumbnail = window.lgThumbnail;
 
-        // Initialize lightGallery
         lightGallery(galleryWrapper, {
           selector: 'a',
           plugins: [lgThumbnail],
@@ -56,7 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         text.appendChild(notesEl);
 
         card.appendChild(text);
-        poiContainer.appendChild(card);
+
+        // Append to correct row
+        const targetContainer = poi.retired ? retiredContainer : activeContainer;
+        targetContainer.appendChild(card);
       });
     });
 });
