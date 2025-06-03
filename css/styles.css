@@ -570,4 +570,35 @@ header.navbar {
   cursor: zoom-in;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.contributors {
+  font-size: 0.9rem;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.discord-btn img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  filter: brightness(0) invert(1); /* Makes icon white on dark backgrounds */
+  transition: transform 0.2s ease;
+}
+
+.discord-btn img:hover {
+  transform: scale(1.1);
+}
 
