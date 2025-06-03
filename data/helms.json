@@ -4,7 +4,8 @@
     "thumb": "Darth Maul Mask - thumb.png",
     "image": "Darth Maul Mask.png",
     "col": 1,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Boba Fett Helmet",
@@ -19,14 +20,16 @@
     "thumb": "Mandalorian Helmet 02 - thumb.png",
     "image": "Mandalorian Helmet 02.png",
     "col": 9,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Mandalorian Helmet 01",
     "thumb": "Mandalorian Helmet 01 - thumb.png",
     "image": "Mandalorian Helmet 01.png",
     "col": 2,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Mando Helmet 01",
@@ -41,14 +44,16 @@
     "thumb": "Mando Helmet 02 - thumb.png",
     "image": "Mando Helmet 02.png",
     "col": 4,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Mando Helmet 03",
     "thumb": "Mando Helmet 03 - thumb.png",
     "image": "Mando Helmet 03.png",
     "col": 5,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Mando Helmet 04",
@@ -63,21 +68,16 @@
     "thumb": "Mando Helmet 05 - thumb.png",
     "image": "Mando Helmet 05.png",
     "col": 1,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Mando Warrior Helmet",
     "thumb": "Mando Warrior Helmet - thumb.png",
     "image": "Mando Warrior Helmet.png",
     "col": 8,
-    "row": 2
-  },
-  {
-    "name": "Nute Gunray Head",
-    "thumb": "Nute Gunray Head - thumb.png",
-    "image": "Nute Gunray Head.png",
-    "col": 10,
-    "row": 1
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Stormtrooper Helmet 06",
@@ -140,7 +140,8 @@
     "thumb": "Phase1 Clone Helmet 01 - thumb.png",
     "image": "Phase1 Clone Helmet 01.png",
     "col": 4,
-    "row": 4
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Phase1 Clone Helmet 02",
@@ -155,7 +156,8 @@
     "thumb": "Phase1 Clone Helmet 03 - thumb.png",
     "image": "Phase1 Clone Helmet 03.png",
     "col": 2,
-    "row": 4
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Clone Trooper Phase 1",
@@ -170,7 +172,8 @@
     "thumb": "Clone Trooper Helmet 06 - thumb.png",
     "image": "Clone Trooper Helmet 06.png",
     "col": 1,
-    "row": 5
+    "row": 5,
+    "collected": false
   },
   {
     "name": "Clone Trooper Helmet 05",
@@ -201,14 +204,16 @@
     "thumb": "Clone Trooper Helmet 03 - thumb.png",
     "image": "Clone Trooper Helmet 03.png",
     "col": 6,
-    "row": 5
+    "row": 5,
+    "collected": false
   },
   {
     "name": "Clone Trooper Helmet 01",
     "thumb": "Clone Trooper Helmet 01 - thumb.png",
     "image": "Clone Trooper Helmet 01.png",
     "col": 5,
-    "row": 5
+    "row": 5,
+    "collected": false
   },
   {
     "name": "Shock Trooper Helmet 02",
@@ -231,7 +236,8 @@
     "thumb": "Police Cap 01 - thumb.png",
     "image": "Police Cap 01.png",
     "col": 9,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Officer Cap 01",
@@ -246,21 +252,24 @@
     "thumb": "Flight Helmet - thumb.png",
     "image": "Flight Helmet.png",
     "col": 8,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Firefighter Helmet 02",
     "thumb": "Firefighter Helmet 02 - thumb.png",
     "image": "Firefighter Helmet 02.png",
     "col": 9,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Firefighter Helmet 01",
     "thumb": "Firefighter Helmet 01 - thumb.png",
     "image": "Firefighter Helmet 01.png",
     "col": 10,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "ANH Sandtrooper Helmet",
@@ -275,14 +284,16 @@
     "thumb": "Bad Batch Hunter Helmet - thumb.png",
     "image": "Bad Batch Hunter Helmet.png",
     "col": 7,
-    "row": 5
+    "row": 5,
+    "collected": false
   },
   {
     "name": "Pilot Helmet",
     "thumb": "Pilot Helmet - thumb.png",
     "image": "Pilot Helmet.png",
     "col": 7,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Mudtrooper Gasmask",
@@ -297,7 +308,8 @@
     "thumb": "DeathTrooper Helmet - thumb.png",
     "image": "DeathTrooper Helmet.png",
     "col": 1,
-    "row": 8
+    "row": 8,
+    "collected": false
   },
   {
     "name": "Stormtrooper Helmet 07",
@@ -312,14 +324,16 @@
     "thumb": "Republic Commando Helmet 01 - thumb.png",
     "image": "Republic Commando Helmet 01.png",
     "col": 1,
-    "row": 6
+    "row": 6,
+    "collected": false
   },
   {
     "name": "Tacmask",
     "thumb": "Tacmask - thumb.png",
     "image": "Tacmask.png",
     "col": 6,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Galactic Marine Helmet",
@@ -358,28 +372,32 @@
     "thumb": "Tarisian Battle Helmet - thumb.png",
     "image": "Tarisian Battle Helmet.png",
     "col": 4,
-    "row": 11
+    "row": 11,
+    "collected": false
   },
   {
     "name": "Bossk Mask",
     "thumb": "Bossk Mask - thumb.png",
     "image": "Bossk Mask.png",
     "col": 5,
-    "row": 11
+    "row": 11,
+    "collected": false
   },
   {
     "name": "Greedo Mask",
     "thumb": "Greedo Mask - thumb.png",
     "image": "Greedo Mask.png",
     "col": 6,
-    "row": 11
+    "row": 11,
+    "collected": false
   },
   {
     "name": "Squid Head Mask",
     "thumb": "Squid Head Mask - thumb.png",
     "image": "Squid Head Mask.png",
     "col": 7,
-    "row": 11
+    "row": 11,
+    "collected": false
   },
   {
     "name": "Tusken Helmet 01",
@@ -418,14 +436,16 @@
     "thumb": "Pod Racer Helmet 02 - thumb.png",
     "image": "Pod Racer Helmet 02.png",
     "col": 2,
-    "row": 10
+    "row": 10,
+    "collected": false
   },
   {
     "name": "Rebel Pilot Helmet",
     "thumb": "Rebel Pilot Helmet - thumb.png",
     "image": "Rebel Pilot Helmet.png",
     "col": 3,
-    "row": 10
+    "row": 10,
+    "collected": false
   },
   {
     "name": "Rebel Scout Helmet 01",
@@ -440,56 +460,64 @@
     "thumb": "Rebel Scout Helmet 02 - thumb.png",
     "image": "Rebel Scout Helmet 02.png",
     "col": 5,
-    "row": 10
+    "row": 10,
+    "collected": false
   },
   {
     "name": "Rebel Technician Helmet",
     "thumb": "Rebel Technician Helmet - thumb.png",
     "image": "Rebel Technician Helmet.png",
     "col": 6,
-    "row": 10
+    "row": 10,
+    "collected": false
   },
   {
     "name": "OrcHelm 1",
     "thumb": "OrcHelm 1 - thumb.png",
     "image": "OrcHelm 1.png",
     "col": 1,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "OrcHelm 2",
     "thumb": "OrcHelm 2 - thumb.png",
     "image": "OrcHelm 2.png",
     "col": 2,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "OrcHelm 3",
     "thumb": "OrcHelm 3 - thumb.png",
     "image": "OrcHelm 3.png",
     "col": 3,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "OrcHelm 4",
     "thumb": "OrcHelm 4 - thumb.png",
     "image": "OrcHelm 4.png",
     "col": 4,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "OrcHelm 5",
     "thumb": "OrcHelm 5 - thumb.png",
     "image": "OrcHelm 5.png",
     "col": 5,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "Norse Helm",
     "thumb": "Norse Helm - thumb.png",
     "image": "Norse Helm.png",
     "col": 6,
-    "row": 12
+    "row": 12,
+    "collected": false
   },
   {
     "name": "Tie Pilot Helmet",
@@ -560,28 +588,32 @@
     "thumb": "Purge Trooper Helmet 01 - thumb.png",
     "image": "Purge Trooper Helmet 01.png",
     "col": 3,
-    "row": 8
+    "row": 8,
+    "collected": false
   },
   {
     "name": "Purge Trooper Helmet 02",
     "thumb": "Purge Trooper Helmet 02 - thumb.png",
     "image": "Purge Trooper Helmet 02.png",
     "col": 4,
-    "row": 8
+    "row": 8,
+    "collected": false
   },
   {
     "name": "Airborne Clone Helmet",
     "thumb": "Airborne Clone Helmet - thumb.png",
     "image": "Airborne Clone Helmet.png",
     "col": 5,
-    "row": 8
+    "row": 8,
+    "collected": false
   },
   {
     "name": "Airborne Clone Helmet 04",
     "thumb": "Airborne Clone Helmet 04 - thumb.png",
     "image": "Airborne Clone Helmet 04.png",
     "col": 6,
-    "row": 8
+    "row": 8,
+    "collected": false
   },
   {
     "name": "Airborne Clone Helmet 03",
@@ -604,21 +636,24 @@
     "thumb": "Darth Revan Helmet - thumb.png",
     "image": "Darth Revan Helmet.png",
     "col": 2,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Moff Gideon Helmet",
     "thumb": "Moff Gideon Helmet - thumb.png",
     "image": "Moff Gideon Helmet.png",
     "col": 3,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Chewy Head",
     "thumb": "Chewy Head - thumb.png",
     "image": "Chewy Head.png",
     "col": 4,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Jar Jar Binks Mask",
@@ -633,78 +668,64 @@
     "thumb": "Ahsoke Head - thumb.png",
     "image": "Ahsoke Head.png",
     "col": 6,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Sabine Wren Helmet",
     "thumb": "Sabine Wren Helmet - thumb.png",
     "image": "Sabine Wren Helmet.png",
     "col": 8,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Bok Katan Helmet",
     "thumb": "Bok Katan Helmet - thumb.png",
     "image": "Bok Katan Helmet.png",
     "col": 7,
-    "row": 1
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Darth Talon Head",
     "thumb": "Darth Talon Head - thumb.png",
     "image": "Darth Talon Head.png",
     "col": 9,
-    "row": 1
-  },
-  {
-    "name": "Shock Commander Helmet 01",
-    "thumb": "Shock Commander Helmet 01 - thumb.png",
-    "image": "Shock Commander Helmet 01.png",
-    "col": 9,
-    "row": 6,
-    "collected": true
-  },
-  {
-    "name": "Shock Commander Helmet 02",
-    "thumb": "Shock Commander Helmet 02 - thumb.png",
-    "image": "Shock Commander Helmet 02.png",
-    "col": 8,
-    "row": 6
+    "row": 1,
+    "collected": false
   },
   {
     "name": "Commander Gree Helmet Chrome",
     "thumb": "Commander Gree Helmet Chrome - thumb.png",
     "image": "Commander Gree Helmet Chrome.png",
     "col": 10,
-    "row": 5
+    "row": 5,
+    "collected": false
   },
   {
     "name": "Clone Trooper Phase 1 02",
     "thumb": "Clone Trooper Phase 1 02 - thumb.png",
     "image": "Clone Trooper Phase 1 02.png",
     "col": 5,
-    "row": 4
-  },
-  {
-    "name": "Bad Batch Wrecker",
-    "thumb": "Bad Batch Wrecker - thumb.png",
-    "image": "Bad Batch Wrecker.png",
-    "col": 7,
-    "row": 6
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Mando Armorer Helmet",
     "thumb": "Mando Armorer Helmet - thumb.png",
     "image": "Mando Armorer Helmet.png",
     "col": 10,
-    "row": 3
+    "row": 3,
+    "collected": false
   },
   {
     "name": "Mandalorian Helmet 03",
     "thumb": "Mandalorian Helmet 03 - thumb.png",
     "image": "Mandalorian Helmet 03.png",
     "col": 10,
-    "row": 2
+    "row": 2,
+    "collected": false
   },
   {
     "name": "Ski Mask 02",
@@ -719,7 +740,8 @@
     "thumb": "Ski Mask 03 - thumb.png",
     "image": "Ski Mask 03.png",
     "col": 2,
-    "row": 16
+    "row": 16,
+    "collected": false
   },
   {
     "name": "Ski Mask 01",
@@ -742,7 +764,8 @@
     "thumb": "Ski Mask 05 - thumb.png",
     "image": "Ski Mask 05.png",
     "col": 5,
-    "row": 16
+    "row": 16,
+    "collected": false
   },
   {
     "name": "Ski Mask 06",
@@ -789,91 +812,104 @@
     "thumb": "NBC Respirator - thumb.png",
     "image": "NBC Respirator.png",
     "col": 1,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Baseball Cap 01",
     "thumb": "Baseball Cap 01 - thumb.png",
     "image": "Baseball Cap 01.png",
     "col": 8,
-    "row": 16
+    "row": 16,
+    "collected": false
   },
   {
     "name": "Hockey Helmet 01",
     "thumb": "Hockey Helmet 01 - thumb.png",
     "image": "Hockey Helmet 01.png",
     "col": 1,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Hockey Helmet 02",
     "thumb": "Hockey Helmet 02 - thumb.png",
     "image": "Hockey Helmet 02.png",
     "col": 2,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Combat Gas Mask",
     "thumb": "Combat Gas Mask - thumb.png",
     "image": "Combat Gas Mask.png",
     "col": 2,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Gas Mask 01",
     "thumb": "Gas Mask 01 - thumb.png",
     "image": "Gas Mask 01.png",
     "col": 3,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Riot Helmet",
     "thumb": "Riot Helmet - thumb.png",
     "image": "Riot Helmet.png",
     "col": 4,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Welding Mask",
     "thumb": "Welding Mask - thumb.png",
     "image": "Welding Mask.png",
     "col": 5,
-    "row": 13
+    "row": 13,
+    "collected": false
   },
   {
     "name": "Hockey Helmet 03",
     "thumb": "Hockey Helmet 03 - thumb.png",
     "image": "Hockey Helmet 03.png",
     "col": 3,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Winter Coif 01",
     "thumb": "Winter Coif 01 - thumb.png",
     "image": "Winter Coif 01.png",
     "col": 6,
-    "row": 15
+    "row": 15,
+    "collected": false
   },
   {
     "name": "Beret 01",
     "thumb": "Beret 01 - thumb.png",
     "image": "Beret 01.png",
     "col": 8,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Hood 01",
     "thumb": "Hood 01 - thumb.png",
     "image": "Hood 01.png",
     "col": 5,
-    "row": 15
+    "row": 15,
+    "collected": false
   },
   {
     "name": "Ballistic Helmet 01",
     "thumb": "Ballistic Helmet 01 - thumb.png",
     "image": "Ballistic Helmet 01.png",
     "col": 4,
-    "row": 14
+    "row": 14,
+    "collected": false
   },
   {
     "name": "Witch Hat",
@@ -896,21 +932,24 @@
     "thumb": "GeoTrooper Helmet 01 - thumb.png",
     "image": "GeoTrooper Helmet 01.png",
     "col": 9,
-    "row": 7
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Barc Trooper Helmet 02",
     "thumb": "Barc Trooper Helmet 02 - thumb.png",
     "image": "Barc Trooper Helmet 02.png",
     "col": 8,
-    "row": 7
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Barc Trooper Helmet 01",
     "thumb": "Barc Trooper Helmet 01 - thumb.png",
     "image": "Barc Trooper Helmet 01.png",
     "col": 7,
-    "row": 7
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Biker Scout Helmet 01",
@@ -933,76 +972,135 @@
     "thumb": "Commander Bly Helmet - thumb.png",
     "image": "Commander Bly Helmet.png",
     "col": 6,
-    "row": 4
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Commander Cody Helmet",
     "thumb": "Commander Cody Helmet - thumb.png",
     "image": "Commander Cody Helmet.png",
     "col": 7,
-    "row": 4
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Commander Wolffe Helmet",
     "thumb": "Commander Wolffe Helmet - thumb.png",
     "image": "Commander Wolffe Helmet.png",
     "col": 8,
-    "row": 4
+    "row": 4,
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 04",
     "thumb": "Republic Commando Helmet 04 - thumb.png",
     "image": "Republic Commando Helmet 04.png",
     "col": 2,
-    "row": 6
+    "row": 6,
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 03",
     "thumb": "Republic Commando Helmet 03 - thumb.png",
     "image": "Republic Commando Helmet 03.png",
     "col": 3,
-    "row": 6
+    "row": 6,
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 02",
     "thumb": "Republic Commando Helmet 02 - thumb.png",
     "image": "Republic Commando Helmet 02.png",
     "col": 4,
-    "row": 6
+    "row": 6,
+    "collected": false
   },
   {
     "name": "Commander Rex Helmet",
     "thumb": "Commander Rex Helmet - thumb.png",
     "image": "Commander Rex Helmet.png",
     "col": 1,
-    "row": 7
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Arc Trooper Phase 2 01",
     "thumb": "Arc Trooper Phase 2 01 - thumb.png",
     "image": "Arc Trooper Phase 2 01.png",
     "col": 2,
-    "row": 7
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Arc Trooper Phase 2 02",
     "thumb": "Arc Trooper Phase 2 02 - thumb.png",
     "image": "Arc Trooper Phase 2 02.png",
     "col": 3,
-    "row": 7
-  },
-  {
-    "name": "Captain Enoch Helmet",
-    "thumb": "Captain Enoch Helmet - thumb.png",
-    "image": "Captain Enoch Helmet.png",
-    "col": 1,
-    "row": 9
+    "row": 7,
+    "collected": false
   },
   {
     "name": "Battle Droid Head",
     "thumb": "Battle Droid Head - thumb.png",
     "image": "Battle Droid Head.png",
     "col": 2,
-    "row": 9
+    "row": 9,
+    "collected": false
+  },
+  {
+    "name": "Bad Batch Wrecker",
+    "thumb": "Bad Batch Wrecker - thumb.png",
+    "image": "Bad Batch Wrecker.png",
+    "col": 6,
+    "row": 6,
+    "collected": false
+  },
+  {
+    "name": "Shock Commander Helmet 02",
+    "thumb": "Shock Commander Helmet 02 - thumb.png",
+    "image": "Shock Commander Helmet 02.png",
+    "col": 7,
+    "row": 6,
+    "collected": false
+  },
+  {
+    "name": "Shock Commander Helmet 01",
+    "thumb": "Shock Commander Helmet 01 - thumb.png",
+    "image": "Shock Commander Helmet 01.png",
+    "col": 8,
+    "row": 6,
+    "collected": false
+  },
+  {
+    "name": "Shock Commander Helmet 03",
+    "thumb": "Shock Commander Helmet 03 - thumb.png",
+    "image": "Shock Commander Helmet 03.png",
+    "col": 9,
+    "row": 6,
+    "collected": false
+  },
+  {
+    "name": "Nute Gunray Head",
+    "thumb": "Nute Gunray Head - thumb.png",
+    "image": "Nute Gunray Head.png",
+    "col": 10,
+    "row": 10,
+    "collected": false
+  },
+  {
+    "name": "Captain Enoch Helmet",
+    "thumb": "Captain Enoch Helmet - thumb.png",
+    "image": "Captain Enoch Helmet.png",
+    "col": 10,
+    "row": 1,
+    "collected": false
+  },
+  {
+    "name": "Andromeda Head",
+    "thumb": "Andromeda Head - thumb.png",
+    "image": "Andromeda Head.png",
+    "col": 1,
+    "row": 9,
+    "collected": false
   }
 ]
