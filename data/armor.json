@@ -143,9 +143,129 @@
     "rarity": "Rare",
     "location": "Tiers 3, 4 & 5"
   },
-  {
-    "name": "",
-    "image": "Epic.png",
+            {
+    "name": "Sith Trooper Set",
+    "image": "Sith Trooper Set 01.png",
+    "type": "Special Troop armor",
+    "protection": "2",
+    "rarity": "Rare",
+    "location": "Sith Temple"
+  },
+        {
+    "name": "Commander Wolffe Set",
+    "image": "Commander Wolffe Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+              {
+    "name": "Commander Cody Set",
+    "image": "Commander Cody Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                    {
+    "name": "Commander Bly Set",
+    "image": "Commander Bly Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                          {
+    "name": "Commander Gree Set",
+    "image": "Commander Gree Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                {
+    "name": "Shadow Clone Trooper Set",
+    "image": "Shadow Clone Trooper Set 01.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                      {
+    "name": "Bad Batch Hunter Set",
+    "image": "Bad Batch Hunter Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                    {
+    "name": "Clone Trooper Set (Chrome Variant)",
+    "image": "Clone Trooper Set 05.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+              {
+    "name": "Clone Trooper Set (Purple Variant)",
+    "image": "Clone Trooper Set 03.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                    {
+    "name": "Clone Trooper Set (Red Variant)",
+    "image": "Clone Trooper Set 04.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                          {
+    "name": "Clone Trooper Set (Blue Variant)",
+    "image": "Clone Trooper Set 06.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                          {
+    "name": "Clone Trooper Set (White Variant)",
+    "image": "Clone Trooper Set 07.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                {
+    "name": "Clone Trooper Set (Camo Variant)",
+    "image": "Clone Trooper Set 08.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                {
+    "name": "Clone Trooper Set (Tan Variant)",
+    "image": "Clone Trooper Set 09.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                {
+    "name": "Clone Trooper Set (Yellow Variant)",
+    "image": "Clone Trooper Set 10.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Tiers 3 & 5"
+  },
+                                {
+    "name": "Shock Trooper Set (Purple Variant)",
+    "image": "Shock Trooper Set 01.png",
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
@@ -178,6 +298,22 @@
             {
     "name": "Republic Commando Armor (Delta Squad - Boss)",
     "image": "Republic Commando Armor 04.png",
+    "type": "Clone Commando Armor",
+    "protection": 2,
+    "rarity": "Legendary",
+    "location": "Tier 3"
+  },
+                  {
+    "name": "Republic Commando Armor (Delta Squad - Fixer)",
+    "image": "Republic Commando Armor 05.png",
+    "type": "Clone Commando Armor",
+    "protection": 2,
+    "rarity": "Legendary",
+    "location": "Tier 3"
+  },
+                        {
+    "name": "Republic Commando Armor (Katarn-class)",
+    "image": "Republic Commando Armor 06.png",
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
@@ -216,12 +352,52 @@
     "location": "Astromech Droids"
   },
               {
+    "name": "Darth Revan Set",
+    "image": "Darth Revan Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tiers 4,5,6"
+  },
+                    {
+    "name": "Captain Phasma Set",
+    "image": "Captain Phasma Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Astromech Droids"
+  },
+              {
     "name": "Captain Enoch Set",
     "image": "Captain Enoch Set.png",
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids"
+  },
+                {
+    "name": "C3po Set",
+    "image": "C3po Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
+  },
+                            {
+    "name": "General Grevious Set",
+    "image": "General Grevious Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
+  },
+                      {
+    "name": "IG88 Set",
+    "image": "IG88 Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
   },
           {
     "name": "Battle Droid Set",
@@ -234,6 +410,14 @@
                 {
     "name": "Andromeda Set",
     "image": "Andromeda Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe"
+  },
+                      {
+    "name": "ND5_Droid Set",
+    "image": "ND5_Droid Set.png",
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
@@ -262,6 +446,30 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple"
+  },
+          {
+    "name": "Jedi Guard Set",
+    "image": "Jedi Guard Set.png",
+    "type": "Jedi/Sith Sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Jedi Temple"
+  },
+                {
+    "name": "Grey Jedi Set",
+    "image": "Jedi Guard Set.png",
+    "type": "Jedi/Sith Sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Jedi Temple"
+  },
+                {
+    "name": "Grey Jedi Set (Khaki Variant)",
+    "image": "Jedi Guard Set 02.png",
+    "type": "Jedi/Sith Sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Jedi Temple"
   },
     {
     "name": "NBC Suit (Yellow Variant)",
@@ -294,5 +502,21 @@
     "protection": 0,
     "rarity": "None",
     "location": "Utinni!"
+  },
+                  {
+    "name": "Clone Trooper Set (Neon Green Chrome Variant)",
+    "image": "Clone Trooper Set 01.png",
+    "type": "Clone Trooper Armor",
+    "protection": 1,
+    "rarity": "None",
+    "location": "Admin Events"
+  },
+                        {
+    "name": "Clone Trooper Set (Neon Red Chrome Variant)",
+    "image": "Clone Trooper Set 02.png",
+    "type": "Clone Trooper Armor",
+    "protection": 1,
+    "rarity": "None",
+    "location": "Admin Events"
   }
 ]
