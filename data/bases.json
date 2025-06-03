@@ -16,21 +16,30 @@
     ]
   },
     {
-    "name": "Unknown",
-    "cost": "XXX Trade Federation Coins",
+    "name": "yrstk_base_12",
+    "cost": "825 Trade Federation Coins",
     "gallery": [
-      "Base04 01.png",
-      "Base04 02.png",
-      "Base04 03.png",
-      "Base04 04.png",
-      "Base04 05.png",
-      "Base04 06.png",
-      "Base04 07.png",
-      "Base04 08.png",
-      "Base04 09.png",
-      "Base04 10.png",
-      "Base04 11.png",
-      "Base04 12.png"
+      "Base05 01.png",
+      "Base05 02.png",
+      "Base05 03.png",
+      "Base05 04.png",
+      "Base05 05.png",
+      "Base05 06.png",
+      "Base05 07.png",
+      "Base05 08.png",
+      "Base05 09.png",
+      "Base05 10.png",
+      "Base05 11.png",
+      "Base05 12.png",
+      "Base05 13.png",
+      "Base05 14.png",
+      "Base05 15.png",
+      "Base05 16.png",
+      "Base05 17.png",
+      "Base05 18.png",
+      "Base05 19.png",
+      "Base05 20.png",
+      "Base05 21.png"
     ]
   },
     {
@@ -46,7 +55,7 @@
     ]
   },
       {
-    "name": "Unknown",
+    "name": "Unknown 1",
     "cost": "XXX Trade Federation Coins",
     "gallery": [
       "Base03 01.png",
