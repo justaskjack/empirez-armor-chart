@@ -42,6 +42,16 @@
       "Base05 21.png"
     ]
   },
+        {
+    "name": "yrstk_base_1",
+    "cost": "600 Trade Federation Coins",
+    "gallery": [
+      "Base16 01.png",
+      "Base16 02.png",
+      "Base16 03.png",
+      "Base16 04.png"
+    ]
+  },
       {
     "name": "yrstk_base_11",
     "cost": "575 Trade Federation Coins",
@@ -113,19 +123,29 @@
       "Base08 09.png"
     ]
   },
+      "name": "yrstk_base_4",
+    "cost": "300 Trade Federation Coins",
+    "gallery": [
+      "Base14 01.png",
+      "Base14 02.png",
+      "Base14 03.png",
+      "Base14 04.png",
+      "Base14 05.png",
+      "Base14 06.png"
+    ]
+  },
           {
     "name": "yrstk_base_8",
     "cost": "250 Trade Federation Coins",
     "gallery": [
-      "Base08 01.png",
-      "Base08 02.png",
-      "Base08 03.png",
-      "Base08 04.png",
-      "Base08 05.png",
-      "Base08 06.png",
-      "Base08 07.png",
-      "Base08 08.png",
-      "Base08 09.png"
+      "Base09 01.png",
+      "Base09 02.png",
+      "Base09 03.png",
+      "Base09 04.png",
+      "Base09 05.png",
+      "Base09 06.png",
+      "Base09 07.png",
+      "Base09 08.png"
     ]
   },
         {
@@ -138,6 +158,17 @@
       "Base07 04.png",
       "Base07 05.png",
       "Base07 06.png"
+    ]
+  },
+        {
+    "name": "yrstk_base_3",
+    "cost": "150 Trade Federation Coins",
+    "gallery": [
+      "Base15 01.png",
+      "Base15 02.png",
+      "Base15 03.png",
+      "Base15 04.png",
+      "Base15 05.png"
     ]
   },
           {
