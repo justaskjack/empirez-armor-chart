@@ -591,8 +591,8 @@ header.navbar {
 }
 
 .discord-btn img {
-  width: 24px;
-  height: 24px;
+  width: 360px;
+  height: 85px;
   display: block;
   filter: brightness(0) invert(1); /* Makes icon white on dark backgrounds */
   transition: transform 0.2s ease;
