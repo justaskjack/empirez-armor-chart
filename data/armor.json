@@ -491,7 +491,7 @@
     "name": "Chewy Suit",
     "image": "Chewy Suit.png",
     "type": "Gas Protection",
-    "protection": 0,
+    "protection": 2,
     "rarity": "None",
     "location": "All tiers. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective."
   },
