@@ -123,7 +123,8 @@
       "Base08 09.png"
     ]
   },
-      "name": "yrstk_base_4",
+          {
+    "name": "yrstk_base_4",
     "cost": "300 Trade Federation Coins",
     "gallery": [
       "Base14 01.png",
