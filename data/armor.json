@@ -343,6 +343,22 @@
     "rarity": "Mythic",
     "location": "Astromech Droids"
   },
+            {
+    "name": "Sabine Wren Armor",
+    "image": "Sabine Wren Armor.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Astromech Droids"
+  },
+                  {
+    "name": "Paz Vizsla Set",
+    "image": "Paz Vizsla Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Bunker"
+  },
         {
     "name": "Darth Talon Set",
     "image": "Darth Talon Set.png",
@@ -358,6 +374,14 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Tiers 4,5,6"
+  },
+                    {
+    "name": "KOTOR Sith Set",
+    "image": "KOTOR Sith Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Sith Temple"
   },
                     {
     "name": "Captain Phasma Set",
