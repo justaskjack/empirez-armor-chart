@@ -297,6 +297,7 @@
     "sellPrice": "",
     "slots": "",
     "note": "Set on the ground and activate to launch fireworks into the air",
-    "image": "Collectable37 - Fireworks Launcher"
+    "image": "Collectable37 - Fireworks Launcher",
+    "collected": true
   }
 ]
