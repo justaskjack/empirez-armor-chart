@@ -813,7 +813,7 @@
     "image": "NBC Respirator.png",
     "col": 1,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Baseball Cap 01",
@@ -869,7 +869,7 @@
     "image": "Welding Mask.png",
     "col": 5,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Hockey Helmet 03",
