@@ -141,7 +141,7 @@
     "image": "Phase1 Clone Helmet 01.png",
     "col": 4,
     "row": 4,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 02",
@@ -157,7 +157,7 @@
     "image": "Phase1 Clone Helmet 03.png",
     "col": 2,
     "row": 4,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Phase 1",
@@ -293,7 +293,7 @@
     "image": "Pilot Helmet.png",
     "col": 7,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mudtrooper Gasmask",
@@ -445,7 +445,7 @@
     "image": "Rebel Pilot Helmet.png",
     "col": 3,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Scout Helmet 01",
@@ -461,7 +461,7 @@
     "image": "Rebel Scout Helmet 02.png",
     "col": 5,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Technician Helmet",
@@ -613,7 +613,7 @@
     "image": "Airborne Clone Helmet 04.png",
     "col": 6,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet 03",
@@ -741,7 +741,7 @@
     "image": "Ski Mask 03.png",
     "col": 2,
     "row": 16,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 01",
@@ -1077,7 +1077,7 @@
     "image": "Shock Commander Helmet 03.png",
     "col": 9,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Nute Gunray Head",
