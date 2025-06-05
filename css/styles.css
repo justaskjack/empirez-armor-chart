@@ -264,11 +264,26 @@ header.navbar {
 /* Lightsabers Section */
 #saber-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* tighter spacing between hilts */
-  justify-content: flex-start;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow-x: auto; /* enable horizontal scroll */
+  overflow-y: hidden;
+  gap: 10px;
   padding: 1.5rem 2rem 2rem 2rem;
+  scroll-behavior: smooth;
 }
+
+/* Optional: improve scrollbar appearance */
+#saber-row::-webkit-scrollbar {
+  height: 8px;
+}
+#saber-row::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+#saber-row::-webkit-scrollbar-track {
+  background: #222;
+}
+
 
 .saber-card {
   width: 100px;
