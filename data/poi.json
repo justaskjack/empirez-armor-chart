@@ -46,6 +46,12 @@
   "notes": "Hoth was a remote, icy planet that was the sixth planet in the star system of the same name. It notably hosted Echo Base during the Galactic Civil War.",
   "gallery": ["poi08 01.png", "poi08 02.png", "poi08 03.png", "poi08 04.png", "poi08 05.png", "poi08 06.png"],
   "retired": false
+},
+      {
+  "name": "Yoda's Hut",
+  "notes": "Yoda's Hut was the last residence of Yoda, Grand Master of the Jedi Order, during his years of self-imposed exile on Dagobah.",
+  "gallery": ["poi09 01.png", "poi09 02.png", "poi09 03.png", "poi09 04.png"],
+  "retired": false
 }
 
 ]
