@@ -40,6 +40,12 @@
   "notes": "Hutt Castle, often simply called Jabba the Hutt's Palace after its owner, was a large sandrock and durasteel complex located at the fringes of the Northern Dune Sea on the planet of Tatooine.",
   "gallery": ["poi07 01.png", "poi07 02.png", "poi07 03.png", "poi07 04.png", "poi07 05.png", "poi07 06.png"],
   "retired": false
+},
+    {
+  "name": "Hoth",
+  "notes": "Hoth was a remote, icy planet that was the sixth planet in the star system of the same name. It notably hosted Echo Base during the Galactic Civil War.",
+  "gallery": ["poi08 01.png", "poi08 02.png", "poi08 03.png", "poi08 04.png", "poi08 05.png", "poi08 06.png"],
+  "retired": false
 }
 
 ]
