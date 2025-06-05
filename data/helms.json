@@ -373,7 +373,7 @@
     "image": "Tarisian Battle Helmet.png",
     "col": 4,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bossk Mask",
@@ -437,7 +437,7 @@
     "image": "Pod Racer Helmet 02.png",
     "col": 2,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Pilot Helmet",
