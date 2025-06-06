@@ -145,7 +145,6 @@
     "soundOff": "Saber-off.wav",
     "doubleBlade": true,
     "bottomOffsetX": "50px",
-    "bottomOffsetY": "200px",
-    "darksaber": true
+    "bottomOffsetY": "210px",
   }
 ]
