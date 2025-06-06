@@ -142,10 +142,13 @@
   "thumb": "Lightsaber 18.png",
   "customBladeTop": "Lightsaber 18-b.png",
   "customBladeBottom": "Lightsaber 18-c.png",
+  "customTopOffsetX": "0px",
+  "customTopOffsetY": "-5px",
+  "customBottomOffsetX": "0px",
+  "customBottomOffsetY": "-100px",
   "soundOn": "Saber-on.wav",
-  "soundOff": "Saber-off.wav",
-  "bottomOffsetX": "50px",
-  "bottomOffsetY": "200px"
+  "soundOff": "Saber-off.wav"
 }
+
 
 ]
