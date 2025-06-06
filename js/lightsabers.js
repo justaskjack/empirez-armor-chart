@@ -10,60 +10,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cardWrapper = document.createElement('div');
         cardWrapper.className = 'saber-wrapper';
-        cardWrapper.setAttribute('data-tooltip', saber.name);
+        cardWrapper.setAttribute('data-tooltip', saber.name); // Tooltip on hover
 
         const blades = [];
 
         // === Top Blade ===
-        let topBlade;
-        if (saber.name === "Lyss' Darksaber") {
-          topBlade = document.createElement('img');
-          topBlade.src = 'images/Lightsaber 18-b.png';
-          topBlade.className = 'custom-blade top';
+        const topBlade = document.createElement('div');
+        
+        // Add darksaber shape if name matches
+        if (saber.name.includes("Dark Sword")) {
+          topBlade.className = 'blade darksaber-blade';
         } else {
-          topBlade = document.createElement('div');
           topBlade.className = 'blade';
-          topBlade.style.backgroundColor = saber.bladeColor || '#0ff';
-          topBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-
-          if (saber.bladeRotation) {
-            topBlade.style.setProperty('--blade-rotation', saber.bladeRotation);
-            topBlade.classList.add('rotated');
-          }
-          if (saber.bladeAngle) {
-            topBlade.style.setProperty('--blade-angle', saber.bladeAngle);
-            topBlade.classList.add('angled');
-          }
         }
+
+        if (saber.darksaber) {
+          topBlade.classList.add('darksaber-blade');
+        }
+
+
+        topBlade.style.backgroundColor = saber.bladeColor || '#0ff';
+        topBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+        if (saber.offsetY) topBlade.style.bottom = saber.offsetY;
+        if (saber.offsetX) topBlade.style.left = saber.offsetX;
+        if (saber.bladeZIndex) topBlade.style.zIndex = saber.bladeZIndex;
         blades.push(topBlade);
 
-        // === Crossguard ===
+        if (saber.bladeRotation) {
+          topBlade.style.setProperty('--blade-rotation', saber.bladeRotation);
+          topBlade.classList.add('rotated');
+        }
+
+        if (saber.bladeAngle) {
+          topBlade.style.setProperty('--blade-angle', saber.bladeAngle);
+          topBlade.classList.add('angled');
+        }
+
         if (saber.crossguard) {
           const leftBlade = document.createElement('div');
           leftBlade.className = 'blade crossguard-blade left-blade';
           leftBlade.style.backgroundColor = saber.bladeColor || '#0ff';
           leftBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-
+          blades.push(leftBlade);
+        
           const rightBlade = document.createElement('div');
           rightBlade.className = 'blade crossguard-blade right-blade';
           rightBlade.style.backgroundColor = saber.bladeColor || '#0ff';
           rightBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
-
-          blades.push(leftBlade, rightBlade);
+          blades.push(rightBlade);
         }
 
-        // === Bottom Blade ===
-        let bottomBlade;
-        if (saber.name === "Lyss' Darksaber") {
-          bottomBlade = document.createElement('img');
-          bottomBlade.src = 'images/Lightsaber 18-c.png';
-          bottomBlade.className = 'custom-blade bottom';
-          blades.push(bottomBlade);
-        } else if (saber.doubleBlade) {
+
+        let bottomBlade = null;
+
+        // === Bottom Blade (for double sabers) ===
+        if (saber.doubleBlade) {
           bottomBlade = document.createElement('div');
           bottomBlade.className = 'blade bottom-blade';
           bottomBlade.style.backgroundColor = saber.bladeColor || '#0ff';
-          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');
+          bottomBlade.style.setProperty('--blade-color', saber.bladeColor || '#0ff');  // ✅ FIXED
+
+          // Apply bottom-specific offsets if present
+          if (saber.bottomOffsetX) bottomBlade.style.left = saber.bottomOffsetX;
+          else if (saber.offsetX) bottomBlade.style.left = saber.offsetX;
+
+          if (saber.bottomOffsetY) bottomBlade.style.top = saber.bottomOffsetY;
+          else bottomBlade.style.top = '100%'; // default fallback
+
+          if (saber.bladeZIndex) bottomBlade.style.zIndex = saber.bladeZIndex;
 
           blades.push(bottomBlade);
         }
@@ -73,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = saber.name;
         img.className = 'saber-img';
 
+        // Optionally offset the hilt image vertically
         if (saber.hiltOffsetY) {
           img.style.transform = `translateY(${saber.hiltOffsetY})`;
         }
@@ -81,9 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cardWrapper.addEventListener('click', () => {
           bladeVisible = !bladeVisible;
-          blades.forEach(b => {
-            b.classList.toggle('active', bladeVisible);
-          });
+          blades.forEach(b => b.classList.toggle('active', bladeVisible));
 
           const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
           sound.volume = 0.5;
