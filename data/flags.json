@@ -59,7 +59,8 @@
     "image": "Flag 17"
   },
       {
-    "image": "Flag 18"
+    "image": "Flag 18",
+    "collected": true
   },
       {
     "image": "Flag 19"
