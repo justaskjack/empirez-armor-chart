@@ -102,12 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
           bladeVisible = !bladeVisible;
 
           blades.forEach(b => {
-            if (b.tagName === 'IMG') {
-              b.style.display = bladeVisible ? 'block' : 'none';
+            if (b.classList.contains('custom-blade')) {
+              b.classList.toggle('active', bladeVisible);
             } else {
               b.classList.toggle('active', bladeVisible);
             }
           });
+
 
           const sound = new Audio(`sounds/${bladeVisible ? saber.soundOn : saber.soundOff}`);
           sound.volume = 0.5;
