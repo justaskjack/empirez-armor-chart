@@ -193,10 +193,6 @@ header.navbar {
   font-size: 2rem;
 }
 
-#page-lightsabers {
-  background-color: #000;
-}
-
 
 .helm-grid {
   display: grid;
@@ -267,6 +263,11 @@ header.navbar {
 }
 
 /* Lightsabers Section */
+
+#page-lightsabers {
+  background-color: #000;
+}
+
 #saber-row {
   display: flex;
   flex-wrap: nowrap; /* prevent wrapping */
@@ -275,6 +276,7 @@ header.navbar {
   gap: 10px;
   padding: 1.5rem 2rem 2rem 2rem;
   scroll-behavior: smooth;
+  background-color: #1a1a1a;
 }
 
 /* Optional: improve scrollbar appearance */
