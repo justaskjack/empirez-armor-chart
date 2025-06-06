@@ -104,6 +104,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         blades.forEach(b => cardWrapper.appendChild(b));
+
+                // === Custom Image Blades (Optional) ===
+        if (saber.customBladeTop) {
+          const topImgBlade = document.createElement('img');
+          topImgBlade.src = `images/${saber.customBladeTop}`;
+          topImgBlade.className = 'custom-blade top';
+          blades.push(topImgBlade);
+        }
+        
+        if (saber.customBladeBottom) {
+          const bottomImgBlade = document.createElement('img');
+          bottomImgBlade.src = `images/${saber.customBladeBottom}`;
+          bottomImgBlade.className = 'custom-blade bottom';
+          blades.push(bottomImgBlade);
+        }
+
+        
         cardWrapper.appendChild(img);
         card.appendChild(cardWrapper);
         saberContainer.appendChild(card);
