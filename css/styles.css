@@ -193,6 +193,11 @@ header.navbar {
   font-size: 2rem;
 }
 
+#page-lightsabers {
+  background-color: #000;
+}
+
+
 .helm-grid {
   display: grid;
   grid-template-columns: repeat(10, 141px);
