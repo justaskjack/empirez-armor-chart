@@ -440,11 +440,10 @@ header.navbar {
   opacity: 0;
   transform: scaleY(0);
   transition: opacity 0.3s ease, transform 0.4s ease;
-  height: 160px;
+  height: 140px;
   width: auto;
 }
 
-/* Top blade extends upward */
 .custom-blade.top {
   bottom: 100%;
   left: 50%;
@@ -452,7 +451,6 @@ header.navbar {
   transform: translateX(-50%) scaleY(0);
 }
 
-/* Bottom blade extends downward */
 .custom-blade.bottom {
   top: 100%;
   left: 50%;
@@ -460,14 +458,10 @@ header.navbar {
   transform: translateX(-50%) scaleY(0);
 }
 
-/* Active state triggers grow */
 .custom-blade.active {
   opacity: 1;
   transform: translateX(-50%) scaleY(1);
 }
-
-
-
 
 
 .hilt-wrapper {
