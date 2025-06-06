@@ -433,6 +433,23 @@ header.navbar {
   transform-origin: left;
 }
 
+.custom-blade {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.custom-blade.top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-blade.bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 
 
