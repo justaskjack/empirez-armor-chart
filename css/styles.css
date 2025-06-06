@@ -279,6 +279,12 @@ header.navbar {
   background-color: #1a1a1a;
 }
 
+.saber-gap-row {
+  height: 80px;              /* Adjust height as needed */
+  background-color: #000;    /* Black background */
+  width: 100%;
+}
+
 /* Optional: improve scrollbar appearance */
 #saber-row::-webkit-scrollbar {
   height: 8px;
