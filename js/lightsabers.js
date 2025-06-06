@@ -105,8 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         blades.forEach(b => cardWrapper.appendChild(b));
 
-                // === Custom Image Blades (Optional) ===
+        // === Custom Image Blades (Optional) ===
         if (saber.customBladeTop) {
+          topBlade.style.display = 'none'; // Disable default blade
           const topImgBlade = document.createElement('img');
           topImgBlade.src = `images/${saber.customBladeTop}`;
           topImgBlade.className = 'custom-blade top';
@@ -114,11 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         if (saber.customBladeBottom) {
+          if (bottomBlade) bottomBlade.style.display = 'none'; // Disable default double blade
           const bottomImgBlade = document.createElement('img');
           bottomImgBlade.src = `images/${saber.customBladeBottom}`;
           bottomImgBlade.className = 'custom-blade bottom';
           blades.push(bottomImgBlade);
         }
+
 
         
         cardWrapper.appendChild(img);
