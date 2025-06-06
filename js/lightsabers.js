@@ -103,22 +103,33 @@ document.addEventListener('DOMContentLoaded', () => {
           sound.play();
         });
 
-                // === Custom Image Blades (Optional) ===
-        if (saber.customBladeTop) {
-          topBlade.style.display = 'none'; // Disable default blade
-          const topImgBlade = document.createElement('img');
-          topImgBlade.src = `images/${saber.customBladeTop}`;
-          topImgBlade.className = 'custom-blade top';
-          blades.push(topImgBlade);
-        }
-        
-        if (saber.customBladeBottom) {
-          if (bottomBlade) bottomBlade.style.display = 'none'; // Disable default double blade
-          const bottomImgBlade = document.createElement('img');
-          bottomImgBlade.src = `images/${saber.customBladeBottom}`;
-          bottomImgBlade.className = 'custom-blade bottom';
-          blades.push(bottomImgBlade);
-        }
+          // === Custom Image Blades (Optional) ===
+          if (saber.customBladeTop) {
+            topBlade.style.display = 'none'; // Disable default blade
+            const topImgBlade = document.createElement('img');
+            topImgBlade.src = `images/${saber.customBladeTop}`;
+            topImgBlade.className = 'custom-blade top';
+          
+            // Apply optional offsets
+            if (saber.customTopOffsetX) topImgBlade.style.left = saber.customTopOffsetX;
+            if (saber.customTopOffsetY) topImgBlade.style.bottom = saber.customTopOffsetY;
+          
+            blades.push(topImgBlade);
+          }
+          
+          if (saber.customBladeBottom) {
+            if (bottomBlade) bottomBlade.style.display = 'none'; // Disable default double blade
+            const bottomImgBlade = document.createElement('img');
+            bottomImgBlade.src = `images/${saber.customBladeBottom}`;
+            bottomImgBlade.className = 'custom-blade bottom';
+          
+            // Apply optional offsets
+            if (saber.customBottomOffsetX) bottomImgBlade.style.left = saber.customBottomOffsetX;
+            if (saber.customBottomOffsetY) bottomImgBlade.style.top = saber.customBottomOffsetY;
+          
+            blades.push(bottomImgBlade);
+          }
+
         
         // ✅ Now actually add them to the DOM
         blades.forEach(b => cardWrapper.appendChild(b));
