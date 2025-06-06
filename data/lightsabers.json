@@ -137,14 +137,13 @@
     "offsetY": "210px",
     "bladeZIndex": "4"
   },
-    {
-    "name": "Lyss' Darksaber",
-    "thumb": "Lightsaber 18.png",
-    "bladeColor": "#000000",
-    "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
-    "doubleBlade": true,
-    "bottomOffsetX": "50px",
-    "bottomOffsetY": "210px"
-  }
+{
+  "name": "Lyss' Darksaber",
+  "thumb": "Lightsaber 18.png",
+  "customBladeTop": "Lightsaber 18-b.png",
+  "customBladeBottom": "Lightsaber 18-c.png",
+  "soundOn": "Saber-on.wav",
+  "soundOff": "Saber-off.wav"
+}
+
 ]
