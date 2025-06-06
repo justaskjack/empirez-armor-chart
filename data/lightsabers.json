@@ -42,6 +42,16 @@
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav"
   },
+    {
+    "name": "Gray Order Lightsword",
+    "thumb": "Lightsaber 17.png",
+    "bladeColor": "#d8be98",
+    "soundOn": "Saber-on.wav",
+    "soundOff": "Saber-off.wav",
+    "doubleBlade": true,
+    "bottomOffsetX": "50px",
+    "bottomOffsetY": "200px"
+  },
   {
     "name": "Darth Vaders Lightsword",
     "thumb": "Lightsaber 14.png",
