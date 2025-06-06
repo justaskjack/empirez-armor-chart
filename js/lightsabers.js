@@ -103,9 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
           sound.play();
         });
 
-        blades.forEach(b => cardWrapper.appendChild(b));
-
-        // === Custom Image Blades (Optional) ===
+                // === Custom Image Blades (Optional) ===
         if (saber.customBladeTop) {
           topBlade.style.display = 'none'; // Disable default blade
           const topImgBlade = document.createElement('img');
@@ -121,7 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
           bottomImgBlade.className = 'custom-blade bottom';
           blades.push(bottomImgBlade);
         }
-
+        
+        // ✅ Now actually add them to the DOM
+        blades.forEach(b => cardWrapper.appendChild(b));
 
         
         cardWrapper.appendChild(img);
