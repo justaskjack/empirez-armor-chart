@@ -448,19 +448,20 @@ header.navbar {
 .custom-blade.top {
   bottom: 100%;
   left: 50%;
-  transform: translate(-50%, 20%) scaleY(0); /* ↓ pulls it down */
+  transform: translate(-50%, 20%) scaleY(0);
 }
 
 .custom-blade.bottom {
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -20%) scaleY(0); /* ↑ pulls it up */
+  transform: translate(-50%, -20%) scaleY(0);
 }
 
 .custom-blade.active {
   opacity: 1;
   transform: translate(-50%, 0%) scaleY(1);
 }
+
 
 
 
