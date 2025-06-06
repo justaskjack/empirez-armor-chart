@@ -437,19 +437,31 @@ header.navbar {
   position: absolute;
   z-index: 2;
   pointer-events: none;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  height: 210px;
+  width: auto;
 }
 
 .custom-blade.top {
   bottom: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 20%) scaleY(0); /* ↓ pulls it down */
 }
 
 .custom-blade.bottom {
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -20%) scaleY(0); /* ↑ pulls it up */
 }
+
+.custom-blade.active {
+  opacity: 1;
+  transform: translate(-50%, 0%) scaleY(1);
+}
+
 
 
 
