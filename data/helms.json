@@ -381,7 +381,7 @@
     "image": "Bossk Mask.png",
     "col": 5,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Greedo Mask",
@@ -389,7 +389,7 @@
     "image": "Greedo Mask.png",
     "col": 6,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Squid Head Mask",
@@ -397,7 +397,7 @@
     "image": "Squid Head Mask.png",
     "col": 7,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Tusken Helmet 01",
@@ -717,7 +717,7 @@
     "image": "Mando Armorer Helmet.png",
     "col": 10,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mandalorian Helmet 03",
