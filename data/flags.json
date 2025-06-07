@@ -10,7 +10,8 @@
     "collected": true
   },
     {
-    "image": "Flag 04"
+    "image": "Flag 04",
+    "collected": true
   },
     {
     "image": "Flag 05",
@@ -120,6 +121,18 @@
   },
         {
     "image": "Flag 34",
+    "collected": true
+  },
+          {
+    "image": "Flag 35",
+    "collected": true
+  },
+          {
+    "image": "Flag 36",
+    "collected": true
+  },
+          {
+    "image": "Flag 37",
     "collected": true
   }
 ]
