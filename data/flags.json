@@ -51,7 +51,8 @@
     "image": "Flag 14"
   },
       {
-    "image": "Flag 15"
+    "image": "Flag 15",
+    "collected": true
   },
       {
     "image": "Flag 16"
@@ -85,7 +86,8 @@
     "collected": true
   },
   {
-    "image": "Flag 25"
+    "image": "Flag 25",
+    "collected": true
   },
     {
     "image": "Flag 26",
