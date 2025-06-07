@@ -469,7 +469,7 @@
     "image": "Rebel Technician Helmet.png",
     "col": 6,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "OrcHelm 1",
