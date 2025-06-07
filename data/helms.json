@@ -1069,7 +1069,7 @@
     "image": "Shock Commander Helmet 01.png",
     "col": 8,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Commander Helmet 03",
