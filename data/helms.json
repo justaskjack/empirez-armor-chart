@@ -45,7 +45,7 @@
     "image": "Mando Helmet 02.png",
     "col": 4,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mando Helmet 03",
@@ -645,7 +645,7 @@
     "image": "Moff Gideon Helmet.png",
     "col": 3,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Chewy Head",
@@ -949,7 +949,7 @@
     "image": "Barc Trooper Helmet 01.png",
     "col": 7,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Biker Scout Helmet 01",
@@ -1005,7 +1005,7 @@
     "image": "Republic Commando Helmet 03.png",
     "col": 3,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 02",
