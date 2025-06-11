@@ -234,11 +234,32 @@
     "image": "Collectable39 - Purple Kyber Crystal"
   },
           {
+    "name": "Orange Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with a Machete to create a Vibro Blade",
+    "image": "Collectable42 - Orange Kyber Crystal"
+  },
+          {
+    "name": "Nightsister Crystal",
+    "sellPrice": "200 Credits",
+    "slots": "None",
+    "note": "Combine with a Mime Mask to create a Darth Maul mask",
+    "image": "Collectable45 - Nightsister Crystal"
+  },
+          {
     "name": "Jedi Force blade",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a sword with a Purple Kyber Crystal",
     "image": "Collectable 41 - Jedi Force blade"
+  },
+            {
+    "name": "Vibro Blade",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Crafted by combining a Machete with an Orange Kyber Crystal",
+    "image": "Collectable43 - Vibro Blade (Orange)"
   },
     {
     "name": "Cereals",
@@ -284,6 +305,13 @@
     "slots": "",
     "note": "Can be worn on hand slot",
     "image": "Collectable34 - Mechanical Hand"
+  },
+        {
+    "name": "The Art of War",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "",
+    "image": "Collectable44 - The Art of War"
   },
           {
     "name": "Jawa Cloak",
