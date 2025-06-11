@@ -1,20 +1,53 @@
 [
+      {
+    "image": "Flag 04",
+    "collected": true
+  },
+    {
+    "image": "Flag 03",
+    "collected": true
+  },
+          {
+    "image": "Flag 34",
+    "collected": true
+  },
+          {
+    "image": "Flag 35",
+    "collected": true
+  },
+        {
+    "image": "Flag 20"
+  },
   {
     "image": "Flag 01"
   },
   {
     "image": "Flag 02"
   },
-  {
-    "image": "Flag 03",
-    "collected": true
-  },
-    {
-    "image": "Flag 04",
-    "collected": true
-  },
+
+
     {
     "image": "Flag 05",
+    "collected": true
+  },
+          {
+    "image": "Flag 21",
+    "collected": true
+  },
+            {
+    "image": "Flag 24",
+    "collected": true
+  },
+            {
+    "image": "Flag 36",
+    "collected": true
+  },
+          {
+    "image": "Flag 23",
+    "collected": true
+  },
+      {
+    "image": "Flag 12",
     "collected": true
   },
     {
@@ -40,10 +73,7 @@
     "image": "Flag 11",
     "collected": true
   },
-    {
-    "image": "Flag 12",
-    "collected": true
-  },
+
     {
     "image": "Flag 13"
   },
@@ -68,25 +98,14 @@
       {
     "image": "Flag 19"
   },
-      {
-    "image": "Flag 20"
-  },
-        {
-    "image": "Flag 21",
-    "collected": true
-  },
+
+
         {
     "image": "Flag 22",
     "collected": true
   },
-        {
-    "image": "Flag 23",
-    "collected": true
-  },
-          {
-    "image": "Flag 24",
-    "collected": true
-  },
+
+
   {
     "image": "Flag 25",
     "collected": true
@@ -123,20 +142,16 @@
     "image": "Flag 33",
     "collected": true
   },
-        {
-    "image": "Flag 34",
-    "collected": true
-  },
-          {
-    "image": "Flag 35",
-    "collected": true
-  },
-          {
-    "image": "Flag 36",
-    "collected": true
-  },
+
+
           {
     "image": "Flag 37",
     "collected": true
+  },
+            {
+    "image": "Flag 38"
+  },
+            {
+    "image": "Flag 39"
   }
 ]
