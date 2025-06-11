@@ -96,14 +96,16 @@
     "thumb": "Lightsaber 20.png",
     "bladeColor": "#48b7d7",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "offsetY": "220px"
   },
       {
     "name": "Starkiller's Lightsword",
     "thumb": "Lightsaber 23.png",
     "bladeColor": "#da4a4b",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "offsetY": "240px"
   },
   {
     "name": "Cannibals Lightsword",
