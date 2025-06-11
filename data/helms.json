@@ -653,7 +653,7 @@
     "image": "Chewy Head.png",
     "col": 4,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Jar Jar Binks Mask",
@@ -765,7 +765,7 @@
     "image": "Ski Mask 05.png",
     "col": 5,
     "row": 16,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 06",
@@ -861,7 +861,7 @@
     "image": "Riot Helmet.png",
     "col": 4,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Welding Mask",
