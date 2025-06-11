@@ -105,7 +105,7 @@
     "bladeColor": "#da4a4b",
     "soundOn": "Saber-on.wav",
     "soundOff": "Saber-off.wav",
-    "offsetY": "240px",
+    "offsetY": "200px",
     "bladeZIndex": "4"
   },
   {
