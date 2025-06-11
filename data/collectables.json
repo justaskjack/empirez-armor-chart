@@ -4,7 +4,8 @@
     "sellPrice": "None",
     "slots": "None",
     "note": "Used to purchase custom bases or ships from the admins. See Discord for more details",
-    "image": "Collectable26 - Trade Federation Coin"
+    "image": "Collectable26 - Trade Federation Coin",
+    "collected": true
   },
       {
     "name": "Jedi Medallion",
@@ -27,28 +28,32 @@
     "sellPrice": "",
     "slots": "",
     "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
-    "image": "Collectable29 - 1 Credit"
+    "image": "Collectable29 - 1 Credit",
+    "collected": true
   },
         {
     "name": "5 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
-    "image": "Collectable30 - 5 Credits"
+    "image": "Collectable30 - 5 Credits",
+    "collected": true
   },
         {
     "name": "10 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
-    "image": "Collectable31 - 10 Credits"
+    "image": "Collectable31 - 10 Credits",
+    "collected": true
   },
           {
     "name": "100 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
-    "image": "Collectable41 - 100 Credits"
+    "image": "Collectable41 - 100 Credits",
+    "collected": true
   },
           {
     "name": "Star Map Blue",
@@ -97,15 +102,17 @@
     "name": "Imperial Keycard",
     "sellPrice": "None",
     "slots": "",
-    "note": "Used to open bunker doors in Northeast toxic Zone, Imperial Base at the Mine and the Airfield East End",
-    "image": "Collectable28 - Imperial Keycard"
+    "note": "Used to open the bunker door at the Imperial Base in the NorthWest toxic zone",
+    "image": "Collectable28 - Imperial Keycard",
+    "collected": true
   },
                   {
     "name": "Bunker Charge",
     "sellPrice": "None",
     "slots": "",
-    "note": "Used to open bunker doors at Hoth, South Harbor Reservoir and the Imperial Bunker at Airfield West End",
-    "image": "Collectable27 - Bunker Charge"
+    "note": "Used to open bunker doors at Hoth and the Mando Bunker",
+    "image": "Collectable27 - Bunker Charge",
+    "collected": true
   },
     {
     "name": "turret 1",
@@ -245,7 +252,8 @@
     "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Mime Mask to create a Darth Maul mask",
-    "image": "Collectable45 - Nightsister Crystal"
+    "image": "Collectable45 - Nightsister Crystal",
+    "collected": true
   },
           {
     "name": "Jedi Force blade",
@@ -297,21 +305,24 @@
     "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable15 - Grogue Plushie"
+    "image": "Collectable15 - Grogue Plushie",
+    "collected": true
   },
       {
     "name": "Mechanical Hand",
     "sellPrice": "",
     "slots": "",
     "note": "Can be worn on hand slot",
-    "image": "Collectable34 - Mechanical Hand"
+    "image": "Collectable34 - Mechanical Hand",
+    "collected": true
   },
         {
     "name": "The Art of War",
     "sellPrice": "None",
     "slots": "None",
     "note": "",
-    "image": "Collectable44 - The Art of War"
+    "image": "Collectable44 - The Art of War",
+    "collected": true
   },
           {
     "name": "Jawa Cloak",
@@ -325,7 +336,8 @@
     "sellPrice": "",
     "slots": "1000",
     "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base",
-    "image": "Collectable36 - Han Carbonite Craftable Storage"
+    "image": "Collectable36 - Han Carbonite Craftable Storage",
+    "collected": true
   },
           {
     "name": "Fireworks Launcher",
