@@ -57,21 +57,21 @@
     "thumb": "Lightsaber 21.png",
     "bladeColor": "#ff15ff",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
         {
     "name": "Plo Kloons's Lightsword",
     "thumb": "Lightsaber 22.png",
     "bladeColor": "#6ac5e4",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
           {
     "name": "Stellan Gios Lightsword",
     "thumb": "Lightsaber 24.png",
     "bladeColor": "#4ab8da",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
   {
     "name": "Darth Vaders Lightsword",
@@ -96,14 +96,14 @@
     "thumb": "Lightsaber 20.png",
     "bladeColor": "#48b7d7",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
       {
     "name": "Starkiller's Lightsword",
     "thumb": "Lightsaber 23.png",
     "bladeColor": "#da4a4b",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
   {
     "name": "Cannibals Lightsword",
@@ -177,7 +177,7 @@
     "thumb": "Lightsaber 19.png",
     "bladeColor": "#f36d70",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav",
+    "soundOff": "Saber-off.wav"
   },
 {
   "name": "Lyss' Darksaber",
