@@ -135,18 +135,20 @@
       }
     });
 
-    grid.addEventListener('dragstart', e => {
-      if (e.target.classList.contains('helm')) {
-        movingHelm = e.target;
-        e.dataTransfer.setData("text/plain", JSON.stringify({
-          name: movingHelm.dataset.name,
-          thumb: movingHelm.src,
-          image: movingHelm.dataset.image,
-          thumbName: movingHelm.dataset.thumbName,
-          fromPalette: false
-        }));
-      }
-    });
+grid.addEventListener('dragstart', e => {
+  if (e.target.classList.contains('helm')) {
+    movingHelm = e.target;
+    e.dataTransfer.setData("text/plain", JSON.stringify({
+      name: movingHelm.dataset.name,
+      thumb: movingHelm.src,
+      image: movingHelm.dataset.image,
+      thumbName: movingHelm.dataset.thumbName,
+      collected: movingHelm.dataset.collected === "true",
+      fromPalette: false
+    }));
+  }
+});
+
 
     grid.addEventListener('dragover', e => e.preventDefault());
 
@@ -197,6 +199,7 @@
       img.dataset.col = col;
       img.dataset.row = row;
       img.dataset.thumbName = data.thumbName;
+      img.dataset.collected = data.collected ? "true" : "false";
       img.draggable = true;
       img.style.left = ((col - 1) * 202) + 'px';
       img.style.top = ((row - 1) * 205) + 'px';
@@ -211,14 +214,16 @@
 
       grid.appendChild(img);
       const thumbFilename = img.dataset.thumbName || data.thumb.split('/').pop();
-      placedHelms.push({
-        name: data.name,
-        thumb: thumbFilename,
-        image: data.image,
-        col,
-        row,
-        collected: false  // default for new entries
-      });
+placedHelms.push({
+  name: data.name,
+  thumb: thumbFilename,
+  image: data.image,
+  col,
+  row,
+  collected: data.collected !== undefined ? data.collected : false
+});
+
+
 
       if (data.fromPalette) {
         const images = Array.from(palette.querySelectorAll('img'));
