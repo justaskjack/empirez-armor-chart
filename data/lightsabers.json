@@ -180,7 +180,10 @@
     "thumb": "Lightsaber 19.png",
     "bladeColor": "#f36d70",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "doubleBlade": true,
+    "bottomOffsetX": "50px",
+    "bottomOffsetY": "200px"
   },
 {
   "name": "Lyss' Darksaber",
