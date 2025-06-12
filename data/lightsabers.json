@@ -57,7 +57,9 @@
     "thumb": "Lightsaber 21.png",
     "bladeColor": "#ff15ff",
     "soundOn": "Saber-on.wav",
-    "soundOff": "Saber-off.wav"
+    "soundOff": "Saber-off.wav",
+    "offsetX": "56px",
+    "offsetY": "220px"
   },
         {
     "name": "Plo Kloons's Lightsword",
@@ -183,7 +185,7 @@
     "soundOff": "Saber-off.wav",
     "doubleBlade": true,
     "bottomOffsetX": "50px",
-    "bottomOffsetY": "145px"
+    "bottomOffsetY": "140px"
   },
 {
   "name": "Lyss' Darksaber",
