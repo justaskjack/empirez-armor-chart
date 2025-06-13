@@ -653,7 +653,7 @@
     "image": "Airborne Clone Helmet.png",
     "col": 5,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet 04",
@@ -1069,7 +1069,7 @@
     "image": "Mandalorian Helmet 03.png",
     "col": 4,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mando Armorer Helmet",
