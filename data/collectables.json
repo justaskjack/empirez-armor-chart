@@ -290,7 +290,8 @@
     "sellPrice": "None",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable13 - Teddy Bear (Brown)"
+    "image": "Collectable13 - Teddy Bear (Brown)",
+    "collected": true
   },
     {
     "name": "Teddy Bear (White)",
