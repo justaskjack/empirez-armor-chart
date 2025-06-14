@@ -144,10 +144,27 @@
   },
     {
     "name": "Mini-Brick Saber (Pink)",
-    "sellPrice": "10 Credits",
+    "sellPrice": "None",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
-    "image": "Collectable18 - Mini-Brick Saber (Pink)"
+    "image": "Collectable18 - Mini-Brick Saber (Pink)",
+      "collected": true
+  },
+      {
+    "name": "Mini-Brick Saber (Red)",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Can be used as a weapon or to open cans",
+    "image": "Collectable48 - Mini-Brick Saber (Red)",
+        "collected": true
+  },
+      {
+    "name": "Mini-Brick Saber (Blue)",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Can be used as a weapon or to open cans",
+    "image": "Collectable47 - Mini-Brick Saber (Blue)",
+        "collected": true
   },
   {
     "name": "Rebel Ship",
@@ -263,11 +280,18 @@
     "image": "Collectable 41 - Jedi Force blade"
   },
             {
-    "name": "Vibro Blade",
+    "name": "Vibro Blade (Orange Variant)",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a Machete with an Orange Kyber Crystal",
     "image": "Collectable43 - Vibro Blade (Orange)"
+  },
+              {
+    "name": "Vibro Blade (Pink Variant)",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Crafted by combining a Machete with a Pink Kyber Crystal",
+    "image": "Collectable46 - Vibro Blade (Pink)"
   },
     {
     "name": "Cereals",
