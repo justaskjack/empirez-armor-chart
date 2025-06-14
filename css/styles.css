@@ -579,6 +579,62 @@ header.navbar {
   padding: 1rem 2rem;
 }
 
+#backpack-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1rem 2rem;
+}
+
+.backpack-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 480px;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.backpack-thumb {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  cursor: zoom-in;
+  object-fit: contain;
+}
+
+.backpack-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  flex: 1;
+}
+
+.bp-name, .bp-slots {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.strap-slot-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.5rem;
+}
+
+.strap-slot-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+
 .collected-dot {
   position: absolute;
   top: 6px;
