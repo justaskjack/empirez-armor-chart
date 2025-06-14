@@ -36,6 +36,12 @@
     "retired": true
   },
   {
+  "name": "Lyss' Museum",
+  "notes": "Located in the North East sector of the map, showcasing armor sets, ships, decor, and housing options.",
+  "gallery": ["poi10 01.png", "poi10 02.png", "poi10 03.png", "poi10 04.png", "poi10 05.png", "poi10 06.png", "poi10 07.png", "poi10 08.png", "poi10 09.png", "poi10 10.png", "poi10 11.png", "poi10 12.png", "poi10 13.png", "poi10 14.png", "poi10 15.png", "poi10 16.png", "poi10 17.png", "poi18 06.png"],
+  "retired": false
+},
+    {
   "name": "Jabbas Palace",
   "notes": "Hutt Castle, often simply called Jabba the Hutt's Palace after its owner, was a large sandrock and durasteel complex located at the fringes of the Northern Dune Sea on the planet of Tatooine.",
   "gallery": ["poi07 01.png", "poi07 02.png", "poi07 03.png", "poi07 04.png", "poi07 05.png", "poi07 06.png"],
