@@ -733,7 +733,7 @@
     "image": "Barc Trooper Helmet 02.png",
     "col": 8,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "GeoTrooper Helmet 01",
@@ -901,7 +901,7 @@
     "image": "Commander Gree Helmet Chrome.png",
     "col": 10,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Phase 1",
@@ -941,7 +941,7 @@
     "image": "Clone Trooper Phase 1 02.png",
     "col": 5,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Bly Helmet",
@@ -949,7 +949,7 @@
     "image": "Commander Bly Helmet.png",
     "col": 6,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Cody Helmet",
@@ -957,7 +957,7 @@
     "image": "Commander Cody Helmet.png",
     "col": 7,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Wolffe Helmet",
@@ -965,7 +965,7 @@
     "image": "Commander Wolffe Helmet.png",
     "col": 8,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 06",
