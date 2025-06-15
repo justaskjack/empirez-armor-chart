@@ -60,35 +60,40 @@
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable22 - Star Map Blue"
+    "image": "Collectable22 - Star Map Blue",
+            "collected": true
   },
             {
     "name": "Star Map Green",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable23 - Star Map Green"
+    "image": "Collectable23 - Star Map Green",
+              "collected": true
   },
             {
     "name": "Star Map Red",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable35 - Star Map Red"
+    "image": "Collectable35 - Star Map Red",
+              "collected": true
   },
               {
     "name": "Empty Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Empty Data Cards are combined with Star Maps to create keycards that open the colored Astromech droids around the map",
-    "image": "Collectable24 - Empty Datacard"
+    "image": "Collectable24 - Empty Datacard",
+                "collected": true
   },
                 {
     "name": "Active Chaincode",
     "sellPrice": "",
     "slots": "",
     "note": "Created by combining a Chaincode with a Datapad. Used to open a Mando Safe",
-    "image": "Collectable25 - Active Chaincode"
+    "image": "Collectable25 - Active Chaincode",
+                  "collected": true
   },
                 {
     "name": "Datapad",
@@ -241,14 +246,16 @@
     "sellPrice": "10 Credits",
     "slots": "2x2",
     "note": "",
-    "image": "Collectable10 - Wayfinder Stone"
+    "image": "Collectable10 - Wayfinder Stone",
+      "collected": true
   },
       {
     "name": "Pink Kyber Crystal",
     "sellPrice": "None",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibroblade",
-    "image": "Collectable21 - Pink Kyber Crystal"
+    "image": "Collectable21 - Pink Kyber Crystal",
+        "collected": true
   },
         {
     "name": "Purple Kyber Crystal",
@@ -262,7 +269,8 @@
     "sellPrice": "None",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibro Blade",
-    "image": "Collectable42 - Orange Kyber Crystal"
+    "image": "Collectable42 - Orange Kyber Crystal",
+            "collected": true
   },
           {
     "name": "Nightsister Crystal",
@@ -270,6 +278,14 @@
     "slots": "None",
     "note": "Combine with a Mime Mask to create a Darth Maul mask",
     "image": "Collectable45 - Nightsister Crystal",
+    "collected": true
+  },
+            {
+    "name": "Jedi Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which opens the Jedi Temple",
+    "image": "Collectable49 - Jedi Kyber Crystal",
     "collected": true
   },
           {
