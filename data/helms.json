@@ -1093,7 +1093,7 @@
     "image": "Darth Revan Helmet.png",
     "col": 10,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mime Mask",
