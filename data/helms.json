@@ -1005,7 +1005,7 @@
     "image": "Mandalorian Helmet 01.png",
     "col": 4,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mando Helmet 07",
