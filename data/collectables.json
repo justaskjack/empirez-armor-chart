@@ -48,6 +48,14 @@
     "collected": true
   },
           {
+    "name": "50 Credits",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "image": "Collectable52 - 50 Credits",
+    "collected": true
+  },
+          {
     "name": "100 Credits",
     "sellPrice": "",
     "slots": "",
@@ -80,6 +88,14 @@
               "collected": true
   },
               {
+    "name": "Blue Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Blue Data Cards are used to unlock the Blue Imperial Astromech Droids",
+    "image": "Collectable51 - Blue Datacard",
+                "collected": true
+  },
+                {
     "name": "Empty Datacard",
     "sellPrice": "",
     "slots": "",
@@ -250,6 +266,22 @@
       "collected": true
   },
       {
+    "name": "Sith Holocron",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Created by combining two Sith Kyber Crystals. Opens the door to the Sith Temple",
+    "image": "Collectable50 - Sith_Holocron",
+      "collected": true
+  },
+        {
+    "name": "Jedi Holocron",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Created by combining two Jedi Kyber Crystals. Opens the door to the Jedi Temple",
+    "image": "Collectable55 - Jedi_Holocron",
+      "collected": true
+  },
+      {
     "name": "Pink Kyber Crystal",
     "sellPrice": "None",
     "slots": "None",
@@ -272,6 +304,14 @@
     "image": "Collectable42 - Orange Kyber Crystal",
             "collected": true
   },
+            {
+    "name": "Black Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with a sword to create a Sith Warblade",
+    "image": "Collectable54 - Black Kyber Crystal",
+            "collected": true
+  },
           {
     "name": "Nightsister Crystal",
     "sellPrice": "200 Credits",
@@ -288,12 +328,29 @@
     "image": "Collectable49 - Jedi Kyber Crystal",
     "collected": true
   },
+              {
+    "name": "Sith Kyber Crystal",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Combine with another Sith Kyber Crystal to create a Sith Holocron which opens the Sith Temple",
+    "image": "Collectable56 - Sith Kyber Crystal",
+    "collected": true
+  },
           {
     "name": "Jedi Force blade",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a sword with a Purple Kyber Crystal",
-    "image": "Collectable 41 - Jedi Force blade"
+    "image": "Collectable 41 - Jedi Force blade",
+                "collected": true
+  },
+            {
+    "name": "Sith Warblade",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Crafted by combining a sword with a Black Kyber Crystal",
+    "image": "Collectable53 - Sith Warblade",
+                  "collected": true
   },
             {
     "name": "Vibro Blade (Orange Variant)",
