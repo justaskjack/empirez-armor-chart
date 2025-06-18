@@ -45,15 +45,15 @@
     "image": "Sabine Wren Helmet.png",
     "col": 8,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
-    "name": "Bok Katan Helmet",
+    "name": "Bo Katan Helmet",
     "thumb": "Bok Katan Helmet - thumb.png",
     "image": "Bok Katan Helmet.png",
     "col": 7,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Darth Talon Head",
