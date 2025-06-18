@@ -933,7 +933,7 @@
     "image": "Mando Warrior Helmet.png",
     "col": 2,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mandalorian Helmet 02",
