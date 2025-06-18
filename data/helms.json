@@ -773,7 +773,7 @@
     "image": "Clone Trooper Helmet 03.png",
     "col": 6,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Trooper Helmet 01",
