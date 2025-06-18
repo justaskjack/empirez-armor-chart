@@ -1021,7 +1021,7 @@
     "image": "Mando Helmet 05.png",
     "col": 2,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mando Helmet 06",
