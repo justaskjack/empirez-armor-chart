@@ -637,7 +637,7 @@
     "image": "Arc Trooper Phase 2 02.png",
     "col": 3,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "GeoTrooper Helmet 01",
@@ -645,7 +645,7 @@
     "image": "GeoTrooper Helmet 01.png",
     "col": 9,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shoretrooper Helmet",
@@ -1061,7 +1061,7 @@
     "image": "Bad Batch Hunter Helmet.png",
     "col": 8,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Trooper Helmet 02",
@@ -1189,7 +1189,7 @@
     "image": "Purge Trooper Helmet 01.png",
     "col": 4,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shadow Clone Helmet 01",
