@@ -426,7 +426,8 @@
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Mando Safe"
+    "location": "Mando Safe",
+            "collected": true
   },
                       {
     "name": "IG88 Set",
