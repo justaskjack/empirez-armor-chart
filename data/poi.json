@@ -38,7 +38,19 @@
   {
   "name": "Lyss' Museum",
   "notes": "Located in the North East sector of the map, showcasing armor sets, ships, decor, and housing options.",
-  "gallery": ["poi10 01.png", "poi10 02.png", "poi10 03.png", "poi10 04.png", "poi10 05.png", "poi10 06.png", "poi10 07.png", "poi10 08.png", "poi10 09.png", "poi10 10.png", "poi10 11.png", "poi10 12.png", "poi10 13.png", "poi10 14.png", "poi10 15.png", "poi10 16.png", "poi10 17.png", "poi18 06.png"],
+  "gallery": ["poi10 01.png", "poi10 02.png", "poi10 03.png", "poi10 04.png", "poi10 05.png", "poi10 06.png", "poi10 07.png", "poi10 08.png", "poi10 09.png", "poi10 10.png", "poi10 11.png", "poi10 12.png", "poi10 13.png", "poi10 14.png", "poi10 15.png", "poi10 16.png", "poi10 17.png", "poi10 16.png"],
+  "retired": false
+},
+    {
+  "name": "Jedi Temple",
+  "notes": "Jedi temples were structures built by the Jedi Order on many worlds across the galaxy to serve as bases of operation for the Order. In them, Force-sensitive individuals could be brought in to be trained in the ways of the Jedi, and The Force.",
+  "gallery": ["poi11 01.png", "poi11 02.png", "poi11 03.png", "poi11 04.png", "poi11 05.png"],
+  "retired": false
+},
+    {
+  "name": "Sith Temple",
+  "notes": "Sith temples were pyramidal structures built by the Sith on many worlds across the galaxy.",
+  "gallery": ["poi12 01.png", "poi12 02.png", "poi12 03.png", "poi12 04.png", "poi12 05.png", "poi12 06.png", "poi12 07.png", "poi12 08.png"],
   "retired": false
 },
     {
