@@ -453,7 +453,8 @@
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
-    "location": "Sith Temple"
+    "location": "B9E Loot Droid",
+          "collected": true
   },
     {
     "name": "Kylo Ren Set",
