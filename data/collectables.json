@@ -91,17 +91,57 @@
     "name": "Blue Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Blue Data Cards are used to unlock the Blue Imperial Astromech Droids",
+    "note": "Crafted by combining a Blue Star Map with an Empty Datacard. Used to unlock the Blue Imperial Astromech Droids",
     "image": "Collectable51 - Blue Datacard",
+                "collected": true
+  },
+                {
+    "name": "Green Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Crafted by combining a Green Star Map with an Empty Datacard. Used to unlock the Green Imperial Astromech Droids",
+    "image": "Collectable58 - Green Datacard",
+                "collected": true
+  },
+                  {
+    "name": "Red Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Crafted by combining a Red Star Map with an Empty Datacard. Used to unlock the Red Imperial Astromech Droids",
+    "image": "Collectable59 - Red Datacard",
+                "collected": true
+  },
+                    {
+    "name": "Black Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Found in the Sith Temple. Used to unlock the Black Imperial Astromech Droids",
+    "image": "Collectable60 - Black Datacard",
+                "collected": true
+  },
+                      {
+    "name": "Gray Datacard",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Found in the Jedi Temple. Used to unlock the B9E Loot Droids",
+    "image": "Collectable60 - Black Datacard",
                 "collected": true
   },
                 {
     "name": "Empty Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Empty Data Cards are combined with Star Maps to create keycards that open the colored Astromech droids around the map",
+    "note": "Empty Data Cards are combined with Star Maps to create keycards that open the Imperial Astromech loot droids around the map",
     "image": "Collectable24 - Empty Datacard",
                 "collected": true
+  },
+                  {
+    "name": "Chaincode",
+    "sellPrice": "",
+    "slots": "",
+    "note": "Combine with a Datapad to create an Active Chaincode",
+    "image": "Collectable61 - Chaincode",
+                  "collected": true
   },
                 {
     "name": "Active Chaincode",
@@ -420,6 +460,14 @@
     "slots": "None",
     "note": "",
     "image": "Collectable44 - The Art of War",
+    "collected": true
+  },
+          {
+    "name": "Dracula",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "",
+    "image": "Collectable57 - Dracula",
     "collected": true
   },
           {
