@@ -1,9 +1,51 @@
 [
   {
+    "name": "C3PO Backpack",
+    "slots": "100",
+    "thumb": "Backpack 03 - thumb.png",
+    "image": "Backpack 03.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
     "name": "SandTrooper Backpack",
     "slots": "100",
     "thumb": "Backpack 01 - thumb.png",
     "image": "Backpack 01.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Galactic Marine Backpack",
+    "slots": "72",
+    "thumb": "Backpack 04 - thumb.png",
+    "image": "Backpack 04.png",
+    "strapSlots": ["BP-Slot 03.png", "BP-Slot 04.png"]
+  },
+    {
+    "name": "SandTrooper Assault Pack",
+    "slots": "70",
+    "thumb": "Backpack 07 - thumb.png",
+    "image": "Backpack 07.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Tactical Backpack",
+    "slots": "63",
+    "thumb": "Backpack 06 - thumb.png",
+    "image": "Backpack 06.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Assault Backpack 01",
+    "slots": "42",
+    "thumb": "Backpack 02 - thumb.png",
+    "image": "Backpack 02.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Assault Backpack 02",
+    "slots": "42",
+    "thumb": "Backpack 05 - thumb.png",
+    "image": "Backpack 05.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   }
 ]
