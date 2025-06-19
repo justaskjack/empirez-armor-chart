@@ -475,7 +475,8 @@
     "sellPrice": "None",
     "slots": "None",
     "note": "Can be worn to make the player appear as a large Jawa",
-    "image": "Collectable40 - Jawa Cloak"
+    "image": "Collectable40 - Jawa Cloak",
+            "collected": true
   },
         {
     "name": "Han Carbonite Craftable Storage",
