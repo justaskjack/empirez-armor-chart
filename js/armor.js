@@ -38,6 +38,7 @@ function renderSections(data) {
     cards.forEach(armor => {
       const card = document.createElement('div');
       card.className = 'armor-card';
+      card.style.position = 'relative';
 
       card.innerHTML = `
         <a href="images/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
@@ -51,6 +52,13 @@ function renderSections(data) {
           <p><strong>Location:</strong> ${armor.location}</p>
         </div>
       `;
+
+      if (armor.collected) {
+        const dot = document.createElement('div');
+        dot.className = 'collected-dot';
+        card.appendChild(dot);
+      }
+
       grid.appendChild(card);
     });
 
