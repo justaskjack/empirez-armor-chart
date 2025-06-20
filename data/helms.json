@@ -661,7 +661,7 @@
     "image": "Republic Commando Helmet 01.png",
     "col": 1,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 04",
