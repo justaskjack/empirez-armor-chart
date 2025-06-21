@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Red Imperial Astromech Droids",
+    "notes": "Uulocked with Red Keycard.",
+    "gallery": [
+      "tips/red-loot-droid-1.jpg",
+      "tips/red-loot-droid-2.jpg",
+      "tips/red-loot-droid-3.jpg"
+    ]
+  },
+  {
+    "name": "Blue Imperial Astromech Droids",
+    "notes": "Unlocked with Blue Keycard.",
+    "gallery": [
+      "tips/red-loot-droid-1.jpg",
+      "tips/red-loot-droid-2.jpg",
+      "tips/red-loot-droid-3.jpg"
+    ]
+  }
+]
