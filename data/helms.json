@@ -37,7 +37,7 @@
     "image": "Ahsoke Head.png",
     "col": 6,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Sabine Wren Helmet",
