@@ -5,7 +5,8 @@
     "gallery": [
       "tips/tips-01-01.png",
       "tips/tips-01-02.png",
-      "tips/tips-01-03.png"
+      "tips/tips-01-03.png",
+      "tips/tips-01-04.png"
     ]
   },
     {
@@ -14,6 +15,16 @@
     "gallery": [
       "tips/tips-02-01.png",
       "tips/tips-02-02.png"
+    ]
+  },
+      {
+    "name": "Mando Safe",
+    "notes": "These trashcan looking loot crates can be found in random locations across the entire map, including inside miltary bases and at Tie Fighter crashes. To unlock them, you need an Activated Chaincode which you create by combining a Chaincode with a Datapad. The Chaincode and Datapad both drop from the cargo holds of the random spawning Krennic or Razorcrest ships that appear around the map. You will find these ships guarded by 4-7 Death Troopers. If you enter the ship and tab, you'll see a 300 slot cargo hold. The Datapad or Chaincode will be the only item in it. If it is empty, another player has already looted it and it will not respawn in that instance of the ship. Mando Safes typically contain a full character armor set (Andromeda, Sabine Wren, Bo Katan, Ahsoka Tano), and a random piece of a secondary character armor set. (ND5_Droid).",
+    "gallery": [
+      "tips/tips-04-01.png",
+      "tips/tips-04-02.png",
+      "tips/tips-04-03.png",
+      "tips/tips-04-04.png"
     ]
   },
       {
