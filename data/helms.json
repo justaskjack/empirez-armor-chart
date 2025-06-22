@@ -621,7 +621,7 @@
     "image": "Commander Rex Helmet.png",
     "col": 1,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Arc Trooper Phase 2 01",
