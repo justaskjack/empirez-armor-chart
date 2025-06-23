@@ -11,10 +11,20 @@
   },
     {
     "name": "Black Imperial Astromech Droids",
-    "notes": "These loot droids can be found in random locations across the entire map, including inside miltary barracks and nests. To unlock them, you need the matching Black Datacard. These datacards are found as ground loot inside the locked portion of the Sith Temple. The Sith Temple is unlocked with a Sith Holocron. A Sith Holocron is created by combining 2 Sith Kyber Crystals. Sith Kyber Crystals can be found in the Imperial Bunker in the toxic zone. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. Many people place the ruined Datacard inside the droid before blasting it instead of dropping it on the ground so they despawn together. The Black droids typically drop one of the 2 Gray Jedi full sets, and Jedi and/or Sith Medallions.",
+    "notes": "These loot droids can be found in random locations across the entire map, including inside miltary barracks and nests. To unlock them, you need the matching Black Datacard. These datacards are found as ground loot inside the locked portion of the Sith Temple. The Sith Temple is unlocked with a Sith Holocron. A Sith Holocron is created by combining 2 Sith Kyber Crystals. Sith Kyber Crystals can be found in the Imperial Bunker in the toxic zone. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. The Black droids typically drop one of the 2 Gray Jedi full sets, and Jedi and/or Sith Medallions.",
     "gallery": [
       "tips/tips-02-01.png",
       "tips/tips-02-02.png"
+    ]
+  },
+      {
+    "name": "BB9E Loot Droids",
+    "notes": "These loot droids can be found in random locations across the entire map, including inside miltary encampments and industrial areas. They are very small and can be easy to overlook. To unlock them, you need the Gray Datacard. These datacards are found as ground loot inside the locked portion of the Jedi Temple. The Jedi Temple is unlocked with a Jedi Holocron. A Jedi Holocron is created by combining 2 Jedi Kyber Crystals. Jedi Kyber Crystals can be found in the Imperial Bunker in the toxic zone. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. The Gray droids typically drop one of the full Sith sets including Darth Vader, and Jedi and/or Sith Medallions. If you find the Darth Vader set, it will also include the Darth Vader Interrigation Droid which is a 200 slot shoulder storage item similar to the Probe Droids.",
+    "gallery": [
+      "tips/tips-06-01.png",
+      "tips/tips-06-02.png",
+      "tips/tips-06-03.png",
+      "tips/tips-06-04.png"
     ]
   },
       {
