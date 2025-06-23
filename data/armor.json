@@ -13,7 +13,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+              "collected": true
   },
         {
     "name": "Stormtrooper Corporal",
@@ -135,7 +136,8 @@
     "type": "Special Troop armor",
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
-    "location": "Tiers 3, 4 & 5"
+    "location": "Tiers 3, 4 & 5",
+          "collected": true
   },
       {
     "name": "Shore Trooper Armor",
@@ -143,7 +145,8 @@
     "type": "Special Troop armor",
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
-    "location": "Tiers 3, 4 & 5"
+    "location": "Tiers 3, 4 & 5",
+            "collected": true
   },
             {
     "name": "Sith Trooper Set",
@@ -452,7 +455,8 @@
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Mando Safe"
+    "location": "Mando Safe",
+                      "collected": true
   },
                       {
     "name": "ND5_Droid Set",
@@ -512,7 +516,8 @@
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
-    "location": "Jedi Temple"
+    "location": "Jedi Temple",
+                      "collected": true
   },
     {
     "name": "NBC Suit (Yellow Variant)",
@@ -546,7 +551,8 @@
     "type": "Utinni!",
     "protection": 0,
     "rarity": "None",
-    "location": "Utinni!"
+    "location": "Utinni!",
+                  "collected": true
   },
                   {
     "name": "Clone Trooper Set (Neon Green Chrome Variant)",
