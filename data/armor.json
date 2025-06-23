@@ -162,7 +162,7 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5",
+    "location": "Imperial Bunker",
               "collected": true
   },
               {
@@ -171,7 +171,7 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5",
+    "location": "Imperial Bunker",
                     "collected": true
   },
                     {
@@ -180,7 +180,7 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5",
+    "location": "Imperial Bunker",
                           "collected": true
   },
                           {
@@ -189,7 +189,7 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Imperial Bunker"
   },
                                 {
     "name": "Shadow Clone Trooper Set",
@@ -213,7 +213,7 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Sith Temple"
   },
               {
     "name": "Clone Trooper Set (Purple Variant)",
@@ -353,7 +353,7 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids",
+    "location": "Mando Safe",
             "collected": true
   },
             {
@@ -362,7 +362,7 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids",
+    "location": "Mando Safe",
                   "collected": true
   },
                   {
@@ -508,7 +508,7 @@
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
-    "location": "Jedi Temple"
+    "location": "Black Astromech Droid"
   },
                 {
     "name": "Grey Jedi Set (Khaki Variant)",
@@ -516,7 +516,7 @@
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
-    "location": "Jedi Temple",
+    "location": "Black Astromech Droid",
                       "collected": true
   },
     {
