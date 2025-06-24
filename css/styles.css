@@ -808,4 +808,78 @@ header.navbar {
   cursor: pointer;
 }
 
+.tip-card {
+  display: flex;
+  background: #262626;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+  justify-content: space-between;
+}
+.tip-text {
+  flex: 1;
+  padding-right: 1rem;
+}
+.tip-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+.tip-gallery {
+  flex-shrink: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tip-thumb {
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* INTERACTIVE MAP MODAL */
+.interactive-map-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.interactive-map-content {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+.interactive-map-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  cursor: grab;
+}
+.interactive-map-scroll.dragging {
+  cursor: grabbing;
+}
+.draggable-map {
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+#closeMapBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
