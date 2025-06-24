@@ -844,4 +844,12 @@ header.navbar {
   box-shadow: 0 0 10px #000;
 }
 
+.tip-gallery img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  border: 2px solid #333;
+  cursor: pointer;
+  object-fit: contain;
+}
 
