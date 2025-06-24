@@ -48,5 +48,27 @@
       "tips/tips-03-02.png",
       "tips/tips-03-03.png"
     ]
+  },
+  ,
+{
+  "name": "Imperial Bunker",
+  "notes": "Located in the north-western toxic zone, the Imperial Bunker contains rare loot. The interactive map below highlights all room locations. Hover to highlight rooms and click to view screenshots.",
+  "gallery": [
+    "maps/Imperial Bunker Map Thumb.png",
+    "tips/tips-05-02.png",
+    "tips/tips-05-03.png",
+    "tips/tips-05-04.png",
+    "tips/tips-05-05.png",
+    "tips/tips-05-06.png"
+  ],
+  "interactiveMap": {
+    "image": "maps/Imperial Bunker Map.png",
+    "hotspots": [
+      { "x": 120, "y": 300, "width": 100, "height": 80, "image": "rooms/IB Map 01.png" },
+      { "x": 260, "y": 450, "width": 100, "height": 80, "image": "rooms/IB Map 02.png" }
+      // Add more as needed
+    ]
   }
+}
+
 ]
