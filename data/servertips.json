@@ -64,327 +64,348 @@
 "image": "maps/Imperial Bunker Map.png",
   "hotspots": [
     {
-      "x": 825,
-      "y": 8806,
-      "width": 251,
-      "height": 378,
-      "image": "rooms/IB Map 01.png"
+      "x": 824.169,
+      "y": 8805.12,
+      "width": 252.412,
+      "height": 377.194,
+      "image": "images/rooms/IB Map 01.png"
     },
     {
-      "x": 1277,
-      "y": 8806,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 02.png"
+      "x": 1099.25,
+      "y": 8806.86,
+      "width": 180.217,
+      "height": 287.173,
+      "image": "images/rooms/IB Map 03.png"
     },
     {
-      "x": 1096,
-      "y": 8657,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 03.png"
+      "x": 826.213,
+      "y": 8658.9,
+      "width": 454.737,
+      "height": 135.652,
+      "image": "images/rooms/IB Map 04.png"
     },
     {
-      "x": 1088,
-      "y": 8135,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 04.png"
+      "x": 827.409,
+      "y": 8137.56,
+      "width": 268.238,
+      "height": 505.591,
+      "image": "images/rooms/IB Map 02.png"
     },
     {
-      "x": 1209,
-      "y": 7114,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 05.png"
+      "x": 706.34,
+      "y": 7400.74,
+      "width": 506.422,
+      "height": 474.986,
+      "image": "images/rooms/IB Map 06.png"
     },
     {
-      "x": 697,
-      "y": 7216,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 06.png"
+      "x": 306.145,
+      "y": 7220.79,
+      "width": 394.15,
+      "height": 236.971,
+      "image": "images/rooms/IB Map 07.png"
     },
     {
-      "x": 1609,
-      "y": 7217,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 07.png"
+      "x": 1215.56,
+      "y": 7218.5,
+      "width": 396.396,
+      "height": 235.848,
+      "image": "images/rooms/IB Map 08.png"
     },
     {
-      "x": 463,
-      "y": 6810,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 08.png"
+      "x": 369.229,
+      "y": 6815.42,
+      "width": 95.5092,
+      "height": 171.854,
+      "image": "images/rooms/IB Map 12.png"
     },
     {
-      "x": 489,
-      "y": 6560,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 09.png"
+      "x": 396.471,
+      "y": 6562.64,
+      "width": 94.3864,
+      "height": 165.117,
+      "image": "images/rooms/IB Map 11.png"
     },
     {
-      "x": 1321,
-      "y": 6815,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 10.png"
+      "x": 1229.66,
+      "y": 6817.55,
+      "width": 96.6319,
+      "height": 167.363,
+      "image": "images/rooms/IB Map 09.png"
     },
     {
-      "x": 1551,
-      "y": 6562,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 11.png"
+      "x": 1452.21,
+      "y": 6559.91,
+      "width": 101.123,
+      "height": 177.467,
+      "image": "images/rooms/IB Map 10.png"
     },
     {
-      "x": 1090,
-      "y": 5932,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 12.png"
+      "x": 706.394,
+      "y": 6183.35,
+      "width": 507.544,
+      "height": 252.689,
+      "image": "images/rooms/IB Map 13.png"
     },
     {
-      "x": 1089,
-      "y": 5224,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 13.png"
+      "x": 1795.02,
+      "y": 6199.54,
+      "width": 95.5092,
+      "height": 169.608,
+      "image": "images/rooms/IB Map 18.png"
     },
     {
-      "x": 1553,
-      "y": 5409,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 14.png"
+      "x": 1826.82,
+      "y": 5944.7,
+      "width": 97.7546,
+      "height": 171.854,
+      "image": "images/rooms/IB Map 19.png"
     },
     {
-      "x": 1329,
-      "y": 5665,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 15.png"
+      "x": 1229.91,
+      "y": 5678.38,
+      "width": 97.7546,
+      "height": 158.381,
+      "image": "images/rooms/IB Map 17.png"
     },
     {
-      "x": 1917,
-      "y": 5945,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 16.png"
+      "x": 1459.94,
+      "y": 5413.93,
+      "width": 96.6319,
+      "height": 171.854,
+      "image": "images/rooms/IB Map 16.png"
     },
     {
-      "x": 1895,
-      "y": 6198,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 17.png"
+      "x": 821.893,
+      "y": 5419.72,
+      "width": 270.652,
+      "height": 760.154,
+      "image": "images/rooms/IB Map 14.png"
     },
     {
-      "x": 457,
-      "y": 5126,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 18.png"
+      "x": 708.622,
+      "y": 5033.55,
+      "width": 499.685,
+      "height": 380.678,
+      "image": "images/rooms/IB Map 15.png"
     },
     {
-      "x": 584,
-      "y": 4872,
+      "x": 360.44,
+      "y": 5139.46,
+      "width": 92.141,
+      "height": 155.013,
+      "image": "images/rooms/IB Map 20.png"
+    },
+    {
+      "x": 587.455,
+      "y": 4873.37,
+      "width": 91.0183,
+      "height": 174.099,
+      "image": "images/rooms/IB Map 21.png"
+    },
+    {
+      "x": 1217.17,
+      "y": 4756.98,
+      "width": 398.641,
+      "height": 238.094,
+      "image": "images/rooms/IB Map 22.png"
+    },
+    {
+      "x": 306.304,
+      "y": 4182.54,
+      "width": 393.028,
+      "height": 229.112,
+      "image": "images/rooms/IB Map 24.png"
+    },
+    {
+      "x": 1217.93,
+      "y": 4179.05,
+      "width": 396.396,
+      "height": 234.725,
+      "image": "images/rooms/IB Map 23.png"
+    },
+    {
+      "x": 362.79,
+      "y": 3790.97,
+      "width": 97.7546,
+      "height": 165.117,
+      "image": "images/rooms/IB Map 27.png"
+    },
+    {
+      "x": 397.427,
+      "y": 3536.04,
+      "width": 97.7546,
+      "height": 171.854,
+      "image": "images/rooms/IB Map 26.png"
+    },
+    {
+      "x": 548.11,
+      "y": 3961.74,
+      "width": 167.363,
+      "height": 96.6319,
+      "image": "images/rooms/IB Map 25.png"
+    },
+    {
+      "x": 550.074,
+      "y": 3421.7,
+      "width": 183.081,
+      "height": 97.7546,
+      "image": "images/rooms/IB Map 28.png"
+    },
+    {
+      "x": 1227.58,
+      "y": 3788.11,
+      "width": 96.6319,
+      "height": 169.608,
+      "image": "images/rooms/IB Map 29.png"
+    },
+    {
+      "x": 1454.7,
+      "y": 3532.71,
+      "width": 93.2637,
+      "height": 177.467,
+      "image": "images/rooms/IB Map 30.png"
+    },
+    {
+      "x": 706.462,
+      "y": 3108.48,
+      "width": 504.176,
+      "height": 219.007,
+      "image": "images/rooms/IB Map 31.png"
+    },
+    {
+      "x": 827.979,
+      "y": 2338.64,
+      "width": 261.67,
+      "height": 762.4,
+      "image": "images/rooms/IB Map 32.png"
+    },
+    {
+      "x": 1232.05,
+      "y": 2587.02,
+      "width": 96.6319,
+      "height": 169.608,
+      "image": "images/rooms/IB Map 35.png"
+    },
+    {
+      "x": 1459.01,
+      "y": 2333.17,
+      "width": 95.5092,
+      "height": 175.222,
+      "image": "images/rooms/IB Map 34.png"
+    },
+    {
+      "x": 1825.23,
+      "y": 2865.74,
+      "width": 101.123,
+      "height": 170.731,
+      "image": "images/rooms/IB Map 37.png"
+    },
+    {
+      "x": 1793.04,
+      "y": 3120.96,
+      "width": 103.368,
+      "height": 167.363,
+      "image": "images/rooms/IB Map 36.png"
+    },
+    {
+      "x": 709.953,
+      "y": 1807.27,
+      "width": 496.317,
+      "height": 522.14,
+      "image": "images/rooms/IB Map 38.png"
+    },
+    {
+      "x": 1219.68,
+      "y": 1867.71,
+      "width": 392.905,
+      "height": 235.971,
+      "image": "images/rooms/IB Map 33.png"
+    },
+    {
+      "x": 364.808,
+      "y": 2050.75,
+      "width": 93.2637,
+      "height": 167.363,
+      "image": "images/rooms/IB Map 39.png"
+    },
+    {
+      "x": 589.473,
+      "y": 1796.63,
+      "width": 98.8773,
+      "height": 170.731,
+      "image": "images/rooms/IB Map 40.png"
+    },
+    {
+      "x": 471.22,
+      "y": 1691.36,
       "width": 100,
-      "height": 176,
-      "image": "rooms/IB Map 19.png"
+      "height": 100,
+      "image": "images/rooms/IB Map 41.png"
     },
     {
-      "x": 1215,
-      "y": 4756,
-      "width": 396,
-      "height": 240,
-      "image": "rooms/IB Map 20.png"
-    },
-    {
-      "x": 302,
-      "y": 4174,
-      "width": 401,
-      "height": 242,
-      "image": "rooms/IB Map 21.png"
-    },
-    {
-      "x": 1214,
-      "y": 4178,
-      "width": 400,
-      "height": 238,
-      "image": "rooms/IB Map 22.png"
-    },
-    {
-      "x": 545,
-      "y": 3970,
-      "width": 199,
-      "height": 82,
-      "image": "rooms/IB Map 23.png"
-    },
-    {
-      "x": 462,
-      "y": 3783,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 24.png"
-    },
-    {
-      "x": 493,
-      "y": 3532,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 25.png"
-    },
-    {
-      "x": 798,
-      "y": 3434,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 26.png"
-    },
-    {
-      "x": 1325,
-      "y": 3783,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 27.png"
-    },
-    {
-      "x": 1550,
-      "y": 3532,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 28.png"
-    },
-    {
-      "x": 707,
-      "y": 3106,
-      "width": 502,
-      "height": 226,
-      "image": "rooms/IB Map 29.png"
-    },
-    {
-      "x": 823,
-      "y": 2340,
-      "width": 270,
-      "height": 760,
-      "image": "rooms/IB Map 30.png"
-    },
-    {
-      "x": 1233,
-      "y": 2584,
-      "width": 98,
-      "height": 174,
-      "image": "rooms/IB Map 31.png"
-    },
-    {
-      "x": 1555,
-      "y": 2333,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 32.png"
-    },
-    {
-      "x": 1825,
-      "y": 2864,
+      "x": 656.363,
+      "y": 1684.28,
       "width": 100,
-      "height": 174,
-      "image": "rooms/IB Map 33.png"
+      "height": 100,
+      "image": "images/rooms/IB Map 42.png"
     },
     {
-      "x": 1793,
-      "y": 3120,
-      "width": 102,
-      "height": 168,
-      "image": "rooms/IB Map 34.png"
+      "x": 780.475,
+      "y": 1548.02,
+      "width": 208.903,
+      "height": 247.075,
+      "image": "images/rooms/IB Map 43.png"
     },
     {
-      "x": 705,
-      "y": 1806,
-      "width": 508,
-      "height": 526,
-      "image": "rooms/IB Map 35.png"
+      "x": 672.182,
+      "y": 46.9043,
+      "width": 481.067,
+      "height": 304.919,
+      "image": "images/rooms/IB Map 44.png"
     },
     {
-      "x": 1612,
-      "y": 1867,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 36.png"
+      "x": 788.635,
+      "y": 479.692,
+      "width": 270.282,
+      "height": 97.8445,
+      "image": "images/rooms/IB Map 45.png"
     },
     {
-      "x": 461,
-      "y": 2046,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 37.png"
+      "x": 126.505,
+      "y": 580.709,
+      "width": 1093.67,
+      "height": 552.65,
+      "image": "images/rooms/IB Map 46.png"
     },
     {
-      "x": 591,
-      "y": 1792,
-      "width": 102,
-      "height": 176,
-      "image": "rooms/IB Map 38.png"
+      "x": 1248.6,
+      "y": 591.398,
+      "width": 1024.7,
+      "height": 692.755,
+      "image": "images/rooms/IB Map 47.png"
     },
     {
-      "x": 545,
-      "y": 1697,
-      "width": 4,
-      "height": 4,
-      "image": "rooms/IB Map 39.png"
+      "x": 1413.01,
+      "y": 1309.68,
+      "width": 255.194,
+      "height": 156.042,
+      "image": "images/rooms/IB Map 48.png"
     },
     {
-      "x": 694,
-      "y": 1682,
-      "width": 58,
-      "height": 104,
-      "image": "rooms/IB Map 40.png"
+      "x": 866.501,
+      "y": 1362.26,
+      "width": 326.325,
+      "height": 93.5336,
+      "image": "images/rooms/IB Map 49.png"
     },
     {
-      "x": 761,
-      "y": 1544,
-      "width": 233,
-      "height": 249,
-      "image": "rooms/IB Map 41.png"
-    },
-    {
-      "x": 664,
-      "y": 39,
-      "width": 504,
-      "height": 291,
-      "image": "rooms/IB Map 42.png"
-    },
-    {
-      "x": 789,
-      "y": 491,
-      "width": 253,
-      "height": 78,
-      "image": "rooms/IB Map 43.png"
-    },
-    {
-      "x": 110,
-      "y": 575,
-      "width": 2175,
-      "height": 722,
-      "image": "rooms/IB Map 44.png"
-    },
-    {
-      "x": 1428,
-      "y": 1305,
-      "width": 237,
-      "height": 150,
-      "image": "rooms/IB Map 45.png"
-    },
-    {
-      "x": 912,
-      "y": 1343,
-      "width": 223,
-      "height": 110,
-      "image": "rooms/IB Map 46.png"
-      }
+      "x": 830.19,
+      "y": 7882.8,
+      "width": 261.661,
+      "height": 237.95,
+      "image": "images/rooms/IB Map 05.png"
+    }
     ]
   }
 }
