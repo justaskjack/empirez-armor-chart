@@ -79,4 +79,56 @@
     startX = e.clientX - rect.left + mapContainer.scrollLeft;
     startY = e.clientY - rect.top + mapContainer.scrollTop;
 
-    hotspotEl = document
+    hotspotEl = document.createElement("div");
+    hotspotEl.className = "hotspot";
+    hotspotEl.style.left = `${startX}px`;
+    hotspotEl.style.top = `${startY}px`;
+    mapContainer.appendChild(hotspotEl);
+  });
+
+  mapContainer.addEventListener("mousemove", (e) => {
+    if (!isDrawing) return;
+    const rect = mapContainer.getBoundingClientRect();
+    const currX = e.clientX - rect.left + mapContainer.scrollLeft;
+    const currY = e.clientY - rect.top + mapContainer.scrollTop;
+
+    const width = currX - startX;
+    const height = currY - startY;
+
+    hotspotEl.style.width = `${Math.abs(width)}px`;
+    hotspotEl.style.height = `${Math.abs(height)}px`;
+    hotspotEl.style.left = `${width < 0 ? currX : startX}px`;
+    hotspotEl.style.top = `${height < 0 ? currY : startY}px`;
+  });
+
+  mapContainer.addEventListener("mouseup", () => {
+    if (!isDrawing) return;
+    isDrawing = false;
+
+    const rect = hotspotEl.getBoundingClientRect();
+    const containerRect = mapContainer.getBoundingClientRect();
+    const x = rect.left - containerRect.left + mapContainer.scrollLeft;
+    const y = rect.top - containerRect.top + mapContainer.scrollTop;
+    const width = rect.width;
+    const height = rect.height;
+
+    const imagePath = prompt("Enter the path to the full image (e.g. rooms/IB Map 01.png):");
+    if (!imagePath) {
+      hotspotEl.remove();
+      return;
+    }
+
+    hotspots.push({ x: Math.round(x), y: Math.round(y), width: Math.round(width), height: Math.round(height), image: imagePath });
+  });
+
+  function exportHotspots() {
+    const output = {
+      image: "maps/Imperial Bunker Map.png",
+      hotspots
+    };
+    exportOutput.value = JSON.stringify(output, null, 2);
+  }
+</script>
+
+</body>
+</html>
