@@ -61,7 +61,7 @@ fetch("data/servertips.json")
     });
   });
 
-// INTERACTIVE MAP WITH ZOOM + DRAG
+// === INTERACTIVE MAP FUNCTIONALITY ===
 function openInteractiveMap(mapData) {
   const overlay = document.createElement("div");
   overlay.className = "interactive-map-overlay";
@@ -78,13 +78,16 @@ function openInteractiveMap(mapData) {
   const scrollArea = document.createElement("div");
   scrollArea.className = "interactive-map-scroll";
 
+  const zoomContainer = document.createElement("div");
+  zoomContainer.className = "zoom-container";
+  zoomContainer.style.transformOrigin = "top left";
+
   const img = document.createElement("img");
   img.src = "images/" + mapData.image;
   img.className = "draggable-map";
-  scrollArea.appendChild(img);
-  content.appendChild(scrollArea);
+  zoomContainer.appendChild(img);
 
-  // Add hotspots
+  // Add hotspots to zoomContainer
   mapData.hotspots.forEach(h => {
     const hotspot = document.createElement("div");
     hotspot.className = "map-hotspot";
@@ -103,71 +106,72 @@ function openInteractiveMap(mapData) {
       document.body.appendChild(viewer);
     });
 
-    scrollArea.appendChild(hotspot);
+    zoomContainer.appendChild(hotspot);
   });
 
+  scrollArea.appendChild(zoomContainer);
+  content.appendChild(scrollArea);
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
-  // === Enable drag and zoom ===
-  let isPanning = false;
-  let startX = 0;
-  let startY = 0;
-  let translateX = 0;
-  let translateY = 0;
+  // === PAN + ZOOM ===
   let scale = 1;
+  let offsetX = 0;
+  let offsetY = 0;
+  let isDragging = false;
+  let startX, startY;
 
   function updateTransform() {
-    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    zoomContainer.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
   }
 
-  // Mouse down to pan
-  scrollArea.addEventListener("mousedown", e => {
-    isPanning = true;
-    startX = e.clientX - translateX;
-    startY = e.clientY - translateY;
-    scrollArea.style.cursor = "grabbing";
-  });
-
-  document.addEventListener("mouseup", () => {
-    isPanning = false;
-    scrollArea.style.cursor = "grab";
-  });
-
-  scrollArea.addEventListener("mousemove", e => {
-    if (!isPanning) return;
-    translateX = e.clientX - startX;
-    translateY = e.clientY - startY;
-    updateTransform();
-  });
-
-  // Scroll wheel to zoom
+  // Zoom toward mouse pointer
   scrollArea.addEventListener("wheel", e => {
     e.preventDefault();
-    const zoomAmount = -e.deltaY * 0.001;
-    const newScale = Math.min(Math.max(0.5, scale + zoomAmount), 3); // Clamp between 0.5x and 3x
+    const zoomFactor = 0.1;
+    const delta = e.deltaY < 0 ? 1 + zoomFactor : 1 - zoomFactor;
+    const newScale = Math.max(0.3, Math.min(scale * delta, 4));
 
-    // Zoom toward mouse position
-    const rect = img.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left;
-    const offsetY = e.clientY - rect.top;
-    translateX -= offsetX * (newScale - scale) / scale;
-    translateY -= offsetY * (newScale - scale) / scale;
+    const rect = zoomContainer.getBoundingClientRect();
+    const dx = e.clientX - rect.left;
+    const dy = e.clientY - rect.top;
+
+    offsetX -= dx * (newScale / scale - 1);
+    offsetY -= dy * (newScale / scale - 1);
 
     scale = newScale;
     updateTransform();
   });
 
-  // Initial zoom-to-fit on load
-  window.requestAnimationFrame(() => {
-    const bounds = scrollArea.getBoundingClientRect();
-    const imgWidth = img.naturalWidth;
-    const imgHeight = img.naturalHeight;
-    const scaleX = bounds.width / imgWidth;
-    const scaleY = bounds.height / imgHeight;
-    scale = Math.min(scaleX, scaleY, 1);
-    translateX = 0;
-    translateY = 0;
+  // Dragging
+  scrollArea.addEventListener("mousedown", e => {
+    isDragging = true;
+    startX = e.clientX - offsetX;
+    startY = e.clientY - offsetY;
+    scrollArea.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    scrollArea.style.cursor = "default";
+  });
+
+  document.addEventListener("mousemove", e => {
+    if (!isDragging) return;
+    offsetX = e.clientX - startX;
+    offsetY = e.clientY - startY;
     updateTransform();
   });
+
+  // Zoom to fit on load
+  img.onload = () => {
+    const containerWidth = scrollArea.clientWidth;
+    const containerHeight = scrollArea.clientHeight;
+    const scaleX = containerWidth / img.naturalWidth;
+    const scaleY = containerHeight / img.naturalHeight;
+    scale = Math.min(scaleX, scaleY, 1);
+    offsetX = 0;
+    offsetY = 0;
+    updateTransform();
+  };
 }
