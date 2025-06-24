@@ -877,8 +877,9 @@ header.navbar {
 
 .tip-content h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4em;
   font-weight: bold;
+  margin-bottom: 8px;
   color: #fff;
 }
 
