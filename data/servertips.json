@@ -9,7 +9,7 @@
       "tips/tips-01-04.png"
     ]
   },
-  {
+    {
     "name": "Black Imperial Astromech Droids",
     "notes": "These loot droids can be found in random locations across the entire map, including inside miltary barracks and nests. To unlock them, you need the matching Black Datacard. These datacards are found as ground loot inside the locked portion of the Sith Temple. The Sith Temple is unlocked with a Sith Holocron. A Sith Holocron is created by combining 2 Sith Kyber Crystals. Sith Kyber Crystals can be found in the Imperial Bunker in the toxic zone. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. The Black droids typically drop one of the 2 Gray Jedi full sets, and Jedi and/or Sith Medallions.",
     "gallery": [
@@ -17,7 +17,7 @@
       "tips/tips-02-02.png"
     ]
   },
-  {
+      {
     "name": "BB9E Loot Droids",
     "notes": "These loot droids can be found in random locations across the entire map, including inside miltary encampments and industrial areas. They are very small and can be easy to overlook. To unlock them, you need the Gray Datacard. These datacards are found as ground loot inside the locked portion of the Jedi Temple. The Jedi Temple is unlocked with a Jedi Holocron. A Jedi Holocron is created by combining 2 Jedi Kyber Crystals. Jedi Kyber Crystals can be found in the Imperial Bunker in the toxic zone. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. The Gray droids typically drop one of the full Sith sets including Darth Vader, and Jedi and/or Sith Medallions. If you find the Darth Vader set, it will also include the Darth Vader Interrigation Droid which is a 200 slot shoulder storage item similar to the Probe Droids.",
     "gallery": [
@@ -28,7 +28,7 @@
       "tips/tips-06-05.png"
     ]
   },
-  {
+      {
     "name": "Mando Safe",
     "notes": "These trashcan looking loot crates can be found in random locations across the entire map, including inside miltary bases and at Tie Fighter crashes. To unlock them, you need an Activated Chaincode which you create by combining a Chaincode with a Datapad. The Chaincode and Datapad both drop from the cargo holds of the random spawning Krennic or Razorcrest ships that appear around the map. You will find these ships guarded by 4-7 Death Troopers. If you enter the ship and tab, you'll see a 300 slot cargo hold. The Datapad or Chaincode will be the only item in it. If it is empty, another player has already looted it and it will not respawn in that instance of the ship. Mando Safes typically contain a full character armor set (Andromeda, Sabine Wren, Bo Katan, Ahsoka Tano, Battle Droid), and a random piece of a secondary character armor set. (ND5_Droid).",
     "gallery": [
@@ -40,7 +40,7 @@
       "tips/tips-04-06.png"
     ]
   },
-  {
+      {
     "name": "Jawa Sandcrawlers",
     "notes": "You can find Jawa Sandcrawlers on top of the mountain ridges and in the deserts across of the map. These Sandcrawlers are a reliable source for Charcoal tabs, which are used to refill the gas filters needed to traverse the Imperial bunker in the toxic zone. inside the Sandcrawlers you'll find 3 crates, and one usually has at least one charcoal tab on it. As a bonus, some Sandcrawlers are guarded by the Jawas themselves. These Jawas can sometimes drop a rare item called a Jawa Cloak which when worn makes you sppear to be an oversized Jawa yourself.",
     "gallery": [
@@ -48,36 +48,5 @@
       "tips/tips-03-02.png",
       "tips/tips-03-03.png"
     ]
-  },
-  {
-    "name": "Imperial Bunker",
-    "notes": "Located in the north-western toxic zone, the Imperial Bunker contains rare loot. The interactive map below highlights all room locations. Hover to highlight rooms and click to view screenshots.",
-    "gallery": [
-      "maps/Imperial Bunker Map Thumb.png",
-      "tips/tips-05-02.png",
-      "tips/tips-05-03.png",
-      "tips/tips-05-04.png",
-      "tips/tips-05-05.png",
-      "tips/tips-05-06.png"
-    ],
-    "interactiveMap": {
-      "image": "maps/Imperial Bunker Map.png",
-      "hotspots": [
-        {
-          "x": 120,
-          "y": 300,
-          "width": 100,
-          "height": 80,
-          "image": "rooms/IB Map 01.png"
-        },
-        {
-          "x": 260,
-          "y": 450,
-          "width": 100,
-          "height": 80,
-          "image": "rooms/IB Map 02.png"
-        }
-      ]
-    }
   }
 ]
