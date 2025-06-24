@@ -32,29 +32,25 @@ fetch("data/servertips.json")
         img.src = "images/" + imgPath;
         img.alt = `${tip.name} Screenshot ${index + 1}`;
 
-// Special handling for interactive map
-if (tip.name === "Imperial Bunker" && index === 0) {
-  img.classList.add("interactive-map-thumb");
-  img.title = "Click to open interactive map";
+        // Special handling for interactive map
+        if (tip.name === "Imperial Bunker" && index === 0) {
+          img.classList.add("interactive-map-thumb");
+          img.title = "Click to open interactive map";
 
-  // Do NOT attach lightGallery attributes
-  // Prevent LightGallery from registering the image
-  img.removeAttribute("data-src");
-  img.removeAttribute("data-lg-size");
-  img.removeAttribute("data-sub-html");
+          img.removeAttribute("data-src");
+          img.removeAttribute("data-lg-size");
+          img.removeAttribute("data-sub-html");
 
-  img.addEventListener("click", e => {
-    e.preventDefault();
-    e.stopPropagation(); // <- This is critical
-    openInteractiveMap(tip.interactiveMap);
-  });
-} else {
-  // All other thumbs are LightGallery enabled
-  img.setAttribute("data-src", "images/" + imgPath);
-  img.setAttribute("data-lg-size", "1400-800");
-  img.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
-}
-
+          img.addEventListener("click", e => {
+            e.preventDefault();
+            e.stopPropagation();
+            openInteractiveMap(tip.interactiveMap);
+          });
+        } else {
+          img.setAttribute("data-src", "images/" + imgPath);
+          img.setAttribute("data-lg-size", "1400-800");
+          img.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
+        }
 
         thumb.appendChild(img);
         gallery.appendChild(thumb);
@@ -65,7 +61,7 @@ if (tip.name === "Imperial Bunker" && index === 0) {
     });
   });
 
-// DRAGGABLE INTERACTIVE MAP
+// INTERACTIVE MAP WITH ZOOM + DRAG
 function openInteractiveMap(mapData) {
   const overlay = document.createElement("div");
   overlay.className = "interactive-map-overlay";
@@ -85,7 +81,6 @@ function openInteractiveMap(mapData) {
   const img = document.createElement("img");
   img.src = "images/" + mapData.image;
   img.className = "draggable-map";
-
   scrollArea.appendChild(img);
   content.appendChild(scrollArea);
 
@@ -114,25 +109,65 @@ function openInteractiveMap(mapData) {
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
-  // Enable drag-to-scroll
-  let isDragging = false;
-  let startX, startY;
+  // === Enable drag and zoom ===
+  let isPanning = false;
+  let startX = 0;
+  let startY = 0;
+  let translateX = 0;
+  let translateY = 0;
+  let scale = 1;
 
+  function updateTransform() {
+    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+  }
+
+  // Mouse down to pan
   scrollArea.addEventListener("mousedown", e => {
-    isDragging = true;
-    startX = e.pageX - scrollArea.scrollLeft;
-    startY = e.pageY - scrollArea.scrollTop;
+    isPanning = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
     scrollArea.style.cursor = "grabbing";
   });
 
   document.addEventListener("mouseup", () => {
-    isDragging = false;
-    scrollArea.style.cursor = "default";
+    isPanning = false;
+    scrollArea.style.cursor = "grab";
   });
 
   scrollArea.addEventListener("mousemove", e => {
-    if (!isDragging) return;
-    scrollArea.scrollLeft = startX - e.pageX;
-    scrollArea.scrollTop = startY - e.pageY;
+    if (!isPanning) return;
+    translateX = e.clientX - startX;
+    translateY = e.clientY - startY;
+    updateTransform();
+  });
+
+  // Scroll wheel to zoom
+  scrollArea.addEventListener("wheel", e => {
+    e.preventDefault();
+    const zoomAmount = -e.deltaY * 0.001;
+    const newScale = Math.min(Math.max(0.5, scale + zoomAmount), 3); // Clamp between 0.5x and 3x
+
+    // Zoom toward mouse position
+    const rect = img.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    const offsetY = e.clientY - rect.top;
+    translateX -= offsetX * (newScale - scale) / scale;
+    translateY -= offsetY * (newScale - scale) / scale;
+
+    scale = newScale;
+    updateTransform();
+  });
+
+  // Initial zoom-to-fit on load
+  window.requestAnimationFrame(() => {
+    const bounds = scrollArea.getBoundingClientRect();
+    const imgWidth = img.naturalWidth;
+    const imgHeight = img.naturalHeight;
+    const scaleX = bounds.width / imgWidth;
+    const scaleY = bounds.height / imgHeight;
+    scale = Math.min(scaleX, scaleY, 1);
+    translateX = 0;
+    translateY = 0;
+    updateTransform();
   });
 }
