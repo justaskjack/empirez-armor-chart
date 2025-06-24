@@ -23,22 +23,27 @@ fetch("data/servertips.json")
       gallery.className = "tip-gallery";
 
       tip.gallery.forEach((imgPath, index) => {
-        const thumb = document.createElement("img");
-        thumb.src = "images/" + imgPath;
-        thumb.alt = `${tip.name} Screenshot ${index + 1}`;
+        const thumb = document.createElement("a");
+        thumb.href = "images/" + imgPath;
+        thumb.setAttribute("data-lightbox", tip.name);
+        thumb.setAttribute("data-title", `${tip.name} Screenshot ${index + 1}`);
 
-        // Interactive map trigger
-        if (tip.name === "Imperial Bunker" && index === 0 && tip.interactiveMap) {
-          thumb.classList.add("interactive-map-thumb");
-          thumb.title = "Click to open interactive map";
-          thumb.addEventListener("click", () => openInteractiveMap(tip.interactiveMap));
-        } else {
-          // LightGallery standard preview
-          thumb.setAttribute("data-lg-size", "1400-800");
-          thumb.setAttribute("data-src", "images/" + imgPath);
-          thumb.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
+        const img = document.createElement("img");
+        img.src = "images/" + imgPath;
+        img.alt = `${tip.name} Screenshot ${index + 1}`;
+
+        // Special handling for interactive map
+        if (tip.name === "Imperial Bunker" && index === 0) {
+          img.classList.add("interactive-map-thumb");
+          img.title = "Click to open interactive map";
+
+          img.addEventListener("click", e => {
+            e.preventDefault(); // Prevent Lightbox
+            openInteractiveMap(tip.interactiveMap);
+          });
         }
 
+        thumb.appendChild(img);
         gallery.appendChild(thumb);
       });
 
@@ -47,6 +52,7 @@ fetch("data/servertips.json")
     });
   });
 
+// DRAGGABLE INTERACTIVE MAP
 function openInteractiveMap(mapData) {
   const overlay = document.createElement("div");
   overlay.className = "interactive-map-overlay";
@@ -66,7 +72,9 @@ function openInteractiveMap(mapData) {
   const img = document.createElement("img");
   img.src = "images/" + mapData.image;
   img.className = "draggable-map";
+
   scrollArea.appendChild(img);
+  content.appendChild(scrollArea);
 
   // Add hotspots
   mapData.hotspots.forEach(h => {
@@ -90,23 +98,25 @@ function openInteractiveMap(mapData) {
     scrollArea.appendChild(hotspot);
   });
 
-  content.appendChild(scrollArea);
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
-  // Drag behavior
+  // Enable drag-to-scroll
   let isDragging = false;
   let startX, startY;
+
   scrollArea.addEventListener("mousedown", e => {
     isDragging = true;
     startX = e.pageX - scrollArea.scrollLeft;
     startY = e.pageY - scrollArea.scrollTop;
     scrollArea.style.cursor = "grabbing";
   });
+
   document.addEventListener("mouseup", () => {
     isDragging = false;
     scrollArea.style.cursor = "default";
   });
+
   scrollArea.addEventListener("mousemove", e => {
     if (!isDragging) return;
     scrollArea.scrollLeft = startX - e.pageX;
