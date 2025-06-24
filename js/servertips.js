@@ -87,7 +87,7 @@ function openInteractiveMap(mapData) {
   img.className = "draggable-map";
   zoomContainer.appendChild(img);
 
-  // Add hotspots to zoomContainer
+  // Add hotspots
   mapData.hotspots.forEach(h => {
     const hotspot = document.createElement("div");
     hotspot.className = "map-hotspot";
@@ -116,21 +116,22 @@ function openInteractiveMap(mapData) {
 
   // === PAN + ZOOM ===
   let scale = 1;
+  let minScale = 1;
   let offsetX = 0;
   let offsetY = 0;
   let isDragging = false;
-  let startX, startY;
+  let startX = 0;
+  let startY = 0;
 
   function updateTransform() {
     zoomContainer.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
   }
 
-  // Zoom toward mouse pointer
   scrollArea.addEventListener("wheel", e => {
     e.preventDefault();
     const zoomFactor = 0.1;
     const delta = e.deltaY < 0 ? 1 + zoomFactor : 1 - zoomFactor;
-    const newScale = Math.max(0.3, Math.min(scale * delta, 4));
+    const newScale = Math.max(minScale, Math.min(scale * delta, 4));
 
     const rect = zoomContainer.getBoundingClientRect();
     const dx = e.clientX - rect.left;
@@ -143,8 +144,8 @@ function openInteractiveMap(mapData) {
     updateTransform();
   });
 
-  // Dragging
   scrollArea.addEventListener("mousedown", e => {
+    e.preventDefault();
     isDragging = true;
     startX = e.clientX - offsetX;
     startY = e.clientY - offsetY;
@@ -158,20 +159,23 @@ function openInteractiveMap(mapData) {
 
   document.addEventListener("mousemove", e => {
     if (!isDragging) return;
+    e.preventDefault();
     offsetX = e.clientX - startX;
     offsetY = e.clientY - startY;
-    updateTransform();
+    requestAnimationFrame(updateTransform);
   });
 
-  // Zoom to fit on load
   img.onload = () => {
     const containerWidth = scrollArea.clientWidth;
     const containerHeight = scrollArea.clientHeight;
     const scaleX = containerWidth / img.naturalWidth;
     const scaleY = containerHeight / img.naturalHeight;
-    scale = Math.min(scaleX, scaleY, 1);
-    offsetX = 0;
-    offsetY = 0;
+    scale = minScale = Math.min(scaleX, scaleY, 1);
+
+    // Center the map
+    offsetX = (containerWidth - img.naturalWidth * scale) / 2;
+    offsetY = (containerHeight - img.naturalHeight * scale) / 2;
+
     updateTransform();
   };
 }
