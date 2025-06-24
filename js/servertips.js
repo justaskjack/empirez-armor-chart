@@ -32,16 +32,29 @@ fetch("data/servertips.json")
         img.src = "images/" + imgPath;
         img.alt = `${tip.name} Screenshot ${index + 1}`;
 
-        // Special handling for interactive map
-        if (tip.name === "Imperial Bunker" && index === 0) {
-          img.classList.add("interactive-map-thumb");
-          img.title = "Click to open interactive map";
+// Special handling for interactive map
+if (tip.name === "Imperial Bunker" && index === 0) {
+  img.classList.add("interactive-map-thumb");
+  img.title = "Click to open interactive map";
 
-          img.addEventListener("click", e => {
-            e.preventDefault(); // Prevent Lightbox
-            openInteractiveMap(tip.interactiveMap);
-          });
-        }
+  // Do NOT attach lightGallery attributes
+  // Prevent LightGallery from registering the image
+  img.removeAttribute("data-src");
+  img.removeAttribute("data-lg-size");
+  img.removeAttribute("data-sub-html");
+
+  img.addEventListener("click", e => {
+    e.preventDefault();
+    e.stopPropagation(); // <- This is critical
+    openInteractiveMap(tip.interactiveMap);
+  });
+} else {
+  // All other thumbs are LightGallery enabled
+  img.setAttribute("data-src", "images/" + imgPath);
+  img.setAttribute("data-lg-size", "1400-800");
+  img.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
+}
+
 
         thumb.appendChild(img);
         gallery.appendChild(thumb);
