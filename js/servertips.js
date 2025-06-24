@@ -1,101 +1,116 @@
-fetch('data/servertips.json')
+fetch("data/servertips.json")
   .then(res => res.json())
-  .then(tips => {
-    const container = document.getElementById('tips-row');
-    tips.forEach(tip => {
-      const card = document.createElement('div');
-      card.className = 'tip-card';
+  .then(data => {
+    const container = document.getElementById("tips-row");
+    data.forEach(tip => {
+      const card = document.createElement("div");
+      card.className = "tip-card";
 
-      const left = document.createElement('div');
-      left.className = 'tip-text';
-      const title = document.createElement('h2');
+      const content = document.createElement("div");
+      content.className = "tip-content";
+
+      const title = document.createElement("h3");
       title.textContent = tip.name;
-      const notes = document.createElement('p');
-      notes.innerHTML = `<strong>Notes:</strong> ${tip.notes}`;
-      left.appendChild(title);
-      left.appendChild(notes);
 
-      const right = document.createElement('div');
-      right.className = 'tip-gallery';
+      const notes = document.createElement("p");
+      notes.textContent = tip.notes;
 
-      tip.images.forEach((img, index) => {
-        const a = document.createElement('a');
-        if (img === 'Imperial Bunker Map Thumb.png') {
-          a.href = '#';
-          a.addEventListener('click', (e) => {
-            e.preventDefault();
-            document.getElementById('interactiveMapModal').style.display = 'flex';
-          });
+      content.appendChild(title);
+      content.appendChild(notes);
+      card.appendChild(content);
+
+      const gallery = document.createElement("div");
+      gallery.className = "tip-gallery";
+
+      tip.gallery.forEach((imgPath, index) => {
+        const thumb = document.createElement("img");
+        thumb.src = "images/" + imgPath;
+        thumb.alt = `${tip.name} Screenshot ${index + 1}`;
+
+        // Special handling for interactive map
+        if (tip.name === "Imperial Bunker" && index === 0) {
+          thumb.classList.add("interactive-map-thumb");
+          thumb.title = "Click to open interactive map";
+          thumb.addEventListener("click", () => openInteractiveMap(tip.interactiveMap));
         } else {
-          a.href = `images/servertips/${img}`;
-          a.setAttribute('data-lightbox', tip.name);
-          a.setAttribute('data-title', tip.name);
+          thumb.setAttribute("data-lg-size", "1400-800");
+          thumb.setAttribute("data-src", "images/" + imgPath);
+          thumb.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
         }
 
-        const i = document.createElement('img');
-        i.src = `images/servertips/${img}`;
-        i.alt = tip.name;
-        i.className = 'tip-thumb';
-        a.appendChild(i);
-        right.appendChild(a);
+        gallery.appendChild(thumb);
       });
 
-      card.appendChild(left);
-      card.appendChild(right);
+      card.appendChild(gallery);
       container.appendChild(card);
     });
   });
 
-// ========== INTERACTIVE MAP LOGIC ==========
-const modal = document.getElementById('interactiveMapModal');
-const closeMapBtn = document.getElementById('closeMapBtn');
-closeMapBtn.addEventListener('click', () => modal.style.display = 'none');
+// DRAGGABLE INTERACTIVE MAP
+function openInteractiveMap(mapData) {
+  const overlay = document.createElement("div");
+  overlay.className = "interactive-map-overlay";
 
-const scrollArea = document.querySelector('.interactive-map-scroll');
-let isDragging = false, startX, startY, scrollLeft, scrollTop;
+  const content = document.createElement("div");
+  content.className = "interactive-map-content";
 
-scrollArea.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  scrollArea.classList.add('dragging');
-  startX = e.pageX - scrollArea.offsetLeft;
-  startY = e.pageY - scrollArea.offsetTop;
-  scrollLeft = scrollArea.scrollLeft;
-  scrollTop = scrollArea.scrollTop;
-});
-scrollArea.addEventListener('mouseleave', () => {
-  isDragging = false;
-  scrollArea.classList.remove('dragging');
-});
-scrollArea.addEventListener('mouseup', () => {
-  isDragging = false;
-  scrollArea.classList.remove('dragging');
-});
-scrollArea.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - scrollArea.offsetLeft;
-  const y = e.pageY - scrollArea.offsetTop;
-  const walkX = (x - startX);
-  const walkY = (y - startY);
-  scrollArea.scrollLeft = scrollLeft - walkX;
-  scrollArea.scrollTop = scrollTop - walkY;
-});
+  const closeBtn = document.createElement("button");
+  closeBtn.className = "interactive-map-close";
+  closeBtn.innerHTML = "&times;";
+  closeBtn.onclick = () => document.body.removeChild(overlay);
+  content.appendChild(closeBtn);
 
-// ========== ROOM AREA HIGHLIGHTS ==========
-const rooms = [
-  { coords: "195,1990,260,2055", screenshot: "IB Map 01.png" },
-  { coords: "195,1905,260,1970", screenshot: "IB Map 02.png" }
-];
+  const scrollArea = document.createElement("div");
+  scrollArea.className = "interactive-map-scroll";
 
-const mapEl = document.getElementById("bunkerMapMap");
-rooms.forEach((room, i) => {
-  const area = document.createElement("area");
-  area.shape = "rect";
-  area.coords = room.coords;
-  area.title = `Room ${i + 1}`;
-  area.style.cursor = 'pointer';
-  area.addEventListener('click', () => {
-    window.open(`images/rooms/${room.screenshot}`, '_blank');
+  const img = document.createElement("img");
+  img.src = "images/" + mapData.image;
+  img.className = "draggable-map";
+
+  scrollArea.appendChild(img);
+  content.appendChild(scrollArea);
+
+  // Add hotspots
+  mapData.hotspots.forEach(h => {
+    const hotspot = document.createElement("div");
+    hotspot.className = "map-hotspot";
+    hotspot.style.left = h.x + "px";
+    hotspot.style.top = h.y + "px";
+    hotspot.style.width = h.width + "px";
+    hotspot.style.height = h.height + "px";
+
+    hotspot.addEventListener("click", () => {
+      const viewer = document.createElement("div");
+      viewer.className = "lightbox-overlay";
+      const imgEl = document.createElement("img");
+      imgEl.src = "images/" + h.image;
+      viewer.appendChild(imgEl);
+      viewer.onclick = () => viewer.remove();
+      document.body.appendChild(viewer);
+    });
+
+    scrollArea.appendChild(hotspot);
   });
-  mapEl.appendChild(area);
-});
+
+  overlay.appendChild(content);
+  document.body.appendChild(overlay);
+
+  // Enable drag
+  let isDragging = false;
+  let startX, startY;
+  scrollArea.addEventListener("mousedown", e => {
+    isDragging = true;
+    startX = e.pageX - scrollArea.scrollLeft;
+    startY = e.pageY - scrollArea.scrollTop;
+    scrollArea.style.cursor = "grabbing";
+  });
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    scrollArea.style.cursor = "default";
+  });
+  scrollArea.addEventListener("mousemove", e => {
+    if (!isDragging) return;
+    scrollArea.scrollLeft = startX - e.pageX;
+    scrollArea.scrollTop = startY - e.pageY;
+  });
+}
