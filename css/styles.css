@@ -762,4 +762,50 @@ header.navbar {
   border: 2px solid #444;
 }
 
+.map-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-wrapper {
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  position: relative;
+  cursor: grab;
+}
+
+#bunkerMap {
+  display: block;
+  max-width: none;
+}
+
+.map-zone {
+  position: absolute;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.map-zone:hover {
+  border: 2px solid #0f0;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.map-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 
