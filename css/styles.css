@@ -896,3 +896,13 @@ header.navbar {
 .tip-gallery img:hover {
   outline: 2px solid #aaa;
 }
+
+.zoom-container {
+  position: relative;
+  display: inline-block;
+}
+
+.zoom-container img {
+  display: block;
+  max-width: none;
+}
