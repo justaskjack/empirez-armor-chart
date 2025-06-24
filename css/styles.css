@@ -850,7 +850,7 @@ header.navbar {
   align-items: flex-start;
   background-color: #222;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: 1px solid #444;
   border-radius: 8px;
   width: 100%;
@@ -858,7 +858,8 @@ header.navbar {
 }
 
 .tip-content {
-  flex: 1;
+  flex: 0 0 60%;
+  max-width: 60%;
 }
 
 .tip-content h3 {
@@ -872,18 +873,19 @@ header.navbar {
   margin: 0.5rem 0 0 0;
   color: #ccc;
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .tip-gallery {
+  flex: 0 0 38%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  max-width: 360px;
+  justify-content: flex-end;
 }
 
 .tip-gallery img {
-  width: 100px;
+  width: 140px;
   height: auto;
   cursor: pointer;
   border-radius: 4px;
@@ -893,5 +895,4 @@ header.navbar {
 .tip-gallery img:hover {
   outline: 2px solid #aaa;
 }
-
 
