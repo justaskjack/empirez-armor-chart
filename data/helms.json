@@ -661,7 +661,7 @@
     "image": "Arc Trooper Phase 2 01.png",
     "col": 2,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Arc Trooper Phase 2 02",
