@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Map Hotspot Editor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .editor-header {
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .map-container {
+      position: relative;
+      width: 100vw;
+      height: calc(100vh - 60px);
+      overflow: auto;
+      background: #111;
+    }
+    .map-container img {
+      display: block;
+      max-width: none;
+    }
+    .hotspot {
+      position: absolute;
+      border: 2px dashed red;
+      background: rgba(255, 0, 0, 0.2);
+    }
+    .export-area {
+      width: 100%;
+      height: 200px;
+    }
+    .form-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.8);
+      padding: 10px;
+      color: white;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+<div class="editor-header">
+  <div>
+    <strong>Hotspot Editor</strong> — Click and drag on the map to create hotspots
+  </div>
+  <button onclick="exportHotspots()">Export JSON</button>
+</div>
+
+<div class="map-container" id="mapContainer">
+  <img src="images/maps/Imperial Bunker Map.png" id="mapImage" alt="Map">
+</div>
+
+<textarea id="exportOutput" class="export-area" placeholder="Exported JSON will appear here..."></textarea>
+
+<script>
+  const mapContainer = document.getElementById('mapContainer');
+  const mapImage = document.getElementById('mapImage');
+  const exportOutput = document.getElementById('exportOutput');
+  const hotspots = [];
+
+  let isDrawing = false;
+  let startX, startY, hotspotEl;
+
+  mapContainer.addEventListener("mousedown", (e) => {
+    if (e.target !== mapImage) return;
+
+    isDrawing = true;
+    const rect = mapContainer.getBoundingClientRect();
+    startX = e.clientX - rect.left + mapContainer.scrollLeft;
+    startY = e.clientY - rect.top + mapContainer.scrollTop;
+
+    hotspotEl = document
