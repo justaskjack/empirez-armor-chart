@@ -1,205 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Hotspot Editor</title>
   <style>
-    body { margin: 0; background: #111; color: white; font-family: sans-serif; }
-    #container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      height: 100%;
       overflow: hidden;
-      cursor: crosshair;
     }
+
+    #editor-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #editor-toolbar {
+      background: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #editor-toolbar button {
+      padding: 6px 12px;
+      background: #444;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #editor-container {
+      flex: 1;
+      overflow: scroll;
+      position: relative;
+      cursor: grab;
+    }
+
     #map {
-      position: absolute;
-      top: 0; left: 0;
-      transform-origin: top left;
+      position: relative;
+      display: block;
+      user-select: none;
     }
+
     .hotspot {
       position: absolute;
       border: 2px solid yellow;
       box-sizing: border-box;
+      resize: both;
+      overflow: hidden;
     }
-    .hotspot.resizable::after {
-      content: "";
+
+    .hotspot.selected {
+      outline: 2px solid cyan;
+    }
+
+    .hotspot .delete {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 12px;
-      height: 12px;
-      background: yellow;
-      cursor: nwse-resize;
-    }
-    #export {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #333;
+      top: -10px;
+      right: -10px;
+      background: red;
       color: white;
-      padding: 10px 20px;
-      border: 1px solid #555;
-      border-radius: 6px;
+      font-size: 12px;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
     }
+
     #output {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      width: 400px;
-      height: 250px;
-      background: #222;
-      border: 1px solid #444;
-      overflow: auto;
+      white-space: pre-wrap;
+      background: #000;
       padding: 10px;
+      font-family: monospace;
       font-size: 0.85rem;
+      height: 150px;
+      overflow: auto;
+      margin: 0;
+      border-top: 1px solid #444;
     }
   </style>
 </head>
 <body>
+  <div id="editor-wrapper">
+    <div id="editor-toolbar">
+      <span>Click and drag to create/move hotspots. Resize corners. Double-click to edit image path.</span>
+      <button onclick="exportHotspots()">Export JSON</button>
+    </div>
+    <div id="editor-container">
+      <img id="map" src="images/maps/Imperial Bunker Map.png" alt="Map" />
+    </div>
+    <div id="output"></div>
+  </div>
 
-<div id="container">
-  <img id="map" src="images/maps/Imperial Bunker Map.png">
-</div>
+  <script>
+    const container = document.getElementById('editor-container');
+    const map = document.getElementById('map');
+    const output = document.getElementById('output');
+    let drawing = false, startX = 0, startY = 0;
+    let selectedHotspot = null;
 
-<pre id="output"></pre>
-<button id="export">Export JSON</button>
+    // Pan support
+    let isPanning = false;
+    let panStartX, panStartY, scrollLeft, scrollTop;
 
-<script>
-const container = document.getElementById("container");
-const map = document.getElementById("map");
-const output = document.getElementById("output");
-let scale = 1;
-let offsetX = 0;
-let offsetY = 0;
-let isDraggingMap = false;
-let startX, startY;
+    container.addEventListener('mousedown', e => {
+      if (e.target !== container && !e.target.classList.contains('hotspot')) return;
+      if (e.button !== 0) return;
+      isPanning = true;
+      container.style.cursor = 'grabbing';
+      panStartX = e.pageX;
+      panStartY = e.pageY;
+      scrollLeft = container.scrollLeft;
+      scrollTop = container.scrollTop;
+    });
 
-const hotspots = [];
+    container.addEventListener('mouseup', () => {
+      isPanning = false;
+      container.style.cursor = 'grab';
+    });
 
-map.onload = () => {
-  // Zoom to fit
-  const scaleX = container.clientWidth / map.naturalWidth;
-  const scaleY = container.clientHeight / map.naturalHeight;
-  scale = Math.min(scaleX, scaleY);
-  offsetX = (container.clientWidth - map.naturalWidth * scale) / 2;
-  offsetY = (container.clientHeight - map.naturalHeight * scale) / 2;
-  updateTransform();
-};
+    container.addEventListener('mousemove', e => {
+      if (!isPanning) return;
+      container.scrollLeft = scrollLeft - (e.pageX - panStartX);
+      container.scrollTop = scrollTop - (e.pageY - panStartY);
+    });
 
-function updateTransform() {
-  map.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-  document.querySelectorAll(".hotspot").forEach(h => {
-    const data = h.dataset;
-    h.style.left = offsetX + parseFloat(data.x) * scale + "px";
-    h.style.top = offsetY + parseFloat(data.y) * scale + "px";
-    h.style.width = parseFloat(data.w) * scale + "px";
-    h.style.height = parseFloat(data.h) * scale + "px";
-  });
-}
+    map.addEventListener('mousedown', e => {
+      if (e.button !== 0) return;
+      drawing = true;
+      const rect = map.getBoundingClientRect();
+      startX = e.pageX - rect.left + container.scrollLeft;
+      startY = e.pageY - rect.top + container.scrollTop;
 
-container.addEventListener("wheel", e => {
-  e.preventDefault();
-  const zoomFactor = 0.1;
-  const delta = e.deltaY < 0 ? 1 + zoomFactor : 1 - zoomFactor;
-  const newScale = Math.min(Math.max(scale * delta, 0.2), 3);
-  const rect = container.getBoundingClientRect();
-  const dx = e.clientX - rect.left;
-  const dy = e.clientY - rect.top;
-  offsetX -= dx * (newScale / scale - 1);
-  offsetY -= dy * (newScale / scale - 1);
-  scale = newScale;
-  updateTransform();
-});
+      const div = document.createElement('div');
+      div.className = 'hotspot selected';
+      div.style.left = `${startX}px`;
+      div.style.top = `${startY}px`;
+      div.dataset.image = '';
 
-container.addEventListener("mousedown", e => {
-  if (e.button !== 0) return;
-  const box = container.getBoundingClientRect();
-  const x = (e.clientX - box.left - offsetX) / scale;
-  const y = (e.clientY - box.top - offsetY) / scale;
+      const delBtn = document.createElement('button');
+      delBtn.className = 'delete';
+      delBtn.innerText = '×';
+      delBtn.onclick = e2 => {
+        e2.stopPropagation();
+        div.remove();
+      };
 
-  const div = document.createElement("div");
-  div.className = "hotspot resizable";
-  div.dataset.x = x;
-  div.dataset.y = y;
-  div.dataset.w = 50;
-  div.dataset.h = 50;
+      div.appendChild(delBtn);
+      map.parentElement.appendChild(div);
+      selectedHotspot = div;
 
-  enableHotspotBehavior(div);
-  container.appendChild(div);
-  hotspots.push(div);
-  updateTransform();
-});
+      const move = e2 => {
+        const currentX = e2.pageX - rect.left + container.scrollLeft;
+        const currentY = e2.pageY - rect.top + container.scrollTop;
+        const width = currentX - startX;
+        const height = currentY - startY;
+        div.style.width = `${Math.abs(width)}px`;
+        div.style.height = `${Math.abs(height)}px`;
+        div.style.left = `${width < 0 ? currentX : startX}px`;
+        div.style.top = `${height < 0 ? currentY : startY}px`;
+      };
 
-function enableHotspotBehavior(div) {
-  // Drag
-  div.addEventListener("mousedown", e => {
-    if (e.button === 2) {
-      e.preventDefault();
-      div.remove();
-      hotspots.splice(hotspots.indexOf(div), 1);
-      return;
-    }
+      const up = () => {
+        drawing = false;
+        document.removeEventListener('mousemove', move);
+        document.removeEventListener('mouseup', up);
+      };
 
-    if (e.target === div) {
-      e.stopPropagation();
-      let sx = e.clientX, sy = e.clientY;
-      const ox = parseFloat(div.dataset.x);
-      const oy = parseFloat(div.dataset.y);
-      function move(ev) {
-        const dx = (ev.clientX - sx) / scale;
-        const dy = (ev.clientY - sy) / scale;
-        div.dataset.x = ox + dx;
-        div.dataset.y = oy + dy;
-        updateTransform();
+      document.addEventListener('mousemove', move);
+      document.addEventListener('mouseup', up);
+    });
+
+    map.parentElement.addEventListener('click', e => {
+      document.querySelectorAll('.hotspot').forEach(h => h.classList.remove('selected'));
+      if (e.target.classList.contains('hotspot')) {
+        e.target.classList.add('selected');
+        selectedHotspot = e.target;
       }
-      function up() {
-        document.removeEventListener("mousemove", move);
-        document.removeEventListener("mouseup", up);
-      }
-      document.addEventListener("mousemove", move);
-      document.addEventListener("mouseup", up);
+    });
+
+    map.parentElement.addEventListener('dblclick', e => {
+      if (!e.target.classList.contains('hotspot')) return;
+      const img = prompt("Enter path to screenshot image:", e.target.dataset.image || "");
+      if (img !== null) e.target.dataset.image = img;
+    });
+
+    function exportHotspots() {
+      const hots = Array.from(document.querySelectorAll('.hotspot')).map(h => {
+        const rect = h.getBoundingClientRect();
+        const parentRect = map.getBoundingClientRect();
+        return {
+          x: Math.round(h.offsetLeft),
+          y: Math.round(h.offsetTop),
+          width: Math.round(h.offsetWidth),
+          height: Math.round(h.offsetHeight),
+          image: h.dataset.image || ""
+        };
+      });
+      output.textContent = JSON.stringify(hots, null, 2);
     }
-  });
-
-  // Resize
-  div.addEventListener("mousedown", e => {
-    if (!e.target.matches(".resizable::after")) return;
-    e.stopPropagation();
-    let sx = e.clientX, sy = e.clientY;
-    const ow = parseFloat(div.dataset.w);
-    const oh = parseFloat(div.dataset.h);
-    function resize(ev) {
-      const dw = (ev.clientX - sx) / scale;
-      const dh = (ev.clientY - sy) / scale;
-      div.dataset.w = Math.max(10, ow + dw);
-      div.dataset.h = Math.max(10, oh + dh);
-      updateTransform();
-    }
-    function stop() {
-      document.removeEventListener("mousemove", resize);
-      document.removeEventListener("mouseup", stop);
-    }
-    document.addEventListener("mousemove", resize);
-    document.addEventListener("mouseup", stop);
-  });
-}
-
-document.getElementById("export").addEventListener("click", () => {
-  const result = hotspots.map(h => ({
-    x: parseFloat(h.dataset.x),
-    y: parseFloat(h.dataset.y),
-    width: parseFloat(h.dataset.w),
-    height: parseFloat(h.dataset.h),
-    image: "rooms/IB Map XX.png"
-  }));
-  output.textContent = JSON.stringify(result, null, 2);
-});
-
-// Prevent context menu
-window.addEventListener("contextmenu", e => e.preventDefault());
-</script>
-
+  </script>
 </body>
 </html>
