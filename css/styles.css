@@ -846,20 +846,19 @@ header.navbar {
 
 .tip-card {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #222;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
   border: 1px solid #444;
-  border-radius: 8px;
-  width: 100%;
-  gap: 1rem;
+  border-radius: 6px;
+  background: #111;
+  margin: 20px 0;
+  padding: 20px;
 }
 
 .tip-content {
-  flex: 0 0 48%;
-  max-width: 48%;
+  flex: 1 1 30%;
+  min-width: 250px;
+  max-width: 30%;
+  margin-right: 20px;
 }
 
 .tip-content h3 {
@@ -877,11 +876,11 @@ header.navbar {
 }
 
 .tip-gallery {
-  flex: 0 0 50%;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: flex-end;
+  gap: 12px;
+  flex: 1 1 70%;
+  justify-content: flex-start;
 }
 
 .tip-gallery img {
