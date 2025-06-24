@@ -2,132 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive Map Hotspot Editor</title>
+  <title>Hotspot Editor</title>
   <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-    .editor-header {
-      padding: 10px;
-      background: #222;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .map-container {
+    body { margin: 0; background: #111; color: white; font-family: sans-serif; }
+    #container {
       position: relative;
       width: 100vw;
-      height: calc(100vh - 60px);
-      overflow: auto;
-      background: #111;
+      height: 100vh;
+      overflow: hidden;
+      cursor: crosshair;
     }
-    .map-container img {
-      display: block;
-      max-width: none;
+    #map {
+      position: absolute;
+      top: 0; left: 0;
+      transform-origin: top left;
     }
     .hotspot {
       position: absolute;
-      border: 2px dashed red;
-      background: rgba(255, 0, 0, 0.2);
+      border: 2px solid yellow;
+      box-sizing: border-box;
     }
-    .export-area {
-      width: 100%;
-      height: 200px;
-    }
-    .form-overlay {
+    .hotspot.resizable::after {
+      content: "";
       position: absolute;
-      top: 10px;
-      left: 10px;
-      background: rgba(0,0,0,0.8);
-      padding: 10px;
+      bottom: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+      background: yellow;
+      cursor: nwse-resize;
+    }
+    #export {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
       color: white;
-      z-index: 10;
+      padding: 10px 20px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #output {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 400px;
+      height: 250px;
+      background: #222;
+      border: 1px solid #444;
+      overflow: auto;
+      padding: 10px;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
 
-<div class="editor-header">
-  <div>
-    <strong>Hotspot Editor</strong> — Click and drag on the map to create hotspots
-  </div>
-  <button onclick="exportHotspots()">Export JSON</button>
+<div id="container">
+  <img id="map" src="images/maps/Imperial Bunker Map.png">
 </div>
 
-<div class="map-container" id="mapContainer">
-  <img src="images/maps/Imperial Bunker Map.png" id="mapImage" alt="Map">
-</div>
-
-<textarea id="exportOutput" class="export-area" placeholder="Exported JSON will appear here..."></textarea>
+<pre id="output"></pre>
+<button id="export">Export JSON</button>
 
 <script>
-  const mapContainer = document.getElementById('mapContainer');
-  const mapImage = document.getElementById('mapImage');
-  const exportOutput = document.getElementById('exportOutput');
-  const hotspots = [];
+const container = document.getElementById("container");
+const map = document.getElementById("map");
+const output = document.getElementById("output");
+let scale = 1;
+let offsetX = 0;
+let offsetY = 0;
+let isDraggingMap = false;
+let startX, startY;
 
-  let isDrawing = false;
-  let startX, startY, hotspotEl;
+const hotspots = [];
 
-  mapContainer.addEventListener("mousedown", (e) => {
-    if (e.target !== mapImage) return;
+map.onload = () => {
+  // Zoom to fit
+  const scaleX = container.clientWidth / map.naturalWidth;
+  const scaleY = container.clientHeight / map.naturalHeight;
+  scale = Math.min(scaleX, scaleY);
+  offsetX = (container.clientWidth - map.naturalWidth * scale) / 2;
+  offsetY = (container.clientHeight - map.naturalHeight * scale) / 2;
+  updateTransform();
+};
 
-    isDrawing = true;
-    const rect = mapContainer.getBoundingClientRect();
-    startX = e.clientX - rect.left + mapContainer.scrollLeft;
-    startY = e.clientY - rect.top + mapContainer.scrollTop;
-
-    hotspotEl = document.createElement("div");
-    hotspotEl.className = "hotspot";
-    hotspotEl.style.left = `${startX}px`;
-    hotspotEl.style.top = `${startY}px`;
-    mapContainer.appendChild(hotspotEl);
+function updateTransform() {
+  map.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+  document.querySelectorAll(".hotspot").forEach(h => {
+    const data = h.dataset;
+    h.style.left = offsetX + parseFloat(data.x) * scale + "px";
+    h.style.top = offsetY + parseFloat(data.y) * scale + "px";
+    h.style.width = parseFloat(data.w) * scale + "px";
+    h.style.height = parseFloat(data.h) * scale + "px";
   });
+}
 
-  mapContainer.addEventListener("mousemove", (e) => {
-    if (!isDrawing) return;
-    const rect = mapContainer.getBoundingClientRect();
-    const currX = e.clientX - rect.left + mapContainer.scrollLeft;
-    const currY = e.clientY - rect.top + mapContainer.scrollTop;
+container.addEventListener("wheel", e => {
+  e.preventDefault();
+  const zoomFactor = 0.1;
+  const delta = e.deltaY < 0 ? 1 + zoomFactor : 1 - zoomFactor;
+  const newScale = Math.min(Math.max(scale * delta, 0.2), 3);
+  const rect = container.getBoundingClientRect();
+  const dx = e.clientX - rect.left;
+  const dy = e.clientY - rect.top;
+  offsetX -= dx * (newScale / scale - 1);
+  offsetY -= dy * (newScale / scale - 1);
+  scale = newScale;
+  updateTransform();
+});
 
-    const width = currX - startX;
-    const height = currY - startY;
+container.addEventListener("mousedown", e => {
+  if (e.button !== 0) return;
+  const box = container.getBoundingClientRect();
+  const x = (e.clientX - box.left - offsetX) / scale;
+  const y = (e.clientY - box.top - offsetY) / scale;
 
-    hotspotEl.style.width = `${Math.abs(width)}px`;
-    hotspotEl.style.height = `${Math.abs(height)}px`;
-    hotspotEl.style.left = `${width < 0 ? currX : startX}px`;
-    hotspotEl.style.top = `${height < 0 ? currY : startY}px`;
-  });
+  const div = document.createElement("div");
+  div.className = "hotspot resizable";
+  div.dataset.x = x;
+  div.dataset.y = y;
+  div.dataset.w = 50;
+  div.dataset.h = 50;
 
-  mapContainer.addEventListener("mouseup", () => {
-    if (!isDrawing) return;
-    isDrawing = false;
+  enableHotspotBehavior(div);
+  container.appendChild(div);
+  hotspots.push(div);
+  updateTransform();
+});
 
-    const rect = hotspotEl.getBoundingClientRect();
-    const containerRect = mapContainer.getBoundingClientRect();
-    const x = rect.left - containerRect.left + mapContainer.scrollLeft;
-    const y = rect.top - containerRect.top + mapContainer.scrollTop;
-    const width = rect.width;
-    const height = rect.height;
-
-    const imagePath = prompt("Enter the path to the full image (e.g. rooms/IB Map 01.png):");
-    if (!imagePath) {
-      hotspotEl.remove();
+function enableHotspotBehavior(div) {
+  // Drag
+  div.addEventListener("mousedown", e => {
+    if (e.button === 2) {
+      e.preventDefault();
+      div.remove();
+      hotspots.splice(hotspots.indexOf(div), 1);
       return;
     }
 
-    hotspots.push({ x: Math.round(x), y: Math.round(y), width: Math.round(width), height: Math.round(height), image: imagePath });
+    if (e.target === div) {
+      e.stopPropagation();
+      let sx = e.clientX, sy = e.clientY;
+      const ox = parseFloat(div.dataset.x);
+      const oy = parseFloat(div.dataset.y);
+      function move(ev) {
+        const dx = (ev.clientX - sx) / scale;
+        const dy = (ev.clientY - sy) / scale;
+        div.dataset.x = ox + dx;
+        div.dataset.y = oy + dy;
+        updateTransform();
+      }
+      function up() {
+        document.removeEventListener("mousemove", move);
+        document.removeEventListener("mouseup", up);
+      }
+      document.addEventListener("mousemove", move);
+      document.addEventListener("mouseup", up);
+    }
   });
 
-  function exportHotspots() {
-    const output = {
-      image: "maps/Imperial Bunker Map.png",
-      hotspots
-    };
-    exportOutput.value = JSON.stringify(output, null, 2);
-  }
+  // Resize
+  div.addEventListener("mousedown", e => {
+    if (!e.target.matches(".resizable::after")) return;
+    e.stopPropagation();
+    let sx = e.clientX, sy = e.clientY;
+    const ow = parseFloat(div.dataset.w);
+    const oh = parseFloat(div.dataset.h);
+    function resize(ev) {
+      const dw = (ev.clientX - sx) / scale;
+      const dh = (ev.clientY - sy) / scale;
+      div.dataset.w = Math.max(10, ow + dw);
+      div.dataset.h = Math.max(10, oh + dh);
+      updateTransform();
+    }
+    function stop() {
+      document.removeEventListener("mousemove", resize);
+      document.removeEventListener("mouseup", stop);
+    }
+    document.addEventListener("mousemove", resize);
+    document.addEventListener("mouseup", stop);
+  });
+}
+
+document.getElementById("export").addEventListener("click", () => {
+  const result = hotspots.map(h => ({
+    x: parseFloat(h.dataset.x),
+    y: parseFloat(h.dataset.y),
+    width: parseFloat(h.dataset.w),
+    height: parseFloat(h.dataset.h),
+    image: "rooms/IB Map XX.png"
+  }));
+  output.textContent = JSON.stringify(result, null, 2);
+});
+
+// Prevent context menu
+window.addEventListener("contextmenu", e => e.preventDefault());
 </script>
 
 </body>
