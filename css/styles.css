@@ -762,4 +762,58 @@ header.navbar {
   border: 2px solid #444;
 }
 
+/* === INTERACTIVE MAP OVERLAY === */
+.interactive-map-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactive-map-content {
+  position: relative;
+  background: #111;
+  padding: 10px;
+  border: 2px solid #888;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+}
+
+.interactive-map-scroll {
+  overflow: scroll;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: grab;
+  position: relative;
+}
+
+.draggable-map {
+  display: block;
+  max-width: none;
+}
+
+.interactive-map-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 28px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.map-hotspot {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 0, 0.8);
+  background-color: rgba(255, 255, 0, 0.2);
+  cursor: pointer;
+}
 
