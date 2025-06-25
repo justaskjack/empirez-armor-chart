@@ -581,7 +581,7 @@
     "image": "Purge Trooper Helmet 02.png",
     "col": 6,
     "row": 12,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet",
