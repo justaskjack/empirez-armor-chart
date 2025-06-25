@@ -1,7 +1,49 @@
 [
   {
     "name": "Red Imperial Astromech Droids",
-    "notes": "These loot droids can be found in random locations across the entire map, including inside wrecked cars and on top of buildings. To unlock them, you need the matching red color Datacard. These datacards are created by combining a matching Red Star Map with an Empty Datacard. Star Maps and Empty Datacards can both be found inside the Imperial Bunker in the toxic zone. Empty Datacards can also be found as loot on red or black B1 Battle Droids. It is best practice to put a round into the droid after you loot it, so it's status shows as red/ruined. This is to ensure a faster despawn. The Datacard is single use and will be ruined after you unlock the droid. Many people place the ruined Datacard inside the droid before blasting it instead of dropping it on the ground so they despawn together. The Red droids typically drop one or two pieces of character armor sets (Captain Phasma, Darth Talon), a regular or Overkill lightsaber, a single Jedi or Sith Medallion, and random T2 armor pieces (Cpt. Rex Helmet, Bad Batch, Republic Commando or Purge Trooper armor pieces).",
+    "notes": "<p>
+    The Red loot droids can be found in random locations across the entire map, including inside wrecked cars and on top of buildings.&nbsp;
+</p>
+<p>
+    To unlock it you need the Red Datacard.&nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<ul>
+    <li>
+        The Red Datacards are created by combining a matching Red Star Map with an Empty Datacard. 
+    </li>
+    <li>
+        Star Maps and Empty Datacards can both be found inside the Imperial Bunker in the toxic zone. 
+    </li>
+    <li>
+        Empty Datacards can also be found as loot on red or black B1 Battle Droids. 
+    </li>
+    <li>
+        The Datacard is single-use and will be ruined after you unlock the droid.
+    </li>
+</ul>
+<p>
+    &nbsp;
+</p>
+<p>
+    The Red droids typically drop:
+</p>
+<ul>
+    <li>
+        One or two pieces of character armor sets (Captain Phasma, Darth Talon)
+    </li>
+    <li>
+        A regular or Overkill lightsaber
+    </li>
+    <li>
+        A single Jedi or Sith Medallion
+    </li>
+    <li>
+        Random T2 armor pieces (Cpt. Rex Helmet, Bad Batch, Republic Commando or Purge Trooper armor pieces)
+    </li>
+</ul>",
     "gallery": [
       "tips/tips-01-01.png",
       "tips/tips-01-02.png",
