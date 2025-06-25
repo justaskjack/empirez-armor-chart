@@ -5,7 +5,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "Starter Gear"
+    "location": "Starter Gear",
+            "collected": true
   },
         {
     "name": "Stormtrooper",
@@ -111,7 +112,8 @@
     "type": "Character armor sets",
     "protection": 1,
     "rarity": "Uncommon",
-    "location": "Tiers 2, 3 & 4"
+    "location": "Tiers 2, 3 & 4",
+            "collected": true
   },
       {
     "name": "Tuskan Set (Black Variant)",
@@ -119,7 +121,8 @@
     "type": "Character armor sets",
     "protection": 1,
     "rarity": "Uncommon",
-    "location": "Tiers 2, 3 & 4"
+    "location": "Tiers 2, 3 & 4",
+            "collected": true
   },
       {
     "name": "Nute Gunray Set",
@@ -154,7 +157,8 @@
     "type": "Special Troop armor",
     "protection": "2",
     "rarity": "Rare",
-    "location": "Sith Temple"
+    "location": "Sith Temple",
+                  "collected": true
   },
         {
     "name": "Commander Wolffe Set",
@@ -189,7 +193,8 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Imperial Bunker"
+    "location": "Imperial Bunker",
+                                "collected": true
   },
                                 {
     "name": "Shadow Clone Trooper Set",
@@ -329,6 +334,15 @@
     "rarity": "Legendary",
     "location": "Tier 3"
   },
+                {
+    "name": "Leia Set",
+    "image": "Leia Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "",
+                "collected": true
+  },
           {
     "name": "Boba Fett Set",
     "image": "Boba Fett Set.png",
@@ -405,7 +419,8 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids"
+    "location": "Astromech Droids",
+                          "collected": true
   },
               {
     "name": "Captain Enoch Set",
@@ -447,7 +462,8 @@
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Mando Safe"
+    "location": "Mando Safe",
+                "collected": true
   },
                 {
     "name": "Andromeda Set",
@@ -508,7 +524,8 @@
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
-    "location": "Black Astromech Droid"
+    "location": "Black Astromech Droid",
+                      "collected": true
   },
                 {
     "name": "Grey Jedi Set (Khaki Variant)",
