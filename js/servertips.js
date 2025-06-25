@@ -13,7 +13,7 @@ fetch("data/servertips.json")
       title.textContent = tip.name;
 
       const notes = document.createElement("p");
-      notes.textContent = tip.notes;
+      notes.innerHTML = tip.notes;
 
       content.appendChild(title);
       content.appendChild(notes);
