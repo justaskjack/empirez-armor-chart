@@ -101,7 +101,7 @@
     "image": "Hood 01.png",
     "col": 6,
     "row": 21,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Hood 02",
@@ -149,7 +149,7 @@
     "image": "Ballistic Helmet 01.png",
     "col": 5,
     "row": 20,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Beret 01",
@@ -157,7 +157,7 @@
     "image": "Beret 01.png",
     "col": 7,
     "row": 20,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Police Cap 01",
@@ -197,7 +197,7 @@
     "image": "Gas Mask 01.png",
     "col": 3,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Riot Helmet",
@@ -221,7 +221,7 @@
     "image": "Tacmask.png",
     "col": 6,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Pilot Helmet",
@@ -237,7 +237,7 @@
     "image": "Flight Helmet.png",
     "col": 8,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Firefighter Helmet 02",
@@ -621,7 +621,7 @@
     "image": "Andromeda Head.png",
     "col": 2,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "General Grievous Head",
@@ -645,7 +645,7 @@
     "image": "Battle Droid Head.png",
     "col": 4,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Rex Helmet",
@@ -1205,7 +1205,7 @@
     "image": "Darth Talon Head.png",
     "col": 4,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Darth Nihilus Helmet",
