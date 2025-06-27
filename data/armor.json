@@ -340,7 +340,7 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "",
+    "location": "Cloud City",
                 "collected": true
   },
           {
@@ -350,6 +350,15 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Jabbas Palace",
+                "collected": true
+  },
+                {
+    "name": "ESB Boba Fett Set",
+    "image": "ESB Boba Fett Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Cloud City",
                 "collected": true
   },
     {
