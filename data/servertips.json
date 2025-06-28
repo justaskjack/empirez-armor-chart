@@ -10,6 +10,14 @@
     ]
   },
     {
+    "name": "Green Imperial Astromech Droids",
+    "notes": "<p> The Green loot droids can be found in random locations across the entire map, including at tie crashes and inside buildings.&nbsp;</p><p> To unlock it you need a Green Datacard.&nbsp;</p><ul> <li> The Green Datacards are created by combining a Green Star Map with an Empty Datacard. </li> <li> Star Maps and Empty Datacards can both be found inside the Imperial Bunker in the toxic zone. </li> <li> Empty Datacards can also be found as loot on red or black B1 Battle Droids. </li> <li> The Datacard is single-use and will be ruined after you unlock the droid. </li></ul><p> The Green droids typically drop:</p><ul> <li> One or two pieces of character armor sets (Captain Phasma) </li> <li> A regular or Overkill lightsaber </li> <li> A single Jedi or Sith Medallion </li> <li> Random T2 armor pieces (Purge Trooper armor pieces) </li></ul>",
+    "gallery": [
+      "tips/tips-07-01.png",
+      "tips/tips-07-02.png"
+    ]
+  },
+    {
     "name": "Black Imperial Astromech Droids",
     "notes": "<p> The Black loot droids can be found in random locations across the entire map, including inside military barracks and nests.&nbsp;</p><p> &nbsp;</p><p> To unlock it you need a Black Datacard.</p><p> &nbsp;</p><ul> <li> The Black datacards are found as ground loot inside the locked portion of the Sith Temple. </li> <li> The Sith Temple is unlocked with a Sith Holocron. </li> <li> A Sith Holocron is created by combining 2 Sith Kyber Crystals. </li> <li> Sith Kyber Crystals can be found in the Imperial Bunker in the toxic zone. </li> <li> The Datacard is single use and will be ruined after you unlock the droid. </li></ul><p> &nbsp;</p><p> The Black droids typically drop:</p><ul> <li> One of the 2 Gray Jedi full sets </li> <li> A Jedi and/or Sith Medallion </li></ul>",
     "gallery": [
