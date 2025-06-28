@@ -1,5 +1,40 @@
 [
   {
+    "name": "BD1",
+    "slots": "250",
+    "thumb": "Backpack 10 - thumb.png",
+    "image": "Backpack 10.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "BD2",
+    "slots": "250",
+    "thumb": "Backpack 11 - thumb.png",
+    "image": "Backpack 11.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Utility Pack (Front facing Yoda)",
+    "slots": "250",
+    "thumb": "Backpack 12 - thumb.png",
+    "image": "Backpack 12.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Utility Pack (Rear facing Yoda)",
+    "slots": "250",
+    "thumb": "Backpack 09 - thumb.png",
+    "image": "Backpack 09.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
+    "name": "Battle Droid Pack",
+    "slots": "150",
+    "thumb": "Backpack 08 - thumb.png",
+    "image": "Backpack 08.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+    {
     "name": "C3PO Backpack",
     "slots": "100",
     "thumb": "Backpack 03 - thumb.png",
@@ -12,6 +47,13 @@
     "thumb": "Backpack 01 - thumb.png",
     "image": "Backpack 01.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+      {
+    "name": "Mando Pack",
+    "slots": "80",
+    "thumb": "Backpack 13 - thumb.png",
+    "image": "Backpack 13.png",
+    "strapSlots": ["BP-Slot 04.png"]
   },
     {
     "name": "Galactic Marine Backpack",
