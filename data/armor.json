@@ -212,14 +212,6 @@
     "rarity": "Epic",
     "location": "Tiers 3 & 5"
   },
-                    {
-    "name": "Clone Trooper Set (Chrome Variant) (Legacy)",
-    "image": "Clone Trooper Set 05.png",
-    "type": "Special Clone armor",
-    "protection": 1,
-    "rarity": "Epic",
-    "location": "Admin"
-  },
               {
     "name": "Clone Trooper Set (Purple Variant)",
     "image": "Clone Trooper Set 03.png",
@@ -595,5 +587,13 @@
     "protection": 1,
     "rarity": "None",
     "location": "Admin Events"
+  },
+                          {
+    "name": "Clone Trooper Set (Chrome Variant) (Legacy)",
+    "image": "Clone Trooper Set 05.png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Epic",
+    "location": "Admin"
   }
 ]
