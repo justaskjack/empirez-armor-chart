@@ -213,12 +213,12 @@
     "location": "Tiers 3 & 5"
   },
                     {
-    "name": "Clone Trooper Set (Chrome Variant)",
+    "name": "Clone Trooper Set (Chrome Variant) (Legacy)",
     "image": "Clone Trooper Set 05.png",
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Sith Temple"
+    "location": "Admin"
   },
               {
     "name": "Clone Trooper Set (Purple Variant)",
