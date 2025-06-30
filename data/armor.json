@@ -74,27 +74,27 @@
     "location": "All tiers"
   },
       {
-    "name": "Vanilla Firefighter Gear (Red)",
+    "name": "Vanilla Firefighter Gear (Red) (Legacy)",
     "image": "Firefighter Gear 01 (Red).png",
     "type": "Vanilla DayZ Gear",
     "protection": 1,
-    "rarity": "Common",
+    "rarity": "None",
     "location": "All tiers"
   },
       {
-    "name": "Vanilla Firefighter Gear (Yellow)",
+    "name": "Vanilla Firefighter Gear (Yellow) (Legacy)",
     "image": "Firefighter Gear 02 (Yellow).png",
     "type": "Vanilla DayZ Gear",
     "protection": 1,
-    "rarity": "Common",
+    "rarity": "None",
     "location": "All tiers"
   },
         {
-    "name": "Construction Worker",
+    "name": "Construction Worker (Legacy)",
     "image": "Construction Worker 01.png",
     "type": "Vanilla DayZ Gear",
     "protection": 1,
-    "rarity": "Common",
+    "rarity": "None",
     "location": "All tiers"
   },
     {
@@ -202,7 +202,8 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                      "collected": true
   },
                                       {
     "name": "Bad Batch Hunter Set",
@@ -210,7 +211,8 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                            "collected": true
   },
               {
     "name": "Clone Trooper Set (Purple Variant)",
@@ -218,7 +220,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                    "collected": true
   },
                     {
     "name": "Clone Trooper Set (Red Variant)",
@@ -226,7 +229,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                          "collected": true
   },
                           {
     "name": "Clone Trooper Set (Blue Variant)",
@@ -234,7 +238,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                "collected": true
   },
                           {
     "name": "Clone Trooper Set (White Variant)",
@@ -242,7 +247,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                "collected": true
   },
                                 {
     "name": "Clone Trooper Set (Camo Variant)",
@@ -250,7 +256,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                      "collected": true
   },
                                 {
     "name": "Clone Trooper Set (Tan Variant)",
@@ -258,7 +265,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                      "collected": true
   },
                                 {
     "name": "Clone Trooper Set (Yellow Variant)",
@@ -266,7 +274,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                      "collected": true
   },
                                 {
     "name": "Shock Trooper Set (Purple Variant)",
@@ -274,7 +283,8 @@
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Epic",
-    "location": "Tiers 3 & 5"
+    "location": "Tiers 3 & 5",
+                                      "collected": true
   },
     {
     "name": "Republic Commando Armor (Katarn-class MK III)",
@@ -299,7 +309,8 @@
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
-    "location": "Tier 3"
+    "location": "Tier 3",
+            "collected": true
   },
             {
     "name": "Republic Commando Armor (Delta Squad - Boss)",
@@ -395,7 +406,8 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids"
+    "location": "Astromech Droids",
+              "collected": true
   },
               {
     "name": "Darth Revan Set",
@@ -593,7 +605,7 @@
     "image": "Clone Trooper Set 05.png",
     "type": "Special Clone armor",
     "protection": 1,
-    "rarity": "Epic",
+    "rarity": "None",
     "location": "Admin"
   }
 ]
