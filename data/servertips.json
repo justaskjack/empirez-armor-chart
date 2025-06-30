@@ -11,10 +11,11 @@
   },
     {
     "name": "Green Imperial Astromech Droids",
-    "notes": "<p> The Green loot droids can be found in random locations across the entire map, including at tie crashes and inside buildings.&nbsp;</p><p> To unlock it you need a Green Datacard.&nbsp;</p><ul> <li> The Green Datacards are created by combining a Green Star Map with an Empty Datacard. </li> <li> Star Maps and Empty Datacards can both be found inside the Imperial Bunker in the toxic zone. </li> <li> Empty Datacards can also be found as loot on red or black B1 Battle Droids. </li> <li> The Datacard is single-use and will be ruined after you unlock the droid. </li></ul><p> The Green droids typically drop:</p><ul> <li> One or two pieces of character armor sets (Captain Phasma) </li> <li> A regular or Overkill lightsaber </li> <li> A single Jedi or Sith Medallion </li> <li> Random T2 armor pieces (Purge Trooper armor pieces) </li></ul>",
+    "notes": "<p> The Green loot droids can be found in random locations across the entire map, including at tie crashes and inside buildings.&nbsp;</p><p> To unlock it you need a Green Datacard.&nbsp;</p><ul> <li> The Green Datacards are created by combining a Green Star Map with an Empty Datacard. </li> <li> Star Maps and Empty Datacards can both be found inside the Imperial Bunker in the toxic zone. </li> <li> Empty Datacards can also be found as loot on red or black B1 Battle Droids. </li> <li> The Datacard is single-use and will be ruined after you unlock the droid. </li></ul><p> The Green droids typically drop:</p><ul> <li> One or two pieces of character armor sets (Captain Phasma) </li> <li> A regular or Overkill lightsaber </li> <li> A single Jedi or Sith Medallion </li> <li> Random T2 armor pieces (Purge Trooper, Arc Trooper, Bad Batch armor pieces) </li></ul>",
     "gallery": [
       "tips/tips-07-01.png",
-      "tips/tips-07-02.png"
+      "tips/tips-07-02.png",
+      "tips/tips-07-03.png"
     ]
   },
     {
@@ -27,13 +28,14 @@
   },
       {
     "name": "BB9E Loot Droids",
-    "notes": "<p> The BB9E loot droids can be found in random locations across the entire map, including inside military encampments and industrial areas. They are very small and can be easy to overlook.</p><p> &nbsp;</p><p> To unlock it you need a Gray Datacard.</p><p> &nbsp;</p><ul> <li> The Gray datacards are found as ground loot inside the locked portion of the Jedi Temple. </li> <li> The Jedi Temple is unlocked with a Jedi Holocron. </li> <li> A Jedi Holocron is created by combining 2 Jedi Kyber Crystals. </li> <li> Jedi Kyber Crystals can be found in the Imperial Bunker in the toxic zone. </li> <li> <p> The Datacard is single use and will be ruined after you unlock the droid. </p> <p> &nbsp; </p> </li></ul><p> The BB9E droids typically drop:</p><ul> <li> One full Sith set (Darth Vader, etc). <strong>Note: </strong>If you find the Darth Vader set, it will also include the Darth Vader Interrigation Droid which is a 200 slot shoulder storage item similar to the Probe Droids </li> <li> A Jedi and/or Sith Medallion </li></ul>",
+    "notes": "<p> The BB9E loot droids can be found in random locations across the entire map, including inside military encampments and industrial areas. They are very small and can be easy to overlook.</p><p> &nbsp;</p><p> To unlock it you need a Gray Datacard.</p><p> &nbsp;</p><ul> <li> The Gray datacards are found as ground loot inside the locked portion of the Jedi Temple. </li> <li> The Jedi Temple is unlocked with a Jedi Holocron. </li> <li> A Jedi Holocron is created by combining 2 Jedi Kyber Crystals. </li> <li> Jedi Kyber Crystals can be found in the Imperial Bunker in the toxic zone. </li> <li> <p> The Datacard is single use and will be ruined after you unlock the droid. </p> <p> &nbsp; </p> </li></ul><p> The BB9E droids typically drop:</p><ul> <li> One full Sith set (Darth Vader, Darth Nihilus, etc). <strong>Note: </strong>If you find the Darth Vader set, it will also include the Darth Vader Interrigation Droid which is a 200 slot shoulder storage item similar to the Probe Droids </li> <li> A Jedi and/or Sith Medallion </li><li> 25 Trade Federation Coins </li></ul>",
     "gallery": [
       "tips/tips-06-01.png",
       "tips/tips-06-02.png",
       "tips/tips-06-03.png",
       "tips/tips-06-04.png",
-      "tips/tips-06-05.png"
+      "tips/tips-06-05.png",
+      "tips/tips-06-06.png"
     ]
   },
       {
@@ -47,7 +49,8 @@
       "tips/tips-04-05.png",
       "tips/tips-04-06.png",
       "tips/tips-04-08.png",
-      "tips/tips-04-09.png"
+      "tips/tips-04-09.png",
+      "tips/tips-04-10.png"
     ]
   },
       {
