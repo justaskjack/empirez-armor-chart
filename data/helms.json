@@ -189,7 +189,7 @@
     "image": "Combat Gas Mask.png",
     "col": 2,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Gas Mask 01",
@@ -741,7 +741,7 @@
     "image": "Republic Commando Helmet 04.png",
     "col": 2,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 03",
@@ -757,7 +757,7 @@
     "image": "Republic Commando Helmet 02.png",
     "col": 4,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 05",
@@ -766,14 +766,6 @@
     "col": 5,
     "row": 9,
     "collected": true
-  },
-  {
-    "name": "Bad Batch Wrecker",
-    "thumb": "Bad Batch Wrecker - thumb.png",
-    "image": "Bad Batch Wrecker.png",
-    "col": 6,
-    "row": 9,
-    "collected": false
   },
   {
     "name": "Shock Commander Helmet 02",
@@ -1032,66 +1024,10 @@
     "collected": true
   },
   {
-    "name": "Mando Warrior Helmet",
-    "thumb": "Mando Warrior Helmet - thumb.png",
-    "image": "Mando Warrior Helmet.png",
-    "col": 2,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Mandalorian Helmet 02",
-    "thumb": "Mandalorian Helmet 02 - thumb.png",
-    "image": "Mandalorian Helmet 02.png",
-    "col": 3,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Mandalorian Helmet 03",
-    "thumb": "Mandalorian Helmet 03 - thumb.png",
-    "image": "Mandalorian Helmet 03.png",
-    "col": 4,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Mando Armorer Helmet",
-    "thumb": "Mando Armorer Helmet - thumb.png",
-    "image": "Mando Armorer Helmet.png",
-    "col": 5,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Paz Visla Helmet",
-    "thumb": "Paz Visla Helmet - thumb.png",
-    "image": "Paz Visla Helmet.png",
-    "col": 6,
-    "row": 5,
-    "collected": true
-  },
-  {
     "name": "Bad Batch Hunter Helmet",
     "thumb": "Bad Batch Hunter Helmet - thumb.png",
     "image": "Bad Batch Hunter Helmet.png",
     "col": 8,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Captain Enoch Helmet",
-    "thumb": "Captain Enoch Helmet - thumb.png",
-    "image": "Captain Enoch Helmet.png",
-    "col": 9,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Commander Gree Helmet Chrome",
-    "thumb": "Commander Gree Helmet Chrome - thumb.png",
-    "image": "Commander Gree Helmet Chrome.png",
-    "col": 10,
     "row": 5,
     "collected": true
   },
@@ -1224,58 +1160,10 @@
     "collected": true
   },
   {
-    "name": "Mime Mask",
-    "thumb": "Mime Mask - thumb.png",
-    "image": "Mime Mask.png",
+    "name": "Jedi Temple Guard Mask",
+    "thumb": "Jedi Temple Guard Mask - thumb.png",
+    "image": "Jedi Temple Guard Mask.png",
     "col": 10,
-    "row": 2,
-    "collected": true
-  },
-  {
-    "name": "Chewy Head",
-    "thumb": "Chewy Head - thumb.png",
-    "image": "Chewy Head.png",
-    "col": 1,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Jar Jar Binks Mask",
-    "thumb": "Jar Jar Binks Mask - thumb.png",
-    "image": "Jar Jar Binks Mask.png",
-    "col": 2,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Ahsoke Head",
-    "thumb": "Ahsoke Head - thumb.png",
-    "image": "Ahsoke Head.png",
-    "col": 3,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Bo Katan Helmet",
-    "thumb": "Bok Katan Helmet - thumb.png",
-    "image": "Bok Katan Helmet.png",
-    "col": 4,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Sabine Wren Helmet",
-    "thumb": "Sabine Wren Helmet - thumb.png",
-    "image": "Sabine Wren Helmet.png",
-    "col": 5,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Grey Jedi Mask 02",
-    "thumb": "Grey Jedi Mask 02 - thumb.png",
-    "image": "Grey Jedi Mask 02.png",
-    "col": 6,
     "row": 1,
     "collected": true
   },
@@ -1283,16 +1171,208 @@
     "name": "Grey Jedi Mask 01",
     "thumb": "Grey Jedi Mask 01 - thumb.png",
     "image": "Grey Jedi Mask 01.png",
+    "col": 9,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Grey Jedi Mask 02",
+    "thumb": "Grey Jedi Mask 02 - thumb.png",
+    "image": "Grey Jedi Mask 02.png",
+    "col": 8,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Sabine Wren Helmet",
+    "thumb": "Sabine Wren Helmet - thumb.png",
+    "image": "Sabine Wren Helmet.png",
     "col": 7,
     "row": 1,
     "collected": true
   },
   {
-    "name": "Jedi Temple Guard Mask",
-    "thumb": "Jedi Temple Guard Mask - thumb.png",
-    "image": "Jedi Temple Guard Mask.png",
-    "col": 8,
+    "name": "Bo Katan Helmet",
+    "thumb": "Bok Katan Helmet - thumb.png",
+    "image": "Bok Katan Helmet.png",
+    "col": 6,
     "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Ahsoke Head",
+    "thumb": "Ahsoke Head - thumb.png",
+    "image": "Ahsoke Head.png",
+    "col": 5,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Jar Jar Binks Mask",
+    "thumb": "Jar Jar Binks Mask - thumb.png",
+    "image": "Jar Jar Binks Mask.png",
+    "col": 4,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Chewy Head",
+    "thumb": "Chewy Head - thumb.png",
+    "image": "Chewy Head.png",
+    "col": 3,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "C3PO Head",
+    "thumb": "C3PO Head - thumb.png",
+    "image": "C3PO Head.png",
+    "col": 2,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Princess Leia Head",
+    "thumb": "Princess Leia Head - thumb.png",
+    "image": "Princess Leia Head.png",
+    "col": 1,
+    "row": 1,
+    "collected": false
+  },
+  {
+    "name": "Captain Phasma Helmet",
+    "thumb": "Captain Phasma Helmet - thumb.png",
+    "image": "Captain Phasma Helmet.png",
+    "col": 9,
+    "row": 2,
+    "collected": true
+  },
+  {
+    "name": "Cardboard Mask (Luke)",
+    "thumb": "Cardboard Mask (Luke) - thumb.png",
+    "image": "Cardboard Mask (Luke).png",
+    "col": 1,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Cardboard Mask (Yoda)",
+    "thumb": "Cardboard Mask (Yoda) - thumb.png",
+    "image": "Cardboard Mask (Yoda).png",
+    "col": 2,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Cardboard Mask (Leia)",
+    "thumb": "Cardboard Mask (Leia) - thumb.png",
+    "image": "Cardboard Mask (Leia).png",
+    "col": 3,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Mime Mask",
+    "thumb": "Mime Mask - thumb.png",
+    "image": "Mime Mask.png",
+    "col": 10,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Captain Enoch Helmet",
+    "thumb": "Captain Enoch Helmet - thumb.png",
+    "image": "Captain Enoch Helmet.png",
+    "col": 10,
+    "row": 2,
+    "collected": true
+  },
+  {
+    "name": "Commander Gree Helmet Chrome",
+    "thumb": "Commander Gree Helmet Chrome - thumb.png",
+    "image": "Commander Gree Helmet Chrome.png",
+    "col": 9,
+    "row": 7,
+    "collected": true
+  },
+  {
+    "name": "Bad Batch Wrecker",
+    "thumb": "Bad Batch Wrecker - thumb.png",
+    "image": "Bad Batch Wrecker.png",
+    "col": 9,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Bad Batch Crosshair Helmet",
+    "thumb": "Bad Batch Crosshair Helmet - thumb.png",
+    "image": "Bad Batch Crosshair Helmet.png",
+    "col": 10,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Paz Visla Helmet",
+    "thumb": "Paz Visla Helmet - thumb.png",
+    "image": "Paz Visla Helmet.png",
+    "col": 7,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Mando Armorer Helmet",
+    "thumb": "Mando Armorer Helmet - thumb.png",
+    "image": "Mando Armorer Helmet.png",
+    "col": 6,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Mandalorian Helmet 03",
+    "thumb": "Mandalorian Helmet 03 - thumb.png",
+    "image": "Mandalorian Helmet 03.png",
+    "col": 5,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Mandalorian Helmet 02",
+    "thumb": "Mandalorian Helmet 02 - thumb.png",
+    "image": "Mandalorian Helmet 02.png",
+    "col": 4,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Mando Warrior Helmet",
+    "thumb": "Mando Warrior Helmet - thumb.png",
+    "image": "Mando Warrior Helmet.png",
+    "col": 3,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Boba Fett Helmet ESB",
+    "thumb": "Boba Fett Helmet ESB - thumb.png",
+    "image": "Boba Fett Helmet ESB.png",
+    "col": 2,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Shoretrooper Helmet 02",
+    "thumb": "Shoretrooper Helmet 02 - thumb.png",
+    "image": "Shoretrooper Helmet 02.png",
+    "col": 10,
+    "row": 11,
+    "collected": true
+  },
+  {
+    "name": "Two Tubes",
+    "thumb": "Two Tubes - thumb.png",
+    "image": "Two Tubes.png",
+    "col": 5,
+    "row": 11,
     "collected": true
   }
 ]
