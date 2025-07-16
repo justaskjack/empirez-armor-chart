@@ -23,7 +23,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+               "collected": true
   },
         {
     "name": "Stormtrooper Sergeant",
@@ -31,7 +32,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+               "collected": true
   },
         {
     "name": "Stormtrooper Unit Leader",
@@ -39,7 +41,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+               "collected": true
   },
         {
     "name": "Stormtrooper Squad Leader",
@@ -47,7 +50,8 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+               "collected": true
   },
         {
     "name": "Stormsniper",
@@ -55,7 +59,71 @@
     "type": "Generic Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
-    "location": "All tiers"
+    "location": "All tiers",
+               "collected": true
+  },
+              {
+    "name": "Biker Scout Set",
+    "image": "Biker Scout Set.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                    {
+    "name": "Biker Scout Set (Black Variant)",
+    "image": "Biker Scout Set (Black Variant).png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                          {
+    "name": "Imperial Officer Set 01",
+    "image": "Imperial Officer Set 01.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                                {
+    "name": "Imperial Officer Set 02",
+    "image": "Imperial Officer Set 02.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                                      {
+    "name": "Rebel Pilot Set",
+    "image": "Rebel Pilot Set.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                                      {
+    "name": "Endor Rebel Set",
+    "image": "Endor Rebel Set.png",
+    "type": "Generic Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                                      {
+    "name": "Ghillie Monster Set",
+    "image": "Ghillie Monster Set.png",
+    "type": "Vanilla DayZ Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
   },
               {
     "name": "Stormtrooper Medic (Legacy)",
@@ -133,6 +201,33 @@
     "location": "Starter Gear",
             "collected": true
   },
+            {
+    "name": "Squid Head Set",
+    "image": "Squid Head Set.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tier 1-3",
+            "collected": true
+  },
+                  {
+    "name": "Sidon Ithano Set",
+    "image": "Sidon Ithano Set.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tier 1-3",
+            "collected": true
+  },
+                  {
+    "name": "Boushh Set",
+    "image": "Boushh Set.png",
+    "type": "Character armor sets",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "Tier 1-3",
+            "collected": true
+  },
     {
     "name": "Galactic Marine Armor",
     "image": "Galactic Marine Set.png",
@@ -145,6 +240,15 @@
       {
     "name": "Shore Trooper Armor",
     "image": "Shore Trooper Armor.png",
+    "type": "Special Troop armor",
+    "protection": "Mixed 1 & 2",
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+            "collected": true
+  },
+            {
+    "name": "Shore Trooper Captain Set",
+    "image": "ShoreTrooper Captain Set.png",
     "type": "Special Troop armor",
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
@@ -239,6 +343,33 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
+                                            "collected": true
+  },
+                                                  {
+    "name": "Geo Trooper Set",
+    "image": "Geo Trooper Set.png",
+    "type": "Special Troop armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Imperial Bunker",
+                                            "collected": true
+  },
+                                                        {
+    "name": "Barc Trooper Set (Camo Variant)",
+    "image": "Barc Trooper Set (Camo Variant).png",
+    "type": "Special Troop armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Imperial Bunker",
+                                            "collected": true
+  },
+                                                        {
+    "name": "Barc Trooper Set",
+    "image": "Barc Trooper Set.png",
+    "type": "Special Troop armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Hoth Bunker",
                                             "collected": true
   },
               {
@@ -412,6 +543,51 @@
                       {
     "name": "The Mandalorian (Beskar Variant)",
     "image": "The Mandalorian (Beskar Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                            {
+    "name": "Mando Armor Set (Gold Variant)",
+    "image": "Mando Armor Set (Gold Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                  {
+    "name": "Mando Armor Set (Black Variant)",
+    "image": "Mando Armor Set (Black Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                  {
+    "name": "Mando Armor Set (Green Variant)",
+    "image": "Mando Armor Set (Green Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                  {
+    "name": "Mando Armor Set (Blue Variant)",
+    "image": "Mando Armor Set (Blue Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                  {
+    "name": "Mando Armor Set (Red Variant)",
+    "image": "Mando Armor Set (Red Variant).png",
     "type": "Character Armor Sets",
     "protection": 2,
     "rarity": "Uncommon",
@@ -603,6 +779,15 @@
     "location": "Black Astromech Droid",
                       "collected": true
   },
+                      {
+    "name": "Darth Jar-Jar Set",
+    "image": "Darth Jar-Jar Set.png",
+    "type": "Jedi/Sith Sets",
+    "protection": 3,
+    "rarity": "Relic",
+    "location": "Unknown",
+                      "collected": true
+  },
     {
     "name": "NBC Suit (Yellow Variant)",
     "image": "NBC Set 01.png",
@@ -614,6 +799,15 @@
       {
     "name": "NBC Suit (Grey Variant)",
     "image": "NBC Set 02.png",
+    "type": "Gas Protection",
+    "protection": 0,
+    "rarity": "None",
+    "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones.",
+            "collected": true
+  },
+            {
+    "name": "NBC Suit (White Variant)",
+    "image": "NBC Set 03.png",
     "type": "Gas Protection",
     "protection": 0,
     "rarity": "None",
