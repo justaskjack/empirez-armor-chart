@@ -340,27 +340,27 @@
                 {
     "name": "Leia Set",
     "image": "Leia Set.png",
-    "type": "Supporting Character Sets",
+    "type": "Character Armor Sets",
     "protection": 2,
-    "rarity": "Mythic",
+    "rarity": "Uncommon",
     "location": "Cloud City",
                 "collected": true
   },
           {
     "name": "Boba Fett Set",
     "image": "Boba Fett Set.png",
-    "type": "Supporting Character Sets",
+    "type": "Character Armor Sets",
     "protection": 2,
-    "rarity": "Mythic",
+    "rarity": "Uncommon",
     "location": "Jabbas Palace",
                 "collected": true
   },
                 {
     "name": "ESB Boba Fett Set",
     "image": "ESB Boba Fett Set.png",
-    "type": "Supporting Character Sets",
+    "type": "Character Armor Sets",
     "protection": 2,
-    "rarity": "Mythic",
+    "rarity": "Uncommon",
     "location": "Cloud City",
                 "collected": true
   },
