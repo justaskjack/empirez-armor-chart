@@ -468,7 +468,8 @@
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
-    "location": "Astromech Droids"
+    "location": "Astromech Droids",
+          "collected": true
   },
       {
     "name": "Republic Commando Armor (Delta Squad - Sev)",
@@ -494,7 +495,8 @@
     "type": "Clone Commando Armor",
     "protection": 2,
     "rarity": "Legendary",
-    "location": "Mando Bunker"
+    "location": "Mando Bunker",
+                  "collected": true
   },
                   {
     "name": "Republic Commando Armor (Delta Squad - Fixer)",
@@ -645,7 +647,8 @@
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids"
+    "location": "Astromech Droids",
+                    "collected": true
   },
                     {
     "name": "KOTOR Sith Set",
@@ -697,7 +700,8 @@
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Admin Event"
+    "location": "Admin Event",
+                            "collected": true
   },
           {
     "name": "Battle Droid Set",
@@ -723,7 +727,8 @@
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
-    "location": "Astromech Droids"
+    "location": "Astromech Droids",
+                            "collected": true
   },
     {
     "name": "Darth Vader Set",
@@ -794,7 +799,8 @@
     "type": "Gas Protection",
     "protection": 0,
     "rarity": "None",
-    "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones."
+    "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones.",
+          "collected": true
   },
       {
     "name": "NBC Suit (Grey Variant)",
@@ -838,7 +844,8 @@
     "type": "Clone Trooper Armor",
     "protection": 1,
     "rarity": "None",
-    "location": "Admin Events"
+    "location": "Admin Events",
+                        "collected": true
   },
                         {
     "name": "Clone Trooper Set (Neon Red Chrome Variant)",
