@@ -58,11 +58,11 @@
     "location": "All tiers"
   },
               {
-    "name": "Stormtrooper Medic",
+    "name": "Stormtrooper Medic (Legacy)",
     "image": "Stormtrooper Medic 01.png",
     "type": "Generic Star Wars Armor",
     "protection": 1,
-    "rarity": "Common",
+    "rarity": "None",
     "location": "All tiers"
   },
     {
