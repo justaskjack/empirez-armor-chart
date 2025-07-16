@@ -152,6 +152,15 @@
             "collected": true
   },
             {
+    "name": "DeathTrooper Set",
+    "image": "Deathtrooper Set.png",
+    "type": "Special Troop armor",
+    "protection": "Mixed 1 & 2",
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+            "collected": true
+  },
+            {
     "name": "Sith Trooper Set",
     "image": "Sith Trooper Set 01.png",
     "type": "Special Troop armor",
@@ -197,6 +206,15 @@
                                 "collected": true
   },
                                 {
+    "name": "Commander Rex Set",
+    "image": "Commander Rex Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Imperial Bunker, Astromech Droids",
+                                "collected": true
+  },
+                                {
     "name": "Shadow Clone Trooper Set",
     "image": "Shadow Clone Trooper Set 01.png",
     "type": "Special Clone armor",
@@ -211,7 +229,16 @@
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
-    "location": "Tier 4",
+    "location": "Tier 4, Astromech Droids",
+                                            "collected": true
+  },
+                                            {
+    "name": "Purge Trooper Set",
+    "image": "Purge Trooper Set.png",
+    "type": "Special Troop armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tier 4, Astromech Droids",
                                             "collected": true
   },
               {
@@ -284,6 +311,24 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                      {
+    "name": "Moff Gideon Set",
+    "image": "Moff Gideon Set.png",
+    "type": "Character Armor Sets",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                            {
+    "name": "Darth Maul Set",
+    "image": "Darth Maul Set.png",
+    "type": "Character Armor Sets",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Outside Sith Temple",
                                       "collected": true
   },
     {
@@ -362,6 +407,15 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Cloud City",
+                "collected": true
+  },
+                      {
+    "name": "The Mandalorian (Beskar Variant)",
+    "image": "The Mandalorian (Beskar Variant)",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
                 "collected": true
   },
     {
