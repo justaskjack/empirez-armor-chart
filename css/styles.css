@@ -116,7 +116,6 @@ h2 {
 }
 .armor-grid {
   overflow: hidden;
-  max-height: 1000px;
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
 .armor-grid.collapsed {
