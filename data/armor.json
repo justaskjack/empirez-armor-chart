@@ -116,6 +116,15 @@
     "location": "All tiers",
                "collected": true
   },
+                          {
+    "name": "Mud Trooper Set",
+    "image": "Mud Trooper Set.png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
               {
     "name": "Biker Scout Set",
     "image": "Biker Scout Set.png",
@@ -756,6 +765,24 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
+                "collected": true
+  },
+                                              {
+    "name": "Partisan (Two Tubes) Set",
+    "image": "Partisan (Two Tubes).png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "X-wing, Tiers 2-4",
+                "collected": true
+  },
+                                              {
+    "name": "Partisan (Unknown Solider) Set",
+    "image": "Partisan (Unknown Solider).png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Uncommon",
+    "location": "X-Wing, Tiers 2-4",
                 "collected": true
   },
     {
