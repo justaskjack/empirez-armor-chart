@@ -2,7 +2,7 @@
       {
     "name": "Moisture Farmer Set",
     "image": "Moisture Farmer Set.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "Starter Gear",
@@ -11,7 +11,7 @@
         {
     "name": "Stormtrooper",
     "image": "Stormtrooper 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -20,7 +20,7 @@
         {
     "name": "Stormtrooper Corporal",
     "image": "Stormtrooper Corporal 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -29,7 +29,7 @@
         {
     "name": "Stormtrooper Sergeant",
     "image": "Stormtrooper Sergeant 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -38,7 +38,7 @@
         {
     "name": "Stormtrooper Unit Leader",
     "image": "Stormtrooper Officer 02.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -47,7 +47,7 @@
         {
     "name": "Stormtrooper Squad Leader",
     "image": "Stormtrooper Officer 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -56,7 +56,61 @@
         {
     "name": "Stormsniper",
     "image": "Stormsniper 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+              {
+    "name": "Incinerator Trooper Set",
+    "image": "Incinerator Trooper Set.png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+                    {
+    "name": "Incinerator Trooper Set (Blue Variant)",
+    "image": "Incinerator Trooper Set (Blue Variant).png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+                    {
+    "name": "Stormtrooper Medic Set",
+    "image": "Stormtrooper Medic Set 02.png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+              {
+    "name": "Sandtrooper Set",
+    "image": "Sandtrooper Set.png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+              {
+    "name": "First Order Stormtrooper Set",
+    "image": "First Order Stormtrooper Set.png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+               "collected": true
+  },
+                    {
+    "name": "DerpTrooper Set",
+    "image": "DerpTrooper Set.png",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -65,7 +119,7 @@
               {
     "name": "Biker Scout Set",
     "image": "Biker Scout Set.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -74,7 +128,7 @@
                     {
     "name": "Biker Scout Set (Black Variant)",
     "image": "Biker Scout Set (Black Variant).png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -83,7 +137,7 @@
                           {
     "name": "Imperial Officer Set 01",
     "image": "Imperial Officer Set 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -92,7 +146,7 @@
                                 {
     "name": "Imperial Officer Set 02",
     "image": "Imperial Officer Set 02.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -101,7 +155,7 @@
                                       {
     "name": "Rebel Pilot Set",
     "image": "Rebel Pilot Set.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -110,7 +164,7 @@
                                       {
     "name": "Endor Rebel Set",
     "image": "Endor Rebel Set.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
@@ -128,7 +182,7 @@
               {
     "name": "Stormtrooper Medic (Legacy)",
     "image": "Stormtrooper Medic 01.png",
-    "type": "Generic Star Wars Armor",
+    "type": "General Star Wars Armor",
     "protection": 1,
     "rarity": "None",
     "location": "All tiers"
@@ -318,6 +372,24 @@
     "location": "Imperial Bunker, Astromech Droids",
                                 "collected": true
   },
+                                      {
+    "name": "Clone Trooper - Dogma Set",
+    "image": "Clone Trooper - Dogma Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Imperial Bunker",
+                                "collected": true
+  },
+                                            {
+    "name": "Clone Trooper - Kix Set",
+    "image": "Clone Trooper - Kix Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Imperial Bunker",
+                                "collected": true
+  },
                                 {
     "name": "Shadow Clone Trooper Set",
     "image": "Shadow Clone Trooper Set 01.png",
@@ -330,6 +402,24 @@
                                       {
     "name": "Bad Batch Hunter Set",
     "image": "Bad Batch Hunter Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tier 4, Astromech Droids",
+                                            "collected": true
+  },
+                                            {
+    "name": "Bad Batch - Wrecker Set",
+    "image": "Bad Batch - Wrecker Set.png",
+    "type": "Special Clone armor",
+    "protection": 2,
+    "rarity": "Epic",
+    "location": "Tier 4, Astromech Droids",
+                                            "collected": true
+  },
+                                            {
+    "name": "Bad Batch - Crosshair Set",
+    "image": "Bad Batch - Crosshair Set.png",
     "type": "Special Clone armor",
     "protection": 2,
     "rarity": "Epic",
@@ -436,8 +526,71 @@
                                       "collected": true
   },
                                 {
+    "name": "Shock Commander Set (Purple Variant)",
+    "image": "Shock Commander Set (Purple Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                      {
     "name": "Shock Trooper Set (Purple Variant)",
-    "image": "Shock Trooper Set 01.png",
+    "image": "Shock Trooper Set (Purple Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                      {
+    "name": "Shock Trooper Set (Red Variant)",
+    "image": "Shock Trooper Set (Red Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                      {
+    "name": "Shock Commander Set (Red Variant)",
+    "image": "Shock Commander Set (Red Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                            {
+    "name": "Airborne Clone Trooper Set (Camo Variant)",
+    "image": "Airborne Clone Trooper Set (Camo Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                                  {
+    "name": "Airborne Clone Trooper Set (White Variant)",
+    "image": "Airborne Clone Trooper Set (White Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                                  {
+    "name": "Airborne Clone Trooper Set (Blue Variant)",
+    "image": "Airborne Clone Trooper Set (Blue Variant).png",
+    "type": "Special Clone armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4",
+                                      "collected": true
+  },
+                                                  {
+    "name": "Airborne Clone Trooper Set (Yellow Variant)",
+    "image": "Airborne Clone Trooper Set (Yellow Variant).png",
     "type": "Special Clone armor",
     "protection": 1,
     "rarity": "Rare",
@@ -596,6 +749,15 @@
     "location": "Tiers 2-4",
                 "collected": true
   },
+                                        {
+    "name": "Tie Fighter Pilot Set",
+    "image": "Tie Fighter Pilot Set.png",
+    "type": "General Star Wars Armor",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
     {
     "name": "Ahsoka Tano Set",
     "image": "Ahsoka Tano Set.png",
@@ -706,6 +868,15 @@
           {
     "name": "Battle Droid Set",
     "image": "Battle Droid Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe",
+                "collected": true
+  },
+                {
+    "name": "Battle Droid Set (Red Variant)",
+    "image": "Battle Droid Set (Red Variant).png",
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
