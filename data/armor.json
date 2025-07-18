@@ -385,7 +385,7 @@
     "name": "Clone Trooper - Dogma Set",
     "image": "Clone Trooper - Dogma Set.png",
     "type": "Special Clone armor",
-    "protection": 2,
+    "protection": 1,
     "rarity": "Epic",
     "location": "Imperial Bunker",
                                 "collected": true
@@ -394,7 +394,7 @@
     "name": "Clone Trooper - Kix Set",
     "image": "Clone Trooper - Kix Set.png",
     "type": "Special Clone armor",
-    "protection": 2,
+    "protection": 1,
     "rarity": "Epic",
     "location": "Imperial Bunker",
                                 "collected": true
@@ -412,7 +412,7 @@
     "name": "Bad Batch Hunter Set",
     "image": "Bad Batch Hunter Set.png",
     "type": "Special Clone armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
                                             "collected": true
@@ -421,7 +421,7 @@
     "name": "Bad Batch - Wrecker Set",
     "image": "Bad Batch - Wrecker Set.png",
     "type": "Special Clone armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
                                             "collected": true
@@ -430,7 +430,7 @@
     "name": "Bad Batch - Crosshair Set",
     "image": "Bad Batch - Crosshair Set.png",
     "type": "Special Clone armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
                                             "collected": true
@@ -448,7 +448,7 @@
     "name": "Geo Trooper Set",
     "image": "Geo Trooper Set.png",
     "type": "Special Troop armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
                                             "collected": true
@@ -457,7 +457,7 @@
     "name": "Barc Trooper Set (Camo Variant)",
     "image": "Barc Trooper Set (Camo Variant).png",
     "type": "Special Troop armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
                                             "collected": true
@@ -466,7 +466,7 @@
     "name": "Barc Trooper Set",
     "image": "Barc Trooper Set.png",
     "type": "Special Troop armor",
-    "protection": 2,
+    "protection": Mixed 1 & 2,
     "rarity": "Epic",
     "location": "Hoth Bunker",
                                             "collected": true
