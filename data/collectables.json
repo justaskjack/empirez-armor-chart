@@ -9,7 +9,7 @@
   },
       {
     "name": "Jedi Medallion",
-    "sellPrice": "5 Credits",
+    "sellPrice": "100 Credits",
     "slots": "2x3",
     "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
     "image": "Collectable17 - Jedi Medallion",
@@ -17,7 +17,7 @@
   },
     {
     "name": "Sith Medallion",
-    "sellPrice": "5 Credits",
+    "sellPrice": "100 Credits",
     "slots": "2x3",
     "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
     "image": "Collectable16 - Sith Medallion",
@@ -205,7 +205,7 @@
   },
     {
     "name": "Mini-Brick Saber (Pink)",
-    "sellPrice": "None",
+    "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable18 - Mini-Brick Saber (Pink)",
@@ -213,7 +213,7 @@
   },
       {
     "name": "Mini-Brick Saber (Red)",
-    "sellPrice": "None",
+    "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable48 - Mini-Brick Saber (Red)",
@@ -221,7 +221,7 @@
   },
       {
     "name": "Mini-Brick Saber (Blue)",
-    "sellPrice": "None",
+    "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable47 - Mini-Brick Saber (Blue)",
@@ -299,7 +299,7 @@
   },
     {
     "name": "Wayfinder Stone",
-    "sellPrice": "10 Credits",
+    "sellPrice": "100 Credits",
     "slots": "2x2",
     "note": "",
     "image": "Collectable10 - Wayfinder Stone",
@@ -323,7 +323,7 @@
   },
       {
     "name": "Pink Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibroblade",
     "image": "Collectable21 - Pink Kyber Crystal",
@@ -331,14 +331,14 @@
   },
         {
     "name": "Purple Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Sword to create a Jedi Force Blade",
     "image": "Collectable39 - Purple Kyber Crystal"
   },
           {
     "name": "Orange Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibro Blade",
     "image": "Collectable42 - Orange Kyber Crystal",
@@ -346,7 +346,7 @@
   },
             {
     "name": "Black Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a sword to create a Sith Warblade",
     "image": "Collectable54 - Black Kyber Crystal",
@@ -354,7 +354,7 @@
   },
           {
     "name": "Nightsister Crystal",
-    "sellPrice": "200 Credits",
+    "sellPrice": "100 Credits",
     "slots": "None",
     "note": "Combine with a Mime Mask to create a Darth Maul mask",
     "image": "Collectable45 - Nightsister Crystal",
@@ -362,7 +362,7 @@
   },
             {
     "name": "Jedi Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "300 Credits",
     "slots": "None",
     "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which opens the Jedi Temple",
     "image": "Collectable49 - Jedi Kyber Crystal",
@@ -370,7 +370,7 @@
   },
               {
     "name": "Sith Kyber Crystal",
-    "sellPrice": "None",
+    "sellPrice": "300 Creditse",
     "slots": "None",
     "note": "Combine with another Sith Kyber Crystal to create a Sith Holocron which opens the Sith Temple",
     "image": "Collectable56 - Sith Kyber Crystal",
