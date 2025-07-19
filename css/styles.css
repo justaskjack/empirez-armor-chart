@@ -1011,3 +1011,22 @@ header.navbar {
   font-size: 13px;
   margin-top: 4px;
 }
+
+#weapons-row-main,
+#weapons-row-melee {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.weapon-section-title {
+  font-size: 1.5em;
+  color: white;
+  margin: 30px 0 10px;
+  border-left: 4px solid #888;
+  padding-left: 10px;
+  width: 100%;
+}
+
+
