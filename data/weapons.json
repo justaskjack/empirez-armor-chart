@@ -10,6 +10,54 @@
       { "image": "The Mando Pistol mag.png", "name": "The Mando Pistol mag" }
     ]
   },
+          {
+    "name": "DL44 Blaster",
+    "type": "Firearm",
+    "ammo": "X2",
+    "image": "Biker Scout Blaster Pistol.png",
+    "slots": ["WPN-TH-01.png"],
+    "accessories": ["None"],
+    "magazines": [
+      { "image": "DL44Mag 30rnd.png", "name": "DL44Mag 30rnd" }
+    ]
+  },   
+	
+	{
+    "name": "Biker Scout Blaster Pistol",
+    "type": "Firearm",
+    "ammo": "X1",
+    "image": "Biker Scout Blaster Pistol.png",
+    "slots": ["WPN-TH-01.png"],
+    "accessories": ["None"],
+    "magazines": [
+      { "image": "Biker Scout Blaster Mag.png", "name": "Biker Scout Blaster Mag" }
+    ]
+  },   
+
+   {
+    "name": "Mando Blaster",
+    "type": "Firearm",
+    "ammo": "X1a",
+    "image": "Mando Blaster.png",
+    "slots": ["WPN-TH-01.png"],
+    "accessories": ["None"],
+    "magazines": [
+      { "image": "Mando Blaster Magazine 10rd.png", "name": "Mando Blaster Magazine 10rd" }
+    ]
+  },
+  
+  {
+    "name": "E5 Blaster",
+    "type": "Firearm",
+    "ammo": "X3",
+    "image": "E5 Blaster.png",
+    "slots": ["WPN-TH-02.png", "WPN-TH-03.png"],
+    "accessories": ["Combat Sights", "ATOG 4x32 Scope", "ATOG 6x48 Scope", "NV-PVS4 Scope",  "Sniper Optic"],
+    "magazines": [
+      { "image": "E5 Blaster Magazine 20rd.png", "name": "E5 Blaster Magazine 20rd"},
+	  { "image": "E5 Blaster Magazine 30rd.png", "name": "E5 Blaster Magazine 30rd"}
+    ]
+  },
   {
     "name": "Skiff Guard Staff",
     "type": "Melee",
