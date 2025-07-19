@@ -938,16 +938,20 @@ header.navbar {
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
   padding: 20px;
-  width: 360px;
+  width: 380px;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .weapon-header {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows name and ammo to break gracefully */
 }
 
 .weapon-thumb img {
@@ -981,6 +985,7 @@ header.navbar {
 .weapon-accessories ul {
   padding-left: 20px;
   margin: 5px 0;
+  line-height: 1.3;
 }
 
 .mag-label {
@@ -1017,8 +1022,9 @@ header.navbar {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: flex-start;
+  align-items: stretch; /* NEW: makes all cards same height */
 }
+
 
 .weapon-section-title {
   font-size: 1.5em;
