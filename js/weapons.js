@@ -1,82 +1,93 @@
-fetch('js/weapons.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('weapons-row');
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/weapons.json")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("weapons-row");
 
-    const createSection = (title, items) => {
-      const section = document.createElement('div');
-      section.className = 'weapon-section';
+      const firearms = data.filter(weapon => weapon.type === "Firearm");
+      const melee = data.filter(weapon => weapon.type === "Melee");
 
-      const heading = document.createElement('h2');
-      heading.textContent = title;
-      section.appendChild(heading);
+      const createSection = (title, list) => {
+        const sectionTitle = document.createElement("h2");
+        sectionTitle.textContent = title;
+        sectionTitle.classList.add("armor-section-title");
+        container.appendChild(sectionTitle);
 
-      const row = document.createElement('div');
-      row.className = 'weapon-row';
+        const section = document.createElement("div");
+        section.className = "armor-section";
+        list.forEach(weapon => {
+          const card = document.createElement("div");
+          card.className = "armor-card";
 
-      items.forEach(weapon => {
-        const card = document.createElement('div');
-        card.className = 'weapon-card';
+          const topRow = document.createElement("div");
+          topRow.className = "armor-card-toprow";
+          topRow.innerHTML = `<span><strong>Name:</strong> ${weapon.name}</span><span><strong>Ammo type:</strong> ${weapon.ammo}</span>`;
+          card.appendChild(topRow);
 
-        const header = document.createElement('div');
-        header.className = 'weapon-header';
-        header.innerHTML = `<strong>Name:</strong> ${weapon.name} <span class="ammo-type">Ammo type:</span> ${weapon.ammo}`;
-        card.appendChild(header);
+          const thumb = document.createElement("img");
+          const thumbPath = `images/weapons/${weapon.image.replace('.png', ' - thumb.png')}`;
+          const fullSize = `images/weapons/${weapon.image}`;
 
-        const thumbLink = document.createElement('a');
-        thumbLink.href = weapon.image;
-        thumbLink.setAttribute('data-lg-size', '1400-900');
-        thumbLink.setAttribute('data-lg-src', weapon.image);
-        thumbLink.className = 'weapon-thumb';
-        const img = document.createElement('img');
-        img.src = weapon.image;
-        thumbLink.appendChild(img);
-        card.appendChild(thumbLink);
+          thumb.src = thumbPath;
+          thumb.alt = weapon.name;
+          thumb.className = "armor-thumb";
+          thumb.addEventListener("click", () => {
+            const instance = lightGallery(document.createElement("div"), {
+              dynamic: true,
+              dynamicEl: [{ src: fullSize }]
+            });
+            instance.openGallery();
+          });
+          card.appendChild(thumb);
 
-        const slotsRow = document.createElement('div');
-        slotsRow.className = 'weapon-slots';
-        weapon.slots.forEach(slot => {
-          const slotImg = document.createElement('img');
-          slotImg.src = `images/icons/${slot}`;
-          slotImg.alt = '';
-          slotsRow.appendChild(slotImg);
+          const slots = document.createElement("div");
+          slots.className = "bp-slots";
+          weapon.slots.forEach(slot => {
+            const slotImg = document.createElement("img");
+            slotImg.src = `images/bps/${slot}`;
+            slotImg.alt = "Slot";
+            slots.appendChild(slotImg);
+          });
+          card.appendChild(slots);
+
+          const accessoriesLabel = document.createElement("div");
+          accessoriesLabel.innerHTML = "<strong>Compatible accessories:</strong>";
+          card.appendChild(accessoriesLabel);
+
+          const accessoryList = document.createElement("ul");
+          accessoryList.className = "weapon-accessories";
+          weapon.accessories.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            accessoryList.appendChild(li);
+          });
+          card.appendChild(accessoryList);
+
+          const magLabel = document.createElement("div");
+          magLabel.innerHTML = "<strong>Magazine:</strong>";
+          card.appendChild(magLabel);
+
+          const magRow = document.createElement("div");
+          magRow.className = "weapon-mags";
+          weapon.magazines.forEach(mag => {
+            const magThumb = document.createElement("img");
+            magThumb.src = `images/weapons/${mag.image}`;
+            magThumb.alt = mag.name;
+            magRow.appendChild(magThumb);
+
+            const magName = document.createElement("span");
+            magName.textContent = mag.name;
+            magRow.appendChild(magName);
+          });
+          card.appendChild(magRow);
+
+          section.appendChild(card);
         });
-        card.appendChild(slotsRow);
 
-        const accText = document.createElement('div');
-        accText.className = 'weapon-accessories';
-        accText.innerHTML = `<strong>Compatible accessories:</strong><ul>${weapon.accessories.map(acc => `<li>${acc}</li>`).join('')}</ul>`;
-        card.appendChild(accText);
+        container.appendChild(section);
+      };
 
-        const magWrap = document.createElement('div');
-        magWrap.className = 'weapon-magazines';
-        weapon.magazines.forEach(mag => {
-          const magBlock = document.createElement('div');
-          magBlock.className = 'mag-block';
-          const magImg = document.createElement('img');
-          magImg.src = mag.image;
-          const magName = document.createElement('div');
-          magName.className = 'mag-name';
-          magName.textContent = mag.name;
-          magBlock.appendChild(magImg);
-          magBlock.appendChild(magName);
-          magWrap.appendChild(magBlock);
-        });
-        if (weapon.magazines.length > 0) {
-          const label = document.createElement('div');
-          label.className = 'mag-label';
-          label.textContent = 'Magazine:';
-          card.appendChild(label);
-          card.appendChild(magWrap);
-        }
-
-        row.appendChild(card);
-      });
-
-      section.appendChild(row);
-      container.appendChild(section);
-    };
-
-    createSection("Firearms", data.firearms);
-    createSection("Melee", data.melee);
-  });
+      createSection("Firearms", firearms);
+      createSection("Melee", melee);
+    });
+});
