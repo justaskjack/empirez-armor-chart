@@ -759,6 +759,14 @@
                 "collected": true
   },
                                         {
+    "name": Deathwatch Set",
+    "image": "Deathwatch Set.png",
+    "type": "Custom Player Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4"
+  },
+                                        {
     "name": "Tie Fighter Pilot Set",
     "image": "Tie Fighter Pilot Set.png",
     "type": "General Star Wars Armor",
