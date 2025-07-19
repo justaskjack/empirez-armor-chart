@@ -1,0 +1,24 @@
+{
+  "firearms": [
+    {
+      "name": "Mando Pistol",
+      "ammo": "X1",
+      "image": "weapons/Mando Pistol.png",
+      "slots": ["WPN-TH-01.png"],
+      "accessories": ["None"],
+      "magazines": [
+        { "image": "weapons/The Mando Pistol mag.png", "name": "The Mando Pistol mag" }
+      ]
+    }
+  ],
+  "melee": [
+    {
+      "name": "Skiff Guard Staff",
+      "ammo": "None",
+      "image": "weapons/Skiff Guard Staff.png",
+      "slots": [],
+      "accessories": ["None"],
+      "magazines": []
+    }
+  ]
+}
