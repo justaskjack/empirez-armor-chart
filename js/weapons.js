@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Top row with name and ammo type
           const header = document.createElement("div");
           header.className = "weapon-header";
-          header.innerHTML = `<span><strong>Name:</strong> ${weapon.name}</span><span><strong>Ammo:</strong> ${weapon.ammo}</span>`;
+          header.innerHTML = `<span><strong>${weapon.name}</strong></span><span><strong>Ammo:</strong> ${weapon.ammo}</span>`;
           card.appendChild(header);
 
           // Thumbnail
