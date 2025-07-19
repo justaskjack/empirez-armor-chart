@@ -5,8 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const firearms = data.filter(w => w.type === "Firearm");
       const melee = data.filter(w => w.type === "Melee");
 
-      const renderSection = (list, containerId) => {
+      const renderSection = (list, containerId, titleText) => {
         const container = document.getElementById(containerId);
+
+        // Add section header title
+        const sectionTitle = document.createElement("h2");
+        sectionTitle.textContent = titleText;
+        sectionTitle.className = "weapon-section-title";
+        container.appendChild(sectionTitle);
 
         list.forEach(weapon => {
           const card = document.createElement("div");
@@ -97,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       };
 
-      renderSection(firearms, "weapons-row-main");
-      renderSection(melee, "weapons-row-melee");
+      renderSection(firearms, "weapons-row-main", "Firearms");
+      renderSection(melee, "weapons-row-melee", "Melee");
     });
 });
