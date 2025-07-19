@@ -14,7 +14,7 @@
     "name": "DL44 Blaster",
     "type": "Firearm",
     "ammo": "X2",
-    "image": "Biker Scout Blaster Pistol.png",
+    "image": "DL44 Blaster.png",
     "slots": ["WPN-TH-01.png"],
     "accessories": ["None"],
     "magazines": [
