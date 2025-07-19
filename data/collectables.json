@@ -153,7 +153,7 @@
   },
                 {
     "name": "Datapad",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "",
     "note": "Combine this with a Chaincode to create an Active Chaincode which is used to open a Mando Safe",
     "image": "Collectable33 - Datapad",
@@ -177,28 +177,28 @@
   },
     {
     "name": "turret 1",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable01 - turret 1"
   },
       {
     "name": "turret 2",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable39 - turret 2"
   },
     {
     "name": "turret 6",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable19 - turret 6"
   },
       {
     "name": "Grapple Droid 1",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable32 - Grapple Droid 1"
@@ -229,63 +229,63 @@
   },
   {
     "name": "Rebel Ship",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable02 - Rebel Ship"
   },
     {
     "name": "Republic Venator",
-    "sellPrice": "None",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable03 - Republic Venator"
   },
     {
     "name": "U-Wing",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable04 - U-Wing"
   },
     {
     "name": "Greys Corsant Collectable",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable"
   },
       {
     "name": "Greys Gonk Collectable",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable38 - Greys Gonk Collectable"
   },
     {
     "name": "lezard",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable06 - lezard"
   },
     {
     "name": "holorecord decive",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable07 - holorecord decive"
   },
     {
     "name": "charismatic-mandalorian-helmet yellow",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow"
   },
       {
     "name": "charismatic-mandalorian-helmet white",
-    "sellPrice": "10 Credits",
+    "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable20 - charismatic-mandalorian-helmet white"
