@@ -2,19 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/weapons.json")
     .then(response => response.json())
     .then(data => {
-      const container = document.getElementById("weapons-row");
+      const containerFirearms = document.getElementById("weapons-row-main");
+      const containerMelee = document.getElementById("weapons-row-melee");
 
       const firearms = data.filter(weapon => weapon.type === "Firearm");
       const melee = data.filter(weapon => weapon.type === "Melee");
 
-      const createSection = (title, list) => {
+      const createSection = (title, list, targetContainer) => {
         const sectionTitle = document.createElement("h2");
         sectionTitle.textContent = title;
         sectionTitle.classList.add("armor-section-title");
-        container.appendChild(sectionTitle);
+        targetContainer.appendChild(sectionTitle);
 
         const section = document.createElement("div");
         section.className = "armor-section";
+
         list.forEach(weapon => {
           const card = document.createElement("div");
           card.className = "armor-card";
@@ -84,10 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
           section.appendChild(card);
         });
 
-        container.appendChild(section);
+        targetContainer.appendChild(section);
       };
 
-      createSection("Firearms", firearms);
-      createSection("Melee", melee);
+      createSection("Firearms", firearms, containerFirearms);
+      createSection("Melee", melee, containerMelee);
+    })
+    .catch(error => {
+      console.error("Error loading weapons.json:", error);
     });
 });
