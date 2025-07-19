@@ -918,72 +918,64 @@ header.navbar {
   max-width: none;
 }
 
-/* Weapon Section Title */
 .weapon-section h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: white;
-  margin: 30px 0 10px;
+  margin: 40px 0 20px;
   border-left: 4px solid #888;
   padding-left: 10px;
 }
 
-/* Weapon Row Container */
 .weapon-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 50px;
-  justify-content: flex-start;
 }
 
-/* Individual Weapon Card */
 .weapon-card {
   background-color: #1c1c1c;
   border-radius: 12px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  width: 250px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  padding: 20px;
+  width: 360px;
   color: white;
-  box-sizing: border-box;
-  flex-shrink: 0;
 }
 
-/* Top row with Name and Ammo */
 .weapon-header {
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.weapon-thumb img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border: 2px solid #444;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.weapon-slots {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
-/* Thumbnail */
-.weapon-thumb img {
-  width: 100%;
-  max-height: 150px;
-  object-fit: contain;
-  border: 2px solid #444;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-/* Slot Icons */
-.weapon-slots {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
 .weapon-slots img {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   border: 1px solid #444;
 }
 
-/* Accessories List */
 .weapon-accessories {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .weapon-accessories ul {
@@ -991,15 +983,14 @@ header.navbar {
   margin: 5px 0;
 }
 
-/* Magazine Section */
 .mag-label {
-  margin-top: 8px;
+  margin-top: 12px;
   font-weight: bold;
 }
 
 .weapon-magazines {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -1011,13 +1002,12 @@ header.navbar {
 }
 
 .mag-block img {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .mag-name {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 4px;
 }
-
