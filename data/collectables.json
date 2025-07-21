@@ -189,12 +189,36 @@
     "note": "",
     "image": "Collectable39 - turret 2"
   },
+        {
+    "name": "turret 3",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable66 - turret 3",
+          "collected": true
+  },
+          {
+    "name": "turret 5",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable63 - turret 5",
+          "collected": true
+  },
     {
     "name": "turret 6",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable19 - turret 6"
+  },
+          {
+    "name": "turbine 3",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable67 - turbine 3",
+          "collected": true
   },
       {
     "name": "Grapple Droid 1",
@@ -239,7 +263,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable03 - Republic Venator"
+    "image": "Collectable03 - Republic Venator",
+      "collected": true
   },
     {
     "name": "U-Wing",
@@ -262,6 +287,14 @@
     "note": "",
     "image": "Collectable38 - Greys Gonk Collectable"
   },
+        {
+    "name": "Greys ATRT Collectable",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable64 - Greys ATRT Collectable",
+          "collected": true
+  },
     {
     "name": "lezard",
     "sellPrice": "50 Credits",
@@ -276,12 +309,21 @@
     "note": "",
     "image": "Collectable07 - holorecord decive"
   },
+      {
+    "name": "jeron fusion cutter",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable65 - jeron fusion cutter",
+        "collected": true
+  },
     {
     "name": "charismatic-mandalorian-helmet yellow",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable08 - charismatic-mandalorian-helmet yellow"
+    "image": "Collectable08 - charismatic-mandalorian-helmet yellow",
+      "collected": true
   },
       {
     "name": "charismatic-mandalorian-helmet white",
@@ -295,7 +337,8 @@
     "sellPrice": "None",
     "slots": "3x3",
     "note": "",
-    "image": "Collectable09 - Bantha Poop Collectable"
+    "image": "Collectable09 - Bantha Poop Collectable",
+      "collected": true
   },
     {
     "name": "Wayfinder Stone",
