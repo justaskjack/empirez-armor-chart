@@ -705,6 +705,15 @@
                 "collected": true
   },
                       {
+    "name": "The Mandalorian (Pre-Beskar)",
+    "image": "The Mandalorian (Pre-Beskar).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                            {
     "name": "The Mandalorian (Beskar Variant)",
     "image": "The Mandalorian (Beskar Variant).png",
     "type": "Character Armor Sets",
@@ -752,6 +761,15 @@
                                   {
     "name": "Mando Armor Set (Red Variant)",
     "image": "Mando Armor Set (Red Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                        {
+    "name": "Mando Warrior Set",
+    "image": "Mando Warrior Set.png",
     "type": "Character Armor Sets",
     "protection": 2,
     "rarity": "Uncommon",
@@ -918,9 +936,36 @@
     "location": "Mando Safe",
                 "collected": true
   },
+                      {
+    "name": "Battle Droid Set (Yellow Variant)",
+    "image": "Battle Droid Set (Yellow Variant).png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tie Crashes, Imperial Bunker",
+                "collected": true
+  },
+                      {
+    "name": "Battle Droid Set (Blue Variant)",
+    "image": "Battle Droid Set (Blue Variant).png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Tie Crashes",
+                "collected": true
+  },
                 {
     "name": "Andromeda Set",
     "image": "Andromeda Set.png",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe",
+                      "collected": true
+  },
+                      {
+    "name": "Magna Guard Set",
+    "image": "Magna Guard Set.png",
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
