@@ -180,7 +180,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable01 - turret 1"
+    "image": "Collectable01 - turret 1",
+      "collected": true
   },
       {
     "name": "turret 2",
@@ -300,7 +301,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable06 - lezard"
+    "image": "Collectable06 - lezard",
+      "collected": true
   },
     {
     "name": "holorecord decive",
@@ -440,14 +442,16 @@
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a Machete with an Orange Kyber Crystal",
-    "image": "Collectable43 - Vibro Blade (Orange)"
+    "image": "Collectable43 - Vibro Blade (Orange)",
+              "collected": true
   },
               {
     "name": "Vibro Blade (Pink Variant)",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a Machete with a Pink Kyber Crystal",
-    "image": "Collectable46 - Vibro Blade (Pink)"
+    "image": "Collectable46 - Vibro Blade (Pink)",
+                "collected": true
   },
     {
     "name": "Cereals",
