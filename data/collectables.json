@@ -226,7 +226,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable32 - Grapple Droid 1"
+    "image": "Collectable32 - Grapple Droid 1",
+          "collected": true
   },
     {
     "name": "Mini-Brick Saber (Pink)",
