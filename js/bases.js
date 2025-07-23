@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add all images to the gallery group
         base.gallery.forEach((img, i) => {
           const a = document.createElement('a');
-          a.href = `images/${img}`;
+          a.href = `images/bases/${img}`;
           a.setAttribute('data-lg-size', '1406-1390'); // example size
           a.setAttribute('data-sub-html', `<h4>${base.name}</h4><p>Image ${i + 1}</p>`);
         
           const thumb = document.createElement('img');
-          thumb.src = `images/${img}`;
+          thumb.src = `images/bases/${img}`;
           thumb.alt = `${base.name} ${i + 1}`;
           thumb.className = (i === 0) ? 'base-img' : 'hidden'; // show first, hide rest
         
