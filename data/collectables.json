@@ -223,11 +223,27 @@
           "collected": true
   },
       {
+    "name": "Grapple Droid",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable71 - Grapple Droid",
+          "collected": true
+  },
+        {
     "name": "Grapple Droid 1",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable32 - Grapple Droid 1",
+          "collected": true
+  },
+          {
+    "name": "seeker droid",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable68 - seeker droid",
           "collected": true
   },
     {
@@ -301,6 +317,14 @@
     "image": "Collectable64 - Greys ATRT Collectable",
           "collected": true
   },
+          {
+    "name": "Greys ATTE Collectable",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable70 - Greys ATTE Collectable",
+          "collected": true
+  },
     {
     "name": "lezard",
     "sellPrice": "50 Credits",
@@ -341,10 +365,18 @@
   },
     {
     "name": "Bantha Poop Collectable",
-    "sellPrice": "None",
+    "sellPrice": "50 Credits",
     "slots": "3x3",
     "note": "",
     "image": "Collectable09 - Bantha Poop Collectable",
+      "collected": true
+  },
+      {
+    "name": "Battle Front 2",
+    "sellPrice": "50 Credits",
+    "slots": "3x3",
+    "note": "",
+    "image": "Collectable69 - Battle Front 2",
       "collected": true
   },
     {
