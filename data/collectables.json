@@ -307,7 +307,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable05 - Greys Corsant Collectable"
+    "image": "Collectable05 - Greys Corsant Collectable",
+      "collected": true
   },
       {
     "name": "Greys Gonk Collectable",
