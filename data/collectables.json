@@ -246,6 +246,14 @@
     "image": "Collectable68 - seeker droid",
           "collected": true
   },
+            {
+    "name": "Droideka",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable72 - Droideka",
+          "collected": true
+  },
     {
     "name": "Mini-Brick Saber (Pink)",
     "sellPrice": "50 Credits",
