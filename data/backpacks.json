@@ -27,6 +27,29 @@
     "image": "Backpack 09.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
+                            {
+    "name": "Probe Droid",
+    "slots": "200",
+    "thumb": "Backpack 30 - thumb.png",
+    "image": "Backpack 30.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+  
+                            {
+    "name": "Darth Vader Interrigation Droid",
+    "slots": "200",
+    "thumb": "Backpack 31 - thumb.png",
+    "image": "Backpack 31.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+  
+                              {
+    "name": "Grogu Pod",
+    "slots": "200",
+    "thumb": "Backpack 32 - thumb.png",
+    "image": "Backpack 32.png",
+    "strapSlots": []
+  },
     {
     "name": "Battle Droid Pack",
     "slots": "150",
@@ -34,18 +57,72 @@
     "image": "Backpack 08.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
-    {
+              {
+    "name": "Battle Droid Pack (Red Variant)",
+    "slots": "150",
+    "thumb": "Backpack 19 - thumb.png",
+    "image": "Backpack 19.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+      {
     "name": "C3PO Backpack",
     "slots": "100",
     "thumb": "Backpack 03 - thumb.png",
     "image": "Backpack 03.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
+            {
+    "name": "Commando Backpack (Green Variant)",
+    "slots": "100",
+    "thumb": "Backpack 18 - thumb.png",
+    "image": "Backpack 18.png",
+    "strapSlots": []
+  },
+  
+            {
+    "name": "Commando Backpack (Orange Variant)",
+    "slots": "100",
+    "thumb": "Backpack 26 - thumb.png",
+    "image": "Backpack 26.png",
+    "strapSlots": []
+  },
+              
+			  {
+    "name": "Commando Backpack (Black Variant)",
+    "slots": "100",
+    "thumb": "Backpack 27 - thumb.png",
+    "image": "Backpack 27.png",
+    "strapSlots": []
+  },
+  
+  			  {
+    "name": "Commando Backpack (Red Variant)",
+    "slots": "100",
+    "thumb": "Backpack 28 - thumb.png",
+    "image": "Backpack 28.png",
+    "strapSlots": []
+  },
+  
+    			  {
+    "name": "Commando Backpack (Grey Variant)",
+    "slots": "100",
+    "thumb": "Backpack 29 - thumb.png",
+    "image": "Backpack 29.png",
+    "strapSlots": []
+  },
     {
     "name": "SandTrooper Backpack",
     "slots": "100",
     "thumb": "Backpack 01 - thumb.png",
     "image": "Backpack 01.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+
+    {
+    "name": "Field Backpack 01",
+    "slots": "90",
+    "thumb": "Backpack 14 - thumb.png",
+    "image": "Backpack 14.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
       {
@@ -69,6 +146,55 @@
     "image": "Backpack 07.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
+              {
+    "name": "Boba Fett ESB Pack",
+    "slots": "70",
+    "thumb": "Backpack 20 - thumb.png",
+    "image": "Backpack 20.png",
+    "strapSlots": ["BP-Slot 04.png"]
+  },
+  
+  
+                {
+    "name": "Mando pack (Pink Variant)",
+    "slots": "70",
+    "thumb": "Backpack 21 - thumb.png",
+    "image": "Backpack 21.png",
+    "strapSlots": ["BP-Slot 04.png"]
+  },
+  
+                  {
+    "name": "Mando pack (Blue Variant)",
+    "slots": "70",
+    "thumb": "Backpack 22 - thumb.png",
+    "image": "Backpack 22.png",
+    "strapSlots": ["BP-Slot 04.png"]
+  },
+  
+                    {
+    "name": "Mando pack (Green Variant)",
+    "slots": "70",
+    "thumb": "Backpack 23 - thumb.png",
+    "image": "Backpack 23.png",
+    "strapSlots": ["BP-Slot 04.png"]
+  },
+
+                        {
+    "name": "Clone Radio Backpack",
+    "slots": "63",
+    "thumb": "Backpack 24 - thumb.png",
+    "image": "Backpack 24.png",
+    "strapSlots": ["BP-Slot 06.png", "BP-Slot 03.png", "BP-Slot 04.png"]
+  },
+  
+                        {
+    "name": "Clone Backpack",
+    "slots": "63",
+    "thumb": "Backpack 25 - thumb.png",
+    "image": "Backpack 25.png",
+    "strapSlots": ["BP-Slot 03.png", "BP-Slot 04.png"]
+  },
+  
     {
     "name": "Tactical Backpack",
     "slots": "63",
@@ -76,6 +202,15 @@
     "image": "Backpack 06.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
+
+        {
+    "name": "Combat Backpack",
+    "slots": "63",
+    "thumb": "Backpack 16 - thumb.png",
+    "image": "Backpack 16.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+  
     {
     "name": "Assault Backpack 01",
     "slots": "42",
@@ -83,11 +218,26 @@
     "image": "Backpack 02.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
   },
+      {
+    "name": "Assault Backpack 03",
+    "slots": "42",
+    "thumb": "Backpack 15 - thumb.png",
+    "image": "Backpack 15.png",
+    "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+  
     {
     "name": "Assault Backpack 02",
     "slots": "42",
     "thumb": "Backpack 05 - thumb.png",
     "image": "Backpack 05.png",
     "strapSlots": ["BP-Slot 01.png", "BP-Slot 02.png"]
+  },
+          {
+    "name": "Fur Courier Bag",
+    "slots": "30",
+    "thumb": "Backpack 17 - thumb.png",
+    "image": "Backpack 17.png",
+    "strapSlots": ["BP-Slot 01.png"]
   }
 ]
