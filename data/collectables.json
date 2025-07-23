@@ -287,7 +287,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable38 - Greys Gonk Collectable"
+    "image": "Collectable38 - Greys Gonk Collectable",
+        "collected": true
   },
         {
     "name": "Greys ATRT Collectable",
