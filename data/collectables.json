@@ -188,7 +188,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable39 - turret 2"
+    "image": "Collectable39 - turret 2",
+        "collected": true
   },
         {
     "name": "turret 3",
@@ -258,7 +259,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable02 - Rebel Ship"
+    "image": "Collectable02 - Rebel Ship",
+    "collected": true
   },
     {
     "name": "Republic Venator",
@@ -273,7 +275,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable04 - U-Wing"
+    "image": "Collectable04 - U-Wing",
+      "collected": true
   },
     {
     "name": "Greys Corsant Collectable",
