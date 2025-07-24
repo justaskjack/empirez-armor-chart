@@ -212,7 +212,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable19 - turret 6"
+    "image": "Collectable19 - turret 6",
+      "collected": true
   },
           {
     "name": "turbine 3",
@@ -371,7 +372,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable07 - holorecord decive"
+    "image": "Collectable07 - holorecord decive",
+      "collected": true
   },
       {
     "name": "jeron fusion cutter",
@@ -394,7 +396,8 @@
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
-    "image": "Collectable20 - charismatic-mandalorian-helmet white"
+    "image": "Collectable20 - charismatic-mandalorian-helmet white",
+        "collected": true
   },
     {
     "name": "Bantha Poop Collectable",
