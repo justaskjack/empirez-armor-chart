@@ -239,6 +239,14 @@
           "collected": true
   },
           {
+    "name": "B1 Battle Droid",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable75 - B1 Battle Droid",
+          "collected": true
+  },
+          {
     "name": "seeker droid",
     "sellPrice": "50 Credits",
     "slots": "2x3",
@@ -327,6 +335,14 @@
           "collected": true
   },
           {
+    "name": "Greys ATST Collectablee",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable73 - Greys ATST Collectable",
+          "collected": true
+  },
+          {
     "name": "Greys ATTE Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
@@ -340,6 +356,14 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable06 - lezard",
+      "collected": true
+  },
+      {
+    "name": "LOLA",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable74 - LOLA",
       "collected": true
   },
     {
