@@ -216,6 +216,14 @@
       "collected": true
   },
           {
+    "name": "turbine 1",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable77 - turbine 1",
+          "collected": true
+  },
+            {
     "name": "turbine 3",
     "sellPrice": "50 Credits",
     "slots": "2x3",
@@ -360,6 +368,14 @@
       "collected": true
   },
       {
+    "name": "hawkbat",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable78 - hawkbat",
+      "collected": true
+  },
+      {
     "name": "LOLA",
     "sellPrice": "50 Credits",
     "slots": "2x3",
@@ -381,6 +397,14 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable65 - jeron fusion cutter",
+        "collected": true
+  },
+        {
+    "name": "cantina instrument",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable76 - cantina instrument",
         "collected": true
   },
     {
