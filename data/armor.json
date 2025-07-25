@@ -8,6 +8,15 @@
     "location": "Starter Gear",
             "collected": true
   },
+            {
+    "name": "Moisture Farmer Set (Rey Variant)",
+    "image": "Moisture Farmer Set (Rey).png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "Starter Gear",
+            "collected": true
+  },
         {
     "name": "Stormtrooper",
     "image": "Stormtrooper 01.png",
