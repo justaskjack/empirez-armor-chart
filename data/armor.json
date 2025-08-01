@@ -144,6 +144,15 @@
                      "collected": true
   },
                     {
+    "name": "Biker Scout Set (Battle Scarred Variant)",
+    "image": "Biker Scout Set (Battle Scarred Variant).png",
+    "type": "General Star Wars Armor",
+    "protection": 1,
+    "rarity": "Common",
+    "location": "All tiers",
+                     "collected": true
+  },
+                    {
     "name": "Biker Scout Set (Black Variant)",
     "image": "Biker Scout Set (Black Variant).png",
     "type": "General Star Wars Armor",
@@ -777,6 +786,42 @@
                 "collected": true
   },
                                         {
+    "name": "Mando Armor Set (Magenta Variant)",
+    "image": "Mando Armor Set (Magenta Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                        {
+    "name": "Female Mando Armor Set (Teal Variant)",
+    "image": "Female Mando Armor Set (Teal Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                        {
+    "name": "Mando Armor Set (White Variant)",
+    "image": "Mando Armor Set (White Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                        {
+    "name": "Female Mando Armor Set (White Variant)",
+    "image": "Female Mando Armor Set (White Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                        {
     "name": "Mando Warrior Set",
     "image": "Mando Warrior Set.png",
     "type": "Character Armor Sets",
@@ -859,6 +904,24 @@
         {
     "name": "Darth Talon Set",
     "image": "Darth Talon Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Astromech Droids",
+              "collected": true
+  },
+              {
+    "name": "Twilek Set (Green Variant)",
+    "image": "Twilek Set (Green Variant).png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Astromech Droids",
+              "collected": true
+  },
+                    {
+    "name": "Twilek Set (Blue Variant)",
+    "image": "Twilek Set (Blue Variant).png",
     "type": "Supporting Character Sets",
     "protection": 2,
     "rarity": "Mythic",
