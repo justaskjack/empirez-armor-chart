@@ -58,7 +58,106 @@
 	  { "image": "E5 Blaster Magazine 30rd.png", "name": "E5 Blaster Magazine 30rd"}
     ]
   },
+						  {
+    "name": "Jedi Force Blade",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Jedi Force Blade.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+					  {
+    "name": "Sith Warblade",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Sith Warblade.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+						  {
+    "name": "Vibro Blade (Orange Variant)",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Vibro Blade (Orange Variant).png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+							  {
+    "name": "Vibro Blade (Pink Variant)",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Vibro Blade (Pink Variant).png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+								  {
+    "name": "Mini-Brick Saber (Red Variant)",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Mini-Brick Saber (Red Variant).png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+									  {
+    "name": "Mini-Brick Saber (Teal Variant)",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Mini-Brick Saber (Teal Variant).png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+				  {
+    "name": "Fange",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Fange.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+			  {
+    "name": "Vibro Knife",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Vibro Knife.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+		  {
+    "name": "Beskar Blade",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Beskar Blade.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+	  {
+    "name": "Gamorean Guard Axe",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Gamorean Guard Axe.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
   {
+    "name": "Electro Staff",
+    "type": "Melee",
+    "ammo": "None",
+    "image": "Electro Staff.png",
+    "slots": [],
+    "accessories": ["None"],
+    "magazines": []
+  },
+	  {
     "name": "Skiff Guard Staff",
     "type": "Melee",
     "ammo": "None",
