@@ -624,6 +624,15 @@
     "location": "Tiers 2-4",
                                       "collected": true
   },
+                                                        {
+    "name": "Arc Trooper Phase I (Green Variant)",
+    "image": "Arc Trooper Phase I (Green Variant).png",
+    "type": "Special Troop armor",
+    "protection": 1,
+    "rarity": "Rare",
+    "location": "Tiers 2-4, Helm in Astromech Droids",
+                                      "collected": true
+  },
                                       {
     "name": "Moff Gideon Set",
     "image": "Moff Gideon Set.png",
@@ -803,9 +812,27 @@
     "location": "Tiers 2-4",
                 "collected": true
   },
+                                              {
+    "name": "Mando Armor Set (Teal Variant)",
+    "image": "Mando Armor Set (Teal Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
                                         {
     "name": "Mando Armor Set (White Variant)",
     "image": "Mando Armor Set (White Variant).png",
+    "type": "Character Armor Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
+    "location": "Tiers 2-4",
+                "collected": true
+  },
+                                              {
+    "name": "Mando Armor Set (Grey Variant)",
+    "image": "Mando Armor Set (Grey Variant).png",
     "type": "Character Armor Sets",
     "protection": 2,
     "rarity": "Uncommon",
@@ -866,6 +893,15 @@
                 "collected": true
   },
     {
+    "name": "Anakin Skywalker Set",
+    "image": "Anakin Skywalker Set.png",
+    "type": "Supporting Character Sets",
+    "protection": 2,
+    "rarity": "Mythic",
+    "location": "Mando Safe",
+          "collected": true
+  },
+          {
     "name": "Ahsoka Tano Set",
     "image": "Ahsoka Tano Set.png",
     "type": "Supporting Character Sets",
