@@ -1003,8 +1003,6 @@ header.navbar {
 #page-collectables .collectable-card {
   --hud-red: #ff2a2a;
   --hud-red-dim: rgba(255, 42, 42, 0.45);
-  --hud-bg: #0a0608;
-  --hud-bg2: #120a0c;
 
   display: flex;
   flex-direction: row;
@@ -1015,7 +1013,8 @@ header.navbar {
 
   background:
     linear-gradient(145deg, rgba(40, 8, 12, 0.35) 0%, transparent 45%),
-    linear-gradient(180deg, var(--hud-bg) 0%, var(--hud-bg2) 100%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.35) 100%),
+    url("../images/panelbg01.png") center / cover no-repeat;
   border: 1px solid var(--hud-red-dim);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.6) inset,
@@ -1044,8 +1043,9 @@ header.navbar {
 
 #page-collectables .collectable-card--collected.collectable-card {
   background:
-    linear-gradient(145deg, rgba(8, 28, 16, 0.25) 0%, transparent 45%),
-    linear-gradient(180deg, var(--hud-bg) 0%, var(--hud-bg2) 100%);
+    linear-gradient(145deg, rgba(40, 8, 12, 0.3) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.32) 100%),
+    url("../images/panelbg01.png") center / cover no-repeat;
 }
 
 #page-collectables .collectable-thumb-frame {
@@ -1064,10 +1064,11 @@ header.navbar {
 }
 
 #page-collectables .collectable-card--collected .collectable-thumb-frame {
-  border-color: rgba(60, 200, 100, 0.4);
+  border-color: rgba(255, 90, 90, 0.65);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.9) inset,
-    0 0 12px rgba(40, 180, 90, 0.12) inset;
+    0 0 18px rgba(255, 50, 50, 0.35) inset,
+    0 0 10px rgba(255, 60, 60, 0.2);
 }
 
 #page-collectables .collectable-lightbox-link {
