@@ -8,12 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'armor-card';
 
-        // Lightbox group identifier
-        const groupName = `base-${index}`;
-
-        // Thumbnail from first gallery image
-        const thumb = base.gallery[0];
-
         // Create a LightGallery container div
         const galleryWrapper = document.createElement('div');
         galleryWrapper.id = `lg-gallery-${index}`;
@@ -36,20 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
           galleryWrapper.appendChild(a);
         });
 
-// Required for thumbnail plugin to work
-const lgThumbnail = window.lgThumbnail;
+        const lgThumbnail = window.lgThumbnail;
 
-        
-        // Initialize lightGallery
-lightGallery(galleryWrapper, {
-  selector: 'a',
-  plugins: [lgThumbnail],
-  thumbnail: true,
-  animateThumb: true,
-  showThumbByDefault: true
-});
-
-
+        lightGallery(galleryWrapper, {
+          selector: 'a',
+          plugins: [lgThumbnail],
+          thumbnail: true,
+          animateThumb: true,
+          showThumbByDefault: true
+        });
 
         const text = document.createElement('div');
         text.className = 'armor-text';
@@ -58,10 +47,10 @@ lightGallery(galleryWrapper, {
         nameEl.innerHTML = `<strong>Name:</strong> ${base.name}`;
         text.appendChild(nameEl);
 
-const costEl = document.createElement('div');
-costEl.innerHTML = `<strong>Cost:</strong> ${base.cost}`;
-costEl.style.marginTop = "16px"; // ← Add this line
-text.appendChild(costEl);
+        const costEl = document.createElement('div');
+        costEl.innerHTML = `<strong>Cost:</strong> ${base.cost}`;
+        costEl.style.marginTop = '16px';
+        text.appendChild(costEl);
 
 
         card.appendChild(text);

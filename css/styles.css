@@ -570,8 +570,7 @@ header.navbar {
   padding: 1rem 2rem;
 }
 
-#poi-row-main,
-#poi-row-retired {
+#poi-row-main {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -711,54 +710,6 @@ header.navbar {
 
 .discord-btn img:hover {
   transform: scale(1.1);
-}
-
-/* Server Tips (wide cards like POIs, but double width) */
-#page-servertips .poi-card.wide-card {
-  display: flex;
-  justify-content: space-between;
-  background-color: #2a2a2a;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0 0 10px #0008;
-  min-height: 200px;
-  max-width: 100%;
-  gap: 2rem;
-}
-
-#page-servertips .poi-left {
-  flex: 1.5;
-  color: white;
-}
-
-#page-servertips .poi-left h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-#page-servertips .poi-left p {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
-}
-
-#page-servertips .poi-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-#page-servertips .poi-right img {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 2px solid #444;
 }
 
 /* === Interactive Map Styles === */
@@ -916,14 +867,6 @@ header.navbar {
 .zoom-container img {
   display: block;
   max-width: none;
-}
-
-.weapon-section h2 {
-  font-size: 1.8em;
-  color: white;
-  margin: 40px 0 20px;
-  border-left: 4px solid #888;
-  padding-left: 10px;
 }
 
 .weapon-row {

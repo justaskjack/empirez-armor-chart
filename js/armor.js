@@ -25,9 +25,8 @@ function renderSections(data) {
     toggle.className = 'section-toggle';
     
     toggle.onclick = () => {
-      const isHidden = grid.style.display === 'none';
-      toggle.innerHTML = isHidden ? '&#8722;' : '+';
       grid.classList.toggle('collapsed');
+      toggle.innerHTML = grid.classList.contains('collapsed') ? '+' : '&#8722;';
     };
 
     const grid = document.createElement('div');
@@ -119,11 +118,6 @@ fetch('data/helms.json')
   .then(res => res.json())
   .then(helms => {
     const grid = document.getElementById('helmGrid');
-    for (let i = 0; i < 100; i++) {
-      const cell = document.createElement('div');
-      cell.className = 'grid-cell';
-      grid.appendChild(cell);
-    }
 
     helms.forEach(helm => {
       const anchor = document.createElement('a');
