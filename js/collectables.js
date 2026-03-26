@@ -1,3 +1,5 @@
+// 2.1
+
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("collectable-row");
   if (!container) return;
@@ -19,8 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     parent.appendChild(row);
   }
 
-  
-  fetch("data/collectables.json")
+    fetch("data/collectables.json")
     .then(res => res.json())
     .then(items => {
       container.innerHTML = "";
