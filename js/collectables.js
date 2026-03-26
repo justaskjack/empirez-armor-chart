@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     parent.appendChild(row);
   }
 
+  
   fetch("data/collectables.json")
     .then(res => res.json())
     .then(items => {
