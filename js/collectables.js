@@ -2,58 +2,88 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("collectable-row");
   if (!container) return;
 
+  function addRow(label, value, parent) {
+    const row = document.createElement("div");
+    row.className = "collectable-data-row";
+
+    const lab = document.createElement("span");
+    lab.className = "collectable-label";
+    lab.textContent = label;
+
+    const val = document.createElement("span");
+    val.className = "collectable-value";
+    val.textContent = value == null || value === "" ? "—" : String(value);
+
+    row.appendChild(lab);
+    row.appendChild(val);
+    parent.appendChild(row);
+  }
+
   fetch("data/collectables.json")
     .then(res => res.json())
     .then(items => {
       container.innerHTML = "";
       items.forEach(item => {
+        const glow = document.createElement("div");
+        glow.className = "collectable-card-glow";
+
         const card = document.createElement("div");
-        card.className = "armor-card";
-        card.style.position = "relative"; // needed for dot
+        card.className = "collectable-card";
+        if (item.collected) {
+          card.classList.add("collectable-card--collected");
+        }
+
+        const thumbFrame = document.createElement("div");
+        thumbFrame.className = "collectable-thumb-frame";
 
         const imageLink = document.createElement("a");
         imageLink.href = `images/${item.image}.png`;
         imageLink.setAttribute("data-lightbox", "collectables");
         imageLink.setAttribute("data-title", item.name);
+        imageLink.className = "collectable-lightbox-link";
 
         const img = document.createElement("img");
         img.src = `images/${item.image} - thumb.png`;
         img.alt = item.name;
-        img.className = "armor-img";
-        img.style.width = "313px";
-        img.style.height = "313px";
+        img.className = "collectable-thumb";
+        img.loading = "lazy";
 
         imageLink.appendChild(img);
-
-        if (item.collected) {
-          const dot = document.createElement("div");
-          dot.className = "collected-dot";
-          card.appendChild(dot);
-        }
+        thumbFrame.appendChild(imageLink);
 
         const content = document.createElement("div");
-        content.className = "armor-card-details";
+        content.className = "collectable-content";
 
-        const name = document.createElement("p");
-        name.innerHTML = `<strong>Name:</strong> ${item.name}`;
+        const header = document.createElement("div");
+        header.className = "collectable-header";
 
-        const price = document.createElement("p");
-        price.innerHTML = `<strong>Sell Price:</strong> ${item.sellPrice}`;
+        const title = document.createElement("h3");
+        title.className = "collectable-title";
+        title.textContent = item.name;
 
-        const slots = document.createElement("p");
-        slots.innerHTML = `<strong>Slots:</strong> ${item.slots || 'N/A'}`;
+        const status = document.createElement("span");
+        status.className =
+          "collectable-status " +
+          (item.collected ? "collectable-status--collected" : "collectable-status--open");
+        status.textContent = item.collected ? "COLLECTED" : "UNSCANNED";
 
-        const note = document.createElement("p");
-        note.innerHTML = `<strong>Note:</strong> ${item.note || ''}`;
+        header.appendChild(title);
+        header.appendChild(status);
 
-        content.appendChild(name);
-        content.appendChild(price);
-        content.appendChild(slots);
-        content.appendChild(note);
+        const rows = document.createElement("div");
+        rows.className = "collectable-rows";
 
-        card.appendChild(imageLink);
+        addRow("SELL PRICE", item.sellPrice, rows);
+        addRow("SLOTS", item.slots || "N/A", rows);
+        addRow("NOTE", item.note || "", rows);
+
+        content.appendChild(header);
+        content.appendChild(rows);
+
+        card.appendChild(thumbFrame);
         card.appendChild(content);
-        container.appendChild(card);
+        glow.appendChild(card);
+        container.appendChild(glow);
       });
     });
 });
