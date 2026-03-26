@@ -1,65 +1,60 @@
-fetch("data/servertips.json")
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("tips-row");
-    data.forEach(tip => {
-      const card = document.createElement("div");
-      card.className = "tip-card";
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("data/servertips.json")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("tips-row");
+      if (!container) return;
 
-      const content = document.createElement("div");
-      content.className = "tip-content";
+      data.forEach(tip => {
+        const card = document.createElement("div");
+        card.className = "tip-card";
 
-      const title = document.createElement("h3");
-      title.textContent = tip.name;
+        const content = document.createElement("div");
+        content.className = "tip-content";
 
-      const notes = document.createElement("p");
-      notes.innerHTML = tip.notes;
+        const title = document.createElement("h3");
+        title.textContent = tip.name;
 
-      content.appendChild(title);
-      content.appendChild(notes);
-      card.appendChild(content);
+        const notes = document.createElement("p");
+        notes.innerHTML = tip.notes;
 
-      const gallery = document.createElement("div");
-      gallery.className = "tip-gallery";
+        content.appendChild(title);
+        content.appendChild(notes);
+        card.appendChild(content);
 
-      tip.gallery.forEach((imgPath, index) => {
-        const thumb = document.createElement("a");
-        thumb.href = "images/" + imgPath;
-        thumb.setAttribute("data-lightbox", tip.name);
-        thumb.setAttribute("data-title", `${tip.name} Screenshot ${index + 1}`);
+        const gallery = document.createElement("div");
+        gallery.className = "tip-gallery";
 
-        const img = document.createElement("img");
-        img.src = "images/" + imgPath;
-        img.alt = `${tip.name} Screenshot ${index + 1}`;
+        tip.gallery.forEach((imgPath, index) => {
+          const thumb = document.createElement("a");
+          thumb.href = "images/" + imgPath;
+          thumb.setAttribute("data-lightbox", tip.name);
+          thumb.setAttribute("data-title", `${tip.name} Screenshot ${index + 1}`);
 
-        // Special handling for interactive map
-        if (tip.name === "Imperial Bunker" && index === 0) {
-          img.classList.add("interactive-map-thumb");
-          img.title = "Click to open interactive map";
+          const img = document.createElement("img");
+          img.src = "images/" + imgPath;
+          img.alt = `${tip.name} Screenshot ${index + 1}`;
 
-          img.removeAttribute("data-src");
-          img.removeAttribute("data-lg-size");
-          img.removeAttribute("data-sub-html");
+          if (tip.name === "Imperial Bunker" && index === 0) {
+            img.classList.add("interactive-map-thumb");
+            img.title = "Click to open interactive map";
 
-          img.addEventListener("click", e => {
-            e.preventDefault();
-            e.stopPropagation();
-            openInteractiveMap(tip.interactiveMap);
-          });
-        } else {
-          img.setAttribute("data-src", "images/" + imgPath);
-          img.setAttribute("data-lg-size", "1400-800");
-          img.setAttribute("data-sub-html", `<h4>${tip.name}</h4>`);
-        }
+            img.addEventListener("click", e => {
+              e.preventDefault();
+              e.stopPropagation();
+              openInteractiveMap(tip.interactiveMap);
+            });
+          }
 
-        thumb.appendChild(img);
-        gallery.appendChild(thumb);
+          thumb.appendChild(img);
+          gallery.appendChild(thumb);
+        });
+
+        card.appendChild(gallery);
+        container.appendChild(card);
       });
-
-      card.appendChild(gallery);
-      container.appendChild(card);
     });
-  });
+});
 
 // === INTERACTIVE MAP FUNCTIONALITY ===
 function openInteractiveMap(mapData) {
@@ -87,7 +82,6 @@ function openInteractiveMap(mapData) {
   img.className = "draggable-map";
   zoomContainer.appendChild(img);
 
-  // Add hotspots
   mapData.hotspots.forEach(h => {
     const hotspot = document.createElement("div");
     hotspot.className = "map-hotspot";
@@ -114,7 +108,6 @@ function openInteractiveMap(mapData) {
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
-  // === PAN + ZOOM ===
   let scale = 1;
   let minScale = 1;
   let offsetX = 0;
@@ -172,7 +165,6 @@ function openInteractiveMap(mapData) {
     const scaleY = containerHeight / img.naturalHeight;
     scale = minScale = Math.min(scaleX, scaleY, 1);
 
-    // Center the map
     offsetX = (containerWidth - img.naturalWidth * scale) / 2;
     offsetY = (containerHeight - img.naturalHeight * scale) / 2;
 
