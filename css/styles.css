@@ -977,6 +977,10 @@ header.navbar {
 
 /* ========== Collectables page — HUD panels only (#page-collectables) ========== */
 
+#page-collectables {
+  background: #050505;
+}
+
 #page-collectables #collectable-row.armor-section-container {
   border-left: none;
 }
