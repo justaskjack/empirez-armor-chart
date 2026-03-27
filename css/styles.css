@@ -997,12 +997,12 @@ header.navbar {
   max-width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  filter: drop-shadow(0 0 8px rgba(255, 42, 42, 0.25));
+  filter: drop-shadow(0 0 4px rgba(255, 42, 42, 0.25));
   transition: filter 0.25s ease;
 }
 
 #page-collectables .collectable-card-glow:hover {
-  filter: drop-shadow(0 0 14px rgba(255, 60, 60, 0.45));
+  filter: drop-shadow(0 0 8px rgba(255, 60, 60, 0.45));
 }
 
 #page-collectables .collectable-card {
@@ -1017,7 +1017,7 @@ header.navbar {
   box-sizing: border-box;
 
   /* Push thumb + text into the “safe” HUD area; room for bottom art */
-  padding-top: 2.25rem;
+  padding-top: 2.15rem;
   padding-bottom: 1.55rem;
   padding-right: 8px;
 
@@ -1037,14 +1037,14 @@ header.navbar {
     0 1px 0 rgba(255, 80, 80, 0.15);
 
   clip-path: polygon(
-    4px 0%,
-    calc(100% - 4px) 0%,
-    100% 4px,
-    100% calc(100% - 4px),
-    calc(100% - 4px) 100%,
-    4px 100%,
-    0% calc(100% - 4px),
-    0% 4px
+    8px 0%,
+    calc(100% - 8px) 0%,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    0% calc(100% - 8px),
+    0% 8px
   );
 }
 
