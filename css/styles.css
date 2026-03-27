@@ -289,70 +289,246 @@ header.navbar {
 /* Lightsabers Section */
 
 #page-lightsabers {
-  background-color: #000;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(100, 130, 255, 0.14), transparent 40%),
+    radial-gradient(circle at 50% 88%, rgba(0, 230, 255, 0.08), transparent 45%),
+    #000;
+  padding-bottom: 2rem;
 }
 
-#saber-row {
-  display: flex;
-  flex-wrap: nowrap; /* prevent wrapping */
-  overflow-x: auto; /* enable horizontal scroll */
-  overflow-y: hidden;
-  gap: 10px;
-  padding: 1.5rem 2rem 2rem 2rem;
-  scroll-behavior: smooth;
-  background-color: #1a1a1a;
+.saber-carousel-shell {
+  position: relative;
+  margin: 1rem auto 0;
+  max-width: 1180px;
+  padding: 0 58px;
 }
 
-.saber-gap-row {
-  height: 80px;              /* Adjust height as needed */
-  background-color: #000;    /* Black background */
-  width: 100%;
+.saber-carousel-stage {
+  --active-blade-color: #66e9ff;
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--active-blade-color) 32%, transparent) 0%, transparent 55%),
+    linear-gradient(180deg, #050507 0%, #090a0f 60%, #030304 100%);
+  box-shadow:
+    inset 0 0 40px rgba(0, 0, 0, 0.75),
+    0 0 20px rgba(0, 0, 0, 0.45);
 }
 
-/* Optional: improve scrollbar appearance */
-#saber-row::-webkit-scrollbar {
-  height: 8px;
-}
-#saber-row::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 4px;
-}
-#saber-row::-webkit-scrollbar-track {
-  background: #222;
+.saber-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 68px;
+  border: 1px solid rgba(145, 180, 255, 0.5);
+  background: rgba(10, 16, 28, 0.82);
+  color: #dff1ff;
+  font-size: 1.55rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 30;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.saber-nav-left { left: 8px; }
+.saber-nav-right { right: 8px; }
+
+.saber-nav:hover {
+  background: rgba(36, 62, 110, 0.88);
+  transform: translateY(-50%) scale(1.03);
+  box-shadow: 0 0 12px rgba(138, 190, 255, 0.35);
+}
 
 .saber-card {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding-top: 60px; /* positions hilt lower */
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  width: 170px;
+  height: 340px;
+  transform-origin: center bottom;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    filter 0.35s ease;
+  cursor: pointer;
+  opacity: 0;
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: var(--saber-order, 1);
+}
+
+.saber-card.is-active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+}
+
+.saber-card.is-near-left {
+  transform: translate(calc(-50% - 175px), -50%) scale(0.86) rotateY(20deg);
+  opacity: 0.82;
+  filter: brightness(0.84);
+  pointer-events: auto;
+}
+
+.saber-card.is-near-right {
+  transform: translate(calc(-50% + 175px), -50%) scale(0.86) rotateY(-20deg);
+  opacity: 0.82;
+  filter: brightness(0.84);
+  pointer-events: auto;
+}
+
+.saber-card.is-far-left {
+  transform: translate(calc(-50% - 315px), -50%) scale(0.7) rotateY(28deg);
+  opacity: 0.45;
+  filter: brightness(0.66);
+  pointer-events: auto;
+}
+
+.saber-card.is-far-right {
+  transform: translate(calc(-50% + 315px), -50%) scale(0.7) rotateY(-28deg);
+  opacity: 0.45;
+  filter: brightness(0.66);
+  pointer-events: auto;
+}
+
+.saber-card.is-hidden {
+  transform: translate(-50%, -50%) scale(0.55);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.saber-card.saber-ignited.is-active {
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--active-blade-color) 40%, transparent));
 }
 
 .saber-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Ensure blade and hilt stack top-down */
+  justify-content: flex-end;
   position: relative;
-  width: 100px;
-  height: 240px;
-  margin: 0 10px;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .saber-wrapper img {
-  margin-top: 0; /* Remove gap above hilt */
+  margin-top: 0;
 }
 
-
 .saber-img {
-  max-height: 210px;
+  max-height: 245px;
   width: auto;
   max-width: 100%;
   z-index: 3;
+}
+
+.saber-info-panel {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.95rem 1.25rem;
+  border: 1px solid rgba(120, 170, 255, 0.24);
+  border-top: none;
+  background: rgba(6, 9, 18, 0.92);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.58);
+}
+
+.saber-info-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.saber-info-meta {
+  margin-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.saber-info-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.23rem 0.55rem;
+  font-size: 0.78rem;
+  border: 1px solid rgba(145, 190, 255, 0.35);
+  color: #cfe6ff;
+  background: rgba(30, 56, 98, 0.22);
+}
+
+.saber-color-chip {
+  --chip: #66e9ff;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: var(--chip);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--chip) 55%, transparent);
+}
+
+@media (max-width: 1024px) {
+  .saber-carousel-shell {
+    padding: 0 46px;
+  }
+
+  .saber-card.is-near-left {
+    transform: translate(calc(-50% - 145px), -50%) scale(0.82) rotateY(18deg);
+  }
+
+  .saber-card.is-near-right {
+    transform: translate(calc(-50% + 145px), -50%) scale(0.82) rotateY(-18deg);
+  }
+
+  .saber-card.is-far-left {
+    transform: translate(calc(-50% - 255px), -50%) scale(0.64) rotateY(24deg);
+    opacity: 0.28;
+  }
+
+  .saber-card.is-far-right {
+    transform: translate(calc(-50% + 255px), -50%) scale(0.64) rotateY(-24deg);
+    opacity: 0.28;
+  }
+}
+
+@media (max-width: 740px) {
+  .saber-carousel-shell {
+    padding: 0 36px;
+  }
+
+  .saber-carousel-stage {
+    height: 460px;
+  }
+
+  .saber-nav {
+    width: 34px;
+    height: 58px;
+    font-size: 1.35rem;
+  }
+
+  .saber-card {
+    width: 138px;
+    height: 300px;
+  }
+
+  .saber-card.is-near-left {
+    transform: translate(calc(-50% - 108px), -50%) scale(0.74) rotateY(16deg);
+    opacity: 0.72;
+  }
+
+  .saber-card.is-near-right {
+    transform: translate(calc(-50% + 108px), -50%) scale(0.74) rotateY(-16deg);
+    opacity: 0.72;
+  }
+
+  .saber-card.is-far-left,
+  .saber-card.is-far-right {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @keyframes bladePulse {

@@ -103,10 +103,14 @@
       <span class="title-secondary"> | Click to ignite</span>
     </div>
   </header>
-  <div id="saber-row" class="armor-row">
-    <!-- Lightsabers will load here -->
+  <div class="saber-carousel-shell" id="saber-carousel-shell">
+    <button id="saber-prev" class="saber-nav saber-nav-left" aria-label="Previous lightsaber">&#10094;</button>
+    <div id="saber-carousel-stage" class="saber-carousel-stage">
+      <!-- Lightsaber carousel items load here -->
+    </div>
+    <button id="saber-next" class="saber-nav saber-nav-right" aria-label="Next lightsaber">&#10095;</button>
   </div>
-    <div class="saber-gap-row"></div>
+  <div id="saber-info-panel" class="saber-info-panel" aria-live="polite"></div>
 </div>
 
  <div id="page-backpacks" class="page">
