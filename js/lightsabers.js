@@ -36,14 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (saber.crossguard) extras.push('Crossguard');
     if (saber.darksaber || saber.name.includes('Dark Sword')) extras.push('Darksaber profile');
 
+    const metaHtml =
+      extras.length > 0
+        ? `<div class="saber-info-meta">${extras.map(e => `<span class="saber-info-pill">${e}</span>`).join('')}</div>`
+        : '';
+
     infoPanel.innerHTML = `
-      <div class="saber-info-title">${saber.name}</div>
-      <div class="saber-info-meta">
-        <span class="saber-info-pill">
-          <span class="saber-color-chip" style="--chip:${saber.bladeColor || '#0ff'}"></span>
-          Blade ${saber.bladeColor || '#0ff'}
-        </span>
-        ${extras.map(e => `<span class="saber-info-pill">${e}</span>`).join('')}
+      <div class="saber-info-inner">
+        <div class="saber-info-title">${saber.name}</div>
+        ${metaHtml}
       </div>
     `;
   }
@@ -257,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(sabers => {
       sabersData = sabers;
-      stage.innerHTML = '';
+      stage.querySelectorAll('.saber-card').forEach(el => el.remove());
       saberNodes = sabers.map((saber, i) => {
         const node = createSaberNode(saber, i);
         stage.appendChild(node.card);

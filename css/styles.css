@@ -304,17 +304,41 @@ header.navbar {
 }
 
 .saber-carousel-stage {
+  /* Swap background art: set to url("../images/your-file.png") or none */
+  --saber-stage-bg-image: url("../images/saber-background.png");
   --active-blade-color: #66e9ff;
   position: relative;
   height: 520px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background:
-    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--active-blade-color) 32%, transparent) 0%, transparent 55%),
-    linear-gradient(180deg, #050507 0%, #090a0f 60%, #030304 100%);
+  background: #030304;
   box-shadow:
     inset 0 0 40px rgba(0, 0, 0, 0.75),
     0 0 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Cinematic overlays above optional BG image (sabers/nav sit above this) */
+.saber-carousel-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--active-blade-color) 32%, transparent) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(5, 5, 7, 0.55) 0%, rgba(9, 10, 15, 0.65) 60%, rgba(3, 3, 4, 0.75) 100%);
+}
+
+.saber-stage-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #050507;
+  background-image: var(--saber-stage-bg-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .saber-nav {
@@ -329,7 +353,7 @@ header.navbar {
   font-size: 1.55rem;
   line-height: 1;
   cursor: pointer;
-  z-index: 30;
+  z-index: 40;
   transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -357,7 +381,7 @@ header.navbar {
   opacity: 0;
   filter: blur(1px);
   pointer-events: none;
-  z-index: var(--saber-order, 1);
+  z-index: var(--saber-order, 50);
 }
 
 .saber-card.is-active {
@@ -434,6 +458,12 @@ header.navbar {
   border-top: none;
   background: rgba(6, 9, 18, 0.92);
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.58);
+  text-align: center;
+}
+
+.saber-info-inner {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .saber-info-title {
@@ -448,6 +478,7 @@ header.navbar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  justify-content: center;
 }
 
 .saber-info-pill {
@@ -459,15 +490,6 @@ header.navbar {
   border: 1px solid rgba(145, 190, 255, 0.35);
   color: #cfe6ff;
   background: rgba(30, 56, 98, 0.22);
-}
-
-.saber-color-chip {
-  --chip: #66e9ff;
-  width: 0.72rem;
-  height: 0.72rem;
-  border-radius: 50%;
-  background: var(--chip);
-  box-shadow: 0 0 8px color-mix(in srgb, var(--chip) 55%, transparent);
 }
 
 @media (max-width: 1024px) {
