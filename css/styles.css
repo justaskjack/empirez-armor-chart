@@ -433,10 +433,13 @@ header.navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  justify-content: flex-start;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 240px;
 }
 
 .saber-wrapper img {
@@ -444,7 +447,7 @@ header.navbar {
 }
 
 .saber-img {
-  max-height: 245px;
+  max-height: 210px;
   width: auto;
   max-width: 100%;
   z-index: 3;

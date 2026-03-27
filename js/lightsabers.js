@@ -31,20 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateInfoPanel(saber) {
-    const extras = [];
-    if (saber.doubleBlade) extras.push('Double-bladed');
-    if (saber.crossguard) extras.push('Crossguard');
-    if (saber.darksaber || saber.name.includes('Dark Sword')) extras.push('Darksaber profile');
-
-    const metaHtml =
-      extras.length > 0
-        ? `<div class="saber-info-meta">${extras.map(e => `<span class="saber-info-pill">${e}</span>`).join('')}</div>`
-        : '';
-
     infoPanel.innerHTML = `
       <div class="saber-info-inner">
         <div class="saber-info-title">${saber.name}</div>
-        ${metaHtml}
       </div>
     `;
   }
