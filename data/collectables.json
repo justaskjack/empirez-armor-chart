@@ -3,7 +3,7 @@
     "name": "Trade Federation Coin",
     "sellPrice": "None",
     "slots": "None",
-    "note": "TFC are currency to purchase custom bases and base decor like ships, droids and artwork from the High Command Outpost. (See Discord for more details)",
+    "note": "Currency for purchasing custom bases and base decor from the High Command Outpost.",
     "image": "Collectable26 - Trade Federation Coin",
     "collected": true
   },
@@ -11,7 +11,7 @@
     "name": "Jedi Medallion",
     "sellPrice": "100 Credits",
     "slots": "None",
-    "note": "Currency used to purchase Force powers. (See Discord for more details)",
+    "note": "Currency used to purchase Force powers.",
     "image": "Collectable17 - Jedi Medallion",
     "collected": true
   },
@@ -19,7 +19,7 @@
     "name": "Sith Medallion",
     "sellPrice": "100 Credits",
     "slots": "None",
-    "note": "Currency used to purchase Force powers. (See Discord for more details)",
+    "note": "Currency used to purchase Force powers.",
     "image": "Collectable16 - Sith Medallion",
     "collected": true
   },
@@ -27,7 +27,7 @@
     "name": "1 Credit",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
+    "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable29 - 1 Credit",
     "collected": true
   },
@@ -35,7 +35,7 @@
     "name": "5 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
+    "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable30 - 5 Credits",
     "collected": true
   },
@@ -43,7 +43,7 @@
     "name": "10 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
+    "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable31 - 10 Credits",
     "collected": true
   },
@@ -51,7 +51,7 @@
     "name": "50 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
+    "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable52 - 50 Credits",
     "collected": true
   },
@@ -59,7 +59,7 @@
     "name": "100 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
+    "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable41 - 100 Credits",
     "collected": true
   },
@@ -67,7 +67,7 @@
     "name": "Star Map Blue",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
+    "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable22 - Star Map Blue",
             "collected": true
   },
@@ -75,7 +75,7 @@
     "name": "Star Map Green",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
+    "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable23 - Star Map Green",
               "collected": true
   },
@@ -83,7 +83,7 @@
     "name": "Star Map Red",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
+    "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable35 - Star Map Red",
               "collected": true
   },
@@ -618,7 +618,7 @@
     "name": "Han Carbonite Craftable Storage",
     "sellPrice": "",
     "slots": "1000",
-    "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base.",
+    "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container.",
     "image": "Collectable36 - Han Carbonite Craftable Storage",
     "collected": true
   },

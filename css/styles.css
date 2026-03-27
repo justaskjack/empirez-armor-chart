@@ -1028,7 +1028,7 @@ header.navbar {
     linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.15) 100%),
     url("../images/panelbg01.png");
   background-position: center center;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border: 1px solid var(--hud-red-dim);
   box-shadow:
@@ -1063,7 +1063,7 @@ header.navbar {
     linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.15) 100%),
     url("../images/panelbg01.png");
   background-position: center center;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
