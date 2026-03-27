@@ -5,287 +5,323 @@
     "slots": "None",
     "note": "Currency for purchasing custom bases and base decor from the High Command Outpost.",
     "image": "Collectable26 - Trade Federation Coin",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-      {
+  {
     "name": "Jedi Medallion",
     "sellPrice": "100 Credits",
     "slots": "None",
     "note": "Currency used to purchase Force powers.",
     "image": "Collectable17 - Jedi Medallion",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-    {
+  {
     "name": "Sith Medallion",
     "sellPrice": "100 Credits",
     "slots": "None",
     "note": "Currency used to purchase Force powers.",
     "image": "Collectable16 - Sith Medallion",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-      {
+  {
     "name": "1 Credit",
     "sellPrice": "",
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable29 - 1 Credit",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-        {
+  {
     "name": "5 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable30 - 5 Credits",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-        {
+  {
     "name": "10 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable31 - 10 Credits",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-          {
+  {
     "name": "50 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable52 - 50 Credits",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-          {
+  {
     "name": "100 Credits",
     "sellPrice": "",
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable41 - 100 Credits",
-    "collected": true
+    "collected": true,
+    "category": "Currencies"
   },
-          {
+  {
     "name": "Star Map Blue",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable22 - Star Map Blue",
-            "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-            {
+  {
     "name": "Star Map Green",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable23 - Star Map Green",
-              "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-            {
+  {
     "name": "Star Map Red",
     "sellPrice": "",
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable35 - Star Map Red",
-              "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-              {
+  {
     "name": "Blue Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Crafted by combining a Blue Star Map with an Empty Datacard. Used to unlock the Blue Imperial Astromech Droids.",
     "image": "Collectable51 - Blue Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                {
+  {
     "name": "Green Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Crafted by combining a Green Star Map with an Empty Datacard. Used to unlock the Green Imperial Astromech Droids.",
     "image": "Collectable58 - Green Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                  {
+  {
     "name": "Red Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Crafted by combining a Red Star Map with an Empty Datacard. Used to unlock the Red Imperial Astromech Droids.",
     "image": "Collectable59 - Red Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                    {
+  {
     "name": "Black Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Found in the Sith Temple. Used to unlock the Black Imperial Astromech Droids.",
     "image": "Collectable60 - Black Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                      {
+  {
     "name": "Gray Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Found in the Jedi Temple. Used to unlock the B9E Loot Droids.",
     "image": "Collectable60 - Black Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                {
+  {
     "name": "Empty Datacard",
     "sellPrice": "",
     "slots": "",
     "note": "Empty Data Cards are combined with Star Maps to create keycards that unlock the Imperial Astromech loot droids.",
     "image": "Collectable24 - Empty Datacard",
-                "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                  {
+  {
     "name": "Chaincode",
     "sellPrice": "",
     "slots": "",
     "note": "Combine with a Datapad to create an Active Chaincode.",
     "image": "Collectable61 - Chaincode",
-                  "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                {
+  {
     "name": "Active Chaincode",
     "sellPrice": "",
     "slots": "",
     "note": "Created by combining a Chaincode with a Datapad. Used to unlock a Mando Safe.",
     "image": "Collectable25 - Active Chaincode",
-                  "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                {
+  {
     "name": "Datapad",
     "sellPrice": "50 Credits",
     "slots": "",
     "note": "Combine this with a Chaincode to create an Active Chaincode which is used to unlock a Mando Safe.",
     "image": "Collectable33 - Datapad",
-    "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-                  {
+  {
     "name": "Imperial Keycard",
     "sellPrice": "None",
     "slots": "",
     "note": "Used to open the bunker door at the Imperial Base in the NorthWest toxic zone.",
     "image": "Collectable28 - Imperial Keycard",
-    "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-    {
+  {
     "name": "turret 1",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable01 - turret 1",
-      "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-      {
+  {
     "name": "turret 2",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable39 - turret 2",
-        "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-        {
+  {
     "name": "turret 3",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable66 - turret 3",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-          {
+  {
     "name": "turret 5",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable63 - turret 5",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-    {
+  {
     "name": "turret 6",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable19 - turret 6",
-      "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-          {
+  {
     "name": "turbine 1",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable77 - turbine 1",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-            {
+  {
     "name": "turbine 3",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable67 - turbine 3",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-      {
+  {
     "name": "Grapple Droid",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable71 - Grapple Droid",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-        {
+  {
     "name": "Grapple Droid 1",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable32 - Grapple Droid 1",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-          {
+  {
     "name": "B1 Battle Droid",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable75 - B1 Battle Droid",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-          {
+  {
     "name": "seeker droid",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable68 - seeker droid",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-            {
+  {
     "name": "Droideka",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable72 - Droideka",
-          "collected": true
+    "collected": true,
+    "category": "Toys"
   },
-    {
+  {
     "name": "Mini-Brick Saber (Pink)",
     "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable18 - Mini-Brick Saber (Pink)",
-      "collected": true
+    "collected": true,
+    "category": "Legos"
   },
-      {
+  {
     "name": "Mini-Brick Saber (Red)",
     "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable48 - Mini-Brick Saber (Red)",
-        "collected": true
+    "collected": true,
+    "category": "Legos"
   },
-      {
+  {
     "name": "Mini-Brick Saber (Blue)",
     "sellPrice": "50 Credits",
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable47 - Mini-Brick Saber (Blue)",
-        "collected": true
+    "collected": true,
+    "category": "Legos"
   },
   {
     "name": "Rebel Ship",
@@ -293,341 +329,384 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable02 - Rebel Ship",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Republic Venator",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable03 - Republic Venator",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "U-Wing",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable04 - U-Wing",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Greys Corsant Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "Greys Gonk Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable38 - Greys Gonk Collectable",
-        "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-        {
+  {
     "name": "Greys ATRT Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable64 - Greys ATRT Collectable",
-          "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-          {
+  {
     "name": "Greys ATST Collectablee",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable73 - Greys ATST Collectable",
-          "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-          {
+  {
     "name": "Greys ATTE Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable70 - Greys ATTE Collectable",
-          "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "lezard",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable06 - lezard",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "hawkbat",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable78 - hawkbat",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "LOLA",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable74 - LOLA",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "holorecord decive",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable07 - holorecord decive",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "jeron fusion cutter",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable65 - jeron fusion cutter",
-        "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-        {
+  {
     "name": "cantina instrument",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable76 - cantina instrument",
-        "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "charismatic-mandalorian-helmet yellow",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "charismatic-mandalorian-helmet white",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable20 - charismatic-mandalorian-helmet white",
-        "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Bantha Poop Collectable",
     "sellPrice": "50 Credits",
     "slots": "3x3",
     "note": "",
     "image": "Collectable09 - Bantha Poop Collectable",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "Battle Front 2",
     "sellPrice": "50 Credits",
     "slots": "3x3",
     "note": "",
     "image": "Collectable69 - Battle Front 2",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Wayfinder Stone",
     "sellPrice": "100 Credits",
     "slots": "2x2",
     "note": "Provides an inset minimap on your screen. Press B to open the minimap.",
     "image": "Collectable10 - Wayfinder Stone",
-      "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "Sith Holocron",
     "sellPrice": "None",
     "slots": "None",
     "note": "Created by combining two Sith Kyber Crystals. Unlocks the door to the Sith Temple.",
     "image": "Collectable50 - Sith_Holocron",
-      "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-        {
+  {
     "name": "Jedi Holocron",
     "sellPrice": "None",
     "slots": "None",
     "note": "Created by combining two Jedi Kyber Crystals. Unlocks the door to the Jedi Temple",
     "image": "Collectable55 - Jedi_Holocron",
-      "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-      {
+  {
     "name": "Pink Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibroblade.",
     "image": "Collectable21 - Pink Kyber Crystal",
-        "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-        {
+  {
     "name": "Purple Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Sword to create a Jedi Force Blade.",
-    "image": "Collectable39 - Purple Kyber Crystal"
+    "image": "Collectable39 - Purple Kyber Crystal",
+    "category": "Misc"
   },
-          {
+  {
     "name": "Orange Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a Machete to create a Vibro Blade.",
     "image": "Collectable42 - Orange Kyber Crystal",
-            "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-            {
+  {
     "name": "Black Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
     "note": "Combine with a sword to create a Sith Warblade.",
     "image": "Collectable54 - Black Kyber Crystal",
-            "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-          {
+  {
     "name": "Nightsister Crystal",
     "sellPrice": "100 Credits",
     "slots": "None",
     "note": "Combine with a Mime Mask to create a Darth Maul mask.",
     "image": "Collectable45 - Nightsister Crystal",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-            {
+  {
     "name": "Jedi Kyber Crystal",
     "sellPrice": "300 Credits",
     "slots": "None",
     "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which unlocks the Jedi Temple.",
     "image": "Collectable49 - Jedi Kyber Crystal",
-    "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-              {
+  {
     "name": "Sith Kyber Crystal",
     "sellPrice": "300 Creditse",
     "slots": "None",
     "note": "Combine with another Sith Kyber Crystal to create a Sith Holocron which unlocks the Sith Temple.",
     "image": "Collectable56 - Sith Kyber Crystal",
-    "collected": true
+    "collected": true,
+    "category": "Keycards+"
   },
-          {
+  {
     "name": "Jedi Force blade",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a sword with a Purple Kyber Crystal.",
     "image": "Collectable 41 - Jedi Force blade",
-                "collected": true
+    "collected": true,
+    "category": "Crafting"
   },
-            {
+  {
     "name": "Sith Warblade",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a sword with a Black Kyber Crystal.",
     "image": "Collectable53 - Sith Warblade",
-                  "collected": true
+    "collected": true,
+    "category": "Crafting"
   },
-            {
+  {
     "name": "Vibro Blade (Orange Variant)",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a Machete with an Orange Kyber Crystal.",
     "image": "Collectable43 - Vibro Blade (Orange)",
-              "collected": true
+    "collected": true,
+    "category": "Crafting"
   },
-              {
+  {
     "name": "Vibro Blade (Pink Variant)",
     "sellPrice": "None",
     "slots": "None",
     "note": "Crafted by combining a Machete with a Pink Kyber Crystal.",
     "image": "Collectable46 - Vibro Blade (Pink)",
-                "collected": true
+    "collected": true,
+    "category": "Crafting"
   },
-    {
+  {
     "name": "Cereals",
     "sellPrice": "None",
     "slots": "None",
     "note": "Can be eaten.",
     "image": "Collectable11 - C3POs Cereals",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Teddy Bear (Pink)",
     "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable12 - Teddy Bear (Pink)",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Teddy Bear (Brown)",
     "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable13 - Teddy Bear (Brown)",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Teddy Bear (White)",
     "sellPrice": "None",
     "slots": "2x3",
     "note": "",
     "image": "Collectable14 - Teddy Bear (White)",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-    {
+  {
     "name": "Grogue Plushie",
     "sellPrice": "10 Credits",
     "slots": "2x3",
     "note": "Can be displayed inside a Grogu Pod.",
     "image": "Collectable15 - Grogue Plushie",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-      {
+  {
     "name": "Mechanical Hand",
     "sellPrice": "",
     "slots": "",
     "note": "Can be worn on hand slot.",
     "image": "Collectable34 - Mechanical Hand",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-        {
+  {
     "name": "The Art of War",
     "sellPrice": "None",
     "slots": "None",
     "note": "",
     "image": "Collectable44 - The Art of War",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-          {
+  {
     "name": "Dracula",
     "sellPrice": "None",
     "slots": "None",
     "note": "",
     "image": "Collectable57 - Dracula",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-          {
+  {
     "name": "Jawa Cloak",
     "sellPrice": "None",
     "slots": "None",
     "note": "Can be worn to make the player appear as a large Jawa.",
     "image": "Collectable40 - Jawa Cloak",
-            "collected": true
+    "collected": true,
+    "category": "Misc"
   },
-        {
+  {
     "name": "Han Carbonite Craftable Storage",
     "sellPrice": "",
     "slots": "1000",
     "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container.",
     "image": "Collectable36 - Han Carbonite Craftable Storage",
-    "collected": true
+    "collected": true,
+    "category": "Crafting"
   },
-          {
+  {
     "name": "Fireworks Launcher",
     "sellPrice": "",
     "slots": "",
     "note": "Set on the ground and activate to launch fireworks into the air.",
     "image": "Collectable37 - Fireworks Launcher",
-    "collected": true
+    "collected": true,
+    "category": "Misc"
   }
 ]
