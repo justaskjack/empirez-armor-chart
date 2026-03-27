@@ -3,23 +3,23 @@
     "name": "Trade Federation Coin",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Used to purchase custom bases or ships from the admins. See Discord for more details",
+    "note": "TFC are currency to purchase custom bases and base decor like ships, droids and artwork from the High Command Outpost. (See Discord for more details)",
     "image": "Collectable26 - Trade Federation Coin",
     "collected": true
   },
       {
     "name": "Jedi Medallion",
     "sellPrice": "100 Credits",
-    "slots": "2x3",
-    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
+    "slots": "None",
+    "note": "Currency used to purchase Force powers. (See Discord for more details)",
     "image": "Collectable17 - Jedi Medallion",
     "collected": true
   },
     {
     "name": "Sith Medallion",
     "sellPrice": "100 Credits",
-    "slots": "2x3",
-    "note": "Can be turned in to admins for Force powers. Need 10 of each for Force Push, 25 of each for Force Heal and 35 of each for Force Shield.",
+    "slots": "None",
+    "note": "Currency used to purchase Force powers. (See Discord for more details)",
     "image": "Collectable16 - Sith Medallion",
     "collected": true
   },
@@ -27,7 +27,7 @@
     "name": "1 Credit",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable29 - 1 Credit",
     "collected": true
   },
@@ -35,7 +35,7 @@
     "name": "5 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable30 - 5 Credits",
     "collected": true
   },
@@ -43,7 +43,7 @@
     "name": "10 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable31 - 10 Credits",
     "collected": true
   },
@@ -51,7 +51,7 @@
     "name": "50 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable52 - 50 Credits",
     "collected": true
   },
@@ -59,7 +59,7 @@
     "name": "100 Credits",
     "sellPrice": "",
     "slots": "",
-    "note": "Credits are provided as currency from the npc traders in Tosche Station. They can be used to purchase items and vehicles from the traders or to trade with other players",
+    "note": "Credits are provided as currency from the npc traders. They can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable41 - 100 Credits",
     "collected": true
   },
@@ -67,7 +67,7 @@
     "name": "Star Map Blue",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable22 - Star Map Blue",
             "collected": true
   },
@@ -75,7 +75,7 @@
     "name": "Star Map Green",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable23 - Star Map Green",
               "collected": true
   },
@@ -83,7 +83,7 @@
     "name": "Star Map Red",
     "sellPrice": "",
     "slots": "",
-    "note": "Star Maps are combined with Empty Datacards to create keycards that open the colored Astromech droids around the map",
+    "note": "Star Maps combined with Empty Datacards will create the datacards that unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable35 - Star Map Red",
               "collected": true
   },
@@ -91,7 +91,7 @@
     "name": "Blue Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Crafted by combining a Blue Star Map with an Empty Datacard. Used to unlock the Blue Imperial Astromech Droids",
+    "note": "Crafted by combining a Blue Star Map with an Empty Datacard. Used to unlock the Blue Imperial Astromech Droids.",
     "image": "Collectable51 - Blue Datacard",
                 "collected": true
   },
@@ -99,7 +99,7 @@
     "name": "Green Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Crafted by combining a Green Star Map with an Empty Datacard. Used to unlock the Green Imperial Astromech Droids",
+    "note": "Crafted by combining a Green Star Map with an Empty Datacard. Used to unlock the Green Imperial Astromech Droids.",
     "image": "Collectable58 - Green Datacard",
                 "collected": true
   },
@@ -107,7 +107,7 @@
     "name": "Red Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Crafted by combining a Red Star Map with an Empty Datacard. Used to unlock the Red Imperial Astromech Droids",
+    "note": "Crafted by combining a Red Star Map with an Empty Datacard. Used to unlock the Red Imperial Astromech Droids.",
     "image": "Collectable59 - Red Datacard",
                 "collected": true
   },
@@ -115,7 +115,7 @@
     "name": "Black Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Found in the Sith Temple. Used to unlock the Black Imperial Astromech Droids",
+    "note": "Found in the Sith Temple. Used to unlock the Black Imperial Astromech Droids.",
     "image": "Collectable60 - Black Datacard",
                 "collected": true
   },
@@ -123,7 +123,7 @@
     "name": "Gray Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Found in the Jedi Temple. Used to unlock the B9E Loot Droids",
+    "note": "Found in the Jedi Temple. Used to unlock the B9E Loot Droids.",
     "image": "Collectable60 - Black Datacard",
                 "collected": true
   },
@@ -131,7 +131,7 @@
     "name": "Empty Datacard",
     "sellPrice": "",
     "slots": "",
-    "note": "Empty Data Cards are combined with Star Maps to create keycards that open the Imperial Astromech loot droids around the map",
+    "note": "Empty Data Cards are combined with Star Maps to create keycards that unlock the Imperial Astromech loot droids.",
     "image": "Collectable24 - Empty Datacard",
                 "collected": true
   },
@@ -139,7 +139,7 @@
     "name": "Chaincode",
     "sellPrice": "",
     "slots": "",
-    "note": "Combine with a Datapad to create an Active Chaincode",
+    "note": "Combine with a Datapad to create an Active Chaincode.",
     "image": "Collectable61 - Chaincode",
                   "collected": true
   },
@@ -147,7 +147,7 @@
     "name": "Active Chaincode",
     "sellPrice": "",
     "slots": "",
-    "note": "Created by combining a Chaincode with a Datapad. Used to open a Mando Safe",
+    "note": "Created by combining a Chaincode with a Datapad. Used to unlock a Mando Safe.",
     "image": "Collectable25 - Active Chaincode",
                   "collected": true
   },
@@ -155,7 +155,7 @@
     "name": "Datapad",
     "sellPrice": "50 Credits",
     "slots": "",
-    "note": "Combine this with a Chaincode to create an Active Chaincode which is used to open a Mando Safe",
+    "note": "Combine this with a Chaincode to create an Active Chaincode which is used to unlock a Mando Safe.",
     "image": "Collectable33 - Datapad",
     "collected": true
   },
@@ -163,16 +163,8 @@
     "name": "Imperial Keycard",
     "sellPrice": "None",
     "slots": "",
-    "note": "Used to open the bunker door at the Imperial Base in the NorthWest toxic zone",
+    "note": "Used to open the bunker door at the Imperial Base in the NorthWest toxic zone.",
     "image": "Collectable28 - Imperial Keycard",
-    "collected": true
-  },
-                  {
-    "name": "Bunker Charge",
-    "sellPrice": "None",
-    "slots": "",
-    "note": "Used to open bunker doors at Hoth and the Mando Bunker",
-    "image": "Collectable27 - Bunker Charge",
     "collected": true
   },
     {
@@ -443,7 +435,7 @@
     "name": "Wayfinder Stone",
     "sellPrice": "100 Credits",
     "slots": "2x2",
-    "note": "",
+    "note": "Provides an inset minimap on your screen. Press B to open the minimap.",
     "image": "Collectable10 - Wayfinder Stone",
       "collected": true
   },
@@ -451,7 +443,7 @@
     "name": "Sith Holocron",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Created by combining two Sith Kyber Crystals. Opens the door to the Sith Temple",
+    "note": "Created by combining two Sith Kyber Crystals. Unlocks the door to the Sith Temple.",
     "image": "Collectable50 - Sith_Holocron",
       "collected": true
   },
@@ -459,7 +451,7 @@
     "name": "Jedi Holocron",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Created by combining two Jedi Kyber Crystals. Opens the door to the Jedi Temple",
+    "note": "Created by combining two Jedi Kyber Crystals. Unlocks the door to the Jedi Temple",
     "image": "Collectable55 - Jedi_Holocron",
       "collected": true
   },
@@ -467,7 +459,7 @@
     "name": "Pink Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
-    "note": "Combine with a Machete to create a Vibroblade",
+    "note": "Combine with a Machete to create a Vibroblade.",
     "image": "Collectable21 - Pink Kyber Crystal",
         "collected": true
   },
@@ -475,14 +467,14 @@
     "name": "Purple Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
-    "note": "Combine with a Sword to create a Jedi Force Blade",
+    "note": "Combine with a Sword to create a Jedi Force Blade.",
     "image": "Collectable39 - Purple Kyber Crystal"
   },
           {
     "name": "Orange Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
-    "note": "Combine with a Machete to create a Vibro Blade",
+    "note": "Combine with a Machete to create a Vibro Blade.",
     "image": "Collectable42 - Orange Kyber Crystal",
             "collected": true
   },
@@ -490,7 +482,7 @@
     "name": "Black Kyber Crystal",
     "sellPrice": "200 Credits",
     "slots": "None",
-    "note": "Combine with a sword to create a Sith Warblade",
+    "note": "Combine with a sword to create a Sith Warblade.",
     "image": "Collectable54 - Black Kyber Crystal",
             "collected": true
   },
@@ -498,7 +490,7 @@
     "name": "Nightsister Crystal",
     "sellPrice": "100 Credits",
     "slots": "None",
-    "note": "Combine with a Mime Mask to create a Darth Maul mask",
+    "note": "Combine with a Mime Mask to create a Darth Maul mask.",
     "image": "Collectable45 - Nightsister Crystal",
     "collected": true
   },
@@ -506,7 +498,7 @@
     "name": "Jedi Kyber Crystal",
     "sellPrice": "300 Credits",
     "slots": "None",
-    "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which opens the Jedi Temple",
+    "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which unlocks the Jedi Temple.",
     "image": "Collectable49 - Jedi Kyber Crystal",
     "collected": true
   },
@@ -514,7 +506,7 @@
     "name": "Sith Kyber Crystal",
     "sellPrice": "300 Creditse",
     "slots": "None",
-    "note": "Combine with another Sith Kyber Crystal to create a Sith Holocron which opens the Sith Temple",
+    "note": "Combine with another Sith Kyber Crystal to create a Sith Holocron which unlocks the Sith Temple.",
     "image": "Collectable56 - Sith Kyber Crystal",
     "collected": true
   },
@@ -522,7 +514,7 @@
     "name": "Jedi Force blade",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Crafted by combining a sword with a Purple Kyber Crystal",
+    "note": "Crafted by combining a sword with a Purple Kyber Crystal.",
     "image": "Collectable 41 - Jedi Force blade",
                 "collected": true
   },
@@ -530,7 +522,7 @@
     "name": "Sith Warblade",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Crafted by combining a sword with a Black Kyber Crystal",
+    "note": "Crafted by combining a sword with a Black Kyber Crystal.",
     "image": "Collectable53 - Sith Warblade",
                   "collected": true
   },
@@ -538,7 +530,7 @@
     "name": "Vibro Blade (Orange Variant)",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Crafted by combining a Machete with an Orange Kyber Crystal",
+    "note": "Crafted by combining a Machete with an Orange Kyber Crystal.",
     "image": "Collectable43 - Vibro Blade (Orange)",
               "collected": true
   },
@@ -546,7 +538,7 @@
     "name": "Vibro Blade (Pink Variant)",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Crafted by combining a Machete with a Pink Kyber Crystal",
+    "note": "Crafted by combining a Machete with a Pink Kyber Crystal.",
     "image": "Collectable46 - Vibro Blade (Pink)",
                 "collected": true
   },
@@ -554,7 +546,7 @@
     "name": "Cereals",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Can be eaten",
+    "note": "Can be eaten.",
     "image": "Collectable11 - C3POs Cereals",
     "collected": true
   },
@@ -586,7 +578,7 @@
     "name": "Grogue Plushie",
     "sellPrice": "10 Credits",
     "slots": "2x3",
-    "note": "",
+    "note": "Can be displayed inside a Grogu Pod.",
     "image": "Collectable15 - Grogue Plushie",
     "collected": true
   },
@@ -594,7 +586,7 @@
     "name": "Mechanical Hand",
     "sellPrice": "",
     "slots": "",
-    "note": "Can be worn on hand slot",
+    "note": "Can be worn on hand slot.",
     "image": "Collectable34 - Mechanical Hand",
     "collected": true
   },
@@ -618,7 +610,7 @@
     "name": "Jawa Cloak",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Can be worn to make the player appear as a large Jawa",
+    "note": "Can be worn to make the player appear as a large Jawa.",
     "image": "Collectable40 - Jawa Cloak",
             "collected": true
   },
@@ -626,7 +618,7 @@
     "name": "Han Carbonite Craftable Storage",
     "sellPrice": "",
     "slots": "1000",
-    "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base",
+    "note": "Found in Jabbas Palace. Use a hammer on it to create a 1000 slot storage container that can be hanged up in your base.",
     "image": "Collectable36 - Han Carbonite Craftable Storage",
     "collected": true
   },
@@ -634,7 +626,7 @@
     "name": "Fireworks Launcher",
     "sellPrice": "",
     "slots": "",
-    "note": "Set on the ground and activate to launch fireworks into the air",
+    "note": "Set on the ground and activate to launch fireworks into the air.",
     "image": "Collectable37 - Fireworks Launcher",
     "collected": true
   }
