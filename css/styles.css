@@ -1100,10 +1100,10 @@ header.navbar {
 #page-collectables .collectable-thumb {
   display: block;
   /* ~25% smaller than before for better HUD alignment */
-  width: min(150px, 24vw);
-  height: min(150px, 24vw);
-  max-width: 165px;
-  max-height: 165px;
+  width: min(130px, 24vw);
+  height: min(130px, 24vw);
+  max-width: 145px;
+  max-height: 145px;
   object-fit: contain;
   background: #050508;
 }
