@@ -1271,13 +1271,26 @@ header.navbar {
   box-sizing: border-box;
 }
 
+#page-collectables .collectable-section--collapsed .collectable-section-grid {
+  display: none;
+}
+
 #page-collectables .collectable-section-header {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  width: 100%;
+  margin: 0;
+  margin-top: 0.1rem;
   min-height: 42px;
   padding: 0.34rem 0.86rem;
-  margin-top: 0.1rem;
+  box-sizing: border-box;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
   border: 1px solid rgba(255, 66, 66, 0.7);
   background:
     linear-gradient(180deg, rgba(28, 10, 12, 0.95) 0%, rgba(12, 5, 8, 0.98) 100%);
@@ -1296,6 +1309,45 @@ header.navbar {
     0% calc(100% - 8px),
     0% 8px
   );
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+#page-collectables .collectable-section-header:hover {
+  border-color: rgba(255, 100, 100, 0.85);
+  box-shadow:
+    0 0 18px rgba(255, 60, 60, 0.3),
+    inset 0 0 18px rgba(255, 42, 42, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#page-collectables .collectable-section-header:focus {
+  outline: none;
+}
+
+#page-collectables .collectable-section-header:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--collect-accent) 75%, #fff 25%);
+  outline-offset: 3px;
+}
+
+#page-collectables .collectable-section-chevron {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 200, 200, 0.88);
+  transition: transform 0.22s ease;
+}
+
+#page-collectables .collectable-section-chevron svg {
+  display: block;
+}
+
+#page-collectables .collectable-section--collapsed .collectable-section-chevron {
+  transform: rotate(-90deg);
 }
 
 #page-collectables .collectable-section-accent {

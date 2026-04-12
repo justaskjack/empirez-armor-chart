@@ -92,15 +92,38 @@ document.addEventListener("DOMContentLoaded", function () {
     parent.appendChild(row);
   }
 
-  function createSectionHeader(sectionName) {
-    const header = document.createElement("div");
+  function sectionGridId(sectionName) {
+    return (
+      "collectable-grid-" +
+      sectionName
+        .toLowerCase()
+        .replace(/\+/g, "-plus")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "")
+    );
+  }
+
+  function createSectionHeader(sectionName, gridId) {
+    const header = document.createElement("button");
+    header.type = "button";
     header.className = "collectable-section-header";
+    header.setAttribute("aria-expanded", "true");
+    header.setAttribute("aria-controls", gridId);
+    header.setAttribute(
+      "aria-label",
+      `Show or hide the ${sectionName} collectables section`
+    );
     header.innerHTML = `
       <div class="collectable-section-accent" aria-hidden="true"></div>
       <div class="collectable-section-main">
         <span class="collectable-section-icon" aria-hidden="true">${SECTION_ICONS[sectionName] || ""}</span>
         <span class="collectable-section-title">${sectionName}</span>
       </div>
+      <span class="collectable-section-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
       <div class="collectable-section-line" aria-hidden="true"></div>
     `;
     return header;
@@ -193,15 +216,32 @@ document.addEventListener("DOMContentLoaded", function () {
         const sectionWrap = document.createElement("section");
         sectionWrap.className = "collectable-section";
 
-        sectionWrap.appendChild(createSectionHeader(section));
+        const gridId = sectionGridId(section);
+        const header = createSectionHeader(section, gridId);
 
         const sectionGrid = document.createElement("div");
         sectionGrid.className = "collectable-section-grid";
+        sectionGrid.id = gridId;
+
+        const startCollapsed = section !== "Currencies";
+        if (startCollapsed) {
+          sectionWrap.classList.add("collectable-section--collapsed");
+          header.setAttribute("aria-expanded", "false");
+        }
+
+        header.addEventListener("click", function () {
+          sectionWrap.classList.toggle("collectable-section--collapsed");
+          const collapsed = sectionWrap.classList.contains(
+            "collectable-section--collapsed"
+          );
+          header.setAttribute("aria-expanded", String(!collapsed));
+        });
 
         sectionItems.forEach(item => {
           sectionGrid.appendChild(createCard(item));
         });
 
+        sectionWrap.appendChild(header);
         sectionWrap.appendChild(sectionGrid);
         container.appendChild(sectionWrap);
       });
