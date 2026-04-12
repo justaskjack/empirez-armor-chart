@@ -1327,9 +1327,13 @@ header.navbar {
 
 /* ---------- Backpacks page: card layout (1536×1024 backpack_cardback.png; % in backpack-card-layout.json) ---------- */
 .backpack-card.backpack-card--ccg {
+  /* Design reference width 540px; scale down ~30% so frame + %-layout stay locked (same aspect ratio). */
+  --bp-card-design-width: 540px;
+  --bp-card-scale: 0.7;
+  --bp-card-max-width: calc(var(--bp-card-design-width) * var(--bp-card-scale));
   container-type: inline-size;
-  width: min(540px, 94vw);
-  max-width: 540px;
+  width: min(var(--bp-card-max-width), 94vw);
+  max-width: var(--bp-card-max-width);
   min-height: 0;
   padding: 0;
   border-radius: 0;
@@ -1337,6 +1341,7 @@ header.navbar {
   box-shadow: none;
   border: none;
   display: block;
+  /* Same box as .backpack-card-ccg (1536:1024); stretch to match %-positioned overlays */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1359,7 +1364,7 @@ header.navbar {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  padding: 5px;
+  padding: clamp(3px, 1.35cqw, 6px);
   border: 1px solid rgba(100, 210, 255, 0.55);
   background:
     linear-gradient(145deg, rgba(0, 24, 40, 0.5) 0%, rgba(0, 8, 16, 0.75) 100%);
@@ -1368,15 +1373,16 @@ header.navbar {
     0 0 14px rgba(0, 200, 255, 0.18) inset,
     0 0 20px rgba(0, 160, 255, 0.22),
     0 0 1px rgba(120, 230, 255, 0.4);
+  --bp-thumb-cut: clamp(3px, 1.15cqw, 6px);
   clip-path: polygon(
-    6px 0%,
-    calc(100% - 6px) 0%,
-    100% 6px,
-    100% calc(100% - 6px),
-    calc(100% - 6px) 100%,
-    6px 100%,
-    0% calc(100% - 6px),
-    0% 6px
+    var(--bp-thumb-cut) 0%,
+    calc(100% - var(--bp-thumb-cut)) 0%,
+    100% var(--bp-thumb-cut),
+    100% calc(100% - var(--bp-thumb-cut)),
+    calc(100% - var(--bp-thumb-cut)) 100%,
+    var(--bp-thumb-cut) 100%,
+    0% calc(100% - var(--bp-thumb-cut)),
+    0% var(--bp-thumb-cut)
   );
 }
 
@@ -1461,7 +1467,7 @@ header.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: clamp(1px, 0.55cqw, 3px);
   border: 1px solid rgba(80, 200, 255, 0.22);
   background: rgba(0, 8, 18, 0.35);
   box-shadow:
