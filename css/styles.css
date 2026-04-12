@@ -155,7 +155,7 @@ header {
 .armor-card-ccg__protection-value {
   display: inline-block;
   line-height: 1;
-  transform: translateY(5px);
+  transform: translateY(1px);
 }
 
 /* Rarity / location — centered in block; nudged up 5px */
