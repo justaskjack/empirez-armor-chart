@@ -46,7 +46,10 @@ function buildArmorCard(armor) {
   const prot = document.createElement("div");
   prot.className = "armor-card-ccg__protection";
   prot.setAttribute("aria-label", `Protection level ${armor.protection}`);
-  prot.textContent = String(armor.protection);
+  const protVal = document.createElement("span");
+  protVal.className = "armor-card-ccg__protection-value";
+  protVal.textContent = String(armor.protection);
+  prot.appendChild(protVal);
 
   const meta = document.createElement("div");
   meta.className = "armor-card-ccg__meta";
