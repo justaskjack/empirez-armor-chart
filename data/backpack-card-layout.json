@@ -1,0 +1,13 @@
+{
+  "thumb": { "left": 20, "top": 16, "width": 27, "height": 49 },
+  "title": { "left": 54, "top": 16, "width": 33, "height": 11 },
+  "slots": { "left": 54, "top": 29, "width": 33, "height": 11 },
+  "strapSlots": [
+    { "left": 25, "top": 75.5, "width": 6.3, "height": 9.36 },
+    { "left": 32.8, "top": 75.5, "width": 6.3, "height": 9.36 },
+    { "left": 40.6, "top": 75.5, "width": 6.3, "height": 9.36 },
+    { "left": 48.4, "top": 75.5, "width": 6.3, "height": 9.36 },
+    { "left": 56.2, "top": 75.5, "width": 6.3, "height": 9.36 },
+    { "left": 64, "top": 75.5, "width": 6.3, "height": 9.36 }
+  ]
+}
