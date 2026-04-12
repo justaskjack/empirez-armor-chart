@@ -120,13 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
     thumbFrame.className = "collectable-thumb-frame";
 
     const imageLink = document.createElement("a");
-    imageLink.href = `images/${item.image}.png`;
+    imageLink.href = `images/collectables/${item.image}.jpg`;
     imageLink.setAttribute("data-lightbox", "collectables");
     imageLink.setAttribute("data-title", item.name);
     imageLink.className = "collectable-lightbox-link";
 
     const img = document.createElement("img");
-    img.src = `images/${item.image} - thumb.png`;
+    img.src = `images/collectables/${item.image} - thumb.jpg`;
     img.alt = item.name;
     img.className = "collectable-thumb";
     img.loading = "lazy";
@@ -144,14 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
     title.className = "collectable-title";
     title.textContent = item.name;
 
-    const status = document.createElement("span");
-    status.className =
-      "collectable-status " +
-      (item.collected ? "collectable-status--collected" : "collectable-status--open");
-    status.textContent = item.collected ? "COLLECTED" : "UNSCANNED";
-
     header.appendChild(title);
-    header.appendChild(status);
 
     const rows = document.createElement("div");
     rows.className = "collectable-rows";
@@ -165,6 +158,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     card.appendChild(thumbFrame);
     card.appendChild(content);
+
+    if (item.collected) {
+      const dot = document.createElement("span");
+      dot.className = "collected-dot";
+      dot.setAttribute("aria-hidden", "true");
+      card.appendChild(dot);
+    }
+
     glow.appendChild(card);
 
     return glow;

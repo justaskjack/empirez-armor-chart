@@ -1369,6 +1369,7 @@ header.navbar {
   --hud-red: #ff2a2a;
   --hud-red-dim: rgba(255, 42, 42, 0.45);
 
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1506,29 +1507,6 @@ header.navbar {
   overflow-wrap: anywhere;
 }
 
-#page-collectables .collectable-status {
-  flex-shrink: 0;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  padding: 4px 8px;
-  border: 1px solid rgba(255, 100, 100, 0.4);
-  color: #ff9090;
-  background: rgba(40, 0, 0, 0.35);
-}
-
-#page-collectables .collectable-status--collected {
-  border-color: rgba(80, 220, 130, 0.5);
-  color: #7dffc0;
-  background: rgba(0, 28, 14, 0.35);
-  text-shadow: 0 0 8px rgba(80, 255, 160, 0.25);
-}
-
-#page-collectables .collectable-status--open {
-  color: #c9a0a0;
-  border-color: rgba(255, 80, 80, 0.25);
-}
-
 #page-collectables .collectable-rows {
   display: flex;
   flex-direction: column;
@@ -1631,10 +1609,6 @@ header.navbar {
   #page-collectables .collectable-header {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  #page-collectables .collectable-status {
-    align-self: flex-end;
   }
 
   #page-collectables .collectable-data-row {
