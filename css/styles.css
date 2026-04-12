@@ -105,66 +105,78 @@ header {
   font-family: inherit;
 }
 
+/* Title sits on the brushed-metal header strip (between seal and protection orb) */
 .armor-card-ccg__title {
   position: absolute;
-  left: 14%;
-  top: 10.8%;
-  width: 58%;
-  min-height: 0;
-  max-height: 6.2%;
+  left: 9%;
+  top: 3.6%;
+  width: 66%;
+  height: 6.8%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.52rem, 2.8cqw, 0.78rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: clamp(0.62rem, 4.2cqw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  line-height: 1.15;
+  line-height: 1.05;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 2%;
+  padding: 0 3%;
   box-sizing: border-box;
+  color: #fff;
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.95),
+    0 1px 2px rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .armor-card-ccg__protection {
   position: absolute;
-  left: 77.5%;
-  top: 9.2%;
-  width: 14%;
+  left: 77%;
+  top: 2.8%;
+  width: 14.5%;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.1rem, 7.5cqw, 1.85rem);
+  font-size: clamp(1.15rem, 8cqw, 2rem);
   font-weight: 800;
   color: #fff;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
   pointer-events: none;
+  z-index: 2;
 }
 
+/* Upper black info panel — rarity / location, nudged up and toward the right */
 .armor-card-ccg__meta {
   position: absolute;
-  left: 5.5%;
-  top: 17.2%;
-  width: 89%;
-  height: 6.8%;
+  left: 18%;
+  top: 12.8%;
+  width: 72%;
+  height: 7.5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.12em;
-  font-size: clamp(0.45rem, 2.35cqw, 0.62rem);
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.18em;
+  font-size: clamp(0.48rem, 2.6cqw, 0.68rem);
   line-height: 1.2;
   box-sizing: border-box;
-  padding: 0 2%;
+  padding: 0.15em 4% 0 0;
   pointer-events: none;
+  z-index: 1;
 }
 
 .armor-card-ccg__meta-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25em 0.5em;
+  gap: 0.25em 0.45em;
   align-items: baseline;
+  justify-content: flex-end;
 }
 
 .armor-card-ccg__meta-label {
@@ -178,73 +190,81 @@ header {
   word-break: break-word;
 }
 
+/* Main armor render — fills the central black viewport */
 .armor-card-ccg__thumb-wrap {
   position: absolute;
-  left: 5.8%;
-  top: 24.8%;
-  width: 88.4%;
-  height: 34.5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 5.6%;
+  top: 21.5%;
+  width: 88.8%;
+  height: 36.5%;
+  display: block;
+  overflow: hidden;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .armor-card-ccg__thumb-link {
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
   cursor: zoom-in;
 }
 
 .armor-card-ccg__thumb-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
+/* Type line sits on the narrow silver bar between main art and equipment panel */
 .armor-card-ccg__type {
   position: absolute;
-  left: 8%;
-  top: 60.2%;
-  width: 84%;
-  height: 3.4%;
+  left: 6%;
+  top: 57.8%;
+  width: 88%;
+  height: 3.2%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.42rem, 2.2cqw, 0.58rem);
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-size: clamp(0.44rem, 2.45cqw, 0.64rem);
+  font-weight: 800;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #e8e8e8;
+  color: #f4f4f4;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 2%;
+  padding: 0 3%;
   box-sizing: border-box;
   pointer-events: none;
+  z-index: 4;
+  text-shadow:
+    0 0 6px rgba(0, 0, 0, 1),
+    0 1px 3px rgba(0, 0, 0, 0.95),
+    0 0 1px rgba(0, 0, 0, 1);
 }
 
+/* Equipment strip — lower black window only (below type bar) */
 .armor-card-ccg__equipment {
   position: absolute;
-  left: 5.8%;
-  top: 64.5%;
-  width: 88.4%;
-  height: 26.5%;
+  left: 5.6%;
+  top: 60.8%;
+  width: 88.8%;
+  height: 29.5%;
   box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .armor-card-ccg__equipment-img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .armor-card-ccg__equipment-hits {
@@ -253,6 +273,7 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .armor-card-ccg__hotspot {
@@ -274,11 +295,14 @@ header {
   outline: none;
 }
 
-.armor-card-ccg__collected-dot {
-  z-index: 5;
-  left: auto;
-  right: 8px;
-  top: 8px;
+/* Collected marker: bottom center over footer “tech” strip (not top corners) */
+.armor-card.armor-card--ccg > .armor-card-ccg__collected-dot {
+  top: auto;
+  right: auto;
+  left: 50%;
+  bottom: 1.25%;
+  transform: translateX(-50%);
+  z-index: 6;
 }
 
 .rarity-value-Common { color: #ffffff; }
