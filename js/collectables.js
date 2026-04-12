@@ -146,6 +146,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     header.appendChild(title);
 
+    if (item.collected) {
+      const dot = document.createElement("span");
+      dot.className = "collectable-collected-dot";
+      dot.setAttribute("aria-hidden", "true");
+      header.appendChild(dot);
+    }
+
     const rows = document.createElement("div");
     rows.className = "collectable-rows";
 
@@ -158,13 +165,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     card.appendChild(thumbFrame);
     card.appendChild(content);
-
-    if (item.collected) {
-      const dot = document.createElement("span");
-      dot.className = "collected-dot";
-      dot.setAttribute("aria-hidden", "true");
-      card.appendChild(dot);
-    }
 
     glow.appendChild(card);
 
