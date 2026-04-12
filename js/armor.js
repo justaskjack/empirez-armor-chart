@@ -40,8 +40,8 @@ function renderSections(data) {
       card.style.position = 'relative';
 
       card.innerHTML = `
-        <a href="images/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
-          <img src="images/${armor.image}" alt="${armor.name}" class="armor-img" />
+        <a href="images/armor_sets/${armor.image}" data-lightbox="armor" data-title="${armor.name} - ${armor.type}">
+          <img src="images/armor_sets/${armor.image}" alt="${armor.name}" class="armor-img" />
         </a>
         <div class="armor-details">
           <h2>${armor.name}</h2>
