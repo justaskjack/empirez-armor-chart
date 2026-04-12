@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const BACKPACK_CARD_BACK = "backpack_cardback.png";
 
   const DEFAULT_LAYOUT = {
-    thumb: { left: 20, top: 16, width: 27, height: 49 },
-    title: { left: 54, top: 16, width: 33, height: 11 },
-    slots: { left: 54, top: 29, width: 33, height: 11 },
+    thumb: { left: 19, top: 15, width: 26.5, height: 50 },
+    title: { left: 47.5, top: 14, width: 41, height: 16 },
+    slots: { left: 47.5, top: 31.5, width: 41, height: 9 },
     strapSlots: [
       { left: 25, top: 75.5, width: 6.3, height: 9.36 },
       { left: 32.8, top: 75.5, width: 6.3, height: 9.36 },
