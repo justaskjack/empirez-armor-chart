@@ -80,6 +80,207 @@ header {
   flex: 1;
 }
 
+/* ---------- Armor page: CCG card layout (armorsets_cardback01.png @ 1024×1536) ---------- */
+.armor-card.armor-card--ccg {
+  container-type: inline-size;
+  width: min(320px, 94vw);
+  max-width: 320px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.armor-card-ccg {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1024 / 1536;
+  color: #f2f2f2;
+  font-family: inherit;
+}
+
+.armor-card-ccg__title {
+  position: absolute;
+  left: 14%;
+  top: 10.8%;
+  width: 58%;
+  min-height: 0;
+  max-height: 6.2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(0.52rem, 2.8cqw, 0.78rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.armor-card-ccg__protection {
+  position: absolute;
+  left: 77.5%;
+  top: 9.2%;
+  width: 14%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.1rem, 7.5cqw, 1.85rem);
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+
+.armor-card-ccg__meta {
+  position: absolute;
+  left: 5.5%;
+  top: 17.2%;
+  width: 89%;
+  height: 6.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.12em;
+  font-size: clamp(0.45rem, 2.35cqw, 0.62rem);
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 0 2%;
+  pointer-events: none;
+}
+
+.armor-card-ccg__meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em 0.5em;
+  align-items: baseline;
+}
+
+.armor-card-ccg__meta-label {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.armor-card-ccg__meta-value {
+  color: #fff;
+  word-break: break-word;
+}
+
+.armor-card-ccg__thumb-wrap {
+  position: absolute;
+  left: 5.8%;
+  top: 24.8%;
+  width: 88.4%;
+  height: 34.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.armor-card-ccg__thumb-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-in;
+}
+
+.armor-card-ccg__thumb-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.armor-card-ccg__type {
+  position: absolute;
+  left: 8%;
+  top: 60.2%;
+  width: 84%;
+  height: 3.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(0.42rem, 2.2cqw, 0.58rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 2%;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.armor-card-ccg__equipment {
+  position: absolute;
+  left: 5.8%;
+  top: 64.5%;
+  width: 88.4%;
+  height: 26.5%;
+  box-sizing: border-box;
+}
+
+.armor-card-ccg__equipment-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.armor-card-ccg__equipment-hits {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.armor-card-ccg__hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: help;
+  box-sizing: border-box;
+}
+
+.armor-card-ccg__hotspot:focus {
+  outline: 2px solid rgba(255, 80, 80, 0.85);
+  outline-offset: 1px;
+}
+
+.armor-card-ccg__hotspot:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.armor-card-ccg__collected-dot {
+  z-index: 5;
+  left: auto;
+  right: 8px;
+  top: 8px;
+}
+
 .rarity-value-Common { color: #ffffff; }
 .rarity-value-Uncommon { color: #00ff00; }
 .rarity-value-Rare { color: #3399ff; }

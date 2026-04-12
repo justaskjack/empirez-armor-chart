@@ -6,7 +6,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "Starter Gear",
-    "collected": true
+    "collected": true,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Moisture Farmer Set (Rey Variant)",
@@ -15,7 +18,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "Starter Gear",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper",
@@ -24,7 +30,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Corporal",
@@ -33,7 +42,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Sergeant",
@@ -42,7 +54,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Unit Leader",
@@ -51,7 +66,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Squad Leader",
@@ -60,7 +78,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormsniper",
@@ -69,7 +90,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Incinerator Trooper Set",
@@ -78,7 +102,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Incinerator Trooper Set (Blue Variant)",
@@ -87,7 +114,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Medic Set",
@@ -96,7 +126,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Sandtrooper Set",
@@ -105,7 +138,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "First Order Stormtrooper Set",
@@ -114,7 +150,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "DerpTrooper Set",
@@ -123,7 +162,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mud Trooper Set",
@@ -132,7 +174,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Biker Scout Set",
@@ -141,7 +186,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Biker Scout Set (Battle Scarred Variant)",
@@ -150,7 +198,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Biker Scout Set (Black Variant)",
@@ -159,7 +210,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Imperial Officer Set 01",
@@ -168,7 +222,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Imperial Officer Set 02",
@@ -177,7 +234,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Rebel Pilot Set",
@@ -186,7 +246,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Endor Rebel Set",
@@ -195,7 +258,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Ghillie Monster Set",
@@ -204,7 +270,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Stormtrooper Medic (Legacy)",
@@ -213,7 +282,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Vanilla DayZ Gear (Militia)",
@@ -222,7 +294,10 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Vanilla Firefighter Gear (Red) (Legacy)",
@@ -231,7 +306,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Vanilla Firefighter Gear (Yellow) (Legacy)",
@@ -240,7 +318,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Construction Worker (Legacy)",
@@ -249,7 +330,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "All tiers",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Tuskan Raider",
@@ -258,7 +342,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Tuskan Raider Scout",
@@ -267,7 +354,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Tuskan Set (Black Variant)",
@@ -276,7 +366,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Nute Gunray Set",
@@ -285,7 +378,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Starter Gear",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Squid Head Set",
@@ -294,7 +390,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Sidon Ithano Set",
@@ -303,7 +402,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Boushh Set",
@@ -312,7 +414,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Galactic Marine Armor",
@@ -321,7 +426,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shore Trooper Armor",
@@ -330,7 +438,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shore Trooper Captain Set",
@@ -339,7 +450,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "DeathTrooper Set",
@@ -348,7 +462,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Sith Trooper Set",
@@ -357,7 +474,10 @@
     "protection": "2",
     "rarity": "Mythic",
     "location": "Sith Temple",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Commander Wolffe Set",
@@ -366,7 +486,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Commander Cody Set",
@@ -375,7 +498,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Commander Bly Set",
@@ -384,7 +510,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Commander Gree Set",
@@ -393,7 +522,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Commander Rex Set",
@@ -402,7 +534,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker, Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper - Dogma Set",
@@ -411,7 +546,10 @@
     "protection": 1,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper - Kix Set",
@@ -420,7 +558,10 @@
     "protection": 1,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shadow Clone Trooper Set",
@@ -429,7 +570,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Bad Batch Hunter Set",
@@ -438,7 +582,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Bad Batch - Wrecker Set",
@@ -447,7 +594,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Bad Batch - Crosshair Set",
@@ -456,7 +606,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Purge Trooper Set",
@@ -465,7 +618,10 @@
     "protection": 2,
     "rarity": "Epic",
     "location": "Tier 4, Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Geo Trooper Set",
@@ -474,7 +630,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Barc Trooper Set (Camo Variant)",
@@ -483,7 +642,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Barc Trooper Set",
@@ -492,7 +654,10 @@
     "protection": "Mixed 1 & 2",
     "rarity": "Epic",
     "location": "Hoth Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Purple Variant)",
@@ -501,7 +666,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Red Variant)",
@@ -510,7 +678,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Blue Variant)",
@@ -519,7 +690,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (White Variant)",
@@ -528,7 +702,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Camo Variant)",
@@ -537,7 +714,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Tan Variant)",
@@ -546,7 +726,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Yellow Variant)",
@@ -555,7 +738,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shock Commander Set (Purple Variant)",
@@ -564,7 +750,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shock Trooper Set (Purple Variant)",
@@ -573,7 +762,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shock Trooper Set (Red Variant)",
@@ -582,7 +774,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Shock Commander Set (Red Variant)",
@@ -591,7 +786,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Airborne Clone Trooper Set (Camo Variant)",
@@ -600,7 +798,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Airborne Clone Trooper Set (White Variant)",
@@ -609,7 +810,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Airborne Clone Trooper Set (Blue Variant)",
@@ -618,7 +822,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Airborne Clone Trooper Set (Yellow Variant)",
@@ -627,7 +834,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Arc Trooper Phase I (Green Variant)",
@@ -636,7 +846,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4, Helm in Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Moff Gideon Set",
@@ -645,7 +858,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Maul Set",
@@ -654,7 +870,10 @@
     "protection": 1,
     "rarity": "Rare",
     "location": "Outside Sith Temple",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Katarn-class MK III)",
@@ -663,7 +882,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Delta Squad - Sev)",
@@ -672,7 +894,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Mando Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Delta Squad - Scorch)",
@@ -681,7 +906,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Mando Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Delta Squad - Boss)",
@@ -690,7 +918,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Mando Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Delta Squad - Fixer)",
@@ -699,7 +930,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Mando Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Republic Commando Armor (Katarn-class)",
@@ -708,7 +942,10 @@
     "protection": 2,
     "rarity": "Legendary",
     "location": "Unconfirmed",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Leia Set",
@@ -717,7 +954,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Cloud City",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Boba Fett Set",
@@ -726,7 +966,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Jabbas Palace",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "ESB Boba Fett Set",
@@ -735,7 +978,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Cloud City",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "The Mandalorian (Pre-Beskar)",
@@ -744,7 +990,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "The Mandalorian (Beskar Variant)",
@@ -753,7 +1002,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Gold Variant)",
@@ -762,7 +1014,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Black Variant)",
@@ -771,7 +1026,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Green Variant)",
@@ -780,7 +1038,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Blue Variant)",
@@ -789,7 +1050,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Red Variant)",
@@ -798,7 +1062,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Magenta Variant)",
@@ -807,7 +1074,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Female Mando Armor Set (Teal Variant)",
@@ -816,7 +1086,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Teal Variant)",
@@ -825,7 +1098,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (White Variant)",
@@ -834,7 +1110,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Armor Set (Grey Variant)",
@@ -843,7 +1122,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Female Mando Armor Set (White Variant)",
@@ -852,7 +1134,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Mando Warrior Set",
@@ -861,7 +1146,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Deathwatch Set",
@@ -870,7 +1158,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Tie Fighter Pilot Set",
@@ -879,7 +1170,10 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Partisan (Two Tubes) Set",
@@ -888,7 +1182,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "X-wing, Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Partisan (Unknown Solider) Set",
@@ -897,7 +1194,10 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "X-Wing, Tiers 2-4",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Anakin Skywalker Set",
@@ -906,7 +1206,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Ahsoka Tano Set",
@@ -915,7 +1218,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Bo Katan Set",
@@ -924,7 +1230,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Sabine Wren Armor",
@@ -933,7 +1242,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Paz Vizsla Set",
@@ -942,7 +1254,10 @@
     "protection": 3,
     "rarity": "Mythic",
     "location": "Mando Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Talon Set",
@@ -951,7 +1266,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Twilek Set (Green Variant)",
@@ -960,7 +1278,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Twilek Set (Blue Variant)",
@@ -969,7 +1290,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Revan Set",
@@ -978,7 +1302,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "KOTOR Sith Set",
@@ -987,7 +1314,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Sith Temple",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Captain Phasma Set",
@@ -996,7 +1326,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Captain Enoch Set",
@@ -1005,7 +1338,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "C3po Set",
@@ -1014,7 +1350,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Unconfirmed",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "General Grevious Set",
@@ -1023,7 +1362,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "IG88 Set",
@@ -1032,7 +1374,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Admin Event",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Battle Droid Set",
@@ -1041,7 +1386,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Battle Droid Set (Red Variant)",
@@ -1050,7 +1398,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Battle Droid Set (Yellow Variant)",
@@ -1059,7 +1410,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Tie Crashes, Imperial Bunker",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Battle Droid Set (Blue Variant)",
@@ -1068,7 +1422,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Tie Crashes",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Andromeda Set",
@@ -1077,7 +1434,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Magna Guard Set",
@@ -1086,7 +1446,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Mando Safe",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "ND5_Droid Set",
@@ -1095,7 +1458,10 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Astromech Droids",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Vader Set",
@@ -1104,7 +1470,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "B9E Loot Droid",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Kylo Ren Set",
@@ -1113,7 +1482,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Nihilus Set",
@@ -1122,7 +1494,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "B9E Loot Droid",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Jedi Guard Set",
@@ -1131,7 +1506,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Jedi Temple",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Grey Jedi Set",
@@ -1140,7 +1518,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Black Astromech Droid",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Grey Jedi Set (Khaki Variant)",
@@ -1149,7 +1530,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Black Astromech Droid",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Darth Jar-Jar Set",
@@ -1158,7 +1542,10 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Unknown",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "NBC Suit (Yellow Variant)",
@@ -1167,7 +1554,10 @@
     "protection": 0,
     "rarity": "None",
     "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones.",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "NBC Suit (Grey Variant)",
@@ -1176,7 +1566,10 @@
     "protection": 0,
     "rarity": "None",
     "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones.",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "NBC Suit (White Variant)",
@@ -1185,7 +1578,10 @@
     "protection": 0,
     "rarity": "None",
     "location": "All tiers. Note: Full NBC suit (5 pieces) plus respirator with Gas Mask Filter required for toxic zones.",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Chewy Suit",
@@ -1194,7 +1590,10 @@
     "protection": 2,
     "rarity": "None",
     "location": "Hoth. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective.",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Utinni!",
@@ -1203,7 +1602,10 @@
     "protection": 0,
     "rarity": "None",
     "location": "Utinni!",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Neon Green Chrome Variant)",
@@ -1212,7 +1614,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "Admin Events",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Neon Red Chrome Variant)",
@@ -1221,7 +1626,10 @@
     "protection": 1,
     "rarity": "None",
     "location": "Admin Events",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   },
   {
     "name": "Clone Trooper Set (Chrome Variant) (Legacy)",
@@ -1230,6 +1638,9 @@
     "protection": 1,
     "rarity": "None",
     "location": "Admin",
-    "collected": false
+    "collected": false,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment01.jpg",
+    "equipmentTooltips": {}
   }
 ]
