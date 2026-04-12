@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const DEFAULT_LAYOUT = {
     thumb: { left: 15.233, top: 18.85, width: 27.267, height: 51.6 },
-    title: { left: 47.5, top: 14.5, width: 41, height: 16 },
-    slots: { left: 47.5, top: 31.5, width: 41, height: 9 },
+    title: { left: 37.5, top: 14.5, width: 49.2, height: 16 },
+    slots: { left: 37.5, top: 31.5, width: 49.2, height: 9 },
     strapSlots: [
       { left: 25.367, top: 81.3, width: 6.967, height: 10 },
       { left: 33.8, top: 81.3, width: 6.967, height: 10 },
