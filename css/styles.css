@@ -602,6 +602,7 @@ header.navbar {
 /* Lightsabers Section */
 
 #page-lightsabers {
+  --collect-accent: #79d8d2;
   background:
     radial-gradient(circle at 50% 20%, rgba(100, 130, 255, 0.14), transparent 40%),
     radial-gradient(circle at 50% 88%, rgba(0, 230, 255, 0.08), transparent 45%),
@@ -1489,22 +1490,35 @@ header.navbar {
   width: 100%;
 }
 
-/* ========== Collectables page — HUD panels only (#page-collectables) ========== */
+/* ========== Collectables-style HUD shell (shared page chrome) ========== */
 
-#page-collectables {
-  background: #050505;
-  --collect-accent: #79d8d2;
-}
-
-/* ========== Armor Sets page — same HUD header shell as Collectables ========== */
-
-#page-armor {
+#page-collectables,
+#page-armor,
+#page-helm,
+#page-backpacks,
+#page-vehicles,
+#page-weapons,
+#page-flags,
+#page-bases,
+#page-vendors,
+#page-poi,
+#page-servertips {
   background: #050505;
   --collect-accent: #79d8d2;
 }
 
 #page-collectables .collectables-master-header,
-#page-armor .collectables-master-header {
+#page-armor .collectables-master-header,
+#page-helm .collectables-master-header,
+#page-lightsabers .collectables-master-header,
+#page-backpacks .collectables-master-header,
+#page-vehicles .collectables-master-header,
+#page-weapons .collectables-master-header,
+#page-flags .collectables-master-header,
+#page-bases .collectables-master-header,
+#page-vendors .collectables-master-header,
+#page-poi .collectables-master-header,
+#page-servertips .collectables-master-header {
   margin: 0.7rem 2rem 0.15rem;
   padding: 0.5rem 0.9rem 0.62rem;
   border: 1px solid rgba(255, 64, 64, 0.6);
@@ -1537,7 +1551,17 @@ header.navbar {
 }
 
 #page-collectables .collectables-master-inner,
-#page-armor .collectables-master-inner {
+#page-armor .collectables-master-inner,
+#page-helm .collectables-master-inner,
+#page-lightsabers .collectables-master-inner,
+#page-backpacks .collectables-master-inner,
+#page-vehicles .collectables-master-inner,
+#page-weapons .collectables-master-inner,
+#page-flags .collectables-master-inner,
+#page-bases .collectables-master-inner,
+#page-vendors .collectables-master-inner,
+#page-poi .collectables-master-inner,
+#page-servertips .collectables-master-inner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1545,7 +1569,17 @@ header.navbar {
 }
 
 #page-collectables .collectables-master-kicker,
-#page-armor .collectables-master-kicker {
+#page-armor .collectables-master-kicker,
+#page-helm .collectables-master-kicker,
+#page-lightsabers .collectables-master-kicker,
+#page-backpacks .collectables-master-kicker,
+#page-vehicles .collectables-master-kicker,
+#page-weapons .collectables-master-kicker,
+#page-flags .collectables-master-kicker,
+#page-bases .collectables-master-kicker,
+#page-vendors .collectables-master-kicker,
+#page-poi .collectables-master-kicker,
+#page-servertips .collectables-master-kicker {
   display: inline-block;
   font-size: 0.62rem;
   font-weight: 600;
@@ -1558,12 +1592,33 @@ header.navbar {
 }
 
 #page-collectables .collectables-master-header .title-bold,
-#page-armor .collectables-master-header .title-bold {
+#page-armor .collectables-master-header .title-bold,
+#page-helm .collectables-master-header .title-bold,
+#page-lightsabers .collectables-master-header .title-bold,
+#page-backpacks .collectables-master-header .title-bold,
+#page-vehicles .collectables-master-header .title-bold,
+#page-weapons .collectables-master-header .title-bold,
+#page-flags .collectables-master-header .title-bold,
+#page-bases .collectables-master-header .title-bold,
+#page-vendors .collectables-master-header .title-bold,
+#page-poi .collectables-master-header .title-bold,
+#page-servertips .collectables-master-header .title-bold {
   font-size: 1.6rem;
   letter-spacing: 0.03em;
 }
 
-#page-collectables .collectables-master-header .title-secondary {
+#page-collectables .collectables-master-header .title-secondary,
+#page-armor .collectables-master-header .title-secondary,
+#page-helm .collectables-master-header .title-secondary,
+#page-lightsabers .collectables-master-header .title-secondary,
+#page-backpacks .collectables-master-header .title-secondary,
+#page-vehicles .collectables-master-header .title-secondary,
+#page-weapons .collectables-master-header .title-secondary,
+#page-flags .collectables-master-header .title-secondary,
+#page-bases .collectables-master-header .title-secondary,
+#page-vendors .collectables-master-header .title-secondary,
+#page-poi .collectables-master-header .title-secondary,
+#page-servertips .collectables-master-header .title-secondary {
   margin: 0;
   color: #dfcbcb;
   font-size: 0.92rem;
@@ -1944,17 +1999,47 @@ header.navbar {
 
 @media (max-width: 620px) {
   #page-collectables .collectables-master-header,
-  #page-armor .collectables-master-header {
+  #page-armor .collectables-master-header,
+  #page-helm .collectables-master-header,
+  #page-lightsabers .collectables-master-header,
+  #page-backpacks .collectables-master-header,
+  #page-vehicles .collectables-master-header,
+  #page-weapons .collectables-master-header,
+  #page-flags .collectables-master-header,
+  #page-bases .collectables-master-header,
+  #page-vendors .collectables-master-header,
+  #page-poi .collectables-master-header,
+  #page-servertips .collectables-master-header {
     margin: 0.55rem 1rem 0.15rem;
     padding: 0.45rem 0.68rem 0.56rem;
   }
 
   #page-collectables .collectables-master-header .title-bold,
-  #page-armor .collectables-master-header .title-bold {
+  #page-armor .collectables-master-header .title-bold,
+  #page-helm .collectables-master-header .title-bold,
+  #page-lightsabers .collectables-master-header .title-bold,
+  #page-backpacks .collectables-master-header .title-bold,
+  #page-vehicles .collectables-master-header .title-bold,
+  #page-weapons .collectables-master-header .title-bold,
+  #page-flags .collectables-master-header .title-bold,
+  #page-bases .collectables-master-header .title-bold,
+  #page-vendors .collectables-master-header .title-bold,
+  #page-poi .collectables-master-header .title-bold,
+  #page-servertips .collectables-master-header .title-bold {
     font-size: 1.3rem;
   }
 
-  #page-collectables .collectables-master-header .title-secondary {
+  #page-collectables .collectables-master-header .title-secondary,
+  #page-helm .collectables-master-header .title-secondary,
+  #page-lightsabers .collectables-master-header .title-secondary,
+  #page-backpacks .collectables-master-header .title-secondary,
+  #page-vehicles .collectables-master-header .title-secondary,
+  #page-weapons .collectables-master-header .title-secondary,
+  #page-flags .collectables-master-header .title-secondary,
+  #page-bases .collectables-master-header .title-secondary,
+  #page-vendors .collectables-master-header .title-secondary,
+  #page-poi .collectables-master-header .title-secondary,
+  #page-servertips .collectables-master-header .title-secondary {
     font-size: 0.84rem;
   }
 
