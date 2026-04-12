@@ -80,7 +80,7 @@ header {
   flex: 1;
 }
 
-/* ---------- Armor page: CCG card layout (armorsets_cardback01.png @ 1024×1536) ---------- */
+/* ---------- Armor page: CCG card layout (1024×1536 art; slot % from 667×1000 grid mockup) ---------- */
 .armor-card.armor-card--ccg {
   container-type: inline-size;
   width: min(320px, 94vw);
@@ -105,25 +105,25 @@ header {
   font-family: inherit;
 }
 
-/* Title sits on the brushed-metal header strip (between seal and protection orb) */
+/* Title — mockup rect (100,30) 463×55 → ~14.99% 3% 69.42%×5.5% */
 .armor-card-ccg__title {
   position: absolute;
-  left: 9%;
-  top: 3.6%;
-  width: 66%;
-  height: 6.8%;
+  left: 14.99%;
+  top: 3%;
+  width: 69.42%;
+  height: 5.5%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.62rem, 4.2cqw, 1.05rem);
+  font-size: clamp(0.55rem, 3.6cqw, 0.92rem);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  line-height: 1.05;
+  line-height: 1.08;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 3%;
+  padding: 0 2%;
   box-sizing: border-box;
   color: #fff;
   text-shadow:
@@ -133,16 +133,17 @@ header {
   pointer-events: none;
 }
 
+/* Protection — (582,30) 55×55 → ~87.26% 3% 8.25%×5.5% */
 .armor-card-ccg__protection {
   position: absolute;
-  left: 77%;
-  top: 2.8%;
-  width: 14.5%;
-  aspect-ratio: 1;
+  left: 87.26%;
+  top: 3%;
+  width: 8.246%;
+  height: 5.5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.15rem, 8cqw, 2rem);
+  font-size: clamp(1rem, 6.8cqw, 1.75rem);
   font-weight: 800;
   color: #fff;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
@@ -150,23 +151,23 @@ header {
   z-index: 2;
 }
 
-/* Upper black info panel — rarity / location, nudged up and toward the right */
+/* Rarity / location — (110,135) 445×77 → ~16.49% 13.5% 66.72%×7.7% */
 .armor-card-ccg__meta {
   position: absolute;
-  left: 18%;
-  top: 12.8%;
-  width: 72%;
-  height: 7.5%;
+  left: 16.49%;
+  top: 13.5%;
+  width: 66.72%;
+  height: 7.7%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
-  text-align: right;
-  gap: 0.18em;
-  font-size: clamp(0.48rem, 2.6cqw, 0.68rem);
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.2em;
+  font-size: clamp(0.5rem, 2.85cqw, 0.74rem);
   line-height: 1.2;
   box-sizing: border-box;
-  padding: 0.15em 4% 0 0;
+  padding: 0.1em 2% 0 0;
   pointer-events: none;
   z-index: 1;
 }
@@ -176,7 +177,7 @@ header {
   flex-wrap: wrap;
   gap: 0.25em 0.45em;
   align-items: baseline;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .armor-card-ccg__meta-label {
@@ -190,13 +191,13 @@ header {
   word-break: break-word;
 }
 
-/* Main armor render — fills the central black viewport */
+/* Main armor image — (40,272) 585×415 → ~6% 27.2% 87.71%×41.5% */
 .armor-card-ccg__thumb-wrap {
   position: absolute;
-  left: 5.6%;
-  top: 21.5%;
-  width: 88.8%;
-  height: 36.5%;
+  left: 6%;
+  top: 27.2%;
+  width: 87.71%;
+  height: 41.5%;
   display: block;
   overflow: hidden;
   box-sizing: border-box;
@@ -214,22 +215,22 @@ header {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 
-/* Type line sits on the narrow silver bar between main art and equipment panel */
+/* Type — (75,725) 510×35 → ~11.24% 72.5% 76.46%×3.5% */
 .armor-card-ccg__type {
   position: absolute;
-  left: 6%;
-  top: 57.8%;
-  width: 88%;
-  height: 3.2%;
+  left: 11.24%;
+  top: 72.5%;
+  width: 76.46%;
+  height: 3.5%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.44rem, 2.45cqw, 0.64rem);
+  font-size: clamp(0.42rem, 2.35cqw, 0.62rem);
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -237,7 +238,7 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 3%;
+  padding: 0 2%;
   box-sizing: border-box;
   pointer-events: none;
   z-index: 4;
@@ -247,13 +248,13 @@ header {
     0 0 1px rgba(0, 0, 0, 1);
 }
 
-/* Equipment strip — lower black window only (below type bar) */
+/* Equipment — (72,805) 518×135 → ~10.79% 80.5% 77.66%×13.5% */
 .armor-card-ccg__equipment {
   position: absolute;
-  left: 5.6%;
-  top: 60.8%;
-  width: 88.8%;
-  height: 29.5%;
+  left: 10.79%;
+  top: 80.5%;
+  width: 77.66%;
+  height: 13.5%;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
@@ -263,7 +264,7 @@ header {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 
@@ -295,13 +296,13 @@ header {
   outline: none;
 }
 
-/* Collected marker: bottom center over footer “tech” strip (not top corners) */
+/* Collected — mockup center of (326,965) 15×15 → ~50% 97.25% */
 .armor-card.armor-card--ccg > .armor-card-ccg__collected-dot {
-  top: auto;
+  top: 97.25%;
   right: auto;
   left: 50%;
-  bottom: 1.25%;
-  transform: translateX(-50%);
+  bottom: auto;
+  transform: translate(-50%, -50%);
   z-index: 6;
 }
 
