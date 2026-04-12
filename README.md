@@ -22,4 +22,4 @@ Ensure these exist next to `index.html` (or your host will serve 404s):
 
 ## Version
 
-Site build label in the header: **v2.1** (browser tab title uses the same version).
+Site build label in the header: **v2.2** (browser tab title uses the same version).
