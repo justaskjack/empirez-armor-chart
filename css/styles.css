@@ -133,17 +133,17 @@ header {
   pointer-events: none;
 }
 
-/* Protection — (582,30) 55×55; nudged down ~10% vs mockup */
+/* Protection — (582,30) 55×55; digit nudged further down in circle */
 .armor-card-ccg__protection {
   position: absolute;
   left: 87.26%;
-  top: 3.35%;
+  top: 4.15%;
   width: 8.246%;
   height: 5.5%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 0.18em;
+  padding-bottom: 0.48em;
   box-sizing: border-box;
   font-size: clamp(1rem, 6.8cqw, 1.75rem);
   font-weight: 800;
@@ -153,11 +153,11 @@ header {
   z-index: 2;
 }
 
-/* Rarity / location — mockup + ~20% lower; slightly larger type */
+/* Rarity / location — mockup 13.5% + half of prior extra drop */
 .armor-card-ccg__meta {
   position: absolute;
   left: 16.49%;
-  top: 16.2%;
+  top: 14.9%;
   width: 66.72%;
   height: 7.7%;
   display: flex;
@@ -298,9 +298,9 @@ header {
   outline: none;
 }
 
-/* Collected — mockup center, raised ~5% */
+/* Collected — mockup 97.25%, then ~30% of the last 5pp upward nudge */
 .armor-card.armor-card--ccg > .armor-card-ccg__collected-dot {
-  top: 92.25%;
+  top: 95.75%;
   right: auto;
   left: 50%;
   bottom: auto;
