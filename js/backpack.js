@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const BACKPACK_CARD_BACK = "backpack_cardback.png";
 
   const DEFAULT_LAYOUT = {
-    thumb: { left: 19, top: 15, width: 26.5, height: 50 },
-    title: { left: 47.5, top: 14, width: 41, height: 16 },
+    thumb: { left: 15.233, top: 18.85, width: 27.267, height: 51.6 },
+    title: { left: 47.5, top: 14.5, width: 41, height: 16 },
     slots: { left: 47.5, top: 31.5, width: 41, height: 9 },
     strapSlots: [
-      { left: 25, top: 75.5, width: 6.3, height: 9.36 },
-      { left: 32.8, top: 75.5, width: 6.3, height: 9.36 },
-      { left: 40.6, top: 75.5, width: 6.3, height: 9.36 },
-      { left: 48.4, top: 75.5, width: 6.3, height: 9.36 },
-      { left: 56.2, top: 75.5, width: 6.3, height: 9.36 },
-      { left: 64, top: 75.5, width: 6.3, height: 9.36 }
+      { left: 25.367, top: 81.3, width: 6.967, height: 10 },
+      { left: 33.8, top: 81.3, width: 6.967, height: 10 },
+      { left: 42.233, top: 81.3, width: 6.967, height: 10 },
+      { left: 50.667, top: 81.3, width: 6.967, height: 10 },
+      { left: 59.1, top: 81.3, width: 6.967, height: 10 },
+      { left: 67.533, top: 81.3, width: 6.967, height: 10 }
     ]
   };
 
