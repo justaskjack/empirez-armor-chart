@@ -253,27 +253,51 @@ fetch("data/helms.json")
 
     helms.forEach(helm => {
       const anchor = document.createElement("a");
+      anchor.className = "helm-card";
       anchor.href = `images/${helm.image}`;
       anchor.setAttribute("data-lightbox", "helm");
       anchor.title = helm.name;
       anchor.style.gridColumn = helm.col;
       anchor.style.gridRow = helm.row;
-      anchor.style.position = "relative";
+
+      const inner = document.createElement("div");
+      inner.className = "helm-card__inner";
+
+      const media = document.createElement("div");
+      media.className = "helm-card__media";
 
       const img = document.createElement("img");
       img.src = `images/${helm.thumb}`;
       img.alt = helm.name;
       img.title = helm.name;
       img.className = "helm-thumb";
+      img.loading = "lazy";
 
-      anchor.appendChild(img);
+      const hover = document.createElement("div");
+      hover.className = "helm-card__hover";
+      hover.setAttribute("aria-hidden", "true");
+      const hoverName = document.createElement("span");
+      hoverName.className = "helm-card__hover-name";
+      hoverName.textContent = helm.name;
+      hover.appendChild(hoverName);
+
+      media.appendChild(img);
+      media.appendChild(hover);
+
+      const title = document.createElement("div");
+      title.className = "helm-card__title";
+      title.textContent = helm.name;
+
+      inner.appendChild(media);
+      inner.appendChild(title);
 
       if (helm.collected) {
         const dot = document.createElement("div");
-        dot.className = "collected-dot";
-        anchor.appendChild(dot);
+        dot.className = "collected-dot helm-card__collected-dot";
+        inner.appendChild(dot);
       }
 
+      anchor.appendChild(inner);
       grid.appendChild(anchor);
     });
   });
