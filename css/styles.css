@@ -133,16 +133,18 @@ header {
   pointer-events: none;
 }
 
-/* Protection — (582,30) 55×55 → ~87.26% 3% 8.25%×5.5% */
+/* Protection — (582,30) 55×55; nudged down ~10% vs mockup */
 .armor-card-ccg__protection {
   position: absolute;
   left: 87.26%;
-  top: 3%;
+  top: 3.35%;
   width: 8.246%;
   height: 5.5%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 0.18em;
+  box-sizing: border-box;
   font-size: clamp(1rem, 6.8cqw, 1.75rem);
   font-weight: 800;
   color: #fff;
@@ -151,11 +153,11 @@ header {
   z-index: 2;
 }
 
-/* Rarity / location — (110,135) 445×77 → ~16.49% 13.5% 66.72%×7.7% */
+/* Rarity / location — mockup + ~20% lower; slightly larger type */
 .armor-card-ccg__meta {
   position: absolute;
   left: 16.49%;
-  top: 13.5%;
+  top: 16.2%;
   width: 66.72%;
   height: 7.7%;
   display: flex;
@@ -164,7 +166,7 @@ header {
   align-items: flex-start;
   text-align: left;
   gap: 0.2em;
-  font-size: clamp(0.5rem, 2.85cqw, 0.74rem);
+  font-size: clamp(0.56rem, 3.15cqw, 0.84rem);
   line-height: 1.2;
   box-sizing: border-box;
   padding: 0.1em 2% 0 0;
@@ -230,7 +232,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: clamp(0.42rem, 2.35cqw, 0.62rem);
+  font-size: clamp(0.5rem, 2.75cqw, 0.72rem);
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -296,9 +298,9 @@ header {
   outline: none;
 }
 
-/* Collected — mockup center of (326,965) 15×15 → ~50% 97.25% */
+/* Collected — mockup center, raised ~5% */
 .armor-card.armor-card--ccg > .armor-card-ccg__collected-dot {
-  top: 97.25%;
+  top: 92.25%;
   right: auto;
   left: 50%;
   bottom: auto;
