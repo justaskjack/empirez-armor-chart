@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c0c10"/>
+      <stop offset="100%" style="stop-color:#0a0506"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3b3b;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#ff3b3b;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="none" stroke="#ff2a2a" stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="0" y="0" width="640" height="6" fill="url(#edge)"/>
+  <text x="320" y="188" text-anchor="middle" fill="#6a5a5e" font-family="system-ui,sans-serif" font-size="22" font-weight="600">VEHICLE THUMB</text>
+  <text x="320" y="218" text-anchor="middle" fill="#4a3a40" font-family="system-ui,sans-serif" font-size="13">640 × 360 · 16:9</text>
+</svg>

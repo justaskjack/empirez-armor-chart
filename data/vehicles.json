@@ -1,0 +1,65 @@
+{
+  "imageGuide": {
+    "aspectRatio": "16:9",
+    "recommendedPixels": { "width": 640, "height": 360 },
+    "highDpiPixels": { "width": 1280, "height": 720 },
+    "fileFormat": "JPG, PNG, or WebP",
+    "relativePath": "images/vehicles/",
+    "namingHint": "Slug from vehicle name, e.g. mini-speeder-bike-thumb.jpg",
+    "notes": "Thumbs display inside a 16:9 frame; keep the subject centered with slight headroom for the card bezel."
+  },
+  "sections": [
+    {
+      "key": "ground",
+      "title": "Ground",
+      "vehicles": [
+        { "name": "Mini Speeder Bike", "description": "Compact surface speeder — good for short hops.", "buy": 1000, "sell": 150, "cargo": 200, "seats": 1 },
+        { "name": "Endor Speeder Bike", "description": "Forest patrol layout; balanced speed and handling.", "buy": 1500, "sell": 200, "cargo": 250, "seats": 1 },
+        { "name": "Endor Speeder Bike (Red)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
+        { "name": "Endor Speeder Bike (Green)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
+        { "name": "Endor Speeder Bike (Blue)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
+        { "name": "Hover Bike", "description": "Lift-enabled bike for rough terrain.", "buy": 3000, "sell": 250, "cargo": 300, "seats": 1 },
+        { "name": "Bloodfin Speeder", "description": "Sport-tuned speeder with expanded cargo bay.", "buy": 4000, "sell": 250, "cargo": 400, "seats": 1 },
+        { "name": "Rey's Speeder", "description": "Scavenger-style speeder; high cargo for its class.", "buy": 4000, "sell": 250, "cargo": 600, "seats": 1 },
+        { "name": "Solo Star Wars Speeder", "description": "Two-seat runner; lighter cargo capacity.", "buy": 4000, "sell": 300, "cargo": 200, "seats": 2 },
+        { "name": "FreckTransport", "description": "Eight-seat ground transport; large cargo hold.", "buy": 6000, "sell": 400, "cargo": 1000, "seats": 8 }
+      ]
+    },
+    {
+      "key": "flying",
+      "title": "Flying",
+      "vehicles": [
+        { "name": "TIE Fighter", "description": "Standard Imperial space superiority fighter.", "buy": 6500, "sell": 400, "cargo": 200, "seats": 1 },
+        { "name": "TIE Fighter", "description": "Alternate listing — increased cargo configuration.", "buy": 6500, "sell": 400, "cargo": 250, "seats": 1 },
+        { "name": "TIE Interceptor", "description": "Aggressive profile; expanded internal storage.", "buy": 9000, "sell": 400, "cargo": 500, "seats": 1 },
+        { "name": "TIE Silencer", "description": "Advanced hull; substantial cargo for a fighter.", "buy": 14000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Royal TIE Fighter", "description": "Ceremonial trim; heavy-duty storage layout.", "buy": 17000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Snow Speeder", "description": "Rebel airspeeder; two crew, moderate cargo.", "buy": 11000, "sell": 400, "cargo": 250, "seats": 2 },
+        { "name": "Recon Speeder", "description": "Long-range sensors; generous equipment space.", "buy": 11000, "sell": 400, "cargo": 500, "seats": 2 },
+        { "name": "Trident Fighter", "description": "Tri-wing layout; balanced cargo bay.", "buy": 14000, "sell": 400, "cargo": 500, "seats": 1 },
+        { "name": "X-Wing T-70", "description": "Resistance-era X-wing baseline loadout.", "buy": 7000, "sell": 400, "cargo": 200, "seats": 1 },
+        { "name": "X-Wing T-70 (Red)", "description": "Squadron accent livery; slightly larger hold.", "buy": 7000, "sell": 400, "cargo": 250, "seats": 1 },
+        { "name": "X_Wing_T_70 (Teal)", "description": "Teal accent variant; tuned for flexibility.", "buy": 7000, "sell": 300, "cargo": 250, "seats": 1 },
+        { "name": "Partisan X-Wing (Black)", "description": "Partisan black scheme; expanded cargo.", "buy": 8000, "sell": 300, "cargo": 500, "seats": 1 },
+        { "name": "Partisan X-Wing (Black/white)", "description": "Two-tone partisan livery.", "buy": 8000, "sell": 300, "cargo": 500, "seats": 1 },
+        { "name": "Black One", "description": "Elite X-wing configuration; large cargo volume.", "buy": 12000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Pink One", "description": "Signature livery; same performance as Black One.", "buy": 12000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Scimitar", "description": "Sith infiltrator-class; cavernous equipment bay.", "buy": 15000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Soulless", "description": "Sith craft variant; heavy cargo allowance.", "buy": 15000, "sell": 400, "cargo": 1000, "seats": 1 }
+      ]
+    },
+    {
+      "key": "transport",
+      "title": "Transport",
+      "vehicles": [
+        { "name": "LAAT Drop Ship Blue", "description": "Republic gunship — blue markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 8 },
+        { "name": "LAAT Drop Ship Green", "description": "Republic gunship — green markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 8 },
+        { "name": "LAAT Dropship Black N White Partisan", "description": "Partisan scheme; enlarged cargo floor.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
+        { "name": "LAAT Dropship Shock Battalion", "description": "Shock trooper livery; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
+        { "name": "LAAT Dropship 187th Infantry Battalion", "description": "187th scheme; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
+        { "name": "LAAT Dropship Desert Camo", "description": "Desert operations paint; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
+        { "name": "Imperial Shuttle", "description": "Six-seat shuttle; largest cargo in this list.", "buy": 25000, "sell": 400, "cargo": 1000, "seats": 6 }
+      ]
+    }
+  ]
+}
