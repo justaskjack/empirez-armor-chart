@@ -324,13 +324,31 @@
     "category": "Legos"
   },
   {
+    "name": "Ahsoka Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable80 - Ahsoka Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Master Yoda Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable79 - Master Yoda Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
     "name": "Rebel Ship",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable02 - Rebel Ship",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Republic Venator",
@@ -339,7 +357,7 @@
     "note": "",
     "image": "Collectable03 - Republic Venator",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "U-Wing",
@@ -348,7 +366,7 @@
     "note": "",
     "image": "Collectable04 - U-Wing",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Greys Corsant Collectable",
@@ -357,7 +375,7 @@
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Greys Gonk Collectable",
@@ -366,7 +384,7 @@
     "note": "",
     "image": "Collectable38 - Greys Gonk Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Greys ATRT Collectable",
@@ -375,7 +393,7 @@
     "note": "",
     "image": "Collectable64 - Greys ATRT Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Greys ATST Collectablee",
@@ -384,7 +402,7 @@
     "note": "",
     "image": "Collectable73 - Greys ATST Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Greys ATTE Collectable",
@@ -393,7 +411,7 @@
     "note": "",
     "image": "Collectable70 - Greys ATTE Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "lezard",
@@ -402,7 +420,7 @@
     "note": "",
     "image": "Collectable06 - lezard",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "hawkbat",
@@ -411,7 +429,7 @@
     "note": "",
     "image": "Collectable78 - hawkbat",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "LOLA",
@@ -420,7 +438,7 @@
     "note": "",
     "image": "Collectable74 - LOLA",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "holorecord decive",
@@ -429,7 +447,7 @@
     "note": "",
     "image": "Collectable07 - holorecord decive",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "jeron fusion cutter",
@@ -438,7 +456,7 @@
     "note": "",
     "image": "Collectable65 - jeron fusion cutter",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "cantina instrument",
@@ -447,7 +465,7 @@
     "note": "",
     "image": "Collectable76 - cantina instrument",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "charismatic-mandalorian-helmet yellow",
@@ -456,7 +474,7 @@
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "charismatic-mandalorian-helmet white",
@@ -465,7 +483,7 @@
     "note": "",
     "image": "Collectable20 - charismatic-mandalorian-helmet white",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Bantha Poop Collectable",
@@ -474,7 +492,7 @@
     "note": "",
     "image": "Collectable09 - Bantha Poop Collectable",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Battle Front 2",
@@ -483,7 +501,7 @@
     "note": "",
     "image": "Collectable69 - Battle Front 2",
     "collected": false,
-    "category": "Misc"
+    "category": "Toys"
   },
   {
     "name": "Wayfinder Stone",
@@ -519,7 +537,7 @@
     "note": "Combine with a Machete to create a Vibroblade.",
     "image": "Collectable21 - Pink Kyber Crystal",
     "collected": false,
-    "category": "Misc"
+    "category": "Crafting"
   },
   {
     "name": "Purple Kyber Crystal",
@@ -527,7 +545,7 @@
     "slots": "None",
     "note": "Combine with a Sword to create a Jedi Force Blade.",
     "image": "Collectable39 - Purple Kyber Crystal",
-    "category": "Misc"
+    "category": "Crafting"
   },
   {
     "name": "Orange Kyber Crystal",
@@ -536,7 +554,7 @@
     "note": "Combine with a Machete to create a Vibro Blade.",
     "image": "Collectable42 - Orange Kyber Crystal",
     "collected": false,
-    "category": "Misc"
+    "category": "Crafting"
   },
   {
     "name": "Black Kyber Crystal",
@@ -545,7 +563,7 @@
     "note": "Combine with a sword to create a Sith Warblade.",
     "image": "Collectable54 - Black Kyber Crystal",
     "collected": false,
-    "category": "Misc"
+    "category": "Crafting"
   },
   {
     "name": "Nightsister Crystal",
@@ -554,7 +572,7 @@
     "note": "Combine with a Mime Mask to create a Darth Maul mask.",
     "image": "Collectable45 - Nightsister Crystal",
     "collected": false,
-    "category": "Misc"
+    "category": "Crafting"
   },
   {
     "name": "Jedi Kyber Crystal",
