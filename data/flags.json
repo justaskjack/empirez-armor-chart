@@ -1,203 +1,199 @@
-[
-      {
-    "image": "Flag 04",
-    "collected": true
-  },
+{
+  "imageBase": "images/flags",
+  "imageExt": "jpg",
+  "thumbSuffix": " - thumb",
+  "flags": [
     {
-    "image": "Flag 03",
-    "collected": true
-  },
-          {
-    "image": "Flag 34",
-    "collected": true
-  },
-          {
-    "image": "Flag 35",
-    "collected": true
-  },
-        {
-    "image": "Flag 20",
+      "image": "Flag 04",
       "collected": true
-  },
-  {
-    "image": "Flag 01",
-        "collected": true
-  },
-  {
-    "image": "Flag 02",
-      "collected": true
-  },
-
-
+    },
     {
-    "image": "Flag 05",
-    "collected": true
-  },
-          {
-    "image": "Flag 21",
-    "collected": true
-  },
-            {
-    "image": "Flag 24",
-    "collected": true
-  },
-            {
-    "image": "Flag 36",
-    "collected": true
-  },
-          {
-    "image": "Flag 23",
-    "collected": true
-  },
-      {
-    "image": "Flag 12",
-    "collected": true
-  },
+      "image": "Flag 03",
+      "collected": false
+    },
     {
-    "image": "Flag 06",
-    "collected": true
-  },
+      "image": "Flag 34",
+      "collected": false
+    },
     {
-    "image": "Flag 07",
-      "collected": true
-  },
+      "image": "Flag 35",
+      "collected": false
+    },
     {
-    "image": "Flag 08",
-    "collected": true
-  },
+      "image": "Flag 20",
+      "collected": false
+    },
     {
-    "image": "Flag 09",
-    "collected": true
-  },
+      "image": "Flag 01",
+      "collected": false
+    },
     {
-    "image": "Flag 10",
-    "collected": true
-  },
+      "image": "Flag 02",
+      "collected": false
+    },
     {
-    "image": "Flag 11",
-    "collected": true
-  },
-
+      "image": "Flag 05",
+      "collected": false
+    },
     {
-    "image": "Flag 13",
-           "collected": true
-  },
+      "image": "Flag 21",
+      "collected": false
+    },
     {
-    "image": "Flag 14",
-      "collected": true
-  },
-      {
-    "image": "Flag 15",
-    "collected": true
-  },
-      {
-    "image": "Flag 16",
-    "collected": true
-  },
-      {
-    "image": "Flag 17",
- "collected": true
-  },
-      {
-    "image": "Flag 18",
-    "collected": true
-  },
-      {
-    "image": "Flag 19",
-"collected": true
-  },
-
-
-        {
-    "image": "Flag 22",
-    "collected": true
-  },
-
-
-  {
-    "image": "Flag 25",
-    "collected": true
-  },
+      "image": "Flag 24",
+      "collected": false
+    },
     {
-    "image": "Flag 26",
-    "collected": true
-  },
-      {
-    "image": "Flag 27",
-    "collected": true
-  },
-      {
-    "image": "Flag 28",
-    "collected": true
-  },
-      {
-    "image": "Flag 29",
-    "collected": true
-  },
-      {
-    "image": "Flag 30",
-    "collected": true
-  },
-      {
-    "image": "Flag 31",
-    "collected": true
-  },
-      {
-    "image": "Flag 32",
-    "collected": true
-  },
-      {
-    "image": "Flag 33",
-    "collected": true
-  },
-
-
-          {
-    "image": "Flag 37",
-    "collected": true
-  },
-            {
-    "image": "Flag 38",
-      "collected": true
-  },
-            {
-    "image": "Flag 39",
-      "collected": true
-  },
-                  {
-    "image": "Flag 40",
-      "collected": true
-  },
-                  {
-    "image": "Flag 41",
-      "collected": true
-  },
-                        {
-    "image": "Flag 42",
-      "collected": true
-  },
-                        {
-    "image": "Flag 43",
-      "collected": true
-  },
-                        {
-    "image": "Flag 44",
-      "collected": true
-  },
-                        {
-    "image": "Flag 45",
-      "collected": true
-  },
-                              {
-    "image": "Flag 46",
-      "collected": true
-  },
-                                    {
-    "image": "Flag 47",
-      "collected": true
-  },
-                                          {
-    "image": "Flag 48",
-      "collected": true
-  }
-]
+      "image": "Flag 36",
+      "collected": false
+    },
+    {
+      "image": "Flag 23",
+      "collected": false
+    },
+    {
+      "image": "Flag 12",
+      "collected": false
+    },
+    {
+      "image": "Flag 06",
+      "collected": false
+    },
+    {
+      "image": "Flag 07",
+      "collected": false
+    },
+    {
+      "image": "Flag 08",
+      "collected": false
+    },
+    {
+      "image": "Flag 09",
+      "collected": false
+    },
+    {
+      "image": "Flag 10",
+      "collected": false
+    },
+    {
+      "image": "Flag 11",
+      "collected": false
+    },
+    {
+      "image": "Flag 13",
+      "collected": false
+    },
+    {
+      "image": "Flag 14",
+      "collected": false
+    },
+    {
+      "image": "Flag 15",
+      "collected": false
+    },
+    {
+      "image": "Flag 16",
+      "collected": false
+    },
+    {
+      "image": "Flag 17",
+      "collected": false
+    },
+    {
+      "image": "Flag 18",
+      "collected": false
+    },
+    {
+      "image": "Flag 19",
+      "collected": false
+    },
+    {
+      "image": "Flag 22",
+      "collected": false
+    },
+    {
+      "image": "Flag 25",
+      "collected": false
+    },
+    {
+      "image": "Flag 26",
+      "collected": false
+    },
+    {
+      "image": "Flag 27",
+      "collected": false
+    },
+    {
+      "image": "Flag 28",
+      "collected": false
+    },
+    {
+      "image": "Flag 29",
+      "collected": false
+    },
+    {
+      "image": "Flag 30",
+      "collected": false
+    },
+    {
+      "image": "Flag 31",
+      "collected": false
+    },
+    {
+      "image": "Flag 32",
+      "collected": false
+    },
+    {
+      "image": "Flag 33",
+      "collected": false
+    },
+    {
+      "image": "Flag 37",
+      "collected": false
+    },
+    {
+      "image": "Flag 38",
+      "collected": false
+    },
+    {
+      "image": "Flag 39",
+      "collected": false
+    },
+    {
+      "image": "Flag 40",
+      "collected": false
+    },
+    {
+      "image": "Flag 41",
+      "collected": false
+    },
+    {
+      "image": "Flag 42",
+      "collected": false
+    },
+    {
+      "image": "Flag 43",
+      "collected": false
+    },
+    {
+      "image": "Flag 44",
+      "collected": false
+    },
+    {
+      "image": "Flag 45",
+      "collected": false
+    },
+    {
+      "image": "Flag 46",
+      "collected": false
+    },
+    {
+      "image": "Flag 47",
+      "collected": false
+    },
+    {
+      "image": "Flag 48",
+      "collected": false
+    }
+  ]
+}
