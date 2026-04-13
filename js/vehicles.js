@@ -33,10 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const META_ICONS = {
     buy: `
-      <svg class="vehicle-meta-svg" viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="5" y="6" width="14" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M8 10h8M8 14h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="12" cy="4" r="1.8" fill="currentColor"/>
+      <svg class="vehicle-meta-svg vehicle-meta-svg--credit" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="miter"
+          d="M6.2 5.8h11.1l1.6 2.4v7.6l-1.6 2.4H6.2l-1.6-2.4V8.2l1.6-2.4z" />
+        <path fill="currentColor" fill-opacity="0.22" stroke="none"
+          d="M7.8 8.4h8.4v1.1H7.8zm0 2.6h8.4v1.1H7.8zm0 2.6h6.2v1.1H7.8z" />
+        <path fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.75"
+          d="M15.2 6.1l1.3 2.1v7.6l-1.3 2.1" />
       </svg>
     `,
     sell: `
