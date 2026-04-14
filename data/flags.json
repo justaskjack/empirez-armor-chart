@@ -25,7 +25,7 @@
     },
     {
       "image": "Flag 01",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 02",
@@ -173,11 +173,11 @@
     },
     {
       "image": "Flag 43",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 44",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 45",
@@ -185,7 +185,7 @@
     },
     {
       "image": "Flag 46",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 47",

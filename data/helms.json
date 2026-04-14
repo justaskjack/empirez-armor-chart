@@ -5,7 +5,7 @@
     "image": "Ski Mask 02.jpg",
     "col": 1,
     "row": 22,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 03",
@@ -29,7 +29,7 @@
     "image": "Ski Mask 01.jpg",
     "col": 4,
     "row": 22,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 04",
@@ -229,7 +229,7 @@
     "image": "Pilot Helmet.jpg",
     "col": 7,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Flight Helmet",
@@ -317,7 +317,7 @@
     "image": "Horns 01.jpg",
     "col": 10,
     "row": 18,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bounty Hunter Helmet 01",
@@ -357,7 +357,7 @@
     "image": "Bossk Mask.jpg",
     "col": 5,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Greedo Mask",
@@ -365,7 +365,7 @@
     "image": "Greedo Mask.jpg",
     "col": 6,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Squid Head Mask",
@@ -373,7 +373,7 @@
     "image": "Squid Head Mask.jpg",
     "col": 7,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Tusken Helmet 01",
@@ -389,7 +389,7 @@
     "image": "Tusken Helmet 02.jpg",
     "col": 9,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Tusken Helmet 03",
@@ -397,7 +397,7 @@
     "image": "Tusken Helmet 03.jpg",
     "col": 10,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Pod Racer Helmet 01",
@@ -405,7 +405,7 @@
     "image": "Pod Racer Helmet 01.jpg",
     "col": 1,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Pod Racer Helmet 02",
@@ -421,7 +421,7 @@
     "image": "Rebel Pilot Helmet.jpg",
     "col": 3,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Scout Helmet 01",
@@ -429,7 +429,7 @@
     "image": "Rebel Scout Helmet 01.jpg",
     "col": 4,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Scout Helmet 02",
@@ -509,7 +509,7 @@
     "image": "Imperial Officer Hat 02.jpg",
     "col": 5,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 03",
@@ -525,7 +525,7 @@
     "image": "Officer Helmet 02.jpg",
     "col": 7,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Officer Helmet 01",
@@ -533,7 +533,7 @@
     "image": "Officer Helmet 01.jpg",
     "col": 8,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "DeathTrooper Helmet",
@@ -741,7 +741,7 @@
     "image": "Republic Commando Helmet 04.jpg",
     "col": 2,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 03",
@@ -749,7 +749,7 @@
     "image": "Republic Commando Helmet 03.jpg",
     "col": 3,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 02",
@@ -757,7 +757,7 @@
     "image": "Republic Commando Helmet 02.jpg",
     "col": 4,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Republic Commando Helmet 05",
@@ -781,7 +781,7 @@
     "image": "Shock Commander Helmet 01.jpg",
     "col": 8,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Commander Helmet 03",
@@ -805,7 +805,7 @@
     "image": "Clone Trooper Helmet 06.jpg",
     "col": 1,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 02",
@@ -813,7 +813,7 @@
     "image": "Clone Trooper Helmet 02.jpg",
     "col": 2,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 04",
@@ -821,7 +821,7 @@
     "image": "Clone Trooper Helmet 04.jpg",
     "col": 3,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 05",
@@ -829,7 +829,7 @@
     "image": "Clone Trooper Helmet 05.jpg",
     "col": 4,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 01",
@@ -989,7 +989,7 @@
     "image": "Stormtrooper Helmet 04.jpg",
     "col": 6,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 05",
@@ -1229,7 +1229,7 @@
     "image": "Cardboard Mask (Yoda).jpg",
     "col": 2,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Cardboard Mask (Leia)",
@@ -1245,7 +1245,7 @@
     "image": "Mime Mask.jpg",
     "col": 10,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Captain Enoch Helmet",
