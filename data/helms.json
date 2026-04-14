@@ -325,7 +325,7 @@
     "image": "Bounty Hunter Helmet 01.jpg",
     "col": 1,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bounty Hunter Helmet 02",
@@ -437,7 +437,7 @@
     "image": "Rebel Scout Helmet 02.jpg",
     "col": 5,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Scout Helmet 03",
@@ -445,7 +445,7 @@
     "image": "Rebel Scout Helmet 03.jpg",
     "col": 6,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Rebel Technician Helmet",
@@ -957,7 +957,7 @@
     "image": "Stormtrooper Helmet 02.jpg",
     "col": 2,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 01",
@@ -981,7 +981,7 @@
     "image": "Stormtrooper Helmet 03.jpg",
     "col": 5,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 04",
