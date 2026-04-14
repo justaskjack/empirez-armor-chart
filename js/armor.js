@@ -246,15 +246,21 @@ document.getElementById("controls").appendChild(globalToggle);
 // =======================
 // HELMS LOADING SECTION
 // =======================
+const HELM_IMAGE_DIR = "images/helms";
+
 fetch("data/helms.json")
   .then(res => res.json())
-  .then(helms => {
+  .then(raw => {
+    const helms = Array.isArray(raw) ? raw : raw.helms || [];
+    const imageBase =
+      raw && !Array.isArray(raw) && raw.imageBase ? String(raw.imageBase).replace(/\/+$/, "") : HELM_IMAGE_DIR;
+
     const grid = document.getElementById("helmGrid");
 
     helms.forEach(helm => {
       const anchor = document.createElement("a");
       anchor.className = "helm-card";
-      anchor.href = `images/${helm.image}`;
+      anchor.href = `${imageBase}/${String(helm.image).replace(/^\/+/, "")}`;
       anchor.setAttribute("data-lightbox", "helm");
       anchor.title = helm.name;
       anchor.style.gridColumn = helm.col;
@@ -267,7 +273,7 @@ fetch("data/helms.json")
       media.className = "helm-card__media";
 
       const img = document.createElement("img");
-      img.src = `images/${helm.thumb}`;
+      img.src = `${imageBase}/${String(helm.thumb).replace(/^\/+/, "")}`;
       img.alt = helm.name;
       img.title = helm.name;
       img.className = "helm-thumb";
