@@ -1064,38 +1064,6 @@
     "collected": false
   },
   {
-    "name": "Mando Helmet 01",
-    "thumb": "Mando Helmet 01 - thumb.jpg",
-    "image": "Mando Helmet 01.jpg",
-    "col": 6,
-    "row": 4,
-    "collected": true
-  },
-  {
-    "name": "Mando Helmet 02",
-    "thumb": "Mando Helmet 02 - thumb.jpg",
-    "image": "Mando Helmet 02.jpg",
-    "col": 7,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mando Helmet 03",
-    "thumb": "Mando Helmet 03 - thumb.jpg",
-    "image": "Mando Helmet 03.jpg",
-    "col": 8,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mando Helmet 04",
-    "thumb": "Mando Helmet 04 - thumb.jpg",
-    "image": "Mando Helmet 04.jpg",
-    "col": 9,
-    "row": 4,
-    "collected": false
-  },
-  {
     "name": "Darth Vader Helmet",
     "thumb": "Darth Vader Helmet - thumb.jpg",
     "image": "Darth Vader Helmet.jpg",
@@ -1374,5 +1342,61 @@
     "col": 5,
     "row": 11,
     "collected": false
+  },
+  {
+    "name": "Ackbar Head",
+    "thumb": "Ackbar Head - thumb.jpg",
+    "image": "Ackbar Head.jpg",
+    "col": 4,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Mando Helmet 01",
+    "thumb": "Mando Helmet 01 - thumb.jpg",
+    "image": "Mando Helmet 01.jpg",
+    "col": 5,
+    "row": 4,
+    "collected": true
+  },
+  {
+    "name": "Mando Helmet 02",
+    "thumb": "Mando Helmet 02 - thumb.jpg",
+    "image": "Mando Helmet 02.jpg",
+    "col": 6,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 03",
+    "thumb": "Mando Helmet 03 - thumb.jpg",
+    "image": "Mando Helmet 03.jpg",
+    "col": 7,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 04",
+    "thumb": "Mando Helmet 04 - thumb.jpg",
+    "image": "Mando Helmet 04.jpg",
+    "col": 8,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 09",
+    "thumb": "Mando Helmet 09 - thumb.jpg",
+    "image": "Mando Helmet 09.jpg",
+    "col": 9,
+    "row": 4,
+    "collected": true
+  },
+  {
+    "name": "Mando Helmet 08",
+    "thumb": "Mando Helmet 08 - thumb.jpg",
+    "image": "Mando Helmet 08.jpg",
+    "col": 10,
+    "row": 4,
+    "collected": true
   }
 ]
