@@ -741,7 +741,7 @@
     "image": "Republic Commando Helmet 04.jpg",
     "col": 2,
     "row": 9,
-    "collected": true
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 03",
@@ -749,7 +749,7 @@
     "image": "Republic Commando Helmet 03.jpg",
     "col": 3,
     "row": 9,
-    "collected": true
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 02",
@@ -757,7 +757,7 @@
     "image": "Republic Commando Helmet 02.jpg",
     "col": 4,
     "row": 9,
-    "collected": true
+    "collected": false
   },
   {
     "name": "Republic Commando Helmet 05",
