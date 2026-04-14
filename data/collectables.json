@@ -149,7 +149,7 @@
     "slots": "",
     "note": "Empty Data Cards are combined with Star Maps to create keycards that unlock the Imperial Astromech loot droids.",
     "image": "Collectable24 - Empty Datacard",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -158,7 +158,7 @@
     "slots": "",
     "note": "Combine with a Datapad to create an Active Chaincode.",
     "image": "Collectable61 - Chaincode",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -167,7 +167,7 @@
     "slots": "",
     "note": "Created by combining a Chaincode with a Datapad. Used to unlock a Mando Safe.",
     "image": "Collectable25 - Active Chaincode",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -176,7 +176,7 @@
     "slots": "",
     "note": "Combine this with a Chaincode to create an Active Chaincode which is used to unlock a Mando Safe.",
     "image": "Collectable33 - Datapad",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -185,7 +185,7 @@
     "slots": "",
     "note": "Used to open the bunker door at the Imperial Base in the NorthWest toxic zone.",
     "image": "Collectable28 - Imperial Keycard",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -401,7 +401,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable73 - Greys ATST Collectable",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -437,7 +437,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable74 - LOLA",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {

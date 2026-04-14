@@ -69,7 +69,7 @@
     "image": "Balaclava 01.jpg",
     "col": 1,
     "row": 21,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Balaclava 03",
@@ -381,7 +381,7 @@
     "image": "Tusken Helmet 01.jpg",
     "col": 8,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Tusken Helmet 02",
@@ -549,7 +549,7 @@
     "image": "Stormtrooper Helmet 07.jpg",
     "col": 3,
     "row": 12,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Sith Trooper Helmet 01",
@@ -605,7 +605,7 @@
     "image": "Airborne Clone Helmet 03.jpg",
     "col": 9,
     "row": 12,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet 02",
@@ -885,7 +885,7 @@
     "image": "Clone Trooper Phase 1.jpg",
     "col": 1,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 03",
@@ -893,7 +893,7 @@
     "image": "Phase1 Clone Helmet 03.jpg",
     "col": 2,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 02",
@@ -973,7 +973,7 @@
     "image": "Stormtrooper Medic 01.jpg",
     "col": 4,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Helmet 03",
