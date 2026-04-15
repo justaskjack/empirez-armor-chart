@@ -29,7 +29,7 @@
       "key": "flying",
       "title": "Flying",
       "vehicles": [
-        { "name": "TIE Fighter", "description": "Standard Imperial space superiority fighter.", "buy": 6500, "sell": 400, "cargo": 200, "seats": 1 },
+        { "name": "TIE Fighter", "thumb": "images/vehicles/vehicle03_tiefighter.jpg", "description": "Standard Imperial space superiority fighter. Photo courtesy of Daddy Auto.", "buy": 6000, "sell": 400, "cargo": 200, "seats": 1 },
         { "name": "TIE Fighter", "description": "Alternate listing — increased cargo configuration.", "buy": 6500, "sell": 400, "cargo": 250, "seats": 1 },
         { "name": "TIE Interceptor", "description": "Aggressive profile; expanded internal storage.", "buy": 9000, "sell": 400, "cargo": 500, "seats": 1 },
         { "name": "TIE Silencer", "description": "Advanced hull; substantial cargo for a fighter.", "buy": 14000, "sell": 400, "cargo": 1000, "seats": 1 },
