@@ -97,6 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
     return header;
   }
 
+  function thumbToLargeUrl(thumbPath) {
+    const s = String(thumbPath).replace(/^\/+/, "");
+    const lastDot = s.lastIndexOf(".");
+    if (lastDot <= 0) return `${s}-lg`;
+    const base = s.slice(0, lastDot);
+    const ext = s.slice(lastDot);
+    if (base.toLowerCase().endsWith("-lg")) return s;
+    return `${base}-lg${ext}`;
+  }
+
   function metaItem(kind, label, value) {
     const wrap = document.createElement("div");
     wrap.className = "vehicle-meta-item";
@@ -129,12 +139,23 @@ document.addEventListener("DOMContentLoaded", () => {
     img.className = "vehicle-thumb";
     img.alt = vehicle.name;
     img.loading = "lazy";
-    img.src = vehicle.thumb ? String(vehicle.thumb).replace(/^\/+/, "") : THUMB_PLACEHOLDER;
+    const thumbSrc = vehicle.thumb ? String(vehicle.thumb).replace(/^\/+/, "") : THUMB_PLACEHOLDER;
+    img.src = thumbSrc;
     img.addEventListener("error", () => {
       img.src = THUMB_PLACEHOLDER;
     });
 
-    thumbInner.appendChild(img);
+    if (vehicle.thumb) {
+      const link = document.createElement("a");
+      link.href = thumbToLargeUrl(vehicle.thumb);
+      link.setAttribute("data-lightbox", "vehicles");
+      link.setAttribute("data-title", vehicle.name);
+      link.className = "vehicle-lightbox-link";
+      link.appendChild(img);
+      thumbInner.appendChild(link);
+    } else {
+      thumbInner.appendChild(img);
+    }
     thumbWrap.appendChild(thumbInner);
 
     const body = document.createElement("div");

@@ -36,7 +36,7 @@
         { "name": "Royal TIE Fighter", "description": "Ceremonial trim; heavy-duty storage layout.", "buy": 17000, "sell": 400, "cargo": 1000, "seats": 1 },
         { "name": "Snow Speeder", "description": "Rebel airspeeder; two crew, moderate cargo.", "buy": 11000, "sell": 400, "cargo": 250, "seats": 2 },
         { "name": "Recon Speeder", "description": "Long-range sensors; generous equipment space.", "buy": 11000, "sell": 400, "cargo": 500, "seats": 2 },
-        { "name": "Trident Fighter", "description": "Tri-wing layout; balanced cargo bay.", "buy": 14000, "sell": 400, "cargo": 500, "seats": 1 },
+        { "name": "Trident Fighter", "thumb":"images/vehicles/vehicle04_tridentfighter.jpg", "description": "Tri-wing layout; balanced cargo bay. Photo courtesy of Darth Overseer digdawg.", "buy": 14000, "sell": 400, "cargo": 500, "seats": 1 },
         { "name": "X-Wing T-70", "description": "Resistance-era X-wing baseline loadout.", "buy": 7000, "sell": 400, "cargo": 200, "seats": 1 },
         { "name": "X-Wing T-70 (Red)", "description": "Squadron accent livery; slightly larger hold.", "buy": 7000, "sell": 400, "cargo": 250, "seats": 1 },
         { "name": "X_Wing_T_70 (Teal)", "description": "Teal accent variant; tuned for flexibility.", "buy": 7000, "sell": 300, "cargo": 250, "seats": 1 },

@@ -2557,6 +2557,14 @@ header.navbar {
   overflow: hidden;
 }
 
+#page-vehicles .vehicle-lightbox-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  cursor: zoom-in;
+}
+
 #page-vehicles .vehicle-thumb {
   display: block;
   width: 100%;
