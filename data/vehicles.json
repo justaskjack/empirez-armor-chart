@@ -21,7 +21,7 @@
         { "name": "Hover Bike", "description": "Lift-enabled bike for rough terrain.", "buy": 3000, "sell": 250, "cargo": 300, "seats": 1 },
         { "name": "Bloodfin Speeder", "description": "Sport-tuned speeder with expanded cargo bay.", "buy": 4000, "sell": 250, "cargo": 400, "seats": 1 },
         { "name": "Rey's Speeder", "description": "Scavenger-style speeder; high cargo for its class.", "buy": 4000, "sell": 250, "cargo": 600, "seats": 1 },
-        { "name": "Solo Star Wars Speeder", "description": "Two-seat runner; lighter cargo capacity.", "buy": 4000, "sell": 300, "cargo": 200, "seats": 2 },
+        { "name": "Solo Star Wars Speeder", "thumb": "images/vehicles/vehicle02_solostarwarsspeeder.jpg", "description": "Two-seat runner; lighter cargo capacity. Photo courtesy of Kage Pep.", "buy": 4000, "sell": 300, "cargo": 200, "seats": 2 },
         { "name": "FreckTransport", "description": "Eight-seat ground transport; large cargo hold.", "buy": 6000, "sell": 400, "cargo": 1000, "seats": 8 }
       ]
     },
