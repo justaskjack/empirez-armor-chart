@@ -14,7 +14,7 @@
       "title": "Ground",
       "vehicles": [
         { "name": "Mini Speeder Bike", "thumb": "images/vehicles/vehicle01_minispeederbike.jpg", "description": "Compact surface speeder — good for short hops.", "buy": 1000, "sell": 150, "cargo": 200, "seats": 1 },
-        { "name": "Endor Speeder Bike", "description": "Forest patrol layout; balanced speed and handling.", "buy": 1500, "sell": 200, "cargo": 250, "seats": 1 },
+        { "name": "Endor Speeder Bike", "thumb": "images/vehicles/vehicle05_endorspeederbike.jpg", "description": "Forest patrol layout; balanced speed and handling. Photo courtesy of McNick", "buy": 1500, "sell": 200, "cargo": 250, "seats": 1 },
         { "name": "Endor Speeder Bike (Red)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
         { "name": "Endor Speeder Bike (Green)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
         { "name": "Endor Speeder Bike (Blue)", "description": "Faction-tinted Endor frame variant.", "buy": 2500, "sell": 250, "cargo": 300, "seats": 1 },
