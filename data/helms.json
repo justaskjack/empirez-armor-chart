@@ -1040,30 +1040,6 @@
     "collected": false
   },
   {
-    "name": "Mando Helmet 05",
-    "thumb": "Mando Helmet 05 - thumb.jpg",
-    "image": "Mando Helmet 05.jpg",
-    "col": 2,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mando Helmet 07",
-    "thumb": "Mando Helmet 07 - thumb.jpg",
-    "image": "Mando Helmet 07.jpg",
-    "col": 3,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mandalorian Helmet 01",
-    "thumb": "Mandalorian Helmet 01 - thumb.jpg",
-    "image": "Mandalorian Helmet 01.jpg",
-    "col": 4,
-    "row": 4,
-    "collected": false
-  },
-  {
     "name": "Darth Vader Helmet",
     "thumb": "Darth Vader Helmet - thumb.jpg",
     "image": "Darth Vader Helmet.jpg",
@@ -1116,14 +1092,6 @@
     "thumb": "Darth Nihilus Helmet - thumb.jpg",
     "image": "Darth Nihilus Helmet.jpg",
     "col": 7,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "KOTOR Sith Helmet",
-    "thumb": "KOTOR Sith Helmet - thumb.jpg",
-    "image": "KOTOR Sith Helmet.jpg",
-    "col": 8,
     "row": 2,
     "collected": false
   },
@@ -1240,14 +1208,6 @@
     "collected": false
   },
   {
-    "name": "Mime Mask",
-    "thumb": "Mime Mask - thumb.jpg",
-    "image": "Mime Mask.jpg",
-    "col": 10,
-    "row": 3,
-    "collected": true
-  },
-  {
     "name": "Captain Enoch Helmet",
     "thumb": "Captain Enoch Helmet - thumb.jpg",
     "image": "Captain Enoch Helmet.jpg",
@@ -1352,38 +1312,6 @@
     "collected": true
   },
   {
-    "name": "Mando Helmet 01",
-    "thumb": "Mando Helmet 01 - thumb.jpg",
-    "image": "Mando Helmet 01.jpg",
-    "col": 5,
-    "row": 4,
-    "collected": true
-  },
-  {
-    "name": "Mando Helmet 02",
-    "thumb": "Mando Helmet 02 - thumb.jpg",
-    "image": "Mando Helmet 02.jpg",
-    "col": 6,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mando Helmet 03",
-    "thumb": "Mando Helmet 03 - thumb.jpg",
-    "image": "Mando Helmet 03.jpg",
-    "col": 7,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Mando Helmet 04",
-    "thumb": "Mando Helmet 04 - thumb.jpg",
-    "image": "Mando Helmet 04.jpg",
-    "col": 8,
-    "row": 4,
-    "collected": false
-  },
-  {
     "name": "Mando Helmet 09",
     "thumb": "Mando Helmet 09 - thumb.jpg",
     "image": "Mando Helmet 09.jpg",
@@ -1397,6 +1325,110 @@
     "image": "Mando Helmet 08.jpg",
     "col": 10,
     "row": 4,
+    "collected": true
+  },
+  {
+    "name": "Mime Mask",
+    "thumb": "Mime Mask - thumb.jpg",
+    "image": "Mime Mask.jpg",
+    "col": 9,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Mando Helmet 05",
+    "thumb": "Mando Helmet 05 - thumb.jpg",
+    "image": "Mando Helmet 05.jpg",
+    "col": 10,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 07",
+    "thumb": "Mando Helmet 07 - thumb.jpg",
+    "image": "Mando Helmet 07.jpg",
+    "col": 2,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mandalorian Helmet 01",
+    "thumb": "Mandalorian Helmet 01 - thumb.jpg",
+    "image": "Mandalorian Helmet 01.jpg",
+    "col": 3,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 01",
+    "thumb": "Mando Helmet 01 - thumb.jpg",
+    "image": "Mando Helmet 01.jpg",
+    "col": 4,
+    "row": 4,
+    "collected": true
+  },
+  {
+    "name": "Mando Helmet 02",
+    "thumb": "Mando Helmet 02 - thumb.jpg",
+    "image": "Mando Helmet 02.jpg",
+    "col": 5,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 03",
+    "thumb": "Mando Helmet 03 - thumb.jpg",
+    "image": "Mando Helmet 03.jpg",
+    "col": 6,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 04",
+    "thumb": "Mando Helmet 04 - thumb.jpg",
+    "image": "Mando Helmet 04.jpg",
+    "col": 7,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Mando Helmet 10",
+    "thumb": "Mando Helmet 10 - thumb.jpg",
+    "image": "Mando Helmet 10.jpg",
+    "col": 8,
+    "row": 4,
+    "collected": true
+  },
+  {
+    "name": "KOTOR Sith Helmet",
+    "thumb": "KOTOR Sith Helmet - thumb.jpg",
+    "image": "KOTOR Sith Helmet.jpg",
+    "col": 7,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "KOTOR Sith Helmet 02",
+    "thumb": "KOTOR Sith Helmet 02 - thumb.jpg",
+    "image": "KOTOR Sith Helmet 02.jpg",
+    "col": 8,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Darth Maul Hood",
+    "thumb": "Darth Maul Hood - thumb.jpg",
+    "image": "Darth Maul Hood.jpg",
+    "col": 5,
+    "row": 3,
+    "collected": true
+  },
+  {
+    "name": "Jedi Hood",
+    "thumb": "Jedi Hood - thumb.jpg",
+    "image": "Jedi Hood.jpg",
+    "col": 6,
+    "row": 3,
     "collected": true
   }
 ]

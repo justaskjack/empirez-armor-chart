@@ -632,7 +632,7 @@
     "name": "Cereals",
     "sellPrice": "None",
     "slots": "None",
-    "note": "Can be eaten.",
+    "note": "Can be eaten. Carve with a knife to craft a character mask.",
     "image": "Collectable11 - C3POs Cereals",
     "collected": false,
     "category": "Misc"
@@ -666,11 +666,20 @@
   },
   {
     "name": "Grogue Plushie",
-    "sellPrice": "10 Credits",
+    "sellPrice": "None",
     "slots": "2x3",
     "note": "Can be displayed inside a Grogu Pod.",
     "image": "Collectable15 - Grogue Plushie",
     "collected": false,
+    "category": "Misc"
+  },
+  {
+    "name": "Darth Grogu Plushie",
+    "sellPrice": "None",
+    "slots": "2x3",
+    "note": "Can be displayed inside a Grogu Pod.",
+    "image": "Collectable81 - Darth Grogu Plushie",
+    "collected": true,
     "category": "Misc"
   },
   {
