@@ -37,7 +37,7 @@
     },
     {
       "image": "Flag 21",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 24",
@@ -189,7 +189,7 @@
     },
     {
       "image": "Flag 47",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 48",

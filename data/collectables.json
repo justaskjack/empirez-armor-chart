@@ -284,7 +284,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable68 - seeker droid",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -302,7 +302,7 @@
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable18 - Mini-Brick Saber (Pink)",
-    "collected": false,
+    "collected": true,
     "category": "Legos"
   },
   {
@@ -356,7 +356,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable03 - Republic Venator",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -369,12 +369,12 @@
     "category": "Toys"
   },
   {
-    "name": "Greys Corsant Collectable",
+    "name": "Greys Coursant Collectable",
     "sellPrice": "50 Credits",
     "slots": "2x3",
     "note": "",
     "image": "Collectable05 - Greys Corsant Collectable",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -419,7 +419,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable06 - lezard",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -446,7 +446,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable07 - holorecord decive",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -455,7 +455,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable65 - jeron fusion cutter",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -464,7 +464,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable76 - cantina instrument",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -473,7 +473,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable08 - charismatic-mandalorian-helmet yellow",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -536,7 +536,7 @@
     "slots": "None",
     "note": "Combine with a Machete to create a Vibroblade.",
     "image": "Collectable21 - Pink Kyber Crystal",
-    "collected": false,
+    "collected": true,
     "category": "Crafting"
   },
   {
@@ -625,7 +625,7 @@
     "slots": "None",
     "note": "Crafted by combining a Machete with a Pink Kyber Crystal.",
     "image": "Collectable46 - Vibro Blade (Pink)",
-    "collected": false,
+    "collected": true,
     "category": "Crafting"
   },
   {
@@ -634,7 +634,7 @@
     "slots": "None",
     "note": "Can be eaten. Carve with a knife to craft a character mask.",
     "image": "Collectable11 - C3POs Cereals",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
@@ -643,7 +643,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable12 - Teddy Bear (Pink)",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
@@ -652,7 +652,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable13 - Teddy Bear (Brown)",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
@@ -665,12 +665,12 @@
     "category": "Misc"
   },
   {
-    "name": "Grogue Plushie",
+    "name": "Grogu Plushie",
     "sellPrice": "None",
     "slots": "2x3",
     "note": "Can be displayed inside a Grogu Pod.",
     "image": "Collectable15 - Grogue Plushie",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
