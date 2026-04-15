@@ -101,7 +101,7 @@
     "image": "Hood 01.jpg",
     "col": 6,
     "row": 21,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Hood 02",
@@ -117,7 +117,7 @@
     "image": "Winter Coif 01.jpg",
     "col": 8,
     "row": 21,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Hockey Helmet 01",
@@ -173,7 +173,7 @@
     "image": "Officer Cap 01.jpg",
     "col": 10,
     "row": 20,
-    "collected": false
+    "collected": true
   },
   {
     "name": "NBC Respirator",
@@ -221,7 +221,7 @@
     "image": "Tacmask.jpg",
     "col": 6,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Pilot Helmet",
@@ -309,7 +309,7 @@
     "image": "Witch Hat.jpg",
     "col": 8,
     "row": 18,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Horns 01",
@@ -333,7 +333,7 @@
     "image": "Bounty Hunter Helmet 02.jpg",
     "col": 2,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bounty Hunter Mask",
@@ -349,7 +349,7 @@
     "image": "Tarisian Battle Helmet.jpg",
     "col": 4,
     "row": 15,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bossk Mask",
@@ -501,7 +501,7 @@
     "image": "Imperial Officer Hat 01.jpg",
     "col": 4,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 02",
@@ -517,7 +517,7 @@
     "image": "Imperial Officer Hat 03.jpg",
     "col": 6,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Officer Helmet 02",
@@ -677,7 +677,7 @@
     "image": "Biker Scout Helmet 02.jpg",
     "col": 4,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Biker Scout Helmet 01",
@@ -789,7 +789,7 @@
     "image": "Shock Commander Helmet 03.jpg",
     "col": 9,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Galactic Marine Helmet",
@@ -837,7 +837,7 @@
     "image": "Clone Trooper Helmet 01.jpg",
     "col": 5,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 03",
@@ -909,7 +909,7 @@
     "image": "Phase1 Clone Helmet 01.jpg",
     "col": 4,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Phase 1 02",
@@ -965,7 +965,7 @@
     "image": "Stormtrooper Helmet 01.jpg",
     "col": 3,
     "row": 6,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Stormtrooper Medic 01",
@@ -1221,7 +1221,7 @@
     "image": "Commander Gree Helmet Chrome.jpg",
     "col": 9,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bad Batch Wrecker",
@@ -1293,7 +1293,7 @@
     "image": "Shoretrooper Helmet 02.jpg",
     "col": 10,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Two Tubes",
@@ -1405,7 +1405,7 @@
     "image": "KOTOR Sith Helmet.jpg",
     "col": 7,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "KOTOR Sith Helmet 02",
