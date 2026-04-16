@@ -37,7 +37,7 @@
     "image": "Ski Mask 04.jpg",
     "col": 5,
     "row": 22,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 05",
@@ -901,7 +901,7 @@
     "image": "Phase1 Clone Helmet 02.jpg",
     "col": 3,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Phase1 Clone Helmet 01",
@@ -1141,7 +1141,7 @@
     "image": "Ahsoke Head.jpg",
     "col": 5,
     "row": 1,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Jar Jar Binks Mask",

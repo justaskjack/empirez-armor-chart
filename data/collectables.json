@@ -203,7 +203,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable39 - turret 2",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -311,7 +311,7 @@
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable48 - Mini-Brick Saber (Red)",
-    "collected": false,
+    "collected": true,
     "category": "Legos"
   },
   {
@@ -320,7 +320,7 @@
     "slots": "None",
     "note": "Can be used as a weapon or to open cans",
     "image": "Collectable47 - Mini-Brick Saber (Blue)",
-    "collected": false,
+    "collected": true,
     "category": "Legos"
   },
   {

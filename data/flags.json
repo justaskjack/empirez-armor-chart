@@ -45,7 +45,7 @@
     },
     {
       "image": "Flag 36",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 23",
@@ -113,7 +113,7 @@
     },
     {
       "image": "Flag 25",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 26",
@@ -133,11 +133,11 @@
     },
     {
       "image": "Flag 30",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 31",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 32",
@@ -145,7 +145,7 @@
     },
     {
       "image": "Flag 33",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 37",
@@ -161,7 +161,7 @@
     },
     {
       "image": "Flag 40",
-      "collected": false
+      "collected": true
     },
     {
       "image": "Flag 41",
