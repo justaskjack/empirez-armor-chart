@@ -52,13 +52,13 @@
       "key": "transport",
       "title": "Transport",
       "vehicles": [
-        { "name": "LAAT Drop Ship Blue", "description": "Republic gunship — blue markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 8 },
-        { "name": "LAAT Drop Ship Green", "description": "Republic gunship — green markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 8 },
-        { "name": "LAAT Dropship Black N White Partisan", "description": "Partisan scheme; enlarged cargo floor.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
-        { "name": "LAAT Dropship Shock Battalion", "description": "Shock trooper livery; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
-        { "name": "LAAT Dropship 187th Infantry Battalion", "description": "187th scheme; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
-        { "name": "LAAT Dropship Desert Camo", "description": "Desert operations paint; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 8 },
-        { "name": "Imperial Shuttle", "description": "Six-seat shuttle; largest cargo in this list.", "buy": 25000, "sell": 400, "cargo": 1000, "seats": 6 }
+        { "name": "LAAT Drop Ship Blue", "description": "Republic gunship — blue markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 12 },
+        { "name": "LAAT Drop Ship Green", "description": "Republic gunship — green markings.", "buy": 20000, "sell": 400, "cargo": 200, "seats": 12 },
+        { "name": "LAAT Dropship Black N White Partisan", "description": "Partisan scheme; enlarged cargo floor.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 12 },
+        { "name": "LAAT Dropship Shock Battalion", "description": "Shock trooper livery; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 12 },
+        { "name": "LAAT Dropship 187th Infantry Battalion", "description": "187th scheme; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 12 },
+        { "name": "LAAT Dropship Desert Camo", "description": "Desert operations paint; expanded hold.", "buy": 20000, "sell": 400, "cargo": 500, "seats": 12 },
+        { "name": "Imperial Shuttle", "thumb": "images/vehicles/vehicle07_imperialshuttle.jpg", "description": "12-seat shuttle. Photo courtesy of Grand Inquisitor Akhmid and MR_wipeout.", "buy": 25000, "sell": 400, "cargo": 1000, "seats": 12 }
       ]
     }
   ]
