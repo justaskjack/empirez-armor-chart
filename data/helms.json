@@ -461,7 +461,7 @@
     "image": "Bando Gora Mask.jpg",
     "col": 9,
     "row": 14,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Nute Gunray Head",
@@ -565,7 +565,7 @@
     "image": "Shadow Clone Helmet 01.jpg",
     "col": 4,
     "row": 12,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Purge Trooper Helmet 01",
@@ -709,7 +709,7 @@
     "image": "Barc Trooper Helmet 03.jpg",
     "col": 8,
     "row": 10,
-    "collected": false
+    "collected": true
   },
   {
     "name": "GeoTrooper Helmet 01",
@@ -845,7 +845,7 @@
     "image": "Clone Trooper Helmet 03.jpg",
     "col": 6,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 07",
@@ -853,7 +853,7 @@
     "image": "Clone Trooper Helmet 07.jpg",
     "col": 7,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Helmet 08",
@@ -861,7 +861,7 @@
     "image": "Clone Trooper Helmet 08.jpg",
     "col": 8,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Trooper Helmet 01",
@@ -917,7 +917,7 @@
     "image": "Clone Trooper Phase 1 02.jpg",
     "col": 5,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Bly Helmet",
@@ -925,7 +925,7 @@
     "image": "Commander Bly Helmet.jpg",
     "col": 6,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Cody Helmet",
@@ -933,7 +933,7 @@
     "image": "Commander Cody Helmet.jpg",
     "col": 7,
     "row": 7,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Wolffe Helmet",
@@ -941,8 +941,7 @@
     "image": "Commander Wolffe Helmet.jpg",
     "col": 8,
     "row": 7,
-    "collected": false
-  },
+    "collected": true
   {
     "name": "Stormtrooper Helmet 06",
     "thumb": "Stormtrooper Helmet 06 - thumb.jpg",
