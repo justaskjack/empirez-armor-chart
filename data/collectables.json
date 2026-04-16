@@ -221,7 +221,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable63 - turret 5",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -293,7 +293,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable72 - Droideka",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -365,7 +365,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable04 - U-Wing",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
