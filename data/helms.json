@@ -493,7 +493,7 @@
     "image": "Imperial Gunner Helmet 02.jpg",
     "col": 3,
     "row": 13,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Imperial Officer Hat 01",
@@ -645,7 +645,7 @@
     "image": "Battle Droid Head.jpg",
     "col": 4,
     "row": 11,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Commander Rex Helmet",
@@ -1021,7 +1021,7 @@
     "image": "Boba Fett Helmet.jpg",
     "col": 1,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Bad Batch Hunter Helmet",
