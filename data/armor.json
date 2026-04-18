@@ -140,8 +140,17 @@
     "location": "All tiers",
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment02.jpg",
+    "equipmentTooltips": {
+      "chest": "ANH Stormtrooper Chestplate",
+      "shirt": "ANH Stormtrooper Top",
+      "belt": "ANH Sandtrooper Belt",
+      "legs": "ANH Stormtrooper Leg Armor",
+      "backpack": "Sandtrooper Backpack",
+      "head": "ANH Sandtrooper Helmet",
+      "feet": "ANH Sandtrooper Boots",
+      "armband": "Pauldron"
+    }
   },
   {
     "name": "First Order Stormtrooper Set",
