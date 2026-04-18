@@ -2,198 +2,343 @@
   "imageBase": "images/flags",
   "imageExt": "jpg",
   "thumbSuffix": " - thumb",
+  "defaultCardBack": "flag_cardback01.jpg",
   "flags": [
     {
       "image": "Flag 04",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 04",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 03",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 03",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 34",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 34",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 35",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 35",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 20",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 20",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 01",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 01",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 02",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 02",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 05",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 05",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 21",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 21",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 24",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 24",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 36",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 36",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 23",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 23",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 12",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 12",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 06",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 06",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 07",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 07",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 08",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 08",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 09",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 09",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 10",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 10",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 11",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 11",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 13",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 13",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 14",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 14",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 15",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 15",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 16",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 16",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 17",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 17",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 18",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 18",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 19",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 19",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 22",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 22",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 25",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 25",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 26",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 26",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 27",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 27",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 28",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 28",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 29",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 29",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 30",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 30",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 31",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 31",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 32",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 32",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 33",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 33",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 37",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 37",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 38",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 38",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 39",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 39",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 40",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 40",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 41",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 41",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 42",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 42",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 43",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 43",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 44",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 44",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 45",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 45",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 46",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 46",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 47",
-      "collected": true
+      "collected": true,
+      "displayName": "Flag 47",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 48",
-      "collected": false
+      "collected": false,
+      "displayName": "Flag 48",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
     }
   ]
 }
