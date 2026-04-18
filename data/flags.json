@@ -7,37 +7,44 @@
     {
       "image": "Flag 04",
       "collected": true,
-      "displayName": "Flag 04",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Mandalorian Flag (Variant 01)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 03",
       "collected": true,
-      "displayName": "Flag 03",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Mandalorian Flag (Variant 02)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 34",
       "collected": true,
-      "displayName": "Flag 34",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Mandalorian Flag (Variant 03)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 35",
       "collected": false,
-      "displayName": "Flag 35",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Mandalorian Flag (Variant 04)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 20",
       "collected": false,
-      "displayName": "Flag 20",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Mandalorian Flag (Variant 05)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
+    },
+    {
+      "image": "Flag 46",
+      "collected": true,
+      "displayName": "Mandalorian Flag (Variant 06)",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 01",
@@ -316,13 +323,6 @@
       "image": "Flag 45",
       "collected": true,
       "displayName": "Flag 45",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
-    },
-    {
-      "image": "Flag 46",
-      "collected": true,
-      "displayName": "Flag 46",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
