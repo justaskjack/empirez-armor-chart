@@ -103,6 +103,9 @@ function buildArmorCard(armor) {
   const equipWrap = document.createElement("div");
   equipWrap.className = "armor-card-ccg__equipment";
 
+  const equipInner = document.createElement("div");
+  equipInner.className = "armor-card-ccg__equipment-inner";
+
   const equipImg = document.createElement("img");
   equipImg.src = `${EQUIPMENT_IMAGE_DIR}${equipmentImage}`;
   equipImg.alt = "";
@@ -130,8 +133,9 @@ function buildArmorCard(armor) {
     equipHits.appendChild(btn);
   });
 
-  equipWrap.appendChild(equipImg);
-  equipWrap.appendChild(equipHits);
+  equipInner.appendChild(equipImg);
+  equipInner.appendChild(equipHits);
+  equipWrap.appendChild(equipInner);
 
   shell.appendChild(titleEl);
   shell.appendChild(prot);

@@ -1,15 +1,15 @@
 {
-  "leftweapon": { "left": 0, "top": 6, "width": 12.5, "height": 42 },
-  "rightweapon": { "left": 12.5, "top": 6, "width": 12.5, "height": 42 },
-  "chest": { "left": 25, "top": 6, "width": 12.5, "height": 42 },
-  "shirt": { "left": 37.5, "top": 6, "width": 12.5, "height": 42 },
-  "belt": { "left": 50, "top": 6, "width": 12.5, "height": 42 },
-  "legs": { "left": 62.5, "top": 6, "width": 12.5, "height": 42 },
-  "backpack": { "left": 75, "top": 6, "width": 12.5, "height": 42 },
-  "head": { "left": 87.5, "top": 6, "width": 12.5, "height": 42 },
-  "mask": { "left": 2, "top": 54, "width": 18, "height": 40 },
-  "eyes": { "left": 22, "top": 54, "width": 18, "height": 40 },
-  "hands": { "left": 41, "top": 54, "width": 18, "height": 40 },
-  "feet": { "left": 60, "top": 54, "width": 18, "height": 40 },
-  "armband": { "left": 79, "top": 54, "width": 19, "height": 40 }
+  "leftweapon": { "left": 1.6736, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "rightweapon": { "left": 14.2259, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "chest": { "left": 26.7782, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "shirt": { "left": 39.3305, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "belt": { "left": 51.8828, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "legs": { "left": 64.4351, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "backpack": { "left": 76.9874, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "head": { "left": 89.5397, "top": 6.25, "width": 10.0418, "height": 37.5 },
+  "mask": { "left": 1.6736, "top": 53.125, "width": 10.0418, "height": 37.5 },
+  "eyes": { "left": 14.2259, "top": 53.125, "width": 10.0418, "height": 37.5 },
+  "hands": { "left": 26.7782, "top": 53.125, "width": 10.0418, "height": 37.5 },
+  "feet": { "left": 39.3305, "top": 53.125, "width": 10.0418, "height": 37.5 },
+  "armband": { "left": 51.8828, "top": 53.125, "width": 10.0418, "height": 37.5 }
 }
