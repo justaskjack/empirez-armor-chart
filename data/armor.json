@@ -6,7 +6,7 @@
     "protection": 1,
     "rarity": "Common",
     "location": "Starter Gear",
-    "collected": true,
+    "collected": false,
     "cardBack": "armorsets_cardback01.png",
     "equipmentImage": "equipment01.jpg",
     "equipmentTooltips": {}
@@ -138,7 +138,7 @@
     "protection": 1,
     "rarity": "Common",
     "location": "All tiers",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
     "equipmentImage": "equipment02.jpg",
     "equipmentTooltips": {
