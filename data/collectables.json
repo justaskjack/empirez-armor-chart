@@ -14,7 +14,7 @@
     "slots": "None",
     "note": "Currency used to purchase Force powers.",
     "image": "Collectable17 - Jedi Medallion",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -23,7 +23,7 @@
     "slots": "None",
     "note": "Currency used to purchase Force powers.",
     "image": "Collectable16 - Sith Medallion",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -32,7 +32,7 @@
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable29 - 1 Credit",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -41,7 +41,7 @@
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable30 - 5 Credits",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -50,7 +50,7 @@
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable31 - 10 Credits",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -59,7 +59,7 @@
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable52 - 50 Credits",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -68,7 +68,7 @@
     "slots": "",
     "note": "Currency from the npc traders. Can be stored in an ATM or used to purchase items and vehicles from the traders.",
     "image": "Collectable41 - 100 Credits",
-    "collected": false,
+    "collected": true,
     "category": "Currencies"
   },
   {
@@ -77,7 +77,7 @@
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable22 - Star Map Blue",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -86,7 +86,7 @@
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable23 - Star Map Green",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -95,7 +95,7 @@
     "slots": "",
     "note": "Star Maps combined with Empty Datacards create the datacards to unlock the corresponding colored Astromech loot droids.",
     "image": "Collectable35 - Star Map Red",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -104,7 +104,7 @@
     "slots": "",
     "note": "Crafted by combining a Blue Star Map with an Empty Datacard. Used to unlock the Blue Imperial Astromech Droids.",
     "image": "Collectable51 - Blue Datacard",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -113,7 +113,7 @@
     "slots": "",
     "note": "Crafted by combining a Green Star Map with an Empty Datacard. Used to unlock the Green Imperial Astromech Droids.",
     "image": "Collectable58 - Green Datacard",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -122,7 +122,7 @@
     "slots": "",
     "note": "Crafted by combining a Red Star Map with an Empty Datacard. Used to unlock the Red Imperial Astromech Droids.",
     "image": "Collectable59 - Red Datacard",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -338,6 +338,42 @@
     "slots": "None",
     "note": "created by lyss",
     "image": "Collectable79 - Master Yoda Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Anakin Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable83 - Anakin Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Burnt Anakin Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable82 - Burnt Anakin Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "C3PO Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable84 - C3PO Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Darth Vader Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable85 - Darth Vader Lego",
     "collected": true,
     "category": "Legos"
   },
@@ -580,7 +616,7 @@
     "slots": "None",
     "note": "Combine with another Jedi Kyber Crystal to create a Jedi Holocron which unlocks the Jedi Temple.",
     "image": "Collectable49 - Jedi Kyber Crystal",
-    "collected": false,
+    "collected": true,
     "category": "Keycards+"
   },
   {
@@ -688,7 +724,7 @@
     "slots": "",
     "note": "Can be worn on hand slot.",
     "image": "Collectable34 - Mechanical Hand",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
@@ -715,7 +751,7 @@
     "slots": "None",
     "note": "Can be worn to make the player appear as a large Jawa.",
     "image": "Collectable40 - Jawa Cloak",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   },
   {
@@ -733,7 +769,7 @@
     "slots": "",
     "note": "Set on the ground and activate to launch fireworks into the air.",
     "image": "Collectable37 - Fireworks Launcher",
-    "collected": false,
+    "collected": true,
     "category": "Misc"
   }
 ]
