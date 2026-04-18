@@ -237,7 +237,7 @@
     "image": "Flight Helmet.jpg",
     "col": 8,
     "row": 19,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Firefighter Helmet 02",
