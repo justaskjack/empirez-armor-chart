@@ -105,7 +105,7 @@
     {
       "image": "Flag 06",
       "collected": false,
-      "displayName": "Flag 06",
+      "displayName": "Lone Wolf",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -196,14 +196,14 @@
     {
       "image": "Flag 22",
       "collected": true,
-      "displayName": "Flag 22",
+      "displayName": "Star Wars Logo",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 25",
       "collected": true,
-      "displayName": "Flag 25",
+      "displayName": "Darth Jar-Jar",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -280,7 +280,7 @@
     {
       "image": "Flag 39",
       "collected": false,
-      "displayName": "Flag 39",
+      "displayName": Tuskan Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -330,6 +330,20 @@
       "image": "Flag 47",
       "collected": true,
       "displayName": "Flag 47",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
+    },
+    {
+      "image": "Flag 49",
+      "collected": true,
+      "displayName": "Flag 49",
+      "faction": "",
+      "cardBack": "flag_cardback01.jpg"
+    },
+    {
+      "image": "Flag 50",
+      "collected": true,
+      "displayName": "Flag 50",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
