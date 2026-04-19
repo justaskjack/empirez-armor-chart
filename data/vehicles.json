@@ -44,7 +44,7 @@
         { "name": "Partisan X-Wing (Black/white)", "description": "Two-tone partisan livery.", "buy": 8000, "sell": 300, "cargo": 500, "seats": 1 },
         { "name": "Black One", "thumb": "images/vehicles/vehicle09_blackone.jpg", "description": "Elite X-wing configuration; large cargo volume. Photo courtesy of VanGuardian.", "buy": 12000, "sell": 400, "cargo": 1000, "seats": 1 },
         { "name": "Pink One", "description": "Signature livery; same performance as Black One.", "buy": 12000, "sell": 400, "cargo": 1000, "seats": 1 },
-        { "name": "Scimitar", "description": "Sith infiltrator-class; cavernous equipment bay.", "buy": 15000, "sell": 400, "cargo": 1000, "seats": 1 },
+        { "name": "Scimitar", "thumb": "images/vehicles/vehicle11_scimitar.jpg", "description": "Sith infiltrator-class; cavernous equipment bay. Photo courtesy of Cassian.", "buy": 15000, "sell": 400, "cargo": 1000, "seats": 1 },
         { "name": "Soulless", "description": "Sith craft variant; heavy cargo allowance.", "buy": 15000, "sell": 400, "cargo": 1000, "seats": 1 }
       ]
     },
