@@ -27,7 +27,7 @@
     },
     {
       "image": "Flag 35",
-      "collected": false,
+      "collected": true,
       "displayName": "Mandalorian Flag (Variant 04)",
       "faction": "Mandalorians",
       "cardBack": "flag_cardback02.jpg"
@@ -195,7 +195,7 @@
     },
     {
       "image": "Flag 22",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 22",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
