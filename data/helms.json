@@ -869,7 +869,7 @@
     "image": "Shock Trooper Helmet 01.jpg",
     "col": 9,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shock Trooper Helmet 02",
