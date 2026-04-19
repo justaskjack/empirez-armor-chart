@@ -142,6 +142,8 @@
     "cardBack": "armorsets_cardback01.png",
     "equipmentImage": "equipment02.jpg",
     "equipmentTooltips": {
+      "leftweapon": "DLT19",
+      "rightweapon": "E11",
       "chest": "ANH Stormtrooper Chestplate",
       "shirt": "ANH Stormtrooper Top",
       "belt": "ANH Sandtrooper Belt",
