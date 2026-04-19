@@ -1493,10 +1493,18 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Sith Temple",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
     "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentTooltips": {
+      "chest": "Kylo Ren Cape",
+      "shirt": "Kylo Ren Top",
+      "legs": "Kylo Ren Pants",
+      "head": "Kylo Ren Hood",
+      "eyes": "Kylo Ren Helmet",
+      "hands": "Darth Maul Gloves",
+      "feet": "Kylo Ren Boots"
+    }
   },
   {
     "name": "Darth Nihilus Set",
