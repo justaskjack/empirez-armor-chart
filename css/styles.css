@@ -1546,13 +1546,14 @@ header.navbar {
   box-sizing: border-box;
 }
 
-/* Title — mockup (58,36) 719×75 */
+/* Title — layout mockup 795×991 (red band y37–110, x56–740) */
 #page-flags .flag-card__title {
   position: absolute;
-  left: 6.9521%;
-  top: 3.4091%;
-  width: 86.1078%;
-  height: 7.1023%;
+  left: 7.044%;
+  top: 3.7336%;
+  width: 86.1635%;
+  height: auto;
+  bottom: calc(100% - 3.7336% - 7.4672%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1575,13 +1576,14 @@ header.navbar {
   z-index: 2;
 }
 
-/* Thumbnail — (55,201) 724×634 */
+/* Thumbnail — mockup (red band y194–800, x52–742) */
 #page-flags .flag-card__thumb-wrap {
   position: absolute;
-  left: 6.5868%;
-  top: 19.0341%;
-  width: 86.7066%;
-  height: 60.0379%;
+  left: 6.5409%;
+  top: 19.5762%;
+  width: 86.9182%;
+  height: auto;
+  bottom: calc(100% - 19.5762% - 61.2513%);
   box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
@@ -1595,15 +1597,14 @@ header.navbar {
   object-position: center center;
 }
 
-/* Faction subtitle — (182,899) 467×44 */
+/* Faction subtitle — mockup (red band y864–902, x173–618) */
 #page-flags .flag-card__faction {
   position: absolute;
-  left: 21.7964%;
-  top: 85.1326%;
-  width: 55.9281%;
-  /* top+bottom: definite band height when shell uses aspect-ratio (% height can collapse). */
+  left: 21.761%;
+  top: 87.1847%;
+  width: 56.1006%;
   height: auto;
-  bottom: calc(100% - 85.1326% - 4.1667%);
+  bottom: calc(100% - 87.1847% - 3.9354%);
   display: flex;
   align-items: center;
   justify-content: center;
