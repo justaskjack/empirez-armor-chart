@@ -861,7 +861,7 @@
     "image": "Shock Trooper Helmet 02.jpg",
     "col": 10,
     "row": 8,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Clone Trooper Phase 1",
