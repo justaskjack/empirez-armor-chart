@@ -1601,13 +1601,15 @@ header.navbar {
   left: 21.7964%;
   top: 85.1326%;
   width: 55.9281%;
-  height: 4.1667%;
+  /* top+bottom: definite band height when shell uses aspect-ratio (% height can collapse). */
+  height: auto;
+  bottom: calc(100% - 85.1326% - 4.1667%);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  padding: clamp(3px, 0.45cqw, 7px) 2% 0;
+  padding: 0 2%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
