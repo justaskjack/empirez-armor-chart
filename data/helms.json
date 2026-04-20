@@ -1157,7 +1157,7 @@
     "image": "Captain Phasma Helmet.jpg",
     "col": 9,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Cardboard Mask (Luke)",
