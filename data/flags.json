@@ -153,9 +153,9 @@
     },
     {
       "image": "Flag 14",
-      "collected": false,
-      "displayName": "Flag 14",
-      "faction": "",
+      "collected": true,
+      "displayName": "Black and White Death Star Flag",
+      "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
     },
     {
