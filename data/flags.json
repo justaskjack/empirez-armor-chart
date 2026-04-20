@@ -49,72 +49,72 @@
     {
       "image": "Flag 01",
       "collected": true,
-      "displayName": "Flag 01",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Buddha Fett Flag",
+      "faction": "Bounty Hunters",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 02",
       "collected": false,
-      "displayName": "Flag 02",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Can Eldar Flag",
+      "faction": "Mandalorians",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 05",
       "collected": true,
-      "displayName": "Flag 05",
-      "faction": "",
+      "displayName": "Galactic Empire (Variant 01)",
+      "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 21",
       "collected": true,
-      "displayName": "Flag 21",
-      "faction": "",
+      "displayName": "Galactic Empire (Variant 02)",
+      "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 24",
       "collected": false,
-      "displayName": "Flag 24",
-      "faction": "",
+      "displayName": "Galactic Empire (Variant 03)",
+      "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 36",
       "collected": true,
-      "displayName": "Flag 36",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "displayName": "Galactic Republic (Variant 01)",
+      "faction": "Republic",
+      "cardBack": "flag_cardback03.jpg"
     },
     {
       "image": "Flag 23",
       "collected": true,
-      "displayName": "Flag 23",
-      "faction": "",
+      "displayName": "Galactic Empire (Variant 04)",
+      "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 12",
       "collected": true,
-      "displayName": "Flag 12",
+      "displayName": "Rebel Empire Hybrid Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 06",
       "collected": false,
-      "displayName": "Lone Wolf",
+      "displayName": "Lone Wolf Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 07",
       "collected": false,
-      "displayName": "Flag 07",
+      "displayName": "Lone Fox Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 08",
