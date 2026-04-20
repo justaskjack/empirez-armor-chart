@@ -1181,7 +1181,7 @@
     "image": "Cardboard Mask (Leia).jpg",
     "col": 3,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Captain Enoch Helmet",

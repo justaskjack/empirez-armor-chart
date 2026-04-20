@@ -82,18 +82,25 @@
       "cardBack": "flag_cardback01.jpg"
     },
     {
-      "image": "Flag 36",
-      "collected": true,
-      "displayName": "Galactic Republic (Variant 01)",
-      "faction": "Republic",
-      "cardBack": "flag_cardback03.jpg"
-    },
-    {
       "image": "Flag 23",
       "collected": true,
       "displayName": "Galactic Empire (Variant 04)",
       "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
+    },
+    {
+      "image": "Flag 49",
+      "collected": true,
+      "displayName": "Galactic Empire (Variant 05)",
+      "faction": "Empire",
+      "cardBack": "flag_cardback01.jpg"
+    },
+    {
+      "image": "Flag 36",
+      "collected": true,
+      "displayName": "Galactic Republic (Variant 01)",
+      "faction": "Republic",
+      "cardBack": "flag_cardback03.jpg"
     },
     {
       "image": "Flag 12",
@@ -279,10 +286,10 @@
     },
     {
       "image": "Flag 39",
-      "collected": false,
+      "collected": true,
       "displayName": "Tuskan Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 40",
@@ -334,18 +341,11 @@
       "cardBack": "flag_cardback01.jpg"
     },
     {
-      "image": "Flag 49",
-      "collected": true,
-      "displayName": "Flag 49",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
-    },
-    {
       "image": "Flag 50",
       "collected": true,
-      "displayName": "Flag 50",
+      "displayName": "CIS (Confederacy of Independent Systems) Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 48",
