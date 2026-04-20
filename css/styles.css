@@ -1607,7 +1607,7 @@ header.navbar {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  padding: 0 2%;
+  padding: clamp(3px, 0.45cqw, 7px) 2% 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
