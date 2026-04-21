@@ -76,7 +76,7 @@
     },
     {
       "image": "Flag 24",
-      "collected": false,
+      "collected": true,
       "displayName": "Galactic Empire (Variant 03)",
       "faction": "Empire",
       "cardBack": "flag_cardback01.jpg"
@@ -181,7 +181,7 @@
     },
     {
       "image": "Flag 17",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 17",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
@@ -230,7 +230,7 @@
     },
     {
       "image": "Flag 28",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 28",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
@@ -300,7 +300,7 @@
     },
     {
       "image": "Flag 41",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 41",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
