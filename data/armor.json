@@ -1265,10 +1265,20 @@
     "protection": 3,
     "rarity": "Mythic",
     "location": "Mando Bunker",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment04.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Z6 Rotary Blaster Cannon",
+      "chest": "Paz Visla Vest",
+      "shirt": "Paz Visla Top",
+      "belt": "Paz Visla Belt",
+      "legs": "Paz Visla Pants",
+      "backpack": "Paz Visla Backpack",
+      "head": "Paz Visla Helmet",
+      "hands": "Combat Gloves",
+      "feet": "Paz Visla Boots"
+    }
   },
   {
     "name": "Darth Talon Set",
