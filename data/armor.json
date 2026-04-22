@@ -1270,12 +1270,12 @@
     "equipmentImage": "equipment04.jpg",
     "equipmentTooltips": {
       "leftweapon": "Z6 Rotary Blaster Cannon",
-      "chest": "Paz Visla Vest",
+      "chest": "Paz Visla Vest (3)",
       "shirt": "Paz Visla Top",
       "belt": "Paz Visla Belt",
-      "legs": "Paz Visla Pants",
+      "legs": "Paz Visla Pants (3)",
       "backpack": "Paz Visla Backpack",
-      "head": "Paz Visla Helmet",
+      "head": "Paz Visla Helmet (3)",
       "hands": "Combat Gloves",
       "feet": "Paz Visla Boots"
     }
@@ -1335,10 +1335,18 @@
     "protection": 2,
     "rarity": "Mythic",
     "location": "Sith Temple",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment05.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Sith Blaster",
+      "chest": "KOTOR Sith Vest (2)",
+      "shirt": "KOTOR Sith Top",
+      "legs": "KOTOR Sith Pants (2)",
+      "head": "KOTOR Sith Helmet (2)",
+      "hands": "Combat Gloves",
+      "feet": "KOTOR Sith Boots"
+    }
   },
   {
     "name": "Captain Phasma Set",
@@ -1507,10 +1515,10 @@
     "cardBack": "armorsets_cardback03.png",
     "equipmentImage": "equipment03.jpg",
     "equipmentTooltips": {
-      "chest": "Kylo Ren Cape",
+      "chest": "Kylo Ren Cape (3)",
       "shirt": "Kylo Ren Top",
-      "legs": "Kylo Ren Pants",
-      "head": "Kylo Ren Hood",
+      "legs": "Kylo Ren Pants (3)",
+      "head": "Kylo Ren Hood (3)",
       "eyes": "Kylo Ren Helmet",
       "hands": "Darth Maul Gloves",
       "feet": "Kylo Ren Boots"
@@ -1535,10 +1543,20 @@
     "protection": 3,
     "rarity": "Relic",
     "location": "Jedi Temple",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment06.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Gray Order Lightsword",
+      "chest": "Jedi Guard Vest (3)",
+      "shirt": "Jedi Guard Top",
+      "legs": "Jedi Guard Pants (3)",
+      "head": "Jedi Temple Guard Hood (3)",
+      "mask": "Jedi Temple Guard Mask",
+      "eyes": "Jedi Guard Robe",
+      "hands": "Wool Gloves",
+      "feet": "Jedi Guard Boots"
+    }
   },
   {
     "name": "Grey Jedi Set",
