@@ -139,7 +139,7 @@
     },
     {
       "image": "Flag 10",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 10",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
