@@ -1431,10 +1431,10 @@
     "image": "Battle Droid Set (Red Variant).jpg",
     "type": "Droid Sets",
     "protection": 2,
-    "rarity": "Mythic",
-    "location": "Mando Safe",
+    "rarity": "Common",
+    "location": "All tiers",
     "collected": true,
-    "cardBack": "armorsets_cardback01.png",
+    "cardBack": "armorsets_cardback04.png",
     "equipmentImage": "equipment08.jpg",
     "equipmentTooltips": {
       "leftweapon": "E5 Blaster",
