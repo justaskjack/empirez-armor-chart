@@ -8,8 +8,14 @@
     "location": "Starter Gear",
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment07.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Crossbow",
+      "shirt": "Moisture Farmer Tunic",
+      "legs": "Moisture Farmer Pants",
+      "head": "Boonie Hat",
+      "feet": "Moister Farmer Boots"
+    }
   },
   {
     "name": "Moisture Farmer Set (Rey Variant)",

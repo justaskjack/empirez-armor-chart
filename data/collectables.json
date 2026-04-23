@@ -746,6 +746,24 @@
     "category": "Misc"
   },
   {
+    "name": "Book of the Sith",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Use a blade to cut out a page to create a piece of paper.",
+    "image": "Collectable86 - Book of the Sith",
+    "collected": true,
+    "category": "Misc"
+  },
+  {
+    "name": "Rule of Two",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Use a blade to cut out a page to create a piece of paper.",
+    "image": "Collectable87 - Rule of Two",
+    "collected": true,
+    "category": "Misc"
+  },
+  {
     "name": "Jawa Cloak",
     "sellPrice": "None",
     "slots": "None",
