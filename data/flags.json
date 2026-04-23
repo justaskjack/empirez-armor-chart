@@ -125,7 +125,7 @@
     },
     {
       "image": "Flag 08",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 08",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
@@ -258,7 +258,7 @@
     },
     {
       "image": "Flag 32",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 32",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"

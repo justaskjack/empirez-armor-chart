@@ -1021,7 +1021,7 @@
     "image": "Darth Vader Helmet.jpg",
     "col": 1,
     "row": 2,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Kylo Ren Helmet",
