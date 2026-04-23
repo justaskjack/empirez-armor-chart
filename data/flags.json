@@ -279,7 +279,7 @@
     },
     {
       "image": "Flag 38",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 38",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
