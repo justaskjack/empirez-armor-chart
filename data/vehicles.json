@@ -188,7 +188,7 @@
         },
         {
           "name": "TIE Interceptor",
-          "thumb": "images/vehicles/vehicle06_tieintercepter.jpg",
+          "thumb": "images/vehicles/vehicle12_tieintercepter.jpg",
           "gallery": [
             { "src": "images/vehicles/vehicle12_tieintercepter-lg.jpg", "overlay": "Photo courtesy of Cassian." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
