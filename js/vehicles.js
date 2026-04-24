@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!container) return;
 
   const THUMB_PLACEHOLDER = "images/vehicles/vehicle-thumb-placeholder.svg";
+  const VEHICLE_DEFAULT_IMAGE = "images/vehicles/vehicles_default.jpg";
+  const VEHICLE_DEFAULT_IMAGE_FALLBACK = "images/vehicles/vehicle_default.jpg";
 
   const SECTION_ICONS = {
     ground: `
@@ -103,8 +105,53 @@ document.addEventListener("DOMContentLoaded", () => {
     if (lastDot <= 0) return `${s}-lg`;
     const base = s.slice(0, lastDot);
     const ext = s.slice(lastDot);
-    if (base.toLowerCase().endsWith("-lg")) return s;
+    if (base.toLowerCase().endsWith("-lg") || base.toLowerCase().endsWith("_lg")) return s;
     return `${base}-lg${ext}`;
+  }
+
+  function normalizePath(path, fallback = "") {
+    if (!path) return fallback;
+    return String(path).replace(/^\/+/, "");
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function normalizeGallery(vehicle) {
+    const defaultSrc = normalizePath(VEHICLE_DEFAULT_IMAGE, VEHICLE_DEFAULT_IMAGE_FALLBACK);
+    const slides = Array.isArray(vehicle.gallery)
+      ? vehicle.gallery
+          .map(slide => {
+            const rawSrc = normalizePath(slide && slide.src ? slide.src : "", defaultSrc);
+            const isNamedDefault = /\/vehicles_default\.jpg$/i.test(rawSrc);
+            return {
+              src: isNamedDefault
+                ? normalizePath(VEHICLE_DEFAULT_IMAGE_FALLBACK, rawSrc)
+                : rawSrc,
+              overlay: slide && slide.overlay ? String(slide.overlay) : ""
+            };
+          })
+          .filter(slide => !!slide.src)
+      : [];
+
+    if (slides.length) return slides;
+
+    if (vehicle.thumb) {
+      return [
+        {
+          src: normalizePath(thumbToLargeUrl(vehicle.thumb), defaultSrc),
+          overlay: vehicle.name || ""
+        }
+      ];
+    }
+
+    return [{ src: defaultSrc, overlay: vehicle.name || "" }];
   }
 
   function metaItem(kind, label, value) {
@@ -135,24 +182,42 @@ document.addEventListener("DOMContentLoaded", () => {
     const thumbInner = document.createElement("div");
     thumbInner.className = "vehicle-thumb-inner";
 
+    const gallerySlides = normalizeGallery(vehicle);
+
     const img = document.createElement("img");
     img.className = "vehicle-thumb";
     img.alt = vehicle.name;
     img.loading = "lazy";
-    const thumbSrc = vehicle.thumb ? String(vehicle.thumb).replace(/^\/+/, "") : THUMB_PLACEHOLDER;
+    const thumbSrc = normalizePath(vehicle.thumb, gallerySlides[0]?.src || THUMB_PLACEHOLDER);
     img.src = thumbSrc;
     img.addEventListener("error", () => {
-      img.src = THUMB_PLACEHOLDER;
+      if (img.src.endsWith("vehicles_default.jpg")) {
+        img.src = VEHICLE_DEFAULT_IMAGE_FALLBACK;
+        return;
+      }
+      img.src = normalizePath(VEHICLE_DEFAULT_IMAGE, THUMB_PLACEHOLDER);
     });
 
-    if (vehicle.thumb) {
-      const link = document.createElement("a");
-      link.href = thumbToLargeUrl(vehicle.thumb);
-      link.setAttribute("data-lightbox", "vehicles");
-      link.setAttribute("data-title", vehicle.name);
-      link.className = "vehicle-lightbox-link";
-      link.appendChild(img);
-      thumbInner.appendChild(link);
+    const galleryWrapper = document.createElement("div");
+    galleryWrapper.className = "lightgallery vehicle-gallery";
+
+    gallerySlides.forEach((slide, index) => {
+      const a = document.createElement("a");
+      a.href = slide.src;
+      a.className = `vehicle-gallery-slide${index === 0 ? " vehicle-gallery-slide--trigger" : ""}`;
+      const overlay = slide.overlay || vehicle.name || "";
+      a.setAttribute(
+        "data-sub-html",
+        `<span class="vehicle-gallery-overlay">${escapeHtml(overlay)}</span>`
+      );
+      a.setAttribute("data-title", overlay);
+      if (index > 0) a.setAttribute("tabindex", "-1");
+      galleryWrapper.appendChild(a);
+    });
+
+    if (galleryWrapper.firstElementChild) {
+      galleryWrapper.firstElementChild.appendChild(img);
+      thumbInner.appendChild(galleryWrapper);
     } else {
       thumbInner.appendChild(img);
     }
@@ -183,6 +248,23 @@ document.addEventListener("DOMContentLoaded", () => {
     card.appendChild(thumbWrap);
     card.appendChild(body);
     glow.appendChild(card);
+
+    if (galleryWrapper.childElementCount) {
+      lightGallery(galleryWrapper, {
+        selector: "a",
+        plugins: [lgThumbnail],
+        thumbnail: true,
+        animateThumb: true,
+        showThumbByDefault: false,
+        exThumbImage: "href",
+        closable: true,
+        download: false,
+        counter: true,
+        speed: 250,
+        addClass: "vehicle-gallery-modal"
+      });
+    }
+
     return glow;
   }
 
