@@ -21,7 +21,7 @@
     "image": "Ski Mask 07.jpg",
     "col": 3,
     "row": 22,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Ski Mask 01",
@@ -581,7 +581,7 @@
     "image": "Airborne Clone Helmet 04.jpg",
     "col": 8,
     "row": 12,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Airborne Clone Helmet 03",
@@ -1221,7 +1221,7 @@
     "image": "Mandalorian Helmet 03.jpg",
     "col": 5,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mandalorian Helmet 02",
@@ -1301,7 +1301,7 @@
     "image": "Mando Helmet 07.jpg",
     "col": 2,
     "row": 4,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Mandalorian Helmet 01",

@@ -174,7 +174,7 @@
     },
     {
       "image": "Flag 16",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 16",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
