@@ -1245,7 +1245,7 @@
     "image": "Boba Fett Helmet ESB.jpg",
     "col": 2,
     "row": 5,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Shoretrooper Helmet 02",

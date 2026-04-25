@@ -132,7 +132,7 @@
     },
     {
       "image": "Flag 09",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 09",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
@@ -272,7 +272,7 @@
     },
     {
       "image": "Flag 37",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 37",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
