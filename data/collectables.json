@@ -239,7 +239,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable77 - turbine 1",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -536,7 +536,7 @@
     "slots": "3x3",
     "note": "",
     "image": "Collectable69 - Battle Front 2",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
