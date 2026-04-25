@@ -333,6 +333,42 @@
     "category": "Legos"
   },
   {
+    "name": "Rey Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable88 - Rey Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Luke Skywalker Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable89 - Luke Skywalker Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Commander Cody Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable91 - Commander Cody Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "R2D2 Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable92 - R2D2 Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
     "name": "Master Yoda Lego",
     "sellPrice": "50 Credits",
     "slots": "None",
@@ -670,6 +706,15 @@
     "slots": "None",
     "note": "Can be eaten. Carve with a knife to craft a character mask.",
     "image": "Collectable11 - C3POs Cereals",
+    "collected": true,
+    "category": "Misc"
+  },
+  {
+    "name": "Stout",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Imperial Stormtrooper Stout. Can be drank.",
+    "image": "Collectable90 - Stout",
     "collected": true,
     "category": "Misc"
   },
