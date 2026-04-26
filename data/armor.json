@@ -1419,12 +1419,20 @@
     "image": "Battle Droid Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
-    "rarity": "Mythic",
-    "location": "Mando Safe",
-    "collected": false,
+    "rarity": "Common",
+    "location": "All tiers",
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment11.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "E5 Blaster",
+      "shirt": "Battle Droid Chest (2)",
+      "legs": "Battle Droid Legs (2)",
+      "backpack": "Battle Droid Pack",
+      "head": "Battle Droid Head (2)",
+      "hands": "Battle Droid Hands",
+      "feet": "Battle Droid Feet"
+    }
   },
   {
     "name": "Battle Droid Set (Red Variant)",
