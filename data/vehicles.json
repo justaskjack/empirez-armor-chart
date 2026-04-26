@@ -49,8 +49,9 @@
         },
         {
           "name": "Endor Speeder Bike (Red)",
+          "thumb": "images/vehicles/vehicle15_endorspeederred.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "Endor Speeder Bike (Red)" },
+            { "src": "images/vehicles/vehicle15_endorspeederred-lg", "overlay": "Endor Speeder Bike (Red)" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
@@ -241,8 +242,9 @@
         },
         {
           "name": "Recon Speeder",
+          "thumb": "images/vehicles/vehicle13_reconspeeder.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "Recon Speeder" },
+            { "src": "images/vehicles/vehicle13_reconspeeder-lg.jpg", "overlay": "Recon Speeder" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
@@ -322,8 +324,9 @@
         },
         {
           "name": "Partisan X-Wing (Black/white)",
+          "thumb": "images/vehicles/vehicle14_partisanxwing1.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "Partisan X-Wing (Black/white)" },
+            { "src": "images/vehicles/vehicle14_partisanxwing1-lg", "overlay": "Photo courtesy of Curator" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
