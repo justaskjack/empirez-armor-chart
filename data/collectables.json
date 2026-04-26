@@ -378,6 +378,42 @@
     "category": "Legos"
   },
   {
+    "name": "Darth Maul Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable93 - Darth Maul Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Clonetrooper Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable94 - Clonetrooper Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Obi Wan Kenobi Lego - thumb",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable95 - Obi Wan Kenobi Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
+    "name": "Kylo Ren Lego",
+    "sellPrice": "50 Credits",
+    "slots": "None",
+    "note": "created by lyss",
+    "image": "Collectable96 - Kylo Ren Lego",
+    "collected": true,
+    "category": "Legos"
+  },
+  {
     "name": "Anakin Lego",
     "sellPrice": "50 Credits",
     "slots": "None",
@@ -527,6 +563,15 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable65 - jeron fusion cutter",
+    "collected": true,
+    "category": "Toys"
+  },
+  {
+    "name": "aoly bag",
+    "sellPrice": "50 Credits",
+    "slots": "2x3",
+    "note": "",
+    "image": "Collectable97 - aoly bag",
     "collected": true,
     "category": "Toys"
   },
