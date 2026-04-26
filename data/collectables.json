@@ -396,11 +396,11 @@
     "category": "Legos"
   },
   {
-    "name": "Obi Wan Kenobi Lego - thumb",
+    "name": "Obiwan Kenobi Lego - thumb",
     "sellPrice": "50 Credits",
     "slots": "None",
     "note": "created by lyss",
-    "image": "Collectable95 - Obi Wan Kenobi Lego",
+    "image": "Collectable95 - Obiwan Kenobi Lego",
     "collected": true,
     "category": "Legos"
   },
@@ -859,6 +859,15 @@
     "slots": "None",
     "note": "Can be worn to make the player appear as a large Jawa.",
     "image": "Collectable40 - Jawa Cloak",
+    "collected": true,
+    "category": "Misc"
+  },
+  {
+    "name": "Star Wars T Shirt",
+    "sellPrice": "None",
+    "slots": "None",
+    "note": "Can be worn.",
+    "image": "Collectable98 - Star Wars T Shirt",
     "collected": true,
     "category": "Misc"
   },

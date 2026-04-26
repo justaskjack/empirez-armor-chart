@@ -1447,11 +1447,31 @@
     }
   },
   {
-    "name": "Battle Droid Set (Yellow Variant)",
-    "image": "Battle Droid Set (Yellow Variant).jpg",
+    "name": "Battle Droid Set (Blue Variant)",
+    "image": "Battle Droid Set (Blue Variant).jpg",
     "type": "Droid Sets",
     "protection": 2,
     "rarity": "Mythic",
+    "location": "Mando Safe",
+    "collected": true,
+    "cardBack": "armorsets_cardback04.png",
+    "equipmentImage": "equipment10.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "E5 Blaster",
+      "shirt": "Battle Droid Chest (2)",
+      "legs": "Battle Droid Legs (2)",
+      "backpack": "Battle Droid Pack",
+      "head": "Battle Droid Head (2)",
+      "hands": "Battle Droid Hands",
+      "feet": "Battle Droid Feet"
+    }
+  },
+  {
+    "name": "Battle Droid Commander",
+    "image": "Battle Droid Commander.jpg",
+    "type": "Droid Sets",
+    "protection": 2,
+    "rarity": "Uncommon",
     "location": "Tie Crashes, Imperial Bunker",
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
@@ -1459,11 +1479,11 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Battle Droid Set (Blue Variant)",
-    "image": "Battle Droid Set (Blue Variant).jpg",
+    "name": "Battle Droid Scout",
+    "image": "Battle Droid Scout.jpg",
     "type": "Droid Sets",
     "protection": 2,
-    "rarity": "Mythic",
+    "rarity": "Uncommon",
     "location": "Tie Crashes",
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
