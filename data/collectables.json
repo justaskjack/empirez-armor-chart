@@ -194,7 +194,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable01 - turret 1",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -563,7 +563,7 @@
     "slots": "3x3",
     "note": "",
     "image": "Collectable09 - Bantha Poop Collectable",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
