@@ -55,7 +55,7 @@
     },
     {
       "image": "Flag 02",
-      "collected": false,
+      "collected": true,
       "displayName": "Clan Eldar Flag",
       "faction": "Mandalorians",
       "cardBack": "flag_cardback02.jpg"
