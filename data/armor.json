@@ -1687,13 +1687,23 @@
     "name": "Chewy Suit",
     "image": "Chewy Suit.jpg",
     "type": "Gas Protection",
-    "protection": 2,
+    "protection": 3,
     "rarity": "None",
-    "location": "Hoth. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective.",
-    "collected": false,
+    "location": "Hoth Control Room. Disclaimer: The Chewy mask only acts as an NBC hood. You will still need a respirator with filter for the Chewy variant suit to be effective.",
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment12.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Wookie Bowcaster",
+      "chest": "Wookie Armor (3)",
+      "shirt": "Chewy Top (NBC)",
+      "legs": "Chewy Bottom (3) (NBC)",
+      "backpack": "C3PO Backpack",
+      "head": "Chewy Head (3) (NBC)",
+      "hands": "Chewy Gloves (NBC)",
+      "feet": "Chewy feet (NBC)",
+      "armband": "Chewy Bag"
+    }
   },
   {
     "name": "Utinni!",

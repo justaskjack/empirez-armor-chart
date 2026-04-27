@@ -326,7 +326,7 @@
           "name": "Partisan X-Wing (Black/white)",
           "thumb": "images/vehicles/vehicle14_partisanxwing1.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicle14_partisanxwing1-lg", "overlay": "Photo courtesy of Curator" },
+            { "src": "images/vehicles/vehicle14_partisanxwing1-lg.jpg", "overlay": "Photo courtesy of Curator" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
