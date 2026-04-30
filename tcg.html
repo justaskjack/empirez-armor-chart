@@ -34,7 +34,7 @@
 
     .page-header {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       gap: 1rem;
       background: #000;
@@ -47,24 +47,6 @@
       margin: 0;
       font-size: clamp(1.25rem, 2vw, 2rem);
       letter-spacing: 0.03em;
-    }
-
-    .download-btn {
-      display: inline-block;
-      color: #fff;
-      background: linear-gradient(180deg, var(--accent), #d71f1f);
-      border: 1px solid #ff9e9e;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.9rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 0.55rem 0.9rem;
-      white-space: nowrap;
-    }
-
-    .download-btn:hover {
-      background: linear-gradient(180deg, #ff5a5a, #e12b2b);
     }
 
     .section-title {
@@ -111,7 +93,7 @@
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 0.7rem;
       margin-bottom: 1.2rem;
     }
@@ -166,11 +148,6 @@
         align-items: flex-start;
         flex-direction: column;
       }
-
-      .download-btn {
-        width: 100%;
-        text-align: center;
-      }
     }
   </style>
 </head>
@@ -178,7 +155,6 @@
   <div class="page-wrap">
     <header class="page-header">
       <h1>EmpireZ TCG Dev</h1>
-      <a class="download-btn" href="images/tcg/tcg.zip" download>Download tcg.zip</a>
     </header>
 
     <h2 class="section-title">Package art</h2>
