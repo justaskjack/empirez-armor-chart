@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmpireZ TCG Dev</title>
+  <style>
+    :root {
+      --bg: #111;
+      --panel: #1a1a1a;
+      --panel-2: #222;
+      --text: #f5f5f5;
+      --muted: #cfcfcf;
+      --accent: #ff4444;
+      --accent-2: #ff8a8a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .page-wrap {
+      width: min(1800px, 96vw);
+      margin: 0 auto;
+      padding-bottom: 3rem;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      background: #000;
+      border: 1px solid #333;
+      margin: 1rem 0 0.75rem;
+      padding: 1rem 1.2rem;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      font-size: clamp(1.25rem, 2vw, 2rem);
+      letter-spacing: 0.03em;
+    }
+
+    .download-btn {
+      display: inline-block;
+      color: #fff;
+      background: linear-gradient(180deg, var(--accent), #d71f1f);
+      border: 1px solid #ff9e9e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.55rem 0.9rem;
+      white-space: nowrap;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(180deg, #ff5a5a, #e12b2b);
+    }
+
+    .section-title {
+      margin: 1rem 0 0.65rem;
+      padding: 0.65rem 0.85rem;
+      font-size: clamp(1rem, 1.35vw, 1.35rem);
+      background: var(--panel);
+      border-left: 5px solid var(--accent);
+      border-top: 1px solid #333;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-panel {
+      background: var(--panel-2);
+      border: 1px solid #333;
+      padding: 0.6rem;
+      margin: 0;
+    }
+
+    .image-panel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      background: #0b0b0b;
+    }
+
+    .image-panel figcaption {
+      margin-top: 0.45rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-button {
+      border: 1px solid #3a3a3a;
+      background: #191919;
+      padding: 0.4rem;
+      cursor: pointer;
+      color: inherit;
+      font: inherit;
+      text-align: left;
+    }
+
+    .card-button:hover {
+      border-color: var(--accent-2);
+    }
+
+    .card-button img {
+      width: 100%;
+      display: block;
+      background: #0b0b0b;
+      object-fit: contain;
+    }
+
+    .card-button .card-label {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+
+    .poster-wrap {
+      background: var(--panel-2);
+      border: 1px solid #333;
+      padding: 0.6rem;
+    }
+
+    .poster-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      background: #0b0b0b;
+    }
+
+    @media (max-width: 600px) {
+      .page-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="page-header">
+      <h1>EmpireZ TCG Dev</h1>
+      <a class="download-btn" href="images/tcg/tcg.zip" download>Download tcg.zip</a>
+    </header>
+
+    <h2 class="section-title">Package art</h2>
+    <section class="package-grid" aria-label="Package art">
+      <figure class="image-panel">
+        <img src="images/tcg/EmpireZ-TCG_package-front.png" alt="EmpireZ TCG package front" loading="lazy" />
+        <figcaption>Package Front</figcaption>
+      </figure>
+      <figure class="image-panel">
+        <img src="images/tcg/EmpireZ-TCG_package-back.png" alt="EmpireZ TCG package back" loading="lazy" />
+        <figcaption>Package Back</figcaption>
+      </figure>
+    </section>
+
+    <h2 class="section-title">Cards</h2>
+    <section id="cards-grid" class="cards-grid" aria-label="TCG cards"></section>
+
+    <h2 class="section-title">Poster</h2>
+    <section class="poster-wrap" aria-label="Puzzle poster">
+      <img src="images/tcg/EmpireZ-TCG_Poster-Puzzle.png" alt="EmpireZ TCG puzzle poster" loading="lazy" />
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const totalCards = 136;
+      const cardsGrid = document.getElementById("cards-grid");
+
+      function padCardNumber(num) {
+        return String(num).padStart(3, "0");
+      }
+
+      for (let i = 1; i <= totalCards; i += 1) {
+        const cardId = padCardNumber(i);
+        const frontPath = "images/tcg/cards/EmpireZ-TCG-Card" + cardId + "-Front.jpg";
+        const backPath = "images/tcg/cards/EmpireZ-TCG-Card" + cardId + "-Back.jpg";
+
+        const cardButton = document.createElement("button");
+        cardButton.type = "button";
+        cardButton.className = "card-button";
+        cardButton.dataset.state = "front";
+        cardButton.dataset.front = frontPath;
+        cardButton.dataset.back = backPath;
+        cardButton.setAttribute("aria-label", "Card " + cardId + " front. Click to view back.");
+
+        const img = document.createElement("img");
+        img.src = frontPath;
+        img.alt = "EmpireZ TCG card " + cardId + " front";
+        img.loading = "lazy";
+
+        const label = document.createElement("span");
+        label.className = "card-label";
+        label.textContent = "Card " + cardId + " - Front";
+
+        cardButton.addEventListener("click", function () {
+          const isFront = cardButton.dataset.state === "front";
+          cardButton.dataset.state = isFront ? "back" : "front";
+          img.src = isFront ? cardButton.dataset.back : cardButton.dataset.front;
+          img.alt = "EmpireZ TCG card " + cardId + " " + (isFront ? "back" : "front");
+          label.textContent = "Card " + cardId + " - " + (isFront ? "Back" : "Front");
+          cardButton.setAttribute(
+            "aria-label",
+            "Card " + cardId + " " + (isFront ? "back" : "front") + ". Click to view " + (isFront ? "front" : "back") + "."
+          );
+        });
+
+        cardButton.appendChild(img);
+        cardButton.appendChild(label);
+        cardsGrid.appendChild(cardButton);
+      }
+    })();
+  </script>
+</body>
+</html>
