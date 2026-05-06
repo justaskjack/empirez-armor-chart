@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!container) return;
 
   const THUMB_PLACEHOLDER = "images/vehicles/vehicle-thumb-placeholder.svg";
-  const VEHICLE_DEFAULT_IMAGE = "images/vehicles/vehicles_default.jpg";
+  const VEHICLE_DEFAULT_IMAGE = "images/vehicles/vehicle_default.jpg";
   const VEHICLE_DEFAULT_IMAGE_FALLBACK = "images/vehicles/vehicle_default.jpg";
 
   const SECTION_ICONS = {
@@ -249,19 +249,30 @@ document.addEventListener("DOMContentLoaded", () => {
     card.appendChild(body);
     glow.appendChild(card);
 
-    if (galleryWrapper.childElementCount) {
-      lightGallery(galleryWrapper, {
-        selector: "a",
-        plugins: [lgThumbnail],
-        thumbnail: true,
-        animateThumb: true,
-        showThumbByDefault: false,
-        exThumbImage: "href",
-        closable: true,
-        download: false,
-        counter: true,
-        speed: 250,
-        addClass: "vehicle-gallery-modal"
+    if (galleryWrapper.childElementCount && galleryWrapper.firstElementChild) {
+      const trigger = galleryWrapper.firstElementChild;
+      let galleryInitialized = false;
+
+      trigger.addEventListener("click", event => {
+        if (galleryInitialized) return;
+        event.preventDefault();
+
+        lightGallery(galleryWrapper, {
+          selector: "a",
+          plugins: [lgThumbnail],
+          thumbnail: true,
+          animateThumb: true,
+          showThumbByDefault: false,
+          exThumbImage: "href",
+          closable: true,
+          download: false,
+          counter: true,
+          speed: 250,
+          addClass: "vehicle-gallery-modal"
+        });
+
+        galleryInitialized = true;
+        trigger.click();
       });
     }
 
@@ -293,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
         grid.className = "vehicle-section-grid";
         grid.id = gridId;
 
-        const startCollapsed = idx > 0;
+        const startCollapsed = false;
         if (startCollapsed) {
           wrap.classList.add("vehicle-section--collapsed");
           header.setAttribute("aria-expanded", "false");

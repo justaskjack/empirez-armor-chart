@@ -2595,17 +2595,16 @@ header.navbar {
 }
 
 #page-vehicles .vehicle-card-glow {
-  container-type: inline-size;
   width: 100%;
   max-width: none;
   min-width: 0;
   box-sizing: border-box;
-  filter: drop-shadow(0 0 5px rgba(255, 40, 45, 0.22));
-  transition: filter 0.25s ease;
+  box-shadow: 0 0 6px rgba(255, 40, 45, 0.12);
+  transition: box-shadow 0.25s ease;
 }
 
 #page-vehicles .vehicle-card-glow:hover {
-  filter: drop-shadow(0 0 10px rgba(255, 55, 60, 0.38));
+  box-shadow: 0 0 10px rgba(255, 55, 60, 0.2);
 }
 
 #page-vehicles .vehicle-card {
@@ -2660,7 +2659,7 @@ header.navbar {
       var(--vehicle-corner) var(--vehicle-corner-th) no-repeat,
     linear-gradient(0deg, rgba(255, 52, 58, 0.98), rgba(255, 130, 120, 0.45)) right bottom /
       var(--vehicle-corner-th) var(--vehicle-corner) no-repeat;
-  filter: drop-shadow(0 0 5px rgba(255, 50, 55, 0.45));
+  opacity: 0.8;
 }
 
 #page-vehicles .vehicle-thumb-wrap {
@@ -2750,7 +2749,7 @@ header.navbar {
 
 #page-vehicles .vehicle-title {
   margin: 0;
-  font-size: clamp(0.82rem, 2.1cqw, 1.05rem);
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -2764,7 +2763,7 @@ header.navbar {
 #page-vehicles .vehicle-desc {
   margin: 0;
   flex: 1;
-  font-size: clamp(0.72rem, 1.85cqw, 0.88rem);
+  font-size: 0.86rem;
   line-height: 1.45;
   color: #b8aeb2;
   text-align: left;
@@ -2793,7 +2792,6 @@ header.navbar {
   height: 1.35rem;
   flex-shrink: 0;
   color: rgba(220, 222, 230, 0.9);
-  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.65));
 }
 
 #page-vehicles .vehicle-meta-svg {
@@ -2808,7 +2806,7 @@ header.navbar {
 }
 
 #page-vehicles .vehicle-meta-value {
-  font-size: clamp(0.74rem, 1.9cqw, 0.9rem);
+  font-size: 0.86rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: #eeecec;
