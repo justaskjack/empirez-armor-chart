@@ -245,7 +245,7 @@
           "thumb": "images/vehicles/vehicle13_reconspeeder.jpg",
           "gallery": [
             { "src": "images/vehicles/vehicle13_reconspeeder-lg.jpg", "overlay": "Recon Speeder" },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
+            { "src": "images/vehicles/vehicle13_reconspeeder-lg-02.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Long-range sensors; generous equipment space.",
@@ -379,8 +379,9 @@
         },
         {
           "name": "Soulless",
+          "thumb": "images/vehicles/vehicle17_soulless.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "Soulless" },
+            { "src": "images/vehicles/vehicle17_soulless-lg.jpg", "overlay": "Soulless. Photo courtesy of Cassian." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
@@ -411,8 +412,9 @@
         },
         {
           "name": "LAAT Drop Ship Green",
+          "thumb": "images/vehicles/vehicle18_laatgreen.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "LAAT Drop Ship Green" },
+            { "src": "images/vehicles/vehicle18_laatgreen-lg.jpg.jpg", "overlay": "LAAT Drop Ship Green" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
@@ -424,10 +426,11 @@
         },
         {
           "name": "LAAT Dropship Black N White Partisan",
+          "thumb": "images/vehicles/vehicle16_laatblacknwhite.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "LAAT Dropship Black N White Partisan" },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
+            { "src": "images/vehicles/vehicle16_laatblacknwhite-lg.jpg", "overlay": "LAAT Dropship Black N White Partisan. Photo courtesy of Curator." },
+            { "src": "images/vehicles/vehicle16_laatblacknwhite-lg-02.jpg", "overlay": "Photo courtesy of Curator." },
+            { "src": "images/vehicles/vehicle16_laatblacknwhite-lg-03.jpg", "overlay": "Photo courtesy of Curator." }
           ],
           "description": "Partisan scheme; enlarged cargo floor.",
           "buy": 20000,
