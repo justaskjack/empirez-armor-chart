@@ -864,22 +864,6 @@
     "collected": false
   },
   {
-    "name": "Darth Vader Helmet",
-    "thumb": "Darth Vader Helmet - thumb.jpg",
-    "image": "Darth Vader Helmet.jpg",
-    "col": 1,
-    "row": 3,
-    "collected": true
-  },
-  {
-    "name": "Kylo Ren Helmet",
-    "thumb": "Kylo Ren Helmet - thumb.jpg",
-    "image": "Kylo Ren Helmet.jpg",
-    "col": 2,
-    "row": 3,
-    "collected": false
-  },
-  {
     "name": "Darth Revan Helmet",
     "thumb": "Darth Revan Helmet - thumb.jpg",
     "image": "Darth Revan Helmet.jpg",
@@ -888,147 +872,11 @@
     "collected": false
   },
   {
-    "name": "Moff Gideon Helmet",
-    "thumb": "Moff Gideon Helmet - thumb.jpg",
-    "image": "Moff Gideon Helmet.jpg",
-    "col": 5,
-    "row": 3,
-    "collected": false
-  },
-  {
-    "name": "Darth Maul Mask",
-    "thumb": "Darth Maul Mask - thumb.jpg",
-    "image": "Darth Maul Mask.jpg",
-    "col": 3,
-    "row": 3,
-    "collected": false
-  },
-  {
-    "name": "Darth Talon Head",
-    "thumb": "Darth Talon Head - thumb.jpg",
-    "image": "Darth Talon Head.jpg",
-    "col": 4,
-    "row": 3,
-    "collected": false
-  },
-  {
-    "name": "Darth Nihilus Helmet",
-    "thumb": "Darth Nihilus Helmet - thumb.jpg",
-    "image": "Darth Nihilus Helmet.jpg",
-    "col": 2,
-    "row": 4,
-    "collected": false
-  },
-  {
-    "name": "Jedi Temple Guard Mask",
-    "thumb": "Jedi Temple Guard Mask - thumb.jpg",
-    "image": "Jedi Temple Guard Mask.jpg",
-    "col": 5,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "Grey Jedi Mask 01",
-    "thumb": "Grey Jedi Mask 01 - thumb.jpg",
-    "image": "Grey Jedi Mask 01.jpg",
-    "col": 4,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "Grey Jedi Mask 02",
-    "thumb": "Grey Jedi Mask 02 - thumb.jpg",
-    "image": "Grey Jedi Mask 02.jpg",
-    "col": 3,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "Sabine Wren Helmet",
-    "thumb": "Sabine Wren Helmet - thumb.jpg",
-    "image": "Sabine Wren Helmet.jpg",
-    "col": 2,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "Bo Katan Helmet",
-    "thumb": "Bok Katan Helmet - thumb.jpg",
-    "image": "Bok Katan Helmet.jpg",
-    "col": 1,
-    "row": 2,
-    "collected": false
-  },
-  {
-    "name": "Ahsoke Head",
-    "thumb": "Ahsoke Head - thumb.jpg",
-    "image": "Ahsoke Head.jpg",
-    "col": 5,
-    "row": 1,
-    "collected": true
-  },
-  {
-    "name": "Jar Jar Binks Mask",
-    "thumb": "Jar Jar Binks Mask - thumb.jpg",
-    "image": "Jar Jar Binks Mask.jpg",
-    "col": 4,
-    "row": 1,
-    "collected": false
-  },
-  {
-    "name": "Chewy Head",
-    "thumb": "Chewy Head - thumb.jpg",
-    "image": "Chewy Head.jpg",
-    "col": 3,
-    "row": 1,
-    "collected": false
-  },
-  {
-    "name": "C3PO Head",
-    "thumb": "C3PO Head - thumb.jpg",
-    "image": "C3PO Head.jpg",
-    "col": 2,
-    "row": 1,
-    "collected": false
-  },
-  {
-    "name": "Princess Leia Head",
-    "thumb": "Princess Leia Head - thumb.jpg",
-    "image": "Princess Leia Head.jpg",
-    "col": 1,
-    "row": 1,
-    "collected": false
-  },
-  {
     "name": "Captain Phasma Helmet",
     "thumb": "Captain Phasma Helmet - thumb.jpg",
     "image": "Captain Phasma Helmet.jpg",
     "col": 4,
     "row": 4,
-    "collected": true
-  },
-  {
-    "name": "Cardboard Mask (Luke)",
-    "thumb": "Cardboard Mask (Luke) - thumb.jpg",
-    "image": "Cardboard Mask (Luke).jpg",
-    "col": 1,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Cardboard Mask (Yoda)",
-    "thumb": "Cardboard Mask (Yoda) - thumb.jpg",
-    "image": "Cardboard Mask (Yoda).jpg",
-    "col": 2,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Cardboard Mask (Leia)",
-    "thumb": "Cardboard Mask (Leia) - thumb.jpg",
-    "image": "Cardboard Mask (Leia).jpg",
-    "col": 3,
-    "row": 5,
     "collected": true
   },
   {
@@ -1088,14 +936,6 @@
     "collected": true
   },
   {
-    "name": "Ackbar Head",
-    "thumb": "Ackbar Head - thumb.jpg",
-    "image": "Ackbar Head.jpg",
-    "col": 4,
-    "row": 5,
-    "collected": true
-  },
-  {
     "name": "Mando Helmet 09",
     "thumb": "Mando Helmet 09 - thumb.jpg",
     "image": "Mando Helmet 09.jpg",
@@ -1109,14 +949,6 @@
     "image": "Mando Helmet 08.jpg",
     "col": 5,
     "row": 8,
-    "collected": true
-  },
-  {
-    "name": "Mime Mask",
-    "thumb": "Mime Mask - thumb.jpg",
-    "image": "Mime Mask.jpg",
-    "col": 4,
-    "row": 6,
     "collected": true
   },
   {
@@ -1173,38 +1005,6 @@
     "image": "Mando Helmet 10.jpg",
     "col": 3,
     "row": 8,
-    "collected": true
-  },
-  {
-    "name": "KOTOR Sith Helmet",
-    "thumb": "KOTOR Sith Helmet - thumb.jpg",
-    "image": "KOTOR Sith Helmet.jpg",
-    "col": 2,
-    "row": 6,
-    "collected": true
-  },
-  {
-    "name": "KOTOR Sith Helmet 02",
-    "thumb": "KOTOR Sith Helmet 02 - thumb.jpg",
-    "image": "KOTOR Sith Helmet 02.jpg",
-    "col": 3,
-    "row": 6,
-    "collected": true
-  },
-  {
-    "name": "Darth Maul Hood",
-    "thumb": "Darth Maul Hood - thumb.jpg",
-    "image": "Darth Maul Hood.jpg",
-    "col": 5,
-    "row": 5,
-    "collected": true
-  },
-  {
-    "name": "Jedi Hood",
-    "thumb": "Jedi Hood - thumb.jpg",
-    "image": "Jedi Hood.jpg",
-    "col": 1,
-    "row": 6,
     "collected": true
   },
   {
@@ -1400,14 +1200,6 @@
     "collected": false
   },
   {
-    "name": "Bando Gora Mask",
-    "thumb": "Bando Gora Mask - thumb.jpg",
-    "image": "Bando Gora Mask.jpg",
-    "col": 4,
-    "row": 30,
-    "collected": true
-  },
-  {
     "name": "Nute Gunray Head",
     "thumb": "Nute Gunray Head - thumb.jpg",
     "image": "Nute Gunray Head.jpg",
@@ -1534,5 +1326,189 @@
     "col": 3,
     "row": 28,
     "collected": false
+  },
+  {
+    "name": "Darth Vader Helmet",
+    "thumb": "Darth Vader Helmet - thumb.jpg",
+    "image": "Darth Vader Helmet.jpg",
+    "col": 1,
+    "row": 1,
+    "collected": true
+  },
+  {
+    "name": "Kylo Ren Helmet",
+    "thumb": "Kylo Ren Helmet - thumb.jpg",
+    "image": "Kylo Ren Helmet.jpg",
+    "col": 2,
+    "row": 1,
+    "collected": false
+  },
+  {
+    "name": "Darth Maul Mask",
+    "thumb": "Darth Maul Mask - thumb.jpg",
+    "image": "Darth Maul Mask.jpg",
+    "col": 3,
+    "row": 1,
+    "collected": false
+  },
+  {
+    "name": "Darth Nihilus Helmet",
+    "thumb": "Darth Nihilus Helmet - thumb.jpg",
+    "image": "Darth Nihilus Helmet.jpg",
+    "col": 4,
+    "row": 1,
+    "collected": false
+  },
+  {
+    "name": "Bando Gora Mask",
+    "thumb": "Bando Gora Mask - thumb.jpg",
+    "image": "Bando Gora Mask.jpg",
+    "col": 1,
+    "row": 28,
+    "collected": true
+  },
+  {
+    "name": "Mime Mask",
+    "thumb": "Mime Mask - thumb.jpg",
+    "image": "Mime Mask.jpg",
+    "col": 2,
+    "row": 28,
+    "collected": true
+  },
+  {
+    "name": "Bo Katan Helmet",
+    "thumb": "Bok Katan Helmet - thumb.jpg",
+    "image": "Bok Katan Helmet.jpg",
+    "col": 1,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Sabine Wren Helmet",
+    "thumb": "Sabine Wren Helmet - thumb.jpg",
+    "image": "Sabine Wren Helmet.jpg",
+    "col": 2,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Grey Jedi Mask 02",
+    "thumb": "Grey Jedi Mask 02 - thumb.jpg",
+    "image": "Grey Jedi Mask 02.jpg",
+    "col": 3,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Moff Gideon Helmet",
+    "thumb": "Moff Gideon Helmet - thumb.jpg",
+    "image": "Moff Gideon Helmet.jpg",
+    "col": 2,
+    "row": 4,
+    "collected": false
+  },
+  {
+    "name": "Darth Talon Head",
+    "thumb": "Darth Talon Head - thumb.jpg",
+    "image": "Darth Talon Head.jpg",
+    "col": 4,
+    "row": 6,
+    "collected": false
+  },
+  {
+    "name": "Grey Jedi Mask 01",
+    "thumb": "Grey Jedi Mask 01 - thumb.jpg",
+    "image": "Grey Jedi Mask 01.jpg",
+    "col": 4,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Jedi Temple Guard Mask",
+    "thumb": "Jedi Temple Guard Mask - thumb.jpg",
+    "image": "Jedi Temple Guard Mask.jpg",
+    "col": 5,
+    "row": 3,
+    "collected": false
+  },
+  {
+    "name": "Princess Leia Head",
+    "thumb": "Princess Leia Head - thumb.jpg",
+    "image": "Princess Leia Head.jpg",
+    "col": 1,
+    "row": 2,
+    "collected": false
+  },
+  {
+    "name": "C3PO Head",
+    "thumb": "C3PO Head - thumb.jpg",
+    "image": "C3PO Head.jpg",
+    "col": 2,
+    "row": 2,
+    "collected": false
+  },
+  {
+    "name": "Chewy Head",
+    "thumb": "Chewy Head - thumb.jpg",
+    "image": "Chewy Head.jpg",
+    "col": 3,
+    "row": 2,
+    "collected": false
+  },
+  {
+    "name": "Jar Jar Binks Mask",
+    "thumb": "Jar Jar Binks Mask - thumb.jpg",
+    "image": "Jar Jar Binks Mask.jpg",
+    "col": 4,
+    "row": 2,
+    "collected": false
+  },
+  {
+    "name": "Ahsoke Head",
+    "thumb": "Ahsoke Head - thumb.jpg",
+    "image": "Ahsoke Head.jpg",
+    "col": 5,
+    "row": 2,
+    "collected": false
+  },
+  {
+    "name": "Darth Maul Hood",
+    "thumb": "Darth Maul Hood - thumb.jpg",
+    "image": "Darth Maul Hood.jpg",
+    "col": 1,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Jedi Hood",
+    "thumb": "Jedi Hood - thumb.jpg",
+    "image": "Jedi Hood.jpg",
+    "col": 2,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "Ackbar Head",
+    "thumb": "Ackbar Head - thumb.jpg",
+    "image": "Ackbar Head.jpg",
+    "col": 5,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "KOTOR Sith Helmet",
+    "thumb": "KOTOR Sith Helmet - thumb.jpg",
+    "image": "KOTOR Sith Helmet.jpg",
+    "col": 3,
+    "row": 5,
+    "collected": true
+  },
+  {
+    "name": "KOTOR Sith Helmet 02",
+    "thumb": "KOTOR Sith Helmet 02 - thumb.jpg",
+    "image": "KOTOR Sith Helmet 02.jpg",
+    "col": 4,
+    "row": 5,
+    "collected": true
   }
 ]
