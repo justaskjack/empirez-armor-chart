@@ -13,12 +13,12 @@
         {
           "name": "Jedi Medallion",
           "price": 150,
-          "notes": "Spent on Force powers. NPC sells for 100 Credits each."
+          "notes": "Spent on Force powers."
         },
         {
           "name": "Sith Medallion",
           "price": 150,
-          "notes": "Spent on Force powers. NPC sells for 100 Credits each."
+          "notes": "Spent on Force powers."
         }
       ]
     },
@@ -73,7 +73,7 @@
         {
           "name": "Starter Bike",
           "price": 750,
-          "notes": "NPC buy price is 1,000 — small markup for delivery."
+          "notes": "NPC buy price is 1,000."
         },
         {
           "name": "Starter Tie Fighter",
