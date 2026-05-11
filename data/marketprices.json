@@ -1,0 +1,196 @@
+{
+  "currency": "Credits",
+  "lastUpdated": "2026-05-11",
+  "categories": [
+    {
+      "category": "Currencies & Tokens",
+      "items": [
+        {
+          "name": "Trade Federation Coin",
+          "price": 50000,
+          "notes": "Used for custom bases and base decor at High Command Outpost."
+        },
+        {
+          "name": "Jedi Medallion",
+          "price": 1500,
+          "notes": "Spent on Force powers. NPC sells for 100 Credits each."
+        },
+        {
+          "name": "Sith Medallion",
+          "price": 1500,
+          "notes": "Spent on Force powers. NPC sells for 100 Credits each."
+        }
+      ]
+    },
+    {
+      "category": "Blasters",
+      "items": [
+        {
+          "name": "Mando Pistol",
+          "price": 8000,
+          "notes": "Sidearm. Price may vary with included magazines."
+        },
+        {
+          "name": "DL-44 Blaster",
+          "price": 12000,
+          "notes": "Reliable mid-range pistol."
+        },
+        {
+          "name": "Biker Scout Blaster Pistol",
+          "price": 9500,
+          "notes": ""
+        },
+        {
+          "name": "Mando Blaster",
+          "price": 14000,
+          "notes": "Higher demand among Mando RP players."
+        },
+        {
+          "name": "E-5 Blaster",
+          "price": 18000,
+          "notes": "Accepts optics. Worth more with scopes."
+        },
+        {
+          "name": "E-11 Blaster Rifle",
+          "price": 22000,
+          "notes": "Stormtrooper standard issue. Common but in steady demand."
+        }
+      ]
+    },
+    {
+      "category": "Melee & Sabers",
+      "items": [
+        {
+          "name": "Vibro Knife",
+          "price": 2500,
+          "notes": ""
+        },
+        {
+          "name": "Vibro Blade",
+          "price": 5500,
+          "notes": "Color variants priced similarly unless rare."
+        },
+        {
+          "name": "Beskar Blade",
+          "price": 9000,
+          "notes": "Beskar items hold value well."
+        },
+        {
+          "name": "Electro Staff",
+          "price": 12000,
+          "notes": "Slower turnover; collector item."
+        },
+        {
+          "name": "Jedi Force Blade",
+          "price": 15000,
+          "notes": "Faction-aligned buyers only."
+        },
+        {
+          "name": "Sith Warblade",
+          "price": 15000,
+          "notes": "Faction-aligned buyers only."
+        }
+      ]
+    },
+    {
+      "category": "Armor & Helms",
+      "items": [
+        {
+          "name": "Stormtrooper Helmet (any)",
+          "price": 4000,
+          "notes": "Common variants. Rare paints can sell for much more."
+        },
+        {
+          "name": "Mandalorian Helmet (any)",
+          "price": 7500,
+          "notes": "Wide variant range; price by visual rarity."
+        },
+        {
+          "name": "Beskar Chest Plate",
+          "price": 18000,
+          "notes": "High-tier armor; demand from PvP players."
+        },
+        {
+          "name": "Clone Trooper Phase 2 Set",
+          "price": 22000,
+          "notes": "Full set including helmet, chest, legs."
+        },
+        {
+          "name": "Darth Vader Helmet",
+          "price": 35000,
+          "notes": "Display piece. Mostly collector value."
+        }
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "items": [
+        {
+          "name": "Mini Speeder Bike",
+          "price": 1500,
+          "notes": "NPC buy price is 1,000 — small markup for delivery."
+        },
+        {
+          "name": "Endor Speeder Bike",
+          "price": 2500,
+          "notes": ""
+        },
+        {
+          "name": "Endor Speeder Bike (colored variant)",
+          "price": 4000,
+          "notes": "Red / Green / Blue variants trade slightly higher."
+        },
+        {
+          "name": "AT-ST",
+          "price": 60000,
+          "notes": "Rare; price highly negotiable."
+        }
+      ]
+    },
+    {
+      "category": "Crafting & Resources",
+      "items": [
+        {
+          "name": "Beskar Ingot",
+          "price": 6000,
+          "notes": "Core crafting material; price tracks Beskar gear demand."
+        },
+        {
+          "name": "Power Cell",
+          "price": 800,
+          "notes": "Common but constantly consumed."
+        },
+        {
+          "name": "Scrap Metal (stack)",
+          "price": 300,
+          "notes": "Bulk pricing; per stack of 10."
+        },
+        {
+          "name": "Bacta Patch",
+          "price": 1200,
+          "notes": "Healing item; demand spikes during raid events."
+        }
+      ]
+    },
+    {
+      "category": "Misc & Collectables",
+      "items": [
+        {
+          "name": "Holocron",
+          "price": 8000,
+          "notes": "Lore / display item."
+        },
+        {
+          "name": "Keycard (color varies)",
+          "price": 3500,
+          "notes": "Higher tiers (red, gold) command more."
+        },
+        {
+          "name": "Lightsaber Crystal",
+          "price": 5000,
+          "notes": "Color affects price; rare colors much higher."
+        }
+      ]
+    }
+  ]
+}

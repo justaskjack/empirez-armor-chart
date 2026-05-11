@@ -29,6 +29,7 @@
     <a href="#" data-page="bases">Bases</a>
     <a href="#" data-page="poi">POI</a>
     <a href="#" data-page="vendors">Vendors</a>
+    <a href="#" data-page="marketprices">Market Prices</a>
     <a href="#" data-page="servertips">Server Tips</a>
   </nav>
   <div class="navbar-right">
@@ -229,6 +230,29 @@
   </div>
 </div>
 
+  <div id="page-marketprices" class="page">
+    <header class="collectables-master-header">
+      <div class="armor-sets-master-row">
+        <div class="collectables-master-inner title-left">
+          <span class="collectables-master-kicker">Live</span>
+          <span class="title-bold">Market Prices</span>
+          <span class="title-secondary">These prices represent general market averages based on current player-to-player trading trends. Sellers are free to set any price they feel is fair, and buyers are free to negotiate.</span>
+          <span class="title-note">Prices may change over time depending on supply, demand, rarity, and server economy.</span>
+          <span id="marketLastUpdated" class="title-note title-note--meta"></span>
+        </div>
+        <div class="armor-page-controls armor-page-controls--inline">
+          <input type="text" id="marketSearchInput" class="armor-search-input" placeholder="Search by item, category, or note..." />
+          <select id="marketCategoryFilter" class="armor-control-select" aria-label="Filter by category">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <div id="market-sections" class="market-sections-container">
+      <!-- Market price sections will be inserted here -->
+    </div>
+  </div>
+
     <div id="page-servertips" class="page">
   <header class="collectables-master-header">
     <div class="collectables-master-inner title-left">
@@ -283,6 +307,7 @@
 <script src="js/poi.js" defer></script>
 <script src="js/servertips.js" defer></script>
 <script src="js/weapons.js" defer></script>
+<script src="js/marketprices.js" defer></script>
 
 
 
