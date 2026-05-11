@@ -574,8 +574,8 @@ header.navbar {
 
 .helm-grid {
   display: grid;
-  grid-template-columns: repeat(10, 141px);
-  grid-template-rows: repeat(22, 143px);
+  grid-template-columns: repeat(5, 141px);
+  grid-template-rows: repeat(44, 143px);
   gap: 1px;
   box-sizing: border-box;
   background-color: #0c0a0a;
