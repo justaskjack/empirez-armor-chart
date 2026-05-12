@@ -518,7 +518,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable70 - Greys ATTE Collectable",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
@@ -536,7 +536,7 @@
     "slots": "2x3",
     "note": "",
     "image": "Collectable78 - hawkbat",
-    "collected": false,
+    "collected": true,
     "category": "Toys"
   },
   {
