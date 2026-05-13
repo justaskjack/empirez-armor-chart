@@ -118,7 +118,7 @@
     },
     {
       "image": "Flag 07",
-      "collected": false,
+      "collected": true,
       "displayName": "Lone Fox Flag",
       "faction": "",
       "cardBack": "flag_cardback02.jpg"
@@ -126,35 +126,35 @@
     {
       "image": "Flag 08",
       "collected": true,
-      "displayName": "Flag 08",
+      "displayName": "Pyke Syndicate Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 09",
       "collected": true,
-      "displayName": "Flag 09",
+      "displayName": "Medic Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 10",
       "collected": true,
-      "displayName": "Flag 10",
+      "displayName": "Rebel Alliance Flag (Variant 01)",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 11",
       "collected": true,
-      "displayName": "Flag 11",
+      "displayName": "Twin Suns Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 13",
       "collected": true,
-      "displayName": "Flag 13",
+      "displayName": "Republic Commandos Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -167,22 +167,22 @@
     },
     {
       "image": "Flag 15",
-      "collected": false,
-      "displayName": "Flag 15",
+      "collected": true,
+      "displayName": "Bespin Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 16",
       "collected": true,
-      "displayName": "Flag 16",
+      "displayName": "Galactic Federation of Free Alliances Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 17",
       "collected": true,
-      "displayName": "Flag 17",
+      "displayName": "Delta Squad Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -216,7 +216,7 @@
     },
     {
       "image": "Flag 26",
-      "collected": false,
+      "collected": true,
       "displayName": "Flag 26",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
