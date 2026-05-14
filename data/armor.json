@@ -1,6 +1,6 @@
 [
   {
-    "name": "Moisture Farmer Set",
+    "name": "Moisture Farmer",
     "image": "Moisture Farmer Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -18,7 +18,7 @@
     }
   },
   {
-    "name": "Moisture Farmer Set (Rey Variant)",
+    "name": "Moisture Farmer (Rey Variant)",
     "image": "Moisture Farmer Set (Rey).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -102,7 +102,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Incinerator Trooper Set",
+    "name": "Incinerator Trooper",
     "image": "Incinerator Trooper Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -114,7 +114,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Incinerator Trooper Set (Blue Variant)",
+    "name": "Incinerator Trooper(Blue Variant)",
     "image": "Incinerator Trooper Set (Blue Variant).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -126,7 +126,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Stormtrooper Medic Set",
+    "name": "Stormtrooper Medic",
     "image": "Stormtrooper Medic Set 02.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -138,7 +138,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Sandtrooper Set",
+    "name": "Sandtrooper",
     "image": "Sandtrooper Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -161,7 +161,7 @@
     }
   },
   {
-    "name": "First Order Stormtrooper Set",
+    "name": "First Order Stormtrooper",
     "image": "First Order Stormtrooper Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -173,7 +173,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "DerpTrooper Set",
+    "name": "DerpTrooper",
     "image": "DerpTrooper Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -185,7 +185,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mud Trooper Set",
+    "name": "Mud Trooper",
     "image": "Mud Trooper Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -197,7 +197,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Biker Scout Set",
+    "name": "Biker Scout",
     "image": "Biker Scout Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -209,7 +209,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Biker Scout Set (Battle Scarred Variant)",
+    "name": "Biker Scout(Battle Scarred Variant)",
     "image": "Biker Scout Set (Battle Scarred Variant).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -221,7 +221,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Biker Scout Set (Black Variant)",
+    "name": "Biker Scout (Black Variant)",
     "image": "Biker Scout Set (Black Variant).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -233,7 +233,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Imperial Officer Set 01",
+    "name": "Imperial Officer 01",
     "image": "Imperial Officer Set 01.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -245,7 +245,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Imperial Officer Set 02",
+    "name": "Imperial Officer 02",
     "image": "Imperial Officer Set 02.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -257,7 +257,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Rebel Pilot Set",
+    "name": "Rebel Pilot",
     "image": "Rebel Pilot Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -269,7 +269,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Endor Rebel Set",
+    "name": "Endor Rebel",
     "image": "Endor Rebel Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -281,7 +281,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Ghillie Monster Set",
+    "name": "Ghillie Monster",
     "image": "Ghillie Monster Set.jpg",
     "type": "Vanilla DayZ Armor",
     "protection": 1,
@@ -377,7 +377,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Tuskan Set (Black Variant)",
+    "name": "Tuskan (Black Variant)",
     "image": "Tuskan Set (Black Variant).jpg",
     "type": "Character armor sets",
     "protection": 1,
@@ -389,7 +389,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Nute Gunray Set",
+    "name": "Nute Gunray",
     "image": "Nute Gunray Set.jpg",
     "type": "Character armor sets",
     "protection": 1,
@@ -401,7 +401,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Squid Head Set",
+    "name": "Squid Head",
     "image": "Squid Head Set.jpg",
     "type": "Character armor sets",
     "protection": 1,
@@ -413,7 +413,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Sidon Ithano Set",
+    "name": "Sidon Ithano",
     "image": "Sidon Ithano Set.jpg",
     "type": "Character armor sets",
     "protection": 1,
@@ -425,7 +425,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Boushh Set",
+    "name": "Boushh",
     "image": "Boushh Set.jpg",
     "type": "Character armor sets",
     "protection": 1,
@@ -437,7 +437,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Galactic Marine Armor",
+    "name": "Galactic Marine",
     "image": "Galactic Marine Set.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -449,7 +449,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shore Trooper Armor",
+    "name": "Shore Trooper",
     "image": "Shore Trooper Armor.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -461,7 +461,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shore Trooper Captain Set",
+    "name": "Shore Trooper Captain",
     "image": "ShoreTrooper Captain Set.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -473,7 +473,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "DeathTrooper Set",
+    "name": "DeathTrooper",
     "image": "Deathtrooper Set.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -485,7 +485,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Sith Trooper Set",
+    "name": "Sith Trooper",
     "image": "Sith Trooper Set 01.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -497,7 +497,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Commander Wolffe Set",
+    "name": "Commander Wolffe",
     "image": "Commander Wolffe Set.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -509,7 +509,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Commander Cody Set",
+    "name": "Commander Cody",
     "image": "Commander Cody Set.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -521,7 +521,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Commander Bly Set",
+    "name": "Commander Bly",
     "image": "Commander Bly Set.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -533,7 +533,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Commander Gree Set",
+    "name": "Commander Gree",
     "image": "Commander Gree Set.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -545,7 +545,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Commander Rex Set",
+    "name": "Commander Rex",
     "image": "Commander Rex Set.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -557,7 +557,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper - Dogma Set",
+    "name": "Clone Trooper - Dogma",
     "image": "Clone Trooper - Dogma Set.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -569,7 +569,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper - Kix Set",
+    "name": "Clone Trooper - Kix",
     "image": "Clone Trooper - Kix Set.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -581,7 +581,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shadow Clone Trooper Set",
+    "name": "Shadow Clone Trooper",
     "image": "Shadow Clone Trooper Set 01.jpg",
     "type": "Special Clone armor",
     "protection": 2,
@@ -593,7 +593,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Bad Batch Hunter Set",
+    "name": "Bad Batch - Hunter",
     "image": "Bad Batch Hunter Set.jpg",
     "type": "Special Clone armor",
     "protection": "2",
@@ -605,7 +605,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Bad Batch - Wrecker Set",
+    "name": "Bad Batch - Wrecker",
     "image": "Bad Batch - Wrecker Set.jpg",
     "type": "Special Clone armor",
     "protection": "2",
@@ -617,7 +617,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Bad Batch - Crosshair Set",
+    "name": "Bad Batch - Crosshair",
     "image": "Bad Batch - Crosshair Set.jpg",
     "type": "Special Clone armor",
     "protection": "2",
@@ -629,7 +629,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Purge Trooper Set",
+    "name": "Purge Trooper",
     "image": "Purge Trooper Set.jpg",
     "type": "Special Troop armor",
     "protection": 2,
@@ -641,7 +641,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Geo Trooper Set",
+    "name": "Geo Trooper",
     "image": "Geo Trooper Set.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -653,7 +653,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Barc Trooper Set (Camo Variant)",
+    "name": "Barc Trooper (Camo Variant)",
     "image": "Barc Trooper Set (Camo Variant).jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -665,7 +665,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Barc Trooper Set",
+    "name": "Barc Trooper",
     "image": "Barc Trooper Set.jpg",
     "type": "Special Troop armor",
     "protection": "2",
@@ -677,7 +677,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Purple Variant)",
+    "name": "Clone Trooper (Purple Variant)",
     "image": "Clone Trooper Set 03.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -689,7 +689,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Red Variant)",
+    "name": "Clone Trooper (Red Variant)",
     "image": "Clone Trooper Set 04.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -701,7 +701,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Blue Variant)",
+    "name": "Clone Trooper (Blue Variant)",
     "image": "Clone Trooper Set 06.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -713,7 +713,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (White Variant)",
+    "name": "Clone Trooper (White Variant)",
     "image": "Clone Trooper Set 07.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -725,7 +725,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Camo Variant)",
+    "name": "Clone Trooper (Camo Variant)",
     "image": "Clone Trooper Set 08.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -737,7 +737,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Tan Variant)",
+    "name": "Clone Trooper (Tan Variant)",
     "image": "Clone Trooper Set 09.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -749,7 +749,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Yellow Variant)",
+    "name": "Clone Trooper (Yellow Variant)",
     "image": "Clone Trooper Set 10.jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -761,7 +761,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shock Commander Set (Purple Variant)",
+    "name": "Shock Commander (Purple Variant)",
     "image": "Shock Commander Set (Purple Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -773,7 +773,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shock Trooper Set (Purple Variant)",
+    "name": "Shock Trooper (Purple Variant)",
     "image": "Shock Trooper Set (Purple Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -785,7 +785,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shock Trooper Set (Red Variant)",
+    "name": "Shock Trooper (Red Variant)",
     "image": "Shock Trooper Set (Red Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -797,7 +797,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Shock Commander Set (Red Variant)",
+    "name": "Shock Commander (Red Variant)",
     "image": "Shock Commander Set (Red Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -809,7 +809,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Airborne Clone Trooper Set (Camo Variant)",
+    "name": "Airborne Clone Trooper (Camo Variant)",
     "image": "Airborne Clone Trooper Set (Camo Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -821,7 +821,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Airborne Clone Trooper Set (White Variant)",
+    "name": "Airborne Clone Trooper (White Variant)",
     "image": "Airborne Clone Trooper Set (White Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -833,7 +833,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Airborne Clone Trooper Set (Blue Variant)",
+    "name": "Airborne Clone Trooper (Blue Variant)",
     "image": "Airborne Clone Trooper Set (Blue Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -845,7 +845,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Airborne Clone Trooper Set (Yellow Variant)",
+    "name": "Airborne Clone Trooper (Yellow Variant)",
     "image": "Airborne Clone Trooper Set (Yellow Variant).jpg",
     "type": "Special Clone armor",
     "protection": 1,
@@ -869,7 +869,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Moff Gideon Set",
+    "name": "Moff Gideon",
     "image": "Moff Gideon Set.jpg",
     "type": "Character Armor Sets",
     "protection": 1,
@@ -881,19 +881,27 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Darth Maul Set",
+    "name": "Darth Maul",
     "image": "Darth Maul Set.jpg",
     "type": "Character Armor Sets",
-    "protection": 1,
+    "protection": 2,
     "rarity": "Rare",
-    "location": "Outside Sith Temple",
-    "collected": false,
+    "location": "All tiers",
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment14.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Mauls Lightsword",
+      "shirt": "Darth Maul Cloak",
+      "legs": "Darth Maul Pants (2)",
+      "head": "Darth Maul Hood (2)",
+      "mask": "Darth Maul Mask",
+      "hands": "Darth Maul Gloves",
+      "feet": "Darth Maul Boots"
+    }
   },
   {
-    "name": "Republic Commando Armor (Katarn-class MK III)",
+    "name": "Republic Commando (Katarn-class MK III)",
     "image": "Republic Commando Armor 01.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -905,7 +913,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Republic Commando Armor (Delta Squad - Sev)",
+    "name": "Republic Commando (Delta Squad - Sev)",
     "image": "Republic Commando Armor 02.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -917,7 +925,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Republic Commando Armor (Delta Squad - Scorch)",
+    "name": "Republic Commando (Delta Squad - Scorch)",
     "image": "Republic Commando Armor 03.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -929,7 +937,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Republic Commando Armor (Delta Squad - Boss)",
+    "name": "Republic Commando (Delta Squad - Boss)",
     "image": "Republic Commando Armor 04.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -941,7 +949,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Republic Commando Armor (Delta Squad - Fixer)",
+    "name": "Republic Commando (Delta Squad - Fixer)",
     "image": "Republic Commando Armor 05.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -953,7 +961,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Republic Commando Armor (Katarn-class)",
+    "name": "Republic Commando (Katarn-class)",
     "image": "Republic Commando Armor 06.jpg",
     "type": "Clone Commando Armor",
     "protection": 2,
@@ -965,7 +973,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Leia Set",
+    "name": "Princess Leia",
     "image": "Leia Set.jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -977,7 +985,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Boba Fett Set",
+    "name": "Boba Fett",
     "image": "Boba Fett Set.jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -989,7 +997,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "ESB Boba Fett Set",
+    "name": "ESB Boba Fett",
     "image": "ESB Boba Fett Set.jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1025,7 +1033,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Gold Variant)",
+    "name": "Mando Armor (Gold Variant)",
     "image": "Mando Armor Set (Gold Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1037,7 +1045,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Black Variant)",
+    "name": "Mando Armor (Black Variant)",
     "image": "Mando Armor Set (Black Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1049,7 +1057,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Green Variant)",
+    "name": "Mando Armor (Green Variant)",
     "image": "Mando Armor Set (Green Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1061,7 +1069,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Blue Variant)",
+    "name": "Mando Armor (Blue Variant)",
     "image": "Mando Armor Set (Blue Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1073,7 +1081,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Red Variant)",
+    "name": "Mando Armor (Red Variant)",
     "image": "Mando Armor Set (Red Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1085,7 +1093,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Magenta Variant)",
+    "name": "Mando Armor (Magenta Variant)",
     "image": "Mando Armor Set (Magenta Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1097,7 +1105,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Female Mando Armor Set (Teal Variant)",
+    "name": "Female Mando Armor (Teal Variant)",
     "image": "Female Mando Armor Set (Teal Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1109,7 +1117,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Teal Variant)",
+    "name": "Mando Armor (Teal Variant)",
     "image": "Mando Armor Set (Teal Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1121,7 +1129,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (White Variant)",
+    "name": "Mando Armor (White Variant)",
     "image": "Mando Armor Set (White Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1133,7 +1141,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Armor Set (Grey Variant)",
+    "name": "Mando Armor (Grey Variant)",
     "image": "Mando Armor Set (Grey Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1145,7 +1153,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Female Mando Armor Set (White Variant)",
+    "name": "Female Mando Armor (White Variant)",
     "image": "Female Mando Armor Set (White Variant).jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1157,7 +1165,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Mando Warrior Set",
+    "name": "Mando Warrior",
     "image": "Mando Warrior Set.jpg",
     "type": "Character Armor Sets",
     "protection": 2,
@@ -1169,7 +1177,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Deathwatch Set",
+    "name": "Deathwatch",
     "image": "Deathwatch Set.jpg",
     "type": "Custom Player Sets",
     "protection": 2,
@@ -1181,7 +1189,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Tie Fighter Pilot Set",
+    "name": "Tie Fighter Pilot",
     "image": "Tie Fighter Pilot Set.jpg",
     "type": "General Star Wars Armor",
     "protection": 2,
@@ -1193,7 +1201,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Partisan (Two Tubes) Set",
+    "name": "Partisan (Two Tubes)",
     "image": "Partisan (Two Tubes).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -1205,7 +1213,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Partisan (Unknown Solider) Set",
+    "name": "Partisan (Unknown Solider)",
     "image": "Partisan (Unknown Solider).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -1217,7 +1225,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Anakin Skywalker Set",
+    "name": "Anakin Skywalker",
     "image": "Anakin Skywalker Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1229,7 +1237,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Ahsoka Tano Set",
+    "name": "Ahsoka Tano",
     "image": "Ahsoka Tano Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1241,7 +1249,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Bo Katan Set",
+    "name": "Bo Katan",
     "image": "Bo Katan.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1253,7 +1261,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Sabine Wren Armor",
+    "name": "Sabine Wren",
     "image": "Sabine Wren Armor.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1265,7 +1273,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Paz Vizsla Set",
+    "name": "Paz Vizsla",
     "image": "Paz Vizsla Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 3,
@@ -1287,7 +1295,7 @@
     }
   },
   {
-    "name": "Darth Talon Set",
+    "name": "Darth Talon",
     "image": "Darth Talon Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1299,7 +1307,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Twilek Set (Green Variant)",
+    "name": "Twilek (Green Variant)",
     "image": "Twilek Set (Green Variant).jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1311,7 +1319,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Twilek Set (Blue Variant)",
+    "name": "Twilek (Blue Variant)",
     "image": "Twilek Set (Blue Variant).jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1323,7 +1331,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Darth Revan Set",
+    "name": "Darth Revan",
     "image": "Darth Revan Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1335,7 +1343,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "KOTOR Sith Set",
+    "name": "KOTOR Sith",
     "image": "KOTOR Sith Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1355,7 +1363,7 @@
     }
   },
   {
-    "name": "Captain Phasma Set",
+    "name": "Captain Phasma",
     "image": "Captain Phasma Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1367,7 +1375,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Captain Enoch Set",
+    "name": "Captain Enoch",
     "image": "Captain Enoch Set.jpg",
     "type": "Supporting Character Sets",
     "protection": 2,
@@ -1379,7 +1387,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "C3po Set",
+    "name": "C3po",
     "image": "C3po Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1391,7 +1399,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "General Grevious Set",
+    "name": "General Grevious",
     "image": "General Grevious Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1403,7 +1411,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "IG88 Set",
+    "name": "IG88",
     "image": "IG88 Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1415,7 +1423,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Battle Droid Set",
+    "name": "Battle Droid",
     "image": "Battle Droid Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1435,7 +1443,7 @@
     }
   },
   {
-    "name": "Battle Droid Set (Red Variant)",
+    "name": "Battle Droid (Red Variant)",
     "image": "Battle Droid Set (Red Variant).jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1455,7 +1463,7 @@
     }
   },
   {
-    "name": "Battle Droid Set (Blue Variant)",
+    "name": "Battle Droid (Blue Variant)",
     "image": "Battle Droid Set (Blue Variant).jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1499,7 +1507,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Andromeda Set",
+    "name": "Andromeda",
     "image": "Andromeda Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1511,7 +1519,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Magna Guard Set",
+    "name": "Magna Guard",
     "image": "Magna Guard Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1523,7 +1531,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "ND5_Droid Set",
+    "name": "ND5_Droid",
     "image": "ND5_Droid Set.jpg",
     "type": "Droid Sets",
     "protection": 2,
@@ -1535,7 +1543,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Darth Vader Set",
+    "name": "Darth Vader",
     "image": "Darth Vader Suit.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1558,7 +1566,7 @@
     }
   },
   {
-    "name": "Kylo Ren Set",
+    "name": "Kylo Ren",
     "image": "Kylo Ren Suit.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1578,19 +1586,28 @@
     }
   },
   {
-    "name": "Darth Nihilus Set",
+    "name": "Darth Nihilus",
     "image": "Darth Nihilus Suit.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
     "rarity": "Relic",
     "location": "B9E Loot Droid",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment13.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Nihiluss Lightsword",
+      "chest": "Darth Nihilus Vest (3)",
+      "shirt": "Darth Nihilus Shirt",
+      "legs": "Darth Nihilus Pants (3)",
+      "belt": "Darth Nihilus Belt",
+      "head": "Darth Nihilus Helmet (3)",
+      "hands": "Darth Nihilus Gloves",
+      "feet": "Darth Maul Boots"
+    }
   },
   {
-    "name": "Jedi Guard Set",
+    "name": "Jedi Guard",
     "image": "Jedi Guard Set.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1612,7 +1629,7 @@
     }
   },
   {
-    "name": "Grey Jedi Set",
+    "name": "Grey Jedi",
     "image": "Grey Jedi Set.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1624,7 +1641,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Grey Jedi Set (Khaki Variant)",
+    "name": "Grey Jedi (Khaki Variant)",
     "image": "Grey Jedi Set 02.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1636,7 +1653,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Darth Jar-Jar Set",
+    "name": "Darth Jar-Jar",
     "image": "Darth Jar-Jar Set.jpg",
     "type": "Jedi/Sith Sets",
     "protection": 3,
@@ -1684,7 +1701,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Chewy Suit",
+    "name": "Chewy",
     "image": "Chewy Suit.jpg",
     "type": "Gas Protection",
     "protection": 3,
@@ -1718,7 +1735,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Neon Green Chrome Variant)",
+    "name": "Clone Trooper (Neon Green Chrome Variant)",
     "image": "Clone Trooper Set 01.jpg",
     "type": "Clone Trooper Armor",
     "protection": 1,
@@ -1730,7 +1747,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Neon Red Chrome Variant)",
+    "name": "Clone Trooper (Neon Red Chrome Variant)",
     "image": "Clone Trooper Set 02.jpg",
     "type": "Clone Trooper Armor",
     "protection": 1,
@@ -1742,7 +1759,7 @@
     "equipmentTooltips": {}
   },
   {
-    "name": "Clone Trooper Set (Chrome Variant) (Legacy)",
+    "name": "Clone Trooper (Chrome Variant) (Legacy)",
     "image": "Clone Trooper Set 05.jpg",
     "type": "Special Clone armor",
     "protection": 1,

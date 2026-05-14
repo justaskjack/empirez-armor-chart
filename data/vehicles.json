@@ -38,7 +38,7 @@
           "thumb": "images/vehicles/vehicle05_endorspeederbike.jpg",
           "gallery": [
             { "src": "images/vehicles/vehicle05_endorspeederbike-lg.jpg", "overlay": "Photo courtesy of McNick." },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
+            { "src": "images/vehicles/vehicle05_endorspeederbike-lg-02.jpg", "overlay": "Photo courtesy of Boe Bett." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Forest patrol layout; balanced speed and handling.",
@@ -169,7 +169,7 @@
           ],
           "description": "Standard Imperial space superiority fighter.",
           "buy": 6000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 200,
           "seats": 1
         },
@@ -183,7 +183,7 @@
           ],
           "description": "Variant model with red highlights and increased cargo configuration.",
           "buy": 6500,
-          "sell": 400,
+          "sell": 0,
           "cargo": 250,
           "seats": 1
         },
@@ -197,7 +197,7 @@
           ],
           "description": "Aggressive profile; expanded internal storage.",
           "buy": 9000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 1
         },
@@ -210,7 +210,7 @@
           ],
           "description": "Advanced hull; substantial cargo for a fighter.",
           "buy": 14000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         },
@@ -223,20 +223,21 @@
           ],
           "description": "Ceremonial trim; heavy-duty storage layout.",
           "buy": 17000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         },
         {
           "name": "Snow Speeder",
+          "thumb": "images/vehicles/vehicle21_snowspeeder.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "Snow Speeder" },
+            { "src": "images/vehicles/vehicle21_snowspeeder-lg.jpg", "overlay": "Snow Speeder. Photo courtesy of Ant." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Rebel airspeeder; two crew, moderate cargo.",
           "buy": 11000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 250,
           "seats": 2
         },
@@ -250,7 +251,7 @@
           ],
           "description": "Long-range sensors; generous equipment space.",
           "buy": 11000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 2
         },
@@ -259,12 +260,12 @@
           "thumb": "images/vehicles/vehicle04_tridentfighter.jpg",
           "gallery": [
             { "src": "images/vehicles/vehicle04_tridentfighter-lg.jpg", "overlay": "Photo courtesy of Darth Overseer digdawg." },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
+            { "src": "images/vehicles/vehicle04_tridentfighter-lg-02.jpg", "overlay": "Photo courtesy of thryth." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Tri-wing layout; balanced cargo bay.",
           "buy": 14000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 1
         },
@@ -273,12 +274,12 @@
           "thumb": "images/vehicles/vehicle08_xwingt70.jpg",
           "gallery": [
             { "src": "images/vehicles/vehicle08_xwingt70-lg.jpg", "overlay": "Photo courtesy of Joe Sixpack." },
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
+            { "src": "images/vehicles/vehicle08_xwingt70-lg-02.jpg", "overlay": "Photo courtesy of Brock Lee." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Resistance-era X-wing baseline loadout.",
           "buy": 7000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 200,
           "seats": 1
         },
@@ -292,7 +293,7 @@
           ],
           "description": "Squadron accent livery; slightly larger hold.",
           "buy": 7000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 250,
           "seats": 1
         },
@@ -305,7 +306,7 @@
           ],
           "description": "Teal accent variant; tuned for flexibility.",
           "buy": 7000,
-          "sell": 300,
+          "sell": 0,
           "cargo": 250,
           "seats": 1
         },
@@ -318,7 +319,7 @@
           ],
           "description": "Partisan black scheme; expanded cargo.",
           "buy": 8000,
-          "sell": 300,
+          "sell": 0,
           "cargo": 500,
           "seats": 1
         },
@@ -332,7 +333,7 @@
           ],
           "description": "Two-tone partisan livery.",
           "buy": 8000,
-          "sell": 300,
+          "sell": 0,
           "cargo": 500,
           "seats": 1
         },
@@ -346,7 +347,7 @@
           ],
           "description": "Elite X-wing configuration; large cargo volume.",
           "buy": 12000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         },
@@ -359,7 +360,7 @@
           ],
           "description": "Signature livery; same performance as Black One.",
           "buy": 12000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         },
@@ -373,7 +374,7 @@
           ],
           "description": "Sith infiltrator-class; cavernous equipment bay.",
           "buy": 15000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         },
@@ -387,7 +388,7 @@
           ],
           "description": "Sith craft variant; heavy cargo allowance.",
           "buy": 15000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 1
         }
@@ -398,15 +399,30 @@
       "title": "Transport",
       "vehicles": [
         {
-          "name": "LAAT Drop Ship Blue",
+          "name": "Arc 170 Blue",
+          "thumb": "images/vehicles/vehicle19_arc170blue.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "LAAT Drop Ship Blue" },
+            { "src": "images/vehicles/vehicle19_arc170blue-lg.jpg.jpg", "overlay": "Arc 170 Blue. Photo courtesy of Spudboy and The Losers." },
+            { "src": "images/vehicles/vehicle19_arc170blue-lg-refuel.jpg", "overlay": "" },
+            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
+          ],
+          "description": "Republic gunship — green markings.",
+          "buy": 20000,
+          "sell": 0,
+          "cargo": 1000,
+          "seats": 3
+        },
+        {
+          "name": "LAAT Drop Ship Blue",
+          "thumb": "images/vehicles/vehicle20_laatblue.jpg",
+          "gallery": [
+            { "src": "images/vehicles/vehicle20_laatblue-lg.jpg", "overlay": "LAAT Drop Ship Blue" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Republic gunship — blue markings.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 200,
           "seats": 12
         },
@@ -420,7 +436,7 @@
           ],
           "description": "Republic gunship — green markings.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 200,
           "seats": 12
         },
@@ -434,7 +450,7 @@
           ],
           "description": "Partisan scheme; enlarged cargo floor.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 12
         },
@@ -447,7 +463,7 @@
           ],
           "description": "Shock trooper livery; expanded hold.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 12
         },
@@ -460,20 +476,21 @@
           ],
           "description": "187th scheme; expanded hold.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 12
         },
         {
           "name": "LAAT Dropship Desert Camo",
+          "thumb": "images/vehicles/vehicle22_laatdesertcamo.jpg",
           "gallery": [
-            { "src": "images/vehicles/vehicles_default.jpg", "overlay": "LAAT Dropship Desert Camo" },
+            { "src": "images/vehicles/vehicle22_laatdesertcamo-lg.jpg", "overlay": "LAAT Dropship Desert Camo. Photo courtesy of Cassian." },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
           "description": "Desert operations paint; expanded hold.",
           "buy": 20000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 500,
           "seats": 12
         },
@@ -487,7 +504,7 @@
           ],
           "description": "12-seat shuttle.",
           "buy": 25000,
-          "sell": 400,
+          "sell": 0,
           "cargo": 1000,
           "seats": 12
         }
