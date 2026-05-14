@@ -156,7 +156,14 @@
       "collected": true,
       "displayName": "Republic Commandos Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
+    },
+    {
+      "image": "Flag 18",
+      "collected": true,
+      "displayName": "Republic Commando Flag (Variant 02)",
+      "faction": "",
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 14",
@@ -187,13 +194,6 @@
       "cardBack": "flag_cardback01.jpg"
     },
     {
-      "image": "Flag 18",
-      "collected": true,
-      "displayName": "Flag 18",
-      "faction": "",
-      "cardBack": "flag_cardback01.jpg"
-    },
-    {
       "image": "Flag 19",
       "collected": true,
       "displayName": "Flag 19",
@@ -217,30 +217,30 @@
     {
       "image": "Flag 26",
       "collected": true,
-      "displayName": "Flag 26",
+      "displayName": "Renegade Squadron Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 27",
       "collected": true,
-      "displayName": "Flag 27",
+      "displayName": "HOA Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 51",
       "collected": true,
-      "displayName": "Flag 27",
+      "displayName": "Boba Fett's Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback02.jpg"
     },
     {
       "image": "Flag 52",
       "collected": true,
-      "displayName": "Flag 27",
+      "displayName": "Jedi Council Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback03.jpg"
     },
     {
       "image": "Flag 28",
@@ -252,7 +252,7 @@
     {
       "image": "Flag 29",
       "collected": true,
-      "displayName": "Flag 29",
+      "displayName": "Clan Mudhorn Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -266,35 +266,35 @@
     {
       "image": "Flag 31",
       "collected": true,
-      "displayName": "Flag 31",
+      "displayName": "Colonial Marines Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 32",
       "collected": true,
-      "displayName": "Flag 32",
+      "displayName": "Tauntaun Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback03.jpg"
     },
     {
       "image": "Flag 33",
       "collected": true,
-      "displayName": "Flag 33",
+      "displayName": "Star Destroyer Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 37",
       "collected": true,
-      "displayName": "Flag 37",
+      "displayName": "Jabba In The Shower Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 38",
       "collected": true,
-      "displayName": "Flag 38",
+      "displayName": "Clone Force 99 Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -315,42 +315,42 @@
     {
       "image": "Flag 41",
       "collected": true,
-      "displayName": "Flag 41",
+      "displayName": "Black Sun Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 42",
       "collected": true,
-      "displayName": "Flag 42",
+      "displayName": "Womp Rat Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 43",
       "collected": true,
-      "displayName": "Flag 43",
+      "displayName": "Wolfpack Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 44",
       "collected": true,
-      "displayName": "Flag 44",
+      "displayName": "Desilijic Clan Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
     {
       "image": "Flag 45",
       "collected": true,
-      "displayName": "Flag 45",
+      "displayName": "Jedi Order Flag",
       "faction": "",
-      "cardBack": "flag_cardback01.jpg"
+      "cardBack": "flag_cardback03.jpg"
     },
     {
       "image": "Flag 47",
       "collected": true,
-      "displayName": "Flag 47",
+      "displayName": "R2D2 Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     },
@@ -362,9 +362,16 @@
       "cardBack": "flag_cardback02.jpg"
     },
     {
+      "image": "Flag 53",
+      "collected": true,
+      "displayName": "Eternal Empire Flag",
+      "faction": "",
+      "cardBack": "flag_cardback02.jpg"
+    },
+    {
       "image": "Flag 48",
       "collected": false,
-      "displayName": "Flag 48",
+      "displayName": "Stormtrooper Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"
     }
