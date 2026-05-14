@@ -406,7 +406,7 @@
             { "src": "images/vehicles/vehicle19_arc170blue-lg-refuel.jpg", "overlay": "" },
             { "src": "images/vehicles/vehicles_default.jpg", "overlay": "" }
           ],
-          "description": "Republic gunship — green markings.",
+          "description": "Aggressive ReConnaissance-170 starfighter — blue markings.",
           "buy": 20000,
           "sell": 0,
           "cargo": 1000,
