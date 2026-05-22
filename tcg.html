@@ -143,6 +143,98 @@
       background: #0b0b0b;
     }
 
+    /* Card rarity breakdown — matches package back art */
+    .rarity-breakdown {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1rem 0.95rem;
+      background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
+      border: 1px solid #333;
+      box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .rarity-breakdown__tagline {
+      margin: 0 0 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #b8f04a;
+      text-shadow: 0 0 10px rgba(184, 240, 74, 0.35);
+    }
+
+    .rarity-breakdown__tagline-sub {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #e8e8e8;
+      text-shadow: none;
+    }
+
+    .rarity-breakdown__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem 1.35rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .rarity-breakdown__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .rarity-breakdown__bullet {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      background: transparent;
+      box-shadow: 0 0 6px currentColor;
+      flex-shrink: 0;
+    }
+
+    .rarity-breakdown__count {
+      font-weight: 600;
+      opacity: 0.92;
+    }
+
+    .rarity-breakdown__item--common {
+      color: #ffffff;
+    }
+
+    .rarity-breakdown__item--uncommon {
+      color: #5dff5d;
+      text-shadow: 0 0 8px rgba(93, 255, 93, 0.45);
+    }
+
+    .rarity-breakdown__item--rare {
+      color: #6ec8ff;
+      text-shadow: 0 0 8px rgba(110, 200, 255, 0.45);
+    }
+
+    .rarity-breakdown__item--epic {
+      color: #c77dff;
+      text-shadow: 0 0 8px rgba(199, 125, 255, 0.45);
+    }
+
+    .rarity-breakdown__item--legendary {
+      color: #ff9a3c;
+      text-shadow: 0 0 8px rgba(255, 154, 60, 0.45);
+    }
+
+    .rarity-breakdown__item--special {
+      color: #ffe94a;
+      text-shadow: 0 0 8px rgba(255, 233, 74, 0.45);
+    }
+
     @media (max-width: 600px) {
       .page-header {
         align-items: flex-start;
@@ -170,6 +262,44 @@
     </section>
 
     <h2 class="section-title">Cards (click card to flip over)</h2>
+    <div class="rarity-breakdown" aria-label="Card rarity breakdown">
+      <p class="rarity-breakdown__tagline">
+        Collect them all!
+        <span class="rarity-breakdown__tagline-sub">Build your collection across the zone.</span>
+      </p>
+      <ul class="rarity-breakdown__list">
+        <li class="rarity-breakdown__item rarity-breakdown__item--common">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Common</span>
+          <span class="rarity-breakdown__count">(60)</span>
+        </li>
+        <li class="rarity-breakdown__item rarity-breakdown__item--uncommon">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Uncommon</span>
+          <span class="rarity-breakdown__count">(40)</span>
+        </li>
+        <li class="rarity-breakdown__item rarity-breakdown__item--rare">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Rare</span>
+          <span class="rarity-breakdown__count">(20)</span>
+        </li>
+        <li class="rarity-breakdown__item rarity-breakdown__item--epic">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Epic</span>
+          <span class="rarity-breakdown__count">(10)</span>
+        </li>
+        <li class="rarity-breakdown__item rarity-breakdown__item--legendary">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Legendary</span>
+          <span class="rarity-breakdown__count">(5)</span>
+        </li>
+        <li class="rarity-breakdown__item rarity-breakdown__item--special">
+          <span class="rarity-breakdown__bullet" aria-hidden="true"></span>
+          <span class="rarity-breakdown__name">Special</span>
+          <span class="rarity-breakdown__count">(1)</span>
+        </li>
+      </ul>
+    </div>
     <section id="cards-grid" class="cards-grid" aria-label="TCG cards"></section>
 
     <h2 class="section-title">Poster</h2>
