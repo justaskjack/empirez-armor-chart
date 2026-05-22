@@ -111,7 +111,7 @@
     },
     {
       "image": "Flag 06",
-      "collected": false,
+      "collected": true,
       "displayName": "Lone Wolf Flag",
       "faction": "",
       "cardBack": "flag_cardback02.jpg"
@@ -370,7 +370,7 @@
     },
     {
       "image": "Flag 48",
-      "collected": false,
+      "collected": true,
       "displayName": "Stormtrooper Flag",
       "faction": "",
       "cardBack": "flag_cardback01.jpg"

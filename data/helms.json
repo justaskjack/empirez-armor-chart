@@ -541,7 +541,7 @@
     "image": "Barc Trooper Helmet 02.jpg",
     "col": 2,
     "row": 20,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Barc Trooper Helmet 03",
@@ -1197,7 +1197,7 @@
     "image": "Rebel Technician Helmet.jpg",
     "col": 3,
     "row": 30,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Nute Gunray Head",
@@ -1512,3 +1512,4 @@
     "collected": true
   }
 ]
+
