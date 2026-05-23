@@ -917,7 +917,7 @@
     "image": "Mando Warrior Helmet.jpg",
     "col": 3,
     "row": 9,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Boba Fett Helmet ESB",

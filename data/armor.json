@@ -377,10 +377,21 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Tier 1-3",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment18.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "Cycler Rifle",
+      "rightweapon": "Gaffi Stick",
+      "chest": "Tusken Raider Vest",
+      "shirt": "Tusken Raider Top",
+      "belt": "Tusken Raider Belt",
+      "legs": "Tusken Raider Pants",
+      "head": "Tusken Helmet",
+      "hands": "Wool Gloves",
+      "feet": "Tusken Raider Boots",
+      "armband": "Robe"
+    }
   },
   {
     "name": "Tuskan (Black Variant)",
@@ -1010,7 +1021,17 @@
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
     "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentTooltips": {
+      "leftweapon": "Z6 Rotary Blaster Cannon",
+      "chest": "Paz Visla Vest (3)",
+      "shirt": "Paz Visla Top",
+      "belt": "Paz Visla Belt",
+      "legs": "Paz Visla Pants (3)",
+      "backpack": "Paz Visla Backpack",
+      "head": "Paz Visla Helmet (3)",
+      "hands": "Combat Gloves",
+      "feet": "Paz Visla Boots"
+    }
   },
   {
     "name": "ESB Boba Fett",
