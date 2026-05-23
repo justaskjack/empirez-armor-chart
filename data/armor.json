@@ -205,11 +205,20 @@
     "location": "All tiers",
     "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment17.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "DLT19 Heavy Blaster",
+      "chest": "Biker Scout Chestplate",
+      "shirt": "Biker Scout Top",
+      "belt": "Biker Scout Belt",
+      "legs": "Biker Scout Pants",
+      "head": "Biker Scout Helmet",
+      "hands": "Biker Scout Gloves",
+      "feet": "Biker Scout Boots"
+    }
   },
   {
-    "name": "Shadow Scout",
+    "name": "Storm Commando (Shadow Scout Trooper)",
     "image": "Biker Scout Set (Black Variant).jpg",
     "type": "General Star Wars Armor",
     "protection": 1,
@@ -217,8 +226,17 @@
     "location": "Loot Droids",
     "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment16.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "E11",
+      "chest": "Biker Scout Chestplate",
+      "shirt": "Biker Scout Top",
+      "belt": "Biker Scout Belt",
+      "legs": "Biker Scout Pants",
+      "head": "Biker Scout Helmet",
+      "hands": "Biker Scout Gloves",
+      "feet": "Biker Scout Boots"
+    }
   },
   {
     "name": "Imperial Officer 01",
@@ -529,8 +547,18 @@
     "location": "Imperial Bunker",
     "collected": false,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment15.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "DC15A Rifle",
+      "chest": "Commander Gree Chest Armor (2)",
+      "shirt": "Clone Trooper Top",
+      "belt": "Clone Trooper Belt",
+      "legs": "Commander Gree Pants (2)",
+      "head": "Commander Gree Helmet Chrome (2)",
+      "hands": "Clone Trooper Gloves",
+      "feet": "Clone Trooper Boots (2)",
+      "armband": "Clone Tactical Rig"
+    }
   },
   {
     "name": "Commander Rex",
