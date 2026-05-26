@@ -1381,7 +1381,7 @@
     "image": "Bok Katan Helmet.jpg",
     "col": 1,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Sabine Wren Helmet",
@@ -1389,7 +1389,7 @@
     "image": "Sabine Wren Helmet.jpg",
     "col": 2,
     "row": 3,
-    "collected": false
+    "collected": true
   },
   {
     "name": "Grey Jedi Mask 02",
@@ -1512,4 +1512,6 @@
     "collected": true
   }
 ]
+
+
 

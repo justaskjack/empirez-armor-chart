@@ -1638,6 +1638,157 @@ header.navbar {
   z-index: 4;
 }
 
+/* Murals — base wallpaper thumbnail gallery */
+#page-murals .mural-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: 0.85rem 1rem;
+  justify-items: center;
+  padding: 0.5rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
+#page-murals .mural-card {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #e8dcd8;
+  cursor: pointer;
+  outline: none;
+  transition: z-index 0s linear 0.2s;
+}
+
+#page-murals .mural-card:hover,
+#page-murals .mural-card:focus-visible {
+  z-index: 8;
+  transition-delay: 0s;
+}
+
+#page-murals .mural-card__inner {
+  --mural-red: rgba(255, 72, 72, 0.55);
+  --mural-red-glow: rgba(255, 48, 48, 0.22);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  box-sizing: border-box;
+  padding: 3px;
+  background:
+    linear-gradient(165deg, rgba(28, 10, 12, 0.55) 0%, transparent 42%),
+    linear-gradient(180deg, rgba(6, 4, 5, 0.98) 0%, rgba(10, 6, 8, 0.99) 100%);
+  border: 1px solid var(--mural-red);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.75) inset,
+    0 0 14px var(--mural-red-glow) inset,
+    0 0 10px rgba(255, 32, 32, 0.12);
+  clip-path: polygon(
+    5px 0%,
+    calc(100% - 5px) 0%,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px),
+    0% 5px
+  );
+  transform: translateY(0) scale(1);
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+#page-murals .mural-card:hover .mural-card__inner,
+#page-murals .mural-card:focus-visible .mural-card__inner {
+  --mural-red: rgba(255, 92, 92, 0.78);
+  --mural-red-glow: rgba(255, 56, 56, 0.32);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.8) inset,
+    0 0 22px rgba(255, 40, 40, 0.28) inset,
+    0 6px 18px rgba(0, 0, 0, 0.55),
+    0 0 16px rgba(255, 45, 45, 0.28);
+}
+
+#page-murals .mural-card__media {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 70% at 50% 40%, rgba(40, 14, 18, 0.35), transparent 62%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.72) 100%);
+  border: 1px solid rgba(255, 52, 52, 0.28);
+}
+
+#page-murals .mural-card__thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: filter 0.22s ease, transform 0.22s ease;
+}
+
+#page-murals .mural-card:hover .mural-card__thumb,
+#page-murals .mural-card:focus-visible .mural-card__thumb {
+  filter: brightness(1.08) contrast(1.03);
+  transform: scale(1.03);
+}
+
+#page-murals .mural-card__hover {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.5rem 0.4rem;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(4, 2, 3, 0.75) 55%,
+    rgba(6, 2, 4, 0.92) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+#page-murals .mural-card:hover .mural-card__hover,
+#page-murals .mural-card:focus-visible .mural-card__hover {
+  opacity: 1;
+}
+
+#page-murals .mural-card__hover-name {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  color: #f0e4e4;
+  text-shadow:
+    0 0 12px rgba(255, 60, 60, 0.45),
+    0 0 1px rgba(0, 0, 0, 0.9);
+  max-width: 100%;
+}
+
+#page-murals .mural-page-error {
+  margin: 1rem 2rem;
+  color: #ffb4b4;
+  font-size: 0.95rem;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -1943,6 +2094,7 @@ header.navbar {
 #page-weapons,
 #page-flags,
 #page-bases,
+#page-murals,
 #page-vendors,
 #page-poi,
 #page-servertips {
@@ -1959,6 +2111,7 @@ header.navbar {
 #page-weapons .collectables-master-header,
 #page-flags .collectables-master-header,
 #page-bases .collectables-master-header,
+#page-murals .collectables-master-header,
 #page-vendors .collectables-master-header,
 #page-poi .collectables-master-header,
 #page-marketprices .collectables-master-header,
@@ -2003,6 +2156,7 @@ header.navbar {
 #page-weapons .collectables-master-inner,
 #page-flags .collectables-master-inner,
 #page-bases .collectables-master-inner,
+#page-murals .collectables-master-inner,
 #page-vendors .collectables-master-inner,
 #page-poi .collectables-master-inner,
 #page-marketprices .collectables-master-inner,
@@ -2022,6 +2176,7 @@ header.navbar {
 #page-weapons .collectables-master-kicker,
 #page-flags .collectables-master-kicker,
 #page-bases .collectables-master-kicker,
+#page-murals .collectables-master-kicker,
 #page-vendors .collectables-master-kicker,
 #page-poi .collectables-master-kicker,
 #page-marketprices .collectables-master-kicker,
@@ -2046,6 +2201,7 @@ header.navbar {
 #page-weapons .collectables-master-header .title-bold,
 #page-flags .collectables-master-header .title-bold,
 #page-bases .collectables-master-header .title-bold,
+#page-murals .collectables-master-header .title-bold,
 #page-vendors .collectables-master-header .title-bold,
 #page-poi .collectables-master-header .title-bold,
 #page-marketprices .collectables-master-header .title-bold,
@@ -2063,6 +2219,7 @@ header.navbar {
 #page-weapons .collectables-master-header .title-secondary,
 #page-flags .collectables-master-header .title-secondary,
 #page-bases .collectables-master-header .title-secondary,
+#page-murals .collectables-master-header .title-secondary,
 #page-vendors .collectables-master-header .title-secondary,
 #page-poi .collectables-master-header .title-secondary,
 #page-marketprices .collectables-master-header .title-secondary,
@@ -2834,6 +2991,7 @@ header.navbar {
   #page-weapons .collectables-master-header,
   #page-flags .collectables-master-header,
   #page-bases .collectables-master-header,
+  #page-murals .collectables-master-header,
   #page-vendors .collectables-master-header,
   #page-poi .collectables-master-header,
   #page-marketprices .collectables-master-header,
@@ -2851,6 +3009,7 @@ header.navbar {
   #page-weapons .collectables-master-header .title-bold,
   #page-flags .collectables-master-header .title-bold,
   #page-bases .collectables-master-header .title-bold,
+  #page-murals .collectables-master-header .title-bold,
   #page-vendors .collectables-master-header .title-bold,
   #page-poi .collectables-master-header .title-bold,
   #page-marketprices .collectables-master-header .title-bold,
@@ -2866,11 +3025,17 @@ header.navbar {
   #page-weapons .collectables-master-header .title-secondary,
   #page-flags .collectables-master-header .title-secondary,
   #page-bases .collectables-master-header .title-secondary,
+  #page-murals .collectables-master-header .title-secondary,
   #page-vendors .collectables-master-header .title-secondary,
   #page-poi .collectables-master-header .title-secondary,
   #page-marketprices .collectables-master-header .title-secondary,
   #page-servertips .collectables-master-header .title-secondary {
     font-size: 0.84rem;
+  }
+
+  #page-murals .mural-grid {
+    padding: 0.5rem 1rem 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr));
   }
 
   #page-armor .armor-sets-master-row {

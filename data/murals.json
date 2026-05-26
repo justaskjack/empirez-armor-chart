@@ -1,0 +1,26 @@
+{
+  "imageBase": "images/murals",
+  "murals": [
+    { "image": "mural01.jpg", "title": "XWing In Swamp" },
+    { "image": "mural02.jpg", "title": "Xwing in Space" },
+    { "image": "mural03.jpg", "title": "Vader In a Boat" },
+    { "image": "mural04.jpg", "title": "C" },
+    { "image": "mural05.jpg", "title": "Vader Farmer" },
+    { "image": "mural06.jpg", "title": "Vader Eating" },
+    { "image": "mural07.jpg", "title": "EmpireZ Wallpaper" },
+    { "image": "mural08.jpg", "title": "Porg Jedi" },
+    { "image": "mural09.jpg", "title": "Clone Trooper Mural" },
+    { "image": "mural10.jpg", "title": "Jabba Mural" },
+    { "image": "mural11.jpg", "title": "Rebo Band Mural" },
+    { "image": "mural12.jpg", "title": "Jabba Palace Mural" },
+    { "image": "mural13.jpg", "title": "Mustafar Mural" },
+    { "image": "mural14.jpg", "title": "Stars Mural" },
+    { "image": "mural15.jpg", "title": "Sith Mural" },
+    { "image": "mural16.jpg", "title": "Luke and Vader Mural" },
+    { "image": "mural17.jpg", "title": "The Trilogy" },
+    { "image": "mural18.jpg", "title": "Deathstar Mural" },
+    { "image": "mural19.jpg", "title": "Maul Showdown Mural" },
+    { "image": "mural20.jpg", "title": "Vader and Trooper" },
+    { "image": "mural21.jpg", "title": "Star Destroyer" }
+  ]
+}

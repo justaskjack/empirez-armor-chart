@@ -472,10 +472,19 @@
     "protection": "2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment20.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "E11 Rifle",
+      "rightweapon": "E22 Rifle",
+      "chest": "Shore Trooper Chestplate (2)",
+      "shirt": "Clone Trooper Top",
+      "legs": "Shore Trooper Pants",
+      "head": "Shoretrooper Helmet (2)",
+      "hands": "Combat Gloves",
+      "feet": "Jungle Boots"
+    }
   },
   {
     "name": "Shore Trooper Captain",
@@ -484,10 +493,18 @@
     "protection": "2",
     "rarity": "Rare",
     "location": "Tiers 2-4",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment19.jpg",
+    "equipmentTooltips": {
+      "leftweapon": "E22 Rifle",
+      "chest": "Shore Trooper Chestplate (2)",
+      "shirt": "Clone Trooper Top",
+      "legs": "Shore Trooper Pants",
+      "head": "Shoretrooper Helmet (2)",
+      "hands": "Combat Gloves",
+      "feet": "Combat Boots"
+    }
   },
   {
     "name": "DeathTrooper",
