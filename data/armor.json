@@ -359,6 +359,25 @@
     "equipmentTooltips": {}
   },
   {
+    "name": "Kaminoan",
+    "image": "Kaminoan.jpg",
+    "type": "Character armor sets",
+    "protection": "2",
+    "rarity": "Rare",
+    "location": "Kamino",
+    "collected": true,
+    "cardBack": "armorsets_cardback01.png",
+    "equipmentImage": "equipment21.jpg",
+    "equipmentTooltips": {
+      "chest": "Kamino Vest (2)",
+      "shirt": "Kamino Top",
+      "legs": "Kamino Pants (2)",
+      "head": "Kamino Head (2)",
+      "hands": "Kamino Hands",
+      "feet": "Kamino Boots"
+    }
+  },
+  {
     "name": "Tuskan Raider",
     "image": "Tuskan Raider.jpg",
     "type": "Character armor sets",
@@ -412,10 +431,16 @@
     "protection": 1,
     "rarity": "Uncommon",
     "location": "Starter Gear",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment22.jpg",
+    "equipmentTooltips": {
+      "shirt": "Gunray Top",
+      "legs": "Nute Gunray Pants",
+      "head": "Nute Gunray Head",
+      "hands": "Nute Gunray hands",
+      "feet": "Nute Gunray Boots"
+    }
   },
   {
     "name": "Squid Head",
@@ -1023,10 +1048,16 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Cloud City",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
-    "equipmentTooltips": {}
+    "equipmentImage": "equipment23.jpg",
+    "equipmentTooltips": {
+      "shirt": "Princess Leia Top",
+      "legs": "Princess Leia Pants",
+      "head": "Princess Leia Head",
+      "hands": "Surgical Gloves",
+      "feet": "Princess Leia Boots"
+    }
   },
   {
     "name": "Boba Fett",
@@ -1035,19 +1066,20 @@
     "protection": 2,
     "rarity": "Uncommon",
     "location": "Jabbas Palace",
-    "collected": false,
+    "collected": true,
     "cardBack": "armorsets_cardback01.png",
-    "equipmentImage": "equipment01.jpg",
+    "equipmentImage": "equipment24.jpg",
     "equipmentTooltips": {
-      "leftweapon": "Z6 Rotary Blaster Cannon",
-      "chest": "Paz Visla Vest (3)",
-      "shirt": "Paz Visla Top",
-      "belt": "Paz Visla Belt",
-      "legs": "Paz Visla Pants (3)",
-      "backpack": "Paz Visla Backpack",
-      "head": "Paz Visla Helmet (3)",
+      "leftweapon": "EE3 Mando Blaster",
+      "chest": "Mando Plate Vest, Protection level 2 (2)",
+      "shirt": "Fett Shirt",
+      "belt": "Mando Belt",
+      "legs": "Fett Pants (2)",
+      "backpack": "Mando Pack",
+      "head": "Boba Fett Helmet (2)",
       "hands": "Combat Gloves",
-      "feet": "Paz Visla Boots"
+      "feet": "Fett Boots",
+      "armband": "Fett Armor"
     }
   },
   {
