@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/bases.json')
     .then(res => res.json())
     .then(bases => {
-      const baseContainer = document.getElementById('base-row');
+      const baseContainer = document.getElementById('base-row-legacy');
+      if (!baseContainer) return;
 
       bases.forEach((base, index) => {
         const card = document.createElement('div');
