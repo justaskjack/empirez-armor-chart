@@ -225,6 +225,66 @@
 
     .setup-list li { margin: 0.35rem 0; }
 
+    .mechanic-box {
+      margin: 0 0 1.5rem;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(255, 90, 90, 0.55);
+      background: rgba(28, 10, 12, 0.55);
+    }
+
+    .mechanic-box h2 {
+      margin: 0 0 0.55rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ff9a9a;
+    }
+
+    .checklist {
+      margin: 0.5rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.35rem 0.75rem;
+    }
+
+    .checklist li {
+      font-size: 0.84rem;
+      color: #ddd0d0;
+      padding-left: 1.35rem;
+      position: relative;
+    }
+
+    .checklist li::before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+    }
+
+    .pickup-tag {
+      display: inline-block;
+      margin: 0 0 0.65rem;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8f04a;
+      border: 1px solid rgba(184, 240, 74, 0.45);
+      background: rgba(40, 50, 20, 0.35);
+    }
+
+    .player-action {
+      margin: 0.65rem 0 0;
+      padding: 0.5rem 0.65rem;
+      font-size: 0.84rem;
+      color: #dff6f4;
+      border-left: 3px solid var(--teal);
+      background: rgba(20, 44, 44, 0.12);
+    }
+
     @media (max-width: 600px) {
       .page-wrap { padding-top: 0.75rem; }
       .step-body { padding: 0.75rem; }
@@ -241,17 +301,39 @@
 
     <div class="admin-note">
       <h2>Admin / Pre-Event Notes</h2>
-      <p>This event requires day-of setup and PBO work from Zerk so custom objects can be placed with custom clue descriptions. If ROI isn’t worth the effort, skip it — but if you run it, follow the steps below in order.</p>
+      <p>This event requires day-of setup and PBO work from Zerk so custom lootable items can be placed with custom clue descriptions. If ROI isn’t worth the effort, skip it — but if you run it, follow the steps below in order.</p>
       <ul class="setup-list">
-        <li>Prepare all static items, NPCs, and custom descriptions before go-live.</li>
-        <li>Hide or place objects exactly as noted in each step (yellow-arrow screenshots are references).</li>
-        <li>Final rewards go at the Jedi Temple or the large Jedi structure on the west side of the map.</li>
+        <li>Configure each clue as a <strong>lootable item</strong> that <strong>instantly respawns</strong> when picked up (not a permanent static prop players cannot take).</li>
+        <li>Instant respawn lets multiple players grab the same clue at once without waiting on admins.</li>
+        <li>Place items exactly as noted in each step (yellow-arrow screenshots are references). Decorative props (house asset, carbonite display, etc.) can stay non-lootable.</li>
+        <li>Set up a <strong>turn-in point</strong> at the Jedi Temple or west-side Jedi structure — players must submit <strong>all 12 clue items</strong> to win.</li>
       </ul>
+    </div>
+
+    <div class="mechanic-box">
+      <h2>Event Mechanic — Collect &amp; Turn In</h2>
+      <p>Players follow clues in order, but must <strong>physically loot and keep every clue item</strong> along the way. At the finale they turn in the full set — no hand-holding required at each step, and no skipping ahead without proof of completion.</p>
+      <p><strong>12 clue items to collect:</strong></p>
+      <ol class="checklist">
+        <li>Power Converter</li>
+        <li>Moisture Evaporator</li>
+        <li>R2 Unit</li>
+        <li>Obi-Wan Lightsaber</li>
+        <li>Falcon Datapad</li>
+        <li>Pilot Helmet</li>
+        <li>Vader Mask</li>
+        <li>Han in Carbonite</li>
+        <li>Mechanical Hand</li>
+        <li>Boushh Helm</li>
+        <li>Palpatine’s Saber</li>
+        <li>Yoda Force Ghost</li>
+      </ol>
     </div>
 
     <div class="callout">
       <strong>Day of event — player announcement:</strong> The treasure hunt has started! Begin at <strong>Tosche Station</strong>.<br><br>
-      <strong>Important:</strong> Players must <strong>inspect</strong> event items to read clue descriptions — tab to the item, then click <strong>middle mouse button</strong>.
+      <strong>How to play:</strong> Find each clue item, <strong>inspect</strong> it (tab the item → <strong>middle mouse button</strong>) to read where to go next, then <strong>pick it up and keep it</strong>. Items respawn instantly for other players.<br><br>
+      <strong>To win:</strong> Turn in <strong>all 12 clue items</strong> at the Jedi Temple (or west-side Jedi structure) when you reach the end.
     </div>
 
     <figure class="event-figure">
@@ -268,13 +350,15 @@
         <h2 class="step-title">Tosche Station — Droid Factory</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Hide a static <strong>power converter</strong> between the two droids on the top level of the droid factory.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #1</span>
+        <p><strong>Setup:</strong> Place a lootable <strong>power converter</strong> (instant respawn) between the two droids on the top level of the droid factory.</p>
         <figure class="event-figure">
-          <a href="images/events/hunt-for-luke/01-tosche-droids.png" data-lightbox="event" data-title="Tosche Station — hide power converter between droids">
+          <a href="images/events/hunt-for-luke/01-tosche-droids.png" data-lightbox="event" data-title="Tosche Station — power converter spawn between droids">
             <img src="images/events/hunt-for-luke/01-tosche-droids.png" alt="Tosche Station droid factory placement" loading="lazy" />
           </a>
-          <figcaption>Hide the power converter between these two droids (top level).</figcaption>
+          <figcaption>Spawn the power converter between these two droids (top level).</figcaption>
         </figure>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Power Converter).</p>
         <div class="clue">
           <span class="clue-label">Clue on power converter</span>I never made it off this shelf,
 Though once I dreamed of more myself.
@@ -297,22 +381,24 @@ His family watched him drift away.
         <h2 class="step-title">Lars Homestead</h2>
       </div>
       <div class="step-body">
+        <span class="pickup-tag">Lootable · instant respawn · clue #2</span>
         <p><strong>Setup:</strong></p>
         <ul class="setup-list">
-          <li>Place the Lars house asset near the admin shop.</li>
-          <li>Add a <strong>moisture evaporator</strong> and a static <strong>Jawa</strong>.</li>
-          <li>Jawa inspect description contains the next clue.</li>
+          <li>Place the Lars house asset near the admin shop (decoration only).</li>
+          <li>Optional: static <strong>Jawa</strong> NPC for atmosphere.</li>
+          <li>Spawn a lootable <strong>moisture evaporator</strong> (instant respawn) with the clue description below.</li>
         </ul>
         <div class="figure-grid figure-grid--two">
           <figure class="event-figure">
             <a href="images/events/hunt-for-luke/04-lars-homestead.png" data-lightbox="event" data-title="Lars Homestead — placement by admin shop">
               <img src="images/events/hunt-for-luke/04-lars-homestead.png" alt="Lars Homestead location by admin shop" loading="lazy" />
             </a>
-            <figcaption>Place house asset, evaporator, and Jawa by the admin shop.</figcaption>
+            <figcaption>House asset + lootable moisture evaporator by the admin shop.</figcaption>
           </figure>
         </div>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Moisture Evaporator).</p>
         <div class="clue">
-          <span class="clue-label">Clue on Jawa</span>Traded good, traded fast — you lookin’ for the shiny one?
+          <span class="clue-label">Clue on moisture evaporator</span>Traded good, traded fast — you lookin’ for the shiny one?
 Not here, not now... he’s rollin’ with the rustin’ ton.
 We sold, we moved — left tracks in sand so wide.
 Big crawl, big haul — metal hills that glide.
@@ -331,13 +417,15 @@ That’s where your next secret’ll beep.
         <h2 class="step-title">Sandcrawler</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Place a static <strong>R2 unit</strong> at the sandcrawler for players to inspect.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #3</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>R2 unit</strong> (instant respawn) at the sandcrawler.</p>
         <figure class="event-figure">
-          <a href="images/events/hunt-for-luke/05-sandcrawler.png" data-lightbox="event" data-title="Sandcrawler — place static R2 here">
+          <a href="images/events/hunt-for-luke/05-sandcrawler.png" data-lightbox="event" data-title="Sandcrawler — R2 clue spawn">
             <img src="images/events/hunt-for-luke/05-sandcrawler.png" alt="Sandcrawler location" loading="lazy" />
           </a>
-          <figcaption>Place static R2 at the sandcrawler.</figcaption>
+          <figcaption>Lootable R2 spawn at the sandcrawler.</figcaption>
         </figure>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (R2 Unit).</p>
         <div class="clue">
           <span class="clue-label">Clue on R2</span>The boy’s path turned when suns were high,
 Past dunes where metal bones still lie.
@@ -360,13 +448,15 @@ And all that’s lost is sold or bought.
         <h2 class="step-title">Mos Eisley Cantina</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Hide an <strong>Obi-Wan lightsaber</strong> behind the table behind the bar in the cantina.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #4</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>Obi-Wan lightsaber</strong> (instant respawn) behind the table behind the bar in the cantina.</p>
         <figure class="event-figure">
-          <a href="images/events/hunt-for-luke/06-cantina.png" data-lightbox="event" data-title="Cantina — hide Obi-Wan lightsaber behind table">
+          <a href="images/events/hunt-for-luke/06-cantina.png" data-lightbox="event" data-title="Cantina — Obi-Wan lightsaber spawn behind table">
             <img src="images/events/hunt-for-luke/06-cantina.png" alt="Cantina hiding spot behind the bar" loading="lazy" />
           </a>
-          <figcaption>Hide Obi-Wan lightsaber behind this table.</figcaption>
+          <figcaption>Lootable Obi-Wan lightsaber spawn behind this table.</figcaption>
         </figure>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Obi-Wan Lightsaber).</p>
         <div class="clue">
           <span class="clue-label">Clue on lightsaber</span>Swift was the cut that cleared our way,
 A flash of light, then no delay.
@@ -391,7 +481,9 @@ Its hum and hull a loaded gun.
         <h2 class="step-title">Millennium Falcon — Mos Eisley</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Hide a <strong>datapad</strong> near the Falcon.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #5</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>datapad</strong> (instant respawn) near the Falcon.</p>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Falcon Datapad).</p>
         <div class="clue">
           <span class="clue-label">Clue on datapad</span>A moon that burned, a star undone,
 One shot fired, and darkness spun.
@@ -419,13 +511,15 @@ A base unknown, without a name.
         <h2 class="step-title">Hoth</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Hide a <strong>pilot helmet</strong> near Luke’s X-wing.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #6</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>pilot helmet</strong> (instant respawn) near Luke’s X-wing.</p>
         <figure class="event-figure">
-          <a href="images/events/hunt-for-luke/08-hoth-xwing.png" data-lightbox="event" data-title="Hoth — hide pilot helmet near Luke's X-wing">
+          <a href="images/events/hunt-for-luke/08-hoth-xwing.png" data-lightbox="event" data-title="Hoth — pilot helmet spawn near Luke's X-wing">
             <img src="images/events/hunt-for-luke/08-hoth-xwing.png" alt="Hoth X-wing placement" loading="lazy" />
           </a>
-          <figcaption>Hide pilot helmet near Luke’s X-wing on Hoth.</figcaption>
+          <figcaption>Lootable pilot helmet spawn near Luke’s X-wing on Hoth.</figcaption>
         </figure>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Pilot Helmet).</p>
         <div class="clue">
           <span class="clue-label">Clue on pilot helmet</span>I flew with fire and fought with flame,
 But knew my path was not the same.
@@ -450,13 +544,15 @@ And patience carves the hands of fate
         <h2 class="step-title">Yoda’s Hut — Dagobah</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Hide a <strong>Vader mask</strong> near the sunken X-wing.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #7</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>Vader mask</strong> (instant respawn) near the sunken X-wing.</p>
         <figure class="event-figure">
-          <a href="images/events/hunt-for-luke/07-yoda-xwing.png" data-lightbox="event" data-title="Yoda's area — hide Vader mask near sunken X-wing">
+          <a href="images/events/hunt-for-luke/07-yoda-xwing.png" data-lightbox="event" data-title="Yoda's area — Vader mask spawn near sunken X-wing">
             <img src="images/events/hunt-for-luke/07-yoda-xwing.png" alt="Sunken X-wing near Yoda's hut" loading="lazy" />
           </a>
-          <figcaption>Hide Vader mask near the sunken X-wing.</figcaption>
+          <figcaption>Lootable Vader mask spawn near the sunken X-wing.</figcaption>
         </figure>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Vader Mask).</p>
         <div class="clue">
           <span class="clue-label">Clue on Vader mask</span>The face you fear is not your foe,
 But what you bring, and what you know.
@@ -481,13 +577,15 @@ Where answers wait... and end their time
         <h2 class="step-title">Cloud City</h2>
       </div>
       <div class="step-body">
+        <span class="pickup-tag">Lootable · instant respawn · clues #8 &amp; #9</span>
         <p><strong>Setup:</strong></p>
         <ul class="setup-list">
-          <li>Place <strong>Han in carbonite</strong> next to the parked Slave I.</li>
-          <li>Place a <strong>mechanical Hand</strong> item on the ground somewhere beneath Cloud City (Luke’s severed hand).</li>
+          <li>Spawn a lootable <strong>Han in carbonite</strong> (instant respawn) next to the parked Slave I — clue #8.</li>
+          <li>Spawn a lootable <strong>mechanical Hand</strong> (instant respawn) on the ground beneath Cloud City — clue #9.</li>
         </ul>
+        <p class="player-action"><strong>Player:</strong> Collect both items. Inspect each, read its clue, pick up and keep both (Han in Carbonite + Mechanical Hand).</p>
         <div class="clue">
-          <span class="clue-label">Clue on Han in carbonite</span>One was taken, sealed in stone,
+          <span class="clue-label">Clue on Han in carbonite (clue #8)</span>One was taken, sealed in stone,
 Another lost, now lies alone.
 
 A prize was claimed and flown away,
@@ -500,7 +598,7 @@ Beneath the place where shadows land,
 You'll find the fate of a fallen hand
         </div>
         <div class="clue">
-          <span class="clue-label">Clue on mechanical hand</span>The blade is gone, the truth was told,
+          <span class="clue-label">Clue on mechanical hand (clue #9)</span>The blade is gone, the truth was told,
 A name revealed, a grip grown cold.
 
 Friends are scattered, hope is thin —
@@ -523,7 +621,9 @@ Where fear begins… and rescue ends
         <h2 class="step-title">Jabba’s Palace</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Drop a <strong>Boushh helm</strong> in the rancor pit.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #10</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>Boushh helm</strong> (instant respawn) in the rancor pit.</p>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Boushh Helm).</p>
         <div class="clue">
           <span class="clue-label">Clue on Boushh helm</span>A mask was worn, a prize unchained,
 In halls where monsters once were chained.
@@ -548,7 +648,9 @@ A son, a father, a last despair
         <h2 class="step-title">Death Star</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Use the Death Star hangar asset (or equivalent location). Place <strong>Palpatine’s saber</strong> with the next clue.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #11</span>
+        <p><strong>Setup:</strong> Use the Death Star hangar asset (or equivalent location). Spawn a lootable <strong>Palpatine’s saber</strong> (instant respawn) with the next clue.</p>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Palpatine’s Saber).</p>
         <div class="clue">
           <span class="clue-label">Clue on Palpatine’s saber</span>The throne is shattered, silence won,
 The shadow’s reign at last undone.
@@ -573,7 +675,9 @@ Where stars fell dark... and hearts rose clear.
         <h2 class="step-title">Ewok Village</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> Place <strong>Yoda Force Ghost</strong> NPC with the final clue.</p>
+        <span class="pickup-tag">Lootable · instant respawn · clue #12</span>
+        <p><strong>Setup:</strong> Spawn a lootable <strong>Yoda Force Ghost</strong> item (instant respawn) with the final clue — not a static NPC players cannot take.</p>
+        <p class="player-action"><strong>Player:</strong> Inspect → read clue → pick up and keep (Yoda Force Ghost). This is the last collectible before turn-in.</p>
         <div class="clue">
           <span class="clue-label">Final clue on Yoda Force Ghost</span>Much you’ve seen, and much you’ve done,
 A path of stars, through dark and sun.
@@ -598,11 +702,13 @@ The place where Jedi hold within
         <h2 class="step-title">Finale — Rewards</h2>
       </div>
       <div class="step-body">
-        <p><strong>Setup:</strong> At the <strong>Jedi Temple</strong> or the <strong>massive Jedi structure on the west side of the map</strong>, place either:</p>
+        <p><strong>Setup:</strong> At the <strong>Jedi Temple</strong> or the <strong>massive Jedi structure on the west side of the map</strong>, set up a <strong>turn-in point</strong> (crate, vendor, or admin hand-in).</p>
         <ul class="setup-list">
-          <li>A reward crate containing event prizes, or</li>
-          <li>An item players turn in to an admin for rewards.</li>
+          <li>Players must submit <strong>all 12 clue items</strong> to complete the hunt and receive rewards.</li>
+          <li>No partial turn-ins — the full set proves they followed the chain without skipping steps.</li>
+          <li>Because clue spawns instantly respawn, admins do not need to supervise each location.</li>
         </ul>
+        <p class="player-action"><strong>Player:</strong> Turn in Power Converter, Moisture Evaporator, R2 Unit, Obi-Wan Lightsaber, Falcon Datapad, Pilot Helmet, Vader Mask, Han in Carbonite, Mechanical Hand, Boushh Helm, Palpatine’s Saber, and Yoda Force Ghost → collect your reward.</p>
         <p>Congratulations — the Hunt for Luke is complete.</p>
       </div>
     </article>
