@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hunt for Luke — EmpireZ Event Guide</title>
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <style>
+    :root {
+      --bg: #050505;
+      --panel: #141010;
+      --text: #f2ecec;
+      --muted: #c8b8b8;
+      --accent: #ff5252;
+      --accent-glow: rgba(255, 72, 72, 0.35);
+      --teal: #79d8d2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .page-wrap {
+      width: min(980px, 94vw);
+      margin: 0 auto;
+      padding: 1.25rem 0 3rem;
+    }
+
+    .master-header {
+      margin: 0 0 1.25rem;
+      padding: 0.85rem 1rem 1rem;
+      border: 1px solid rgba(255, 64, 64, 0.6);
+      background: linear-gradient(180deg, rgba(20, 8, 10, 0.95) 0%, rgba(10, 4, 6, 0.96) 100%);
+      box-shadow: 0 0 16px rgba(255, 52, 52, 0.16), inset 0 0 16px rgba(255, 40, 40, 0.14);
+      clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
+    }
+
+    .kicker {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid color-mix(in srgb, var(--teal) 42%, transparent);
+      background: rgba(20, 44, 44, 0.18);
+      padding: 0.14rem 0.42rem;
+      margin-bottom: 0.35rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      letter-spacing: 0.04em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 720px;
+    }
+
+    .callout {
+      margin: 1rem 0 1.5rem;
+      padding: 0.85rem 1rem;
+      border: 1px solid rgba(121, 216, 210, 0.45);
+      background: rgba(20, 44, 44, 0.15);
+      color: #dff6f4;
+      font-size: 0.92rem;
+    }
+
+    .callout strong { color: #fff; }
+
+    .admin-note {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      border: 1px dashed rgba(255, 120, 120, 0.45);
+      background: rgba(20, 10, 12, 0.55);
+      color: #d8c8c8;
+      font-size: 0.88rem;
+    }
+
+    .admin-note h2 {
+      margin: 0 0 0.5rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ff9a9a;
+    }
+
+    .step {
+      margin-bottom: 1.75rem;
+      border: 1px solid rgba(255, 66, 66, 0.55);
+      background: linear-gradient(180deg, rgba(18, 8, 10, 0.92) 0%, rgba(10, 5, 7, 0.96) 100%);
+      box-shadow: inset 0 0 18px rgba(255, 42, 42, 0.08);
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.55rem 0.9rem;
+      border-bottom: 1px solid rgba(255, 66, 66, 0.35);
+      background: linear-gradient(180deg, rgba(28, 10, 12, 0.95) 0%, rgba(12, 5, 8, 0.98) 100%);
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 1.75rem;
+      height: 1.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #ffe6e6;
+      border: 1px solid rgba(255, 90, 90, 0.7);
+      background: rgba(255, 42, 42, 0.12);
+    }
+
+    .step-title {
+      margin: 0;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffe6e6;
+    }
+
+    .step-body {
+      padding: 0.9rem 1rem 1.1rem;
+    }
+
+    .step-body p {
+      margin: 0 0 0.75rem;
+      color: #ddd0d0;
+      font-size: 0.94rem;
+    }
+
+    .step-body p:last-child { margin-bottom: 0; }
+
+    .leads-to {
+      margin: 0.75rem 0 0;
+      padding: 0.45rem 0.65rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border-left: 3px solid var(--teal);
+      background: rgba(20, 44, 44, 0.12);
+    }
+
+    .clue {
+      margin: 0.85rem 0;
+      padding: 0.85rem 1rem;
+      border: 1px solid rgba(255, 80, 80, 0.4);
+      background: rgba(0, 0, 0, 0.35);
+      color: #f0e0e0;
+      font-style: italic;
+      white-space: pre-line;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    .clue-label {
+      display: block;
+      margin-bottom: 0.45rem;
+      font-style: normal;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ff9a9a;
+    }
+
+    .figure-grid {
+      display: grid;
+      gap: 0.85rem;
+      margin: 0.85rem 0 0;
+    }
+
+    .figure-grid--two {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    figure.event-figure {
+      margin: 0;
+      border: 1px solid #333;
+      background: #0b0b0b;
+      padding: 0.45rem;
+    }
+
+    figure.event-figure a {
+      display: block;
+      line-height: 0;
+    }
+
+    figure.event-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+
+    figure.event-figure figcaption {
+      margin-top: 0.45rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    .setup-list {
+      margin: 0.5rem 0 0;
+      padding-left: 1.2rem;
+      color: #ccc;
+    }
+
+    .setup-list li { margin: 0.35rem 0; }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding-top: 0.75rem; }
+      .step-body { padding: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="master-header">
+      <span class="kicker">EmpireZ Event</span>
+      <h1>The Hunt for Luke</h1>
+      <p class="subtitle">Treasure hunt / scavenger hunt — admin setup guide and full clue chain for players.</p>
+    </header>
+
+    <div class="admin-note">
+      <h2>Admin / Pre-Event Notes</h2>
+      <p>This event requires day-of setup and PBO work from Zerk so custom objects can be placed with custom clue descriptions. If ROI isn’t worth the effort, skip it — but if you run it, follow the steps below in order.</p>
+      <ul class="setup-list">
+        <li>Prepare all static items, NPCs, and custom descriptions before go-live.</li>
+        <li>Hide or place objects exactly as noted in each step (yellow-arrow screenshots are references).</li>
+        <li>Final rewards go at the Jedi Temple or the large Jedi structure on the west side of the map.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <strong>Day of event — player announcement:</strong> The treasure hunt has started! Begin at <strong>Tosche Station</strong>.<br><br>
+      <strong>Important:</strong> Players must <strong>inspect</strong> event items to read clue descriptions — tab to the item, then click <strong>middle mouse button</strong>.
+    </div>
+
+    <figure class="event-figure">
+      <a href="images/events/hunt-for-luke/02-inspect-ui.png" data-lightbox="event" data-title="Inspect event items to read clues">
+        <img src="images/events/hunt-for-luke/02-inspect-ui.png" alt="Example inspect UI showing item description" loading="lazy" />
+      </a>
+      <figcaption>Example: inspect an event item to read its clue description.</figcaption>
+    </figure>
+
+    <!-- STEP 1 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h2 class="step-title">Tosche Station — Droid Factory</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Hide a static <strong>power converter</strong> between the two droids on the top level of the droid factory.</p>
+        <figure class="event-figure">
+          <a href="images/events/hunt-for-luke/01-tosche-droids.png" data-lightbox="event" data-title="Tosche Station — hide power converter between droids">
+            <img src="images/events/hunt-for-luke/01-tosche-droids.png" alt="Tosche Station droid factory placement" loading="lazy" />
+          </a>
+          <figcaption>Hide the power converter between these two droids (top level).</figcaption>
+        </figure>
+        <div class="clue">
+          <span class="clue-label">Clue on power converter</span>I never made it off this shelf,
+Though once I dreamed of more myself.
+A restless farmboy came to call,
+But chores would always stall it all.
+
+If moisture’s what you seek to find,
+Go where twin suns scorch and blind.
+There ‘neath domes of humble clay,
+His family watched him drift away.
+        </div>
+        <p class="leads-to">→ Leads players to the Lars Homestead</p>
+      </div>
+    </article>
+
+    <!-- STEP 2 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h2 class="step-title">Lars Homestead</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong></p>
+        <ul class="setup-list">
+          <li>Place the Lars house asset near the admin shop.</li>
+          <li>Add a <strong>moisture evaporator</strong> and a static <strong>Jawa</strong>.</li>
+          <li>Jawa inspect description contains the next clue.</li>
+        </ul>
+        <div class="figure-grid figure-grid--two">
+          <figure class="event-figure">
+            <a href="images/events/hunt-for-luke/04-lars-homestead.png" data-lightbox="event" data-title="Lars Homestead — placement by admin shop">
+              <img src="images/events/hunt-for-luke/04-lars-homestead.png" alt="Lars Homestead location by admin shop" loading="lazy" />
+            </a>
+            <figcaption>Place house asset, evaporator, and Jawa by the admin shop.</figcaption>
+          </figure>
+        </div>
+        <div class="clue">
+          <span class="clue-label">Clue on Jawa</span>Traded good, traded fast — you lookin’ for the shiny one?
+Not here, not now... he’s rollin’ with the rustin’ ton.
+We sold, we moved — left tracks in sand so wide.
+Big crawl, big haul — metal hills that glide.
+
+Look where scrappers sleep and oil runs deep
+That’s where your next secret’ll beep.
+        </div>
+        <p class="leads-to">→ Leads players to the Sandcrawler</p>
+      </div>
+    </article>
+
+    <!-- STEP 3 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <h2 class="step-title">Sandcrawler</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Place a static <strong>R2 unit</strong> at the sandcrawler for players to inspect.</p>
+        <figure class="event-figure">
+          <a href="images/events/hunt-for-luke/05-sandcrawler.png" data-lightbox="event" data-title="Sandcrawler — place static R2 here">
+            <img src="images/events/hunt-for-luke/05-sandcrawler.png" alt="Sandcrawler location" loading="lazy" />
+          </a>
+          <figcaption>Place static R2 at the sandcrawler.</figcaption>
+        </figure>
+        <div class="clue">
+          <span class="clue-label">Clue on R2</span>The boy’s path turned when suns were high,
+Past dunes where metal bones still lie.
+He followed one who knew the way,
+Toward stone and shadowed hideaways.
+
+No farms, no kin — just watchful eyes,
+And towers poking at the skies.
+Find the place where names mean naught,
+And all that’s lost is sold or bought.
+        </div>
+        <p class="leads-to">→ Leads players to Mos Eisley Cantina</p>
+      </div>
+    </article>
+
+    <!-- STEP 4 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">4</span>
+        <h2 class="step-title">Mos Eisley Cantina</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Hide an <strong>Obi-Wan lightsaber</strong> behind the table behind the bar in the cantina.</p>
+        <figure class="event-figure">
+          <a href="images/events/hunt-for-luke/06-cantina.png" data-lightbox="event" data-title="Cantina — hide Obi-Wan lightsaber behind table">
+            <img src="images/events/hunt-for-luke/06-cantina.png" alt="Cantina hiding spot behind the bar" loading="lazy" />
+          </a>
+          <figcaption>Hide Obi-Wan lightsaber behind this table.</figcaption>
+        </figure>
+        <div class="clue">
+          <span class="clue-label">Clue on lightsaber</span>Swift was the cut that cleared our way,
+A flash of light, then no delay.
+
+What words could not, coin swiftly spoke —
+And wheels of fate began to smoke.
+
+Now leave this den of wary eyes,
+For where escape through engines lies.
+
+Your passage waits beneath the sun,
+Its hum and hull a loaded gun.
+        </div>
+        <p class="leads-to">→ Leads players to the Millennium Falcon at Mos Eisley</p>
+      </div>
+    </article>
+
+    <!-- STEP 5 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">5</span>
+        <h2 class="step-title">Millennium Falcon — Mos Eisley</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Hide a <strong>datapad</strong> near the Falcon.</p>
+        <div class="clue">
+          <span class="clue-label">Clue on datapad</span>A moon that burned, a star undone,
+One shot fired, and darkness spun.
+
+A farmboy’s aim, a smuggler’s hand,
+Together turned the tide to sand.
+
+But triumph paints a target wide —
+Now hunted, scattered, forced to hide.
+
+Seek the silence, buried deep,
+Where breath turns fog and steel must sleep.
+
+There waits the frost, the rebel flame,
+A base unknown, without a name.
+        </div>
+        <p class="leads-to">→ Leads players to Hoth</p>
+      </div>
+    </article>
+
+    <!-- STEP 6 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">6</span>
+        <h2 class="step-title">Hoth</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Hide a <strong>pilot helmet</strong> near Luke’s X-wing.</p>
+        <figure class="event-figure">
+          <a href="images/events/hunt-for-luke/08-hoth-xwing.png" data-lightbox="event" data-title="Hoth — hide pilot helmet near Luke's X-wing">
+            <img src="images/events/hunt-for-luke/08-hoth-xwing.png" alt="Hoth X-wing placement" loading="lazy" />
+          </a>
+          <figcaption>Hide pilot helmet near Luke’s X-wing on Hoth.</figcaption>
+        </figure>
+        <div class="clue">
+          <span class="clue-label">Clue on pilot helmet</span>I flew with fire and fought with flame,
+But knew my path was not the same.
+
+The snows have stilled, the battle passed —
+Now deeper truths must surface fast.
+
+Beyond the maps, beyond the light,
+A world of shadow, sense, and fright.
+
+Where roots entwine and visions wait,
+And patience carves the hands of fate
+        </div>
+        <p class="leads-to">→ Leads players to Yoda’s Hut</p>
+      </div>
+    </article>
+
+    <!-- STEP 7 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">7</span>
+        <h2 class="step-title">Yoda’s Hut — Dagobah</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Hide a <strong>Vader mask</strong> near the sunken X-wing.</p>
+        <figure class="event-figure">
+          <a href="images/events/hunt-for-luke/07-yoda-xwing.png" data-lightbox="event" data-title="Yoda's area — hide Vader mask near sunken X-wing">
+            <img src="images/events/hunt-for-luke/07-yoda-xwing.png" alt="Sunken X-wing near Yoda's hut" loading="lazy" />
+          </a>
+          <figcaption>Hide Vader mask near the sunken X-wing.</figcaption>
+        </figure>
+        <div class="clue">
+          <span class="clue-label">Clue on Vader mask</span>The face you fear is not your foe,
+But what you bring, and what you know.
+
+A tower floats in golden haze,
+Where truth cuts sharp through shifting praise.
+
+Trust may rise, but fall it must —
+In halls of gas and broken trust.
+
+To skies above you now must climb,
+Where answers wait... and end their time
+        </div>
+        <p class="leads-to">→ Leads players to Cloud City</p>
+      </div>
+    </article>
+
+    <!-- STEP 8 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">8</span>
+        <h2 class="step-title">Cloud City</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong></p>
+        <ul class="setup-list">
+          <li>Place <strong>Han in carbonite</strong> next to the parked Slave I.</li>
+          <li>Place a <strong>mechanical Hand</strong> item on the ground somewhere beneath Cloud City (Luke’s severed hand).</li>
+        </ul>
+        <div class="clue">
+          <span class="clue-label">Clue on Han in carbonite</span>One was taken, sealed in stone,
+Another lost, now lies alone.
+
+A prize was claimed and flown away,
+But what was severed chose to stay.
+
+Look not to stars, but far below —
+Where silent scraps no longer glow.
+
+Beneath the place where shadows land,
+You'll find the fate of a fallen hand
+        </div>
+        <div class="clue">
+          <span class="clue-label">Clue on mechanical hand</span>The blade is gone, the truth was told,
+A name revealed, a grip grown cold.
+
+Friends are scattered, hope is thin —
+But shadowed halls still hold our kin.
+
+No throne of light, no crown of grace,
+Just coils and chains in a desolate place.
+
+To sand and stone our path now bends,
+Where fear begins… and rescue ends
+        </div>
+        <p class="leads-to">→ Leads players to Jabba’s Palace</p>
+      </div>
+    </article>
+
+    <!-- STEP 9 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">9</span>
+        <h2 class="step-title">Jabba’s Palace</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Drop a <strong>Boushh helm</strong> in the rancor pit.</p>
+        <div class="clue">
+          <span class="clue-label">Clue on Boushh helm</span>A mask was worn, a prize unchained,
+In halls where monsters once were chained.
+
+The fire is out, the trap was sprung,
+But one last thread remains unsung.
+
+Above the moon where forests breathe,
+A shell of steel hides death beneath.
+
+There waits the throne, the final snare —
+A son, a father, a last despair
+        </div>
+        <p class="leads-to">→ Leads players to the Death Star</p>
+      </div>
+    </article>
+
+    <!-- STEP 10 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">10</span>
+        <h2 class="step-title">Death Star</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Use the Death Star hangar asset (or equivalent location). Place <strong>Palpatine’s saber</strong> with the next clue.</p>
+        <div class="clue">
+          <span class="clue-label">Clue on Palpatine’s saber</span>The throne is shattered, silence won,
+The shadow’s reign at last undone.
+
+No storm remains, no fire roars —
+Just ashes cold on broken floors.
+
+Yet far below where treetops sway,
+A drumbeat marks the end of fray.
+
+Seek the songs, the rising cheer —
+Where stars fell dark... and hearts rose clear.
+        </div>
+        <p class="leads-to">→ Leads players to an Ewok village</p>
+      </div>
+    </article>
+
+    <!-- STEP 11 -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">11</span>
+        <h2 class="step-title">Ewok Village</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> Place <strong>Yoda Force Ghost</strong> NPC with the final clue.</p>
+        <div class="clue">
+          <span class="clue-label">Final clue on Yoda Force Ghost</span>Much you’ve seen, and much you’ve done,
+A path of stars, through dark and sun.
+
+The battle fades, the fire sleeps —
+But knowledge waits where silence keeps.
+
+In stone and spire, in halls of light,
+The echoes of the old still write.
+
+Return you must, where truths begin —
+The place where Jedi hold within
+        </div>
+        <p class="leads-to">→ Leads players to the Jedi Temple or the large Jedi structure on the west side of the map</p>
+      </div>
+    </article>
+
+    <!-- FINALE -->
+    <article class="step">
+      <div class="step-header">
+        <span class="step-num">★</span>
+        <h2 class="step-title">Finale — Rewards</h2>
+      </div>
+      <div class="step-body">
+        <p><strong>Setup:</strong> At the <strong>Jedi Temple</strong> or the <strong>massive Jedi structure on the west side of the map</strong>, place either:</p>
+        <ul class="setup-list">
+          <li>A reward crate containing event prizes, or</li>
+          <li>An item players turn in to an admin for rewards.</li>
+        </ul>
+        <p>Congratulations — the Hunt for Luke is complete.</p>
+      </div>
+    </article>
+  </div>
+
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
