@@ -62,11 +62,19 @@
       border: 1px solid var(--border); background: var(--surface); color: var(--text);
     }
     .table-scroll {
-      overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 8px;
       background: var(--surface);
     }
     table.catalog {
-      width: 100%; border-collapse: collapse; font-size: 0.82rem;
+      width: max-content;
+      min-width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      table-layout: auto;
     }
     table.catalog thead {
       position: sticky; top: 0; z-index: 2;
@@ -151,6 +159,7 @@
         <li><strong>Collector vs pack mismatch</strong> - EmpireZ checklist number maps to a different legacy slot than the classname packs actually drop.</li>
         <li><strong>Missing from all pack scripts</strong> - classname never Insert()&#39;d; card still defined in config.</li>
       </ul>
+    </div>
 
     <div class="toolbar">
       <label for="search">Search</label>
