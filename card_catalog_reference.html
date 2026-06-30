@@ -107,6 +107,7 @@
     .rarity-rare { color: #80cbc4; }
     .rarity-common, .rarity-uncommon { color: var(--muted); }
     .rarity-energy, .rarity-trainer { color: #b39ddb; }
+    .notes { min-width: 18rem; max-width: 28rem; color: #cfd8dc; line-height: 1.35; }
     footer {
       margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
       font-size: 0.78rem; color: var(--muted);
@@ -116,7 +117,7 @@
 <body>
   <div class="wrap">
     <h1>EmpireZ TCG - Full Card Catalog</h1>
-    <p class="subtitle">All 337 collector cards in order: Series 1 (#1â€“137) then Series 2 (#1â€“200). Mapped for <code>config_new</code> EmpireZ boxes (<code>EmpireZ_S1_*</code> / <code>EmpireZ_S2_*</code>). Mod pack rarity from base Pokemon booster scripts (Basic / Jungle / Fossil).</p>
+    <p class="subtitle">All 337 collector cards in order: Series 1 (#1-137) then Series 2 (#1-200). Mapped for <code>config_new</code> EmpireZ boxes (<code>EmpireZ_S1_*</code> / <code>EmpireZ_S2_*</code>). Mod pack rarity from base Pokemon booster scripts (Basic / Jungle / Fossil).</p>
 
     <div class="stats">
       <div class="stat"><strong>337</strong><span>Total cards</span></div>
@@ -136,8 +137,20 @@
         <li><strong>Mod pack rarity</strong> - highest tier that classname appears in across Basic/Jungle/Fossil pack loot tables (Energy, Trainer, Common through Legendary).</li>
         <li><strong>EmpireZ box slot</strong> - attachment slot on <code>EmpireZ_CardBox_Series1/2</code> in <code>config_new.cpp</code>.</li>
         <li><strong>Legacy box slot</strong> - original Pokemon collector box slot (<code>Pokemon_NNN</code>, trainer, energy) if using vanilla boxes.</li>
+        <li><strong>Notes</strong> - for cards not in pack loot: why (Team Rocket commented, variant not listed, shared slot sibling drops instead, missing from pack scripts, etc.).</li>
       </ul>
     </div>
+
+    <div class="legend">
+      <h2>Notes categories (not in packs)</h2>
+      <ul>
+        <li><strong>Team Rocket - commented, unfinished</strong> - //TeamRocket lines in seal-box script; rainbow energy / trainers 25-31; Rocket pack never implemented.</li>
+        <li><strong>Variant not in packs</strong> - base classname (e.g. Pokemoncard004) is in loot tables but this suffix variant (R, H, RH) is not.</li>
+        <li><strong>Set variant not in packs</strong> - Jungle (J) or Fossil (F/FH) print exists in packs under a related classname, not this one.</li>
+        <li><strong>Shared legacy slot</strong> - another print for the same Pokemon_* / trainer slot drops from packs.</li>
+        <li><strong>Collector vs pack mismatch</strong> - EmpireZ checklist number maps to a different legacy slot than the classname packs actually drop.</li>
+        <li><strong>Missing from all pack scripts</strong> - classname never Insert()&#39;d; card still defined in config.</li>
+      </ul>
 
     <div class="toolbar">
       <label for="search">Search</label>
@@ -172,6 +185,7 @@
             <th>Legacy box slot</th>
             <th>Box item</th>
             <th>Card back</th>
+            <th>Notes</th>
           </tr>
         </thead>
         <tbody>
@@ -194,6 +208,7 @@
       <td class="mono slot">Pokemon_Energy_Plant</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">2</td>
@@ -214,6 +229,7 @@
       <td class="mono slot">Pokemon_Energy_Water</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">3</td>
@@ -234,6 +250,7 @@
       <td class="mono slot">Pokemon_Energy_Fire</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">4</td>
@@ -254,6 +271,7 @@
       <td class="mono slot">Pokemon_Energy_Power</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">5</td>
@@ -274,6 +292,7 @@
       <td class="mono slot">Pokemon_Energy_Ground</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">6</td>
@@ -294,6 +313,7 @@
       <td class="mono slot">Pokemon_Energy_Colorless</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">7</td>
@@ -314,6 +334,7 @@
       <td class="mono slot">Pokemon_Energy_Psy</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">8</td>
@@ -334,6 +355,7 @@
       <td class="mono slot">Pokemon_Energy_Rainbow</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonEnergy8&quot; is commented out in ActionSealPokemonBox_Base.c (not required to seal vanilla box). Actual classnames: PokemonEnergy8R / PokemonEnergy8RH. Slot Pokemon_Energy_Rainbow is hidden in PokemonBox.c. PokemonBoosterPack_Rocket_* items exist in data/booster/config.cpp but there is no PokemonBoosterPack_Rocket_*.c loot script. Basic/Jungle/Fossil pack scripts only Insert PokemonEnergy1 through PokemonEnergy7; never Energy8R/RH.</td>
     </tr>
     <tr>
       <td class="num">9</td>
@@ -354,6 +376,7 @@
       <td class="mono slot">Pokemon_Energy_Rainbow</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonEnergy8&quot; is commented out in ActionSealPokemonBox_Base.c (not required to seal vanilla box). Actual classnames: PokemonEnergy8R / PokemonEnergy8RH. Slot Pokemon_Energy_Rainbow is hidden in PokemonBox.c. PokemonBoosterPack_Rocket_* items exist in data/booster/config.cpp but there is no PokemonBoosterPack_Rocket_*.c loot script. Basic/Jungle/Fossil pack scripts only Insert PokemonEnergy1 through PokemonEnergy7; never Energy8R/RH.</td>
     </tr>
     <tr>
       <td class="num">10</td>
@@ -374,6 +397,7 @@
       <td class="mono slot">Pokemon_Trainer1</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">11</td>
@@ -394,6 +418,7 @@
       <td class="mono slot">Pokemon_Trainer2</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">12</td>
@@ -414,6 +439,7 @@
       <td class="mono slot">Pokemon_Trainer3</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">13</td>
@@ -434,6 +460,7 @@
       <td class="mono slot">Pokemon_Trainer4</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">14</td>
@@ -454,6 +481,7 @@
       <td class="mono slot">Pokemon_Trainer5</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">15</td>
@@ -474,6 +502,7 @@
       <td class="mono slot">Pokemon_Trainer6</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">16</td>
@@ -494,6 +523,7 @@
       <td class="mono slot">Pokemon_Trainer7</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">17</td>
@@ -514,6 +544,7 @@
       <td class="mono slot">Pokemon_Trainer8</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">18</td>
@@ -534,6 +565,7 @@
       <td class="mono slot">Pokemon_Trainer9</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">19</td>
@@ -554,6 +586,7 @@
       <td class="mono slot">Pokemon_Trainer10</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">20</td>
@@ -574,6 +607,7 @@
       <td class="mono slot">Pokemon_Trainer11</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">21</td>
@@ -594,6 +628,7 @@
       <td class="mono slot">Pokemon_Trainer12</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">22</td>
@@ -614,6 +649,7 @@
       <td class="mono slot">Pokemon_Trainer13</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">23</td>
@@ -634,6 +670,7 @@
       <td class="mono slot">Pokemon_Trainer14</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">24</td>
@@ -654,6 +691,7 @@
       <td class="mono slot">Pokemon_Trainer15</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">25</td>
@@ -674,6 +712,7 @@
       <td class="mono slot">Pokemon_Trainer16</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">26</td>
@@ -694,6 +733,7 @@
       <td class="mono slot">Pokemon_Trainer17</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">27</td>
@@ -714,6 +754,7 @@
       <td class="mono slot">Pokemon_Trainer18</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">28</td>
@@ -734,6 +775,7 @@
       <td class="mono slot">Pokemon_Trainer19</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">29</td>
@@ -754,6 +796,7 @@
       <td class="mono slot">Pokemon_Trainer20</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">30</td>
@@ -774,6 +817,7 @@
       <td class="mono slot">Pokemon_Trainer21</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">31</td>
@@ -794,6 +838,7 @@
       <td class="mono slot">Pokemon_Trainer22</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">32</td>
@@ -814,6 +859,7 @@
       <td class="mono slot">Pokemon_Trainer23</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">33</td>
@@ -834,6 +880,7 @@
       <td class="mono slot">Pokemon_Trainer24</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">34</td>
@@ -854,6 +901,7 @@
       <td class="mono slot">Pokemon_Trainer25</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer25&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer25 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">35</td>
@@ -874,6 +922,7 @@
       <td class="mono slot">Pokemon_Trainer26</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer26&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer26 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">36</td>
@@ -894,6 +943,7 @@
       <td class="mono slot">Pokemon_Trainer27</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer27&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer27 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">37</td>
@@ -914,6 +964,7 @@
       <td class="mono slot">Pokemon_Trainer28</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer28&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer28 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">38</td>
@@ -934,6 +985,7 @@
       <td class="mono slot">Pokemon_Trainer29</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer29&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer29 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">39</td>
@@ -954,6 +1006,7 @@
       <td class="mono slot">Pokemon_Trainer30</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer30&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer30 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">40</td>
@@ -974,6 +1027,7 @@
       <td class="mono slot">Pokemon_Trainer31</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Team Rocket - commented, unfinished] //TeamRocket &quot;PokemonTrainer31&quot; commented in ActionSealPokemonBox_Base.c. Slot Pokemon_Trainer31 is hidden in PokemonBox.c (blocked from vanilla box attachments). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">41</td>
@@ -994,6 +1048,7 @@
       <td class="mono slot">Pokemon_Trainer32</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">Pokemon_Trainer32 hidden in PokemonBox.c; not listed in //TeamRocket comments (only trainers 25-31 were tagged). Not in Basic/Jungle/Fossil trainer_card Insert lists (Basic uses Trainer01-18; Jungle adds Trainer24J; Fossil adds Trainer19F-23F).</td>
     </tr>
     <tr>
       <td class="num">42</td>
@@ -1014,6 +1069,7 @@
       <td class="mono slot">Pokemon_001</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">43</td>
@@ -1034,6 +1090,7 @@
       <td class="mono slot">Pokemon_002</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">44</td>
@@ -1054,6 +1111,7 @@
       <td class="mono slot">Pokemon_003</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">45</td>
@@ -1074,6 +1132,7 @@
       <td class="mono slot">Pokemon_003</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">46</td>
@@ -1094,6 +1153,7 @@
       <td class="mono slot">Pokemon_004</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">47</td>
@@ -1114,6 +1174,7 @@
       <td class="mono slot">Pokemon_004</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard004 (Basic: Common; Fossil: Common; Jungle: Common) but never the R variant Pokemoncard004R.</td>
     </tr>
     <tr>
       <td class="num">48</td>
@@ -1134,6 +1195,7 @@
       <td class="mono slot">Pokemon_005</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">49</td>
@@ -1154,6 +1216,7 @@
       <td class="mono slot">Pokemon_005</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard005 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) but never the R variant Pokemoncard005R.</td>
     </tr>
     <tr>
       <td class="num">50</td>
@@ -1174,6 +1237,7 @@
       <td class="mono slot">Pokemon_006</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">51</td>
@@ -1194,6 +1258,7 @@
       <td class="mono slot">Pokemon_006</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard006 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the R variant Pokemoncard006R. [Collector vs pack mismatch] EmpireZ checklist #51 uses Pokemoncard006R (legacy slot Pokemon_006) but packs drop Pokemoncard051 (Basic: Rare; Fossil: Rare; Jungle: Rare) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">52</td>
@@ -1214,6 +1279,7 @@
       <td class="mono slot">Pokemon_006</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">53</td>
@@ -1234,6 +1300,7 @@
       <td class="mono slot">Pokemon_006</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard006 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the RH variant Pokemoncard006RH.</td>
     </tr>
     <tr>
       <td class="num">54</td>
@@ -1254,6 +1321,7 @@
       <td class="mono slot">Pokemon_007</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">55</td>
@@ -1274,6 +1342,7 @@
       <td class="mono slot">Pokemon_007</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard007 (Basic: Common; Fossil: Common; Jungle: Common) but never the R variant Pokemoncard007R.</td>
     </tr>
     <tr>
       <td class="num">56</td>
@@ -1294,6 +1363,7 @@
       <td class="mono slot">Pokemon_008</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">57</td>
@@ -1314,6 +1384,7 @@
       <td class="mono slot">Pokemon_008</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard008 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) but never the R variant Pokemoncard008R.</td>
     </tr>
     <tr>
       <td class="num">58</td>
@@ -1334,6 +1405,7 @@
       <td class="mono slot">Pokemon_009</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">59</td>
@@ -1354,6 +1426,7 @@
       <td class="mono slot">Pokemon_009</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard009 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the R variant Pokemoncard009R. [Collector vs pack mismatch] EmpireZ checklist #59 uses Pokemoncard009R (legacy slot Pokemon_009) but packs drop Pokemoncard059 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">60</td>
@@ -1374,6 +1447,7 @@
       <td class="mono slot">Pokemon_009</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">61</td>
@@ -1394,6 +1468,7 @@
       <td class="mono slot">Pokemon_111</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">62</td>
@@ -1414,6 +1489,7 @@
       <td class="mono slot">Pokemon_112</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">63</td>
@@ -1434,6 +1510,7 @@
       <td class="mono slot">Pokemon_113</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">64</td>
@@ -1454,6 +1531,7 @@
       <td class="mono slot">Pokemon_113</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">65</td>
@@ -1474,6 +1552,7 @@
       <td class="mono slot">Pokemon_114</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">66</td>
@@ -1494,6 +1573,7 @@
       <td class="mono slot">Pokemon_115</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">67</td>
@@ -1514,6 +1594,7 @@
       <td class="mono slot">Pokemon_115</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">68</td>
@@ -1534,6 +1615,7 @@
       <td class="mono slot">Pokemon_116</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">69</td>
@@ -1554,6 +1636,7 @@
       <td class="mono slot">Pokemon_117</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">70</td>
@@ -1574,6 +1657,7 @@
       <td class="mono slot">Pokemon_118</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">71</td>
@@ -1594,6 +1678,7 @@
       <td class="mono slot">Pokemon_119</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">72</td>
@@ -1614,6 +1699,7 @@
       <td class="mono slot">Pokemon_120</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">73</td>
@@ -1634,6 +1720,7 @@
       <td class="mono slot">Pokemon_121</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">74</td>
@@ -1654,6 +1741,7 @@
       <td class="mono slot">Pokemon_122</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">75</td>
@@ -1674,6 +1762,7 @@
       <td class="mono slot">Pokemon_122</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">76</td>
@@ -1694,6 +1783,7 @@
       <td class="mono slot">Pokemon_123</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">77</td>
@@ -1714,6 +1804,7 @@
       <td class="mono slot">Pokemon_123</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">78</td>
@@ -1734,6 +1825,7 @@
       <td class="mono slot">Pokemon_124</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">79</td>
@@ -1754,6 +1846,7 @@
       <td class="mono slot">Pokemon_125</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">80</td>
@@ -1774,6 +1867,7 @@
       <td class="mono slot">Pokemon_126</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">81</td>
@@ -1794,6 +1888,7 @@
       <td class="mono slot">Pokemon_126</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">82</td>
@@ -1814,6 +1909,7 @@
       <td class="mono slot">Pokemon_127</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">83</td>
@@ -1834,6 +1930,7 @@
       <td class="mono slot">Pokemon_127</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">84</td>
@@ -1854,6 +1951,7 @@
       <td class="mono slot">Pokemon_128</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">85</td>
@@ -1874,6 +1972,7 @@
       <td class="mono slot">Pokemon_129</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">86</td>
@@ -1894,6 +1993,7 @@
       <td class="mono slot">Pokemon_129</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard129 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) but never the R variant Pokemoncard129R. [Collector vs pack mismatch] EmpireZ checklist #86 uses Pokemoncard129R (legacy slot Pokemon_129) but packs drop Pokemoncard086 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">87</td>
@@ -1914,6 +2014,7 @@
       <td class="mono slot">Pokemon_130</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">88</td>
@@ -1934,6 +2035,7 @@
       <td class="mono slot">Pokemon_130</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard130 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the R variant Pokemoncard130R.</td>
     </tr>
     <tr>
       <td class="num">89</td>
@@ -1954,6 +2056,7 @@
       <td class="mono slot">Pokemon_130</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">90</td>
@@ -1974,6 +2077,7 @@
       <td class="mono slot">Pokemon_130</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard130 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the RH variant Pokemoncard130RH.</td>
     </tr>
     <tr>
       <td class="num">91</td>
@@ -1994,6 +2098,7 @@
       <td class="mono slot">Pokemon_131</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">92</td>
@@ -2014,6 +2119,7 @@
       <td class="mono slot">Pokemon_131</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">93</td>
@@ -2034,6 +2140,7 @@
       <td class="mono slot">Pokemon_132</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">94</td>
@@ -2054,6 +2161,7 @@
       <td class="mono slot">Pokemon_132</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">95</td>
@@ -2074,6 +2182,7 @@
       <td class="mono slot">Pokemon_133</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">96</td>
@@ -2094,6 +2203,7 @@
       <td class="mono slot">Pokemon_133</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_133] Packs drop sibling print(s): Pokemoncard133J [Jungle: Common] - not Pokemoncard133R. [Collector vs pack mismatch] EmpireZ checklist #96 uses Pokemoncard133R (legacy slot Pokemon_133) but packs drop Pokemoncard096 (Basic: Common; Fossil: Common; Jungle: Common) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">97</td>
@@ -2114,6 +2224,7 @@
       <td class="mono slot">Pokemon_134</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">98</td>
@@ -2134,6 +2245,7 @@
       <td class="mono slot">Pokemon_134</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_134] Packs drop sibling print(s): Pokemoncard134J [Jungle: Rare]; Pokemoncard134JH [Jungle: Very Rare] - not Pokemoncard134R.</td>
     </tr>
     <tr>
       <td class="num">99</td>
@@ -2154,6 +2266,7 @@
       <td class="mono slot">Pokemon_134</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">100</td>
@@ -2174,6 +2287,7 @@
       <td class="mono slot">Pokemon_135</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">101</td>
@@ -2194,6 +2308,7 @@
       <td class="mono slot">Pokemon_135</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_135] Packs drop sibling print(s): Pokemoncard135J [Jungle: Rare]; Pokemoncard135JH [Jungle: Very Rare] - not Pokemoncard135R. [Collector vs pack mismatch] EmpireZ checklist #101 uses Pokemoncard135R (legacy slot Pokemon_135) but packs drop Pokemoncard101 (Basic: Rare; Fossil: Rare; Jungle: Rare) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">102</td>
@@ -2214,6 +2329,7 @@
       <td class="mono slot">Pokemon_135</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">103</td>
@@ -2234,6 +2350,7 @@
       <td class="mono slot">Pokemon_136</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">104</td>
@@ -2254,6 +2371,7 @@
       <td class="mono slot">Pokemon_136</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_136] Packs drop sibling print(s): Pokemoncard136J [Jungle: Rare]; Pokemoncard136JH [Jungle: Very Rare] - not Pokemoncard136R.</td>
     </tr>
     <tr>
       <td class="num">105</td>
@@ -2274,6 +2392,7 @@
       <td class="mono slot">Pokemon_136</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">106</td>
@@ -2294,6 +2413,7 @@
       <td class="mono slot">Pokemon_137</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">107</td>
@@ -2314,6 +2434,7 @@
       <td class="mono slot">Pokemon_137</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard137 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) but never the R variant Pokemoncard137R. [Collector vs pack mismatch] EmpireZ checklist #107 uses Pokemoncard137R (legacy slot Pokemon_137) but packs drop Pokemoncard107 (Basic: Rare; Fossil: Rare; Jungle: Rare) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">108</td>
@@ -2334,6 +2455,7 @@
       <td class="mono slot">Pokemon_138</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">109</td>
@@ -2354,6 +2476,7 @@
       <td class="mono slot">Pokemon_139</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">110</td>
@@ -2374,6 +2497,7 @@
       <td class="mono slot">Pokemon_140</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">111</td>
@@ -2394,6 +2518,7 @@
       <td class="mono slot">Pokemon_141</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">112</td>
@@ -2414,6 +2539,7 @@
       <td class="mono slot">Pokemon_141</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">113</td>
@@ -2434,6 +2560,7 @@
       <td class="mono slot">Pokemon_142</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">114</td>
@@ -2454,6 +2581,7 @@
       <td class="mono slot">Pokemon_142</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">115</td>
@@ -2474,6 +2602,7 @@
       <td class="mono slot">Pokemon_143</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">116</td>
@@ -2494,6 +2623,7 @@
       <td class="mono slot">Pokemon_143</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">117</td>
@@ -2514,6 +2644,7 @@
       <td class="mono slot">Pokemon_144</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">118</td>
@@ -2534,6 +2665,7 @@
       <td class="mono slot">Pokemon_144</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">119</td>
@@ -2554,6 +2686,7 @@
       <td class="mono slot">Pokemon_145</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">120</td>
@@ -2574,6 +2707,7 @@
       <td class="mono slot">Pokemon_145</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">121</td>
@@ -2594,6 +2728,7 @@
       <td class="mono slot">Pokemon_145</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">122</td>
@@ -2614,6 +2749,7 @@
       <td class="mono slot">Pokemon_145</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">123</td>
@@ -2634,6 +2770,7 @@
       <td class="mono slot">Pokemon_146</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">124</td>
@@ -2654,6 +2791,7 @@
       <td class="mono slot">Pokemon_146</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">125</td>
@@ -2674,6 +2812,7 @@
       <td class="mono slot">Pokemon_147</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">126</td>
@@ -2694,6 +2833,7 @@
       <td class="mono slot">Pokemon_147</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard147 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) but never the R variant Pokemoncard147R. [Collector vs pack mismatch] EmpireZ checklist #126 uses Pokemoncard147R (legacy slot Pokemon_147) but packs drop Pokemoncard126 (Basic: Uncommon; Fossil: Uncommon; Jungle: Uncommon) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">127</td>
@@ -2714,6 +2854,7 @@
       <td class="mono slot">Pokemon_148</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">128</td>
@@ -2734,6 +2875,7 @@
       <td class="mono slot">Pokemon_148</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Variant not in packs] Pack scripts include Pokemoncard148 (Basic: Rare; Fossil: Rare; Jungle: Rare) but never the R variant Pokemoncard148R.</td>
     </tr>
     <tr>
       <td class="num">129</td>
@@ -2754,6 +2896,7 @@
       <td class="mono slot">Pokemon_149</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">130</td>
@@ -2774,6 +2917,7 @@
       <td class="mono slot">Pokemon_149</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_149] Packs drop sibling print(s): Pokemoncard149F [Fossil: Very Rare]; Pokemoncard149FH [Fossil: Ultra Rare] - not Pokemoncard149R. [Collector vs pack mismatch] EmpireZ checklist #130 uses Pokemoncard149R (legacy slot Pokemon_149) but packs drop Pokemoncard130 (Basic: Rare; Fossil: Rare; Jungle: Rare) - different item/art for same checklist region.</td>
     </tr>
     <tr>
       <td class="num">131</td>
@@ -2794,6 +2938,7 @@
       <td class="mono slot">Pokemon_149</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">132</td>
@@ -2814,6 +2959,7 @@
       <td class="mono slot">Pokemon_149</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small">[Shared legacy slot Pokemon_149] Packs drop sibling print(s): Pokemoncard149F [Fossil: Very Rare]; Pokemoncard149FH [Fossil: Ultra Rare] - not Pokemoncard149RH.</td>
     </tr>
     <tr>
       <td class="num">133</td>
@@ -2834,6 +2980,7 @@
       <td class="mono slot">Pokemon_150</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">134</td>
@@ -2854,6 +3001,7 @@
       <td class="mono slot">Pokemon_150</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">135</td>
@@ -2874,6 +3022,7 @@
       <td class="mono slot">Pokemon_151</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">136</td>
@@ -2894,6 +3043,7 @@
       <td class="mono slot">Pokemon_151</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">137</td>
@@ -2914,6 +3064,7 @@
       <td class="mono slot">Pokemon_151p</td>
       <td class="mono small">EmpireZ_CardBox_Series1</td>
       <td>cardback1</td>
+      <td class="notes small"></td>
     </tr>
     <tr>
       <td class="num">1</td>
@@ -2934,6 +3085,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">2</td>
@@ -2954,6 +3106,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">3</td>
@@ -2974,6 +3127,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">4</td>
@@ -2994,6 +3148,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">5</td>
@@ -3014,6 +3169,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">6</td>
@@ -3034,6 +3190,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">7</td>
@@ -3054,6 +3211,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">8</td>
@@ -3074,6 +3232,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">9</td>
@@ -3094,6 +3253,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">10</td>
@@ -3114,6 +3274,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">11</td>
@@ -3134,6 +3295,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">12</td>
@@ -3154,6 +3316,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">13</td>
@@ -3174,6 +3337,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">14</td>
@@ -3194,6 +3358,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">15</td>
@@ -3214,6 +3379,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">16</td>
@@ -3234,6 +3400,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">17</td>
@@ -3254,6 +3421,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">18</td>
@@ -3274,6 +3442,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">19</td>
@@ -3294,6 +3463,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">20</td>
@@ -3314,6 +3484,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">21</td>
@@ -3334,6 +3505,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">22</td>
@@ -3354,6 +3526,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">23</td>
@@ -3374,6 +3547,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">24</td>
@@ -3394,6 +3568,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">25</td>
@@ -3414,6 +3589,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">26</td>
@@ -3434,6 +3610,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">27</td>
@@ -3454,6 +3631,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">28</td>
@@ -3474,6 +3652,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">29</td>
@@ -3494,6 +3673,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">30</td>
@@ -3514,6 +3694,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">31</td>
@@ -3534,6 +3715,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">32</td>
@@ -3554,6 +3736,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">33</td>
@@ -3574,6 +3757,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">34</td>
@@ -3594,6 +3778,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">35</td>
@@ -3614,6 +3799,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">36</td>
@@ -3634,6 +3820,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">37</td>
@@ -3654,6 +3841,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">38</td>
@@ -3674,6 +3862,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">39</td>
@@ -3694,6 +3883,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">40</td>
@@ -3714,6 +3904,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">41</td>
@@ -3734,6 +3925,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">42</td>
@@ -3754,6 +3946,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">43</td>
@@ -3774,6 +3967,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">44</td>
@@ -3794,6 +3988,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">45</td>
@@ -3814,6 +4009,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">46</td>
@@ -3834,6 +4030,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">47</td>
@@ -3854,6 +4051,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">48</td>
@@ -3874,6 +4072,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">49</td>
@@ -3894,6 +4093,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">50</td>
@@ -3914,6 +4114,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">51</td>
@@ -3934,6 +4135,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">52</td>
@@ -3954,6 +4156,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">53</td>
@@ -3974,6 +4177,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">54</td>
@@ -3994,6 +4198,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">55</td>
@@ -4014,6 +4219,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">56</td>
@@ -4034,6 +4240,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">57</td>
@@ -4054,6 +4261,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">58</td>
@@ -4074,6 +4282,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">59</td>
@@ -4094,6 +4303,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">60</td>
@@ -4114,6 +4324,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">61</td>
@@ -4134,6 +4345,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">62</td>
@@ -4154,6 +4366,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">63</td>
@@ -4174,6 +4387,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">64</td>
@@ -4194,6 +4408,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">65</td>
@@ -4214,6 +4429,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">66</td>
@@ -4234,6 +4450,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">67</td>
@@ -4254,6 +4471,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">68</td>
@@ -4274,6 +4492,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">69</td>
@@ -4294,6 +4513,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">70</td>
@@ -4314,6 +4534,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">71</td>
@@ -4334,6 +4555,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">72</td>
@@ -4354,6 +4576,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">73</td>
@@ -4374,6 +4597,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">74</td>
@@ -4394,6 +4618,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">75</td>
@@ -4414,6 +4639,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">76</td>
@@ -4434,6 +4660,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">77</td>
@@ -4454,6 +4681,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">78</td>
@@ -4474,6 +4702,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">79</td>
@@ -4494,6 +4723,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">80</td>
@@ -4514,6 +4744,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">81</td>
@@ -4534,6 +4765,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">82</td>
@@ -4554,6 +4786,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">83</td>
@@ -4574,6 +4807,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">84</td>
@@ -4594,6 +4828,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">85</td>
@@ -4614,6 +4849,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">86</td>
@@ -4634,6 +4870,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">87</td>
@@ -4654,6 +4891,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">88</td>
@@ -4674,6 +4912,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">89</td>
@@ -4694,6 +4933,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">90</td>
@@ -4714,6 +4954,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">91</td>
@@ -4734,6 +4975,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">92</td>
@@ -4754,6 +4996,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">93</td>
@@ -4774,6 +5017,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">94</td>
@@ -4794,6 +5038,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">95</td>
@@ -4814,6 +5059,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">96</td>
@@ -4834,6 +5080,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">97</td>
@@ -4854,6 +5101,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">98</td>
@@ -4874,6 +5122,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">99</td>
@@ -4894,6 +5143,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">100</td>
@@ -4914,6 +5164,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">101</td>
@@ -4934,6 +5185,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">102</td>
@@ -4954,6 +5206,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">103</td>
@@ -4974,6 +5227,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">104</td>
@@ -4994,6 +5248,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">105</td>
@@ -5014,6 +5269,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">106</td>
@@ -5034,6 +5290,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">107</td>
@@ -5054,6 +5311,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">108</td>
@@ -5074,6 +5332,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">109</td>
@@ -5094,6 +5353,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">110</td>
@@ -5114,6 +5374,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">111</td>
@@ -5134,6 +5395,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">112</td>
@@ -5154,6 +5416,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">113</td>
@@ -5174,6 +5437,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">114</td>
@@ -5194,6 +5458,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">115</td>
@@ -5214,6 +5479,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">116</td>
@@ -5234,6 +5500,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">117</td>
@@ -5254,6 +5521,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">118</td>
@@ -5274,6 +5542,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">119</td>
@@ -5294,6 +5563,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">120</td>
@@ -5314,6 +5584,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">121</td>
@@ -5334,6 +5605,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">122</td>
@@ -5354,6 +5626,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">123</td>
@@ -5374,6 +5647,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">124</td>
@@ -5394,6 +5668,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">125</td>
@@ -5414,6 +5689,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">126</td>
@@ -5434,6 +5710,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">127</td>
@@ -5454,6 +5731,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">128</td>
@@ -5474,6 +5752,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">129</td>
@@ -5494,6 +5773,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">130</td>
@@ -5514,6 +5794,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">131</td>
@@ -5534,6 +5815,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">132</td>
@@ -5554,6 +5836,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">133</td>
@@ -5574,6 +5857,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">134</td>
@@ -5594,6 +5878,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">135</td>
@@ -5614,6 +5899,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">136</td>
@@ -5634,6 +5920,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">137</td>
@@ -5654,6 +5941,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">138</td>
@@ -5674,6 +5962,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">139</td>
@@ -5694,6 +5983,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">140</td>
@@ -5714,6 +6004,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">141</td>
@@ -5734,6 +6025,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">142</td>
@@ -5754,6 +6046,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">143</td>
@@ -5774,6 +6067,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">144</td>
@@ -5794,6 +6088,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">145</td>
@@ -5814,6 +6109,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">146</td>
@@ -5834,6 +6130,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">147</td>
@@ -5854,6 +6151,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">148</td>
@@ -5874,6 +6172,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">149</td>
@@ -5894,6 +6193,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">150</td>
@@ -5914,6 +6214,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">151</td>
@@ -5934,6 +6235,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">152</td>
@@ -5954,6 +6256,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">153</td>
@@ -5974,6 +6277,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">154</td>
@@ -5994,6 +6298,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">155</td>
@@ -6014,6 +6319,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">156</td>
@@ -6034,6 +6340,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">157</td>
@@ -6054,6 +6361,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">158</td>
@@ -6074,6 +6382,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">159</td>
@@ -6094,6 +6403,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">160</td>
@@ -6114,6 +6424,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">161</td>
@@ -6134,6 +6445,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">162</td>
@@ -6154,6 +6466,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">163</td>
@@ -6174,6 +6487,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">164</td>
@@ -6194,6 +6508,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">165</td>
@@ -6214,6 +6529,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">166</td>
@@ -6234,6 +6550,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">167</td>
@@ -6254,6 +6571,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">168</td>
@@ -6274,6 +6592,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">169</td>
@@ -6294,6 +6613,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">170</td>
@@ -6314,6 +6634,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">171</td>
@@ -6334,6 +6655,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">172</td>
@@ -6354,6 +6676,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">173</td>
@@ -6374,6 +6697,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">174</td>
@@ -6394,6 +6718,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">175</td>
@@ -6414,6 +6739,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">176</td>
@@ -6434,6 +6760,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">177</td>
@@ -6454,6 +6781,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">178</td>
@@ -6474,6 +6802,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">179</td>
@@ -6494,6 +6823,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">180</td>
@@ -6514,6 +6844,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">181</td>
@@ -6534,6 +6865,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">182</td>
@@ -6554,6 +6886,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">183</td>
@@ -6574,6 +6907,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">184</td>
@@ -6594,6 +6928,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">185</td>
@@ -6614,6 +6949,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">186</td>
@@ -6634,6 +6970,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">187</td>
@@ -6654,6 +6991,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">188</td>
@@ -6674,6 +7012,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">189</td>
@@ -6694,6 +7033,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">190</td>
@@ -6714,6 +7054,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">191</td>
@@ -6734,6 +7075,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">192</td>
@@ -6754,6 +7096,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">193</td>
@@ -6774,6 +7117,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">194</td>
@@ -6794,6 +7138,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">195</td>
@@ -6814,6 +7159,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">196</td>
@@ -6834,6 +7180,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">197</td>
@@ -6854,6 +7201,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">198</td>
@@ -6874,6 +7222,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">199</td>
@@ -6894,6 +7243,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
     <tr>
       <td class="num">200</td>
@@ -6914,6 +7264,7 @@
       <td class="mono slot"></td>
       <td class="mono small">EmpireZ_CardBox_Series2</td>
       <td>cardback2</td>
+      <td class="notes small">[EmpireZ collector classname] No legacy Pokemon classname; created for Series 2 ordered slot in config_new. Not referenced in any PokemonBoosterPack_{Basic,Jungle,Fossil}_*.c Insert() list.</td>
     </tr>
 
         </tbody>
@@ -6921,7 +7272,7 @@
     </div>
 
     <footer>
-      Generated by <code>_gen_card_catalog_html.ps1</code> on 2026-06-30 18:24.
+      Generated by <code>_gen_card_catalog_html.ps1</code> on 2026-06-30 18:39.
       Regenerate after config or pack script changes.
     </footer>
   </div>
